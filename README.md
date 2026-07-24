@@ -1,5 +1,8 @@
 # Transactional Lifecycle Audit
-
+[![Software DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21536451.svg)](https://doi.org/10.5281/zenodo.21536451)
+[![Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21536561.svg)](https://doi.org/10.5281/zenodo.21536561)
+[![Software License](https://img.shields.io/badge/Software%20License-BSD--3--Clause-blue.svg)](LICENSE)
+[![Data License](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
 Reproducibility software for auditing rollback-external state drift in path-dependent nonlinear computational models.
 
 This repository accompanies the manuscript **"Transactional lifecycle audits expose rollback-external path drift in stateful nonlinear finite-element simulations."** It provides the open finite-element host and mutation-strength benchmark used to test committed/trial-state ownership, rollback invariance, operator-version compatibility, and accepted-output provenance.
@@ -81,12 +84,24 @@ Get-Content SHA256SUMS.txt
 
 ## Data
 
-Numerical source data are not duplicated in this software repository. They are prepared as a separate dataset under the Creative Commons Attribution 4.0 International license. The permanent dataset DOI will be added after the dataset is deposited and published. See `DATA_AVAILABILITY.md`.
+The numerical source data, evidence ledgers, case registry, and figure-source tables are archived separately on Zenodo:
+
+- Version-specific dataset DOI: https://doi.org/10.5281/zenodo.21536561
+- All dataset versions: https://doi.org/10.5281/zenodo.21536560
+
+The dataset is licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0). It excludes the private Abaqus/UEL doctoral-production project, unpublished production meshes, and long-window carbon-storage application outputs. See `DATA_AVAILABILITY.md` for the scope boundary.
 
 ## Citation
 
-Citation metadata are provided in `CITATION.cff`. The version-specific Zenodo DOI will be added after Zenodo archives GitHub Release `v1.0.0`. Until then, cite this repository by its URL and version without inventing a DOI.
+### Software
 
+Ma, Y., Sun, W., Liang, B., and He, S. (2026). *Transactional Lifecycle Audit: Reproducibility Software for Path-Dependent Computational Models* (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.21536451
+
+### Numerical source data
+
+Ma, Y., Sun, W., Liang, B., and He, S. (2026). *Transactional Lifecycle Audit: Numerical Source Data for Path-Dependent Computational Models* (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.21536561
+
+Machine-readable software citation metadata are provided in `CITATION.cff`.
 ## License
 
 Source code is released under the BSD 3-Clause License. See `LICENSE`.

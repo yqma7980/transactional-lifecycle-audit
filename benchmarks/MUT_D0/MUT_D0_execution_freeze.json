@@ -1,0 +1,27 @@
+{
+  "design_version": "MUT-D0.0",
+  "host_dependency": "FEH-SKFEM-1.0",
+  "status": "FROZEN_IMPLEMENTED_PREFLIGHT_PASS",
+  "execution_authorized": true,
+  "formal_results_exist": false,
+  "abaqus_used": false,
+  "protected_design_hashes": {
+    "MUT_D0_protocol.md": "ffb5bce51b976e5c7d86adc7fd8a5c1cc07f55b64ab38dc5a81c186a7c070d09",
+    "MUT_D0_strengths.csv": "41240893331c044a242c051b786f635eb756978b9e17fa6a1edea0624e4f0f6a"
+  },
+  "implementation_hashes": {
+    "run_mut_d0.py": "df670cd00ab92fc063aee3f189e3ea1284cf61df8a44fa97914316274df67735",
+    "test_mut_d0.py": "dbc96ecc1c6f6ff42552013edcc0f9b8ee5cce13346ecfc4136c27c9aaa75efb"
+  },
+  "development_strength_count": 22,
+  "formal_repetitions_per_strength": 2,
+  "holdout_selection_rule": "median_tested_strength_lower_middle_if_even",
+  "preflight": {
+    "unit_test_count": 3,
+    "unit_tests_passed": 3,
+    "zero_control": "NO_DETECTION",
+    "weak_mutation_1e-8": "UNIQUE_TLA_DETECTION",
+    "preflight_is_not_formal_evidence": true,
+    "thresholds_changed_after_preflight": false
+  }
+}

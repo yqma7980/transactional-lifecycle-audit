@@ -1,0 +1,11 @@
+{
+  "a4_persistent_compatibility_satisfied": false,
+  "comparison_scope": "SEEDED_NEGATIVE_CONTROL_OPERATOR_REPLAY_SENSITIVITY",
+  "conventional_accuracy_threshold": 1e-05,
+  "full_tla_replay_verdict": "INVALID_A4_PERSISTENT_STATE_INCOMPATIBLE",
+  "legacy_field": "tla_detected",
+  "numeric_execution_changed": false,
+  "operator_replay_drift_threshold": 1e-10,
+  "replacement_field": "operator_replay_drift_detected",
+  "schema": "MUT-D0-reporting-contract-v2.9"
+}

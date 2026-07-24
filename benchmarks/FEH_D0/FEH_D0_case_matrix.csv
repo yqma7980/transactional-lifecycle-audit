@@ -1,0 +1,9 @@
+case_id,history,variant,mesh,formal_repetitions,prerequisite,expected_classification
+FEH-REF-01,direct,safe_transactional,patch_8x6,2,none,PASS_ANALYTICAL_PATCH
+FEH-LC-01,direct,safe_transactional,heterogeneous_8x6,2,FEH-REF-01,PASS_SAFE_DIRECT
+FEH-LC-02,rejected_line_search,safe_transactional,heterogeneous_8x6,2,FEH-LC-01,PASS_SAFE_LINE_SEARCH_PARITY
+FEH-LC-03,cutback,safe_transactional,heterogeneous_8x6,2,FEH-LC-02,PASS_SAFE_CUTBACK_PARITY
+FEH-LC-04,restart,safe_transactional,heterogeneous_8x6,2,FEH-LC-03,PASS_SAFE_RESTART_PARITY
+FEH-NC-01,rejected_line_search,unsafe_trial_cache,heterogeneous_8x6,2,FEH-LC-04,DETECT_TRIAL_CACHE_DRIFT
+FEH-NC-02,rejected_line_search,unsafe_output_feedback,heterogeneous_8x6,2,FEH-LC-04,DETECT_OUTPUT_FEEDBACK_DRIFT
+FEH-NC-03,version_mismatch,operator_version_mismatch,heterogeneous_8x6,2,FEH-LC-04,REJECT_VERSION_MISMATCH_PRE_CORRECTION

@@ -1,0 +1,58 @@
+{
+  "release": "v1.0.0",
+  "qa_status": "PASS",
+  "qa_date": "2026-07-24",
+  "supported_python": "3.12",
+  "dependency_versions": {
+    "numpy": "2.5.1",
+    "scikit-fem": "12.0.2",
+    "scipy": "1.18.0"
+  },
+  "source_parity": {
+    "benchmark_hash_mismatch_count": 0,
+    "supplementary_software_zip_sha256": "5063faca287f81f0a5007bd8957e05c4254cb29183e0f2968464820806f22d45",
+    "supplementary_software_zip_entries": 331,
+    "supplementary_software_zip_read_errors": 0,
+    "expanded_source_manifest_sha256": "6f13c0e0a5be83504ef027cf41036167d740276fde597f6607e33fbb97f55f3b"
+  },
+  "unit_tests": {
+    "feh_tests_passed": 6,
+    "feh_tests_failed": 0,
+    "mutation_tests_passed": 3,
+    "mutation_tests_failed": 0
+  },
+  "smoke_test": {
+    "case_id": "FEH-REF-01",
+    "run_id": "smoke_1",
+    "classification": "PASS_ANALYTICAL_PATCH",
+    "pass_flag": true,
+    "processes": 1,
+    "threads": 1,
+    "output_included_in_release": false
+  },
+  "metadata": {
+    "citation_cff_parse_pass": true,
+    "citation_author_count": 4,
+    "citation_doi_present": false,
+    "software_license": "BSD-3-Clause",
+    "data_license_notice": "CC-BY-4.0"
+  },
+  "privacy_and_scope_scan": {
+    "private_absolute_path_hits": 0,
+    "secret_or_token_hits": 0,
+    "forbidden_abaqus_or_manuscript_files": 0,
+    "cache_artifacts": 0
+  },
+  "github_web_upload": {
+    "file_count_at_qa": 28,
+    "maximum_file_bytes": 665460,
+    "file_count_gate_at_most_100": true,
+    "per_file_size_gate_below_25_mib": true
+  },
+  "evidence_boundary": {
+    "abaqus_included": false,
+    "production_uel_included": false,
+    "doctoral_application_outputs_included": false,
+    "formal_zenodo_doi_assigned": false
+  }
+}

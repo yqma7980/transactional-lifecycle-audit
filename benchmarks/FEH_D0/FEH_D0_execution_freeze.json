@@ -1,0 +1,39 @@
+{
+  "design_version": "FEH-D0.0",
+  "host_version": "FEH-SKFEM-1.0",
+  "status": "FROZEN_IMPLEMENTED_PREFLIGHT_PASS",
+  "execution_authorized": true,
+  "formal_results_exist": false,
+  "abaqus_used": false,
+  "host": {
+    "name": "scikit-fem",
+    "version": "12.0.2",
+    "license": "BSD-3-Clause",
+    "official_wheel_sha256": "34cd891f80072c0c1eb759a2371e82f0eeec91ff7c08acab96d27b6edbbe1b05"
+  },
+  "numerical_environment": {
+    "python": "3.12.10",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "processes_per_run": 1,
+    "threads_per_process": 1,
+    "formal_repetitions_per_case": 2
+  },
+  "protected_design_hashes": {
+    "FEH_D0_benchmark_spec.md": "8e263bd2ad270a6ac284dda6da41f134256f5a826d5a39073e8f40a3807f7935",
+    "FEH_D0_acceptance_gates.md": "2b13863ceb8bd488730837695e0dea24e07a8b0a9175fd60ca5b93803f45471a",
+    "FEH_D0_case_matrix.csv": "5d2fbb4b7cb4141fae5007c2b240bead455c483b0db753afd1e40e338e73af3d"
+  },
+  "implementation_hashes": {
+    "feh_model.py": "59ffac9b77da0da3f22b7637f1396a0d6683c26ebd3a369a8e3698ec972ad087",
+    "run_feh_d0.py": "7d684cecd2e533ea008c619a66140ba5fa426e84b251170ac6036dee24f99eaa",
+    "test_feh_d0.py": "7117811566e4243b86cfb115f4301f6cb9d6c4a8e5c7cdcf674bbaa645d2ec14"
+  },
+  "preflight": {
+    "unit_test_count": 6,
+    "unit_tests_passed": 6,
+    "formal_case_preflight_count": 8,
+    "formal_case_preflights_passed": 8,
+    "thresholds_changed_after_preflight": false
+  }
+}

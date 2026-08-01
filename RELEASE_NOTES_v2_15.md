@@ -1,6 +1,6 @@
-# v2.15 supplementary-software additions
+# v2.15.1 supplementary-software correction
 
-- Added P4d DOLFINx/PETSc source, tests, contracts and guarded runners.
-- Added P5 backend source, tests, freezes and guarded runners.
-- Added P6R read-only projection source, tests and authorization contracts.
-- Excluded raw result directories from Software S1; corresponding evidence is in Data S1.
+- Regenerated the 616-entry package manifest and SHA-256 index from exact repository blob bytes.
+- Corrected line-ending-sensitive checksum mismatches present in the v2.15.0 public archive.
+- Preserved all scientific source, frozen contracts, case definitions and evidence interpretations.
+- Retained the v2.15 P4d DOLFINx/PETSc, P5 and P6R software additions.

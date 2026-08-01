@@ -1,14 +1,16 @@
 {
   "package_name": "Supplementary Software S1",
-  "package_version": "2.15.0",
+  "package_version": "2.15.1",
   "manifest_self_hash_embedded": false,
-  "manifest_scope": "all package files except the manifest files and their generated checksum indexes",
+  "manifest_scope": "616 frozen payload files; generated manifest and checksum indexes are excluded from their own scope",
   "file_count": 616,
-  "total_bytes": 3228001,
+  "total_bytes": 3284542,
   "package_manifest_csv": "package_manifest_v2_15.csv",
-  "package_manifest_csv_sha256": "945e1e7658d79c2f64d5b8ce846e43feb58f41567bf3f00d9dafd045e8cb553f",
+  "package_manifest_csv_sha256": "da861451d8a0de9c1f6a2814fb998f3e13e7f0cd01e0501ec60af08c895e9f62",
   "sha256sums_file": "SHA256SUMS_v2_15.txt",
-  "sha256sums_sha256": "065ed9646880aab37aa201e245ccffdf0854618a4b27a463c9ef9984ed675127",
+  "sha256sums_sha256": "d243d5242642ffc823d76138f97f44ce138e5afced27fc51d201ad406ec12c0e",
   "license": "BSD 3-Clause",
-  "abaqus_or_production_files_included": false
+  "abaqus_or_production_files_included": false,
+  "correction_scope": "line-ending-sensitive public-archive checksum indexes only",
+  "scientific_content_changed": false
 }

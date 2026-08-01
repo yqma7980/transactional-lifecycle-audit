@@ -1,4 +1,4 @@
-# Supplementary Software S1 (manuscript package v2.15.2)
+# Supplementary Software S1 (manuscript package v2.15.3)
 
 This package contains the standalone article code under the BSD 3-Clause license. The top-level FEH/MUT workflows remain executable with `requirements-feh-mut.txt`. `benchmarks_v2_15` adds the frozen DOLFINx/PETSc P4d implementation, P5 scaled-fault backend and P6R read-only projection code used by the manuscript evidence package.
 
@@ -17,13 +17,13 @@ $env:FEH_D0_EXECUTION_AUTHORIZED='YES'
 
 The P4d/P5 protocols freeze the exact DOLFINx container identity, PETSc options and explicit authorization gates in their JSON and Markdown contracts. P6R is a read-only projector over immutable formal packets. These directories are archived for audit and reproduction; no claim is made that one Windows command reproduces every historical layer or that the package contains the private Abaqus/UEL model.
 
-The public GitHub v2.15.2 release and the versioned Zenodo software archive contain these additions:
+The public GitHub v2.15.3 release and the versioned Zenodo software archive contain these additions:
 
 - Software concept DOI (all versions): https://doi.org/10.5281/zenodo.21536450
 - Numerical source-data DOI: https://doi.org/10.5281/zenodo.21739730
 
 The archived packages do not contain the private Abaqus/UEL production project or unpublished carbon-storage application outputs.
 
-## v2.15.2 public-archive checksum correction
+## v2.15.3 archive-metadata and checksum correction
 
-Version 2.15.2 regenerates the package manifest and SHA-256 index against the exact bytes emitted by the GitHub-generated public source archive. It supersedes the v2.15.1 checksum index, which remained inconsistent with that generated archive, without changing the reported scientific cases, equations, frozen acceptance gates, or result interpretation.
+Version 2.15.3 removes superseded version-specific software DOI references from release-local metadata and cites the stable software concept DOI instead. The version-specific DOI is assigned by Zenodo after publication and is cited in the manuscript and Zenodo metadata. This release also regenerates the package manifest and SHA-256 index against the final Git blob bytes without changing the reported scientific cases, equations, frozen acceptance gates, or result interpretation.

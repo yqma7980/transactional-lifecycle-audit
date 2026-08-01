@@ -6,7 +6,7 @@ This repository contains the reproducibility software, benchmark specifications,
 
 The numerical source data, evidence ledgers, case registry, and figure-source tables are openly archived on Zenodo:
 
-- Version-specific dataset DOI: https://doi.org/10.5281/zenodo.21536561
+- Version-specific dataset DOI: https://doi.org/10.5281/zenodo.21739730
 - All dataset versions: https://doi.org/10.5281/zenodo.21536560
 
 The numerical dataset is licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
@@ -15,7 +15,7 @@ The numerical dataset is licensed under the Creative Commons Attribution 4.0 Int
 
 The versioned reproducibility software is archived on Zenodo:
 
-- Version-specific software DOI: https://doi.org/10.5281/zenodo.21536451
+- Version-specific software DOI: https://doi.org/10.5281/zenodo.21739176
 - All software versions: https://doi.org/10.5281/zenodo.21536450
 
 The software is licensed under the BSD 3-Clause License.

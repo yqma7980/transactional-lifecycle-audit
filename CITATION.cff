@@ -4,7 +4,7 @@ title: "Transactional Lifecycle Audit: Reproducibility Software for Path-Depende
 type: software
 version: 2.15.0
 date-released: 2026-08-01
-doi: 10.5281/zenodo.21536450
+doi: 10.5281/zenodo.21739176
 repository-code: "https://github.com/yqma7980/transactional-lifecycle-audit"
 license: BSD-3-Clause
 authors:

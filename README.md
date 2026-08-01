@@ -17,4 +17,9 @@ $env:FEH_D0_EXECUTION_AUTHORIZED='YES'
 
 The P4d/P5 protocols freeze the exact DOLFINx container identity, PETSc options and explicit authorization gates in their JSON and Markdown contracts. P6R is a read-only projector over immutable formal packets. These directories are archived for audit and reproduction; no claim is made that one Windows command reproduces every historical layer or that the package contains the private Abaqus/UEL model.
 
-The public GitHub/Zenodo software v1.0.0 record (10.5281/zenodo.21536451) is an earlier provenance snapshot and is not represented as containing these v2.15 additions.
+The public GitHub v2.15.0 release and the versioned Zenodo software archive contain these additions:
+
+- Software DOI: https://doi.org/10.5281/zenodo.21739176
+- Numerical source-data DOI: https://doi.org/10.5281/zenodo.21739730
+
+The archived packages do not contain the private Abaqus/UEL production project or unpublished carbon-storage application outputs.

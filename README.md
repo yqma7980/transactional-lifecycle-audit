@@ -1,6 +1,6 @@
-# Supplementary Software S1 (manuscript package v2.15.1)
+# Supplementary Software S1 (manuscript package v2.15.2)
 
-This package contains the standalone article code under the BSD 3-Clause license. The top-level FEH/MUT workflows remain executable with `requirements-feh-mut.txt`. `benchmarks_v2_15` adds the frozen DOLFINx/PETSc P4d implementation, P5 scaled-fault backend and P6R read-only projection code used by the v2.15 evidence package.
+This package contains the standalone article code under the BSD 3-Clause license. The top-level FEH/MUT workflows remain executable with `requirements-feh-mut.txt`. `benchmarks_v2_15` adds the frozen DOLFINx/PETSc P4d implementation, P5 scaled-fault backend and P6R read-only projection code used by the manuscript evidence package.
 
 ## FEH/MUT smoke test
 
@@ -17,13 +17,13 @@ $env:FEH_D0_EXECUTION_AUTHORIZED='YES'
 
 The P4d/P5 protocols freeze the exact DOLFINx container identity, PETSc options and explicit authorization gates in their JSON and Markdown contracts. P6R is a read-only projector over immutable formal packets. These directories are archived for audit and reproduction; no claim is made that one Windows command reproduces every historical layer or that the package contains the private Abaqus/UEL model.
 
-The public GitHub v2.15.1 release and the versioned Zenodo software archive contain these additions:
+The public GitHub v2.15.2 release and the versioned Zenodo software archive contain these additions:
 
 - Software concept DOI (all versions): https://doi.org/10.5281/zenodo.21536450
 - Numerical source-data DOI: https://doi.org/10.5281/zenodo.21739730
 
 The archived packages do not contain the private Abaqus/UEL production project or unpublished carbon-storage application outputs.
 
-## v2.15.1 checksum correction
+## v2.15.2 public-archive checksum correction
 
-Version 2.15.1 regenerates the package manifest and SHA-256 index from the exact Git repository blob bytes. It corrects line-ending-sensitive checksum mismatches in the v2.15.0 archive without changing the reported scientific cases, equations, frozen acceptance gates, or result interpretation.
+Version 2.15.2 regenerates the package manifest and SHA-256 index against the exact bytes emitted by the GitHub-generated public source archive. It supersedes the v2.15.1 checksum index, which remained inconsistent with that generated archive, without changing the reported scientific cases, equations, frozen acceptance gates, or result interpretation.

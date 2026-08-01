@@ -1,16 +1,16 @@
 {
   "package_name": "Supplementary Software S1",
-  "package_version": "2.15.1",
+  "package_version": "2.15.2",
   "manifest_self_hash_embedded": false,
   "manifest_scope": "616 frozen payload files; generated manifest and checksum indexes are excluded from their own scope",
   "file_count": 616,
-  "total_bytes": 3284542,
+  "total_bytes": 3213566,
   "package_manifest_csv": "package_manifest_v2_15.csv",
-  "package_manifest_csv_sha256": "da861451d8a0de9c1f6a2814fb998f3e13e7f0cd01e0501ec60af08c895e9f62",
+  "package_manifest_csv_sha256": "5f554e9f9ad08478f3c5e6a63169c0131320f82e5e06ffbe55581dba0907785d",
   "sha256sums_file": "SHA256SUMS_v2_15.txt",
-  "sha256sums_sha256": "d243d5242642ffc823d76138f97f44ce138e5afced27fc51d201ad406ec12c0e",
+  "sha256sums_sha256": "012fca9e551ded338555bbc11a069a8794dd09b833508b7f965efae7ca003284",
   "license": "BSD 3-Clause",
   "abaqus_or_production_files_included": false,
-  "correction_scope": "line-ending-sensitive public-archive checksum indexes only",
+  "correction_scope": "GitHub-generated public source-archive byte verification",
   "scientific_content_changed": false
 }

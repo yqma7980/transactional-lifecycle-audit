@@ -1,0 +1,59 @@
+{
+  "analysis_kind": "READ_ONLY_POSTMORTEM",
+  "baseline_sha256": {
+    "P4d.2_FULL_IMPLEMENTATION_20260731/P4d2_source_manifest.json": "6aa3ab71905fe8b5a54239bcd64de6b92a744dfed08c54336fa072c4d5c29541",
+    "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/P4D-SAFE-LS-01/run_1/c_observer_ledger.jsonl": "9d04ade4086dd7ba600d26b890ca345b8268ffa5c0db175158ad2cc3626cfdab",
+    "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/P4D-SAFE-LS-01/run_1/case_result.json": "2ad300d5697d40e026146bc6ee8ebda8960c113164533c2c9cb648ff42516af2",
+    "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_duplicate_run_comparison.json": "00f469a9eca36016d75c35b03fb03bc0a2625cd2120a332bffcca1223989a5dd",
+    "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_formal_final_QA.json": "0f3cef984b9a0720ddeb126f1dd29b8a56c58912ca2ae6e75901462bf9c294e4",
+    "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_formal_raw_manifest.json": "384b7b4e5a8e1244672c5d076f46a589dae3995a91ec1d10ff0c7d13e0ecb22b",
+    "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_formal_stop_summary.json": "df520423b04e189da13923aa3ef1a0387fa1e0c44720d5bb0482d167c683c73e"
+  },
+  "derived_adjudication": "NOT_SUPPORTED_BY_FROZEN_HISTORY",
+  "failure_cause": "FROZEN_HISTORY_DID_NOT_TRIGGER_NATIVE_REJECTION",
+  "formal_case_rerun": false,
+  "new_fe_case_execution": false,
+  "observer_source_contract": {
+    "direction_change_forced_false": true,
+    "line_search_lambda_read": true,
+    "line_search_reason_read": true,
+    "line_search_vectors_read": true,
+    "monitor_registered": true,
+    "postcheck_registered": true,
+    "work_change_forced_false": true
+  },
+  "p4d1_zero_case_pair_summary": {
+    "all_candidate_lambdas_one": true,
+    "all_iterations_equal": true,
+    "all_reasons_zero": true,
+    "all_selected_lambdas_one": false,
+    "all_solve_ids_equal": true,
+    "all_vectors_equal": false,
+    "candidate_count": 5,
+    "pair_count": 5,
+    "postcheck_change_flags_read_only": true,
+    "python_correlation_count": 0,
+    "selected_count": 5,
+    "source_case": "P4d.1/observer_on_run_1",
+    "structured_unselected_candidate_count": 1
+  },
+  "protected_evidence_mutation_allowed": false,
+  "safe_ls_pair_summary": {
+    "all_candidate_lambdas_one": true,
+    "all_iterations_equal": true,
+    "all_reasons_zero": true,
+    "all_selected_lambdas_one": true,
+    "all_solve_ids_equal": true,
+    "all_vectors_equal": true,
+    "candidate_count": 29,
+    "pair_count": 29,
+    "postcheck_change_flags_read_only": true,
+    "python_correlation_count": 29,
+    "selected_count": 29,
+    "source_case": "P4D-SAFE-LS-01/run_1",
+    "structured_unselected_candidate_count": 0
+  },
+  "safe_ls_raw_verdict": "P4D-SAFE-LS-01_CONTRACT_FAIL",
+  "schema_version": "CMAME-P4D3-POSTMORTEM-FREEZE-1.0",
+  "status": "PASS_P4D3_POSTMORTEM_AND_P4D4_DIAGNOSTIC_FREEZE"
+}

@@ -1,0 +1,133 @@
+{
+  "manifest_version": "L2-D2-SOURCE-1.0a",
+  "design_version": "L2-D2.0a",
+  "revision_reason": "align_committed_state_fingerprint_with_L2_HOST_D1_0_canonical_serializer",
+  "created_date": "2026-07-22",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "execution_authorized": false,
+  "abaqus_used": false,
+  "results_exist": false,
+  "hash_algorithm": "SHA-256",
+  "path_base": "${NCS_WORKSPACE}",
+  "fingerprint_compatibility_qa": {
+    "serializer": "src.l2_state.canonical_json(CommittedState())",
+    "canonical_payload_utf8": "{\"accepted_version\":0,\"epsilon_p\":{\"__float_hex__\":\"0x0.0p+0\"},\"kappa\":{\"__float_hex__\":\"0x0.0p+0\"}}",
+    "expected_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+    "recomputed_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+    "match": true,
+    "superseded_non_authoritative_hash": "274b35b7c4a6b79a021d93e143cac769f5b9feab6e3287d5c236356ac6bf8215",
+    "execution_performed": false
+  },
+  "design_inputs": [
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_benchmark_spec.md",
+      "sha256": "c73fc7ee3673e317cde0a5cc1e804da0235186bce5f32b1a595a35a5f0f65d63",
+      "role": "family_specification"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_case_matrix.csv",
+      "sha256": "be8e8e76f48dbc1cc2e55534a5cdb08745d1fa010a7eb291b2f7379eaf31fe69",
+      "role": "case_identifier_authority"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_acceptance_gates.md",
+      "sha256": "ff8e8a4484abac4cd9528a0a9c6f05ccf69be8432dd5d23a6b8ba21160ae163d",
+      "role": "acceptance_gate_authority"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_data_contract.md",
+      "sha256": "08dcb7b15a26baa692ecc036ea602ffbe99b77e7729aeb6acb49f3f9f4b92735",
+      "role": "data_contract"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_execution_boundary.md",
+      "sha256": "962ce944544c5825b1117c296d3606fcddf5b137b4779bc3cfe3f327d98d11a1",
+      "role": "execution_boundary"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D1_execution_freeze.json",
+      "sha256": "4096753c610be493108baa612d5965d35a2ac6c6c97cae18db20e6fd84964a88",
+      "role": "host_and_tolerance_baseline"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_state.py",
+      "sha256": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d",
+      "role": "D1_state_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_model.py",
+      "sha256": "1a9daac2a8b75534dd55193bce3fead0004197765d3024e13d617e9d833ea8ff",
+      "role": "D1_model_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_variants.py",
+      "sha256": "74fd1679408c9fa39825deaf8fc140263a5c543174f57ee51a3757860b22a96c",
+      "role": "D1_variant_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_host.py",
+      "sha256": "a2a7044592da3be507279552f0dc19a75c2de00b7cdaee0e3bea4a5e3868fd2b",
+      "role": "D1_host_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_cases.py",
+      "sha256": "f12d0944bb8f96c100715fce6b640345c1826c9db8674fb79cc032ea7cba6301",
+      "role": "D1_case_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/oracle/l2_fraction_oracle.py",
+      "sha256": "ef57905f0d90b1bc7a0da81de51e529cb2e1d64a8290f64d91ee27ffeb480eff",
+      "role": "exact_rational_oracle_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/results/L2_D1_minimal_20260721/final/l2_final_summary.json",
+      "sha256": "1f19fb09973c6df6da536e0fb66fa927906d17892526a520df83f997cae143c7",
+      "role": "L2_D1_precheck_evidence"
+    }
+  ],
+  "protected_precheck_references": [
+    {
+      "path": "01_claim_evidence_matrix_v0_4.md",
+      "sha256": "9f838ad22e903e88eecc51bd2234b88adcc72938c88d9341795d5c7fb8c581f6"
+    },
+    {
+      "path": "manuscript/manuscript_v0_4.md",
+      "sha256": "75bcfc1e5308516d3c9ba1e35cb7628f5683ec90b598f2960ba06960bd7d134a"
+    },
+    {
+      "path": "figures/Figure4_L2_D1_case_source.csv",
+      "sha256": "911a756f5f429805ac19f1fdf9867d7162220210bedfda90d89599e106e2df27"
+    },
+    {
+      "path": "figures/Figure4_L2_D1_summary_source.csv",
+      "sha256": "df86271c1844bb8d92a3b21d1146c1ee60eeb82b358202725c9e209a5b950900"
+    },
+    {
+      "path": "figures/Figure4_L2_D1_source_manifest.json",
+      "sha256": "86823c5dd1a5f2df9531bf1b92db9ba77b9699e9ad4dace456d124ae16db3b80"
+    },
+    {
+      "path": "figures/Figure4_L2_D1_evidence_contract.md",
+      "sha256": "efe8947c8092ed23f1c1f61961d5e866d3ef0906504284b34b868f8051f7ae5a"
+    }
+  ],
+  "design_outputs": [
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D2_execution_freeze.json",
+      "sha256": "aeb7d4060b72e9f92fb039d460b08c119a67e406a311ccf431b4adcf4cb42d8f",
+      "bytes": 8813
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D2_callback_order_case_matrix.csv",
+      "sha256": "62cdbb90454cea75f9ad6af9ede1d0b444cbdf28ed83abdf51a3658296c77ca5",
+      "bytes": 777
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D2_implementation_plan.md",
+      "sha256": "12b02c63bdb1305978843e530341d937f80c93855dea0b44be7ac22c9ce91140",
+      "bytes": 9181
+    }
+  ],
+  "self_hash_policy": "The manifest SHA-256 is computed and reported externally after creation because a file cannot contain its own stable hash.",
+  "execution_boundary": "No source, tests, runner, execution or result artifact was created for L2-D2; no benchmark or Abaqus process was run."
+}

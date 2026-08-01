@@ -1,0 +1,220 @@
+{
+  "schema_version": "CMAME-P4D-FREEZE-1.0",
+  "protocol_id": "P4d_DOLFINx_PETSc_MINIMAL_FE_HOST",
+  "design_version": "P4d.0",
+  "frozen_at": "2026-07-31T10:19:16+08:00",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "implementation_authorized": false,
+  "execution_authorized": false,
+  "formal_results_exist": false,
+  "abaqus_used": false,
+  "comsol_used": false,
+  "production_model_used": false,
+  "host": {
+    "finite_element_layer": "DOLFINx 0.10.0",
+    "nonlinear_layer": "petsc4py/PETSc 3.24.0 SNES",
+    "quadrature_layer": "Basix 0.10.x",
+    "container_image_tag": "dolfinx/dolfinx:v0.10.0",
+    "container_platform": "linux/amd64",
+    "container_manifest_digest": "sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "immutable_image_reference": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "processes_per_repetition": 1,
+    "threads_per_process": 1,
+    "mpi_ranks": 1,
+    "network_during_future_runs": false,
+    "privileged": false
+  },
+  "retained_p4c_observation_layer": {
+    "p4c_verdict": "CONDITIONAL_PASS_WITH_OFFICIAL_PETSC_C_BRIDGE",
+    "pure_petsc4py_verdict": "NOT_SUPPORTED_AS_FULL_LEDGER_WITH_PURE_PETSC4PY",
+    "p4c_freeze_sha256": "ee16a00cd2f5d02846a236158a2f9d9d0b9cf8420069bee1bafd032f0bab026c",
+    "p4c_protocol_sha256": "a84c9c872074ff13c728a937d6b9a66f403b72f4e3f6157ad245e37274aa87c9",
+    "p4c_gate_results_sha256": "2458f9dd5a5adb44d1dcb76d67c2c032a801ab2542cdc9ce9405784fb50c03e4",
+    "p4c_c_source_sha256": "ae405741545e64815e08e9f6b3fdd11d00db8617205e3a2aef1f9e2c67484e49",
+    "p4c_c_binary_sha256": "01722299521b4009906e583e2a4f5b0c055cc332b2b8829672c8cfb0ad002efb",
+    "p4c_duplicate_c_log_sha256": "930e6480f33d5e1984e03cc44ab6553543fa14f7204aeb559133cd39b58609a2",
+    "future_status": "OBSERVER_PATTERN_RETAINED_ATTACHMENT_NOT_IMPLEMENTED",
+    "required_pre_physical_gate": "attach observer-only same-version C bridge to the DOLFINx-owned SNES and prove structured line-search vector/lambda/reason capture in a zero case"
+  },
+  "mechanical_problem": {
+    "classification": "TWO_DIMENSIONAL_ANTI_PLANE_PATH_DEPENDENT_FINITE_ELEMENT_HOST",
+    "domain": "[0,1]x[0,1]",
+    "primary_unknown": "scalar anti-plane displacement w",
+    "strain": "gamma=grad(w)",
+    "equilibrium": "integral tau dot grad(v) dx minus external work equals zero",
+    "material": {
+      "model": "associative radial-return shear plasticity with linear isotropic hardening",
+      "G": 10.0,
+      "tau_y0": 1.0,
+      "H": 2.0,
+      "committed_fields": [
+        "gamma_p_x",
+        "gamma_p_y",
+        "alpha"
+      ],
+      "trial_fields": [
+        "tau_xz",
+        "tau_yz",
+        "gamma_p_candidate_x",
+        "gamma_p_candidate_y",
+        "alpha_candidate",
+        "algorithmic_tangent"
+      ]
+    },
+    "boundary_conditions": {
+      "bottom": "w=0",
+      "top": "w=lambda*(1+0.2*sin(pi*x))",
+      "left_and_right": "natural traction-free",
+      "body_force": 0.0
+    }
+  },
+  "discretization": {
+    "mesh_recipe": "unit square; 4x4 structured squares; one fixed diagonal per square",
+    "cell_type": "triangle",
+    "cell_count": 32,
+    "node_count": 25,
+    "primary_element": "continuous Lagrange P1",
+    "quadrature_degree": 2,
+    "quadrature_points_per_cell": 3,
+    "integration_point_count": 96,
+    "required_preflight_hashes": [
+      "coordinates",
+      "connectivity",
+      "boundary_dof_order",
+      "quadrature_points",
+      "quadrature_weights",
+      "material_parameter_packet"
+    ]
+  },
+  "accepted_load_path": [
+    0.0,
+    0.04,
+    0.08,
+    0.1,
+    0.12,
+    0.16,
+    0.2,
+    0.14,
+    0.08,
+    0.16,
+    0.2
+  ],
+  "frozen_histories": {
+    "H_DIRECT": "accepted load path with exact-current consistent tangent",
+    "H_NATIVE_LINESEARCH": "same accepted path; declared accepted-state-lag tangent on reload 0.08 to 0.16; requires at least one C-observed PETSc-native nonaccepted candidate",
+    "H_DRIVER_RETRY": "after accepted 0.08 attempt 0.20 with snes_max_it=1; require negative SNES reason; restore; continue 0.10 onward",
+    "H_RESTART": "write accepted checkpoint at 0.12; fresh process restores and completes the same accepted path",
+    "H_CACHE_NEGATIVE": "H_DRIVER_RETRY plus rollback-external hidden trial cache mutation inside the declared rejected attempt",
+    "H_OUTPUT_NEGATIVE": "H_DRIVER_RETRY plus rejected trial diagnostic copied into accepted-output channel",
+    "H_VERSION_GUARD": "finite residual/tangent numbers with an undeclared tangent state-version relation"
+  },
+  "solver": {
+    "snes_type": "newtonls",
+    "line_search_type": "bt",
+    "absolute_tolerance": 1e-11,
+    "relative_tolerance": 1e-10,
+    "step_tolerance": 1e-12,
+    "maximum_iterations": 25,
+    "ksp_type": "preonly",
+    "pc_type": "lu",
+    "normal_attempt_error_if_not_converged": true,
+    "forced_retry_attempt_maximum_iterations": 1
+  },
+  "formal_execution_contract": {
+    "case_count": 9,
+    "formal_repetitions_per_case": 2,
+    "fresh_process_per_repetition": true,
+    "single_thread": true,
+    "run_order": [
+      "P4D-REF-01",
+      "P4D-CONST-01",
+      "P4D-SAFE-DIR-01",
+      "P4D-SAFE-LS-01",
+      "P4D-SAFE-RT-01",
+      "P4D-SAFE-RS-01",
+      "P4D-NC-CACHE-01",
+      "P4D-NC-OUTPUT-01",
+      "P4D-VER-01"
+    ],
+    "stop_on_first_prerequisite_failure": true,
+    "no_overwrite": true
+  },
+  "comparison_contract": {
+    "replay_boundary": "first residual/Jacobian packet for target lambda=0.10 from accepted lambda=0.08",
+    "exact_discrete_hash_fields": [
+      "mesh",
+      "material",
+      "serializer",
+      "committed schema",
+      "accepted version",
+      "operator version relation"
+    ],
+    "scaled_field_absolute_tolerance": 1e-10,
+    "scaled_field_relative_tolerance": 1e-10,
+    "finite_absolute_limit": 1e100,
+    "operator_drift_detection_threshold": 1e-10,
+    "negative_control_cache_scale": 1e-6
+  },
+  "manufactured_reference": {
+    "exact_solution": "1e-3*sin(pi*x)*sin(pi*y)",
+    "body_force": "2*G*pi^2*1e-3*sin(pi*x)*sin(pi*y)",
+    "mesh_levels": [
+      4,
+      8,
+      16
+    ],
+    "minimum_L2_order": 1.7,
+    "minimum_H1_order": 0.8,
+    "maximum_finest_relative_L2_error": 0.05,
+    "maximum_finest_relative_H1_error": 0.2
+  },
+  "protected_inputs": {
+    "v2_13_file_count": 931,
+    "v2_13_total_bytes": 61078135,
+    "v2_13_aggregate_sha256": "d5c8dbae6275171a7bb314cb6582457ca3a6145c0ba773f1f83eff34fe65d919",
+    "P2_source_manifest_sha256": "79702f5679767b5f28b98c5683ae42a9ad8a33bdd37793288835c7e5accbf932",
+    "P3_execution_freeze_sha256": "d50946da7030412d0cac3042ce80c7b98f4855805358e4750d2d2169b39ec4ed",
+    "P3_source_manifest_sha256": "b2a330050ce2a71ae4350882062e43d3747cb8186544910c72bf21eca147e0e1",
+    "P4_source_manifest_sha256": "2c3d29025e55b36c9ea3f30906417593129c1b8a3059b1361047de29fe819a6f",
+    "P4c_source_manifest_sha256": "ee481d151f89f303c8b944b5f36cf732d5b3d50a00f1d6a792006c87ec228acb"
+  },
+  "authorized_operations": [
+    "read protected P1-P4c evidence",
+    "write P4d static freeze documents",
+    "parse JSON and CSV",
+    "compute hashes",
+    "inspect official DOLFINx Basix and PETSc documentation"
+  ],
+  "forbidden_operations": [
+    "implement P4d Python or C source",
+    "compile or attach the P4d C observer",
+    "create a DOLFINx mesh or function space",
+    "run any P4d case or unit test",
+    "create results execution output or checkpoint directories",
+    "run Abaqus COMSOL OpenSees production UEL P3 or any long-window solve",
+    "modify v2.13 P1 P2 P3 P4 P4b or P4c evidence",
+    "modify DOI GitHub Zenodo or a public repository",
+    "git add commit push clean reset move or delete historical evidence",
+    "change thresholds loads material constants or oracle after observing a run"
+  ],
+  "stop_conditions": [
+    "the exact DOLFINx-owned SNES cannot accept the observer-only PETSc C attachment without a host-core patch",
+    "the frozen line-search history produces no structured host-native nonaccepting candidate",
+    "the forced retry attempt does not return a negative PETSc reason",
+    "the manufactured or constitutive oracle fails before formal execution",
+    "a formal duplicate differs after removing only run-specific diagnostic fields",
+    "a protected hash changes",
+    "an accepted output is written before commit",
+    "a scientific threshold must be changed after seeing a result"
+  ],
+  "evidence_boundary": {
+    "static_design_only": true,
+    "finite_element_case_run": false,
+    "physical_result_observed": false,
+    "host_integrated_lifecycle_evidence_observed": false,
+    "mpi_or_thread_safety_tested": false,
+    "performance_tested": false,
+    "checkpoint_runtime_tested": false,
+    "manuscript_claim_expansion_authorized": false
+  }
+}

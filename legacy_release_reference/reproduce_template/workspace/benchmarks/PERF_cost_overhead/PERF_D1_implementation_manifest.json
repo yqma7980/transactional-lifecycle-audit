@@ -1,0 +1,111 @@
+{
+  "abaqus_used": false,
+  "comsol_used": false,
+  "design_version": "PERF-D1.0",
+  "execution_authorized_by_goal": true,
+  "formal_results_exist": false,
+  "implementation_files": [
+    {
+      "ast_parse": true,
+      "bytes": 56,
+      "path": "benchmarks/PERF_cost_overhead/src/__init__.py",
+      "sha256": "3d9d8a78ee8e4755a530669ab5d78e38f5556acd402ef6ecfb8001b46ef454a6"
+    },
+    {
+      "ast_parse": true,
+      "bytes": 5982,
+      "path": "benchmarks/PERF_cost_overhead/src/perf_instrumentation.py",
+      "sha256": "46c6e2ebf173698a06b25a2cb660866724b9d698c15e8dfa80b2320c303cd794"
+    },
+    {
+      "ast_parse": true,
+      "bytes": 10347,
+      "path": "benchmarks/PERF_cost_overhead/src/perf_workloads.py",
+      "sha256": "3b1a5464815b49ee6db43724cd19312a77754b9441b4dea3fdc010d920de59c4"
+    },
+    {
+      "ast_parse": true,
+      "bytes": 8729,
+      "path": "benchmarks/PERF_cost_overhead/src/perf_worker.py",
+      "sha256": "72b4e0f6924fe2fe851c62af36b2d0319816818bc6ee1ef1465cc97724cb8191"
+    },
+    {
+      "ast_parse": true,
+      "bytes": 0,
+      "path": "benchmarks/PERF_cost_overhead/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "ast_parse": true,
+      "bytes": 5512,
+      "path": "benchmarks/PERF_cost_overhead/tests/test_perf_d1.py",
+      "sha256": "5a3d0dc8d788a2b635767f0bff6a21d92c6c34e2d4972d6b8df46a91580e100b"
+    },
+    {
+      "ast_parse": true,
+      "bytes": 1622,
+      "path": "benchmarks/PERF_cost_overhead/run_perf_worker.py",
+      "sha256": "ead1313472bdcba6a90ed0d1ec1b298636e6f7c9ef87432b341997b5370833ad"
+    },
+    {
+      "ast_parse": true,
+      "bytes": 7737,
+      "path": "benchmarks/PERF_cost_overhead/run_perf_d1.py",
+      "sha256": "4ad86f50a5ee2fb1df3009b1319fe8515983a0aa7e06ee5d39889710edaa0ba5"
+    }
+  ],
+  "implementation_status": "IMPLEMENTED_UNIT_TESTED_NOT_PREFLIGHTED",
+  "manifest_self_hash_embedded": false,
+  "no_formal_case_execution": true,
+  "no_preflight_execution": true,
+  "pre_execution_erratum": {
+    "bytes": 1315,
+    "path": "benchmarks/PERF_cost_overhead/PERF_D1_pre_execution_test_locator_erratum_20260722.md",
+    "sha256": "3a97d400de0d8f8f35e4755523b3bd465cf7c33b65a47f7635c16953b11cd5eb"
+  },
+  "preflight_results_exist": false,
+  "production_model_used": false,
+  "protected_inputs_and_freeze": {
+    "01_claim_evidence_matrix_v2_0.md": "d1c24526c55729b720e16efd57782031601919e7ccb19736db3879024d6b011b",
+    "benchmarks/L3_poroelastic_consolidation/src/l3_fv.py": "5d1e2400eeb524edbff59902ace9569fd3566272ccf48972acc34bd56e213bf7",
+    "benchmarks/L3_poroelastic_consolidation/src/l3_state.py": "06dcfc5257bf4cd429e4ce069c76ac5d05296ab7b1810196c663ff6d43c40ef0",
+    "benchmarks/L4_two_phase_displacement/src/l4_fv.py": "fe69f646f3efea9e81d5945e5ddb0a2f5a577c907a36330dd4dd03d1a9259b2e",
+    "benchmarks/L4_two_phase_displacement/src/l4_state.py": "6b3f331812a63cce5e4c5c2f15515806367405913285f5eb480ab3a1a54741dd",
+    "benchmarks/L6_external_host/results/L6_D1_external_host/final/l6_d1_final_summary.json": "e3e972907a9916eff1b9c8cf1269423092f950738eb1f15c538de3cbf3bb8ddd",
+    "benchmarks/L6_external_host/src/l6_scipy_adapter.py": "c3cfb96ff618c019bb577b631b8b618abb76ece983f8252325ffa6aa7f599055",
+    "benchmarks/L6_external_host/src/l6_state.py": "c9f00d95198a8a99ec4dac073dc3cab7cbebd1360bd2833a86fb213b861d8885",
+    "benchmarks/PERF_cost_overhead/PERF_D0_acceptance_gates.md": "e8cc2fccfabf0b88c1b7b55cce4b55f4564503028eb6272499c667c69e865c4e",
+    "benchmarks/PERF_cost_overhead/PERF_D0_benchmark_spec.md": "9be2f9767a949ebcaa86db577940e62fe8da1537a82ad70a85e80135359ad61f",
+    "benchmarks/PERF_cost_overhead/PERF_D0_case_matrix.csv": "d136e77c2a2aff1e722aff3c7ccba9833560af6cb00e158875e6096c9621ff79",
+    "benchmarks/PERF_cost_overhead/PERF_D0_scale_pilot_20260722.md": "e104146d5ee42ff5f360b364eab2af5c5eadc0df471473248390096ec3d9ec32",
+    "benchmarks/PERF_cost_overhead/PERF_D1_execution_freeze.json": "092df2bddcdfc3062b54b2c79759019c3c679a2c63b8b3539af0612aae0c2310",
+    "benchmarks/PERF_cost_overhead/PERF_D1_implementation_plan.md": "6595b4faf769110cb1576fc207388793444453f4d00047211fb0b4c3d7f6281a",
+    "manuscript/manuscript_v2_0.md": "145deaa450c982992c7c50bf3e98f0b4862054d4e8cd30d2238c48e9bd33923d"
+  },
+  "python": {
+    "executable": "python",
+    "version": "3.12.10"
+  },
+  "runner_contract": {
+    "parent_environment_lock": "PERF_D1_EXECUTION_AUTHORIZED=YES",
+    "parent_parameter_lock": "--execute-authorized",
+    "result_directory_created_only_after_parent_authorization": true,
+    "worker_environment_lock": "PERF_D1_WORKER_AUTHORIZED=YES",
+    "worker_parameter_lock": "--worker-authorized"
+  },
+  "schema_version": "PERF-D1-IMPLEMENTATION-MANIFEST-1.0",
+  "thread_contract": {
+    "affinity_mask": 1,
+    "processes_per_run": 1,
+    "threads_per_process": 1
+  },
+  "unit_test": {
+    "command": "python -m unittest benchmarks.PERF_cost_overhead.tests.test_perf_d1 -v",
+    "errors": 0,
+    "failures": 0,
+    "first_invocation_invalidated_by_test_locator_error": true,
+    "formal_case_execution": false,
+    "status": "PASS",
+    "tests_run": 9
+  }
+}

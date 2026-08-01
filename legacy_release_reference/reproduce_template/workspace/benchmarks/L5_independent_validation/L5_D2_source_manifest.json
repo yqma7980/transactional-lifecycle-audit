@@ -1,0 +1,107 @@
+{
+  "abaqus_used": false,
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "design_version": "L5-D2.0",
+  "design_outputs": [
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D2_postmortem_and_rationale_20260722.md",
+      "sha256": "b4b384432c24ffcfc235e112872846669c241f9519865315a087bedb65b13747"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D2_benchmark_spec.md",
+      "sha256": "584622b5b0145a147da6ee6ee3d31249b2483d506d82b59bbab505151959d530"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D2_independence_contract.md",
+      "sha256": "addde2f3cd58af109ab555b0e689158f137af50d8fa94f4d34f6cbce14eacd8a"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D2_case_matrix.csv",
+      "sha256": "4f7ba067c19b2091715a49b2b197daf8c12d5c73e138649f20c666f562a027f5"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D2_acceptance_gates.md",
+      "sha256": "70236f9e2032c11883942cd9009646c2c29008480f842f8a8c6e15b5241f14e5"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D2_execution_freeze.json",
+      "sha256": "63deea2f61268a8b004e5d6149fcafbea98a0e40db3b86edf946620633ecc468"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D2_implementation_plan.md",
+      "sha256": "4bffe09006bfd01440da45737c71abcaec487529d54be2370086c7df2d096af1"
+    }
+  ],
+  "execution_authorized": false,
+  "historical_failure": {
+    "classification": "PRECHECK_FAIL_NOT_FORMAL_EVIDENCE",
+    "path": "benchmarks/L5_independent_validation/L5_D1_pre_execution_gate_failure_20260722.json",
+    "sha256": "d055d78c7d01f0312eae07422483dc6287a2b481da5748036a0930c036bda1e6"
+  },
+  "immutable_l5_dependencies": [
+    {
+      "path": "benchmarks/L5_independent_validation/src/l5_state.py",
+      "sha256": "4cfce8994fbd58ba0b21a2837c503368f542dc1e2774071544d69f0235eb02c4"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/src/l5_solver.py",
+      "sha256": "b912ed20df1ccb6a1f5df18db27285112fb0058dcf5af3536a4dcab937c53acc"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/src/l5_oracle.py",
+      "sha256": "7811d99b07fe1ed6bb133959439fa581edbb5bf7728a66ccfc1555da28962e70"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/src/l5_lifecycle.py",
+      "sha256": "1d07e7ccaada94a025ee40509622faccbe24281a67d968f2c0f8964c0be2c93e"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/src/l5_cases.py",
+      "sha256": "38de71cde939429de0e0be06c3514176d4e77faf0d5bb0ae7295068b3b91c276"
+    }
+  ],
+  "literature_support": [
+    {
+      "doi": "10.1007/s10915-013-9693-0",
+      "path": "literature/method_support/Banks_Aslam_2013_Richardson_discontinuities.pdf",
+      "role": "discontinuity-dependent sensitivity of three-solution convergence estimates",
+      "sha256": "b6388eaa8563c553b1d288803bfd4ee5b6bde52a5dd52ece0ab4df75ca5d6e29",
+      "source_url": "https://arxiv.org/abs/1205.6504"
+    },
+    {
+      "doi": "10.1016/j.jcp.2014.01.006",
+      "path": "literature/method_support/Eca_Hoekstra_2014_grid_refinement_least_squares.pdf",
+      "role": "redundant systematic grids and least-squares error-model fitting",
+      "sha256": "089dd9bb522b85a833dba4b778b9da9d37aee3a66cacad0535958a4f31827b92",
+      "source_url": "https://www.marin.nl/en/publications/a-procedure-for-the-estimation-of-the-numerical-uncertainty-of-cfd-calculations-based-on-grid-refinement-studies"
+    },
+    {
+      "path": null,
+      "role": "definition of log-error/log-h slope and caution at shocks",
+      "sha256": null,
+      "source_url": "https://www.grc.nasa.gov/www/wind/valid/tutorial/spatconv.html"
+    }
+  ],
+  "protected_baselines": [
+    {
+      "path": "01_claim_evidence_matrix_v2_0.md",
+      "sha256": "d1c24526c55729b720e16efd57782031601919e7ccb19736db3879024d6b011b"
+    },
+    {
+      "path": "manuscript/manuscript_v2_0.md",
+      "sha256": "145deaa450c982992c7c50bf3e98f0b4862054d4e8cd30d2238c48e9bd33923d"
+    }
+  ],
+  "protected_l4_raw_aggregate_sha256": "ff25b0622dd8ce74a6a5d8d3f712df593e732a20918c4259c7fc0afb4539e78d",
+  "results_exist": false,
+  "schema_version": "L5-D2-SOURCE-1.0",
+  "scientific_protocol": {
+    "adjacent_pair_orders_hard_gate": false,
+    "diagnostic_extended_levels_formal_evidence": false,
+    "five_level_ols_order_minimum": 0.7,
+    "levels": [80, 160, 320, 640, 1280],
+    "strict_monotonic_error_required": true,
+    "target_time": 0.2
+  },
+  "manifest_self_hash_embedded": false
+}

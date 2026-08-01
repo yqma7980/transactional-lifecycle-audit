@@ -1,0 +1,262 @@
+{
+  "evidence_boundary": {
+    "abaqus_used": false,
+    "comsol_used": false,
+    "formal_9_case_matrix_run": false,
+    "formal_benchmark": false,
+    "github_zenodo_doi_updated": false,
+    "manuscript_updated": false,
+    "observed_P4d": false,
+    "production_model_used": false
+  },
+  "gates": [
+    {
+      "blocked_state": "BLOCKED_PROTECTED_EVIDENCE_DRIFT",
+      "gate": "G0_PROTECTED_EVIDENCE",
+      "pass": true
+    },
+    {
+      "blocked_state": "BLOCKED_HOST_IDENTITY",
+      "gate": "G1_HOST_IDENTITY",
+      "pass": true
+    },
+    {
+      "blocked_state": "BLOCKED_C_BRIDGE_ATTACH",
+      "gate": "G2_C_BRIDGE_ATTACH",
+      "pass": true
+    },
+    {
+      "blocked_state": "BLOCKED_FE_TOPOLOGY_OR_ORDER",
+      "gate": "G3_FE_TOPOLOGY_AND_STATE",
+      "pass": true
+    },
+    {
+      "blocked_state": "BLOCKED_REFERENCE_ORACLE",
+      "gate": "G4_REFERENCE_ORACLE",
+      "pass": true
+    },
+    {
+      "blocked_state": "BLOCKED_SAFE_INCREMENT_SMOKE",
+      "gate": "SAFE_INCREMENT_SMOKE",
+      "pass": true
+    },
+    {
+      "blocked_state": "BLOCKED_SAFE_INCREMENT_SMOKE",
+      "gate": "DIRECTED_TESTS",
+      "pass": true
+    }
+  ],
+  "host_identity": {
+    "environment_run_1": {
+      "module_files": {
+        "basix": {
+          "path": "/dolfinx-env/lib/python3.12/site-packages/basix/__init__.py",
+          "sha256": "c3d0b9ba1a47f31ae82d37197d9a7f53b264133f839465d2ea75f104b0d91690"
+        },
+        "dolfinx": {
+          "path": "/usr/local/dolfinx-real/lib/python3.12/dist-packages/dolfinx/__init__.py",
+          "sha256": "c8bc8519bf909c85257f92e97d70d95f537aed8eec800e9ef1fcc259f485ddd8"
+        },
+        "mpi4py": {
+          "path": "/dolfinx-env/lib/python3.12/site-packages/mpi4py/__init__.py",
+          "sha256": "63b422be9c72df5e45041f5e6b69cfd2cda48db0269fe34a796f24420d17ea0a"
+        },
+        "petsc4py": {
+          "path": "/dolfinx-env/lib/python3.12/site-packages/petsc4py/__init__.py",
+          "sha256": "de8d325744f9c34a4988846d6f6b2f0423dd4269a9292af4d028f5e6bc07005a"
+        },
+        "ufl": {
+          "path": "/dolfinx-env/lib/python3.12/site-packages/ufl/__init__.py",
+          "sha256": "2c067ad02c1ad648be970049aa6847efcf4c47d78d7f14109ac0339a85334eba"
+        }
+      },
+      "mpi_rank": 0,
+      "mpi_size": 1,
+      "packages": {
+        "PETSc": "3.24.0",
+        "basix": "0.10.0",
+        "dolfinx": "0.10.0",
+        "mpi4py": "4.1.1",
+        "petsc4py": "3.24.0",
+        "ufl": "2025.2.0"
+      },
+      "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "preflight_id": "P4D1-ENV-01",
+      "python": "3.12.3",
+      "run_id": "run_1",
+      "schema_version": "CMAME-P4D1-ENVIRONMENT-1.0"
+    },
+    "environment_run_2": {
+      "module_files": {
+        "basix": {
+          "path": "/dolfinx-env/lib/python3.12/site-packages/basix/__init__.py",
+          "sha256": "c3d0b9ba1a47f31ae82d37197d9a7f53b264133f839465d2ea75f104b0d91690"
+        },
+        "dolfinx": {
+          "path": "/usr/local/dolfinx-real/lib/python3.12/dist-packages/dolfinx/__init__.py",
+          "sha256": "c8bc8519bf909c85257f92e97d70d95f537aed8eec800e9ef1fcc259f485ddd8"
+        },
+        "mpi4py": {
+          "path": "/dolfinx-env/lib/python3.12/site-packages/mpi4py/__init__.py",
+          "sha256": "63b422be9c72df5e45041f5e6b69cfd2cda48db0269fe34a796f24420d17ea0a"
+        },
+        "petsc4py": {
+          "path": "/dolfinx-env/lib/python3.12/site-packages/petsc4py/__init__.py",
+          "sha256": "de8d325744f9c34a4988846d6f6b2f0423dd4269a9292af4d028f5e6bc07005a"
+        },
+        "ufl": {
+          "path": "/dolfinx-env/lib/python3.12/site-packages/ufl/__init__.py",
+          "sha256": "2c067ad02c1ad648be970049aa6847efcf4c47d78d7f14109ac0339a85334eba"
+        }
+      },
+      "mpi_rank": 0,
+      "mpi_size": 1,
+      "packages": {
+        "PETSc": "3.24.0",
+        "basix": "0.10.0",
+        "dolfinx": "0.10.0",
+        "mpi4py": "4.1.1",
+        "petsc4py": "3.24.0",
+        "ufl": "2025.2.0"
+      },
+      "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "preflight_id": "P4D1-ENV-01",
+      "python": "3.12.3",
+      "run_id": "run_2",
+      "schema_version": "CMAME-P4D1-ENVIRONMENT-1.0"
+    },
+    "fresh_process_normalized_equal": true,
+    "image": {
+      "architecture": "amd64",
+      "image_id": "sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+      "image_reference": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+      "os": "linux",
+      "pass": true,
+      "repo_digests": [
+        "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab"
+      ]
+    },
+    "mpi_ranks": 1,
+    "network": "none",
+    "pass": true,
+    "privileged": false,
+    "processes_per_run": 1,
+    "schema_version": "CMAME-P4D1-HOST-IDENTITY-1.0",
+    "thread_environment": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "threads_per_process": 1
+  },
+  "observer_summary": {
+    "c_ledger_normalized_equal": true,
+    "duplicate_gate_pass": true,
+    "environment_fresh_process_normalized_equal": true,
+    "exact_no_effect_fields": [
+      "solution_hex",
+      "snes_reason",
+      "iteration_count",
+      "residual_sequence_hex"
+    ],
+    "observer_disabled_enabled_exact_no_effect": true,
+    "observer_enabled_result_normalized_equal": true,
+    "observer_on_run_1_ledger_sha256": "8a43f0eddfe4bfd5a202b1793a0af527e8c7a20c55e251311d18438f87936206",
+    "observer_on_run_2_ledger_sha256": "ce028599b8385949610c82a74838b20084e5d1a46ccad3018512750a80fceb00",
+    "postcheck_change_flags_false_both_runs": true,
+    "schema_version": "CMAME-P4D1-DUPLICATE-1.0",
+    "structured_unselected_candidate_present_both_runs": true
+  },
+  "oracle_summary": {
+    "N4_relative_H1_error_hex": "0x1.8289f43f4b3c4p-2",
+    "N4_relative_L2_error_hex": "0x1.43e49f9ed7141p-3",
+    "maximum_directional_relative_error_hex": "0x1.3360333333335p-33",
+    "maximum_packet_error_hex": "0x1.0000000000000p-50"
+  },
+  "production_boundary": {
+    "abaqus_process_counts": {
+      "abqcaek.exe": 0,
+      "pre.exe": 0,
+      "smasimutility.exe": 0,
+      "standard.exe": 0
+    },
+    "abaqus_process_total": 0,
+    "pass": true,
+    "production_git_directory_exists": true,
+    "production_git_entry_count": 0,
+    "production_write_command_issued": false
+  },
+  "protected_evidence": {
+    "files": {
+      "pass": true,
+      "records": {
+        "P2_source_manifest.json": {
+          "actual": "79702f5679767b5f28b98c5683ae42a9ad8a33bdd37793288835c7e5accbf932",
+          "expected": "79702f5679767b5f28b98c5683ae42a9ad8a33bdd37793288835c7e5accbf932",
+          "match": true
+        },
+        "P3_execution_freeze.json": {
+          "actual": "d50946da7030412d0cac3042ce80c7b98f4855805358e4750d2d2169b39ec4ed",
+          "expected": "d50946da7030412d0cac3042ce80c7b98f4855805358e4750d2d2169b39ec4ed",
+          "match": true
+        },
+        "P3_source_manifest.json": {
+          "actual": "b2a330050ce2a71ae4350882062e43d3747cb8186544910c72bf21eca147e0e1",
+          "expected": "b2a330050ce2a71ae4350882062e43d3747cb8186544910c72bf21eca147e0e1",
+          "match": true
+        },
+        "P4_source_manifest.json": {
+          "actual": "2c3d29025e55b36c9ea3f30906417593129c1b8a3059b1361047de29fe819a6f",
+          "expected": "2c3d29025e55b36c9ea3f30906417593129c1b8a3059b1361047de29fe819a6f",
+          "match": true
+        },
+        "P4c_source_manifest.json": {
+          "actual": "ee481d151f89f303c8b944b5f36cf732d5b3d50a00f1d6a792006c87ec228acb",
+          "expected": "ee481d151f89f303c8b944b5f36cf732d5b3d50a00f1d6a792006c87ec228acb",
+          "match": true
+        },
+        "P4d_package_aggregate": {
+          "actual": "8697fcecbe0f17e665080a7c673e44b93cd9223315ed3a09c70e3d0e01189914",
+          "expected": "8697fcecbe0f17e665080a7c673e44b93cd9223315ed3a09c70e3d0e01189914",
+          "match": true,
+          "top_level_file_count": 14
+        },
+        "P4d_source_manifest.json": {
+          "actual": "a54b76c5624d1e033ffc6a08bc7a339b8494ee789e9478687a4915fca11d89dd",
+          "expected": "a54b76c5624d1e033ffc6a08bc7a339b8494ee789e9478687a4915fca11d89dd",
+          "match": true
+        }
+      }
+    },
+    "v2_13": {
+      "aggregate_sha256": "d5c8dbae6275171a7bb314cb6582457ca3a6145c0ba773f1f83eff34fe65d919",
+      "expected_aggregate_sha256": "d5c8dbae6275171a7bb314cb6582457ca3a6145c0ba773f1f83eff34fe65d919",
+      "file_count": 931,
+      "mismatch_count": 0,
+      "mismatches": [],
+      "pass": true,
+      "total_bytes": 61078135,
+      "verified_count": 931
+    }
+  },
+  "protocol_id": "P4d.1_IMPLEMENTATION_PREFLIGHT",
+  "safe_smoke_metrics": {
+    "accepted_increment_count": 1,
+    "free_dof_residual_relative_hex": "0x1.73c6a7f064077p-52",
+    "maximum_tau_norm_hex": "0x1.1797a1c3b70fep-1",
+    "reaction_balance_relative_hex": "0x1.1d887995c78cep-57",
+    "snes_iterations": 1,
+    "snes_reason": 2
+  },
+  "schema_version": "CMAME-P4D1-GATES-1.0",
+  "terminal_status": "PASS_P4D1_PREFLIGHT_READY_FOR_FULL_IMPLEMENTATION",
+  "topology_hashes": {
+    "boundary_dof_order_sha256": "9910d1f0fb076084ef2dc7b7d9f141c1addc768fe909b2422e2136d8c96a1eba",
+    "cell_order_sha256": "651f464085d81c08a83b5c718683157d9f30e4f6eeacfcfd386051c432778a48",
+    "committed_state_sha256": "af990b0df4083997ca2f8896dc9dd965c381b47a1a5bfe17cc2752bf602c6157",
+    "connectivity_sha256": "df8e29ed397bd856e7558557efbd24466e6eb65ad507764389268b730dea558b",
+    "coordinates_sha256": "fb1df7e5784c85df32650a4e8314a68f94f39253e1e4bb5b4de6c817bad62453",
+    "material_packet_sha256": "a94a8a061d26fd88ea7f5c17f3386b7cb6faf546227663d88503f45258dd5ed1",
+    "quadrature_sha256": "10b695884cf466fd5c375533f3a47cd2a6041f03748b1633e0e8ac7132385a67"
+  }
+}

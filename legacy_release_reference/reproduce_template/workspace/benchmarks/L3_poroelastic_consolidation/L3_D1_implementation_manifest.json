@@ -1,0 +1,106 @@
+{
+  "abaqus_used": false,
+  "authoritative_serializer": {
+    "loading": "direct_read_only_module_load_without_package_facade",
+    "path": "benchmarks/L2_host_lifecycle/src/l2_state.py",
+    "second_serializer_created": false,
+    "sha256": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d"
+  },
+  "created_utc": "2026-07-22T08:51:30+00:00",
+  "design_version": "L3-D1.0a",
+  "directed_tests": {
+    "count": 11,
+    "failed": 0,
+    "passed": 11,
+    "processes": 1,
+    "threads": 1
+  },
+  "execution_authorized": false,
+  "formal_results_exist": false,
+  "host_version": "L3-HOST-D1.0",
+  "implementation_files": {
+    "run_l3_d1.py": {
+      "ast_parse": true,
+      "bytes": 4511,
+      "sha256": "42ae00085afd1690ba7180706277a843ca0c312d9c10444378150c36555694dc"
+    },
+    "src/__init__.py": {
+      "ast_parse": true,
+      "bytes": 55,
+      "sha256": "1d4b18966fa8469f0b9d66f4874ccbe2049f0637f17aab598256bbbd2525682a"
+    },
+    "src/l3_canonical.py": {
+      "ast_parse": true,
+      "bytes": 1487,
+      "sha256": "a3fde3c0a5e48b13ac6f2f669e384b8528efcdec0d444051805c8aeb6ac85d0d"
+    },
+    "src/l3_cases.py": {
+      "ast_parse": true,
+      "bytes": 17443,
+      "sha256": "150de3a42b7b3904e394b29965f4cffaff03c2ce1439b7d40c89e9a426d33c4a"
+    },
+    "src/l3_fv.py": {
+      "ast_parse": true,
+      "bytes": 6557,
+      "sha256": "5d1e2400eeb524edbff59902ace9569fd3566272ccf48972acc34bd56e213bf7"
+    },
+    "src/l3_lifecycle.py": {
+      "ast_parse": true,
+      "bytes": 9871,
+      "sha256": "78413d39bc95b0216a39f4437b51603fc61266bde10b21f12b47290a9048dede"
+    },
+    "src/l3_oracle.py": {
+      "ast_parse": true,
+      "bytes": 2859,
+      "sha256": "0a16d6495d158952189a31d5a0deec8ee11801cd27b84bbbe0904968baceff8e"
+    },
+    "src/l3_state.py": {
+      "ast_parse": true,
+      "bytes": 3561,
+      "sha256": "06dcfc5257bf4cd429e4ce069c76ac5d05296ab7b1810196c663ff6d43c40ef0"
+    },
+    "tests/test_l3_d1.py": {
+      "ast_parse": true,
+      "bytes": 5884,
+      "sha256": "356c02ac2efb2ab9e826c8ec1ce0236ce6d396bd8abfc1a8201615a2011f10b7"
+    }
+  },
+  "implementation_status": "IMPLEMENTED_UNIT_TESTED_PREFLIGHT_PASS_NOT_FORMALLY_EXECUTED",
+  "inputs": {
+    "L3_D0_acceptance_gates.md": "e9a0b1d1d961039437ef27bae797c4a7fb28b18e8d04aabc8b395a7e7746e983",
+    "L3_D0_benchmark_spec.md": "34d2779b80843c4e616806b8309af0a781dd000aebb74b5a7b2572d5f4e5ea9c",
+    "L3_D0_case_matrix.csv": "1af8152b2167930f7683dd09db75295bbee8e0150a917694baabaf18cc6ba815",
+    "L3_D0_data_contract.md": "3b03b5ca527c495b6f5d326c62a248905c6dc3728dd5f98e0d0aaab502d145a2",
+    "L3_D1_execution_freeze.json": "4db7b5f2c5f19a06de3dfeac5e53a43e262f4bb56bff92085d5a2dbbf678f4ff",
+    "L3_D1_implementation_plan.md": "745d251571b38e6f51652154c2f7d5170e14b47ea35e3dd0681eaf73a0512763",
+    "L3_D1_source_manifest.json": "7253888fba68e0cd7f1f42a41c8d8d53da78c57ad41690f17ac61d7d689150c6"
+  },
+  "manifest_self_hash_embedded": false,
+  "no_abaqus_execution": true,
+  "no_formal_case_execution": true,
+  "preflight": {
+    "all_passed": true,
+    "case_count": 7,
+    "cumulative_mass_defect_normalized": 9.880984919163893e-15,
+    "formal_evidence": false,
+    "maximum_step_mass_defect_normalized": 1.6891235530033578e-13,
+    "safe_pressure_l2_drift": 0.0,
+    "safe_settlement_drift": 0.0,
+    "spatial_pressure_finest_order": 2.00040087888327,
+    "spatial_settlement_finest_order": 2.000392029638694,
+    "temporal_pressure_finest_order": 1.0120157853757363,
+    "temporal_settlement_finest_order": 1.0017378588196653,
+    "unsafe_declared_mass_defect": 0.03514145077299766,
+    "unsafe_pressure_l2_drift": 0.059890262453956816,
+    "unsafe_settlement_drift": 0.010441150039577962
+  },
+  "production_model_used": false,
+  "python_standard_library_only": true,
+  "runner_double_lock": {
+    "cli": "--execute-authorized",
+    "environment": "L3_D1_EXECUTION_AUTHORIZED=YES",
+    "thread_environment": "L3_D1_THREADS=1",
+    "unauthorized_exit_code": 1,
+    "unauthorized_output_created": false
+  }
+}

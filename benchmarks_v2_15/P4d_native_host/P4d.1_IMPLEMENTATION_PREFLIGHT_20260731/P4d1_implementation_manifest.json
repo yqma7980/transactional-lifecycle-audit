@@ -1,0 +1,179 @@
+{
+  "ast_parse_all_pass": true,
+  "ast_results": [
+    {
+      "pass": true,
+      "path": "oracle/p4d_fraction_oracle.py"
+    },
+    {
+      "pass": true,
+      "path": "oracle/p4d_manufactured.py"
+    },
+    {
+      "pass": true,
+      "path": "run_p4d1_preflight.py"
+    },
+    {
+      "pass": true,
+      "path": "run_p4d1_stage.py"
+    },
+    {
+      "pass": true,
+      "path": "run_p4d1_topology_v2.py"
+    },
+    {
+      "pass": true,
+      "path": "src/p4d_bridge.py"
+    },
+    {
+      "pass": true,
+      "path": "src/p4d_canonical.py"
+    },
+    {
+      "pass": true,
+      "path": "src/p4d_environment.py"
+    },
+    {
+      "pass": true,
+      "path": "src/p4d_material.py"
+    },
+    {
+      "pass": true,
+      "path": "src/p4d_oracle_stage.py"
+    },
+    {
+      "pass": true,
+      "path": "src/p4d_reference_smoke.py"
+    },
+    {
+      "pass": true,
+      "path": "src/p4d_safe_smoke.py"
+    },
+    {
+      "pass": true,
+      "path": "src/p4d_topology_state.py"
+    },
+    {
+      "pass": true,
+      "path": "src/p4d_zero_case.py"
+    },
+    {
+      "pass": true,
+      "path": "tests/test_p4d1_preflight.py"
+    }
+  ],
+  "directed_test_count": 8,
+  "directed_tests_pass": true,
+  "files": [
+    {
+      "bytes": 1535,
+      "path": "oracle/p4d_fraction_oracle.py",
+      "sha256": "0c937ac8b276c913a95832c8384f0959cbcb3f8916c638498c12641e1f453904"
+    },
+    {
+      "bytes": 540,
+      "path": "oracle/p4d_manufactured.py",
+      "sha256": "e9aab2ee845d2052180cb8e1b5c828872e59c05dd3ebecd8eb498fa9e6340903"
+    },
+    {
+      "bytes": 2687,
+      "path": "P4d1_bridge_abi_contract.md",
+      "sha256": "44a5c59b176ad367dcc464f88f1ee04bc9acfca21e1aa14b69251ba8c70357c3"
+    },
+    {
+      "bytes": 1284,
+      "path": "P4d1_pre_execution_implementation_erratum.md",
+      "sha256": "e4127c742b18a528acc016fefd72948a87d959a9288799beac2eac7bf9b2dc6d"
+    },
+    {
+      "bytes": 3335,
+      "path": "P4d1_preflight_freeze.json",
+      "sha256": "1b2094f6868238453bc20d6b822bcfb0eb0c2990409619a23ff82d784a99ab13"
+    },
+    {
+      "bytes": 2957,
+      "path": "P4d1_preflight_protocol.md",
+      "sha256": "44ce91409df80859841cee1a902766072db728ccef1d7bb1597012900f06fa82"
+    },
+    {
+      "bytes": 3016,
+      "path": "run_p4d1_preflight.py",
+      "sha256": "f8a5352f98119af381e70545351a2e933fe8964d7ab1ee3aead1362a6ecb3025"
+    },
+    {
+      "bytes": 1716,
+      "path": "run_p4d1_stage.py",
+      "sha256": "aa5d2f19dfbb3adb9a190097d4b5779fe7e2f85bb03df7a9981238feee1ade1e"
+    },
+    {
+      "bytes": 1592,
+      "path": "run_p4d1_topology_v2.py",
+      "sha256": "a7109956d83e64bc15f19b2ab6f9d72e787a832ca37faaea30094ba8748f1311"
+    },
+    {
+      "bytes": 1663,
+      "path": "src/p4d_bridge.py",
+      "sha256": "d69a34547f9ed34ea9c1d4b870477a646992539589a1ddc20aa3e1b7574c5d6d"
+    },
+    {
+      "bytes": 1543,
+      "path": "src/p4d_canonical.py",
+      "sha256": "6d330e1f4c5ff82f5176b67fa3952e984cb718515f26ab2bc45da9a6d6b205a9"
+    },
+    {
+      "bytes": 1464,
+      "path": "src/p4d_environment.py",
+      "sha256": "056f4288c0030120b39b751e4f08de8d8bf49e89a5ae3a4ea89692370052550e"
+    },
+    {
+      "bytes": 2617,
+      "path": "src/p4d_material.py",
+      "sha256": "44b600ab24b64e44d50a6caa2a57ee42c539fb3f17d66cd515c06ab5b6dd8f72"
+    },
+    {
+      "bytes": 9586,
+      "path": "src/p4d_observer_bridge.c",
+      "sha256": "e21ca0077f4f6bc8e850d25886a81bf33e19d5e5f40fc709f3743e10117b9a75"
+    },
+    {
+      "bytes": 4045,
+      "path": "src/p4d_oracle_stage.py",
+      "sha256": "51f132f54114a9960ecf20d99f0ee07415271ed9125a27427b4ca94522ad9643"
+    },
+    {
+      "bytes": 3010,
+      "path": "src/p4d_reference_smoke.py",
+      "sha256": "5a63e98a3e7d646084ba39a7959268e8c35c3c337bb66787eb772206866ff7d5"
+    },
+    {
+      "bytes": 8668,
+      "path": "src/p4d_safe_smoke.py",
+      "sha256": "81b5a55ae158016c62c5b8ff8c1380e8bb1b5b1b65d711f24890b9c398b39b1d"
+    },
+    {
+      "bytes": 4272,
+      "path": "src/p4d_topology_state.py",
+      "sha256": "bf3652746929dc0f62759196b3fcb849d08bac2ae22bee523cb8874a6ab4f7be"
+    },
+    {
+      "bytes": 5471,
+      "path": "src/p4d_zero_case.py",
+      "sha256": "ed1856602bd62a0e9ca6aefe8b0e8a98a6a45f7200dbe0f83a341fbd64b8f002"
+    },
+    {
+      "bytes": 4582,
+      "path": "tests/test_p4d1_preflight.py",
+      "sha256": "d434b50a8431234933f87c1b5354d92f923c3372a900e08d592dddf5baf58c62"
+    }
+  ],
+  "image_reference": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+  "implementation_status": "PASS_P4D1_PREFLIGHT_READY_FOR_FULL_IMPLEMENTATION",
+  "manifest_self_hash_embedded": false,
+  "no_abaqus_execution": true,
+  "no_formal_case_execution": true,
+  "observer_binary_sha256": "b9f9cfeb0750bb77e87d063363d1e13407c3442237db8f95364d0362f002a291",
+  "observer_source_sha256": "e21ca0077f4f6bc8e850d25886a81bf33e19d5e5f40fc709f3743e10117b9a75",
+  "petsc_version": "3.24.0",
+  "raw_evidence_manifest_sha256": "a6c6b2e709c150bd85fd97d5c00daa9be01a53ed33da323c8813f5f82b2cea2c",
+  "schema_version": "CMAME-P4D1-IMPLEMENTATION-MANIFEST-1.0"
+}

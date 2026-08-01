@@ -27,11 +27,14 @@ CASES = {
     "FEH-LC-02",
     "FEH-LC-03",
     "FEH-LC-04",
+
     "FEH-NC-01",
     "FEH-NC-02",
     "FEH-NC-03",
 }
 
+
+INVALID_A4 = "INVALID_A4_PERSISTENT_STATE_INCOMPATIBLE"
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -44,6 +47,67 @@ def write_csv(path: Path, rows: list[dict]) -> None:
         writer.writeheader()
         writer.writerows(rows)
 
+
+def classify_replay_comparison(
+    variant: str,
+    legacy_expected_classification: str,
+    direct_pass: bool,
+    perturbed_pass: bool,
+    comparison: dict,
+) -> dict:
+    """Return separate full-TLA and seeded-sensitivity verdicts."""
+    finite = bool(comparison["all_values_finite"])
+    persistent_compatible = bool(
+        comparison["persistent_fingerprint_equal"]
+        and comparison["observed_persistent_fingerprint_equal"]
+    )
+    drift = max(
+        float(comparison["residual_relative_drift"]),
+        float(comparison["tangent_relative_drift"]),
+    )
+    operator_drift_detected = finite and drift > 1e-8
+
+    if variant == "safe_transactional":
+        parity = (
+            comparison["residual_relative_drift"] <= 1e-12
+            and comparison["tangent_relative_drift"] <= 1e-12
+            and comparison["displacement_relative_error"] <= 1e-11
+            and comparison["reaction_relative_error"] <= 1e-11
+            and comparison["stress_relative_error"] <= 1e-11
+            and comparison["kappa_relative_error"] <= 1e-11
+        )
+        full_tla_pass = direct_pass and perturbed_pass and parity and persistent_compatible
+        full_tla_verdict = (
+            legacy_expected_classification if full_tla_pass else "FAIL_ACCEPTANCE_GATES"
+        )
+        negative_control_gate_pass = None
+        formal_case_contract_pass = full_tla_pass
+    else:
+        negative_control_gate_pass = (
+            direct_pass and perturbed_pass and finite and operator_drift_detected
+        )
+        if persistent_compatible:
+            full_tla_pass = negative_control_gate_pass
+            full_tla_verdict = (
+                legacy_expected_classification
+                if full_tla_pass
+                else "FAIL_ACCEPTANCE_GATES"
+            )
+        else:
+            full_tla_pass = False
+            full_tla_verdict = INVALID_A4
+        formal_case_contract_pass = negative_control_gate_pass
+
+    return {
+        "a4_persistent_compatibility_satisfied": persistent_compatible,
+        "expected_full_tla_verdict": legacy_expected_classification if persistent_compatible else INVALID_A4,
+        "full_tla_verdict": full_tla_verdict,
+        "full_tla_pass_flag": full_tla_pass,
+        "operator_replay_drift_detected": operator_drift_detected,
+        "operator_sensitivity_classification": legacy_expected_classification,
+        "negative_control_gate_pass": negative_control_gate_pass,
+        "formal_case_contract_pass": formal_case_contract_pass,
+    }
 
 def execute(case_id: str) -> tuple[dict, list[dict], list[dict]]:
     if case_id == "FEH-REF-01":
@@ -89,30 +153,22 @@ def execute(case_id: str) -> tuple[dict, list[dict], list[dict]]:
     comparison = compare_histories(direct, perturbed)
     audit_comparison, audit_ledger = audit_replay_pair(variant, strength)
     comparison.update(audit_comparison)
-    if variant == "safe_transactional":
-        parity = (
-            comparison["residual_relative_drift"] <= 1e-12
-            and comparison["tangent_relative_drift"] <= 1e-12
-            and comparison["displacement_relative_error"] <= 1e-11
-            and comparison["reaction_relative_error"] <= 1e-11
-            and comparison["stress_relative_error"] <= 1e-11
-            and comparison["kappa_relative_error"] <= 1e-11
-        )
-        passed = direct.pass_flag and perturbed.pass_flag and parity
-    else:
-        drift = max(comparison["residual_relative_drift"], comparison["tangent_relative_drift"])
-        passed = direct.pass_flag and perturbed.pass_flag and comparison["all_values_finite"] and drift > 1e-8
+    adjudication = classify_replay_comparison(
+        variant, expected, direct.pass_flag, perturbed.pass_flag, comparison
+    )
     payload = {
         "case_id": case_id,
         "history": history,
         "variant": variant,
         "strength": strength,
-        "expected_classification": expected,
-        "observed_classification": expected if passed else "FAIL_ACCEPTANCE_GATES",
-        "pass_flag": passed,
+        "legacy_expected_classification": expected,
+        "expected_classification": adjudication["expected_full_tla_verdict"],
+        "observed_classification": adjudication["full_tla_verdict"],
+        "pass_flag": adjudication["full_tla_pass_flag"],
         "direct": case_payload(direct),
         "perturbed": case_payload(perturbed),
         "comparison": comparison,
+        **adjudication,
     }
     ledger = []
     for row in direct.ledger.rows:
@@ -176,8 +232,11 @@ def main() -> int:
     (output / "case_manifest.json").write_text(
         json.dumps(manifest, indent=2, sort_keys=True), encoding="utf-8"
     )
-    print(json.dumps({"case_id": args.case_id, "run_id": args.run_id, "pass_flag": payload["pass_flag"]}))
-    return 0 if payload["pass_flag"] else 2
+    contract_pass = payload.get("formal_case_contract_pass", payload["pass_flag"])
+    print(
+        json.dumps({"case_id": args.case_id, "run_id": args.run_id, "formal_case_contract_pass": contract_pass})
+    )
+    return 0 if contract_pass else 2
 
 
 if __name__ == "__main__":

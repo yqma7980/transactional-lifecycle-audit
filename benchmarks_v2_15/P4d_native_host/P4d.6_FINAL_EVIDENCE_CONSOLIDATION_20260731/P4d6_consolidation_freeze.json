@@ -1,0 +1,115 @@
+{
+  "abaqus_used": false,
+  "adjudication_rules": [
+    "Preserve raw/infrastructure failures",
+    "Negative-control detection is not lifecycle safety",
+    "Host-native and author-driver events remain distinct",
+    "Exploratory diagnostics are not formal evidence",
+    "Unsupported native line search prevents a full PASS"
+  ],
+  "case_design_count": 9,
+  "consolidation_only": true,
+  "github_zenodo_doi_update_authorized": false,
+  "manuscript_or_claim_update_authorized": false,
+  "new_fe_execution_authorized": false,
+  "new_fe_execution_performed": false,
+  "planned_outputs": [
+    "P4d6_consolidation_freeze.json",
+    "P4d6_case_adjudication.csv",
+    "P4d6_run_evidence_registry.csv",
+    "P4d6_contract_trace.csv",
+    "P4d6_final_summary.json",
+    "P4d6_final_report.md",
+    "P4d6_source_manifest.json",
+    "P4d6_final_QA.json"
+  ],
+  "production_model_used": false,
+  "protected_tree_before": {
+    "aggregate_sha256": "2a508b8a766f98fc3710c02ffa9d05cf959d2a76e4bd8dde5b93e959c7a91ead",
+    "file_count": 369
+  },
+  "schema_version": "CMAME-P4D6-CONSOLIDATION-FREEZE-1.0",
+  "selected_input_hashes": [
+    {
+      "bytes": 3776,
+      "path": "P4d_case_matrix.csv",
+      "sha256": "2aeb7437e765cde58a596356c95721db0e0a7ec2b681db5d39dec3081f1424d5"
+    },
+    {
+      "bytes": 8785,
+      "path": "P4d_execution_freeze.json",
+      "sha256": "0af67498342df665bd03508d9a45d430644769d34981b32b520b16de66f13d7b"
+    },
+    {
+      "bytes": 5303,
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_formal_stop_summary.json",
+      "sha256": "df520423b04e189da13923aa3ef1a0387fa1e0c44720d5bb0482d167c683c73e"
+    },
+    {
+      "bytes": 2848,
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_duplicate_run_comparison.json",
+      "sha256": "00f469a9eca36016d75c35b03fb03bc0a2625cd2120a332bffcca1223989a5dd"
+    },
+    {
+      "bytes": 11450,
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_formal_raw_manifest.json",
+      "sha256": "384b7b4e5a8e1244672c5d076f46a589dae3995a91ec1d10ff0c7d13e0ecb22b"
+    },
+    {
+      "bytes": 817,
+      "path": "P4d.3_NATIVE_LINESEARCH_POSTMORTEM_20260731/P4d3_failure_adjudication.json",
+      "sha256": "84f57900ce5ed89e30889c83a9fcc9cb71a2d87f06d2a6de1ca0e15876474cc2"
+    },
+    {
+      "bytes": 6041,
+      "path": "P4d.3_NATIVE_LINESEARCH_POSTMORTEM_20260731/P4d3_event_pair_audit.csv",
+      "sha256": "773a9e23d2ff5c59bdfa3d6ce72e5d8de102e06d1d59e6d4d37274db095bd120"
+    },
+    {
+      "bytes": 2619,
+      "path": "P4d.4_EXPLORATORY_DIAGNOSTIC_EXECUTION_20260731/results/P4d4_exploratory_20260731/final/p4d4_exploratory_summary.json",
+      "sha256": "fc0993a29c1b605e548fdbdb3abb159c92ae0e11b38b6e2d0a4a3b45d8aeacd2"
+    },
+    {
+      "bytes": 201,
+      "path": "P4d.4_EXPLORATORY_DIAGNOSTIC_EXECUTION_20260731/results/P4d4_exploratory_20260731/final/p4d4_heldout_adjudication.json",
+      "sha256": "5e69ab53e838905e0f40e8e8466c02453b25ed1b946d4016f4aab0a3c24d68a3"
+    },
+    {
+      "bytes": 4632,
+      "path": "P4d.4_EXPLORATORY_DIAGNOSTIC_EXECUTION_20260731/results/P4d4_exploratory_20260731/final/p4d4_exploratory_raw_manifest.json",
+      "sha256": "694c3dfad0df42c04d0d097591a7ec6bad10b76dfb04b66a05dc9ba2e92888e0"
+    },
+    {
+      "bytes": 5615,
+      "path": "P4d.5_IMPLEMENTATION_PREFLIGHT_20260731/results/P4d5_branch_resumption_20260731/final/p4d5_formal_branch_summary.json",
+      "sha256": "38cb47ef57e79eea58975bf118cc667401ba893a7f2f4498fcbb51b8148bda72"
+    },
+    {
+      "bytes": 7617,
+      "path": "P4d.5_IMPLEMENTATION_PREFLIGHT_20260731/results/P4d5_branch_resumption_20260731/final/p4d5_duplicate_run_comparison.json",
+      "sha256": "ea57603e79d6bb41539b36dfe27009df5f8e69e41f4d0a618b1de16089743bef"
+    },
+    {
+      "bytes": 15959,
+      "path": "P4d.5_IMPLEMENTATION_PREFLIGHT_20260731/results/P4d5_branch_resumption_20260731/final/p4d5_formal_raw_manifest.json",
+      "sha256": "44276cc4d7517fff59228d4e94361f3fa311799b18287ee03d3dcb76aca70e2d"
+    },
+    {
+      "bytes": 3375,
+      "path": "P4d.5b_OUTPUT_SCHEMA_ERRATUM_20260731/results/P4d5b_output_schema_20260731/final/p4d5b_formal_summary.json",
+      "sha256": "55dc1e86b51ec63f27cbd7bda0a165f48e70bc3e5045afa2a3d0e817a2c9bb42"
+    },
+    {
+      "bytes": 1346,
+      "path": "P4d.5b_OUTPUT_SCHEMA_ERRATUM_20260731/results/P4d5b_output_schema_20260731/final/p4d5b_duplicate_run_comparison.json",
+      "sha256": "3b2d99c1209c2caac891c985043b3fd9adc1d4889780684f22e09ca8c3b87bef"
+    },
+    {
+      "bytes": 4630,
+      "path": "P4d.5b_OUTPUT_SCHEMA_ERRATUM_20260731/results/P4d5b_output_schema_20260731/final/p4d5b_formal_raw_manifest.json",
+      "sha256": "390caceb29f4402a81ee7365dc95ee408608fba05342e1321272ace1f56c014f"
+    }
+  ],
+  "task": "P4d.6_FINAL_EVIDENCE_CONSOLIDATION"
+}

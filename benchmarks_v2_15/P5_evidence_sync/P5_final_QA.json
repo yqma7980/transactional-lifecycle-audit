@@ -1,0 +1,18 @@
+{
+  "F01_F02_metric_source_row_count": 30,
+  "F01_status": "NOT_SUPPORTED_DISTINCTIVE_REGION_EMPTY",
+  "F02_status": "NOT_SUPPORTED_DISTINCTIVE_REGION_EMPTY",
+  "abaqus_execution_performed": false,
+  "actual_process_count": 82,
+  "all_strength_runs_finite": true,
+  "corrected_summary_status": "NOT_SUPPORTED_FULL_P5_MATRIX",
+  "doi_modified": false,
+  "formal_case_execution_performed": false,
+  "formal_raw_aggregate_sha256": "322f4425a390acc43bbc735076c2d10496f02861daa197361e99b6d7fa8385fd",
+  "formal_raw_file_count": 662,
+  "manuscript_overwritten": false,
+  "protected_hash_gate": "PASS",
+  "public_repository_modified": false,
+  "status": "PASS_STATIC_EVIDENCE_SYNC_QA",
+  "strength_sweep_row_count": 60
+}

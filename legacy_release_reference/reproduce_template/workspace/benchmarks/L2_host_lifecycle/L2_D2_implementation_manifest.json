@@ -1,0 +1,139 @@
+{
+  "schema_version": "L2-D2-IMPLEMENTATION-MANIFEST-1.0",
+  "design_version": "L2-D2.0a",
+  "host_version": "L2-HOST-D2.0",
+  "implementation_status": "IMPLEMENTED_NOT_EXECUTED",
+  "execution_authorized": false,
+  "abaqus_used": false,
+  "results_exist": false,
+  "manifest_self_hash_embedded": false,
+  "qa_markdown_hash_embedded": false,
+  "qa_markdown_hash_note": "The QA Markdown hash is reported externally after this manifest is finalized to avoid a circular dependency.",
+  "frozen_dependencies": {
+    "L2_D2_execution_freeze.json": {
+      "sha256": "aeb7d4060b72e9f92fb039d460b08c119a67e406a311ccf431b4adcf4cb42d8f",
+      "size_bytes": 8813
+    },
+    "L2_D2_callback_order_case_matrix.csv": {
+      "sha256": "62cdbb90454cea75f9ad6af9ede1d0b444cbdf28ed83abdf51a3658296c77ca5",
+      "size_bytes": 777
+    },
+    "L2_D2_implementation_plan.md": {
+      "sha256": "12b02c63bdb1305978843e530341d937f80c93855dea0b44be7ac22c9ce91140",
+      "size_bytes": 9181
+    },
+    "L2_D2_source_manifest.json": {
+      "sha256": "6bee7c645f0306b2e2387e68958e63e3a058c31f93a0c648c1182a113fa82a67",
+      "size_bytes": 5637
+    },
+    "L2_D0_case_matrix.csv": {
+      "sha256": "be8e8e76f48dbc1cc2e55534a5cdb08745d1fa010a7eb291b2f7379eaf31fe69",
+      "size_bytes": 2759
+    },
+    "L2_D1_execution_freeze.json": {
+      "sha256": "4096753c610be493108baa612d5965d35a2ac6c6c97cae18db20e6fd84964a88",
+      "size_bytes": 3344
+    },
+    "src/l2_state.py": {
+      "sha256": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d",
+      "size_bytes": 4486
+    },
+    "src/l2_model.py": {
+      "sha256": "1a9daac2a8b75534dd55193bce3fead0004197765d3024e13d617e9d833ea8ff",
+      "size_bytes": 3921
+    },
+    "src/l2_variants.py": {
+      "sha256": "74fd1679408c9fa39825deaf8fc140263a5c543174f57ee51a3757860b22a96c",
+      "size_bytes": 6596
+    },
+    "src/l2_host.py": {
+      "sha256": "a2a7044592da3be507279552f0dc19a75c2de00b7cdaee0e3bea4a5e3868fd2b",
+      "size_bytes": 15426
+    },
+    "src/l2_cases.py": {
+      "sha256": "f12d0944bb8f96c100715fce6b640345c1826c9db8674fb79cc032ea7cba6301",
+      "size_bytes": 12197
+    },
+    "oracle/l2_fraction_oracle.py": {
+      "sha256": "ef57905f0d90b1bc7a0da81de51e529cb2e1d64a8290f64d91ee27ffeb480eff",
+      "size_bytes": 978
+    }
+  },
+  "implementation_files": {
+    "src/l2_d2_callback_order.py": {
+      "sha256": "c6f2e6a758b3ff24bcfe8e94a2bc7bf539f1a359dd1766acf19c2c98b45c6491",
+      "size_bytes": 33887,
+      "ast_parse": "PASS"
+    },
+    "oracle/l2_d2_fraction_oracle.py": {
+      "sha256": "8eb6f5f20ff1d0ae2d55f8fdda4153db62560fa14934088159340046cbdf31fa",
+      "size_bytes": 4334,
+      "ast_parse": "PASS"
+    },
+    "tests/test_l2_d2_callback_order.py": {
+      "sha256": "f178069da4660faa4ae94f04c68847a5c1907f483820ee974d1604edc30cab9a",
+      "size_bytes": 9062,
+      "ast_parse": "PASS"
+    },
+    "run_l2_d2.py": {
+      "sha256": "9d002eba5774ffeecd45133966c92ad35d349e304fac8cc6e7459c2ba1460fd2",
+      "size_bytes": 5724,
+      "ast_parse": "PASS"
+    }
+  },
+  "implementation_contract": {
+    "authorized_cases": [
+      "L2-CO-01",
+      "L2-CO-02"
+    ],
+    "direct_trial_evaluations": 1,
+    "extra_trial_evaluations": 3,
+    "residual_and_tangent_reuse_same_element_result": true,
+    "direct_and_extra_use_independent_variant_instances": true,
+    "committed_state_fingerprint": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+    "declared_and_observed_fingerprints_are_separate": true,
+    "accepted_callbacks_present": false
+  },
+  "fraction_oracle_static_recheck": {
+    "safe_delta_residual": "0/1",
+    "safe_delta_tangent": "0/1",
+    "unsafe_positive_sigma": "13/11",
+    "unsafe_negative_delta_gamma": "4/121",
+    "unsafe_negative_sigma": "-183/121",
+    "unsafe_hidden_epsilon_p": "-9/605",
+    "unsafe_hidden_kappa": "31/605",
+    "unsafe_replay_sigma": "4141/2662",
+    "unsafe_replay_candidate_epsilon_p": "-281/26620",
+    "unsafe_replay_candidate_kappa": "1479/26620",
+    "unsafe_delta_residual": "1405/1331",
+    "unsafe_delta_tangent": "-1000/11",
+    "status": "PASS_STATIC_INDEPENDENT_FRACTION_RECHECK"
+  },
+  "runner_double_authorization_lock": {
+    "main_guard_present": true,
+    "required_cli_flag": "--execute-authorized",
+    "required_environment_variable": "L2_D2_EXECUTION_AUTHORIZED",
+    "required_environment_value": "YES",
+    "authorization_checked_before_case_execution": true,
+    "authorization_checked_before_output_directory_creation": true,
+    "one_case_per_process": true,
+    "one_run_id_per_process": true
+  },
+  "future_output_contract": [
+    "callback_event_log.csv",
+    "replay_comparison.csv",
+    "case_result.json",
+    "case_manifest.json"
+  ],
+  "static_qa": {
+    "json_parse": "PASS",
+    "csv_parse": "PASS",
+    "protected_hash_recheck": "PASS",
+    "no_case_execution": true,
+    "no_test_execution": true,
+    "no_abaqus_execution": true,
+    "no_results_created": true,
+    "no_pycache_created": true
+  },
+  "claim_boundary": "This manifest records a static implementation only. It is not an L2-D2 execution result and creates no OBSERVED-L2-D2, Abaqus, production, performance, conservation, or coupled-physics evidence."
+}

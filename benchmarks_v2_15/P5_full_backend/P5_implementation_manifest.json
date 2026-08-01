@@ -1,0 +1,190 @@
+{
+  "ast_parse_pass": true,
+  "container_import_only_pass": true,
+  "design_version": "CMAME-P5.0",
+  "formal_case_count": 7,
+  "formal_process_count_executed": 0,
+  "formal_results_exist": false,
+  "host_version": "P4D-DOLFINX-PETSC-HOST-1.0+P5-AUDIT-ADAPTER-1.0",
+  "implementation_files": [
+    {
+      "bytes": 1195,
+      "path": "P5_backend_output_contract.md",
+      "sha256": "5e102b03e87ac2d50c78571e5e078a674c1e087d1dbe2f8be02bade953a6b3da"
+    },
+    {
+      "bytes": 806,
+      "path": "P5_full_backend_freeze.json",
+      "sha256": "ae9d6791d15645e75c8cd3661512768ed82b4357eb0844d3e4005d7e50bf6322"
+    },
+    {
+      "bytes": 1396,
+      "path": "P5_full_backend_protocol.md",
+      "sha256": "30f079dc3452b71ed69b686356f10092dac680315505d147d46cb17c6687d55f"
+    },
+    {
+      "bytes": 720,
+      "path": "P5_gate_results.json",
+      "sha256": "607a72ba314b55f57d59df54262098e13d5e3cb092dcef16d386f77b3dced8c8"
+    },
+    {
+      "bytes": 1613,
+      "path": "P5_implementation_result_report.md",
+      "sha256": "d488b5fefbffc891a07e6bfde70bd2e572e1f38ccba4c11c5bdf22af73a664ba"
+    },
+    {
+      "bytes": 2087,
+      "path": "P5_static_and_unit_QA.md",
+      "sha256": "33d7c14d5918095b82e0e329411274176d5130b77131db29363f3f5aea916a44"
+    },
+    {
+      "bytes": 3845,
+      "path": "run_p5.py",
+      "sha256": "ed49875df4f20ff5251c97eabb9634756aba2f004e4856981057ff66f448eebe"
+    },
+    {
+      "bytes": 5182,
+      "path": "run_p5_matrix.py",
+      "sha256": "8219a5c8593fba95d177ff877099458abdcf665be6a954f4f2f2742f6944d864"
+    },
+    {
+      "bytes": 5312,
+      "path": "src/p5_arithmetic.py",
+      "sha256": "4611795d5fd4cfc0eea881462ae59394630a29989802a641a120bf851c18417b"
+    },
+    {
+      "bytes": 8099,
+      "path": "src/p5_backend_contracts.py",
+      "sha256": "eced292a8d638e80f58981c62f0dc432d76395d33ea4c9157a0465bbb1705886"
+    },
+    {
+      "bytes": 14035,
+      "path": "src/p5_case_executor.py",
+      "sha256": "da7b7f76d38d7df4119df4a478417e2b6c5e82b64403d86ecaf7b26226278cbd"
+    },
+    {
+      "bytes": 11351,
+      "path": "src/p5_fe_adapter.py",
+      "sha256": "5529dea1a9175eb0349e40f8f2b20e2c8a327b2fa5f4c3d366982ee517358ed0"
+    },
+    {
+      "bytes": 9416,
+      "path": "src/p5_fe_history.py",
+      "sha256": "a16ecac3b02a45d41697f32c6c0a8ac4e1ebb4cf6447afd520cda738226087a6"
+    },
+    {
+      "bytes": 11896,
+      "path": "src/p5_scheduler.py",
+      "sha256": "0d19a3761638a361f9d374ab69619ec255affcdc11e5da60ed1cf2a02bffa3dc"
+    },
+    {
+      "bytes": 5254,
+      "path": "tests/test_p5_backend.py",
+      "sha256": "d644bd3f5a3966ed408802cf94c1e84314b7c4f78da1947d576ce9821abbb838"
+    }
+  ],
+  "implementation_status": "IMPLEMENTED_NOT_EXECUTED",
+  "implementation_version": "CMAME-P5.2-FE-BACKEND",
+  "manifest_self_hash_embedded": false,
+  "no_abaqus_execution": true,
+  "no_case_execution": true,
+  "no_fe_solve_execution": true,
+  "no_production_model_execution": true,
+  "pinned_image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+  "planned_formal_process_count": 90,
+  "protected_inputs": [
+    {
+      "bytes": 7820,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_source_manifest.json",
+      "sha256": "6e64554f9547b71ca2e407acc6a8e14153abc8683e6688f3e3604e6d0188d573"
+    },
+    {
+      "bytes": 4115,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_execution_freeze.json",
+      "sha256": "02a457197136fcc71ba23a2c9e854b6d091ee2b3db3ec738c0954f8358382b5d"
+    },
+    {
+      "bytes": 2134,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_case_matrix.csv",
+      "sha256": "42ad81bcf6a9342a874af4fac387f4040486a59d2a6398f0cce1f810ea63b6b7"
+    },
+    {
+      "bytes": 1705,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_field_and_metric_scale_registry.csv",
+      "sha256": "af262144a503698789f50ac9d6a8bf8ae69e5d1ec9794741ddb7a53adb0a268c"
+    },
+    {
+      "bytes": 3862,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_null_envelope_contract.json",
+      "sha256": "6fe1185cf6b5786c092a5b7945363313c88d9a13b74e412fcbe88a37c6ee5b0a"
+    },
+    {
+      "bytes": 4702,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_scaled_threshold_selection_rule.md",
+      "sha256": "fbfb9ca21e408b35681b413ff844b6ef958074ccc1db5c64bb6a56bbbc3847eb"
+    },
+    {
+      "bytes": 14647,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/P5_source_manifest.json",
+      "sha256": "7b91a8580250f162fb06b44611f7e132f72b4bcecedea66e980fd290e3e0efeb"
+    },
+    {
+      "bytes": 7459,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/P5_implementation_manifest.json",
+      "sha256": "1a97292f5222e7c7205d4c361991d5f36b2ffda9e22fdb811ef1d9a9603edb80"
+    },
+    {
+      "bytes": 4192,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/src/p5_null_envelope.py",
+      "sha256": "aa87b38a4a362b96a00d80348a015f438182d2532c6efffe9dacb670890ef11a"
+    },
+    {
+      "bytes": 2875,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/src/p5_selector.py",
+      "sha256": "477cfdd46a1500aadef3712e732d411d97108d10a7820eaab6a90ede6481fad6"
+    },
+    {
+      "bytes": 7172,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/P4d2_source_manifest.json",
+      "sha256": "6aa3ab71905fe8b5a54239bcd64de6b92a744dfed08c54336fa072c4d5c29541"
+    },
+    {
+      "bytes": 1543,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_canonical.py",
+      "sha256": "6d330e1f4c5ff82f5176b67fa3952e984cb718515f26ab2bc45da9a6d6b205a9"
+    },
+    {
+      "bytes": 3026,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_config.py",
+      "sha256": "58a36323256d24fbb49507a690218db99361d2d9ad79792e3b8ffc377e338300"
+    },
+    {
+      "bytes": 1474,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_environment.py",
+      "sha256": "b7283270a0059ba0d05ed1d3ff50b17e7a92fefa9e7f88ccdc765a24ec726f29"
+    },
+    {
+      "bytes": 19559,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_host.py",
+      "sha256": "74acae0133af60412d817dea41c50aa782b3028f3f324258cff4d486a797f38d"
+    },
+    {
+      "bytes": 2617,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_material.py",
+      "sha256": "44b600ab24b64e44d50a6caa2a57ee42c539fb3f17d66cd515c06ab5b6dd8f72"
+    },
+    {
+      "bytes": 4884,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_mesh.py",
+      "sha256": "3d97cbff60a517eed174cd580a8c969b681e4d386e8e239c21e3d9fa95d0517a"
+    },
+    {
+      "bytes": 4257,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_state.py",
+      "sha256": "2fb8cf4a94efd8156a25944e046fb24cd781aee180c87ea045ddd6f15957c158"
+    }
+  ],
+  "schema_version": "CMAME-P5-FULL-BACKEND-IMPLEMENTATION-MANIFEST-1.0",
+  "unit_test_count": 9,
+  "unit_tests_passed": 9
+}

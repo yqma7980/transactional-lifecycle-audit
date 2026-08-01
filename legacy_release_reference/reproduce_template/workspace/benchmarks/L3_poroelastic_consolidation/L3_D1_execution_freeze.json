@@ -1,0 +1,74 @@
+{
+  "abaqus_used": false,
+  "canonical_serializer": "benchmarks.L2_host_lifecycle.src.l2_state.canonical_json/canonical_hash",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "design_version": "L3-D1.0a",
+  "excluded_claims": [
+    "abaqus_validation",
+    "two_phase_validation",
+    "fault_zone_application",
+    "thread_safety",
+    "performance",
+    "production_readiness"
+  ],
+  "execution_authorized": false,
+  "formal_cases": [
+    "L3-REF-01",
+    "L3-CV-S-01",
+    "L3-CV-T-01",
+    "L3-MB-01",
+    "L3-ST-01",
+    "L3-RT-01",
+    "L3-RT-02"
+  ],
+  "formal_repetitions_per_case": 2,
+  "host_version_planned": "L3-HOST-D1.0",
+  "model": {
+    "H": 1.0,
+    "K_d": 4.0,
+    "S": 0.25,
+    "alpha": 1.0,
+    "diffusivity": 1.0,
+    "mobility": 0.5,
+    "p0": 0.5,
+    "q": 1.0,
+    "storage_coefficient": 0.5
+  },
+  "oracle": {
+    "maximum_terms": 1000,
+    "reference_times": [
+      0.05,
+      0.2,
+      0.5
+    ],
+    "tail_envelope": 1e-15,
+    "type": "independent_fourier_series"
+  },
+  "processes_per_repetition": 1,
+  "python_standard_library_only": true,
+  "results_exist": false,
+  "retry_schedule": {
+    "accepted_replay_dt": 0.01,
+    "committed_time": 0.0,
+    "declared_committed_state_identical": true,
+    "rejected_trial_dt": 0.02,
+    "safe_action": "discard_trial_candidate",
+    "unsafe_seed": "persist_rejected_trial_pressure_as_previous_state"
+  },
+  "revision_reason": "avoid_case_insensitive_JSON_key_collision_without_changing_physics",
+  "threads_per_process": 1,
+  "tolerances": {
+    "finite_absolute_limit": 1e+100,
+    "mass_defect_maximum": 5e-12,
+    "reference_pressure_l2_relative": 0.005,
+    "reference_pressure_linf": 0.01,
+    "reference_settlement_absolute": 0.0002,
+    "safe_same_track": "exact_zero_and_exact_fingerprint",
+    "spatial_order_minimum": 1.7,
+    "stability_slack": 1e-13,
+    "temporal_order_minimum": 0.8,
+    "unsafe_declared_mass_defect_floor": 1e-08,
+    "unsafe_pressure_l2_drift_floor": 1e-08,
+    "unsafe_settlement_drift_floor": 1e-10
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": "L6-D1-FREEZE-1.0",
+  "design_version": "L6-D1.0",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "execution_authorized": false,
+  "results_exist": false,
+  "abaqus_used": false,
+  "comsol_used": false,
+  "production_model_used": false,
+  "external_host": {
+    "package": "scipy",
+    "version": "1.17.1",
+    "api": "scipy.optimize.least_squares",
+    "method": "trf",
+    "least_squares_py_sha256": "b6becbe3b248ea5edcbc40434f101f5d46e5304b66d3c97331bced459dc38765",
+    "trf_py_sha256": "a174a6e79b67067823804666c9e97413dd0d432c7ac7cd148c0c9ee5cfa9732b",
+    "common_py_sha256": "6bdec514d2b0e8172cd438421218ae3977f144ad89867346157ea885408f489e",
+    "util_py_sha256": "3a3837ae4094263e936394bae513b3a91387b12fa9cb7bae91f43117b5bc3293"
+  },
+  "environment": {
+    "python_version": "3.12.10",
+    "python_executable_sha256": "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a",
+    "numpy_version": "2.4.3",
+    "omp_num_threads": 1,
+    "mkl_num_threads": 1,
+    "openblas_num_threads": 1,
+    "l6_threads": 1
+  },
+  "model": {
+    "x0": 1.0,
+    "committed_history": 0.0,
+    "committed_version": 0,
+    "residual": "x^3-2*x+2+beta*h_use",
+    "jacobian": "3*x^2-2",
+    "safe_beta": 0.0,
+    "unsafe_beta": 0.05,
+    "unsafe_update": "persistent_history_after_residual=x_trial",
+    "oracle_x": 0.816496580927726,
+    "oracle_definition": "sqrt(2/3)"
+  },
+  "host_options": {
+    "method": "trf",
+    "tr_solver": "exact",
+    "ftol": 1e-12,
+    "xtol": 1e-12,
+    "gtol": 1e-12,
+    "max_nfev": 100,
+    "x_scale": 1.0,
+    "loss": "linear",
+    "finite_difference_jacobian": "2-point",
+    "finite_difference_diff_step": 1e-6
+  },
+  "tolerances": {
+    "safe_oracle_x_absolute": 1e-6,
+    "callback_order_x_absolute": 1e-6,
+    "callback_order_cost_absolute": 1e-8,
+    "unsafe_drift_floor": 1e-8,
+    "finite_absolute_limit": 1e100
+  },
+  "formal_protocol": {
+    "case_count": 5,
+    "formal_repetitions_per_case": 2,
+    "processes_per_repetition": 1,
+    "threads_per_process": 1,
+    "stop_on_first_prerequisite_failure": true,
+    "case_order": ["L6-EH-RT-01", "L6-EH-OP-01", "L6-EH-CO-01", "L6-EH-RT-02", "L6-EH-TV-01"]
+  },
+  "canonical_fingerprint_dependency": {
+    "path": "benchmarks/L2_host_lifecycle/src/l2_state.py",
+    "sha256": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d",
+    "functions": ["canonical_json", "canonical_hash"]
+  },
+  "capability_probe_is_formal_evidence": false
+}

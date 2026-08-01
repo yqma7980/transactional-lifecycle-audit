@@ -1,0 +1,78 @@
+{
+  "design_version": "L1-D1.0",
+  "execution_scope": "L1-E1_ONLY_AFTER_MP_PASS",
+  "run_id": "L1-E1-D1.0-REPLAY",
+  "single_threaded": true,
+  "e1_authorized": true,
+  "mp_prerequisite": {
+    "status": "PASS",
+    "outcomes_passed": 25,
+    "outcomes_total": 25,
+    "duplicate_deterministic_artifacts_match": true
+  },
+  "element": {
+    "area": "1/1",
+    "length": "1/1",
+    "u1": "0/1",
+    "operator_version": "L1-E1-1.0"
+  },
+  "reference_packets": {
+    "elastic": {
+      "u": "1/200",
+      "force": "1/2",
+      "residual": "0/1",
+      "tangent": "100/1"
+    },
+    "plastic_equilibrium": {
+      "u": "21/1000",
+      "force": "11/10",
+      "residual": "0/1",
+      "tangent": "100/11"
+    },
+    "virgin_plastic_operator": {
+      "u": "3/100",
+      "force": "13/11",
+      "residual": "0/1",
+      "tangent": "100/11"
+    }
+  },
+  "common_replay": {
+    "u": "1/200",
+    "force": "1/2"
+  },
+  "discarded_force": "0/1",
+  "terminal_seed_u": "3/100",
+  "checkpoint_accept_packet": {
+    "u": "3/100",
+    "force": "13/11"
+  },
+  "checkpoint_replay_packet": {
+    "u": "1/200",
+    "force": "1/2"
+  },
+  "call_order_history_1": [
+    "3/100",
+    "-3/100"
+  ],
+  "call_order_history_2": [
+    "-3/100",
+    "3/100"
+  ],
+  "pre_execution_seed_erratum": {
+    "case_id": "E1-LC-02",
+    "status": "CORRECTED_BEFORE_FORMAL_EXECUTION",
+    "preflight_is_formal_result": false,
+    "original_histories": [
+      ["1/50", "3/100"],
+      ["3/100", "1/50"]
+    ],
+    "original_observed_delta_residual": "0x0.0p+0",
+    "corrected_histories": [
+      ["3/100", "-3/100"],
+      ["-3/100", "3/100"]
+    ],
+    "corrected_preflight_delta_residual": "0x1.458d2a844840cp+1",
+    "reason": "The original monotonic permutation reached the same hidden plastic state and could not exercise the finite-nonzero element call-order drift gate. Before any formal E1 run, it was replaced by the same +0.03/-0.03 discarded packets in opposite order. Equations, tolerances, expected classification, and common replay packet are unchanged."
+  },
+  "claim_boundary": "Authorization and packets are frozen for standalone L1-E1 only. This does not authorize L2-L6 or any Abaqus execution."
+}

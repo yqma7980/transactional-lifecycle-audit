@@ -1,0 +1,64 @@
+{
+  "design_version": "L1-D1.0",
+  "execution_scope": "L1-MP_ONLY",
+  "run_id": "L1-MP-D1.0-REPLAY",
+  "single_threaded": true,
+  "accepted_load_unload_reload_path": [
+    "3/100",
+    "0/1",
+    "3/100"
+  ],
+  "accepted_path_oracle": [
+    {
+      "delta_gamma": "1/55",
+      "sigma": "13/11",
+      "epsilon_p": "1/55",
+      "kappa": "1/55",
+      "E_alg": "100/11",
+      "plastic_dissipation": "12/605"
+    },
+    {
+      "delta_gamma": "7/1210",
+      "sigma": "-150/121",
+      "epsilon_p": "3/242",
+      "kappa": "29/1210",
+      "E_alg": "100/11",
+      "plastic_dissipation": "2051/292820"
+    },
+    {
+      "delta_gamma": "63/13310",
+      "sigma": "1713/1331",
+      "epsilon_p": "114/6655",
+      "kappa": "191/6655",
+      "E_alg": "100/11",
+      "plastic_dissipation": "211869/35431220"
+    }
+  ],
+  "call_order_history_1": [
+    "3/100",
+    "-3/100"
+  ],
+  "call_order_history_2": [
+    "-3/100",
+    "3/100"
+  ],
+  "terminal_seed_epsilon": "3/100",
+  "common_replay_epsilon": "1/200",
+  "directional_step": "1/10000000",
+  "implementation_note": "This file freezes previously unspecified concrete MP history packets before any formal L1-MP execution. It does not change the L1-D1.0 equations, tolerances or expected classifications.",
+  "pre_execution_seed_erratum": {
+    "case_id": "MP-LC-02",
+    "status": "CORRECTED_BEFORE_FORMAL_EXECUTION",
+    "original_histories": [
+      ["1/50", "3/100"],
+      ["3/100", "1/50"]
+    ],
+    "corrected_histories": [
+      ["3/100", "-3/100"],
+      ["-3/100", "3/100"]
+    ],
+    "reason": "The original monotonic permutation converged to the same hidden plastic state and therefore could not exercise the frozen finite-nonzero call-order drift gate. The corrected pair uses the same two discarded packets in opposite order and leaves the equations, thresholds and classification unchanged."
+  },
+  "e1_authorized": false
+}
+

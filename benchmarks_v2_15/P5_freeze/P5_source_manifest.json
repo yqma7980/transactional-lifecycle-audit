@@ -1,0 +1,171 @@
+{
+  "counts": {
+    "case_rows": 7,
+    "future_planned_processes": 90,
+    "null_cases": 3,
+    "output_files_before_manifest": 9,
+    "scaled_families": 4,
+    "strength_levels": 15
+  },
+  "design_version": "CMAME-P5.0",
+  "execution_boundary": {
+    "abaqus_run": false,
+    "comsol_run": false,
+    "finite_element_case_run": false,
+    "github_zenodo_doi_modified": false,
+    "implementation_created": false,
+    "manuscript_claim_figure_modified": false,
+    "production_model_modified": false,
+    "results_exist": false,
+    "test_or_benchmark_run": false
+  },
+  "generated_date": "2026-07-31",
+  "manifest_self_hash_embedded": false,
+  "outputs": [
+    {
+      "bytes": 3132,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_acceptance_gates.md",
+      "sha256": "cfb0870a16a6a744bbdade82259b2e7d4519a38746d1b6474dedd6fb28fcd04f"
+    },
+    {
+      "bytes": 2134,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_case_matrix.csv",
+      "sha256": "42ad81bcf6a9342a874af4fac387f4040486a59d2a6398f0cce1f810ea63b6b7"
+    },
+    {
+      "bytes": 4115,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_execution_freeze.json",
+      "sha256": "02a457197136fcc71ba23a2c9e854b6d091ee2b3db3ec738c0954f8358382b5d"
+    },
+    {
+      "bytes": 1705,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_field_and_metric_scale_registry.csv",
+      "sha256": "af262144a503698789f50ac9d6a8bf8ae69e5d1ec9794741ddb7a53adb0a268c"
+    },
+    {
+      "bytes": 3862,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_null_envelope_contract.json",
+      "sha256": "6fe1185cf6b5786c092a5b7945363313c88d9a13b74e412fcbe88a37c6ee5b0a"
+    },
+    {
+      "bytes": 3256,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_problem_and_scope.md",
+      "sha256": "0810f211ba4faa8e2c0f6726f3b8f339fbcc00fab88772e236d4e1a2d7f4e0fd"
+    },
+    {
+      "bytes": 4702,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_scaled_threshold_selection_rule.md",
+      "sha256": "fbfb9ca21e408b35681b413ff844b6ef958074ccc1db5c64bb6a56bbbc3847eb"
+    },
+    {
+      "bytes": 1254,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_static_freeze_summary.md",
+      "sha256": "88dca388a0e1ef9d05e5e0b27686d56db101aa6e1bb4c86ee9559f67dcf43ebc"
+    },
+    {
+      "bytes": 2159,
+      "path": "submission_cmame_v2_14_working_20260730/P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE_20260731/P5_static_QA.md",
+      "sha256": "f3f0e4245573362893a55b35813198c93c8439b5d7d03bebe67e74f0692511a2"
+    }
+  ],
+  "package_status": "PASS_P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE",
+  "protected_inputs": [
+    {
+      "bytes": 5950,
+      "path": "submission_cmame_v2_14_working_20260730/P2_verdict_taxonomy_v2_14.md",
+      "sha256": "d7e75da4718296004c2dfc82740689f028193c16ef068793a1dd4f77b9a834b9"
+    },
+    {
+      "bytes": 4228,
+      "path": "submission_cmame_v2_14_working_20260730/P2_FEH_MUT_contract_trace_notes.md",
+      "sha256": "39f388955d6afc3aa77cf73021b27a32846e1be101bef8e45e356a80ff3462e9"
+    },
+    {
+      "bytes": 8215,
+      "path": "submission_cmame_v2_14_working_20260730/P3_case_matrix.csv",
+      "sha256": "6b8b199edb855d9ae7acebd63a4879ddc1ea80a0474ff150117c139854635b09"
+    },
+    {
+      "bytes": 5023,
+      "path": "submission_cmame_v2_14_working_20260730/P3_fault_taxonomy_and_case_design.md",
+      "sha256": "4d73b80c6e6b4237fba6658ce347efd435d15dc5db1b9c348e88ec182a4cfda4"
+    },
+    {
+      "bytes": 24189,
+      "path": "submission_cmame_v2_14_working_20260730/P3_oracle_contract.json",
+      "sha256": "5b7b79e31aa9726a5485c9476a70c8e48b8a0c94492a12fe848d98b789d80898"
+    },
+    {
+      "bytes": 4105,
+      "path": "submission_cmame_v2_14_working_20260730/P3_stop_conditions.md",
+      "sha256": "2cfeb6cfaf84297f73082f3700b548d23a8a6b1f03806d8d7c21e26bc078b1f3"
+    },
+    {
+      "bytes": 6183,
+      "path": "submission_cmame_v2_14_working_20260730/P3_execution_freeze.json",
+      "sha256": "d50946da7030412d0cac3042ce80c7b98f4855805358e4750d2d2169b39ec4ed"
+    },
+    {
+      "bytes": 11302,
+      "path": "submission_cmame_v2_14_working_20260730/P3_source_manifest.json",
+      "sha256": "b2a330050ce2a71ae4350882062e43d3747cb8186544910c72bf21eca147e0e1"
+    },
+    {
+      "bytes": 3941,
+      "path": "submission_cmame_v2_14_working_20260730/P3_static_QA.md",
+      "sha256": "61968883f699cef15e286cb805434979fda46fb40823386d0d49c8dca7f33319"
+    },
+    {
+      "bytes": 7800,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d_problem_specification.md",
+      "sha256": "9809f61d080244fd5c04c218ffbbc49eb4730b07707ade8c25665713a3b44d66"
+    },
+    {
+      "bytes": 7882,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d_acceptance_gates.md",
+      "sha256": "ff0b08a63d19030816502eb63b5601ad37654e2655ad49fdd17e6ba58335dc6e"
+    },
+    {
+      "bytes": 8785,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d_execution_freeze.json",
+      "sha256": "0af67498342df665bd03508d9a45d430644769d34981b32b520b16de66f13d7b"
+    },
+    {
+      "bytes": 9784,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d_state_ownership_and_event_contract.md",
+      "sha256": "9736676a0c2e04bc3a4e9cf0a493ef16b95f939c3602c1c1f37978b4074c69eb"
+    },
+    {
+      "bytes": 3617,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d_reference_oracle_contract.json",
+      "sha256": "22e86db651a758983cce8e671b3b75c656ed02233093cdeff333efecd0d6d542"
+    },
+    {
+      "bytes": 3346,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_final_summary.json",
+      "sha256": "ba3c16292f8be3ac669d743c19d0f1a690e7f7ae1b6729846fda26c319d64cab"
+    },
+    {
+      "bytes": 5109,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_final_QA.json",
+      "sha256": "b3988bd68c7c7413eface5e1f45d01ff474d44e0b382451337387d38bbfd5550"
+    },
+    {
+      "bytes": 7703,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_source_manifest.json",
+      "sha256": "bd346ab09652da0384ac7a9bb876efeebf09bc7ce6dc832cc2726ebd30c11eef"
+    },
+    {
+      "bytes": 3348,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_case_adjudication.csv",
+      "sha256": "02268d9302852103c499e5369e4efce7af638f9dbde7dee50ceb26e7249629ac"
+    },
+    {
+      "bytes": 4262,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_contract_trace.csv",
+      "sha256": "e9001e61b90c1a28c7f67d29ef493433bf51e040fa88d745aac7e6d0271df80f"
+    }
+  ],
+  "schema_version": "CMAME-P5-SOURCE-MANIFEST-1.0",
+  "source_v2_13_aggregate_sha256": "d5c8dbae6275171a7bb314cb6582457ca3a6145c0ba773f1f83eff34fe65d919"
+}

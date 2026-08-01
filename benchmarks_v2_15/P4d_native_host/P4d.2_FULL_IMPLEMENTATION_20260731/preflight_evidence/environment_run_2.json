@@ -1,0 +1,39 @@
+{
+  "implementation_id": "P4D2-ENVIRONMENT",
+  "module_files": {
+    "basix": {
+      "path": "/dolfinx-env/lib/python3.12/site-packages/basix/__init__.py",
+      "sha256": "c3d0b9ba1a47f31ae82d37197d9a7f53b264133f839465d2ea75f104b0d91690"
+    },
+    "dolfinx": {
+      "path": "/usr/local/dolfinx-real/lib/python3.12/dist-packages/dolfinx/__init__.py",
+      "sha256": "c8bc8519bf909c85257f92e97d70d95f537aed8eec800e9ef1fcc259f485ddd8"
+    },
+    "mpi4py": {
+      "path": "/dolfinx-env/lib/python3.12/site-packages/mpi4py/__init__.py",
+      "sha256": "63b422be9c72df5e45041f5e6b69cfd2cda48db0269fe34a796f24420d17ea0a"
+    },
+    "petsc4py": {
+      "path": "/dolfinx-env/lib/python3.12/site-packages/petsc4py/__init__.py",
+      "sha256": "de8d325744f9c34a4988846d6f6b2f0423dd4269a9292af4d028f5e6bc07005a"
+    },
+    "ufl": {
+      "path": "/dolfinx-env/lib/python3.12/site-packages/ufl/__init__.py",
+      "sha256": "2c067ad02c1ad648be970049aa6847efcf4c47d78d7f14109ac0339a85334eba"
+    }
+  },
+  "mpi_rank": 0,
+  "mpi_size": 1,
+  "packages": {
+    "PETSc": "3.24.0",
+    "basix": "0.10.0",
+    "dolfinx": "0.10.0",
+    "mpi4py": "4.1.1",
+    "petsc4py": "3.24.0",
+    "ufl": "2025.2.0"
+  },
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "run_id": "env_run_2",
+  "schema_version": "CMAME-P4D2-ENVIRONMENT-1.0"
+}

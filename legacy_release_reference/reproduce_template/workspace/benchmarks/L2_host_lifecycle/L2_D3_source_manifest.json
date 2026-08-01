@@ -1,0 +1,164 @@
+{
+  "manifest_version": "L2-D3-SOURCE-1.0",
+  "design_version": "L2-D3.0",
+  "created_date": "2026-07-22",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "execution_authorized": false,
+  "abaqus_used": false,
+  "results_exist": false,
+  "hash_algorithm": "SHA-256",
+  "path_base": "${NCS_WORKSPACE}",
+  "static_oracle_qa": {
+    "method": "independent_Python_standard_library_fractions.Fraction_calculation",
+    "workspace_implementation_imported": false,
+    "benchmark_executed": false,
+    "exact_path": {
+      "u_sequence": ["0/1", "11/1000", "21/1000"],
+      "residual_sequence": ["-11/10", "-1/11", "0/1"],
+      "K_used_sequence": ["100/1", "100/11", "100/11"],
+      "accepted_state": {
+        "u": "21/1000",
+        "sigma": "11/10",
+        "epsilon_p": "1/100",
+        "kappa": "1/100"
+      }
+    },
+    "declared_lagged_path": {
+      "u_sequence": ["0/1", "11/1000", "131/11000", "21/1000"],
+      "residual_sequence": ["-11/10", "-1/11", "-10/121", "0/1"],
+      "K_current_sequence": ["100/1", "100/11", "100/11", "100/11"],
+      "K_used_sequence": ["100/1", "100/1", "100/11", "100/11"],
+      "accepted_state_matches_exact_path": true
+    },
+    "tg03_operator_packet": {
+      "u": "3/100",
+      "force": "1/2",
+      "sigma": "13/11",
+      "epsilon_p": "1/55",
+      "kappa": "1/55",
+      "residual": "15/22",
+      "tangent": "100/11"
+    },
+    "qa_pass": true
+  },
+  "fingerprint_compatibility_qa": {
+    "serializer": "src.l2_state.canonical_json(CommittedState())",
+    "canonical_payload_utf8": "{\"accepted_version\":0,\"epsilon_p\":{\"__float_hex__\":\"0x0.0p+0\"},\"kappa\":{\"__float_hex__\":\"0x0.0p+0\"}}",
+    "expected_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+    "declared_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+    "match": true
+  },
+  "design_inputs": [
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_benchmark_spec.md",
+      "sha256": "c73fc7ee3673e317cde0a5cc1e804da0235186bce5f32b1a595a35a5f0f65d63",
+      "role": "family_specification"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_case_matrix.csv",
+      "sha256": "be8e8e76f48dbc1cc2e55534a5cdb08745d1fa010a7eb291b2f7379eaf31fe69",
+      "role": "case_identifier_and_expected_classification_authority"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_acceptance_gates.md",
+      "sha256": "ff8e8a4484abac4cd9528a0a9c6f05ccf69be8432dd5d23a6b8ba21160ae163d",
+      "role": "acceptance_gate_authority"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_data_contract.md",
+      "sha256": "08dcb7b15a26baa692ecc036ea602ffbe99b77e7729aeb6acb49f3f9f4b92735",
+      "role": "future_result_data_contract"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_execution_boundary.md",
+      "sha256": "962ce944544c5825b1117c296d3606fcddf5b137b4779bc3cfe3f327d98d11a1",
+      "role": "execution_boundary"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D1_execution_freeze.json",
+      "sha256": "4096753c610be493108baa612d5965d35a2ac6c6c97cae18db20e6fd84964a88",
+      "role": "host_model_runtime_and_tolerance_baseline"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_state.py",
+      "sha256": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d",
+      "role": "D1_state_and_serializer_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_model.py",
+      "sha256": "1a9daac2a8b75534dd55193bce3fead0004197765d3024e13d617e9d833ea8ff",
+      "role": "D1_constitutive_and_element_model_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_variants.py",
+      "sha256": "74fd1679408c9fa39825deaf8fc140263a5c543174f57ee51a3757860b22a96c",
+      "role": "D1_transactional_variant_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_host.py",
+      "sha256": "a2a7044592da3be507279552f0dc19a75c2de00b7cdaee0e3bea4a5e3868fd2b",
+      "role": "D1_Newton_host_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_cases.py",
+      "sha256": "f12d0944bb8f96c100715fce6b640345c1826c9db8674fb79cc032ea7cba6301",
+      "role": "D1_case_and_result_contract_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/oracle/l2_fraction_oracle.py",
+      "sha256": "ef57905f0d90b1bc7a0da81de51e529cb2e1d64a8290f64d91ee27ffeb480eff",
+      "role": "D1_exact_rational_oracle_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D2_execution_freeze.json",
+      "sha256": "aeb7d4060b72e9f92fb039d460b08c119a67e406a311ccf431b4adcf4cb42d8f",
+      "role": "prior_callback_lifecycle_contract_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/results/L2_D2_callback_order/final/l2_d2_final_summary.json",
+      "sha256": "e9ef0c37ad04a5b8448fb0c9bc1d09f37c5cae99aa75728367bcd41f2a4bb34a",
+      "role": "prior_OBSERVED_L2_D2_boundary_read_only"
+    }
+  ],
+  "protected_precheck_references": [
+    {
+      "path": "STATUS.md",
+      "sha256": "771061d1c014f4278cb2320ea87eff78a8fd989add2e950e0e00bdfc631c5cb2"
+    },
+    {
+      "path": "07_global_roadmap.md",
+      "sha256": "e1e63085b4e0b1f8209c394c05e4873193dc7877b794df4b8ba7f204aa0da5b2"
+    },
+    {
+      "path": "08_execution_backlog.md",
+      "sha256": "ce96bcaa569a1d533f3520e622446a13c73f05c20a989304d0eeebe3f3da22ef"
+    },
+    {
+      "path": "01_claim_evidence_matrix_v0_5.md",
+      "sha256": "07323ebf5b1d15a2e64eb68199a592d3a323938339f7d51c52e0dc380867522c"
+    },
+    {
+      "path": "manuscript/manuscript_v0_5.md",
+      "sha256": "d7184d814c39d0fd62f798d468a4d6da57474dd1714176b9403207c523eb89e3"
+    }
+  ],
+  "design_outputs": [
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D3_execution_freeze.json",
+      "sha256": "03ebd4eb92fca4cb9300be4192cdd73b5575f9798b9c46f90bd618f7dc85cbcc",
+      "bytes": 10194
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D3_tangent_path_case_matrix.csv",
+      "sha256": "665576bd3e9f66c0ed8152a4fde4cc69d1b82ab810202e666340f234ec2f5c64",
+      "bytes": 1234
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D3_implementation_plan.md",
+      "sha256": "2a90570675297ac8270dbc41c4aa0b8665a12776c96c65efadc72c7264782a78",
+      "bytes": 8606
+    }
+  ],
+  "self_hash_policy": "The manifest SHA-256 is computed and reported externally after creation because a file cannot contain its own stable hash.",
+  "execution_boundary": "No source, test, oracle, runner, result or execution directory was created for L2-D3; no benchmark, test suite or Abaqus process was run."
+}

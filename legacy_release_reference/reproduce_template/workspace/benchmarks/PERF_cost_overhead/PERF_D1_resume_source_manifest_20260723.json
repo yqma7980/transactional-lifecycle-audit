@@ -1,0 +1,46 @@
+{
+  "design_version": "PERF-D1.0",
+  "existing_raw_aggregate_sha256": "f81efde31290b04953c2025d70339bdff719fdd16ef5c29a8f1c0cd7b79bde7d",
+  "existing_run_count": 405,
+  "files": [
+    {
+      "bytes": 1164,
+      "path": "benchmarks/PERF_cost_overhead/PERF_D1_formal_execution_interruption_20260723.md",
+      "sha256": "ab71d62da637f7a60c6a6911146c2f0e17203791f9720f5ea17f7d78ef5fb2eb"
+    },
+    {
+      "bytes": 4879,
+      "path": "benchmarks/PERF_cost_overhead/PERF_D1_resume_freeze_20260723.json",
+      "sha256": "58c190328b508c44d4192b4163705a9b5d44a19fa8f40dbd56bef6608c052da1"
+    },
+    {
+      "bytes": 734,
+      "path": "benchmarks/PERF_cost_overhead/PERF_D1_resume_plan_20260723.md",
+      "sha256": "5e92790eb7447ea9b22a9c457fbf890a0ebb3d1c30eb5c9e55779c8d8e6a14e3"
+    },
+    {
+      "bytes": 5615,
+      "path": "benchmarks/PERF_cost_overhead/run_perf_resume_20260723.py",
+      "sha256": "c4f4991dd39bdfca704d4ae11df4f03f5af96a5582780b1f89858a0c6417fbfd"
+    },
+    {
+      "bytes": 1151,
+      "path": "benchmarks/PERF_cost_overhead/tests/test_perf_resume_20260723.py",
+      "sha256": "9b14b43cfa3eb179ddebca30d0e98cb77c150a7fb75da6635452c4895b6465e8"
+    }
+  ],
+  "manifest_self_hash_embedded": false,
+  "missing_run_count": 45,
+  "no_abaqus_execution": true,
+  "no_resume_execution": true,
+  "resume_revision": "PERF-D1-R1.0",
+  "schema_version": "PERF-D1-RESUME-SOURCE-1.0",
+  "status": "IMPLEMENTED_UNIT_TESTED_NOT_EXECUTED",
+  "unit_tests": {
+    "count": 2,
+    "errors": 0,
+    "failures": 0,
+    "status": "PASS"
+  },
+  "warmup_receipts_sha256": "102070fba01c200485725b7c9fdbea80f9b4d025626ab394b53212463896a0d6"
+}

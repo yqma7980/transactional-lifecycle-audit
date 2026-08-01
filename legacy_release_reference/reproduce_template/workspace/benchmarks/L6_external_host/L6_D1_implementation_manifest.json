@@ -1,0 +1,105 @@
+{
+    "schema_version":  "L6-D1-IMPLEMENTATION-1.0",
+    "design_version":  "L6-D1.0",
+    "adapter_revision":  "L6-D1b",
+    "host_version":  "L6-SCIPY-TRF-1.17.1",
+    "implementation_status":  "IMPLEMENTED_PREFLIGHT_PASS_NOT_FORMALLY_EXECUTED",
+    "formal_execution_authorized_by_active_goal":  true,
+    "formal_results_exist":  false,
+    "abaqus_used":  false,
+    "comsol_used":  false,
+    "production_model_used":  false,
+    "frozen_inputs":  {
+                          "execution_freeze_sha256":  "7180148893dc8e17ab6d3b882939f7782c9c59622b798a248dd09adca7e7c469",
+                          "case_matrix_sha256":  "c073d796d661ef1113577f3d625c65106328a48fc83f28eb936b5f58671eee81",
+                          "source_manifest_sha256":  "f0c7ff2e86cc66a52e79506c31090e7aac4f102143dec4143a87f3c8784a0423"
+                      },
+    "implementation_files":  [
+                                 {
+                                     "path":  "benchmarks/L6_external_host/src/__init__.py",
+                                     "sha256":  "bd7af87c76d6f50e38833a7bb3b260dd1b123fd756ce3b867cc3e106f32d4e47",
+                                     "size":  60
+                                 },
+                                 {
+                                     "path":  "benchmarks/L6_external_host/src/l6_state.py",
+                                     "sha256":  "c9f00d95198a8a99ec4dac073dc3cab7cbebd1360bd2833a86fb213b861d8885",
+                                     "size":  4309
+                                 },
+                                 {
+                                     "path":  "benchmarks/L6_external_host/src/l6_scipy_adapter.py",
+                                     "sha256":  "c3cfb96ff618c019bb577b631b8b618abb76ece983f8252325ffa6aa7f599055",
+                                     "size":  18459
+                                 },
+                                 {
+                                     "path":  "benchmarks/L6_external_host/src/l6_cases.py",
+                                     "sha256":  "5c423b3f59ccae6a158eb23d2020b964d90d9ab449b99d05e004b52d92f5a1c9",
+                                     "size":  20621
+                                 },
+                                 {
+                                     "path":  "benchmarks/L6_external_host/oracle/__init__.py",
+                                     "sha256":  "1ed38fd3860fa0c7564b30b615258695d918b0b0ea7a302396a6c1fe8a755652",
+                                     "size":  46
+                                 },
+                                 {
+                                     "path":  "benchmarks/L6_external_host/oracle/l6_stationary_oracle.py",
+                                     "sha256":  "f36312c402d45512ef9458070bdfeb072f8ef518b0a5731feeeffe1ff9f70505",
+                                     "size":  796
+                                 },
+                                 {
+                                     "path":  "benchmarks/L6_external_host/tests/__init__.py",
+                                     "sha256":  "1a02b1867459aeee7d380f44b391d2040ad87a4a5622a6094d87084c17ac8b54",
+                                     "size":  33
+                                 },
+                                 {
+                                     "path":  "benchmarks/L6_external_host/tests/test_l6_d1.py",
+                                     "sha256":  "5f09f99313278e6e2263b11cb91e2cf7d229ca2c55f8618311bbe89c163a6b7b",
+                                     "size":  4329
+                                 },
+                                 {
+                                     "path":  "benchmarks/L6_external_host/run_l6_d1.py",
+                                     "sha256":  "5a09e15c83ebab3c9dd15cfe1aa8d19f75db3db36532ac8680cc5c5d532d03c7",
+                                     "size":  5765
+                                 }
+                             ],
+    "pre_execution_errata":  [
+                                 {
+                                     "path":  "benchmarks/L6_external_host/L6_D1_pre_execution_erratum_20260722.md",
+                                     "sha256":  "8e2358808fa77b0a72c10ad789bd8b5ac423f02ed0801158cc42758ea7c28388",
+                                     "scope":  "file-level import of protected canonical serializer"
+                                 },
+                                 {
+                                     "path":  "benchmarks/L6_external_host/L6_D1b_callback_resolution_erratum_20260722.md",
+                                     "sha256":  "b5c6c657b239b84d9d9ccb9b96b42516e5f38147831f9cd37eb10eedabc3bf23",
+                                     "scope":  "unchanged accepted-state callback after rejected batch"
+                                 }
+                             ],
+    "preflight":  {
+                      "test_count":  8,
+                      "passed":  8,
+                      "failed":  0,
+                      "errors":  0,
+                      "formal_result_root_created":  false,
+                      "pycache_count":  0,
+                      "single_process":  true,
+                      "single_thread":  true
+                  },
+    "runner_locks":  {
+                         "argument":  "--execute-authorized",
+                         "environment":  "L6_D1_EXECUTION_AUTHORIZED=YES",
+                         "thread_environment":  [
+                                                    "L6_D1_THREADS=1",
+                                                    "OMP_NUM_THREADS=1",
+                                                    "MKL_NUM_THREADS=1",
+                                                    "OPENBLAS_NUM_THREADS=1"
+                                                ],
+                         "one_case_one_run_per_process":  true,
+                         "checks_before_output_directory":  true
+                     },
+    "protected_baselines":  {
+                                "claim_v2_sha256":  "d1c24526c55729b720e16efd57782031601919e7ccb19736db3879024d6b011b",
+                                "manuscript_v2_sha256":  "145deaa450c982992c7c50bf3e98f0b4862054d4e8cd30d2238c48e9bd33923d",
+                                "l5_raw_aggregate_sha256":  "137caed1286b92dd2774aab73b7a9047d3116991461e180de322e02fda730478",
+                                "production_status_sha256":  "4def4e7d6c4b5369caa9c0582324f6d2470861f5b07ce57b51e9fd08e18c6e7f"
+                            },
+    "manifest_self_hash_embedded":  false
+}

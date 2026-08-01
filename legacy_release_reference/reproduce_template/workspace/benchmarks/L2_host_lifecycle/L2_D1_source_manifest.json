@@ -1,0 +1,135 @@
+{
+    "manifest_version":  "L2-D1-SOURCE-1.0",
+    "design_version":  "L2-D1.0",
+    "host_version":  "L2-HOST-D1.0",
+    "created_date":  "2026-07-21",
+    "status":  "IMPLEMENTED_NOT_EXECUTED",
+    "authorized_case_subset":  [
+                                   "L2-REF-01",
+                                   "L2-REF-02",
+                                   "L2-RT-01",
+                                   "L2-RT-02",
+                                   "L2-RT-03"
+                               ],
+    "file_count":  21,
+    "aggregate_sha256":  "e89f4301076d7b1e8e64b59576ccb00cd4a69067d8af6ee8f53b1eb3e6ac7521",
+    "static_validation":  {
+                              "python_files_parsed":  14,
+                              "ast_errors":  0,
+                              "schemas_match":  true,
+                              "unauthorized_runner_refused":  true,
+                              "unauthorized_runner_created_output":  false,
+                              "nonminimal_cases_implemented":  0,
+                              "result_directories":  0,
+                              "benchmark_cases_executed":  0,
+                              "abaqus_used":  false
+                          },
+    "files":  [
+                  {
+                      "relative_path":  "L2_D1_execution_freeze.json",
+                      "bytes":  3344,
+                      "sha256":  "4096753c610be493108baa612d5965d35a2ac6c6c97cae18db20e6fd84964a88"
+                  },
+                  {
+                      "relative_path":  "L2_D1_implementation_plan.md",
+                      "bytes":  3647,
+                      "sha256":  "43b1ae971695aa76ad8f67e9b725191c7820c90f936596aaa5d54c20ecd9b3c9"
+                  },
+                  {
+                      "relative_path":  "L2_D1_minimal_case_matrix.csv",
+                      "bytes":  1103,
+                      "sha256":  "31cc1a7d813b4d073fde355f6c392e4b2a68a4b04ff987c3295c1bc65e29e8b2"
+                  },
+                  {
+                      "relative_path":  "oracle/__init__.py",
+                      "bytes":  46,
+                      "sha256":  "6851a40eabbe6015172cf399acce9a61642ae69684e950f30bfaf5bec726f6c2"
+                  },
+                  {
+                      "relative_path":  "oracle/l2_fraction_oracle.py",
+                      "bytes":  978,
+                      "sha256":  "ef57905f0d90b1bc7a0da81de51e529cb2e1d64a8290f64d91ee27ffeb480eff"
+                  },
+                  {
+                      "relative_path":  "README.md",
+                      "bytes":  2135,
+                      "sha256":  "1c08eea35a7c90b0fc23e7a935ae8be753c25bdaa6d9aafcd279494b71c6eab7"
+                  },
+                  {
+                      "relative_path":  "run_l2_d1.py",
+                      "bytes":  4707,
+                      "sha256":  "f2ffda92f75804f17a6c4d3c95e0f1101a9666a4a36bdf4a3d11908a0a3f9405"
+                  },
+                  {
+                      "relative_path":  "schemas/l2_accepted_checkpoint_columns.csv",
+                      "bytes":  548,
+                      "sha256":  "ebbbf337d55b36a2aa85f799a9ba22380ef2786638408f0a983c2cfad23bb4bf"
+                  },
+                  {
+                      "relative_path":  "schemas/l2_case_result_columns.csv",
+                      "bytes":  723,
+                      "sha256":  "61c5334853f48035eaf42ab3ad06d157ce43df8fd8dd4f6d38fe86d258720c87"
+                  },
+                  {
+                      "relative_path":  "schemas/l2_event_ledger_columns.csv",
+                      "bytes":  1401,
+                      "sha256":  "9c38807576849b9dfa651a0dbe6c9fc50e066207afd41e5b9d65d2a50bc18c16"
+                  },
+                  {
+                      "relative_path":  "src/__init__.py",
+                      "bytes":  232,
+                      "sha256":  "9f39036baeef2bf587c8c367e4fed99d24f621e9cfeb4fde2f786583b3b1cbdb"
+                  },
+                  {
+                      "relative_path":  "src/l2_cases.py",
+                      "bytes":  12197,
+                      "sha256":  "f12d0944bb8f96c100715fce6b640345c1826c9db8674fb79cc032ea7cba6301"
+                  },
+                  {
+                      "relative_path":  "src/l2_host.py",
+                      "bytes":  15426,
+                      "sha256":  "a2a7044592da3be507279552f0dc19a75c2de00b7cdaee0e3bea4a5e3868fd2b"
+                  },
+                  {
+                      "relative_path":  "src/l2_model.py",
+                      "bytes":  3921,
+                      "sha256":  "1a9daac2a8b75534dd55193bce3fead0004197765d3024e13d617e9d833ea8ff"
+                  },
+                  {
+                      "relative_path":  "src/l2_schema.py",
+                      "bytes":  1886,
+                      "sha256":  "c4975be884ab4a35a0f4a9ab71585f0412da2030b7825fb9e7ed326af4530364"
+                  },
+                  {
+                      "relative_path":  "src/l2_state.py",
+                      "bytes":  4486,
+                      "sha256":  "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d"
+                  },
+                  {
+                      "relative_path":  "src/l2_variants.py",
+                      "bytes":  6596,
+                      "sha256":  "74fd1679408c9fa39825deaf8fc140263a5c543174f57ee51a3757860b22a96c"
+                  },
+                  {
+                      "relative_path":  "tests/__init__.py",
+                      "bytes":  81,
+                      "sha256":  "c8457bb3239a622de00700a42613c5316f38f8e5c024c36c1f304d686776badd"
+                  },
+                  {
+                      "relative_path":  "tests/test_minimal_cases.py",
+                      "bytes":  1087,
+                      "sha256":  "826f2c259d8190556854782f844b4b153eccf659e2077cd52613015d69d5ca52"
+                  },
+                  {
+                      "relative_path":  "tests/test_oracle.py",
+                      "bytes":  892,
+                      "sha256":  "d608efd478133872b2f31841904d062b484e9dd62cba5b4519fd5fca88e41488"
+                  },
+                  {
+                      "relative_path":  "tests/test_static_contract.py",
+                      "bytes":  1426,
+                      "sha256":  "6bbf5967fb08f0e9c9f356fe25252464bc3a5192c82b4df570056a89cb3498f1"
+                  }
+              ],
+    "claim_boundary":  "Source existence is not L2 evidence. All case outcomes, duplicate-run reproducibility and host claims remain OPEN until separately authorized execution."
+}

@@ -1,0 +1,304 @@
+{
+  "ast_qa": {
+    "pass": true,
+    "records": [
+      {
+        "error": null,
+        "path": "finalize_p4d2.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "oracle/p4d_fraction_oracle.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "oracle/p4d_manufactured.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "record_p4d2_environment.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "run_p4d2.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "run_p4d2_preflight.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_bridge.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_canonical.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_cases.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_config.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_driver.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_environment.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_environment_v2.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_evaluator.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_host.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_io.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_material.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_mesh.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_observer.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_oracle_case.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_preflight.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_reference.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_state.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "src/p4d_version_guard.py",
+        "status": "PASS"
+      },
+      {
+        "error": null,
+        "path": "tests/test_p4d2_contract.py",
+        "status": "PASS"
+      }
+    ]
+  },
+  "container_image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+  "design_version": "P4d.0",
+  "files": [
+    {
+      "bytes": 21712,
+      "path": "build/libp4d_observer.so",
+      "sha256": "a43222350c3fa3f7efecb535d673ab88393b61673b1004bcf3517ef4ef9047e6"
+    },
+    {
+      "bytes": 639,
+      "path": "build_p4d2_observer.sh",
+      "sha256": "84e46ee747afa08c051bc6dcf765ccb3d62c6d7c87e6d250dcea27612d914059"
+    },
+    {
+      "bytes": 17672,
+      "path": "finalize_p4d2.py",
+      "sha256": "448902fd3c73579e629b90aa83b127c8df4a2d3dd326b8f27ee57b3f82bc3ca5"
+    },
+    {
+      "bytes": 1535,
+      "path": "oracle/p4d_fraction_oracle.py",
+      "sha256": "0c937ac8b276c913a95832c8384f0959cbcb3f8916c638498c12641e1f453904"
+    },
+    {
+      "bytes": 540,
+      "path": "oracle/p4d_manufactured.py",
+      "sha256": "e9aab2ee845d2052180cb8e1b5c828872e59c05dd3ebecd8eb498fa9e6340903"
+    },
+    {
+      "bytes": 2889,
+      "path": "P4d2_implementation_freeze.json",
+      "sha256": "3c44641985e3671bc8b5ab0a9849c711178124617c6f442bd3e2cce5acf5edd7"
+    },
+    {
+      "bytes": 3364,
+      "path": "P4d2_implementation_protocol.md",
+      "sha256": "f496b13e8049fd7aba1d854a6a69385c86c3f2602fff15ca81a6b9908d790526"
+    },
+    {
+      "bytes": 866,
+      "path": "record_p4d2_environment.py",
+      "sha256": "9b6409450216d224ec32eae689bbf378ad4d53f38255b2e7455c64ee59b464c0"
+    },
+    {
+      "bytes": 2136,
+      "path": "run_p4d2.py",
+      "sha256": "f6ba558860b5e84c818c7a41cdf191c7dfc7b43d2f26dc49f78326a89fb456b6"
+    },
+    {
+      "bytes": 1297,
+      "path": "run_p4d2_preflight.py",
+      "sha256": "e4a711f6713219b1b27852036b892236b344ee69e9ed9cdef7e4c8f526974d27"
+    },
+    {
+      "bytes": 1663,
+      "path": "src/p4d_bridge.py",
+      "sha256": "d69a34547f9ed34ea9c1d4b870477a646992539589a1ddc20aa3e1b7574c5d6d"
+    },
+    {
+      "bytes": 1543,
+      "path": "src/p4d_canonical.py",
+      "sha256": "6d330e1f4c5ff82f5176b67fa3952e984cb718515f26ab2bc45da9a6d6b205a9"
+    },
+    {
+      "bytes": 12504,
+      "path": "src/p4d_cases.py",
+      "sha256": "40830e1c2a4e1d177b942ef069831e9f993a1ecfc0ffe16f1133edf2aa3680f7"
+    },
+    {
+      "bytes": 3026,
+      "path": "src/p4d_config.py",
+      "sha256": "58a36323256d24fbb49507a690218db99361d2d9ad79792e3b8ffc377e338300"
+    },
+    {
+      "bytes": 9598,
+      "path": "src/p4d_driver.py",
+      "sha256": "be6cdda6b4c990fbfd3402091df201ed9dba5b3cc6047350d7d7a5b246cf0e6a"
+    },
+    {
+      "bytes": 1474,
+      "path": "src/p4d_environment.py",
+      "sha256": "b7283270a0059ba0d05ed1d3ff50b17e7a92fefa9e7f88ccdc765a24ec726f29"
+    },
+    {
+      "bytes": 1474,
+      "path": "src/p4d_environment_v2.py",
+      "sha256": "b7283270a0059ba0d05ed1d3ff50b17e7a92fefa9e7f88ccdc765a24ec726f29"
+    },
+    {
+      "bytes": 3673,
+      "path": "src/p4d_evaluator.py",
+      "sha256": "63f6d493c356ddbe03a198598e24d085b409a649d5763e9683c8a267cb442344"
+    },
+    {
+      "bytes": 19559,
+      "path": "src/p4d_host.py",
+      "sha256": "74acae0133af60412d817dea41c50aa782b3028f3f324258cff4d486a797f38d"
+    },
+    {
+      "bytes": 8764,
+      "path": "src/p4d_io.py",
+      "sha256": "6e2d8e30003f8541759aa7406bbebc0da5750105d5a8cf2f7bf5c028e9e87a85"
+    },
+    {
+      "bytes": 2617,
+      "path": "src/p4d_material.py",
+      "sha256": "44b600ab24b64e44d50a6caa2a57ee42c539fb3f17d66cd515c06ab5b6dd8f72"
+    },
+    {
+      "bytes": 4884,
+      "path": "src/p4d_mesh.py",
+      "sha256": "3d97cbff60a517eed174cd580a8c969b681e4d386e8e239c21e3d9fa95d0517a"
+    },
+    {
+      "bytes": 2169,
+      "path": "src/p4d_observer.py",
+      "sha256": "fc87dd075a2d82c98708d9ed98dbcc85056f9760c649504de837fffcc2b94205"
+    },
+    {
+      "bytes": 9586,
+      "path": "src/p4d_observer_bridge.c",
+      "sha256": "e21ca0077f4f6bc8e850d25886a81bf33e19d5e5f40fc709f3743e10117b9a75"
+    },
+    {
+      "bytes": 2209,
+      "path": "src/p4d_oracle_case.py",
+      "sha256": "79857c9f2a56e7a53d5dc42a327d8304adcec70f25c8da26aec3ae253d3ff5f3"
+    },
+    {
+      "bytes": 2332,
+      "path": "src/p4d_preflight.py",
+      "sha256": "5bacca0d200bb6a80c2d6611ef75423444968f46f24a08d372eec05239211b50"
+    },
+    {
+      "bytes": 4570,
+      "path": "src/p4d_reference.py",
+      "sha256": "6e11111914312d1bc489585ce619d22f0cf8dd5062a3264e4e02117ab147de31"
+    },
+    {
+      "bytes": 4257,
+      "path": "src/p4d_state.py",
+      "sha256": "2fb8cf4a94efd8156a25944e046fb24cd781aee180c87ea045ddd6f15957c158"
+    },
+    {
+      "bytes": 1939,
+      "path": "src/p4d_version_guard.py",
+      "sha256": "b7f9bec1900ada5b932ef0b910363b47b5e9bf5cfc27b9b31783655907df9317"
+    },
+    {
+      "bytes": 6232,
+      "path": "tests/test_p4d2_contract.py",
+      "sha256": "28185094d8c067827211c96b79dfbdeddfc6a89794ec1528da66a7d5bfa84bb0"
+    }
+  ],
+  "formal_case_count_executed": 0,
+  "formal_case_count_implemented": 9,
+  "formal_execution_authorized": false,
+  "formal_results_exist": false,
+  "host_version": "P4D-DOLFINX-PETSC-HOST-1.0",
+  "implementation_status": "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+  "implementation_version": "P4d.2",
+  "manifest_self_hash_embedded": false,
+  "manuscript_updated": false,
+  "no_abaqus_execution": true,
+  "no_comsol_execution": true,
+  "no_opensees_execution": true,
+  "observer_binary_sha256": "a43222350c3fa3f7efecb535d673ab88393b61673b1004bcf3517ef4ef9047e6",
+  "observer_source_sha256": "e21ca0077f4f6bc8e850d25886a81bf33e19d5e5f40fc709f3743e10117b9a75",
+  "production_model_used": false,
+  "public_repository_updated": false,
+  "runner_dual_lock_pass": true,
+  "schema_version": "CMAME-P4D2-IMPLEMENTATION-MANIFEST-1.0"
+}

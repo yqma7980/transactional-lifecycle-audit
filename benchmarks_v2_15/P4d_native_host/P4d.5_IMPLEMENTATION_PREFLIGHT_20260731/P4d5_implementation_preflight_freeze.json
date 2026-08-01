@@ -1,0 +1,47 @@
+{
+  "schema_version": "CMAME-P4D5-IMPLEMENTATION-PREFLIGHT-FREEZE-1.0",
+  "design_version": "P4d.0",
+  "protocol_revision": "P4d.5",
+  "implementation_version": "P4d.5-preflight.1",
+  "host_version": "P4D-DOLFINX-PETSC-HOST-1.0",
+  "authorized_scope": "IMPLEMENTATION_AND_NON_FE_UNIT_TESTS_ONLY",
+  "target_status": "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+  "formal_execution_authorized": false,
+  "formal_results_exist": false,
+  "allowed_case_ids": [
+    "P4D-SAFE-RT-01",
+    "P4D-SAFE-RS-01",
+    "P4D-VER-01",
+    "P4D-NC-CACHE-01",
+    "P4D-NC-OUTPUT-01"
+  ],
+  "unit_test_rules": {
+    "synthetic_results_only": true,
+    "execute_case_forbidden": true,
+    "docker_forbidden": true,
+    "dolfinx_import_forbidden": true,
+    "abaqus_forbidden": true,
+    "python_dont_write_bytecode": true
+  },
+  "runner_authorization": {
+    "case_cli_lock": "--execute-authorized",
+    "case_environment_lock": "P4D5_EXECUTION_AUTHORIZED=YES",
+    "matrix_cli_lock": "--execute-authorized",
+    "matrix_environment_lock": "P4D5_MATRIX_EXECUTION_AUTHORIZED=YES",
+    "authorization_must_precede_write": true
+  },
+  "future_execution": {
+    "repetitions_per_case": 2,
+    "one_case_run_per_fresh_container": true,
+    "single_process": true,
+    "single_thread": true,
+    "results_root_must_be_new": true,
+    "branch_local_stop_semantics": true
+  },
+  "protected_boundaries": [
+    "P4d.0-P4d.5 static-freeze files are read-only",
+    "P4d.2 numerical implementation is a hash-protected read-only dependency",
+    "P4d.2 prerequisite metadata is not authoritative for P4d.5",
+    "no manuscript, Claim Matrix, Figure, GitHub, Zenodo or DOI update"
+  ]
+}

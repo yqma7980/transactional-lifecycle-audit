@@ -1,0 +1,745 @@
+{
+  "abaqus_used": false,
+  "comsol_used": false,
+  "design_version": "PERF-D1.0",
+  "formal_protocol": {
+    "affinity_mask": 1,
+    "formal_process_count": 450,
+    "formal_processes_per_cell": 10,
+    "no_run_deletion": true,
+    "threads_per_process": 1,
+    "warmup_process_count": 90
+  },
+  "formal_results_exist": false,
+  "manifest_self_hash_embedded": false,
+  "postprocessor": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260722,
+    "contract": {
+      "bytes": 1610,
+      "path": "benchmarks/PERF_cost_overhead/PERF_D1_postprocess_contract.md",
+      "sha256": "a317db0d68ab4423eb222d3df7c27cb232929907efc7aaca2062ff0bbac13cfd"
+    },
+    "errors": 0,
+    "failures": 0,
+    "implementation_files": [
+      {
+        "bytes": 19020,
+        "path": "benchmarks/PERF_cost_overhead/src/perf_postprocess.py",
+        "sha256": "fb9c859ee5c8eff3197d8a8bb22ad2700bddaebff00b1110f322be323f518f5c"
+      },
+      {
+        "bytes": 2682,
+        "path": "benchmarks/PERF_cost_overhead/tests/test_perf_postprocess.py",
+        "sha256": "2ca784e4ddc9c37e6050fd86f94a03578bb516ec98886f2b945a4e977ddbb0e1"
+      },
+      {
+        "bytes": 753,
+        "path": "benchmarks/PERF_cost_overhead/run_perf_postprocess.py",
+        "sha256": "0a799750450660445ebf621dc5aca783fcb1550a3249ab530aa7537bb3df1707"
+      }
+    ],
+    "tests_run": 15
+  },
+  "preflight": {
+    "aggregate_sha256": "2546bfaf3beeddcdd3842c492283a0fecc7499a60fba5b5a3d2f4312f41378a6",
+    "cell_count": 45,
+    "file_count": 137,
+    "files": [
+      {
+        "bytes": 28706,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C0/preflight_1/accepted_output.json",
+        "sha256": "13a77b6a1d7336f592f47a286a6645b11fb4390276429cedfc8c707bce67e7cb"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C0/preflight_1/case_manifest.json",
+        "sha256": "11548c036bd930e3ca12c64073d534a9adb53838ed0d4caa4144a19ed6c7e969"
+      },
+      {
+        "bytes": 1624,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C0/preflight_1/performance_result.json",
+        "sha256": "87c7182ee0e18b2aa055e6846fa643d04932b4ba3dd046a28b6c6959991631b2"
+      },
+      {
+        "bytes": 28706,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C1/preflight_1/accepted_output.json",
+        "sha256": "9149709b98d7846c0092b7eb863de849eecadaddf58965ce0d743db6a691b204"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C1/preflight_1/case_manifest.json",
+        "sha256": "e622d28df189daea4a902751db79aa3008cfe261429939933ba05c5f575e13f0"
+      },
+      {
+        "bytes": 1625,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C1/preflight_1/performance_result.json",
+        "sha256": "5d305e5e5d7c49a24627e4d477e1cee63fa87f38f531e92f37cd44c15da0c6b1"
+      },
+      {
+        "bytes": 28706,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C2/preflight_1/accepted_output.json",
+        "sha256": "f77e3876b4acbb91b4b2ad88526e2ee21e32a95fed66369e5fb5ab445e78fce1"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C2/preflight_1/case_manifest.json",
+        "sha256": "2ec48a8fedfb517ac7f4367d04aaaaffe4c09c4172282980e92595d355ec8eb9"
+      },
+      {
+        "bytes": 1640,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C2/preflight_1/performance_result.json",
+        "sha256": "b6c0c0b69ded7124a0723492a0cff0c3eb361327ffbbf61da4762c9873419f75"
+      },
+      {
+        "bytes": 28706,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C3/preflight_1/accepted_output.json",
+        "sha256": "edd3e1e306c37eb95c9e14de8fdfa157869ffdec7f41643e510db38cc1ec57f5"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C3/preflight_1/case_manifest.json",
+        "sha256": "aada48673b1044d34aca0bd43f90d9bb29b43110e6462a3aa5c65488a53c51ba"
+      },
+      {
+        "bytes": 1638,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C3/preflight_1/performance_result.json",
+        "sha256": "64295e44f7f1c11b6f10d304153eaf4c69d2b9346a3a07c304980726a533ebbe"
+      },
+      {
+        "bytes": 28706,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C4/preflight_1/accepted_output.json",
+        "sha256": "85607951e7d5c33c9147e1ff02ac87b3369c16644b12500321a5fe6eece28356"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C4/preflight_1/case_manifest.json",
+        "sha256": "ba242b616a8c63a15bf4f0e4e5b3f9fb212e67cffef6124b2828855158081e1a"
+      },
+      {
+        "bytes": 1781,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-L-C4/preflight_1/performance_result.json",
+        "sha256": "f9fb5c61bab2266beac4ec8bde63327977c3bd197bdf3444ab0419a3968903aa"
+      },
+      {
+        "bytes": 14574,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C0/preflight_1/accepted_output.json",
+        "sha256": "58e84c714d264f8d94ed5de1d9ba31801a03638ff4284821ed07012a28071180"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C0/preflight_1/case_manifest.json",
+        "sha256": "68266270854a7c092e57777f96b1b85cf9cf581d7b787414273514183bb4ff89"
+      },
+      {
+        "bytes": 1624,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C0/preflight_1/performance_result.json",
+        "sha256": "29f8031aa52066deed31ade7e788d206f5a57a2052643fa1a9fcfcde9265800e"
+      },
+      {
+        "bytes": 14574,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C1/preflight_1/accepted_output.json",
+        "sha256": "e517e8f97c81402c4fcd3c48bba3d772b2c46422c059a0459792502c529ba7a2"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C1/preflight_1/case_manifest.json",
+        "sha256": "42762afd067603e83267c3af8f9016a15319c4346ca8c4b3544900cc1fff5f14"
+      },
+      {
+        "bytes": 1625,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C1/preflight_1/performance_result.json",
+        "sha256": "41f57ce3791080451cc3cb411253166c2485fcb675865f5ac2c12c519d92e7a0"
+      },
+      {
+        "bytes": 14574,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C2/preflight_1/accepted_output.json",
+        "sha256": "561d52a6ade3f0f74ba42ac5ca38c7e5d141cdf922d256924d9818fead22be51"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C2/preflight_1/case_manifest.json",
+        "sha256": "846743a901dc383d47c7dac09ff729311f0e04ec1e6e87856bc522277357a16c"
+      },
+      {
+        "bytes": 1640,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C2/preflight_1/performance_result.json",
+        "sha256": "d1e5adc644594952f4b6b172fd99866f5866f9035e58130df6661b2eaa658d85"
+      },
+      {
+        "bytes": 14574,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C3/preflight_1/accepted_output.json",
+        "sha256": "7ef1d47613d31de88442d3258a7f4a5c871753a311700fead58618068b7630ed"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C3/preflight_1/case_manifest.json",
+        "sha256": "26b97e1e85c2e0a4ff77480cdb3844f9be7ec79bdd67bb5d05c517cd356db959"
+      },
+      {
+        "bytes": 1638,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C3/preflight_1/performance_result.json",
+        "sha256": "9fad0823e2b0f80998081ed7684de37cd65bece7f4017c5df479ba6b15ada9da"
+      },
+      {
+        "bytes": 14574,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C4/preflight_1/accepted_output.json",
+        "sha256": "b0bb1c4beaece83f00655ce9d4c08e496702db1ad78f3d453fe85a689a0c3fb7"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C4/preflight_1/case_manifest.json",
+        "sha256": "e1a64027d367a18e740b78091157074c438db5d3f70de8b339f317d75716f89c"
+      },
+      {
+        "bytes": 1780,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-M-C4/preflight_1/performance_result.json",
+        "sha256": "f52a202397fbf4a62326eb0d883236fb5734b73dea103a60e0e01c19b6b3803d"
+      },
+      {
+        "bytes": 7471,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C0/preflight_1/accepted_output.json",
+        "sha256": "60385499cea5b6b79039718ba1798b08007bc5b00c9755567f9b274f830d5fbd"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C0/preflight_1/case_manifest.json",
+        "sha256": "68fa2c7df1186d7fe4f00fe82129ab73c3390dc9efd8897a4b7a073df27854bf"
+      },
+      {
+        "bytes": 1622,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C0/preflight_1/performance_result.json",
+        "sha256": "e7998f15582a24b95df4bfa24c3f8b13899f3fc5ee0b32eaffc2d0f0d4398f4e"
+      },
+      {
+        "bytes": 7471,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C1/preflight_1/accepted_output.json",
+        "sha256": "374fc28d9a84db2bd470d026669910b12bea5f1ed596386333ab7116fb1eab81"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C1/preflight_1/case_manifest.json",
+        "sha256": "acc2404c01d07d525f6f114c6fb73aa1b6fe0bfc0ac9a4e09f8864c49f6d2605"
+      },
+      {
+        "bytes": 1623,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C1/preflight_1/performance_result.json",
+        "sha256": "b31d7c84b714018dd92f673efa12de3fd767d6b8c79985a8ddacea63b3ca4066"
+      },
+      {
+        "bytes": 7471,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C2/preflight_1/accepted_output.json",
+        "sha256": "fab0696f2c3903ae748f85ecc84ee25dfb058176319d1ba873aabcc52aa5302a"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C2/preflight_1/case_manifest.json",
+        "sha256": "d67b798988538dbcc0e02d06614d3f23031591da6473fa73af24e0c0aaf96e81"
+      },
+      {
+        "bytes": 1637,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C2/preflight_1/performance_result.json",
+        "sha256": "36f4443a111c7aea05f54aa82ff3073abc5d081055797819ccf759960617a36b"
+      },
+      {
+        "bytes": 7471,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C3/preflight_1/accepted_output.json",
+        "sha256": "ecdfccc8941ad8cc4f96acee2cbef6d920f2c1b8f000b54edf94d8edaf03b534"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C3/preflight_1/case_manifest.json",
+        "sha256": "f130d21ce36a025daa0baf8e0b9706422fc85bf02723026abe5574fe9d13497a"
+      },
+      {
+        "bytes": 1635,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C3/preflight_1/performance_result.json",
+        "sha256": "25e9e99fd87a2fef51939e3c99f2829ab0682e6e26d2743f5a564b6814093a83"
+      },
+      {
+        "bytes": 7471,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C4/preflight_1/accepted_output.json",
+        "sha256": "4aba548a50b1662d11f0990a8cdfba5fee21a6aacdd1c7b3f475fefa077556da"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C4/preflight_1/case_manifest.json",
+        "sha256": "f20cd7c3678e5bb109434bcdc5d0e51242ff45de9088ddaa1abb3cc96577aa37"
+      },
+      {
+        "bytes": 1777,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L3-S-C4/preflight_1/performance_result.json",
+        "sha256": "7b535edc84f9148cc57e0c67c8932d201d3fc7f773016952559ebd2ec555670e"
+      },
+      {
+        "bytes": 27953,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C0/preflight_1/accepted_output.json",
+        "sha256": "6d17a30e1af74463cb9fd7671cd142d446c7e379e247d1c5ede7b6a996e51c26"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C0/preflight_1/case_manifest.json",
+        "sha256": "ede9ece6ccd2238369e20b5ea815fd7db63e523d8722b1003e64b40a378866b2"
+      },
+      {
+        "bytes": 1624,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C0/preflight_1/performance_result.json",
+        "sha256": "1d2112e2e8af18941bd6adbd397f6ca08aa276ce1c0a830458058a7e88f45131"
+      },
+      {
+        "bytes": 27953,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C1/preflight_1/accepted_output.json",
+        "sha256": "ade45d79b65f475f839478d587b047ad1c9b48b618cdc6d647486618b173fc8f"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C1/preflight_1/case_manifest.json",
+        "sha256": "e618edf472345a4758b5537c2f62fd40f26f7b00a763cb2e081c20857fb8aca6"
+      },
+      {
+        "bytes": 1625,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C1/preflight_1/performance_result.json",
+        "sha256": "6d747ccacb094cd6b9558d8dbf4b01a07c92cd4622ded1a9cec0ca3cef5423e5"
+      },
+      {
+        "bytes": 27953,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C2/preflight_1/accepted_output.json",
+        "sha256": "18fef20c91d2f1631ae6ba984a94f6504e3fc6087d74a221f94efa940b9b5bb9"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C2/preflight_1/case_manifest.json",
+        "sha256": "ed924cce052ad295e71a2db0a719f1adfd6d476b3853b2f959869a43a1b79e45"
+      },
+      {
+        "bytes": 1642,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C2/preflight_1/performance_result.json",
+        "sha256": "eb3c578cb913ce07838772d8afac0279c22e349231f65e07ec3e203219fe111c"
+      },
+      {
+        "bytes": 27953,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C3/preflight_1/accepted_output.json",
+        "sha256": "f166008e1a7966cac23d7b441f34cc974d6d808f1d6ab54d8f2c084b0cdc59cf"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C3/preflight_1/case_manifest.json",
+        "sha256": "364a8a900a282d3dd9a80ec99fb440d0d168719a22ec3f90e80d2cd7238733b4"
+      },
+      {
+        "bytes": 1640,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C3/preflight_1/performance_result.json",
+        "sha256": "f706a4b8d29c40ba85ce8208e2dc48c6892536b5fc0cb27c3c0b2bbb53c39511"
+      },
+      {
+        "bytes": 27953,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C4/preflight_1/accepted_output.json",
+        "sha256": "5b184f855981f6f1051a2f6cea791b2fffc5382106c97117b2885af9af2fb475"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C4/preflight_1/case_manifest.json",
+        "sha256": "70841609b6b776d038976caba98a7605c4c1cf945008ad43c968e0b3024f0fee"
+      },
+      {
+        "bytes": 1783,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-L-C4/preflight_1/performance_result.json",
+        "sha256": "d1ed69e7ba07dbbbb9bcf0304ff970777ee54973bb38bcbc095481ca9b5eac1d"
+      },
+      {
+        "bytes": 14217,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C0/preflight_1/accepted_output.json",
+        "sha256": "64a381582a4724fb1255b99a4d75e478af7a1d89466fc5c9c20f68e9ebefb65b"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C0/preflight_1/case_manifest.json",
+        "sha256": "14f23215906a48a50865f1a5fab5bef1f263a75b4cf02ed41a707673195572d5"
+      },
+      {
+        "bytes": 1624,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C0/preflight_1/performance_result.json",
+        "sha256": "372a5c4a7ab35d203f7393e5fffcf29197bab134d2f2edf2d34fa311653e43bc"
+      },
+      {
+        "bytes": 14217,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C1/preflight_1/accepted_output.json",
+        "sha256": "23d760bbe132079574328949fc239e728581c424fdc482b55bb0cf633f163dc7"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C1/preflight_1/case_manifest.json",
+        "sha256": "8c86d06879d39ad272a7953afda538394bc7f4af80c70a39323797cc034215a0"
+      },
+      {
+        "bytes": 1625,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C1/preflight_1/performance_result.json",
+        "sha256": "ba59318919d40d7c85cd50db47c1b426011f01bd1579f3405d0c0b7cbcfe885f"
+      },
+      {
+        "bytes": 14217,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C2/preflight_1/accepted_output.json",
+        "sha256": "997774c52ed763e7568af6d46dffa810ff6bae5ad18d8e65844a356c7f4fcbb2"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C2/preflight_1/case_manifest.json",
+        "sha256": "ee16a4239d71218dd61511440e70c2990cb34157295a021fb6fe58d524657815"
+      },
+      {
+        "bytes": 1640,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C2/preflight_1/performance_result.json",
+        "sha256": "25373cd1157af6d44b5e60d718abca30985ea04173d3d1b761c5e8ead0972ede"
+      },
+      {
+        "bytes": 14217,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C3/preflight_1/accepted_output.json",
+        "sha256": "68bfe3cd7d6f65c4a96622edc018d18e072edc62695028e37e979a49f74da771"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C3/preflight_1/case_manifest.json",
+        "sha256": "7688c9f1a23fff7d9af88fe4a0af084a254016441d99bc5a722025b64df9fc9f"
+      },
+      {
+        "bytes": 1638,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C3/preflight_1/performance_result.json",
+        "sha256": "82ad65630f2087fc91c9dbc83665869ca097a01e0193cfa309f18414bbcc48eb"
+      },
+      {
+        "bytes": 14217,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C4/preflight_1/accepted_output.json",
+        "sha256": "3029f9caa36c613bb55553496ca771a7625f3f75fe9e5fe9d36da206ba28ca3d"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C4/preflight_1/case_manifest.json",
+        "sha256": "d0558d940bee93c2e6d51f804b5a5144caf405ab85fe66fa3df51062b0274eae"
+      },
+      {
+        "bytes": 1780,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-M-C4/preflight_1/performance_result.json",
+        "sha256": "20c2fade9eb0f85c133d1753e482c3aff9ad920c3206c499fd76a3b11c140179"
+      },
+      {
+        "bytes": 7355,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C0/preflight_1/accepted_output.json",
+        "sha256": "22f760f83ecd32ed908834548cdd6b0ca74114e2bf00777e928249c1409875fe"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C0/preflight_1/case_manifest.json",
+        "sha256": "74df444a9a5ca011d5e6e466533ec3cb5836c605ed28b055c832b678ab8bbd07"
+      },
+      {
+        "bytes": 1621,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C0/preflight_1/performance_result.json",
+        "sha256": "c117b9f530f4c35a12909286988b83c46f64dc4c7d3c9d23b5cf47c3531239a2"
+      },
+      {
+        "bytes": 7355,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C1/preflight_1/accepted_output.json",
+        "sha256": "2e5690fb6830ae5521944c0d3003d19ce446f556fcf589add22cf7f357884652"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C1/preflight_1/case_manifest.json",
+        "sha256": "c695abe55a802896a3467e5ee499980aa25df77e29caae393f0d3e11d310efb6"
+      },
+      {
+        "bytes": 1622,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C1/preflight_1/performance_result.json",
+        "sha256": "b740eb98a3092917f58786776e48d4d175ed49b888e71acceb269cd700a1c0f7"
+      },
+      {
+        "bytes": 7355,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C2/preflight_1/accepted_output.json",
+        "sha256": "e803bc59eaecd978f7e7135d37203529b87831caba5a0c48ddc251048267dccd"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C2/preflight_1/case_manifest.json",
+        "sha256": "ba5c8d81336da0cf8839ac8900d0e8896292662ba7ea58b75d71fd41a583c67b"
+      },
+      {
+        "bytes": 1636,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C2/preflight_1/performance_result.json",
+        "sha256": "70f0768c897fbe462b89b5d777edaa9b870c7618b94e311ad5ab0dc806d132b3"
+      },
+      {
+        "bytes": 7355,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C3/preflight_1/accepted_output.json",
+        "sha256": "f8aff01b0592941d2aee974a0be04ef58f381fcbc4b51393e32b3b4763dc1b87"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C3/preflight_1/case_manifest.json",
+        "sha256": "4c9a8bbbac6ce67b25563fceb0d08ea9636dcf43db191f8c829b00396bb3617f"
+      },
+      {
+        "bytes": 1635,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C3/preflight_1/performance_result.json",
+        "sha256": "b2500776703d9644c8c7b98079f1cd9a6cca7ca1febb078d4b9dd8a82c3484c3"
+      },
+      {
+        "bytes": 7355,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C4/preflight_1/accepted_output.json",
+        "sha256": "4aad03b495b03d0daf7e5ab5c437a7d7eb2508e36e5f0a5e1f57cb80da476261"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C4/preflight_1/case_manifest.json",
+        "sha256": "603a98b1ff874d83155a8ee4c82f020232bd4b6c88b277bf266a0a5579d54d4f"
+      },
+      {
+        "bytes": 1778,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L4-S-C4/preflight_1/performance_result.json",
+        "sha256": "8ba6ab8d3b2d41a6367fae8edabf6f9f9395a68496896b36add01a177b80a8f1"
+      },
+      {
+        "bytes": 200156,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C0/preflight_1/accepted_output.json",
+        "sha256": "d41631651ffb50381d33bdac4124c340203f4bc44ea23707f9188f9107d43da5"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C0/preflight_1/case_manifest.json",
+        "sha256": "c6306cb111cc896ec3e13b7ce19776feb77453946a3677c69ba865b06972c3d9"
+      },
+      {
+        "bytes": 1636,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C0/preflight_1/performance_result.json",
+        "sha256": "c0614cf969c06b453202398aa50b3786b2cb49c7259f39720303fd1c19a73669"
+      },
+      {
+        "bytes": 200156,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C1/preflight_1/accepted_output.json",
+        "sha256": "7ecdd558637391b1063ffd6933807c09f774336ae7753dd642739ca1404b1d09"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C1/preflight_1/case_manifest.json",
+        "sha256": "3f2425453f06af118f32ed5195d618cad0606d9844f730d2db6bdded5a813ab6"
+      },
+      {
+        "bytes": 1642,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C1/preflight_1/performance_result.json",
+        "sha256": "b21ca26f79a50d23e75129fade2c5f56cecf3062497a800d632cdbf1b2994d8d"
+      },
+      {
+        "bytes": 200156,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C2/preflight_1/accepted_output.json",
+        "sha256": "c5705bbda52f73ad86ec73b9c9b8594f565cc5c97b4dfb17e104110e650d1e5e"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C2/preflight_1/case_manifest.json",
+        "sha256": "397533191ab1962201be011a8d17e5ca4a2be1c0f1080268c253734b17311cc4"
+      },
+      {
+        "bytes": 1663,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C2/preflight_1/performance_result.json",
+        "sha256": "08000ab367f1f81e64ff383e346e9ced94450f98c4b56e95d325588ec7a4bfb2"
+      },
+      {
+        "bytes": 200156,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C3/preflight_1/accepted_output.json",
+        "sha256": "8b5cc9c48974652e01029cce6d368901da7b30bbd8f9950e59c331c552baf0bb"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C3/preflight_1/case_manifest.json",
+        "sha256": "49ccc52953ca799341a74ed721fa9e759c6abb51c05b48c2844c493cbc75cc55"
+      },
+      {
+        "bytes": 1662,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C3/preflight_1/performance_result.json",
+        "sha256": "bd00c063484e17d295de536d6499e2798c6b0d9d1bf3a82a5c38a5aed0a0f0b7"
+      },
+      {
+        "bytes": 200156,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C4/preflight_1/accepted_output.json",
+        "sha256": "b737d7fd667fc19f9d83a4cbf11ab1ad562047dbe2c70b48bc1c690abb16db61"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C4/preflight_1/case_manifest.json",
+        "sha256": "fcf19d39834d61e02a9ad82c9c61e037d3d3f1236d8000d65f147a22e752208d"
+      },
+      {
+        "bytes": 1810,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-L-C4/preflight_1/performance_result.json",
+        "sha256": "38ec8195223067c8e0309b16f6ed986239ff4caf4d4b78787bdff263eff42f40"
+      },
+      {
+        "bytes": 50156,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C0/preflight_1/accepted_output.json",
+        "sha256": "0165eba2c6ed05e8038e1899dcefd9d96519b7260045127e6c827c66a699a2b0"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C0/preflight_1/case_manifest.json",
+        "sha256": "34ff292ab8d2e1445e9e171d0966ee75df632b598f6c126d5bbb7ce4d9949ff3"
+      },
+      {
+        "bytes": 1634,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C0/preflight_1/performance_result.json",
+        "sha256": "b18e7071833ab0df438c24dbca44599a8412d2d1bbaf8bcd95173d37d505ed5c"
+      },
+      {
+        "bytes": 50156,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C1/preflight_1/accepted_output.json",
+        "sha256": "b30d10bf37d9de4cb5258121dc009e1412c42841b3fb6e310569e7c26b79bdb5"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C1/preflight_1/case_manifest.json",
+        "sha256": "4431a7b53ed0674f4d417685efdd0ff5cc812ed6f67ceda76a77d87d28682ac5"
+      },
+      {
+        "bytes": 1639,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C1/preflight_1/performance_result.json",
+        "sha256": "b98da4f9d4fb2a96198a97b67be41ac378093c58ff1fcedd8bd5f9a8bbdbc162"
+      },
+      {
+        "bytes": 50156,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C2/preflight_1/accepted_output.json",
+        "sha256": "bf8aace0f31c98c477c2fe504ff0c99169382fa1d2de26659e0f58fb9709c7a9"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C2/preflight_1/case_manifest.json",
+        "sha256": "25148a97a00ac0628aba8ebfaa21d058ec1dc02596c8ee96f857722ccd37285d"
+      },
+      {
+        "bytes": 1657,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C2/preflight_1/performance_result.json",
+        "sha256": "819eef5695822ad0dac002589b3d110aadaaf92713fc070d2d96ca0cc8b25ef4"
+      },
+      {
+        "bytes": 50156,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C3/preflight_1/accepted_output.json",
+        "sha256": "54d846f6d3e93a975ce0588df2b6454ae0f4193a7e0d10482bc6a526c7f6fd5f"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C3/preflight_1/case_manifest.json",
+        "sha256": "34d2ca5dde99ce0211d1a69ef98f5be4d6a9c9c605336bdf5f62cafc2ce07b53"
+      },
+      {
+        "bytes": 1658,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C3/preflight_1/performance_result.json",
+        "sha256": "54fb45254a958325d868a6fa59365442cd277465576af87c7b1929d9a42038b9"
+      },
+      {
+        "bytes": 50156,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C4/preflight_1/accepted_output.json",
+        "sha256": "4af7bc1a7f2ef56405960e324ffcc1722ef41be45e0dfdbe718dcd70457ffdd3"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C4/preflight_1/case_manifest.json",
+        "sha256": "ef34195e4760c1f7a4b75f5c69b19aeb9e3b780da8fb7064953e607eff676fe6"
+      },
+      {
+        "bytes": 1803,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-M-C4/preflight_1/performance_result.json",
+        "sha256": "81292cb5c18dd5cc1b6a25682f8c815aea1f8f6547ccd1f035e9719746e2ce14"
+      },
+      {
+        "bytes": 12705,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C0/preflight_1/accepted_output.json",
+        "sha256": "5ba7ce249b3870eb5c05607717944ce1f8fbef663ff16b7da4a4987aa98f8f5e"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C0/preflight_1/case_manifest.json",
+        "sha256": "0122fc675440d6695d5c6ee5f3c30b555e9332001c9ab575b52c8503de85072f"
+      },
+      {
+        "bytes": 1627,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C0/preflight_1/performance_result.json",
+        "sha256": "0032bd7b4eab6a4102776ff506004188419e88649cb4dae0ddcfbb8370607653"
+      },
+      {
+        "bytes": 12705,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C1/preflight_1/accepted_output.json",
+        "sha256": "02a235441023ff83f9ddac1e94116ac37729449261adeb5ad726df6edd03715a"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C1/preflight_1/case_manifest.json",
+        "sha256": "11d754f2d0c23f756b18d55c81b0737c4de4539488217cbfda01a09964da5096"
+      },
+      {
+        "bytes": 1630,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C1/preflight_1/performance_result.json",
+        "sha256": "383399cd62aefd2920308284de1e945b9cf9c3f9396011d5519f4bb2b74137c1"
+      },
+      {
+        "bytes": 12705,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C2/preflight_1/accepted_output.json",
+        "sha256": "1f6419521d7bc5fa17bfb18475d16aeb1615e87ad42b37a37f2f9996d58e3e24"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C2/preflight_1/case_manifest.json",
+        "sha256": "1c573a9d570ec346e6d36ea5291eb5825ddef2464158a0b9142a4587238134a9"
+      },
+      {
+        "bytes": 1647,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C2/preflight_1/performance_result.json",
+        "sha256": "91b45ef12774d64b3ed8fac142f0848dd1748b0a75c5fb2dc85469fe0b280475"
+      },
+      {
+        "bytes": 12705,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C3/preflight_1/accepted_output.json",
+        "sha256": "0c16a7802e121a82efb0502712d1b8855355f598d62ec2e489a36b6f90222758"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C3/preflight_1/case_manifest.json",
+        "sha256": "4df7dc600f8ef2f785c2b9f2a172f52cc7d7e6cd8868284456e10b67060e518c"
+      },
+      {
+        "bytes": 1646,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C3/preflight_1/performance_result.json",
+        "sha256": "65afb273c04e6811e9ec5a88da5075da4d564d5da37f4b7579f47820752499bb"
+      },
+      {
+        "bytes": 12705,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C4/preflight_1/accepted_output.json",
+        "sha256": "b4d56bc10bd8ea75c02780d7ef4843c7927c82ef848be04d4ed737c3b5c8b689"
+      },
+      {
+        "bytes": 430,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C4/preflight_1/case_manifest.json",
+        "sha256": "9887f9189412aa831fda5a7f9be9094cf29db621a0cec298ec682ad3057d7aa2"
+      },
+      {
+        "bytes": 1789,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/PERF-L6-S-C4/preflight_1/performance_result.json",
+        "sha256": "53054a5b57550a082eec45c01447e4c763233c2722da325585aed3b4163fe3d5"
+      },
+      {
+        "bytes": 190,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/preflight_manifest.json",
+        "sha256": "268c2916057476b7148db70c9275a8e1bc668668507dd550a7577b2c8f7706f1"
+      },
+      {
+        "bytes": 1962,
+        "path": "benchmarks/PERF_cost_overhead/preflight/PERF_D1_all_cells/preflight_summary.json",
+        "sha256": "60c4e289fa2f94db54ea198a7f0761ebe3c505ae6a408c2645cf9183c9385978"
+      }
+    ],
+    "group_count": 9,
+    "status": "PASS"
+  },
+  "production_model_used": false,
+  "python": {
+    "executable": "python",
+    "version": "3.12.10"
+  },
+  "schema_version": "PERF-D1-PREFORMAL-MANIFEST-1.0",
+  "status": "PREFLIGHT_PASS_FORMAL_READY"
+}

@@ -1,0 +1,8 @@
+case_id,group,variant,expected_classification,frozen_schedule
+L3-REF-01,analytical_reference,safe_transactional,PASS_ANALYTICAL_REFERENCE,"N=160;dt=0.00025;t=0.05,0.2,0.5"
+L3-CV-S-01,spatial_convergence,safe_transactional,PASS_SPATIAL_CONVERGENCE,"N=20,40,80;dt=0.2*dx^2;t=0.2"
+L3-CV-T-01,temporal_convergence,safe_transactional,PASS_TEMPORAL_CONVERGENCE,"N=400;dt=0.04,0.02,0.01;t=0.2"
+L3-MB-01,discrete_mass_balance,safe_transactional,PASS_DISCRETE_MASS_BALANCE,N=64;dt=0.005;t=0.5
+L3-ST-01,spatial_stability,safe_transactional,PASS_MONOTONE_STABILITY,N=80;dt=0.0025;t=0.5
+L3-RT-01,safe_retry,safe_transactional,PASS_SAFE_RETRY_INVARIANCE,N=32;trial_dt=0.02;replay_dt=0.01
+L3-RT-02,unsafe_retry_negative_control,unsafe_previous_state_cache,DETECT_FINITE_RETRY_STATE_DRIFT,N=32;trial_dt=0.02;replay_dt=0.01

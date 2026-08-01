@@ -1,37 +1,18 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the archived software release using the DOI below."
+message: "If you use this software, please cite the software archive and the associated article."
 title: "Transactional Lifecycle Audit: Reproducibility Software for Path-Dependent Computational Models"
 type: software
-version: 1.0.0
-date-released: 2026-07-24
-doi: 10.5281/zenodo.21536451
+version: 2.15.0
+date-released: 2026-08-01
+doi: 10.5281/zenodo.21536450
 repository-code: "https://github.com/yqma7980/transactional-lifecycle-audit"
 license: BSD-3-Clause
 authors:
   - family-names: Ma
     given-names: Yangqi
-    email: 15594667980@163.com
-    affiliation: "School of Mechanics and Engineering, Liaoning Technical University, Fuxin, Liaoning, China"
   - family-names: Sun
     given-names: Weiji
-    email: sunweiji-1231@163.com
-    affiliation: "School of Mechanics and Engineering, Liaoning Technical University, Fuxin, Liaoning, China"
   - family-names: Liang
     given-names: Bing
-    email: lbwqx@163.com
-    affiliation: "School of Mechanics and Engineering, Liaoning Technical University, Fuxin, Liaoning, China"
   - family-names: He
     given-names: Shi
-    email: hs_ccteg@163.com
-    affiliation: "China Coal Research Institute, Beijing, China"
-keywords:
-  - transactional lifecycle audit
-  - rollback invariance
-  - nonlinear finite elements
-  - metamorphic testing
-  - reproducibility
-abstract: >-
-  Standalone Python benchmarks and release manifests for auditing state
-  ownership, rollback behavior, operator-version compatibility, and
-  accepted-state output provenance in path-dependent nonlinear simulations.
-

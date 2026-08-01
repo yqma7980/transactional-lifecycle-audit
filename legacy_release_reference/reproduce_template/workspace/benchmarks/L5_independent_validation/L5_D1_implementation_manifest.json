@@ -1,0 +1,117 @@
+{
+    "schema_version":  "L5-D1-IMPLEMENTATION-1.0",
+    "design_version":  "L5-D1.0",
+    "host_version":  "L5-HOST-D1.0",
+    "implementation_status":  "IMPLEMENTED_PRECHECK_FAILED_SCIENTIFIC_GATE",
+    "execution_performed":  false,
+    "results_exist":  false,
+    "abaqus_used":  false,
+    "production_model_used":  false,
+    "frozen_design_files":  [
+                                {
+                                    "path":  "benchmarks/L5_independent_validation/L5_D0_independence_contract.md",
+                                    "sha256":  "5587de156d551a492a70d62029b833ddb04b71942337948f01183b2c3721a91c",
+                                    "size_bytes":  2041
+                                },
+                                {
+                                    "path":  "benchmarks/L5_independent_validation/L5_D0_benchmark_spec.md",
+                                    "sha256":  "077acff329ef552060ebbc971ce06009003a8af7a0640dbecc860d96f9ec127b",
+                                    "size_bytes":  1795
+                                },
+                                {
+                                    "path":  "benchmarks/L5_independent_validation/L5_D0_acceptance_gates.md",
+                                    "sha256":  "77c10fd35020d8d7f139299aec1aba8a915293f10d3fb7ee1008e6b717d42769",
+                                    "size_bytes":  1479
+                                },
+                                {
+                                    "path":  "benchmarks/L5_independent_validation/L5_D0_case_matrix.csv",
+                                    "sha256":  "23e8b4daeaff30934a43c0cb119df40f2ab48c9e8a620d86168c841c23e48546",
+                                    "size_bytes":  577
+                                },
+                                {
+                                    "path":  "benchmarks/L5_independent_validation/L5_D1_execution_freeze.json",
+                                    "sha256":  "0cf1332be01cdc473646214998bb0508d610ac3c29d83932d46091c9d6a849ad",
+                                    "size_bytes":  3125
+                                },
+                                {
+                                    "path":  "benchmarks/L5_independent_validation/L5_D1_implementation_plan.md",
+                                    "sha256":  "deb4ebd37560e8f249e60665d6e418b6c8a30cbbc11c65e0d7971623b2315dc5",
+                                    "size_bytes":  1021
+                                },
+                                {
+                                    "path":  "benchmarks/L5_independent_validation/L5_D0_static_freeze_QA.md",
+                                    "sha256":  "b17af7b63691db576809700694eb3ebc92fe062fe5f11e097d8210484949673b",
+                                    "size_bytes":  872
+                                },
+                                {
+                                    "path":  "benchmarks/L5_independent_validation/L5_D1_source_manifest.json",
+                                    "sha256":  "b91db95423949809811cc349682b7331445c6e34cc75d37f40c2f8b4a62c2f2a",
+                                    "size_bytes":  2513
+                                }
+                            ],
+    "implementation_files":  [
+                                 {
+                                     "path":  "benchmarks/L5_independent_validation/run_l5_d1.py",
+                                     "sha256":  "4b3b21a86b1aa50b42ee6535f254f096093b86a94476dcc2c29924f9e9c13d1f",
+                                     "size_bytes":  4387,
+                                     "ast_parse":  "PASS"
+                                 },
+                                 {
+                                     "path":  "benchmarks/L5_independent_validation/src/__init__.py",
+                                     "sha256":  "42c63d2fdd5bb372126e696725d14fbcb4064abef33b6b5209c1a25c7a78f387",
+                                     "size_bytes":  55,
+                                     "ast_parse":  "PASS"
+                                 },
+                                 {
+                                     "path":  "benchmarks/L5_independent_validation/src/l5_state.py",
+                                     "sha256":  "4cfce8994fbd58ba0b21a2837c503368f542dc1e2774071544d69f0235eb02c4",
+                                     "size_bytes":  5675,
+                                     "ast_parse":  "PASS"
+                                 },
+                                 {
+                                     "path":  "benchmarks/L5_independent_validation/src/l5_oracle.py",
+                                     "sha256":  "7811d99b07fe1ed6bb133959439fa581edbb5bf7728a66ccfc1555da28962e70",
+                                     "size_bytes":  4371,
+                                     "ast_parse":  "PASS"
+                                 },
+                                 {
+                                     "path":  "benchmarks/L5_independent_validation/src/l5_solver.py",
+                                     "sha256":  "b912ed20df1ccb6a1f5df18db27285112fb0058dcf5af3536a4dcab937c53acc",
+                                     "size_bytes":  10329,
+                                     "ast_parse":  "PASS"
+                                 },
+                                 {
+                                     "path":  "benchmarks/L5_independent_validation/src/l5_lifecycle.py",
+                                     "sha256":  "1d07e7ccaada94a025ee40509622faccbe24281a67d968f2c0f8964c0be2c93e",
+                                     "size_bytes":  9781,
+                                     "ast_parse":  "PASS"
+                                 },
+                                 {
+                                     "path":  "benchmarks/L5_independent_validation/src/l5_cases.py",
+                                     "sha256":  "38de71cde939429de0e0be06c3514176d4e77faf0d5bb0ae7295068b3b91c276",
+                                     "size_bytes":  25885,
+                                     "ast_parse":  "PASS"
+                                 },
+                                 {
+                                     "path":  "benchmarks/L5_independent_validation/tests/test_l5_d1.py",
+                                     "sha256":  "96ef7060bb30bb92f6971e7cbbe01ea5c8a9454cfeee8c1f519569cef34c39b4",
+                                     "size_bytes":  5471,
+                                     "ast_parse":  "PASS"
+                                 }
+                             ],
+    "pre_execution_erratum_sha256":  "aff7576cd157f06308c572287943a0a0e7aaeb681d600ab34916b703fd028248",
+    "precheck_failure_json_sha256":  "d055d78c7d01f0312eae07422483dc6287a2b481da5748036a0930c036bda1e6",
+    "precheck_failure_report_sha256":  "f46807a7b600666b332c110a18159c0c8be3b95d691ba3e11f3553615bfea0a4",
+    "ast_parse_all_pass":  true,
+    "unit_tests":  {
+                       "run":  11,
+                       "passed":  10,
+                       "failed":  1,
+                       "failed_gate":  "L5-IV-CV-01",
+                       "formal_evidence":  false
+                   },
+    "double_locked_runner_present":  true,
+    "no_formal_case_execution":  true,
+    "no_abaqus_execution":  true,
+    "manifest_self_hash_embedded":  false
+}

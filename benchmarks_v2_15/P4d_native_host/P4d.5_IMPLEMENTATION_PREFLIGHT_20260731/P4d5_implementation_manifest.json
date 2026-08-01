@@ -1,0 +1,95 @@
+{
+  "authorization_precedes_write": true,
+  "branch_local_stop_semantics": true,
+  "case_count": 5,
+  "design_version": "P4d.0",
+  "formal_execution_authorized": false,
+  "formal_results_exist": false,
+  "full_file_duplicate_QA_deferred_to_formal_finalization": true,
+  "future_formal_process_count": 10,
+  "gate_results": {
+    "bytes": 1692,
+    "path": "P4d5_preflight_gate_results.json",
+    "sha256": "6314b5292b6e4ec323b051c3a1d92861aeada21e3fd6a798351d43c9ba314ce7"
+  },
+  "host_version": "P4D-DOLFINX-PETSC-HOST-1.0",
+  "implementation_files": [
+    {
+      "bytes": 1658,
+      "path": "P4d5_implementation_preflight_freeze.json",
+      "sha256": "dca1b3d37adddb83472ea6accad4d71643c8d966bffa06fbb5eccede726bb1b6"
+    },
+    {
+      "bytes": 2566,
+      "path": "run_p4d5.py",
+      "sha256": "f24407f17b44a512f8e4916d22c276bcd64d71795ef202f354e43b8eec7e002d"
+    },
+    {
+      "bytes": 5963,
+      "path": "run_p4d5_branch_matrix.py",
+      "sha256": "d2cda2ab05812fddd166452fddd8f72441cd03efcdf5a21d56f7e33a77063520"
+    },
+    {
+      "bytes": 8759,
+      "path": "src/p4d5_protocol.py",
+      "sha256": "2f0a2c6d6b68f8e6f78d091d586858b0fb73368e8d74c8fbab98a8462e4f6ca2"
+    },
+    {
+      "bytes": 5158,
+      "path": "src/p4d5_scheduler.py",
+      "sha256": "ae3cf8422a27c58248ce5941a42fdb27bbf11d4fce8ce4a0f485aebb5cd31008"
+    },
+    {
+      "bytes": 3063,
+      "path": "tests/test_p4d5_authorization.py",
+      "sha256": "a11a90a25501819b9cb2fafc931dcf758a43b5e7d89f2cb6374f48581f5d13c3"
+    },
+    {
+      "bytes": 1143,
+      "path": "tests/test_p4d5_protocol.py",
+      "sha256": "64199f98f08161025d64b582e602e5e345882ba71e0533f604e3066062b62fdf"
+    },
+    {
+      "bytes": 4891,
+      "path": "tests/test_p4d5_scheduler.py",
+      "sha256": "c19adbb768a866bbeeee26e12f605d45a84a4a68de4a0b0d037b9a72fe38f307"
+    }
+  ],
+  "implementation_status": "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+  "implementation_version": "P4d.5-preflight.1",
+  "manifest_self_hash_embedded": false,
+  "no_abaqus_execution": true,
+  "no_case_execution": true,
+  "no_docker_container_started": true,
+  "no_dolfinx_import_in_tests": true,
+  "observed_p4d_evidence_created": false,
+  "pair_contract_requires_normalized_case_result_equality": true,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "protected_unique_path_count": 31,
+  "protocol_revision": "P4d.5",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "runtime_evidence": [
+    {
+      "bytes": 2157,
+      "path": "runtime_evidence/unit_test.log",
+      "sha256": "9812ed0069fb6494d1f0ac0542d8558e8d6c76c0e637ee1fb1ed74b0057a9324"
+    },
+    {
+      "bytes": 2656,
+      "path": "runtime_evidence/ast_static_QA.json",
+      "sha256": "5849bd968f651dc0dae0aed7f89fdc65154cd4005a231f91b899af5a4a89ede8"
+    },
+    {
+      "bytes": 7930,
+      "path": "runtime_evidence/protected_evidence_QA.json",
+      "sha256": "0a25f3118f2bfabfc97a86a4b5aa3754ac0a777bdf582301a7a41a1bbf382b92"
+    },
+    {
+      "bytes": 769,
+      "path": "runtime_evidence/process_boundary_QA.json",
+      "sha256": "8833b35651bf8eb9e12a983ac0b32004d090ef3d3900008daffc6206491f005a"
+    }
+  ],
+  "schema_version": "CMAME-P4D5-IMPLEMENTATION-MANIFEST-1.0",
+  "unit_test_count": 15
+}

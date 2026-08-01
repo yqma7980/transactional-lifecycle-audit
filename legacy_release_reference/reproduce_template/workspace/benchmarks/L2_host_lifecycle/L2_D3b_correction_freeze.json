@@ -1,0 +1,55 @@
+{
+  "design_version": "L2-D3.0",
+  "implementation_revision": "L2-D3.0b",
+  "host_version": "L2-HOST-D3.0b",
+  "correction_status": "CORRECTION_FROZEN_NOT_IMPLEMENTED",
+  "execution_authorized": false,
+  "formal_results_exist": false,
+  "abaqus_used": false,
+  "supported_formal_cases": ["L2-TG-02"],
+  "authoritative_committed_state_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+  "preserved_run": {
+    "case_id": "L2-TG-02",
+    "run_id": "run_1",
+    "classification": "FAIL_IMPLEMENTATION_CONTRACT",
+    "evaluation_counts": [3, 4],
+    "accepted_field_equal": true,
+    "accepted_fingerprint_equal": false,
+    "accepted_deltas": {
+      "u": 3.469446951953614e-18,
+      "sigma": 0.0,
+      "epsilon_p": 5.204170427930421e-18,
+      "kappa": 5.204170427930421e-18,
+      "force": 0.0
+    }
+  },
+  "tolerances": {
+    "absolute": 1e-12,
+    "relative": 1e-12,
+    "finite_limit": 1e100,
+    "tg01_exact": 0.0
+  },
+  "tg01_unchanged": {
+    "exact_packet_parity": true,
+    "exact_accepted_fingerprint_parity": true,
+    "evaluation_counts": [3, 3]
+  },
+  "tg02_corrected": {
+    "accepted_fields": ["u", "sigma", "epsilon_p", "kappa", "force"],
+    "comparison": "math.isclose(left,right,rel_tol=1e-12,abs_tol=1e-12)",
+    "fingerprint_equality_is_informational": true,
+    "evaluation_counts": [3, 4],
+    "iteration_count_equal": false,
+    "left_transition_valid_required": true,
+    "right_transition_valid_required": true,
+    "cross_path_committed_hash_equal_is_informational": true,
+    "classification": "PASS_DECLARED_LAGGED_TANGENT_PARITY"
+  },
+  "corrective_replay_label": "CORRECTIVE_REPLAY_EXPECTED_PASS",
+  "future_runner": {
+    "cli_lock": "--execute-authorized",
+    "environment_lock": "L2_D3B_EXECUTION_AUTHORIZED=YES",
+    "output_root": "results/L2_D3b_tangent_path"
+  },
+  "claim_boundary": "No formal TG-02, TG-03, Abaqus, production, performance, conservation, or coupled-physics evidence."
+}

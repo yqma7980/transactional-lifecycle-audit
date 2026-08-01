@@ -1,0 +1,25 @@
+{
+  "checkpoint_evidence_present": false,
+  "component_state_projection_present": false,
+  "contract_id": "P6R-SAME-FAULT-IDENTITY-1.0",
+  "design_version": "P6R-F05-F07.0",
+  "invalid_if": [
+    "different raw bundle reaches a method",
+    "raw/protected hash drift",
+    "threshold or projection changes",
+    "FE rerun",
+    "ground-truth label reaches detector"
+  ],
+  "raw_execution_reused": true,
+  "required_equal_within_each_method_comparison": [
+    "p5_source_case",
+    "p5_run_id",
+    "environment_hash",
+    "host_version",
+    "implementation_version",
+    "accepted_load_schedule",
+    "eta",
+    "raw_bundle_aggregate_sha256"
+  ],
+  "sole_allowed_difference": "method_projection_id"
+}

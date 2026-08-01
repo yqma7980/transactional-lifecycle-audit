@@ -1,0 +1,75 @@
+{
+    "schema_version":  "CMAME-P4D2-FORMAL-PROGRESS-1.0",
+    "status":  "STOPPED_ON_FAILURE",
+    "completed_process_count":  6,
+    "planned_process_count":  18,
+    "failure":  "P4D-SAFE-LS-01 run_1 exited with code 2",
+    "records":  [
+                    {
+                        "case_id":  "P4D-REF-01",
+                        "run_id":  "run_1",
+                        "exit_code":  0,
+                        "pass_flag":  true,
+                        "primary_verdict":  "REFERENCE_GATE_PASS",
+                        "expected_primary_verdict":  "REFERENCE_GATE_PASS",
+                        "result_sha256":  "05ec82dd24fdfb43792bc8292a436ad3ebdc9e7d971f5ebc4b1826bdf3b89195",
+                        "manifest_sha256":  "b529689c72ed3fa4a4b67990797570571f3c93e3c58c60f3cf0de32eb5b28085",
+                        "log_sha256":  "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+                    },
+                    {
+                        "case_id":  "P4D-REF-01",
+                        "run_id":  "run_2",
+                        "exit_code":  0,
+                        "pass_flag":  true,
+                        "primary_verdict":  "REFERENCE_GATE_PASS",
+                        "expected_primary_verdict":  "REFERENCE_GATE_PASS",
+                        "result_sha256":  "99dd87cca7624895cdbb7761c598246f6e95cede9423fb586318977cefc0b4cd",
+                        "manifest_sha256":  "a13a7e5dc718c35c2437105b3a90486b1123743a708361a3a6cce60e2195abfd",
+                        "log_sha256":  "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+                    },
+                    {
+                        "case_id":  "P4D-CONST-01",
+                        "run_id":  "run_1",
+                        "exit_code":  0,
+                        "pass_flag":  true,
+                        "primary_verdict":  "CONSTITUTIVE_ORACLE_PASS",
+                        "expected_primary_verdict":  "CONSTITUTIVE_ORACLE_PASS",
+                        "result_sha256":  "808e2d7c372589bb8f460919796a57bed775cd74295b5783014f5f00e3c90181",
+                        "manifest_sha256":  "25f05afbf28d201e879e7aa1a8e9b18d7655362a1bb3a442552384e51b3184ac",
+                        "log_sha256":  "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+                    },
+                    {
+                        "case_id":  "P4D-CONST-01",
+                        "run_id":  "run_2",
+                        "exit_code":  0,
+                        "pass_flag":  true,
+                        "primary_verdict":  "CONSTITUTIVE_ORACLE_PASS",
+                        "expected_primary_verdict":  "CONSTITUTIVE_ORACLE_PASS",
+                        "result_sha256":  "856f87041cf30382a9534cdeeb460de305f0febdb90e103d31da8c9ce3e383f1",
+                        "manifest_sha256":  "5aea6b83234f3016ca148881b0b3102e8f00a00c3caba217a84c389fc3f58e94",
+                        "log_sha256":  "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+                    },
+                    {
+                        "case_id":  "P4D-SAFE-DIR-01",
+                        "run_id":  "run_1",
+                        "exit_code":  0,
+                        "pass_flag":  true,
+                        "primary_verdict":  "PASS_REPLAY_INVARIANCE_WITHIN_TESTED_CLASS",
+                        "expected_primary_verdict":  "PASS_REPLAY_INVARIANCE_WITHIN_TESTED_CLASS",
+                        "result_sha256":  "ad02f938bc9df59ee254af15e07781b629e1f917289469260efcbdab3f06dc72",
+                        "manifest_sha256":  "141ba481b73525b55de48ee15f801ae2fe52167db7a1f7e049006fc4b0ab9d87",
+                        "log_sha256":  "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+                    },
+                    {
+                        "case_id":  "P4D-SAFE-DIR-01",
+                        "run_id":  "run_2",
+                        "exit_code":  0,
+                        "pass_flag":  true,
+                        "primary_verdict":  "PASS_REPLAY_INVARIANCE_WITHIN_TESTED_CLASS",
+                        "expected_primary_verdict":  "PASS_REPLAY_INVARIANCE_WITHIN_TESTED_CLASS",
+                        "result_sha256":  "3f769d19fba5af34df43a257fd954388aad59e87d5c188cbdaf82331fce25b54",
+                        "manifest_sha256":  "ef65d6d5d40a8694c08617a6ccb6b5db089482b505a70b4e5d141a3aff5b4c0d",
+                        "log_sha256":  "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+                    }
+                ]
+}

@@ -1,0 +1,41 @@
+ordinal,name,type,required,description,allowed_values
+1,design_version,string,true,Frozen L1 design version,L1-D1.0
+2,run_id,string,true,Deterministic execution identifier,predeclared
+3,implementation_hash,string,true,SHA-256 of executable implementation,sha256
+4,case_id,string,true,Case identifier from frozen matrix,case_matrix
+5,sublevel,string,true,Benchmark sublevel,L1-MP|L1-E1
+6,variant,string,true,Implementation variant,safe_local|safe_transactional|unsafe_trial_cache|unsafe_output_feedback|seeded_version_mismatch
+7,history_id,string,true,Compared history identifier,H1|H2|REFERENCE
+8,call_index,integer,true,Monotonic call index within history,nonnegative
+9,event,string,true,Declared lifecycle event,BeginAttempt|EvaluateMaterial|EvaluateElement|RejectCandidate|RejectAttempt|AcceptCandidate|OutputAccepted|TerminalRead|CheckpointWrite|CheckpointRead
+10,attempt_id,string,true,Attempt identity or NA,declared
+11,candidate_id,string,true,Candidate identity or NA,declared
+12,operator_version,string,true,Declared operator version identifier,declared
+13,declared_packet_hash,string,true,Canonical complete input hash,sha256
+14,material_parameters_hash,string,true,Immutable material-data hash,sha256
+15,configuration_hash,string,true,Harness and element configuration hash,sha256
+16,accepted_version_before,integer,true,Accepted state version before event,nonnegative
+17,accepted_version_after,integer,true,Accepted state version after event,nonnegative
+18,committed_state_hash_before,string,true,Committed state hash before event,sha256
+19,committed_state_hash_after,string,true,Committed state hash after event,sha256
+20,candidate_state_hash,string,true,Candidate hash or NA,sha256_or_NA
+21,persistent_state_hash_before,string,true,Seeded hidden-state hash or NA,sha256_or_NA
+22,persistent_state_hash_after,string,true,Seeded hidden-state hash or NA,sha256_or_NA
+23,epsilon_hex,string,true,Material trial strain as IEEE hexadecimal or NA,float_hex_or_NA
+24,u_hex,string,true,Element displacement as IEEE hexadecimal or NA,float_hex_or_NA
+25,force_hex,string,true,Element force as IEEE hexadecimal or NA,float_hex_or_NA
+26,epsilon_p_committed_hex,string,true,Committed plastic strain,float_hex
+27,kappa_committed_hex,string,true,Committed hardening variable,float_hex
+28,sigma_hex,string,true,Returned stress or NA,float_hex_or_NA
+29,E_alg_hex,string,true,Returned algorithmic tangent or NA,float_hex_or_NA
+30,residual_hex,string,true,Returned element residual or NA,float_hex_or_NA
+31,tangent_hex,string,true,Returned element tangent or NA,float_hex_or_NA
+32,epsilon_p_candidate_hex,string,true,Candidate plastic strain or NA,float_hex_or_NA
+33,kappa_candidate_hex,string,true,Candidate hardening variable or NA,float_hex_or_NA
+34,residual_state_version,string,true,State version used for stress/residual,declared
+35,tangent_state_version,string,true,State version used for tangent,declared
+36,output_source_version,string,true,Accepted output source or NA,accepted_or_NA
+37,candidate_reachable_after,boolean,true,Whether candidate remains reachable after event,true|false
+38,finite,boolean,true,All normal numeric outputs finite,true|false
+39,event_valid,boolean,true,Event satisfies state contract,true|false
+40,note,string,true,Short deterministic audit note,no_timestamp

@@ -1,0 +1,161 @@
+{
+  "abaqus_used": false,
+  "benchmark_or_test_execution": false,
+  "comsol_used": false,
+  "design_case_count": 7,
+  "design_status": "FROZEN_STATIC_NOT_IMPLEMENTED",
+  "design_version": "CMAME-P5.0",
+  "execution_authorized": false,
+  "forbidden_operations": [
+    "implement or run P5 under this authorization",
+    "create runner tests results execution or output directories",
+    "inspect P6 results before strength selection is frozen",
+    "reuse MUT-D0 strengths as the P5 grid",
+    "retrospectively reclassify FEH MUT P4d or v2.13",
+    "alter P4d native line-search non-support",
+    "modify manuscript Claim Matrix Figure GitHub Zenodo or DOI",
+    "run Abaqus COMSOL OpenSees production UEL or long-window simulation"
+  ],
+  "frozen_date": "2026-07-31",
+  "future_output_contract": [
+    "null_pairwise_metrics.csv",
+    "null_envelope.json",
+    "strength_sweep.csv",
+    "selected_strengths.json",
+    "duplicate_comparison.json",
+    "case_result.json",
+    "execution_manifest.json"
+  ],
+  "github_zenodo_doi_modified": false,
+  "host": {
+    "identity": "P4d serial DOLFINx/PETSc author-transaction host",
+    "image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "mpi_ranks": 1,
+    "native_linesearch_branch": "NOT_SUPPORTED_BY_DIAGNOSTIC_ENVELOPE_AND_EXCLUDED_FROM_P5",
+    "network": "none",
+    "platform": "linux/amd64",
+    "threads": 1
+  },
+  "implementation_authorized": false,
+  "manuscript_or_claim_updated": false,
+  "next_gate": "P5_IMPLEMENTATION_PREFLIGHT_SEPARATELY_AUTHORIZED",
+  "numeric_rule": {
+    "absolute_floor_multiplier": 1024,
+    "machine_epsilon": 2.220446049250313e-16,
+    "maximum_E_m": 1e-11,
+    "maximum_T_m": 1e-10,
+    "null_margin_factor": 10.0,
+    "required_fault_separation_ratio": 10.0
+  },
+  "p3_bindings": {
+    "confirmation_families": [
+      "F01",
+      "F05"
+    ],
+    "null_control_family": "F08",
+    "p6_results_allowed_during_p5": false,
+    "scaled_development_families": [
+      "F01",
+      "F02",
+      "F05",
+      "F07"
+    ]
+  },
+  "planned_process_count_breakdown": {
+    "four_scaled_families": 76,
+    "null_arithmetic_calibration": 6,
+    "null_confirmation": 2,
+    "null_exact_calibration": 6
+  },
+  "planned_process_count_if_later_authorized": 90,
+  "production_model_used": false,
+  "results_exist": false,
+  "schema_version": "CMAME-P5-EXECUTION-FREEZE-1.0",
+  "selection": {
+    "confirmation_reselection_allowed": false,
+    "fresh_verification_processes_at_next_level": 2,
+    "fresh_verification_processes_at_selected_level": 2,
+    "interpolation_or_extrapolation_allowed": false,
+    "requires_two_adjacent_qualifying_levels": true,
+    "scan_every_grid_level": true,
+    "stop_at_first_detection": false
+  },
+  "self_hash_embedded": false,
+  "strength_grid": [
+    {
+      "eta": 3.552713678800501e-15,
+      "exponent": -48,
+      "index": 0
+    },
+    {
+      "eta": 2.842170943040401e-14,
+      "exponent": -45,
+      "index": 1
+    },
+    {
+      "eta": 2.2737367544323206e-13,
+      "exponent": -42,
+      "index": 2
+    },
+    {
+      "eta": 1.8189894035458565e-12,
+      "exponent": -39,
+      "index": 3
+    },
+    {
+      "eta": 1.4551915228366852e-11,
+      "exponent": -36,
+      "index": 4
+    },
+    {
+      "eta": 1.1641532182693481e-10,
+      "exponent": -33,
+      "index": 5
+    },
+    {
+      "eta": 9.313225746154785e-10,
+      "exponent": -30,
+      "index": 6
+    },
+    {
+      "eta": 7.450580596923828e-09,
+      "exponent": -27,
+      "index": 7
+    },
+    {
+      "eta": 5.960464477539063e-08,
+      "exponent": -24,
+      "index": 8
+    },
+    {
+      "eta": 4.76837158203125e-07,
+      "exponent": -21,
+      "index": 9
+    },
+    {
+      "eta": 3.814697265625e-06,
+      "exponent": -18,
+      "index": 10
+    },
+    {
+      "eta": 3.0517578125e-05,
+      "exponent": -15,
+      "index": 11
+    },
+    {
+      "eta": 0.000244140625,
+      "exponent": -12,
+      "index": 12
+    },
+    {
+      "eta": 0.001953125,
+      "exponent": -9,
+      "index": 13
+    },
+    {
+      "eta": 0.015625,
+      "exponent": -6,
+      "index": 14
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": "CMAME-P4D-ORACLE-1.0",
+  "design_version": "P4d.0",
+  "status": "FROZEN_NOT_IMPLEMENTED",
+  "oracle_independence": {
+    "manufactured_solution": "analytical differentiation independent of FE output",
+    "constitutive_packets": "fractions.Fraction implementation must not import the host constitutive update",
+    "directional_tangent_check": "finite-difference evaluator must call stress only and not reuse the host tangent routine"
+  },
+  "material_constants": {
+    "G": "10/1",
+    "tau_y0": "1/1",
+    "H": "2/1"
+  },
+  "elastic_packet": {
+    "committed_gamma_p": [
+      "0/1",
+      "0/1"
+    ],
+    "committed_alpha": "0/1",
+    "trial_gamma": [
+      "1/20",
+      "0/1"
+    ],
+    "trial_tau": [
+      "1/2",
+      "0/1"
+    ],
+    "yield_function": "-1/2",
+    "candidate_gamma_p": [
+      "0/1",
+      "0/1"
+    ],
+    "candidate_alpha": "0/1",
+    "algorithmic_tangent": [
+      [
+        "10/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "10/1"
+      ]
+    ]
+  },
+  "plastic_packet": {
+    "committed_gamma_p": [
+      "0/1",
+      "0/1"
+    ],
+    "committed_alpha": "0/1",
+    "trial_gamma": [
+      "1/5",
+      "0/1"
+    ],
+    "trial_tau": [
+      "2/1",
+      "0/1"
+    ],
+    "yield_function": "1/1",
+    "flow_direction": [
+      "1/1",
+      "0/1"
+    ],
+    "delta_lambda": "1/12",
+    "returned_tau": [
+      "7/6",
+      "0/1"
+    ],
+    "candidate_gamma_p": [
+      "1/12",
+      "0/1"
+    ],
+    "candidate_alpha": "1/12",
+    "beta": "7/12",
+    "algorithmic_tangent": [
+      [
+        "5/3",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "35/6"
+      ]
+    ]
+  },
+  "manufactured_reference": {
+    "domain": "[0,1]x[0,1]",
+    "G": 10.0,
+    "amplitude": 0.001,
+    "exact_solution": "A*sin(pi*x)*sin(pi*y)",
+    "body_force": "2*G*pi^2*A*sin(pi*x)*sin(pi*y)",
+    "boundary": "exact Dirichlet value on the entire boundary",
+    "mesh_levels": [
+      4,
+      8,
+      16
+    ],
+    "minimum_fitted_relative_L2_order": 1.7,
+    "minimum_fitted_relative_H1_order": 0.8,
+    "maximum_finest_relative_L2_error": 0.05,
+    "maximum_finest_relative_H1_error": 0.2,
+    "monotone_error_decrease_required": true
+  },
+  "tolerances": {
+    "fraction_packet_absolute": 1e-14,
+    "fraction_packet_relative": 1e-14,
+    "directional_tangent_relative": 1e-7,
+    "accepted_field_absolute": 1e-10,
+    "accepted_field_relative": 1e-10,
+    "equilibrium_relative": 1e-10,
+    "yield_consistency_relative": 1e-9,
+    "finite_absolute_limit": 1e100,
+    "operator_drift_detection_threshold": 1e-10
+  },
+  "negative_control": {
+    "cache_scale": "1/1000000",
+    "mutation": "after the frozen failed attempt add cache_scale*(gamma_p_candidate-gamma_p_committed) to the rollback-external hidden cache",
+    "expected_primary_verdict": "FAIL_PERSISTENT_STATE_RESTORATION",
+    "operator_drift": "must be finite and exceed 1e-10; magnitude is not frozen before implementation",
+    "conventional_gates": "recorded independently; no assumption that every conventional gate passes"
+  },
+  "version_guard": {
+    "matched_numeric_residual_delta": 0.0,
+    "matched_numeric_tangent_delta": 0.0,
+    "mismatch_kind": "tangent state-version metadata outside the declared relation",
+    "required_rejection_boundary": "before correction commit checkpoint or accepted output"
+  },
+  "prohibited_adjustments": [
+    "change a Fraction packet after implementation output",
+    "derive the manufactured body force from the FE solution",
+    "change convergence thresholds after observing errors",
+    "change the negative-control scale after observing detection"
+  ]
+}

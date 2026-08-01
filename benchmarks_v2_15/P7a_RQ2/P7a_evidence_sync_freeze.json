@@ -1,0 +1,14 @@
+{
+  "abaqus_authorized": false,
+  "date": "2026-08-01",
+  "design_id": "CMAME-P7A-RQ2-SYNC-1.0",
+  "doi_or_public_repository_update_authorized": false,
+  "evidence_status": "OBSERVED-P7A-BOUNDED-RQ2",
+  "full_p6_claim_authorized": false,
+  "held_out_claim_authorized": false,
+  "manuscript_rewrite_authorized": false,
+  "new_case_execution_authorized": false,
+  "rq2_target": "bounded localization increment for F05/F07 only",
+  "source_mutation_authorized": false,
+  "study_type": "static evidence synchronization and adjudication"
+}

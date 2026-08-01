@@ -1,0 +1,41 @@
+{
+  "bound_strengths": {
+    "F05": {
+      "adjacent_eta": 9.313225746154785e-10,
+      "adjacent_index": 6,
+      "selected_eta": 1.1641532182693481e-10,
+      "selected_index": 5
+    },
+    "F07": {
+      "adjacent_eta": 9.313225746154785e-10,
+      "adjacent_index": 6,
+      "selected_eta": 1.1641532182693481e-10,
+      "selected_index": 5
+    }
+  },
+  "case_expectations_file": "P6R_method_case_expectations.csv",
+  "claim_exclusions": [
+    "full P3/P5/P6 pass",
+    "detection rate",
+    "checkpoint/state-fingerprint performance",
+    "Abaqus/production validity",
+    "thread safety"
+  ],
+  "design_version": "P6R-F05-F07.0",
+  "not_applicable": {
+    "M2_CKPT": "checkpoint/restart absent",
+    "M3_STATE": "component projection absent"
+  },
+  "oracle_available_to_detectors": false,
+  "oracle_id": "P6R-ORACLE-1.0",
+  "p5_null_thresholds": {
+    "M_ALPHA": 2.2737367544323206e-13,
+    "M_GP": 2.2737367544323206e-13,
+    "M_J": 2.2737367544323206e-13,
+    "M_OUTPUT_R": 2.2737367544323206e-13,
+    "M_OUTPUT_W": 2.2737367544323206e-13,
+    "M_R": 2.2737367544323206e-13,
+    "M_REACTION": 2.2737367544323206e-13,
+    "M_X": 2.2737367544323206e-13
+  }
+}

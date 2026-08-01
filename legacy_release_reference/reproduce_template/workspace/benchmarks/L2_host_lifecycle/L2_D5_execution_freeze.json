@@ -1,0 +1,235 @@
+{
+  "design_version": "L2-D5.0a",
+  "host_version_reused": "L2-HOST-D1.0",
+  "extension_version_if_implemented": "L2-HOST-D5.0a",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "freeze_date": "2026-07-22",
+  "execution_authorized": false,
+  "abaqus_used": false,
+  "results_exist": false,
+  "scope": {
+    "authorized_design_cases": [
+      "L2-CP-01"
+    ],
+    "benchmark_family": "checkpoint_provenance",
+    "research_question": "Can a versioned checkpoint of an accepted one-element state be serialized, restored into a fresh host and continued to the same accepted physical state as an uninterrupted reference path?",
+    "excluded": [
+      "L2-TH-*",
+      "all_other_L2_cases",
+      "L3-L6",
+      "Abaqus",
+      "production_model",
+      "Abaqus_restart_parity",
+      "external_host_restart",
+      "parallel_checkpoint_IO",
+      "performance_claims",
+      "conservation_claims",
+      "coupled_physics_claims",
+      "application_physics_claims"
+    ]
+  },
+  "host": {
+    "name": "standalone_reference_newton_host",
+    "runtime_to_reuse": "CPython 3.12.10 64-bit",
+    "execution_mode_if_later_authorized": "one_process_one_thread_standard_library_only",
+    "process_count_per_repetition": 1,
+    "thread_count_per_process": 1,
+    "python_hash_seed": 0,
+    "omp_num_threads": 1,
+    "mkl_num_threads": 1,
+    "openblas_num_threads": 1,
+    "numexpr_num_threads": 1,
+    "automatic_retry": false
+  },
+  "model": {
+    "material": {
+      "E": "100/1",
+      "sigma_y": "1/1",
+      "H": "10/1"
+    },
+    "element": {
+      "area": "1/1",
+      "length": "1/1",
+      "u1": "0/1"
+    },
+    "equilibrium": "R=A*sigma-F",
+    "current_exact_tangent": "K=A*E_alg/L",
+    "return_mapping": "same_exact_bilinear_rational_model_as_L2_HOST_D1_0",
+    "residual_definition": "L2-R-D1.0",
+    "tangent_definition": "L2-K-D1.0"
+  },
+  "checkpoint_contract": {
+    "schema_version": "L2-D5-CHECKPOINT-1.0",
+    "envelope_version": "L2-D5-ENVELOPE-1.0",
+    "authoritative_source": "accepted_primary_and_committed_state_only",
+    "serializer": "src.l2_state.canonical_json",
+    "fingerprint": "src.l2_state.canonical_hash",
+    "wire_float_encoding": "float.hex_string",
+    "required_payload_fields": [
+      "schema_version",
+      "design_version",
+      "source_host_version",
+      "configuration_hash",
+      "material_fingerprint",
+      "element_fingerprint",
+      "residual_definition",
+      "tangent_definition",
+      "accepted_force_hex",
+      "accepted_displacement_hex",
+      "accepted_reaction_hex",
+      "accepted_stress_hex",
+      "accepted_version",
+      "epsilon_p_hex",
+      "kappa_hex",
+      "committed_state_fingerprint",
+      "physical_checkpoint_fingerprint"
+    ],
+    "write_rule": "CheckpointWrite is read-only with respect to source committed, primary and persistent physical state.",
+    "read_rule": "CheckpointRead validates schema, payload hash, model/configuration identity and committed-state fingerprint before restoring a fresh host.",
+    "restore_rule": "Restore may set only the fresh host accepted displacement and safe variant committed state; no trial candidate or attempt registry is restored.",
+    "corruption_rule": "Any payload-hash, schema, configuration or committed-state mismatch is rejected before continuation or output.",
+    "claim_boundary": "A passing case is a standalone checkpoint round trip and must not be described as Abaqus restart parity."
+  },
+  "frozen_states": {
+    "initial": {
+      "accepted_version": 0,
+      "epsilon_p_hex": "0x0.0p+0",
+      "kappa_hex": "0x0.0p+0",
+      "committed_state_fingerprint": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01"
+    },
+    "checkpoint_at_force_11_over_10": {
+      "force": "11/10",
+      "force_hex": "0x1.199999999999ap+0",
+      "displacement": "21/1000",
+      "displacement_hex": "0x1.5810624dd2f1bp-6",
+      "reaction": "11/10",
+      "stress": "11/10",
+      "epsilon_p": "1/100",
+      "epsilon_p_hex": "0x1.47ae147ae147bp-7",
+      "kappa": "1/100",
+      "kappa_hex": "0x1.47ae147ae147bp-7",
+      "accepted_version": 1,
+      "committed_state_fingerprint": "9208bebb27104d3b2f2ea9c53cb519159c7ec0fee98c7978091fba4c6fe3a6b9",
+      "physical_checkpoint_fingerprint": "0b3351602c8ca334f0155fdedc7800032e41f4781a1ea969a8b0159c9675eef4",
+      "runtime_displacement_hex": "0x1.5810624dd2f1fp-6",
+      "runtime_epsilon_p_hex": "0x1.47ae147ae1482p-7",
+      "runtime_kappa_hex": "0x1.47ae147ae1482p-7"
+    },
+    "continuation_at_force_6_over_5": {
+      "force": "6/5",
+      "force_hex": "0x1.3333333333333p+0",
+      "displacement": "4/125",
+      "displacement_hex": "0x1.0624dd2f1a9fcp-5",
+      "reaction": "6/5",
+      "stress": "6/5",
+      "epsilon_p": "1/50",
+      "epsilon_p_hex": "0x1.47ae147ae147bp-6",
+      "kappa": "1/50",
+      "kappa_hex": "0x1.47ae147ae147bp-6",
+      "accepted_version": 2,
+      "committed_state_fingerprint": "58223c0076a614bb7e37b82d4e4dec99376185839ed649534e33258d6bc3fb59",
+      "runtime_displacement_hex": "0x1.0624dd2f1a9fcp-5",
+      "runtime_reaction_hex": "0x1.3333333333334p+0",
+      "runtime_stress_hex": "0x1.3333333333334p+0",
+      "runtime_epsilon_p_hex": "0x1.47ae147ae147bp-6",
+      "runtime_kappa_hex": "0x1.47ae147ae147bp-6",
+      "physical_checkpoint_fingerprint": "466a2ab596c3b04c37583fe1a571afb22a7b4335b1d188b18c410238f17d7835"
+    }
+  },
+  "frozen_paths": {
+    "uninterrupted_reference": [
+      {
+        "ordinal": 1,
+        "event": "SolveAcceptedIncrement",
+        "force": "11/10",
+        "expected_version": 1
+      },
+      {
+        "ordinal": 2,
+        "event": "CheckpointWrite",
+        "source_version": "accepted:1"
+      },
+      {
+        "ordinal": 3,
+        "event": "SolveAcceptedIncrement",
+        "force": "6/5",
+        "expected_version": 2
+      }
+    ],
+    "checkpoint_restore": [
+      {
+        "ordinal": 1,
+        "event": "CheckpointRead",
+        "required_source_version": "accepted:1"
+      },
+      {
+        "ordinal": 2,
+        "event": "RestoreFreshHost",
+        "expected_version": 1
+      },
+      {
+        "ordinal": 3,
+        "event": "SolveAcceptedIncrement",
+        "force": "6/5",
+        "expected_version": 2
+      },
+      {
+        "ordinal": 4,
+        "event": "CompareAcceptedState",
+        "reference": "uninterrupted_reference"
+      }
+    ],
+    "forbidden_events": [
+      "RestoreTrialCandidate",
+      "RestoreOpenAttempt",
+      "AcceptDuringCheckpointRead",
+      "OutputFromUnacceptedCandidate",
+      "AbaqusRestartWrite",
+      "AbaqusRestartRead"
+    ]
+  },
+  "case_gates": {
+    "L2-CP-01": {
+      "expected_classification": "PASS_CHECKPOINT_ROUND_TRIP",
+      "requirements": [
+        "checkpoint_source_is_accepted_version_1",
+        "checkpoint_write_does_not_mutate_source_state",
+        "checkpoint_payload_hash_and_schema_validate",
+        "restored_committed_fingerprint_exactly_matches_checkpoint_source",
+        "restored_primary_state_exactly_matches_checkpoint_source",
+        "no_trial_candidate_or_open_attempt_is_restored",
+        "uninterrupted_and_restored_continuations_match_within_1e-12",
+        "final_committed_and_physical_checkpoint_fingerprints_match_exactly",
+        "all_values_finite"
+      ]
+    }
+  },
+  "tolerances": {
+    "analytical_absolute": 1e-12,
+    "analytical_relative": 1e-12,
+    "checkpoint_hash_equality": 0.0,
+    "committed_fingerprint_equality": 0.0,
+    "final_physical_checkpoint_hash_equality": 0.0,
+    "finite_absolute_limit": 1e+100
+  },
+  "future_execution_protocol": {
+    "formal_repetition_count": 2,
+    "repetition_mode": "independent_processes_same_frozen_environment",
+    "case_execution_order_if_later_authorized": [
+      "L2-CP-01"
+    ],
+    "stop_on_first_gate_failure": true,
+    "execution_is_part_of_this_freeze": false,
+    "implementation_is_part_of_this_freeze": false
+  },
+  "claim_boundary": "This file freezes one standalone accepted-state checkpoint round trip. It contains analytical expectations but no executed L2-D5 evidence and supports no Abaqus restart, production, performance, conservation, coupled-physics or application conclusion.",
+  "revision_reason": "separate_exact_fraction_oracle_from_D1_Newton_runtime_IEEE754_fingerprints",
+  "superseded_design_hashes": {
+    "L2_D5_execution_freeze.json": "37a7586ee66b3647d2a412637fc95802c48c4e755960e9728aa2d646f11f8e3a",
+    "L2_D5_checkpoint_provenance_case_matrix.csv": "9b932cb0329be838057469af6395062cdb6a0fe125206f0e02667b35f0b2ccca",
+    "L2_D5_implementation_plan.md": "490d0036fa38c2617ca3697fae0e61ace6f4cfa4af1170c798fedbd4aadc0a5e",
+    "L2_D5_source_manifest.json": "72bb509e4b25b9cc96a92c5ace29da8f19b60d778998fdc027776f0bb42307cc"
+  },
+  "runtime_configuration_hash": "c4e3373b1ec484567f7c0cdd75727e636282847c6ebc8577f278720069efb0ca",
+  "runtime_fingerprint_basis": "Read-only D1 Newton dry-run before implementation; analytical rational values remain unchanged, while canonical runtime fingerprints use the actual accepted IEEE-754 packets."
+}

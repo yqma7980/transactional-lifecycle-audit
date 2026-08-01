@@ -1,0 +1,115 @@
+{
+  "final_qa_status": "PASS_P4D6_FINAL_EVIDENCE_CONSOLIDATION",
+  "gates": {
+    "active_docker_container_count_at_precheck": 0,
+    "active_solver_process_count": 0,
+    "case_adjudication_rows_equal_9": true,
+    "contract_trace_rows_equal_12": true,
+    "full_matrix_pass_false": true,
+    "native_linesearch_not_supported_preserved": true,
+    "nine_case_matrix_verified": true,
+    "no_abaqus_execution": true,
+    "no_benchmark_rerun": true,
+    "no_github_zenodo_doi_change": true,
+    "no_manuscript_claim_figure_change": true,
+    "no_new_fe_execution": true,
+    "no_production_model_execution": true,
+    "old_output_writer_failures_preserved": true,
+    "p4d5b_authoritative_for_output_case": true,
+    "protected_preexisting_tree_unchanged": true,
+    "raw_manifests_verified": true,
+    "run_registry_rows_equal_22": true,
+    "scientific_duplicate_pairs_equal_8": true,
+    "scientific_fresh_process_runs_equal_16": true
+  },
+  "notes": [
+    "Only the new P4d.6 directory was written",
+    "Production Git metadata is not used as P4d.6 evidence",
+    "Abaqus license managers are excluded from solver-process counts"
+  ],
+  "output_files_before_qa": [
+    {
+      "bytes": 4865,
+      "path": "P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_consolidation_freeze.json",
+      "sha256": "85b32dc565e6a41627fc33991035970fb77ce9f65950a54309a988ce8ed211fa"
+    },
+    {
+      "bytes": 3348,
+      "path": "P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_case_adjudication.csv",
+      "sha256": "02268d9302852103c499e5369e4efce7af638f9dbde7dee50ceb26e7249629ac"
+    },
+    {
+      "bytes": 11727,
+      "path": "P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_run_evidence_registry.csv",
+      "sha256": "c041220eeeb4a29b18ca8276522a39741627c18ae4ab9c09bf4971bcf0103b59"
+    },
+    {
+      "bytes": 4262,
+      "path": "P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_contract_trace.csv",
+      "sha256": "e9001e61b90c1a28c7f67d29ef493433bf51e040fa88d745aac7e6d0271df80f"
+    },
+    {
+      "bytes": 3346,
+      "path": "P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_final_summary.json",
+      "sha256": "ba3c16292f8be3ac669d743c19d0f1a690e7f7ae1b6729846fda26c319d64cab"
+    },
+    {
+      "bytes": 2964,
+      "path": "P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_final_report.md",
+      "sha256": "c7eb530361d8577798bee8db3fb404f0b3443fe00bc785d5cdde4112317dab09"
+    },
+    {
+      "bytes": 7703,
+      "path": "P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_source_manifest.json",
+      "sha256": "bd346ab09652da0384ac7a9bb876efeebf09bc7ce6dc832cc2726ebd30c11eef"
+    }
+  ],
+  "protected_tree_after_excluding_p4d6": {
+    "aggregate_sha256": "2a508b8a766f98fc3710c02ffa9d05cf959d2a76e4bd8dde5b93e959c7a91ead",
+    "file_count": 369
+  },
+  "protected_tree_before": {
+    "aggregate_sha256": "2a508b8a766f98fc3710c02ffa9d05cf959d2a76e4bd8dde5b93e959c7a91ead",
+    "file_count": 369
+  },
+  "qa_self_hash_embedded": false,
+  "raw_manifest_verification": [
+    {
+      "all_declared_files_verified": true,
+      "computed_raw_aggregate_sha256": "e7d11c1c9bc6fc51d1007cf75620796746b28bd107c2a826fb8215d2292f54ad",
+      "declared_raw_aggregate_sha256": null,
+      "entry_count": 55,
+      "label": "P4d.2",
+      "manifest_path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_formal_raw_manifest.json",
+      "manifest_sha256": "384b7b4e5a8e1244672c5d076f46a589dae3995a91ec1d10ff0c7d13e0ecb22b"
+    },
+    {
+      "all_declared_files_verified": true,
+      "computed_raw_aggregate_sha256": "9a3bd1f1a63dcb2287fc20ef6f0c28a58ba50c2fc2c1bc95d17a9c7c1718b0a6",
+      "declared_raw_aggregate_sha256": null,
+      "entry_count": 24,
+      "label": "P4d.4",
+      "manifest_path": "P4d.4_EXPLORATORY_DIAGNOSTIC_EXECUTION_20260731/results/P4d4_exploratory_20260731/final/p4d4_exploratory_raw_manifest.json",
+      "manifest_sha256": "694c3dfad0df42c04d0d097591a7ec6bad10b76dfb04b66a05dc9ba2e92888e0"
+    },
+    {
+      "all_declared_files_verified": true,
+      "computed_raw_aggregate_sha256": "ba01045364f45b3f20fa9b698ed07457c8d08d0cf987449111c19ee6e1a0a775",
+      "declared_raw_aggregate_sha256": "ba01045364f45b3f20fa9b698ed07457c8d08d0cf987449111c19ee6e1a0a775",
+      "entry_count": 71,
+      "label": "P4d.5",
+      "manifest_path": "P4d.5_IMPLEMENTATION_PREFLIGHT_20260731/results/P4d5_branch_resumption_20260731/final/p4d5_formal_raw_manifest.json",
+      "manifest_sha256": "44276cc4d7517fff59228d4e94361f3fa311799b18287ee03d3dcb76aca70e2d"
+    },
+    {
+      "all_declared_files_verified": true,
+      "computed_raw_aggregate_sha256": "ca3a886db57e6360f1eb549fa6b8db1fe39e3fda86d7d7e80c590e0ad0914043",
+      "declared_raw_aggregate_sha256": "ca3a886db57e6360f1eb549fa6b8db1fe39e3fda86d7d7e80c590e0ad0914043",
+      "entry_count": 19,
+      "label": "P4d.5b",
+      "manifest_path": "P4d.5b_OUTPUT_SCHEMA_ERRATUM_20260731/results/P4d5b_output_schema_20260731/final/p4d5b_formal_raw_manifest.json",
+      "manifest_sha256": "390caceb29f4402a81ee7365dc95ee408608fba05342e1321272ace1f56c014f"
+    }
+  ],
+  "schema_version": "CMAME-P4D6-FINAL-QA-1.0"
+}

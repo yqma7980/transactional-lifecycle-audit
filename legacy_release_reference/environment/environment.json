@@ -1,0 +1,18 @@
+{
+  "abaqus_required": false,
+  "comsol_required": false,
+  "formal_threads_per_process": 1,
+  "hash_seed": 0,
+  "implementation": "CPython",
+  "machine": "AMD64",
+  "packages": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.4.3",
+    "pillow": "12.2.0",
+    "psutil": "NOT_INSTALLED",
+    "scipy": "1.17.1"
+  },
+  "platform": "Windows",
+  "platform_release": "11",
+  "python": "3.12.10"
+}

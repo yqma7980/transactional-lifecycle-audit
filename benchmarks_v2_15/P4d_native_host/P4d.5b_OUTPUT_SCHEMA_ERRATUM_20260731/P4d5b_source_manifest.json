@@ -1,0 +1,92 @@
+{
+  "file_count": 16,
+  "files": [
+    {
+      "bytes": 287,
+      "path": "P4d5b_case_matrix.csv",
+      "sha256": "122c2c33e737c30cd5c6ce35dddb738d1ee44473b54ec83634cdb422793cd892"
+    },
+    {
+      "bytes": 3665,
+      "path": "P4d5b_erratum_freeze.json",
+      "sha256": "2b90c6d23404b2dd935d11ca0512810059cc2920ef0ed462c03d95142a3a15de"
+    },
+    {
+      "bytes": 4636,
+      "path": "P4d5b_implementation_manifest.json",
+      "sha256": "7b86f66500a236065a604e4a485dff5637b1be6dc551ca4825040915a6b84ae0"
+    },
+    {
+      "bytes": 674,
+      "path": "P4d5b_implementation_plan.md",
+      "sha256": "4e66be25efc984d19e120c3d8ba219ba9d2a10d55871ec085f3d361ded40aade"
+    },
+    {
+      "bytes": 1361,
+      "path": "P4d5b_output_schema_contract.md",
+      "sha256": "8598785fc0c95db8dce65d6d6a90816584c07bcabf5a599ec91c450e8e94b05e"
+    },
+    {
+      "bytes": 1052,
+      "path": "P4d5b_preflight_gate_results.json",
+      "sha256": "7adb51504d23a7b04ae1c6610c32173582b4c66364b1ebc11c7e271833cd5474"
+    },
+    {
+      "bytes": 1384,
+      "path": "P4d5b_static_and_unit_QA.md",
+      "sha256": "038b99af19ac9080ef11952eb4ec4efa72e21a4c4ed606c507d5646504739fbe"
+    },
+    {
+      "bytes": 2054,
+      "path": "run_p4d5b.py",
+      "sha256": "f14b60b3098e3865531ae09ead67e71baa9bd2b6f459a8515e39df1505a5ad70"
+    },
+    {
+      "bytes": 3896,
+      "path": "run_p4d5b_pair.py",
+      "sha256": "074ebf514e6ac0c6725493e73905eb2394c19be305901660407c3103c09fcd5a"
+    },
+    {
+      "bytes": 1942,
+      "path": "runtime_evidence/ast_static_QA.json",
+      "sha256": "846e34500c495d39a68dadd346747de746ea29d44367961c05e427ba2d86dfe4"
+    },
+    {
+      "bytes": 535,
+      "path": "runtime_evidence/environment_readiness.json",
+      "sha256": "cbc7f30c7a36b31567aaaa8779524524888070e22a624232242dc3bfa218b5aa"
+    },
+    {
+      "bytes": 1293,
+      "path": "runtime_evidence/unit_test.log",
+      "sha256": "ee28f2171b44d3bcfda376bb030b1a2422caa73ab0ec0a08c343f5c64d8d7b16"
+    },
+    {
+      "bytes": 3714,
+      "path": "src/p4d5b_output_schema.py",
+      "sha256": "82844be525dd9703cf50e9ed96913c98f38e20bc2595f6f787d703c7fc383d34"
+    },
+    {
+      "bytes": 4623,
+      "path": "src/p4d5b_protocol.py",
+      "sha256": "233e3a4100b7f0e441912020c1b637e2eeb405c0ef95e438c7eee2cb56824e8c"
+    },
+    {
+      "bytes": 1899,
+      "path": "tests/test_p4d5b_authorization.py",
+      "sha256": "927bc9f5cd06ea4bb85d0466c3d77b15a9b9ad44abb8e05bbb4418d56f149d0a"
+    },
+    {
+      "bytes": 2974,
+      "path": "tests/test_p4d5b_output_schema.py",
+      "sha256": "0c09645fb4e0148879427e291cc8c90d92f419c8e8eb8590949991e694ee07e0"
+    }
+  ],
+  "formal_results_exist": false,
+  "implementation_erratum": "P4d.5b",
+  "manifest_self_hash_embedded": false,
+  "no_abaqus_execution": true,
+  "protected_input_count": 10,
+  "schema_version": "CMAME-P4D5B-SOURCE-MANIFEST-1.0",
+  "status": "STATIC_AND_UNIT_QA_COMPLETE_NOT_FORMALLY_EXECUTED"
+}

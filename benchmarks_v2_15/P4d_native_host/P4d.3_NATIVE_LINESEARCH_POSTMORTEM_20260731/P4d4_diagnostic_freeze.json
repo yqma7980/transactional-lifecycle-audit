@@ -1,0 +1,83 @@
+{
+  "container": {
+    "image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "mpi_ranks": 1,
+    "network": "none",
+    "platform": "linux/amd64",
+    "processes_per_case": 1,
+    "threads_per_process": 1
+  },
+  "design_status": "FROZEN_NOT_EXECUTED",
+  "diagnostic_cases": [
+    {
+      "case_id": "P4D4-DIAG-LS-00",
+      "evidence_status": "EXPLORATORY_NOT_FORMAL_EVIDENCE",
+      "execution_status": "REFERENCE_EXISTING_P4D2_EVIDENCE_NO_RERUN",
+      "operator_relation": "DECLARED_ACCEPTED_STATE_LAG",
+      "selection_eligible": false,
+      "source_load": 0.08,
+      "target_load": 0.16
+    },
+    {
+      "case_id": "P4D4-DIAG-LS-01",
+      "evidence_status": "EXPLORATORY_NOT_FORMAL_EVIDENCE",
+      "execution_status": "FROZEN_NOT_EXECUTED",
+      "operator_relation": "DECLARED_ACCEPTED_STATE_LAG",
+      "selection_eligible": true,
+      "source_load": 0.08,
+      "target_load": 0.2
+    },
+    {
+      "case_id": "P4D4-DIAG-LS-02",
+      "evidence_status": "EXPLORATORY_NOT_FORMAL_EVIDENCE",
+      "execution_status": "FROZEN_NOT_EXECUTED",
+      "operator_relation": "DECLARED_ACCEPTED_STATE_LAG",
+      "selection_eligible": true,
+      "source_load": 0.08,
+      "target_load": 0.24
+    },
+    {
+      "case_id": "P4D4-DIAG-LS-03",
+      "evidence_status": "EXPLORATORY_NOT_FORMAL_EVIDENCE",
+      "execution_status": "FROZEN_NOT_EXECUTED",
+      "operator_relation": "DECLARED_ACCEPTED_STATE_LAG",
+      "selection_eligible": true,
+      "source_load": 0.08,
+      "target_load": 0.28
+    }
+  ],
+  "execution_authorized": false,
+  "execution_rule": "When separately authorized, run DIAG-LS-01, DIAG-LS-02, and DIAG-LS-03 exactly once each; do not stop after the first trigger and do not tune parameters.",
+  "formal_evidence": false,
+  "heldout_rule": {
+    "first_trigger_0.20": 0.22,
+    "first_trigger_0.24": 0.26,
+    "first_trigger_0.28": 0.3,
+    "no_trigger": "NOT_SUPPORTED_BY_DIAGNOSTIC_ENVELOPE"
+  },
+  "schema_version": "CMAME-P4D4-DIAGNOSTIC-FREEZE-1.0",
+  "unchanged_host_contract": {
+    "line_search_parameter_changes_allowed": false,
+    "material": {
+      "G": 10.0,
+      "hardening": 2.0,
+      "tau_y0": 1.0
+    },
+    "material_parameter_changes_allowed": false,
+    "mesh": "4x4 squares with fixed diagonal split; 32 P1 triangles; 25 nodes",
+    "mesh_changes_allowed": false,
+    "observer": "unchanged P4d.2 read-only C observer",
+    "quadrature": "degree-2 triangle; 3 points per cell; 96 integration points",
+    "snes_options": {
+      "ksp_type": "preonly",
+      "pc_type": "lu",
+      "snes_atol": 1e-11,
+      "snes_linesearch_type": "bt",
+      "snes_max_it": 25,
+      "snes_rtol": 1e-10,
+      "snes_stol": 1e-12,
+      "snes_type": "newtonls"
+    },
+    "source_state": "same cyclic reload committed state at load 0.08"
+  }
+}

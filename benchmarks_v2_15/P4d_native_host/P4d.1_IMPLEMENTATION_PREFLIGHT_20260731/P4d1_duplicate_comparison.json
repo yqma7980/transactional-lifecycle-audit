@@ -1,0 +1,18 @@
+{
+  "c_ledger_normalized_equal": true,
+  "duplicate_gate_pass": true,
+  "environment_fresh_process_normalized_equal": true,
+  "exact_no_effect_fields": [
+    "solution_hex",
+    "snes_reason",
+    "iteration_count",
+    "residual_sequence_hex"
+  ],
+  "observer_disabled_enabled_exact_no_effect": true,
+  "observer_enabled_result_normalized_equal": true,
+  "observer_on_run_1_ledger_sha256": "8a43f0eddfe4bfd5a202b1793a0af527e8c7a20c55e251311d18438f87936206",
+  "observer_on_run_2_ledger_sha256": "ce028599b8385949610c82a74838b20084e5d1a46ccad3018512750a80fceb00",
+  "postcheck_change_flags_false_both_runs": true,
+  "schema_version": "CMAME-P4D1-DUPLICATE-1.0",
+  "structured_unselected_candidate_present_both_runs": true
+}

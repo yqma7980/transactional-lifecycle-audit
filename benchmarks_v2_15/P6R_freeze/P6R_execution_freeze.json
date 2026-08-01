@@ -1,0 +1,32 @@
+{
+  "abaqus_authorized": false,
+  "applicable_methods": [
+    "M1_FINAL",
+    "M4_OPERATOR",
+    "M5_META",
+    "M6_TLA"
+  ],
+  "applicable_unique_method_case_cells": 20,
+  "declared_methods": 6,
+  "design_status": "FROZEN_STATIC_NOT_IMPLEMENTED",
+  "design_version": "P6R-F05-F07.0",
+  "docker_or_petsc_execution_authorized": false,
+  "execution_authorized": false,
+  "formal_runner_status": "NOT_CREATED",
+  "freeze_date": "2026-08-01",
+  "implementation_authorized": false,
+  "new_fe_solve_authorized": false,
+  "next_allowed_stage": "P6R_IMPLEMENTATION_PREFLIGHT_ONLY_AFTER_USER_AUTHORIZATION",
+  "not_applicable_methods": {
+    "M2_CKPT": "checkpoint/restart absent",
+    "M3_STATE": "component projection absent"
+  },
+  "planned_projection_processes": 10,
+  "raw_cases": 5,
+  "raw_fresh_process_repetitions_per_case": 2,
+  "relationship_to_full_P6": "NEW_STUDY_NOT_CONTINUATION_NOT_HELD_OUT",
+  "results_exist": false,
+  "study_type": "bounded_retrospective_secondary_projection_of_preexisting_raw_evidence",
+  "test_execution_authorized": false,
+  "unique_method_case_cells": 30
+}

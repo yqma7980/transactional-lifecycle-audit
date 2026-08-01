@@ -1,0 +1,56 @@
+{
+  "design_version": "L1-D1.0",
+  "execution_status": "OPEN_NOT_EXECUTED",
+  "parameters": {
+    "E": 100.0,
+    "H": 10.0,
+    "sigma_y": 1.0,
+    "area": 1.0,
+    "length": 1.0
+  },
+  "reference_values": {
+    "virgin_elastic": {
+      "epsilon": 0.005,
+      "sigma": 0.5,
+      "E_alg": 100.0
+    },
+    "virgin_plastic": {
+      "epsilon": 0.03,
+      "delta_gamma_fraction": "1/55",
+      "epsilon_p_fraction": "1/55",
+      "kappa_fraction": "1/55",
+      "sigma_fraction": "13/11",
+      "E_alg_fraction": "100/11"
+    },
+    "unsafe_replay": {
+      "epsilon_replay": 0.005,
+      "sigma_unsafe_fraction": "-289/242",
+      "sigma_safe_fraction": "1/2",
+      "delta_sigma_fraction": "-205/121"
+    },
+    "bar_plastic_equilibrium": {
+      "u_fraction": "21/1000",
+      "force_fraction": "11/10",
+      "residual": 0.0,
+      "tangent_fraction": "100/11"
+    }
+  },
+  "tolerances": {
+    "same_implementation_replay": 0.0,
+    "analytical_absolute": 1e-12,
+    "analytical_relative": 1e-12,
+    "directional_step": 1e-7,
+    "directional_relative_error": 1e-6,
+    "yield_surface_exclusion": 1e-4,
+    "unsafe_minimum_drift": 1e-8,
+    "plastic_dissipation_floor": -1e-12
+  },
+  "expected_classifications": {
+    "safe_local": "PASS_ALL_APPLICABLE_LIFECYCLE_CASES",
+    "safe_transactional": "PASS_ALL_APPLICABLE_LIFECYCLE_CASES",
+    "unsafe_trial_cache": "FAIL_SEEDED_TRIAL_LIFECYCLE_CASES_WITH_FINITE_DRIFT",
+    "unsafe_output_feedback": "FAIL_SEEDED_TERMINAL_OUTPUT_CASES_WITH_FINITE_DRIFT",
+    "seeded_version_mismatch": "REJECT_BEFORE_LIFECYCLE_VERDICT"
+  },
+  "claim_boundary": "This file freezes design expectations only. No L1 result has been observed."
+}

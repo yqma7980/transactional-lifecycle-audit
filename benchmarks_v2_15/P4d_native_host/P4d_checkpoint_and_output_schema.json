@@ -1,0 +1,123 @@
+{
+  "schema_version": "CMAME-P4D-STATE-IO-1.0",
+  "design_version": "P4d.0",
+  "status": "FROZEN_NOT_IMPLEMENTED",
+  "checkpoint": {
+    "writer_event": "CheckpointWrite_after_AcceptCommit",
+    "reader_event": "RestartRead_in_fresh_process",
+    "format": "canonical JSON manifest plus little-endian float64 NPZ arrays without pickle",
+    "checkpoint_load_factor": 0.12,
+    "required_manifest_fields": [
+      "schema_version",
+      "design_version",
+      "environment_hash",
+      "mesh_recipe",
+      "mesh_hash",
+      "coordinates_hash",
+      "connectivity_hash",
+      "boundary_dof_order_hash",
+      "quadrature_rule_hash",
+      "material_packet_hash",
+      "serializer_version",
+      "residual_version",
+      "tangent_relation",
+      "accepted_index",
+      "accepted_load_factor",
+      "accepted_version",
+      "primary_array_sha256",
+      "gamma_p_array_sha256",
+      "alpha_array_sha256",
+      "payload_sha256"
+    ],
+    "required_arrays": {
+      "primary_w": {
+        "dtype": "float64 little-endian",
+        "shape": [
+          25
+        ]
+      },
+      "gamma_p": {
+        "dtype": "float64 little-endian",
+        "shape": [
+          32,
+          3,
+          2
+        ]
+      },
+      "alpha": {
+        "dtype": "float64 little-endian",
+        "shape": [
+          32,
+          3
+        ]
+      }
+    },
+    "forbidden_payloads": [
+      "pickle",
+      "Python object identity",
+      "same-process global cache",
+      "absolute host path as scientific identity",
+      "trial candidate",
+      "diagnostic event ledger as a physical source"
+    ]
+  },
+  "accepted_output": {
+    "writer_event": "OutputAcceptedState_after_AcceptCommit",
+    "format": "CSV scientific table plus JSON provenance manifest",
+    "required_scientific_fields": [
+      "accepted_index",
+      "accepted_load_factor",
+      "accepted_version",
+      "selected_candidate_id",
+      "primary_vector_hash",
+      "committed_gamma_p_hash",
+      "committed_alpha_hash",
+      "residual_norm",
+      "top_reaction",
+      "bottom_reaction",
+      "max_alpha",
+      "plastic_point_count",
+      "mesh_hash",
+      "material_hash",
+      "residual_version",
+      "tangent_relation",
+      "source_event"
+    ],
+    "diagnostic_fields_excluded_from_semantic_parity": [
+      "run_id",
+      "wall_clock_timestamp",
+      "absolute_path",
+      "process_id",
+      "container_id"
+    ],
+    "provenance_rules": [
+      "source_event must be AcceptCommit",
+      "selected_candidate_id must be the candidate selected by the positive SNES solve",
+      "committed version must exist before the output row",
+      "failed-attempt and rejected-line-search candidates are unreachable",
+      "trial diagnostics are stored in a separate file"
+    ]
+  },
+  "event_ledger": {
+    "format": "append-only CSV and canonical JSON summary",
+    "required_fields": [
+      "event_ordinal",
+      "event_kind",
+      "solve_id",
+      "attempt_id",
+      "nonlinear_iteration",
+      "assembly_call_id",
+      "candidate_id",
+      "primary_vector_hash",
+      "committed_state_hash",
+      "persistent_projection_hash",
+      "candidate_state_hash",
+      "residual_version",
+      "tangent_version",
+      "line_search_lambda",
+      "line_search_reason",
+      "reachable_from_accepted_output"
+    ],
+    "physical_feedback_forbidden": true
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "abaqus_used": false,
+  "case_count": 7,
+  "case_ids": [
+    "L3-REF-01",
+    "L3-CV-S-01",
+    "L3-CV-T-01",
+    "L3-MB-01",
+    "L3-ST-01",
+    "L3-RT-01",
+    "L3-RT-02"
+  ],
+  "design_outputs": [
+    {
+      "path": "benchmarks/L3_poroelastic_consolidation/L3_D0_benchmark_spec.md",
+      "sha256": "34d2779b80843c4e616806b8309af0a781dd000aebb74b5a7b2572d5f4e5ea9c",
+      "size": 2503
+    },
+    {
+      "path": "benchmarks/L3_poroelastic_consolidation/L3_D0_acceptance_gates.md",
+      "sha256": "e9a0b1d1d961039437ef27bae797c4a7fb28b18e8d04aabc8b395a7e7746e983",
+      "size": 1684
+    },
+    {
+      "path": "benchmarks/L3_poroelastic_consolidation/L3_D0_data_contract.md",
+      "sha256": "3b03b5ca527c495b6f5d326c62a248905c6dc3728dd5f98e0d0aaab502d145a2",
+      "size": 721
+    },
+    {
+      "path": "benchmarks/L3_poroelastic_consolidation/L3_D0_case_matrix.csv",
+      "sha256": "1af8152b2167930f7683dd09db75295bbee8e0150a917694baabaf18cc6ba815",
+      "size": 808
+    },
+    {
+      "path": "benchmarks/L3_poroelastic_consolidation/L3_D1_execution_freeze.json",
+      "sha256": "4db7b5f2c5f19a06de3dfeac5e53a43e262f4bb56bff92085d5a2dbbf678f4ff",
+      "size": 2016
+    },
+    {
+      "path": "benchmarks/L3_poroelastic_consolidation/L3_D1_implementation_plan.md",
+      "sha256": "745d251571b38e6f51652154c2f7d5170e14b47ea35e3dd0681eaf73a0512763",
+      "size": 1003
+    }
+  ],
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "design_version": "L3-D1.0a",
+  "execution_authorized": false,
+  "manifest_self_hash_embedded": false,
+  "manifest_version": "L3-D1-SOURCE-1.0a",
+  "protected_inputs": [
+    {
+      "path": "03_benchmark_protocol.md",
+      "sha256": "dd5e20261597966077cca73edddd02c3cb2e073948f168bf7bb1771e9690d5c9",
+      "size": 10430
+    },
+    {
+      "path": "M1/M1_05_rollback_safe_framework.md",
+      "sha256": "a02364fe4a989d276a1d562f33ecc2e8685c661b4f535941d484d2c4842f038f",
+      "size": 22772
+    },
+    {
+      "path": "literature/W1_04_deep_extraction_template.csv",
+      "sha256": "3c308ad893a92b68b72a4b8e5e132a4b2b1023cc7b16a540035f794fc04b01f2",
+      "size": 69772
+    },
+    {
+      "path": "literature/pdf_inbox/03_Kim_Tchelepi_Juanes_2011.pdf",
+      "sha256": "121be9eacaf64ccf28740f1a88d9973df5d98bf8ef50aa0a7196dbc32631313d",
+      "size": 887227
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_state.py",
+      "sha256": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d",
+      "size": 4486
+    }
+  ],
+  "results_exist": false,
+  "revision_reason": "avoid_case_insensitive_JSON_key_collision_without_changing_physics"
+}

@@ -1,0 +1,281 @@
+{
+  "abaqus_used": false,
+  "design_id": "CMAME-P7A-RQ2-SYNC-1.0",
+  "input_count": 23,
+  "inputs": [
+    {
+      "bytes": 7794,
+      "path_relative_to_v2_14": "P2_research_questions_and_contributions.md",
+      "read_only": true,
+      "role": "research-question and contribution baseline",
+      "sha256": "fc6652191518d5b30f305f81cd7919abe7e21b21f3f12817e8789a3a5894b79b",
+      "source_id": "p2_questions",
+      "stage": "P2"
+    },
+    {
+      "bytes": 6946,
+      "path_relative_to_v2_14": "P2_claim_evidence_matrix_v2_14_draft.md",
+      "read_only": true,
+      "role": "pre-execution v2.14 claim baseline",
+      "sha256": "8c3dcd046c33adcf909b94aa7afa5eef9d781c80579966a04ad012428b0cf200",
+      "source_id": "p2_claim_draft",
+      "stage": "P2"
+    },
+    {
+      "bytes": 8800,
+      "path_relative_to_v2_14": "P2_source_manifest.json",
+      "read_only": true,
+      "role": "P1/P2 protected manifest",
+      "sha256": "79702f5679767b5f28b98c5683ae42a9ad8a33bdd37793288835c7e5accbf932",
+      "source_id": "p2_source",
+      "stage": "P2"
+    },
+    {
+      "bytes": 3346,
+      "path_relative_to_v2_14": "P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_final_summary.json",
+      "read_only": true,
+      "role": "native-host bounded evidence summary",
+      "sha256": "ba3c16292f8be3ac669d743c19d0f1a690e7f7ae1b6729846fda26c319d64cab",
+      "source_id": "p4d6_summary",
+      "stage": "P4D6"
+    },
+    {
+      "bytes": 3348,
+      "path_relative_to_v2_14": "P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_case_adjudication.csv",
+      "read_only": true,
+      "role": "native-host case verdicts",
+      "sha256": "02268d9302852103c499e5369e4efce7af638f9dbde7dee50ceb26e7249629ac",
+      "source_id": "p4d6_adjudication",
+      "stage": "P4D6"
+    },
+    {
+      "bytes": 4262,
+      "path_relative_to_v2_14": "P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_contract_trace.csv",
+      "read_only": true,
+      "role": "native-host contract trace",
+      "sha256": "e9001e61b90c1a28c7f67d29ef493433bf51e040fa88d745aac7e6d0271df80f",
+      "source_id": "p4d6_trace",
+      "stage": "P4D6"
+    },
+    {
+      "bytes": 7703,
+      "path_relative_to_v2_14": "P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.6_FINAL_EVIDENCE_CONSOLIDATION_20260731/P4d6_source_manifest.json",
+      "read_only": true,
+      "role": "native-host protected manifest",
+      "sha256": "bd346ab09652da0384ac7a9bb876efeebf09bc7ce6dc832cc2726ebd30c11eef",
+      "source_id": "p4d6_source",
+      "stage": "P4D6"
+    },
+    {
+      "bytes": 8934,
+      "path_relative_to_v2_14": "P5_EVIDENCE_SYNC_AND_F01_F02_POSTMORTEM_FREEZE_20260731/P5_claim_evidence_matrix_v2_14_postP5.md",
+      "read_only": true,
+      "role": "post-P5 claim baseline",
+      "sha256": "c64f3e0c9e17d2c0f8c9aa4f2f85d50252dd936b04fcf1c5a9ae49d42e4a15c8",
+      "source_id": "p5_claim",
+      "stage": "P5"
+    },
+    {
+      "bytes": 575,
+      "path_relative_to_v2_14": "P5_EVIDENCE_SYNC_AND_F01_F02_POSTMORTEM_FREEZE_20260731/P5_family_outcome_source.csv",
+      "read_only": true,
+      "role": "P5 family outcomes",
+      "sha256": "6013a26422e41b57cf1275bcc7ded0f71ed5ec70703fb2ec6d0f7f7ad43acc41",
+      "source_id": "p5_family",
+      "stage": "P5"
+    },
+    {
+      "bytes": 1186,
+      "path_relative_to_v2_14": "P5_EVIDENCE_SYNC_AND_F01_F02_POSTMORTEM_FREEZE_20260731/P5_F01_postmortem_summary.json",
+      "read_only": true,
+      "role": "F01 non-support postmortem",
+      "sha256": "c6e7989fb7f20945630442da16017dcc2fb97cd6cc35460d173d608483907148",
+      "source_id": "p5_f01",
+      "stage": "P5"
+    },
+    {
+      "bytes": 1026,
+      "path_relative_to_v2_14": "P5_EVIDENCE_SYNC_AND_F01_F02_POSTMORTEM_FREEZE_20260731/P5_F02_postmortem_summary.json",
+      "read_only": true,
+      "role": "F02 non-support postmortem",
+      "sha256": "c4d700d7f49938540d80336e3da8c53cc38cc3ed1dbf1203bd9fe01a4f3f27e9",
+      "source_id": "p5_f02",
+      "stage": "P5"
+    },
+    {
+      "bytes": 796,
+      "path_relative_to_v2_14": "P5_EVIDENCE_SYNC_AND_F01_F02_POSTMORTEM_FREEZE_20260731/P6_entry_decision_gate.md",
+      "read_only": true,
+      "role": "full-P6 closed-entry decision",
+      "sha256": "11763a5b2d6913f66256c57b2b20cdbf7d89336708fea684033807a75fbbfc81",
+      "source_id": "p5_p6_gate",
+      "stage": "P5"
+    },
+    {
+      "bytes": 732,
+      "path_relative_to_v2_14": "P5_EVIDENCE_SYNC_AND_F01_F02_POSTMORTEM_FREEZE_20260731/P5_final_QA.json",
+      "read_only": true,
+      "role": "P5 static evidence QA",
+      "sha256": "7466b67a5fef8166d49993baf36cbe29a097d43ccd25aeb84819e8588550f181",
+      "source_id": "p5_qa",
+      "stage": "P5"
+    },
+    {
+      "bytes": 5274,
+      "path_relative_to_v2_14": "P5_EVIDENCE_SYNC_AND_F01_F02_POSTMORTEM_FREEZE_20260731/P5_source_manifest.json",
+      "read_only": true,
+      "role": "P5 protected manifest",
+      "sha256": "3a377634670ef7db3c5807805a066eb693bee0705b379b0699ee6c02cf4bab5d",
+      "source_id": "p5_source",
+      "stage": "P5"
+    },
+    {
+      "bytes": 1520,
+      "path_relative_to_v2_14": "P6R_F05_F07_BOUNDED_SAME_FAULT_COMPARISON_FREEZE_20260801/P6R_problem_and_scope.md",
+      "read_only": true,
+      "role": "P6R bounded scientific scope",
+      "sha256": "0fa2835a880423eecac5defd57bbc36410c723f132df0aa60b32d11b8f5f6224",
+      "source_id": "p6r_problem",
+      "stage": "P6R"
+    },
+    {
+      "bytes": 8037,
+      "path_relative_to_v2_14": "P6R_F05_F07_BOUNDED_SAME_FAULT_COMPARISON_FREEZE_20260801/P6R_method_case_expectations.csv",
+      "read_only": true,
+      "role": "frozen case-method oracle",
+      "sha256": "ebc98581710873e0f9fd34376d4f956c32593d41e1158419dc08eb919313f298",
+      "source_id": "p6r_expectations",
+      "stage": "P6R"
+    },
+    {
+      "bytes": 1126,
+      "path_relative_to_v2_14": "P6R_F05_F07_BOUNDED_SAME_FAULT_COMPARISON_FREEZE_20260801/P6R_acceptance_gates.md",
+      "read_only": true,
+      "role": "P6R acceptance gates",
+      "sha256": "ec6588ae61004a302bf59404c54a8293bad4ca450e6f2a7c070d64502d9de9c0",
+      "source_id": "p6r_gates",
+      "stage": "P6R"
+    },
+    {
+      "bytes": 32720,
+      "path_relative_to_v2_14": "P6R_F05_F07_BOUNDED_SAME_FAULT_COMPARISON_FREEZE_20260801/P6R_source_manifest.json",
+      "read_only": true,
+      "role": "P6R freeze protected manifest",
+      "sha256": "88e32f884eb2f99236dae4d2dacc5d9bd74cf5a02417c0fae52eb4d644e53aee",
+      "source_id": "p6r_freeze_source",
+      "stage": "P6R"
+    },
+    {
+      "bytes": 842,
+      "path_relative_to_v2_14": "P6R_IMPLEMENTATION_PREFLIGHT_20260801/results/P6R_FORMAL_20260801_READONLY_V1/final/P6R_formal_summary.json",
+      "read_only": true,
+      "role": "P6R formal summary",
+      "sha256": "1217ebfc5fa59f95a15e8b328658fc1de1a5d606aebd957c6befc849c2d0b5bd",
+      "source_id": "p6r_summary",
+      "stage": "P6R"
+    },
+    {
+      "bytes": 3218,
+      "path_relative_to_v2_14": "P6R_IMPLEMENTATION_PREFLIGHT_20260801/results/P6R_FORMAL_20260801_READONLY_V1/final/P6R_duplicate_comparison.json",
+      "read_only": true,
+      "role": "fresh-process duplicate comparison",
+      "sha256": "b95dcecdd1cac16885f96bde4393d5e69110370cdd1a2159d2abe0ffcf5e61d3",
+      "source_id": "p6r_duplicates",
+      "stage": "P6R"
+    },
+    {
+      "bytes": 14733,
+      "path_relative_to_v2_14": "P6R_IMPLEMENTATION_PREFLIGHT_20260801/results/P6R_FORMAL_20260801_READONLY_V1/final/P6R_method_cell_results.csv",
+      "read_only": true,
+      "role": "60 formal method cells",
+      "sha256": "382a535ef3c8b55c1002968b2db528cf53b11306033611b1f84555adc2dafb42",
+      "source_id": "p6r_cells",
+      "stage": "P6R"
+    },
+    {
+      "bytes": 8237,
+      "path_relative_to_v2_14": "P6R_IMPLEMENTATION_PREFLIGHT_20260801/results/P6R_FORMAL_20260801_READONLY_V1/final/P6R_formal_execution_manifest.json",
+      "read_only": true,
+      "role": "P6R execution manifest and raw hashes",
+      "sha256": "ed35e89c408e1ab1ab1f048727b6bbcef7dd725cc7c5ca0f65de1645b3623fc9",
+      "source_id": "p6r_manifest",
+      "stage": "P6R"
+    },
+    {
+      "bytes": 2036,
+      "path_relative_to_v2_14": "P6R_IMPLEMENTATION_PREFLIGHT_20260801/results/P6R_FORMAL_20260801_READONLY_V1/final/P6R_formal_result_report.md",
+      "read_only": true,
+      "role": "P6R bounded result report",
+      "sha256": "3f5fbdf1bf4a8ceeaa5e4035bcde98c5e3b26346b22dfb293181ff630e8e6e1e",
+      "source_id": "p6r_report",
+      "stage": "P6R"
+    }
+  ],
+  "manifest_self_hash_embedded": false,
+  "new_case_execution_performed": false,
+  "outputs": [
+    {
+      "bytes": 549,
+      "path": "P7a_evidence_sync_freeze.json",
+      "sha256": "878ee6faebeefd40c76477946bc4bd5debe3986a71ccb7e8ccd851c366e11aef"
+    },
+    {
+      "bytes": 4839,
+      "path": "P7a_upstream_evidence_registry.csv",
+      "sha256": "71b670d8605d8923b71c11554420e4c4b84189a2ae1d725911c3d96681adae16"
+    },
+    {
+      "bytes": 26900,
+      "path": "P7a_RQ2_run_method_source.csv",
+      "sha256": "49b6877589f56ca59e2beb4bbea46038425f92e60701b235151c9fd0765a8dd7"
+    },
+    {
+      "bytes": 8063,
+      "path": "P7a_RQ2_case_method_summary.csv",
+      "sha256": "f3127c89b0e9d5a89957f19f8e547299dc9ac44e52a95c766211e12c26cfc465"
+    },
+    {
+      "bytes": 1712,
+      "path": "P7a_RQ2_adjudication.json",
+      "sha256": "c0a33d0b9817f2e6b59564f03a49d578fe15424ed7a8935a6a60512754b34cc3"
+    },
+    {
+      "bytes": 10502,
+      "path": "P7a_claim_evidence_matrix_v2_14.md",
+      "sha256": "ca6d8febe0ff3a10d40018f8240bb5c9e63c6d2b736a9479c99cef76f310c51d"
+    },
+    {
+      "bytes": 8063,
+      "path": "P7a_figure3_same_fault_source.csv",
+      "sha256": "f3127c89b0e9d5a89957f19f8e547299dc9ac44e52a95c766211e12c26cfc465"
+    },
+    {
+      "bytes": 1661,
+      "path": "P7a_figure3_evidence_contract.md",
+      "sha256": "a83905df2f94f5c7837248a900bbd56b7015cfcc406d217ab7243fe9764b6444"
+    },
+    {
+      "bytes": 1755,
+      "path": "P7a_unresolved_risk_register.csv",
+      "sha256": "86c3b7a71d938cf3593f64fa45f2240edf745269cdd8e23a47aad1ab55e05abd"
+    },
+    {
+      "bytes": 687,
+      "path": "P7a_P8_entry_decision.md",
+      "sha256": "b506d74cc09ea8a1e30d449bf5cee05fbd2616884a6f27c9e7bd99011bf31752"
+    },
+    {
+      "bytes": 1565,
+      "path": "P7a_evidence_report.md",
+      "sha256": "d6d30fa74ecacebd5b5d5d9fb81bbc483555e2f261ea09fb6022854882eb9e50"
+    },
+    {
+      "bytes": 766,
+      "path": "P7a_final_QA.json",
+      "sha256": "a4a9e4fbb054842eeb08697721e4de30be6074fc8e7f93458d537e3659aa8df6"
+    }
+  ],
+  "public_repository_modified": false,
+  "rq2_status": "PARTIALLY_SUPPORTED_WITHIN_F05_F07_BOUNDED_RETROSPECTIVE_SCOPE",
+  "status": "PASS_P7A_BOUNDED_EVIDENCE_SYNC_READY_FOR_P8"
+}

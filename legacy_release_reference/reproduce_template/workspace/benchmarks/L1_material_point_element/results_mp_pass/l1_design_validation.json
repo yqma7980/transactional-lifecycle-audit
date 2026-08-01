@@ -1,0 +1,9 @@
+{
+  "case_count": 20,
+  "errors": [],
+  "ledger_column_count": 40,
+  "mp_case_count": 12,
+  "mp_scenario_variant_count": 25,
+  "passed": true,
+  "scenario_variant_count": 45
+}

@@ -1,0 +1,14 @@
+metric_id,quantity,authoritative_source,unit,norm,declared_scale,scale_expression,comparison_relation,used_by
+M_R,residual vector,replay operator packet,nondimensional force,linf,1,tau_y0*L with tau_y0=1 and L=1,scaled_numeric,null and F01/F02/F05/F07
+M_J,tangent matrix,replay operator packet,nondimensional stiffness,linf,10,G=10,scaled_numeric,null and F01/F02/F05/F07
+M_X,primary displacement,accepted state,nondimensional displacement,linf,0.24,1.2*max accepted lambda = 1.2*0.20,scaled_numeric,null and conventional gate
+M_GP,plastic strain gamma_p,committed/candidate state,strain,linf,0.1,tau_y0/G = 1/10,scaled_numeric,null F01 and state gate
+M_ALPHA,hardening alpha,committed/candidate state,strain,linf,0.1,tau_y0/G = 1/10,scaled_numeric,null F02 and state gate
+M_REACTION,top/bottom reaction,accepted output,nondimensional force,linf,1,tau_y0*L = 1,scaled_numeric,null F05 and conventional gate
+M_OUTPUT_W,accepted displacement output,accepted output ledger,nondimensional displacement,linf,0.24,same scale as M_X,scaled_numeric,output provenance control
+M_OUTPUT_R,accepted reaction output,accepted output ledger,nondimensional force,linf,1,same scale as M_REACTION,scaled_numeric,output provenance control
+S_SCHEMA,schema and serializer identity,declared packet,none,exact,,not applicable,exact,all cases
+S_VERSION,accepted/residual/tangent versions,event ledger,none,exact,,not applicable,exact,all cases
+S_SOURCE,candidate and output source,event ledger,none,exact,,not applicable,exact,all cases
+S_REACH,rejected-candidate reachability,event ledger,none,exact,,not applicable,exact,all cases
+S_ORDER,semantic event order,event ledger projection,none,exact,,not applicable,exact,all cases

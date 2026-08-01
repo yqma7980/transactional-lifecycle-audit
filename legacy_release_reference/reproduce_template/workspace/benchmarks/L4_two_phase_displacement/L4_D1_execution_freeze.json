@@ -1,0 +1,105 @@
+{
+  "abaqus_used": false,
+  "canonical_serializer": "benchmarks.L2_host_lifecycle.src.l2_state.canonical_json/canonical_hash",
+  "capillary_pressure": false,
+  "claim_boundary": "one_dimensional_immiscible_incompressible_two_phase_flow_with_one_way_mechanical_observable",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "design_version": "L4-D1.0",
+  "excluded_claims": [
+    "abaqus_validation",
+    "two_way_flow_mechanics_coupling",
+    "fault_zone_application",
+    "capillary_pressure_validation",
+    "gravity_or_compressibility",
+    "thread_safety",
+    "performance",
+    "production_readiness"
+  ],
+  "execution_authorized": false,
+  "formal_cases": [
+    "L4-REF-01",
+    "L4-CV-S-01",
+    "L4-CV-T-01",
+    "L4-MB-W-01",
+    "L4-MB-N-01",
+    "L4-FR-01",
+    "L4-MECH-01",
+    "L4-ST-01",
+    "L4-RT-01",
+    "L4-RT-02"
+  ],
+  "formal_repetitions_per_case": 2,
+  "host_version_planned": "L4-HOST-D1.0",
+  "mechanics": {
+    "K_d": 4.0,
+    "alpha": 1.0,
+    "feedback_to_flow": false,
+    "observable": "alpha_over_Kd_integral_pressure_dx"
+  },
+  "model": {
+    "H": 1.0,
+    "initial_S_n": 0.0,
+    "injected_S_n": 1.0,
+    "k": 1.0,
+    "mu_n": 1.0,
+    "mu_w": 1.0,
+    "phi": 1.0,
+    "pressure_right": 0.0,
+    "q_total": 1.0,
+    "relative_permeability_exponent": 2.0,
+    "residual_saturation_n": 0.0,
+    "residual_saturation_w": 0.0
+  },
+  "oracle": {
+    "breakthrough_time": 0.8284271247461901,
+    "front_threshold": 0.35355339059327373,
+    "integration_absolute_target": 1e-13,
+    "maximum_bisection_iterations": 100,
+    "maximum_quadrature_depth": 30,
+    "reference_times": [0.1, 0.2, 0.4],
+    "root_residual_target": 1e-14,
+    "shock_saturation": 0.7071067811865475,
+    "shock_speed": 1.2071067811865475,
+    "type": "independent_buckley_leverett_entropy_and_resistance_integral"
+  },
+  "processes_per_repetition": 1,
+  "python_standard_library_only": true,
+  "results_exist": false,
+  "retry_schedule": {
+    "accepted_replay_dt": 0.005,
+    "declared_committed_state_identical": true,
+    "rejected_trial_dt": 0.01,
+    "safe_action": "discard_trial_candidate",
+    "unsafe_seed": "persist_rejected_trial_saturation_as_previous_state"
+  },
+  "schedules": {
+    "front_times": [0.1, 0.2, 0.4, 0.6],
+    "mass_balance": {"CFL": 0.4, "N": 256, "time": 0.6},
+    "mechanics_times": [0.1, 0.2, 0.4],
+    "reference": {"CFL": 0.4, "N": 800},
+    "spatial": {"CFL": 0.4, "N": [80, 160, 320], "time": 0.2},
+    "stability": {"CFL": 0.4, "N": 256, "time": 0.6},
+    "temporal": {"CFL": [0.4, 0.2, 0.1], "N": 800, "reference_CFL": 0.0125, "time": 0.2}
+  },
+  "threads_per_process": 1,
+  "tolerances": {
+    "finite_absolute_limit": 1e100,
+    "front_absolute": 0.003,
+    "mass_defect_maximum": 5e-12,
+    "mechanical_displacement_absolute": 0.0008,
+    "pressure_l2_relative": 0.0075,
+    "pressure_linf_absolute": 0.01,
+    "quadrature_estimate_maximum": 1e-12,
+    "root_residual_maximum": 1e-13,
+    "safe_same_track": "exact_zero_and_exact_fingerprint",
+    "saturation_l1_absolute": 0.004,
+    "spatial_order_minimum": 0.5,
+    "stability_slack": 1e-13,
+    "temporal_order_minimum": 0.8,
+    "unsafe_declared_phase_mass_defect_floor": 0.0001,
+    "unsafe_displacement_drift_floor": 0.000001,
+    "unsafe_pressure_l2_drift_floor": 0.000001,
+    "unsafe_saturation_l2_drift_floor": 0.0001
+  }
+}
+

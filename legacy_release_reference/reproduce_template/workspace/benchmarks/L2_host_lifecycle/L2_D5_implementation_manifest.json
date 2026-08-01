@@ -1,0 +1,70 @@
+{
+  "abaqus_used": false,
+  "created_utc": "2026-07-22T08:04:58+00:00",
+  "design_version": "L2-D5.0a",
+  "directed_unit_test": {
+    "command": "python -m unittest tests.test_l2_d5_checkpoint_provenance -v",
+    "errors": 0,
+    "failures": 0,
+    "passed": true,
+    "processes": 1,
+    "python_dont_write_bytecode": true,
+    "test_count": 10,
+    "threads": 1
+  },
+  "execution_authorized": false,
+  "formal_results_exist": false,
+  "fraction_oracle": {
+    "all_reference_restore_deltas": "0/1",
+    "checkpoint_displacement": "21/1000",
+    "checkpoint_epsilon_p": "1/100",
+    "continuation_displacement": "4/125",
+    "continuation_epsilon_p": "1/50",
+    "runtime_fingerprints_are_separate_IEEE754_evidence": true
+  },
+  "frozen_and_reused_inputs": {
+    "L2_D5_checkpoint_provenance_case_matrix.csv": "9b932cb0329be838057469af6395062cdb6a0fe125206f0e02667b35f0b2ccca",
+    "L2_D5_execution_freeze.json": "90a5df3527b285a424b6a72a5fd75370e9216d1eb34164c163f50a48fb665e63",
+    "L2_D5_implementation_plan.md": "1e0ceee9ab8c60dbee12776da28b9a96617d5550378607caf0b4c5ba31ca0c69",
+    "L2_D5_source_manifest.json": "884f0502819bd1ed31b8f1cc9e826152d707a9bf09e07512915bef184a5f9698",
+    "src/l2_host.py": "a2a7044592da3be507279552f0dc19a75c2de00b7cdaee0e3bea4a5e3868fd2b",
+    "src/l2_model.py": "1a9daac2a8b75534dd55193bce3fead0004197765d3024e13d617e9d833ea8ff",
+    "src/l2_state.py": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d",
+    "src/l2_variants.py": "74fd1679408c9fa39825deaf8fc140263a5c543174f57ee51a3757860b22a96c"
+  },
+  "host_version": "L2-HOST-D5.0a",
+  "implementation_files": {
+    "oracle/l2_d5_fraction_oracle.py": {
+      "ast_parse": true,
+      "bytes": 3601,
+      "sha256": "82ab8ee2b774e54fea943c95d9fb91b58789202df8ee8dfeecd04d2b782555fe"
+    },
+    "run_l2_d5.py": {
+      "ast_parse": true,
+      "bytes": 4286,
+      "sha256": "35299f9b189d3c2dac3511a5bf59f021c3c6a7e26ce1e9085e6c4a8220d9b11a"
+    },
+    "src/l2_d5_checkpoint_provenance.py": {
+      "ast_parse": true,
+      "bytes": 27477,
+      "sha256": "c9ab3adb8d79874fc64e40faef759cbad8a7dee0aed12f40f6edc60d9dc451f2"
+    },
+    "tests/test_l2_d5_checkpoint_provenance.py": {
+      "ast_parse": true,
+      "bytes": 7742,
+      "sha256": "caa062be0f57c9fc18e975ada22273b412db1804c5b566d1e4ea6e7240a9cf94"
+    }
+  },
+  "implementation_status": "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+  "manifest_self_hash_embedded": false,
+  "no_abaqus_execution": true,
+  "no_case_execution": true,
+  "production_model_used": false,
+  "runner_authorization": {
+    "cli_lock": "--execute-authorized",
+    "double_lock_verified": true,
+    "environment_lock": "L2_D5_EXECUTION_AUTHORIZED=YES",
+    "result_root_created_by_probe": false,
+    "unauthorized_probe_exit_code": 1
+  }
+}

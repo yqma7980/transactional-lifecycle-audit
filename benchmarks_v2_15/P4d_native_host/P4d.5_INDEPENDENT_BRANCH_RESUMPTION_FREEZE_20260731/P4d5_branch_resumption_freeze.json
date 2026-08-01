@@ -1,0 +1,138 @@
+{
+  "schema_version": "CMAME-P4D5-INDEPENDENT-BRANCH-RESUMPTION-FREEZE-1.0",
+  "design_version": "P4d.0",
+  "protocol_revision": "P4d.5",
+  "host_version": "P4D-DOLFINX-PETSC-HOST-1.0",
+  "freeze_status": "FROZEN_STATIC_NOT_IMPLEMENTED",
+  "implementation_authorized": false,
+  "execution_authorized": false,
+  "results_exist": false,
+  "freeze_date": "2026-07-31",
+  "scientific_basis": {
+    "predeclared_dependency_source": "P4d.3_NATIVE_LINESEARCH_POSTMORTEM_20260731/P4d3_dependency_dag.md",
+    "native_linesearch_status": "NOT_SUPPORTED_BY_DIAGNOSTIC_ENVELOPE",
+    "heldout_target_selected": false,
+    "fourth_diagnostic_target_allowed": false,
+    "reason": "The frozen 0.20, 0.24 and 0.28 diagnostic envelope produced no structured unselected PETSc-native line-search candidate."
+  },
+  "preserved_prior_adjudication": {
+    "raw_case_id": "P4D-SAFE-LS-01",
+    "raw_verdict": "P4D-SAFE-LS-01_CONTRACT_FAIL",
+    "p4d3_derived_adjudication": "NOT_SUPPORTED_BY_FROZEN_HISTORY",
+    "p4d4_final_adjudication": "NOT_SUPPORTED_BY_DIAGNOSTIC_ENVELOPE",
+    "raw_files_rewritten": false,
+    "formal_p4d_matrix_pass": false
+  },
+  "inherited_formal_prerequisites": [
+    {
+      "case_id": "P4D-REF-01",
+      "status": "PASS_TWO_FRESH_PROCESS",
+      "formal_runs": 2
+    },
+    {
+      "case_id": "P4D-CONST-01",
+      "status": "PASS_TWO_FRESH_PROCESS",
+      "formal_runs": 2
+    },
+    {
+      "case_id": "P4D-SAFE-DIR-01",
+      "status": "PASS_TWO_FRESH_PROCESS",
+      "formal_runs": 2
+    }
+  ],
+  "frozen_future_cases": [
+    "P4D-SAFE-RT-01",
+    "P4D-SAFE-RS-01",
+    "P4D-VER-01",
+    "P4D-NC-CACHE-01",
+    "P4D-NC-OUTPUT-01"
+  ],
+  "future_case_count": 5,
+  "future_process_count": 10,
+  "fresh_process_repetitions_per_case": 2,
+  "dependencies": {
+    "P4D-SAFE-RT-01": [
+      "P4D-SAFE-DIR-01",
+      "FROZEN_NEGATIVE_REASON_TRIGGER"
+    ],
+    "P4D-SAFE-RS-01": [
+      "P4D-SAFE-DIR-01",
+      "DIRECT_ACCEPTED_CHECKPOINT_AT_0.12"
+    ],
+    "P4D-VER-01": [
+      "P4D-CONST-01"
+    ],
+    "P4D-NC-CACHE-01": [
+      "P4D-SAFE-RT-01_FORMAL_PASS"
+    ],
+    "P4D-NC-OUTPUT-01": [
+      "P4D-SAFE-RT-01_FORMAL_PASS"
+    ]
+  },
+  "branch_stop_semantics": {
+    "global_stop_on_unrelated_branch_failure": false,
+    "retry_failure_skips": [
+      "P4D-NC-CACHE-01",
+      "P4D-NC-OUTPUT-01"
+    ],
+    "retry_failure_does_not_skip": [
+      "P4D-SAFE-RS-01",
+      "P4D-VER-01"
+    ],
+    "restart_failure_does_not_skip": [
+      "P4D-SAFE-RT-01",
+      "P4D-VER-01"
+    ],
+    "version_failure_does_not_skip": [
+      "P4D-SAFE-RT-01",
+      "P4D-SAFE-RS-01"
+    ],
+    "failed_or_unsupported_branch_is_preserved": true
+  },
+  "implementation_boundary": {
+    "p4d2_numerical_case_code_may_be_read_only_dependency": true,
+    "p4d2_dependency_metadata_is_not_authoritative_for_p4d5": true,
+    "p4d5_case_matrix_is_authoritative_for_branch_dependencies": true,
+    "new_runner_required": true,
+    "new_results_root_required": true,
+    "p4d2_source_modification_allowed": false
+  },
+  "future_environment": {
+    "image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "platform": "linux/amd64",
+    "network": "none",
+    "mpi_ranks": 1,
+    "processes_per_case_run": 1,
+    "threads_per_process": 1,
+    "environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  "reserved_future_execution_contract": {
+    "results_root": "results/P4d5_branch_resumption_YYYYMMDD",
+    "runner_cli_lock": "--execute-authorized",
+    "runner_environment_lock": "P4D5_EXECUTION_AUTHORIZED=YES",
+    "case_run_granularity": "one case and one run_id per fresh container",
+    "overwrite_forbidden": true
+  },
+  "claim_boundary": {
+    "best_possible_if_all_five_pass": "PARTIAL_OBSERVED_P4D_WITH_NATIVE_LINESEARCH_NOT_SUPPORTED",
+    "full_p4d_matrix_pass_allowed": false,
+    "native_rejected_candidate_coverage_allowed": false,
+    "abaqus_or_production_inference_allowed": false,
+    "manuscript_or_public_archive_update_authorized": false
+  },
+  "prohibitions": [
+    "no P4D-SAFE-LS-01 rerun",
+    "no fourth line-search diagnostic target",
+    "no held-out line-search execution",
+    "no formal case execution in this freeze",
+    "no tests or runner execution in this freeze",
+    "no P4d.0-P4d.4 modification",
+    "no manuscript, Claim Matrix, Figure, GitHub, Zenodo or DOI update",
+    "no Abaqus or production-model execution"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "design_version": "L2-D1.0",
+  "host_version": "L2-HOST-D1.0",
+  "freeze_status": "FROZEN_NOT_EXECUTED",
+  "freeze_date": "2026-07-21",
+  "execution_authorized": false,
+  "host": {
+    "name": "standalone_reference_newton_host",
+    "runtime": "CPython 3.12.10 64-bit",
+    "operating_system": "Microsoft Windows NT 10.0.26200.0",
+    "execution_mode": "one_process_one_thread_standard_library_only",
+    "abaqus_used": false,
+    "external_numeric_libraries": []
+  },
+  "threading": {
+    "process_count": 1,
+    "thread_count": 1,
+    "python_hash_seed": 0,
+    "omp_num_threads": 1,
+    "mkl_num_threads": 1,
+    "openblas_num_threads": 1,
+    "numexpr_num_threads": 1,
+    "scheduling_cases_authorized": false
+  },
+  "model": {
+    "material": {
+      "E": "100/1",
+      "sigma_y": "1/1",
+      "H": "10/1"
+    },
+    "element": {
+      "area": "1/1",
+      "length": "1/1",
+      "u1": "0/1"
+    },
+    "equilibrium": "R=A*sigma-F",
+    "tangent": "K=A*E_alg/L"
+  },
+  "newton": {
+    "initial_guess": "last_accepted_displacement",
+    "maximum_iterations": 12,
+    "residual_absolute_tolerance": 1e-12,
+    "correction_absolute_reporting_tolerance": 1e-12,
+    "tangent_absolute_floor": 1e-14,
+    "line_search": false,
+    "automatic_retry": false,
+    "convergence_rule": "abs(residual)<=residual_absolute_tolerance"
+  },
+  "forced_retry": {
+    "mechanism": "deterministic_host_injection_after_one_finite_candidate",
+    "parent_target_force": "11/10",
+    "forced_trial_displacement": "3/100",
+    "forced_trial_evaluations": 1,
+    "reject_reason": "INJECTED_AFTER_CANDIDATE_FORMATION",
+    "cutback_factor": "1/2",
+    "accepted_force_sequence_after_retry": [
+      "11/20",
+      "11/10"
+    ],
+    "direct_history_accepted_force_sequence": [
+      "11/20",
+      "11/10"
+    ],
+    "common_replay_probe": {
+      "u": "1/200",
+      "force": "1/2"
+    },
+    "maximum_injected_retries": 1
+  },
+  "analytical_references": {
+    "elastic": {
+      "force": "1/2",
+      "u": "1/200",
+      "stress": "1/2",
+      "epsilon_p": "0/1",
+      "kappa": "0/1"
+    },
+    "plastic": {
+      "force": "11/10",
+      "u": "21/1000",
+      "stress": "11/10",
+      "epsilon_p": "1/100",
+      "kappa": "1/100"
+    }
+  },
+  "tolerances": {
+    "analytical_absolute": 1e-12,
+    "analytical_relative": 1e-12,
+    "same_track_exact": 0.0,
+    "retry_accepted_checkpoint_exact": 0.0,
+    "unsafe_minimum_finite_drift": 1e-8,
+    "finite_absolute_limit": 1e100
+  },
+  "reproducibility": {
+    "formal_repetition_count": 2,
+    "repetition_mode": "independent_processes_same_environment",
+    "deterministic_artifacts_require_byte_identity": true,
+    "runtime_metrics_are_reporting_only": true
+  },
+  "authorized_case_subset": [
+    "L2-REF-01",
+    "L2-REF-02",
+    "L2-RT-01",
+    "L2-RT-02",
+    "L2-RT-03"
+  ],
+  "not_authorized": [
+    "L2-CO-*",
+    "L2-TG-*",
+    "L2-OP-*",
+    "L2-CP-*",
+    "L2-TH-*",
+    "Abaqus",
+    "production_UEL",
+    "L3-L6"
+  ],
+  "claim_boundary": "This freeze authorizes implementation of five standalone cases only. It does not authorize execution, Abaqus use, host-general rollback claims, conservation claims, coupled-physics claims, performance claims or production conclusions."
+}

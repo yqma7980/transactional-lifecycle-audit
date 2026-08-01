@@ -1,0 +1,113 @@
+{
+  "accepted": [
+    {
+      "branches": [
+        "ELASTIC"
+      ],
+      "candidate_id": "ae32db2b8a64e00873387b61527cb61d43c1cec32ac4ae8402831bf99eb45311",
+      "committed_hash": "57aba122f74adf5a7b76ded72c5ad59f87674b47f56544e1272b06f351502603",
+      "iterations": 1,
+      "mechanics": {
+        "all_values_finite": true,
+        "alpha_bounded": true,
+        "alpha_nondecreasing": true,
+        "bottom_reaction": -0.4482842712474621,
+        "free_residual_relative": 2.9834320779676035e-16,
+        "maximum_alpha": 0.0,
+        "plastic_point_count": 0,
+        "reaction_balance_relative": 1.2383024520754273e-16,
+        "residual_norm": 2.674851349776017e-16,
+        "top_reaction": 0.448284271247462,
+        "yield_consistency_relative": 0.0
+      },
+      "snes_reason": 2,
+      "target_load": 0.04
+    },
+    {
+      "branches": [
+        "ELASTIC",
+        "PLASTIC"
+      ],
+      "candidate_id": "edd41a875933c564d420223256bdec4387cd0929b6edf6293b090293ea76ed25",
+      "committed_hash": "7b1746ca39e0552991f1da75e23da7f89cd645d7c56fb0ec62c75422aec757f0",
+      "iterations": 4,
+      "mechanics": {
+        "all_values_finite": true,
+        "alpha_bounded": true,
+        "alpha_nondecreasing": true,
+        "bottom_reaction": -0.888226631085625,
+        "free_residual_relative": 2.0505769341732608e-16,
+        "maximum_alpha": 0.011113503544500247,
+        "plastic_point_count": 9,
+        "reaction_balance_relative": 6.249660760949032e-17,
+        "residual_norm": 3.64275408404521e-16,
+        "top_reaction": 0.8882266310856249,
+        "yield_consistency_relative": 2.1774707492003627e-16
+      },
+      "snes_reason": 2,
+      "target_load": 0.08
+    },
+    {
+      "branches": [
+        "ELASTIC",
+        "PLASTIC"
+      ],
+      "candidate_id": "46af3f84dab77cc0a68de86d184846936b6ea0afa9eedc6daab4c5982c94c566",
+      "committed_hash": "556dacd01c944cad327665c4151c4ec41959761c0db0b24a62dc8fbf422ef429",
+      "iterations": 5,
+      "mechanics": {
+        "all_values_finite": true,
+        "alpha_bounded": true,
+        "alpha_nondecreasing": true,
+        "bottom_reaction": -1.009996337076881,
+        "free_residual_relative": 2.0996354006382986e-16,
+        "maximum_alpha": 0.048544307126782905,
+        "plastic_point_count": 93,
+        "reaction_balance_relative": 1.0992347039973929e-16,
+        "residual_norm": 4.241248127683263e-16,
+        "top_reaction": 1.0099963370768812,
+        "yield_consistency_relative": 4.396894534597864e-16
+      },
+      "snes_reason": 2,
+      "target_load": 0.1
+    },
+    {
+      "branches": [
+        "ELASTIC",
+        "PLASTIC"
+      ],
+      "candidate_id": "452ed21f247e041620f3f5c9b65ba90d115e8bf98908b9ed0b61ead650a503a8",
+      "committed_hash": "8628a67ba3338c924d9210f17833b7cdf31d98f22f84b8f8702076a3cabf989e",
+      "iterations": 5,
+      "mechanics": {
+        "all_values_finite": true,
+        "alpha_bounded": true,
+        "alpha_nondecreasing": true,
+        "bottom_reaction": -1.0488282547102945,
+        "free_residual_relative": 1.6906062078479102e-16,
+        "maximum_alpha": 0.07010539424648907,
+        "plastic_point_count": 93,
+        "reaction_balance_relative": 0.0,
+        "residual_norm": 3.546311116759026e-16,
+        "top_reaction": 1.0488282547102945,
+        "yield_consistency_relative": 4.230748548517019e-16
+      },
+      "snes_reason": 2,
+      "target_load": 0.12
+    }
+  ],
+  "accepted_increment_count": 4,
+  "commit_event_count": 4,
+  "continued_past_0p12": false,
+  "final_load": 0.12,
+  "final_maximum_alpha": 0.07010539424648907,
+  "final_version": 4,
+  "formal_case_run": false,
+  "pass_flag": true,
+  "plasticity_exercised": true,
+  "preflight_id": "P4D2-INTEGRATION-01",
+  "residual_event_count": 19,
+  "schema_version": "CMAME-P4D2-PREFLIGHT-1.0",
+  "tangent_event_count": 15,
+  "trial_event_count": 19
+}

@@ -1,0 +1,36 @@
+{
+  "F01_postmortem_scope": "observed discrete crossing plus diagnostic low-strength fit",
+  "F02_postmortem_scope": "static dependency trace plus observed zero operator drift",
+  "actual_process_count": 82,
+  "date": "2026-07-31",
+  "evidence_labels": {
+    "F01": "OBSERVED-P5-NOT-SUPPORTED",
+    "F02": "OBSERVED-P5-NOT-SUPPORTED",
+    "F05": "OBSERVED-P5-FAMILY-PASS",
+    "F07": "OBSERVED-P5-FAMILY-PASS",
+    "full_matrix": "NOT_SUPPORTED"
+  },
+  "family_status": {
+    "F01": "NOT_SUPPORTED_DISTINCTIVE_REGION_EMPTY",
+    "F02": "NOT_SUPPORTED_DISTINCTIVE_REGION_EMPTY",
+    "F05": "PASS_FRESH_PROCESS_VERIFICATION",
+    "F07": "PASS_FRESH_PROCESS_VERIFICATION"
+  },
+  "formal_execution_tag": "P5_formal_20260731_fullFE_v1d",
+  "formal_matrix_status": "NOT_SUPPORTED_DISTINCTIVE_REGION_EMPTY",
+  "freeze_id": "P5-EVIDENCE-SYNC-POSTMORTEM-1.0",
+  "locked_rules": {
+    "field_rebinding_allowed": false,
+    "history_changes_allowed": false,
+    "interpolation_for_selection_allowed": false,
+    "new_strengths_allowed": false,
+    "rerun_authorized": false,
+    "threshold_changes_allowed": false
+  },
+  "protected_evidence": {
+    "formal_raw_aggregate_sha256": "322f4425a390acc43bbc735076c2d10496f02861daa197361e99b6d7fa8385fd",
+    "formal_raw_file_count": 662,
+    "protected_hash_gate": "PASS"
+  },
+  "status": "FROZEN_POSTEXECUTION_NO_NEW_CASES"
+}

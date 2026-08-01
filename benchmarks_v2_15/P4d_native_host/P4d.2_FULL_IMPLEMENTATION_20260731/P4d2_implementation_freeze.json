@@ -1,0 +1,68 @@
+{
+  "schema_version": "CMAME-P4D2-IMPLEMENTATION-FREEZE-1.0",
+  "design_version": "P4d.0",
+  "implementation_version": "P4d.2",
+  "host_version": "P4D-DOLFINX-PETSC-HOST-1.0",
+  "status": "IMPLEMENTATION_IN_PROGRESS_NOT_FORMALLY_EXECUTED",
+  "formal_execution_authorized": false,
+  "formal_results_exist": false,
+  "abaqus_used": false,
+  "comsol_used": false,
+  "production_model_used": false,
+  "container": {
+    "image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "platform": "linux/amd64",
+    "network": "none",
+    "mpi_ranks": 1,
+    "processes_per_case": 1,
+    "threads_per_process": 1
+  },
+  "formal_case_ids": [
+    "P4D-REF-01",
+    "P4D-CONST-01",
+    "P4D-SAFE-DIR-01",
+    "P4D-SAFE-LS-01",
+    "P4D-SAFE-RT-01",
+    "P4D-SAFE-RS-01",
+    "P4D-NC-CACHE-01",
+    "P4D-NC-OUTPUT-01",
+    "P4D-VER-01"
+  ],
+  "formal_runner_lock": {
+    "required_cli_flag": "--execute-authorized",
+    "required_environment": "P4D2_EXECUTION_AUTHORIZED=YES",
+    "required_case_count_per_process": 1,
+    "write_before_authorization": false
+  },
+  "allowed_this_implementation_turn": [
+    "create P4d.2 source oracle tests protocol and manifests",
+    "compile the observer from the unchanged P4d.1 source",
+    "run unit tests and nonformal P4D2 preflight IDs",
+    "run a bounded nonformal integration smoke",
+    "verify the locked formal runner refuses all writes"
+  ],
+  "forbidden_this_implementation_turn": [
+    "execute a P4D formal case ID",
+    "create a formal results directory",
+    "update manuscript claim matrix figures GitHub Zenodo or DOI",
+    "run Abaqus COMSOL OpenSees or a production model",
+    "modify P4d.0 P4d.1 v2.13 or production evidence"
+  ],
+  "protected_hashes": {
+    "v2_13_aggregate_sha256": "d5c8dbae6275171a7bb314cb6582457ca3a6145c0ba773f1f83eff34fe65d919",
+    "p4d_package_aggregate_sha256": "8697fcecbe0f17e665080a7c673e44b93cd9223315ed3a09c70e3d0e01189914",
+    "p4d_execution_freeze_sha256": "0af67498342df665bd03508d9a45d430644769d34981b32b520b16de66f13d7b",
+    "p4d_case_matrix_sha256": "2aeb7437e765cde58a596356c95721db0e0a7ec2b681db5d39dec3081f1424d5",
+    "p4d_source_manifest_sha256": "a54b76c5624d1e033ffc6a08bc7a339b8494ee789e9478687a4915fca11d89dd",
+    "p4d1_source_manifest_sha256": "53e267883a2fc052f2fc55616e5bcbb004c6c990e5d12bbc65333d50e6878c36",
+    "p4d1_gate_results_sha256": "8da8aceb51a36ba25ad5d2e2daa4b097add7e411c60566e2e560b2cd0cf82ec9",
+    "p4d1_observer_source_sha256": "e21ca0077f4f6bc8e850d25886a81bf33e19d5e5f40fc709f3743e10117b9a75",
+    "p4d1_observer_binary_sha256": "b9f9cfeb0750bb77e87d063363d1e13407c3442237db8f95364d0362f002a291"
+  },
+  "evidence_boundary": {
+    "implementation_is_runtime_evidence": false,
+    "unit_tests_are_formal_case_evidence": false,
+    "preflight_is_observed_p4d": false,
+    "formal_matrix_required_for_observed_p4d": true
+  }
+}

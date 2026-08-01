@@ -1,0 +1,19 @@
+{
+  "all_15_operator_residual_zero": true,
+  "all_15_operator_tangent_zero": true,
+  "all_15_structural_violations_present": true,
+  "does_not_support": [
+    "dead-code classification",
+    "universal alpha insensitivity",
+    "a changed replay history",
+    "a full P5 pass"
+  ],
+  "family_id": "F02",
+  "first_nonquiet_field": "M_ALPHA",
+  "first_nonquiet_index": 5,
+  "formal_status": "NOT_SUPPORTED_DISTINCTIVE_REGION_EMPTY",
+  "maximum_operator_metric": 0.0,
+  "mechanism_interpretation": "The declared alpha field reaches material evaluation. The frozen replay nevertheless shows zero residual/tangent drift at every strength. An unchanged elastic branch is a plausible masking mechanism, but no per-integration-point branch ledger was frozen, so that explanation remains inferred.",
+  "static_dependency_trace": "REACHABLE_TO_MATERIAL_BRANCH_CRITERION",
+  "supported_conclusion": "F02 detects an exact restoration violation but supplies no secondary operator separation under the frozen history."
+}

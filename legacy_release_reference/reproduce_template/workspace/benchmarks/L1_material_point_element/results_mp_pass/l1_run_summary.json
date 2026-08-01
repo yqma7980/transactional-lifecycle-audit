@@ -1,0 +1,109 @@
+{
+  "case_count": 20,
+  "claim_boundary": "L1-MP passed all hard gates in two byte-stable executions. L1-E1 was not implemented or executed, so full L1 remains incomplete.",
+  "design_version": "L1-D1.0",
+  "execution_status": "STOPPED_AT_E1_GATE",
+  "gate_families": {
+    "L1-E1_execution": {
+      "evidence": [
+        "not authorized in this execution scope"
+      ],
+      "hard_gate": true,
+      "status": "BLOCKED"
+    },
+    "analytical_reference": {
+      "evidence": [
+        "fraction oracle and central-difference tangent gates"
+      ],
+      "hard_gate": true,
+      "status": "PASS"
+    },
+    "declared_state_equality": {
+      "evidence": [
+        "all compared replay packet hashes equal"
+      ],
+      "hard_gate": true,
+      "status": "PASS"
+    },
+    "lifecycle": {
+      "evidence": [
+        "safe controls invariant; seeded violations detected as expected"
+      ],
+      "hard_gate": true,
+      "status": "PASS"
+    },
+    "output_checkpoint": {
+      "evidence": [
+        "terminal noninterference and checkpoint round trip"
+      ],
+      "hard_gate": true,
+      "status": "PASS"
+    },
+    "performance_reporting": {
+      "evidence": [
+        "wall time and Python peak allocation recorded outside deterministic artifacts"
+      ],
+      "hard_gate": false,
+      "status": "PASS"
+    },
+    "reproducibility": {
+      "evidence": [
+        "two complete executions",
+        "six deterministic candidate artifacts byte identical"
+      ],
+      "hard_gate": true,
+      "status": "PASS"
+    },
+    "schema_provenance": {
+      "evidence": [
+        "20 unique design cases; 45 total outcomes; 12 MP cases; 25 MP outcomes",
+        "40-column ledger schema validated"
+      ],
+      "hard_gate": true,
+      "status": "PASS"
+    },
+    "seed_detection": {
+      "evidence": [
+        "unsafe_trial_cache and unsafe_output_feedback outcomes"
+      ],
+      "hard_gate": true,
+      "status": "PASS"
+    },
+    "thermodynamic_sanity": {
+      "evidence": [
+        "accepted load-unload-reload path; nonnegative incremental plastic dissipation"
+      ],
+      "hard_gate": true,
+      "status": "PASS"
+    }
+  },
+  "implementation_hash": "35c44ca1df498ac517c3c9a9b8f691ee0ce8a4293f52b8a0262afce8438a62a3",
+  "ledger_rows": 202,
+  "overall_pass": false,
+  "result_sha256": {
+    "l1_accepted_checkpoints.csv": "5488187cff736e6ca638bdee3a9b376f60e775b6b659c53b4b1414a81e1678f9",
+    "l1_call_ledger.csv": "a81f376ea01f11cbafa42aee5c2dde7d705b6e02a64136ec5050e0183f248943",
+    "l1_case_results.csv": "a2966d20f0fddacd326c36bb5d6e06b02865d6788d6bb77c0f4e20f8c2c01e5c",
+    "l1_design_validation.json": "d3cceddfdb2b5893f66c0a49aceae4599ddc112468169dd2ce2e9f954f985dfa",
+    "l1_duplicate_run_comparison.json": "5377ae26e4dbac2f99bd27be20545284d0f5657455235e289e51e52c40e1d2a8",
+    "l1_result_report.md": "802e751a1487ef5805e00884df19f2b3b3808b2a795ac26cd562c0223ee17cd8",
+    "l1_runtime_metrics.json": "3d92efd41b2636ddb0608406a1b7246e2b57218dbe3717972e45e4c845cd1da4"
+  },
+  "safe_false_positive_count": 0,
+  "scenario_variant_count": 45,
+  "sublevels": {
+    "L1-E1": {
+      "blocked_cases": 8,
+      "failed_cases": 0,
+      "passed_cases": 0,
+      "status": "BLOCKED"
+    },
+    "L1-MP": {
+      "blocked_cases": 0,
+      "failed_cases": 0,
+      "passed_cases": 12,
+      "status": "PASS"
+    }
+  },
+  "unsafe_seed_detected": true
+}

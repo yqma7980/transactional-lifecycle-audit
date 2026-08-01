@@ -1,0 +1,108 @@
+{
+    "schema_version":  "L6-D1-SOURCE-1.0",
+    "design_version":  "L6-D1.0",
+    "design_status":  "FROZEN_NOT_IMPLEMENTED",
+    "execution_authorized":  false,
+    "results_exist":  false,
+    "abaqus_used":  false,
+    "comsol_used":  false,
+    "production_model_used":  false,
+    "design_outputs":  [
+                           {
+                               "path":  "benchmarks/L6_external_host/L6_D0_host_capability_probe.json",
+                               "sha256":  "ddf823a5af637cebe970ed4047ac366f4000af4dd6092fd91dcb5877d5cfc5bf",
+                               "size":  1959
+                           },
+                           {
+                               "path":  "benchmarks/L6_external_host/L6_D0_host_capability_audit.md",
+                               "sha256":  "197c4f3602d3f80794de135766d97d6ea90276716b49ed8f3d9aaf6e7f96739a",
+                               "size":  1428
+                           },
+                           {
+                               "path":  "benchmarks/L6_external_host/L6_D1_benchmark_spec.md",
+                               "sha256":  "47f365ba91145ad070ec738847d9cd70a7d703acee83faa278e6a336ee0476a2",
+                               "size":  3117
+                           },
+                           {
+                               "path":  "benchmarks/L6_external_host/L6_D1_host_transaction_contract.md",
+                               "sha256":  "ddfaaa0b5d7110a51e8d5ad84ca1389ae378d9449281068a42354f7c7a740ded",
+                               "size":  2173
+                           },
+                           {
+                               "path":  "benchmarks/L6_external_host/L6_D1_case_matrix.csv",
+                               "sha256":  "c073d796d661ef1113577f3d625c65106328a48fc83f28eb936b5f58671eee81",
+                               "size":  722
+                           },
+                           {
+                               "path":  "benchmarks/L6_external_host/L6_D1_acceptance_gates.md",
+                               "sha256":  "8f394d37bf3e2e13e5e6029c57bbbfb39b2a566ac557bdcd54dd6295502e74d1",
+                               "size":  2880
+                           },
+                           {
+                               "path":  "benchmarks/L6_external_host/L6_D1_execution_freeze.json",
+                               "sha256":  "7180148893dc8e17ab6d3b882939f7782c9c59622b798a248dd09adca7e7c469",
+                               "size":  2469
+                           },
+                           {
+                               "path":  "benchmarks/L6_external_host/L6_D1_implementation_plan.md",
+                               "sha256":  "49742334f2fc0cc0a793733e9303236738edd5f6333f154b848fadf62109ddd1",
+                               "size":  1623
+                           }
+                       ],
+    "external_host":  {
+                          "package":  "scipy",
+                          "version":  "1.17.1",
+                          "api":  "scipy.optimize.least_squares",
+                          "method":  "trf",
+                          "module_files":  [
+                                               {
+                                                   "module":  "scipy.optimize._lsq.least_squares",
+                                                   "sha256":  "b6becbe3b248ea5edcbc40434f101f5d46e5304b66d3c97331bced459dc38765"
+                                               },
+                                               {
+                                                   "module":  "scipy.optimize._lsq.trf",
+                                                   "sha256":  "a174a6e79b67067823804666c9e97413dd0d432c7ac7cd148c0c9ee5cfa9732b"
+                                               },
+                                               {
+                                                   "module":  "scipy.optimize._lsq.common",
+                                                   "sha256":  "6bdec514d2b0e8172cd438421218ae3977f144ad89867346157ea885408f489e"
+                                               },
+                                               {
+                                                   "module":  "scipy._lib._util",
+                                                   "sha256":  "3a3837ae4094263e936394bae513b3a91387b12fa9cb7bae91f43117b5bc3293"
+                                               }
+                                           ]
+                      },
+    "canonical_dependency":  {
+                                 "path":  "benchmarks/L2_host_lifecycle/src/l2_state.py",
+                                 "sha256":  "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d"
+                             },
+    "protected_baselines":  [
+                                {
+                                    "path":  "01_claim_evidence_matrix_v2_0.md",
+                                    "sha256":  "d1c24526c55729b720e16efd57782031601919e7ccb19736db3879024d6b011b"
+                                },
+                                {
+                                    "path":  "manuscript/manuscript_v2_0.md",
+                                    "sha256":  "145deaa450c982992c7c50bf3e98f0b4862054d4e8cd30d2238c48e9bd33923d"
+                                },
+                                {
+                                    "path":  "benchmarks/L5_independent_validation/results/L5_D2_independent_validation/final/l5_d2_final_summary.json",
+                                    "sha256":  "77f139cfc7d23cb9a60ee6e5683c67036838f9f61682085f5a6422c281402a66"
+                                }
+                            ],
+    "protected_l5_raw_aggregate_sha256":  "137caed1286b92dd2774aab73b7a9047d3116991461e180de322e02fda730478",
+    "production_status_sha256":  "4def4e7d6c4b5369caa9c0582324f6d2470861f5b07ce57b51e9fd08e18c6e7f",
+    "primary_sources":  [
+                            {
+                                "url":  "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html",
+                                "role":  "public least_squares API and callback contract"
+                            },
+                            {
+                                "url":  "https://github.com/scipy/scipy/blob/main/scipy/optimize/_lsq/trf.py",
+                                "role":  "trust-region trial evaluation, positive-reduction acceptance and callback order"
+                            }
+                        ],
+    "capability_probe_is_formal_evidence":  false,
+    "manifest_self_hash_embedded":  false
+}

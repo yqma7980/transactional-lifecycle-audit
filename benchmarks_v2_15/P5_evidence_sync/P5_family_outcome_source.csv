@@ -1,0 +1,5 @@
+family_id,sweep_processes,all_values_finite,all_lifecycle_violations_present,first_nonquiet_index,first_operator_z_ge_10_index,selected_index,next_index,fresh_pair_verified,formal_family_status,evidence_status
+F01,15,True,True,5,5,,,False,NOT_SUPPORTED_DISTINCTIVE_REGION_EMPTY,OBSERVED-P5-NOT-SUPPORTED
+F02,15,True,True,5,,,,False,NOT_SUPPORTED_DISTINCTIVE_REGION_EMPTY,OBSERVED-P5-NOT-SUPPORTED
+F05,15,True,True,12,5,5,6,True,PASS_FRESH_PROCESS_VERIFICATION,OBSERVED-P5-FAMILY-PASS
+F07,15,True,True,7,5,5,6,True,PASS_FRESH_PROCESS_VERIFICATION,OBSERVED-P5-FAMILY-PASS

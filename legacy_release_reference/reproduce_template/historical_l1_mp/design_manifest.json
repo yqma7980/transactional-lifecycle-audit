@@ -1,0 +1,23 @@
+{
+  "abaqus_used": false,
+  "case_count": 20,
+  "claim_boundary": "The manifest records design inputs plus the pre-execution seed erratum. Observed pass applies only to L1-MP; L1-E1 and L2-L6 remain open.",
+  "design_version": "L1-D1.0",
+  "ledger_column_count": 40,
+  "production_project_modified": false,
+  "scenario_variant_count": 45,
+  "source_sha256": {
+    "L1_MP_execution_freeze.json": "7268c7f23d80a3afecab9a95cfbbaac04d6ee264d54f8d514cba98507b1eb430",
+    "L1_acceptance_gates.md": "7e45f2ad01f1ce59a7a41702c2c9c155a93eb6907564ce6d4220c643873f6f61",
+    "L1_benchmark_spec.md": "4a35f3233d18f419c9eee9986e13e25635e688bee3645b0cebf9db2d997b179e",
+    "L1_case_matrix.csv": "d8e61b104473d871412061486c5dcdab18466a9d7b832707514b852d84b11cff",
+    "L1_data_contract.md": "6490fbf84ea91e346c2dad82345a5aadebca871c180b78806436e0706da3f657",
+    "L1_implementation_execution_plan.md": "11e3e01136323f09311c218e696164f007ad78e6ad21856582485a2bd4969ae5",
+    "L1_state_contract.md": "426bd896e7ccd89779549aee25465f7ad1fe0feead3691245b2bdd66fa5e4e1d",
+    "README.md": "e1be10d7d1561cbe44e3c27cf7fb5cb8c598bf94199166a046db4a19a158f661",
+    "expected_results_template.json": "7fd82a0d71d71227a1856c07e3e31d3c0e7c4ec378e83d3dc117b92d3e5f2db8",
+    "schemas/l1_call_ledger_columns.csv": "af91546478535924396a4bb95193c1d02f04c4f95ddf2da0120a1775b99551eb",
+    "schemas/l1_run_summary.schema.json": "1bbc3c02f578a60546888513a4a33f18a355d55da8f638828396ff19a9195185"
+  },
+  "status": "L1_MP_EXECUTED_PASS_L1_E1_NOT_IMPLEMENTED_OR_EXECUTED"
+}

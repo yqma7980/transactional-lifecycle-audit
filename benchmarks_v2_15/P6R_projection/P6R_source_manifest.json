@@ -1,0 +1,116 @@
+{
+    "manifest_id":  "P6R-IMPLEMENTATION-SOURCE-1.0",
+    "design_version":  "P6R-F05-F07.0",
+    "implementation_version":  "P6R-IMPLEMENTATION-0.1",
+    "implementation_status":  "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+    "file_count":  20,
+    "files":  [
+                  {
+                      "path":  "oracle/p6r_oracle.py",
+                      "bytes":  690,
+                      "sha256":  "f8b58ed27cf47438f71a09f1d926dc42fa9fe4b3c9dae6314fec0020fb48b032"
+                  },
+                  {
+                      "path":  "P6R_authorization_lock_contract.md",
+                      "bytes":  793,
+                      "sha256":  "a63e6b10e20a1cf12c9445692560b8bd5a470a8cc93730f94af4276268d2f124"
+                  },
+                  {
+                      "path":  "P6R_implementation_manifest.json",
+                      "bytes":  1882,
+                      "sha256":  "23742b7707a441d41ce81fb3bc4ab9e01b70961965d356deb374a99837206d3f"
+                  },
+                  {
+                      "path":  "P6R_preflight_freeze.json",
+                      "bytes":  667,
+                      "sha256":  "b4652a826ec90f0c4f10c9592605337a5f48b8f05508830e89d067781fc70002"
+                  },
+                  {
+                      "path":  "P6R_projection_schema.json",
+                      "bytes":  1522,
+                      "sha256":  "b65978a0c3964c92115003094b6eb7a9b71d5a5db180016f3a0d9a4b8bd2a6cd"
+                  },
+                  {
+                      "path":  "P6R_result_report.md",
+                      "bytes":  1280,
+                      "sha256":  "ea42928a8bae77880eb97ddffd878d51ec2d9cd523e3c9d44e496b0beab5dbbd"
+                  },
+                  {
+                      "path":  "P6R_static_and_unit_QA.md",
+                      "bytes":  1488,
+                      "sha256":  "9d5e9933979502fd774e5593479d2567a1c05bf455c9154e0a2813a6cf7a6390"
+                  },
+                  {
+                      "path":  "preflight_p6r.py",
+                      "bytes":  1144,
+                      "sha256":  "783b601a5fc98a88c36ae748f091e2f1257bb6108140bfc495df1c161f97b973"
+                  },
+                  {
+                      "path":  "run_p6r.py",
+                      "bytes":  1566,
+                      "sha256":  "f6bc7fc1cca072f5548a257a71daab69bb899ebb823d2e13967169f28d6ac1b2"
+                  },
+                  {
+                      "path":  "runtime_evidence/ast_compile_summary.json",
+                      "bytes":  98,
+                      "sha256":  "968ce71e33f76b85232774a2e74fd2808c2f04ff01834489e973f5775da6938e"
+                  },
+                  {
+                      "path":  "runtime_evidence/authorization_lock_smoke.json",
+                      "bytes":  229,
+                      "sha256":  "c03427a0617225bb7366b5f91cbe2bd0e21d9775a10a66114138b8afb66cece8"
+                  },
+                  {
+                      "path":  "runtime_evidence/raw_hash_and_schema_preflight.json",
+                      "bytes":  328,
+                      "sha256":  "114add2a5d433272531be32e5e6e105cdef8d75106d2825cbc1c1ad4b48c8918"
+                  },
+                  {
+                      "path":  "runtime_evidence/unit_test_summary.json",
+                      "bytes":  206,
+                      "sha256":  "a5c11dbdd566a285b7e1245c7eea1f4dbda38ec40827668be5b0c0d5b57cba9b"
+                  },
+                  {
+                      "path":  "src/__init__.py",
+                      "bytes":  60,
+                      "sha256":  "7c8d958d15debb6f0f4035e32095a8d6be7a121ec7ad4a96600c5d268425233d"
+                  },
+                  {
+                      "path":  "src/p6r_contracts.py",
+                      "bytes":  3912,
+                      "sha256":  "56e8730f42ac5b5decc624032620507a093c6e293b9da347fae8376073786e35"
+                  },
+                  {
+                      "path":  "src/p6r_detectors.py",
+                      "bytes":  4058,
+                      "sha256":  "93e5a8a31627258ec3ef0638312a6a587e71370c09e76200a130de9916412080"
+                  },
+                  {
+                      "path":  "src/p6r_execution.py",
+                      "bytes":  3090,
+                      "sha256":  "53660aad4d2b42f2f73e27cd6185b1d2c44f9b496ee9880742f3ff18d0c00d40"
+                  },
+                  {
+                      "path":  "src/p6r_loader.py",
+                      "bytes":  6276,
+                      "sha256":  "1045e8c6080c27644b95937144bea5d7239d932f7b0e4845d997477f9bc0fe56"
+                  },
+                  {
+                      "path":  "src/p6r_projection.py",
+                      "bytes":  6193,
+                      "sha256":  "8941a3d546135eddc921141d424c4988a148169f7d06e21ae3dc36a1ae439383"
+                  },
+                  {
+                      "path":  "tests/test_p6r_preflight.py",
+                      "bytes":  7739,
+                      "sha256":  "b6ced45bbd3947a7ccff8acaa546b4710eab5a1c567f5d22cf5ea29d4c82b019"
+                  }
+              ],
+    "frozen_design_manifest_sha256":  "88e32f884eb2f99236dae4d2dacc5d9bd74cf5a02417c0fae52eb4d644e53aee",
+    "raw_file_count_verified":  70,
+    "raw_hash_mismatch_count":  0,
+    "formal_projection_executed":  false,
+    "new_fe_solve_executed":  false,
+    "abaqus_used":  false,
+    "manifest_self_hash_embedded":  false
+}

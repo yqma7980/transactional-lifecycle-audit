@@ -1,0 +1,72 @@
+{
+  "schema_version": "CMAME-P4D2-FORMAL-EXECUTION-FREEZE-1.0",
+  "design_version": "P4d.0",
+  "implementation_version": "P4d.2",
+  "host_version": "P4D-DOLFINX-PETSC-HOST-1.0",
+  "execution_status_at_freeze": "AUTHORIZED_NOT_STARTED",
+  "authorization_source": "explicit_user_message_2026-07-31",
+  "formal_case_count": 9,
+  "fresh_process_repetitions_per_case": 2,
+  "total_formal_process_count": 18,
+  "case_order": [
+    "P4D-REF-01",
+    "P4D-CONST-01",
+    "P4D-SAFE-DIR-01",
+    "P4D-SAFE-LS-01",
+    "P4D-SAFE-RT-01",
+    "P4D-SAFE-RS-01",
+    "P4D-NC-CACHE-01",
+    "P4D-NC-OUTPUT-01",
+    "P4D-VER-01"
+  ],
+  "run_ids": [
+    "run_1",
+    "run_2"
+  ],
+  "container": {
+    "image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "platform": "linux/amd64",
+    "network": "none",
+    "mpi_ranks": 1,
+    "processes_per_case_run": 1,
+    "threads_per_process": 1,
+    "environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  "runner_authorization": {
+    "matrix_cli_switch": "-ExecuteAuthorized",
+    "matrix_environment": "P4D2_MATRIX_EXECUTION_AUTHORIZED=YES",
+    "case_cli_flag": "--execute-authorized",
+    "case_environment": "P4D2_EXECUTION_AUTHORIZED=YES"
+  },
+  "results_root": "results/P4d2_formal_20260731",
+  "logs_root": "formal_execution_logs/P4d2_formal_20260731",
+  "protected_sha256": {
+    "P4d2_gate_results.json": "9de8588e15e7020a8b3ee77fce8bb4728c59d98e3060f8b0fd4d19c252c9845d",
+    "P4d2_source_manifest.json": "6aa3ab71905fe8b5a54239bcd64de6b92a744dfed08c54336fa072c4d5c29541",
+    "run_p4d2.py": "f6ba558860b5e84c818c7a41cdf191c7dfc7b43d2f26dc49f78326a89fb456b6",
+    "build/libp4d_observer.so": "a43222350c3fa3f7efecb535d673ab88393b61673b1004bcf3517ef4ef9047e6"
+  },
+  "execution_rules": {
+    "sequential_frozen_order": true,
+    "one_case_run_per_fresh_container": true,
+    "overwrite_forbidden": true,
+    "rerun_after_failure_forbidden": true,
+    "threshold_or_oracle_change_forbidden": true,
+    "stop_on_first_nonzero_exit_or_failed_verdict": true,
+    "preserve_failure_directory_and_log": true
+  },
+  "scope_boundary": {
+    "abaqus_used": false,
+    "production_project_write_allowed": false,
+    "manuscript_update_allowed": false,
+    "claim_matrix_update_allowed": false,
+    "figure_update_allowed": false,
+    "github_zenodo_doi_update_allowed": false,
+    "formal_pass_implies_production_readiness": false
+  }
+}

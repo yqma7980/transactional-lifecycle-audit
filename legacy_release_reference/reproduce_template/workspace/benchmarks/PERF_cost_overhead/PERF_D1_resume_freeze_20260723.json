@@ -1,0 +1,225 @@
+{
+  "abaqus_used": false,
+  "authorization": {
+    "environment": "PERF_D1_RESUME_AUTHORIZED=YES",
+    "parameter": "--execute-authorized"
+  },
+  "case_matrix_sha256": "d136e77c2a2aff1e722aff3c7ccba9833560af6cb00e158875e6096c9621ff79",
+  "comsol_used": false,
+  "design_version": "PERF-D1.0",
+  "existing_complete_run_count": 405,
+  "existing_raw_aggregate_sha256": "f81efde31290b04953c2025d70339bdff719fdd16ef5c29a8f1c0cd7b79bde7d",
+  "existing_raw_run_file_count": 1215,
+  "existing_repetitions": [
+    "run_01",
+    "run_02",
+    "run_03",
+    "run_04",
+    "run_05",
+    "run_06",
+    "run_07",
+    "run_08",
+    "run_09"
+  ],
+  "interruption_type": "outer_tool_timeout_after_nine_complete_formal_repetitions",
+  "manifest_self_hash_embedded": false,
+  "missing_repetition": "run_10",
+  "missing_runs": [
+    {
+      "case_id": "PERF-L3-L-C0",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-L-C1",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-L-C2",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-L-C3",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-L-C4",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-M-C0",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-M-C1",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-M-C2",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-M-C3",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-M-C4",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-S-C0",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-S-C1",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-S-C2",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-S-C3",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L3-S-C4",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-L-C0",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-L-C1",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-L-C2",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-L-C3",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-L-C4",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-M-C0",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-M-C1",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-M-C2",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-M-C3",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-M-C4",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-S-C0",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-S-C1",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-S-C2",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-S-C3",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L4-S-C4",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-L-C0",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-L-C1",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-L-C2",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-L-C3",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-L-C4",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-M-C0",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-M-C1",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-M-C2",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-M-C3",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-M-C4",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-S-C0",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-S-C1",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-S-C2",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-S-C3",
+      "run_id": "run_10"
+    },
+    {
+      "case_id": "PERF-L6-S-C4",
+      "run_id": "run_10"
+    }
+  ],
+  "production_model_used": false,
+  "resume_revision": "PERF-D1-R1.0",
+  "resume_rules": {
+    "configuration_rotation_offset": 4,
+    "delete_existing": false,
+    "group_order": "existing_run_perf_d1.groups_sorted_tuple_order",
+    "overwrite_existing": false,
+    "reconstruct_formal_receipts_after_450_complete": true,
+    "repeat_warmups": false,
+    "verify_each_group_before_continue": true
+  },
+  "schema_version": "PERF-D1-RESUME-FREEZE-1.0",
+  "scientific_hard_gate_failed": false,
+  "status": "FROZEN_NOT_EXECUTED",
+  "warmup_count": 90,
+  "warmup_receipts_sha256": "102070fba01c200485725b7c9fdbea80f9b4d025626ab394b53212463896a0d6"
+}

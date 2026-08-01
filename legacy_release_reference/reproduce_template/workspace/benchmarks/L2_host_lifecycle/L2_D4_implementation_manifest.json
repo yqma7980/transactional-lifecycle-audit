@@ -1,0 +1,130 @@
+{
+  "manifest_version": "L2-D4-IMPLEMENTATION-1.0",
+  "design_version": "L2-D4.0",
+  "host_version": "L2-HOST-D4.0",
+  "implementation_status": "IMPLEMENTED_NOT_EXECUTED",
+  "created_date": "2026-07-22",
+  "execution_authorized": false,
+  "abaqus_used": false,
+  "results_exist": false,
+  "hash_algorithm": "SHA-256",
+  "path_base": "${NCS_WORKSPACE}",
+  "frozen_design": [
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D4_execution_freeze.json",
+      "sha256": "1beb45004f7193006275a00f06c05d000dc1056c135e45a580ee90d72910b63b"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D4_output_provenance_case_matrix.csv",
+      "sha256": "04e0213e7fa343a625284f905083e54655f24debea802e377769bf6c07e77d7a"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D4_implementation_plan.md",
+      "sha256": "fb85c93cbaf8ae7750e7cffbc6be52bf6e9213f057763b8bb9fb2111e0789943"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D4_source_manifest.json",
+      "sha256": "9302d652db7c04f45e0e3fdf3161a7c1198ec9597f9930b077142e4602a6ba89"
+    }
+  ],
+  "reused_D1_dependencies": [
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_state.py",
+      "sha256": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_model.py",
+      "sha256": "1a9daac2a8b75534dd55193bce3fead0004197765d3024e13d617e9d833ea8ff"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_variants.py",
+      "sha256": "74fd1679408c9fa39825deaf8fc140263a5c543174f57ee51a3757860b22a96c"
+    }
+  ],
+  "implementation_files": [
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_d4_output_provenance.py",
+      "sha256": "1ae8f8802600b521980f0335c16a216ce1943a5bd9ca87bbc05db67cd2e83129",
+      "bytes": 48319,
+      "ast_parse": true,
+      "compile_source_only": true
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/oracle/l2_d4_fraction_oracle.py",
+      "sha256": "2c7e9c913b802ad682390ffb211dbd51ef6d656507f6965c27bb79f7482be591",
+      "bytes": 3748,
+      "ast_parse": true,
+      "compile_source_only": true
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/tests/test_l2_d4_output_provenance.py",
+      "sha256": "33996e508dff68d3a5c1f957fb96f73aa4199f4617e8f0eb4bc74e1256ece184",
+      "bytes": 8606,
+      "ast_parse": true,
+      "compile_source_only": true
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/run_l2_d4.py",
+      "sha256": "58374aea56cc44163f71d6eea53d3a203fa7227c9a86ea4fc9102a2910751949",
+      "bytes": 4934,
+      "ast_parse": true,
+      "compile_source_only": true
+    }
+  ],
+  "implementation_contract": {
+    "authorized_case_ids": [
+      "L2-OP-01",
+      "L2-OP-02"
+    ],
+    "safe_variant": "reuse_D1_SafeTransactional",
+    "unsafe_variant": "isolated_D4_UnsafeOutputFeedback_negative_control",
+    "accepted_output_source": "host_committed_state_only",
+    "form_residual_and_tangent_reuse_trial_result": true,
+    "fresh_variant_per_history": true,
+    "formal_repetition_count_if_later_authorized": 2,
+    "processes_per_repetition": 1,
+    "threads_per_process": 1
+  },
+  "runner_authorization": {
+    "runner": "benchmarks/L2_host_lifecycle/run_l2_d4.py",
+    "cli_lock": "--execute-authorized",
+    "environment_lock": "L2_D4_EXECUTION_AUTHORIZED=YES",
+    "both_locks_required_before_case_execution": true,
+    "both_locks_required_before_output_write": true,
+    "default_output_root_if_later_authorized": "benchmarks/L2_host_lifecycle/results/L2_D4_output_provenance"
+  },
+  "independent_oracle_static_QA": {
+    "workspace_implementation_imported": false,
+    "benchmark_executed": false,
+    "output_seed_epsilon_p": "1/55",
+    "output_seed_kappa": "1/55",
+    "feedback_sigma": "-289/242",
+    "feedback_candidate_epsilon_p": "41/2420",
+    "feedback_candidate_kappa": "47/2420",
+    "delta_sigma": "-205/121",
+    "delta_residual": "-205/121",
+    "delta_tangent": "-1000/11",
+    "qa_pass": true
+  },
+  "protected_precheck": {
+    "preexisting_L2_file_count": 133,
+    "preexisting_L2_aggregate_sha256": "d7ace686772acbe69a068ba0c9a7d8e6c9847114888a05bd7c47fc7c934d8547",
+    "claim_matrix_v0_6_sha256": "1cb4d6d27de6678ae6336f8402b05305273702b5a1f05c7452de2bbcb0569ab9",
+    "manuscript_v0_6_sha256": "47779ce51c2ca14a05e55abe3b558ae45162b210aa053f12add52804e6cafd5d",
+    "figures_file_count": 24,
+    "figures_aggregate_sha256": "f9ae3d860b85b49f03615ec4fc0f68348fac7cab1f195fdee4aae22448319179",
+    "governance_before": {
+      "STATUS.md": "d8c6eb86cb98571b702b3e2227b03248aed9049bce1fd6c1dcb1989e7b0488c7",
+      "07_global_roadmap.md": "d8ca7d5b02d2e91d8f19d7c0658399e5c6aadaec8b8a26f2b70293027c409b78",
+      "08_execution_backlog.md": "606b56948d5a7fee690713418d687357e5d4f744df8d1276d6e466501104bb24"
+    }
+  },
+  "no_case_execution": true,
+  "no_test_execution": true,
+  "no_runner_execution": true,
+  "no_abaqus_execution": true,
+  "no_result_directory_created": true,
+  "no_claim_or_manuscript_sync": true,
+  "manifest_self_hash_embedded": false,
+  "static_QA_markdown_hash_embedded": false
+}

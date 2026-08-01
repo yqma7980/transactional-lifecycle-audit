@@ -1,0 +1,63 @@
+{
+  "abaqus_used": false,
+  "created_utc": "2026-07-22T08:18:38+00:00",
+  "design_version": "L2-D6.0",
+  "directed_tests": {
+    "count": 8,
+    "failed": 0,
+    "passed": 8,
+    "processes": 1,
+    "threads": 1
+  },
+  "execution_authorized": false,
+  "formal_results_exist": false,
+  "host_version": "L2-HOST-D6.0",
+  "implementation_files": {
+    "oracle/l2_d6_fraction_oracle.py": {
+      "ast_parse": true,
+      "bytes": 806,
+      "sha256": "e8ab111e28c71cee82159c26e544dfdadc1e24dc68cae0fef6f6342fe0647842"
+    },
+    "run_l2_d6.py": {
+      "ast_parse": true,
+      "bytes": 3182,
+      "sha256": "dc757139c2385db7793017aa9f7e698d7ed52053f4f488e100c175b534730792"
+    },
+    "src/l2_d6_thread_scheduling.py": {
+      "ast_parse": true,
+      "bytes": 13593,
+      "sha256": "35e7e45db3015ef5063e5ae5d96a6ca18034ca420b9df490d5eb3fdaa1833c9a"
+    },
+    "tests/test_l2_d6_thread_scheduling.py": {
+      "ast_parse": true,
+      "bytes": 3133,
+      "sha256": "3abe3451c8852d6273202933815d9b0b917b596802199b24125afce3fc971f93"
+    }
+  },
+  "implementation_status": "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+  "inputs": {
+    "L2_D6_execution_freeze.json": "5495de0f6756d85bb6f870ae457c354b41e6983839e5ee3fe63ef0a77443bb2c",
+    "L2_D6_implementation_plan.md": "e22f1a0b39cf7ff056c35d8d9af137fac4ab5726bb9b2b3706871e54e51236db",
+    "L2_D6_source_manifest.json": "bae5a4a71d6af13a53e2c5a73f19c1d63d53277a897eddff975522e1103e63b4",
+    "L2_D6_thread_scheduling_case_matrix.csv": "9a3b4d0c532fc95576509b63118df15896bec8a252dbaf8f68e441623056e40a",
+    "src/l2_host.py": "a2a7044592da3be507279552f0dc19a75c2de00b7cdaee0e3bea4a5e3868fd2b",
+    "src/l2_model.py": "1a9daac2a8b75534dd55193bce3fead0004197765d3024e13d617e9d833ea8ff",
+    "src/l2_state.py": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d",
+    "src/l2_variants.py": "74fd1679408c9fa39825deaf8fc140263a5c543174f57ee51a3757860b22a96c"
+  },
+  "manifest_self_hash_embedded": false,
+  "no_abaqus_execution": true,
+  "no_case_execution": true,
+  "production_model_used": false,
+  "runner_double_lock": {
+    "cli": "--execute-authorized",
+    "environment": "L2_D6_EXECUTION_AUTHORIZED=YES",
+    "result_root_created": false,
+    "unauthorized_exit_code": 1
+  },
+  "support_envelope": {
+    "alternate_parallel_path_supported": false,
+    "expected_outcome": "NOT_SUPPORTED_NO_PARALLEL_EXECUTION_PATH",
+    "synthetic_concurrency_executed": false
+  }
+}

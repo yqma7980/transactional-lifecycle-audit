@@ -1,0 +1,128 @@
+{
+  "manifest_id": "P5-EVIDENCE-SYNC-SOURCE-1.0",
+  "manifest_self_hash_embedded": false,
+  "outputs": [
+    {
+      "bytes": 34063,
+      "path": "build_p5_evidence_sync.py",
+      "sha256": "878629e1ea054b051171a91861553b2e8a235fb17066527d553d21b71a3981dc"
+    },
+    {
+      "bytes": 4166,
+      "path": "finalize_p5_evidence_sync.py",
+      "sha256": "48c9572ff93d9c001f6ff5aaa2b329f101bcaeddff0dfb5cfb7d19ed373f967d"
+    },
+    {
+      "bytes": 8934,
+      "path": "P5_claim_evidence_matrix_v2_14_postP5.md",
+      "sha256": "c64f3e0c9e17d2c0f8c9aa4f2f85d50252dd936b04fcf1c5a9ae49d42e4a15c8"
+    },
+    {
+      "bytes": 10599,
+      "path": "P5_F01_F02_metric_sweep_source.csv",
+      "sha256": "adc66147f1218ac45361bf63d4ee8e13475913d82d2a1e9c86ab2a21549592a9"
+    },
+    {
+      "bytes": 1186,
+      "path": "P5_F01_postmortem_summary.json",
+      "sha256": "c6e7989fb7f20945630442da16017dcc2fb97cd6cc35460d173d608483907148"
+    },
+    {
+      "bytes": 402,
+      "path": "P5_F01_threshold_crossing.csv",
+      "sha256": "61b28d38c0fef30c8bf9cefdebfb9c25ebaeac0f2ce56030f95dd147abe9d0e0"
+    },
+    {
+      "bytes": 1057,
+      "path": "P5_F01_threshold_crossing_analysis.md",
+      "sha256": "97abf77e1817a201649c63160386482aa863143dabd6f71122b76665ce76c649"
+    },
+    {
+      "bytes": 975,
+      "path": "P5_F02_dependency_analysis.md",
+      "sha256": "352a116e74fddc24d2f7c69f7b2c2466b1abcbe883842d2424e0f07ecbbbb58c"
+    },
+    {
+      "bytes": 1251,
+      "path": "P5_F02_dependency_trace.csv",
+      "sha256": "d17d81c2fa3a1cc2a3d260d254d30f6e0b8597b5e36f3d78011a27a9b2379d2d"
+    },
+    {
+      "bytes": 1026,
+      "path": "P5_F02_postmortem_summary.json",
+      "sha256": "c4d700d7f49938540d80336e3da8c53cc38cc3ed1dbf1203bd9fe01a4f3f27e9"
+    },
+    {
+      "bytes": 575,
+      "path": "P5_family_outcome_source.csv",
+      "sha256": "6013a26422e41b57cf1275bcc7ded0f71ed5ec70703fb2ec6d0f7f7ad43acc41"
+    },
+    {
+      "bytes": 1291,
+      "path": "P5_figure_evidence_contract.md",
+      "sha256": "e10fbd209a1049b12368bf01168d6cb8aa4a98761f44b206997408ff6d42ce1b"
+    },
+    {
+      "bytes": 732,
+      "path": "P5_final_QA.json",
+      "sha256": "7466b67a5fef8166d49993baf36cbe29a097d43ccd25aeb84819e8588550f181"
+    },
+    {
+      "bytes": 1095,
+      "path": "P5_final_report.md",
+      "sha256": "c4f35dc2cd261ccb9e9fb261fb5aef4fb1dea00942380785576adc8007b49e74"
+    },
+    {
+      "bytes": 4280,
+      "path": "P5_manuscript_evidence_sync_patch.md",
+      "sha256": "f7f5b63d23ab1277e9ada8ccb5bc549e7581ede092747c77860f8327b97aa612"
+    },
+    {
+      "bytes": 1396,
+      "path": "P5_postmortem_freeze.json",
+      "sha256": "6fd1aea5f53b49758ea33802f7e4ca77aa8b137dffa1eaae527cedbb0f10b257"
+    },
+    {
+      "bytes": 796,
+      "path": "P6_entry_decision_gate.md",
+      "sha256": "11763a5b2d6913f66256c57b2b20cdbf7d89336708fea684033807a75fbbfc81"
+    },
+    {
+      "bytes": 2719,
+      "path": "run_p5_evidence_sync_corrected.py",
+      "sha256": "0ec39f4288ca7ce4729c6d58ef4c48b36d6d878dd2e4b633116779b5ed05ac60"
+    }
+  ],
+  "sources": [
+    {
+      "path": "F:\\NCS_paper_workspace\\Nature_Computational_Science\\submission_cmame_v2_14_working_20260730\\P5_FULL_FE_BACKEND_IMPLEMENTATION_20260731\\results\\P5_formal_20260731_fullFE_v1d\\final\\execution_manifest.json",
+      "sha256": "ebe55f10b1b3b92e8f86e33956cb5531b97493e41ce55ef9cbe9318ede5d843f"
+    },
+    {
+      "path": "F:\\NCS_paper_workspace\\Nature_Computational_Science\\submission_cmame_v2_14_working_20260730\\P5_FULL_FE_BACKEND_IMPLEMENTATION_20260731\\results\\P5_formal_20260731_fullFE_v1d\\final\\strength_sweep.csv",
+      "sha256": "b9c1f33df506979e71b4aea7763c3eee9eeffcdc0a089d48972aa1c7d87ca006"
+    },
+    {
+      "path": "F:\\NCS_paper_workspace\\Nature_Computational_Science\\submission_cmame_v2_14_working_20260730\\P5_FULL_FE_BACKEND_IMPLEMENTATION_20260731\\results\\P5_formal_20260731_fullFE_v1d\\final\\selected_strengths.json",
+      "sha256": "195d4c0216923c59435124d1c14379feee162de6e867acbb6ada35eb7dea8726"
+    },
+    {
+      "path": "F:\\NCS_paper_workspace\\Nature_Computational_Science\\submission_cmame_v2_14_working_20260730\\P5_FULL_FE_BACKEND_IMPLEMENTATION_20260731\\results\\P5_formal_20260731_fullFE_v1d\\final\\null_envelope.json",
+      "sha256": "b318e735a2514dcbc357349919d6bde5ece127d2ea05752dc29bafba411cebb6"
+    },
+    {
+      "path": "F:\\NCS_paper_workspace\\Nature_Computational_Science\\submission_cmame_v2_14_working_20260730\\P5_FULL_FE_BACKEND_IMPLEMENTATION_20260731\\results\\P5_formal_20260731_fullFE_v1d\\adjudication_20260731\\postexecution_manifest.json",
+      "sha256": "7653cd0c12b111d2f6bac68286e6172a9099a05d7bbbbec4fb8bd5eeb8725999"
+    },
+    {
+      "path": "F:\\NCS_paper_workspace\\Nature_Computational_Science\\submission_cmame_v2_14_working_20260730\\P2_source_manifest.json",
+      "sha256": "79702f5679767b5f28b98c5683ae42a9ad8a33bdd37793288835c7e5accbf932"
+    },
+    {
+      "file_count": 662,
+      "path": "formal_raw_manifest_aggregate",
+      "sha256": "322f4425a390acc43bbc735076c2d10496f02861daa197361e99b6d7fa8385fd"
+    }
+  ],
+  "status": "FINAL_STATIC_DERIVATION"
+}

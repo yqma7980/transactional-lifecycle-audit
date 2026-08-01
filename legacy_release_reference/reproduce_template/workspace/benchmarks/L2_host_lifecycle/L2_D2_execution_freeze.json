@@ -1,0 +1,286 @@
+{
+  "design_version": "L2-D2.0a",
+  "revision_reason": "align_committed_state_fingerprint_with_L2_HOST_D1_0_canonical_serializer",
+  "host_version_reused": "L2-HOST-D1.0",
+  "extension_version_if_implemented": "L2-HOST-D2.0",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "freeze_date": "2026-07-22",
+  "execution_authorized": false,
+  "abaqus_used": false,
+  "results_exist": false,
+  "committed_state_serializer": "src.l2_state.canonical_json(CommittedState())",
+  "scope": {
+    "authorized_design_cases": [
+      "L2-CO-01",
+      "L2-CO-02"
+    ],
+    "benchmark_family": "callback_order",
+    "history_contrast": "callback_count_insertion_without_acceptance_or_physics_change",
+    "excluded": [
+      "L2-TG-*",
+      "L2-OP-*",
+      "L2-CP-*",
+      "L2-TH-*",
+      "all_other_L2_cases",
+      "L3-L6",
+      "Abaqus",
+      "production_model",
+      "performance_claims",
+      "conservation_claims",
+      "coupled_physics_claims"
+    ]
+  },
+  "host": {
+    "name": "standalone_reference_newton_host",
+    "runtime_to_reuse": "CPython 3.12.10 64-bit",
+    "operating_system_to_reuse": "Microsoft Windows NT 10.0.26200.0",
+    "execution_mode_if_later_authorized": "one_process_one_thread_standard_library_only",
+    "process_count_per_repetition": 1,
+    "thread_count_per_process": 1,
+    "python_hash_seed": 0,
+    "omp_num_threads": 1,
+    "mkl_num_threads": 1,
+    "openblas_num_threads": 1,
+    "numexpr_num_threads": 1
+  },
+  "model": {
+    "material": {
+      "E": "100/1",
+      "sigma_y": "1/1",
+      "H": "10/1"
+    },
+    "element": {
+      "area": "1/1",
+      "length": "1/1",
+      "u1": "0/1"
+    },
+    "equilibrium": "R=A*sigma-F",
+    "tangent": "K=A*E_alg/L",
+    "return_mapping": "same_exact_rational_oracle_as_L2_HOST_D1_0"
+  },
+  "declared_committed_state": {
+    "canonical_payload_utf8": "{\"accepted_version\":0,\"epsilon_p\":{\"__float_hex__\":\"0x0.0p+0\"},\"kappa\":{\"__float_hex__\":\"0x0.0p+0\"}}",
+    "sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+    "superseded_non_authoritative_hash": "274b35b7c4a6b79a021d93e143cac769f5b9feab6e3287d5c236356ac6bf8215",
+    "superseded_hash_note": "The superseded hash used rational-string fields during static design, was never executed, and is not an L2-HOST-D1.0 fingerprint.",
+    "accepted_version": 0,
+    "epsilon_p": "0/1",
+    "kappa": "0/1"
+  },
+  "common_replay_context": {
+    "declared_primary_state": {
+      "u": "1/200"
+    },
+    "load": {
+      "force": "1/2"
+    },
+    "committed_state_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+    "residual_version": "L2-R-D1.0",
+    "tangent_version": "L2-K-D1.0",
+    "expected_direct_residual": "0/1",
+    "expected_direct_tangent": "100/1"
+  },
+  "histories": {
+    "direct_callbacks": [
+      {
+        "ordinal": 1,
+        "event": "BeginAttempt",
+        "attempt_id": "DIRECT_REPLAY"
+      },
+      {
+        "ordinal": 2,
+        "event": "TrialEvaluate",
+        "u": "1/200",
+        "force": "1/2",
+        "committed_state_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01"
+      },
+      {
+        "ordinal": 3,
+        "event": "FormResidual",
+        "residual_version": "L2-R-D1.0"
+      },
+      {
+        "ordinal": 4,
+        "event": "FormTangent",
+        "tangent_version": "L2-K-D1.0"
+      },
+      {
+        "ordinal": 5,
+        "event": "RejectAttempt",
+        "attempt_id": "DIRECT_REPLAY",
+        "accepted_output_reachable": false
+      }
+    ],
+    "extra_nonaccepting_callbacks": [
+      {
+        "ordinal": 1,
+        "event": "BeginAttempt",
+        "attempt_id": "EXTRA_CALLBACK_BATCH"
+      },
+      {
+        "ordinal": 2,
+        "event": "TrialEvaluate",
+        "u": "3/100",
+        "force": "1/2",
+        "declared_committed_state_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01"
+      },
+      {
+        "ordinal": 3,
+        "event": "FormResidual",
+        "residual_version": "L2-R-D1.0"
+      },
+      {
+        "ordinal": 4,
+        "event": "TrialEvaluate",
+        "u": "-3/100",
+        "force": "1/2",
+        "declared_committed_state_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01"
+      },
+      {
+        "ordinal": 5,
+        "event": "FormResidual",
+        "residual_version": "L2-R-D1.0"
+      },
+      {
+        "ordinal": 6,
+        "event": "RejectAttempt",
+        "attempt_id": "EXTRA_CALLBACK_BATCH",
+        "accepted_output_reachable": false
+      },
+      {
+        "ordinal": 7,
+        "event": "BeginAttempt",
+        "attempt_id": "EXTRA_REPLAY"
+      },
+      {
+        "ordinal": 8,
+        "event": "TrialEvaluate",
+        "u": "1/200",
+        "force": "1/2",
+        "declared_committed_state_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01"
+      },
+      {
+        "ordinal": 9,
+        "event": "FormResidual",
+        "residual_version": "L2-R-D1.0"
+      },
+      {
+        "ordinal": 10,
+        "event": "FormTangent",
+        "tangent_version": "L2-K-D1.0"
+      },
+      {
+        "ordinal": 11,
+        "event": "RejectAttempt",
+        "attempt_id": "EXTRA_REPLAY",
+        "accepted_output_reachable": false
+      }
+    ],
+    "forbidden_events": [
+      "AcceptIncrement",
+      "OutputAcceptedState",
+      "CheckpointWrite",
+      "RestartWrite",
+      "RestartRead",
+      "CutbackAndRetry",
+      "TerminalOrZeroIncrementCall"
+    ]
+  },
+  "analytical_oracle": {
+    "safe_transactional": {
+      "extra_callback_positive_candidate": {
+        "sigma": "13/11",
+        "epsilon_p": "1/55",
+        "kappa": "1/55"
+      },
+      "extra_callback_negative_candidate": {
+        "sigma": "-13/11",
+        "epsilon_p": "-1/55",
+        "kappa": "1/55"
+      },
+      "candidate_fate": "discarded_without_commit",
+      "replay_residual_direct": "0/1",
+      "replay_residual_extra": "0/1",
+      "expected_delta_residual": "0/1",
+      "replay_tangent_direct": "100/1",
+      "replay_tangent_extra": "100/1",
+      "expected_delta_tangent": "0/1",
+      "expected_committed_state_change": "0/1"
+    },
+    "unsafe_trial_cache": {
+      "cache_seed": {
+        "epsilon_p": "0/1",
+        "kappa": "0/1"
+      },
+      "mutation_rule": "after_each_TrialEvaluate_hidden_cache_equals_returned_candidate_even_if_attempt_is_not_accepted",
+      "after_positive_extra_callback": {
+        "sigma": "13/11",
+        "hidden_epsilon_p": "1/55",
+        "hidden_kappa": "1/55"
+      },
+      "after_negative_extra_callback": {
+        "delta_gamma": "4/121",
+        "sigma": "-183/121",
+        "hidden_epsilon_p": "-9/605",
+        "hidden_kappa": "31/605"
+      },
+      "extra_history_replay": {
+        "trial_sigma": "481/242",
+        "yield_excess": "115/242",
+        "delta_gamma": "23/5324",
+        "sigma": "4141/2662",
+        "candidate_epsilon_p": "-281/26620",
+        "candidate_kappa": "1479/26620",
+        "residual": "1405/1331",
+        "tangent": "100/11"
+      },
+      "direct_history_replay": {
+        "residual": "0/1",
+        "tangent": "100/1"
+      },
+      "expected_delta_residual": "1405/1331",
+      "expected_delta_residual_decimal": 1.0555972952667168,
+      "expected_delta_tangent": "-1000/11",
+      "expected_delta_tangent_decimal": -90.9090909090909,
+      "expected_drift_class": "finite_nonzero"
+    }
+  },
+  "case_gates": {
+    "L2-CO-01": {
+      "implementation": "safe_transactional",
+      "expected_classification": "PASS_CALLBACK_INVARIANCE",
+      "requirements": [
+        "replay_residual_exactly_equal",
+        "replay_tangent_exactly_equal",
+        "state_fingerprint_exactly_equal",
+        "committed_state_unchanged",
+        "inserted_candidates_not_reachable_from_accepted_output"
+      ]
+    },
+    "L2-CO-02": {
+      "implementation": "unsafe_trial_cache",
+      "expected_classification": "DETECT_CALLBACK_HISTORY_DRIFT",
+      "requirements": [
+        "all_values_finite",
+        "absolute_residual_drift_at_least_1e-8",
+        "analytical_drift_match_within_tolerance",
+        "declared_replay_context_identical",
+        "no_accept_event_in_either_history"
+      ]
+    }
+  },
+  "tolerances": {
+    "analytical_absolute": 1e-12,
+    "analytical_relative": 1e-12,
+    "safe_same_track_equality": 0.0,
+    "unsafe_minimum_finite_drift": 1e-8,
+    "finite_absolute_limit": 1e100
+  },
+  "future_execution_protocol": {
+    "formal_repetition_count": 2,
+    "repetition_mode": "independent_processes_same_frozen_environment",
+    "execution_is_part_of_this_freeze": false,
+    "implementation_is_part_of_this_freeze": false
+  },
+  "claim_boundary": "This file freezes two standalone callback-order designs only. It provides no execution result and supports no Abaqus, production, performance, conservation or coupled-physics conclusion."
+}

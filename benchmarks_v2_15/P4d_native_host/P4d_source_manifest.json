@@ -1,0 +1,140 @@
+{
+  "schema_version": "CMAME-P4D-SOURCE-MANIFEST-1.0",
+  "protocol_id": "P4d_DOLFINx_PETSc_MINIMAL_FE_HOST",
+  "design_version": "P4d.0",
+  "generated_at": "2026-07-31T10:42:12+08:00",
+  "package_status": "FROZEN_NOT_IMPLEMENTED",
+  "qa_status": "PASS_STATIC_FREEZE",
+  "protected_inputs": [
+    {
+      "path": "submission_cmame_v2_13_candidate_20260730",
+      "kind": "aggregate",
+      "file_count": 931,
+      "total_bytes": 61078135,
+      "sha256": "d5c8dbae6275171a7bb314cb6582457ca3a6145c0ba773f1f83eff34fe65d919"
+    },
+    {
+      "path": "P2_source_manifest.json",
+      "kind": "file",
+      "sha256": "79702f5679767b5f28b98c5683ae42a9ad8a33bdd37793288835c7e5accbf932"
+    },
+    {
+      "path": "P3_execution_freeze.json",
+      "kind": "file",
+      "sha256": "d50946da7030412d0cac3042ce80c7b98f4855805358e4750d2d2169b39ec4ed"
+    },
+    {
+      "path": "P3_source_manifest.json",
+      "kind": "file",
+      "sha256": "b2a330050ce2a71ae4350882062e43d3747cb8186544910c72bf21eca147e0e1"
+    },
+    {
+      "path": "P4_source_manifest.json",
+      "kind": "file",
+      "sha256": "2c3d29025e55b36c9ea3f30906417593129c1b8a3059b1361047de29fe819a6f"
+    },
+    {
+      "path": "P4c_DOLFINx_PETSc_ZERO_CASE_READINESS_PREFLIGHT_20260730/P4c_source_manifest.json",
+      "kind": "file",
+      "sha256": "ee481d151f89f303c8b944b5f36cf732d5b3d50a00f1d6a792006c87ec228acb"
+    },
+    {
+      "path": "P4c_DOLFINx_PETSc_ZERO_CASE_READINESS_PREFLIGHT_20260730/scripts/p4c_petsc_c_bridge_probe.c",
+      "kind": "file",
+      "sha256": "ae405741545e64815e08e9f6b3fdd11d00db8617205e3a2aef1f9e2c67484e49"
+    }
+  ],
+  "design_outputs": [
+    {
+      "path": "P4d_acceptance_gates.md",
+      "bytes": 7882,
+      "sha256": "ff0b08a63d19030816502eb63b5601ad37654e2655ad49fdd17e6ba58335dc6e"
+    },
+    {
+      "path": "P4d_case_matrix.csv",
+      "bytes": 3776,
+      "sha256": "2aeb7437e765cde58a596356c95721db0e0a7ec2b681db5d39dec3081f1424d5"
+    },
+    {
+      "path": "P4d_checkpoint_and_output_schema.json",
+      "bytes": 3355,
+      "sha256": "86c0ac14778434482c8d40255c14dc1475e61ecbd8bb55d9d2301ef0d758f162"
+    },
+    {
+      "path": "P4d_execution_freeze.json",
+      "bytes": 8785,
+      "sha256": "0af67498342df665bd03508d9a45d430644769d34981b32b520b16de66f13d7b"
+    },
+    {
+      "path": "P4d_fault_taxonomy_mapping.csv",
+      "bytes": 2055,
+      "sha256": "6982a01d90c794956717752366a720fd3c320b830d8d422c839edc2755af382c"
+    },
+    {
+      "path": "P4d_implementation_plan.md",
+      "bytes": 4723,
+      "sha256": "a850d8e0cc098c630def0787feb970eece0960389f5a4c4110b7858c2c81b1a7"
+    },
+    {
+      "path": "P4d_observer_bridge_contract.md",
+      "bytes": 4445,
+      "sha256": "a3244ab5c005c83c4620c077394e8793149655930a57be8d359ca532599205f5"
+    },
+    {
+      "path": "P4d_official_source_register.csv",
+      "bytes": 3344,
+      "sha256": "32cebfe20efc47ff677a7bc96b3280db5c1b145f03eb5125b2ccb83c3e2b483e"
+    },
+    {
+      "path": "P4d_problem_specification.md",
+      "bytes": 7800,
+      "sha256": "9809f61d080244fd5c04c218ffbbc49eb4730b07707ade8c25665713a3b44d66"
+    },
+    {
+      "path": "P4d_reference_oracle_contract.json",
+      "bytes": 3617,
+      "sha256": "22e86db651a758983cce8e671b3b75c656ed02233093cdeff333efecd0d6d542"
+    },
+    {
+      "path": "P4d_state_ownership_and_event_contract.md",
+      "bytes": 9784,
+      "sha256": "9736676a0c2e04bc3a4e9cf0a493ef16b95f939c3602c1c1f37978b4074c69eb"
+    },
+    {
+      "path": "P4d_static_freeze_summary.md",
+      "bytes": 2137,
+      "sha256": "f07cdf345daec009a836eb40426e00489d09b7023cae16336b37cb61ac219ade"
+    },
+    {
+      "path": "P4d_static_QA.md",
+      "bytes": 3459,
+      "sha256": "599617f30f72e69132cc83f0ec16f8421e353bbd6cc70f1f2e58e820628e92de"
+    }
+  ],
+  "counts": {
+    "design_outputs_excluding_manifest": 13,
+    "formal_case_rows": 9,
+    "future_formal_processes": 18,
+    "fault_mapping_rows": 9,
+    "official_source_records": 14,
+    "implementation_files": 0,
+    "formal_result_files": 0
+  },
+  "static_qa": {
+    "json_parse_pass": true,
+    "csv_parse_pass": true,
+    "case_ids_unique": true,
+    "all_formal_repetitions_equal_two": true,
+    "forbidden_file_count": 0,
+    "forbidden_directory_count": 0,
+    "protected_v2_13_mismatch_count": 0,
+    "active_solver_worker_count": 0,
+    "benchmark_or_test_execution": false,
+    "finite_element_case_run": false,
+    "abaqus_execution": false,
+    "comsol_execution": false,
+    "public_repository_modified": false,
+    "production_write_command_issued": false
+  },
+  "manifest_self_hash_embedded": false
+}

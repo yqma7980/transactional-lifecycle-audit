@@ -1,0 +1,47 @@
+{
+  "design_version": "P6R-F05-F07.0",
+  "forbidden_for_all_detectors": [
+    "case_id",
+    "case_role",
+    "family_id",
+    "expected_lifecycle_verdict",
+    "expected_classification",
+    "observed_lifecycle_verdict",
+    "observed_classification",
+    "selection_basis",
+    "strength_index",
+    "z_family",
+    "z_residual",
+    "z_tangent"
+  ],
+  "methods": {
+    "M1_FINAL": {
+      "allowed": ["accepted fields", "finite and convergence gates", "frozen metric distances"],
+      "forbidden": ["events", "candidate identity", "persistent state", "mutation source"]
+    },
+    "M2_CKPT": {
+      "applicable": false,
+      "reason": "checkpoint/restart absent",
+      "raw_bundle_read_required": false
+    },
+    "M3_STATE": {
+      "applicable": false,
+      "reason": "predeclared component projection absent",
+      "raw_bundle_read_required": false
+    },
+    "M4_OPERATOR": {
+      "allowed": ["residual version", "tangent version", "compatibility relation"],
+      "forbidden": ["numeric replay drift", "callback history", "mutation source"]
+    },
+    "M5_META": {
+      "allowed": ["equal-input declaration", "operator replay metric distances"],
+      "forbidden": ["owner", "event", "restoration", "reachability", "source provenance"]
+    },
+    "M6_TLA": {
+      "allowed": ["pseudonymized event stream", "restoration", "reachability", "version", "source binding"],
+      "forbidden": ["family label", "expected verdict", "selection status"]
+    }
+  },
+  "schema_version": "P6R-METHOD-PROJECTION-1.0"
+}
+

@@ -1,0 +1,59 @@
+{
+  "abaqus_used": false,
+  "design_version": "L5-D2.0",
+  "formal_results_exist": false,
+  "host_version": "L5-HOST-D2.0",
+  "implementation_files": [
+    {
+      "bytes": 10549,
+      "path": "benchmarks/L5_independent_validation/src/l5_d2_cases.py",
+      "sha256": "7ea053472e4924690a1d9dfbe047dd5ea86d4d1b5a097a7cad29608b466fab16"
+    },
+    {
+      "bytes": 5906,
+      "path": "benchmarks/L5_independent_validation/tests/test_l5_d2.py",
+      "sha256": "560d254d60b11f0874bc8e8f41fda9782df541f536d4c565eb79e2debb2ff16c"
+    },
+    {
+      "bytes": 4929,
+      "path": "benchmarks/L5_independent_validation/run_l5_d2.py",
+      "sha256": "84ce46ad0e465fbf26dd698998ce6fc82878263a6ea91376463cd9f18300a8a9"
+    }
+  ],
+  "implementation_status": "IMPLEMENTED_PREFLIGHT_PASS_NOT_FORMALLY_EXECUTED",
+  "immutable_dependency_hashes": {
+    "src/l5_cases.py": "38de71cde939429de0e0be06c3514176d4e77faf0d5bb0ae7295068b3b91c276",
+    "src/l5_lifecycle.py": "1d07e7ccaada94a025ee40509622faccbe24281a67d968f2c0f8964c0be2c93e",
+    "src/l5_oracle.py": "7811d99b07fe1ed6bb133959439fa581edbb5bf7728a66ccfc1555da28962e70",
+    "src/l5_solver.py": "b912ed20df1ccb6a1f5df18db27285112fb0058dcf5af3536a4dcab937c53acc",
+    "src/l5_state.py": "4cfce8994fbd58ba0b21a2837c503368f542dc1e2774071544d69f0235eb02c4"
+  },
+  "no_abaqus_execution": true,
+  "no_comsol_execution": true,
+  "no_formal_case_execution": true,
+  "no_l4_implementation_import": true,
+  "preflight": {
+    "elapsed_seconds": 61.526,
+    "errors": 0,
+    "failed": 0,
+    "passed": 10,
+    "tests_run": 10,
+    "threads_per_process": 1
+  },
+  "protected_inputs": {
+    "L5_D1_pre_execution_gate_failure_20260722.json": "d055d78c7d01f0312eae07422483dc6287a2b481da5748036a0930c036bda1e6",
+    "L5_D2_case_matrix.csv": "4f7ba067c19b2091715a49b2b197daf8c12d5c73e138649f20c666f562a027f5",
+    "L5_D2_execution_freeze.json": "63deea2f61268a8b004e5d6149fcafbea98a0e40db3b86edf946620633ecc468",
+    "L5_D2_source_manifest.json": "9d56d79193b078f56f9ad18104aa11dc8a570debf35717a8b0bc8f4cd43d493c"
+  },
+  "results_exist": false,
+  "runner_authorization": {
+    "cli_flag": "--execute-authorized",
+    "environment_lock": "L5_D2_EXECUTION_AUTHORIZED=YES",
+    "single_thread_lock": "L5_D2_THREADS=1",
+    "writes_after_authorization_only": true
+  },
+  "schema_version": "L5-D2-IMPLEMENTATION-1.0",
+  "strict_json_failure_recording": true,
+  "manifest_self_hash_embedded": false
+}

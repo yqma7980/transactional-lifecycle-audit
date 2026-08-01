@@ -1,0 +1,29 @@
+﻿{
+    "schema_version":  "CMAME-P4D4-MATRIX-EXECUTION-INDEX-1.0",
+    "image":  "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "run_all_cases_even_after_trigger":  true,
+    "formal_evidence":  false,
+    "records":  [
+                    {
+                        "case_id":  "P4D4-DIAG-LS-01",
+                        "run_id":  "run_1",
+                        "container_exit_code":  0,
+                        "log_path":  "logs/P4D4-DIAG-LS-01.log",
+                        "evidence_status":  "EXPLORATORY_NOT_FORMAL_EVIDENCE"
+                    },
+                    {
+                        "case_id":  "P4D4-DIAG-LS-02",
+                        "run_id":  "run_1",
+                        "container_exit_code":  0,
+                        "log_path":  "logs/P4D4-DIAG-LS-02.log",
+                        "evidence_status":  "EXPLORATORY_NOT_FORMAL_EVIDENCE"
+                    },
+                    {
+                        "case_id":  "P4D4-DIAG-LS-03",
+                        "run_id":  "run_1",
+                        "container_exit_code":  0,
+                        "log_path":  "logs/P4D4-DIAG-LS-03.log",
+                        "evidence_status":  "EXPLORATORY_NOT_FORMAL_EVIDENCE"
+                    }
+                ]
+}

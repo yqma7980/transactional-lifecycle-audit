@@ -1,0 +1,172 @@
+{
+  "schema_version": "L2-D3-IMPLEMENTATION-MANIFEST-1.0",
+  "design_version": "L2-D3.0",
+  "host_version": "L2-HOST-D3.0",
+  "implementation_status": "IMPLEMENTED_NOT_EXECUTED",
+  "execution_authorized": false,
+  "abaqus_used": false,
+  "results_exist": false,
+  "manifest_self_hash_embedded": false,
+  "qa_markdown_hash_embedded": false,
+  "qa_markdown_hash_note": "The QA Markdown hash is reported externally after final governance QA to avoid a circular dependency.",
+  "frozen_dependencies": {
+    "L2_D3_execution_freeze.json": {
+      "sha256": "03ebd4eb92fca4cb9300be4192cdd73b5575f9798b9c46f90bd618f7dc85cbcc",
+      "size_bytes": 10194
+    },
+    "L2_D3_tangent_path_case_matrix.csv": {
+      "sha256": "665576bd3e9f66c0ed8152a4fde4cc69d1b82ab810202e666340f234ec2f5c64",
+      "size_bytes": 1234
+    },
+    "L2_D3_implementation_plan.md": {
+      "sha256": "2a90570675297ac8270dbc41c4aa0b8665a12776c96c65efadc72c7264782a78",
+      "size_bytes": 8606
+    },
+    "L2_D3_source_manifest.json": {
+      "sha256": "f53254ec00340489f4cbc78c84b9e7c4f79325c471c27b7b8fe36189b8384925",
+      "size_bytes": 6657
+    },
+    "L2_D0_case_matrix.csv": {
+      "sha256": "be8e8e76f48dbc1cc2e55534a5cdb08745d1fa010a7eb291b2f7379eaf31fe69",
+      "size_bytes": 2759
+    },
+    "L2_D1_execution_freeze.json": {
+      "sha256": "4096753c610be493108baa612d5965d35a2ac6c6c97cae18db20e6fd84964a88",
+      "size_bytes": 3344
+    },
+    "src/l2_state.py": {
+      "sha256": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d",
+      "size_bytes": 4486
+    },
+    "src/l2_model.py": {
+      "sha256": "1a9daac2a8b75534dd55193bce3fead0004197765d3024e13d617e9d833ea8ff",
+      "size_bytes": 3921
+    },
+    "src/l2_variants.py": {
+      "sha256": "74fd1679408c9fa39825deaf8fc140263a5c543174f57ee51a3757860b22a96c",
+      "size_bytes": 6596
+    },
+    "src/l2_host.py": {
+      "sha256": "a2a7044592da3be507279552f0dc19a75c2de00b7cdaee0e3bea4a5e3868fd2b",
+      "size_bytes": 15426
+    },
+    "src/l2_cases.py": {
+      "sha256": "f12d0944bb8f96c100715fce6b640345c1826c9db8674fb79cc032ea7cba6301",
+      "size_bytes": 12197
+    },
+    "oracle/l2_fraction_oracle.py": {
+      "sha256": "ef57905f0d90b1bc7a0da81de51e529cb2e1d64a8290f64d91ee27ffeb480eff",
+      "size_bytes": 978
+    },
+    "L2_D2_execution_freeze.json": {
+      "sha256": "aeb7d4060b72e9f92fb039d460b08c119a67e406a311ccf431b4adcf4cb42d8f",
+      "size_bytes": 8813
+    },
+    "results/L2_D2_callback_order/final/l2_d2_final_summary.json": {
+      "sha256": "e9ef0c37ad04a5b8448fb0c9bc1d09f37c5cae99aa75728367bcd41f2a4bb34a",
+      "size_bytes": 1415
+    }
+  },
+  "implementation_files": {
+    "src/l2_d3_tangent_path.py": {
+      "sha256": "e2025fd45a1779f8ff76c0c867def4a6777007b10556e7a9fd5f59a3e1e938cd",
+      "size_bytes": 34629,
+      "ast_parse": "PASS",
+      "compile_source_only": "PASS"
+    },
+    "oracle/l2_d3_fraction_oracle.py": {
+      "sha256": "c8228de5050de5d42d7aad802c9adf8d2ef5481a986c4418ec59cc25eab85f80",
+      "size_bytes": 4127,
+      "ast_parse": "PASS",
+      "compile_source_only": "PASS"
+    },
+    "tests/test_l2_d3_tangent_path.py": {
+      "sha256": "3d17003e90b0c9d2f797a9c888d5964e0fcf0408c57dd210ac00b753f0ccf236",
+      "size_bytes": 8507,
+      "ast_parse": "PASS",
+      "compile_source_only": "PASS",
+      "defined_test_count": 12
+    },
+    "run_l2_d3.py": {
+      "sha256": "24321670c277da69862e8ed123ae00debde9039349a5372e1099cc7d9204f837",
+      "size_bytes": 4919,
+      "ast_parse": "PASS",
+      "compile_source_only": "PASS"
+    }
+  },
+  "implementation_contract": {
+    "authorized_cases": ["L2-TG-01", "L2-TG-02", "L2-TG-03"],
+    "reused_variant": "safe_transactional",
+    "reused_committed_state_fingerprint": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+    "tg01_exact_evaluation_counts": [3, 3],
+    "tg01_exact_same_track_required": true,
+    "tg02_exact_evaluation_count": 3,
+    "tg02_declared_lagged_evaluation_count": 4,
+    "tg02_iteration_count_equality_required": false,
+    "tg02_accepted_field_parity_required": true,
+    "tg03_numeric_operator_equal": true,
+    "tg03_metadata_mismatch_only": true,
+    "tg03_reject_before_correction": true,
+    "tg03_commit_forbidden": true,
+    "tg03_accepted_output_forbidden": true,
+    "committed_transition_and_rejected_state_invariance_are_separate": true,
+    "accepted_trial_candidates_unreachable_after_commit": true
+  },
+  "fraction_oracle_static_recheck": {
+    "exact_u_sequence": ["0/1", "11/1000", "21/1000"],
+    "exact_residual_sequence": ["-11/10", "-1/11", "0/1"],
+    "exact_used_tangent_sequence": ["100/1", "100/11", "100/11"],
+    "lagged_u_sequence": ["0/1", "11/1000", "131/11000", "21/1000"],
+    "lagged_residual_sequence": ["-11/10", "-1/11", "-10/121", "0/1"],
+    "lagged_used_tangent_sequence": ["100/1", "100/1", "100/11", "100/11"],
+    "accepted_u": "21/1000",
+    "accepted_sigma": "11/10",
+    "accepted_epsilon_p": "1/100",
+    "accepted_kappa": "1/100",
+    "tg03_sigma": "13/11",
+    "tg03_epsilon_p": "1/55",
+    "tg03_kappa": "1/55",
+    "tg03_residual": "15/22",
+    "tg03_tangent": "100/11",
+    "status": "PASS_STATIC_INDEPENDENT_FRACTION_RECHECK"
+  },
+  "runner_double_authorization_lock": {
+    "main_guard_present": true,
+    "required_cli_flag": "--execute-authorized",
+    "required_environment_variable": "L2_D3_EXECUTION_AUTHORIZED",
+    "required_environment_value": "YES",
+    "authorization_checked_before_case_execution": true,
+    "authorization_checked_before_output_directory_creation": true,
+    "one_case_per_process": true,
+    "one_run_id_per_process": true
+  },
+  "future_output_contract": [
+    "tangent_event_log.csv",
+    "path_comparison.csv",
+    "case_result.json",
+    "case_manifest.json"
+  ],
+  "protected_precheck": {
+    "preexisting_l2_file_count": 81,
+    "preexisting_l2_aggregate_sha256": "15b5a1992a4b8c5e86676f82b8b3958f96677f9fc555c72f51fd30482affa671",
+    "figure_1_to_5_file_count": 17,
+    "figure_1_to_5_aggregate_sha256": "bdb4fa878ab18fc97e1deb8b95b40dd48024ee4cbe1a7ffac2be8c760acdb425",
+    "claim_matrix_v0_5_sha256": "07323ebf5b1d15a2e64eb68199a592d3a323938339f7d51c52e0dc380867522c",
+    "manuscript_v0_5_sha256": "d7184d814c39d0fd62f798d468a4d6da57474dd1714176b9403207c523eb89e3"
+  },
+  "static_qa": {
+    "json_parse": "PASS",
+    "csv_parse": "PASS",
+    "source_ast_parse": "PASS",
+    "source_compile_without_execution": "PASS",
+    "runner_lock_ast_order": "PASS",
+    "independent_fraction_recheck": "PASS",
+    "no_case_execution": true,
+    "no_test_execution": true,
+    "no_runner_execution": true,
+    "no_abaqus_execution": true,
+    "no_results_created": true,
+    "no_pycache_created": true
+  },
+  "claim_boundary": "This manifest records a static L2-D3 implementation only. It creates no OBSERVED-L2-D3 evidence and supports no Abaqus, production, performance, conservation, coupled-physics, or application conclusion."
+}

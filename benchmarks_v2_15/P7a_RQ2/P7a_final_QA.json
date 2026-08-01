@@ -1,0 +1,21 @@
+{
+  "abaqus_execution_performed": false,
+  "all_30_case_method_repetition_pairs_exact": true,
+  "all_60_oracle_flags_match": true,
+  "all_upstream_files_exist": true,
+  "claim_matrix_old_versions_overwritten": false,
+  "destination_was_new": true,
+  "doi_modified": false,
+  "figure_final_art_generated": false,
+  "full_p6_claim_present": false,
+  "hard_hash_gate": "PASS",
+  "manuscript_modified": false,
+  "method_cells": 60,
+  "new_case_execution_performed": false,
+  "not_applicable_cells": 20,
+  "public_repository_modified": false,
+  "rq2_status": "PARTIALLY_SUPPORTED_WITHIN_F05_F07_BOUNDED_RETROSPECTIVE_SCOPE",
+  "source_case_method_rows": 30,
+  "status": "PASS_P7A_BOUNDED_EVIDENCE_SYNC_READY_FOR_P8",
+  "upstream_registry_rows": 23
+}

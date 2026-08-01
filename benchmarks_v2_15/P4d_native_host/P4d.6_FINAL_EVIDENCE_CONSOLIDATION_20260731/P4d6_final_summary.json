@@ -1,0 +1,85 @@
+{
+  "abaqus_used": false,
+  "all_scientific_duplicate_pairs_passed": true,
+  "author_driver_retry_observed": true,
+  "author_managed_restart_observed": true,
+  "case_adjudications": {
+    "P4D-CONST-01": "OBSERVED_CONSTITUTIVE_ORACLE_TWO_FRESH_PROCESS",
+    "P4D-NC-CACHE-01": "OBSERVED_EXPECTED_CACHE_NEGATIVE_CONTROL_TWO_FRESH_PROCESS",
+    "P4D-NC-OUTPUT-01": "OBSERVED_EXPECTED_OUTPUT_NEGATIVE_CONTROL_TWO_FRESH_PROCESS_AFTER_SCHEMA_ERRATUM",
+    "P4D-REF-01": "OBSERVED_REFERENCE_TWO_FRESH_PROCESS",
+    "P4D-SAFE-DIR-01": "OBSERVED_SAFE_DIRECT_TWO_FRESH_PROCESS",
+    "P4D-SAFE-LS-01": "NOT_SUPPORTED_BY_DIAGNOSTIC_ENVELOPE",
+    "P4D-SAFE-RS-01": "OBSERVED_SAFE_AUTHOR_MANAGED_RESTART_TWO_FRESH_PROCESS",
+    "P4D-SAFE-RT-01": "OBSERVED_SAFE_AUTHOR_DRIVER_RETRY_TWO_FRESH_PROCESS",
+    "P4D-VER-01": "OBSERVED_PROTECTIVE_VERSION_REJECTION_TWO_FRESH_PROCESS"
+  },
+  "contract_trace_record_count": 12,
+  "design_case_count": 9,
+  "does_not_establish": [
+    "complete P4d matrix pass",
+    "native rejected line-search coverage",
+    "parallel/thread safety",
+    "Abaqus/production lifecycle safety",
+    "multiphysics or CO2 validity",
+    "detection completeness"
+  ],
+  "duplicate_case_pair_count": 8,
+  "evidence_status": "PARTIAL_OBSERVED_P4D",
+  "exploratory_process_count": 3,
+  "final_status": "PARTIAL_OBSERVED_P4D_WITH_NATIVE_LINESEARCH_NOT_SUPPORTED",
+  "formal_raw_contract_failure_process_count": 1,
+  "full_p4d_matrix_complete": false,
+  "full_p4d_matrix_pass": false,
+  "host_native_vs_author_driver_boundary": {
+    "author_driver": [
+      "transactional state ownership",
+      "retry/rollback",
+      "checkpoint/restart",
+      "version guard",
+      "output provenance",
+      "seeded mutations"
+    ],
+    "host_native": [
+      "DOLFINx assembly",
+      "PETSc residual/Jacobian/SNES reasons",
+      "C-observed line-search packets"
+    ],
+    "non_equivalences": [
+      "RT is not PETSc TS rollback",
+      "RS is not external PETSc TS restart",
+      "author-driver evidence does not replace native line-search evidence"
+    ]
+  },
+  "key_observations": {
+    "cache_negative_residual_drift_norm": 1.0430631298109754e-05,
+    "cache_negative_tangent_drift_norm": 14.433756729740638,
+    "output_negative_rejected_rows_per_run": 1,
+    "output_negative_rejected_source_load_factor": 0.08,
+    "p4d2_candidate_event_count": 29,
+    "p4d2_selected_event_count": 29,
+    "p4d2_structured_unselected_candidate_count": 0,
+    "p4d4_diagnostic_targets": [
+      0.2,
+      0.24,
+      0.28
+    ],
+    "p4d4_trigger_count": 0,
+    "safe_retry_residual_drift_norm": 0.0,
+    "safe_retry_tangent_drift_norm": 0.0,
+    "version_guard_numeric_residual_delta": 0.0,
+    "version_guard_numeric_tangent_delta": 0.0
+  },
+  "native_linesearch_status": "NOT_SUPPORTED_BY_DIAGNOSTIC_ENVELOPE",
+  "native_rejected_linesearch_candidate_observed": false,
+  "next_gate": "P5_SCALED_THRESHOLD_AND_FRESH_PROCESS_NULL_ENVELOPE_FREEZE",
+  "next_gate_execution_authorized": false,
+  "not_supported_case_count": 1,
+  "observed_two_fresh_process_case_count": 8,
+  "old_output_writer_failures_preserved": true,
+  "preserved_infrastructure_failure_process_count": 2,
+  "production_model_used": false,
+  "run_registry_record_count": 22,
+  "schema_version": "CMAME-P4D6-FINAL-SUMMARY-1.0",
+  "scientifically_eligible_fresh_process_run_count": 16
+}

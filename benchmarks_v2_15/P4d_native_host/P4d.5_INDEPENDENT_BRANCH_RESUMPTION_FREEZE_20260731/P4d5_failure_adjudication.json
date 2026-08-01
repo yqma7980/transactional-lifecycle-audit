@@ -1,0 +1,24 @@
+{
+  "schema_version": "CMAME-P4D5-BRANCH-ADJUDICATION-1.0",
+  "native_linesearch_branch": {
+    "raw_case_id": "P4D-SAFE-LS-01",
+    "raw_verdict": "P4D-SAFE-LS-01_CONTRACT_FAIL",
+    "p4d3_status": "NOT_SUPPORTED_BY_FROZEN_HISTORY",
+    "p4d4_status": "NOT_SUPPORTED_BY_DIAGNOSTIC_ENVELOPE",
+    "heldout_target": null,
+    "rerun_allowed": false,
+    "branch_closed_for_current_host_and_frozen_envelope": true
+  },
+  "independent_branch_status": {
+    "driver_retry": "FROZEN_STATIC_NOT_IMPLEMENTED",
+    "fresh_process_restart": "FROZEN_STATIC_NOT_IMPLEMENTED",
+    "cache_negative_control": "FROZEN_STATIC_NOT_IMPLEMENTED",
+    "output_negative_control": "FROZEN_STATIC_NOT_IMPLEMENTED",
+    "operator_version_guard": "FROZEN_STATIC_NOT_IMPLEMENTED"
+  },
+  "aggregate_status_now": "P4D_PARTIAL_FORMAL_EVIDENCE_WITH_FIVE_BRANCH_CASES_OPEN",
+  "formal_p4d_matrix_pass": false,
+  "best_possible_after_future_p4d5_pass": "PARTIAL_OBSERVED_P4D_WITH_NATIVE_LINESEARCH_NOT_SUPPORTED",
+  "execution_authorized": false,
+  "old_json_rewritten": false
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": "L2-D5-SOURCE-1.0a",
+  "design_version": "L2-D5.0a",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "execution_authorized": false,
+  "abaqus_used": false,
+  "results_exist": false,
+  "inputs": [
+    {
+      "path": "L2_D0_case_matrix.csv",
+      "sha256": "be8e8e76f48dbc1cc2e55534a5cdb08745d1fa010a7eb291b2f7379eaf31fe69",
+      "size_bytes": 2759
+    },
+    {
+      "path": "L2_D0_acceptance_gates.md",
+      "sha256": "ff8e8a4484abac4cd9528a0a9c6f05ccf69be8432dd5d23a6b8ba21160ae163d",
+      "size_bytes": 3843
+    },
+    {
+      "path": "L2_D1_execution_freeze.json",
+      "sha256": "4096753c610be493108baa612d5965d35a2ac6c6c97cae18db20e6fd84964a88",
+      "size_bytes": 3344
+    },
+    {
+      "path": "src/l2_state.py",
+      "sha256": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d",
+      "size_bytes": 4486
+    },
+    {
+      "path": "src/l2_model.py",
+      "sha256": "1a9daac2a8b75534dd55193bce3fead0004197765d3024e13d617e9d833ea8ff",
+      "size_bytes": 3921
+    },
+    {
+      "path": "src/l2_variants.py",
+      "sha256": "74fd1679408c9fa39825deaf8fc140263a5c543174f57ee51a3757860b22a96c",
+      "size_bytes": 6596
+    },
+    {
+      "path": "src/l2_host.py",
+      "sha256": "a2a7044592da3be507279552f0dc19a75c2de00b7cdaee0e3bea4a5e3868fd2b",
+      "size_bytes": 15426
+    },
+    {
+      "path": "L2_D4_execution_freeze.json",
+      "sha256": "1beb45004f7193006275a00f06c05d000dc1056c135e45a580ee90d72910b63b",
+      "size_bytes": 13322
+    }
+  ],
+  "design_outputs": [
+    {
+      "path": "L2_D5_checkpoint_provenance_case_matrix.csv",
+      "sha256": "9b932cb0329be838057469af6395062cdb6a0fe125206f0e02667b35f0b2ccca",
+      "size_bytes": 660
+    },
+    {
+      "path": "L2_D5_execution_freeze.json",
+      "sha256": "90a5df3527b285a424b6a72a5fd75370e9216d1eb34164c163f50a48fb665e63",
+      "size_bytes": 9013
+    },
+    {
+      "path": "L2_D5_implementation_plan.md",
+      "sha256": "1e0ceee9ab8c60dbee12776da28b9a96617d5550378607caf0b4c5ba31ca0c69",
+      "size_bytes": 2592
+    }
+  ],
+  "d0_case_identity": "L2-CP-01",
+  "claim_boundary": "Static design only; no L2-D5 execution evidence and no Abaqus restart claim.",
+  "manifest_self_hash_embedded": false,
+  "revision_reason": "separate_exact_fraction_oracle_from_D1_Newton_runtime_IEEE754_fingerprints",
+  "superseded_design_hashes": {
+    "L2_D5_execution_freeze.json": "37a7586ee66b3647d2a412637fc95802c48c4e755960e9728aa2d646f11f8e3a",
+    "L2_D5_checkpoint_provenance_case_matrix.csv": "9b932cb0329be838057469af6395062cdb6a0fe125206f0e02667b35f0b2ccca",
+    "L2_D5_implementation_plan.md": "490d0036fa38c2617ca3697fae0e61ace6f4cfa4af1170c798fedbd4aadc0a5e",
+    "L2_D5_source_manifest.json": "72bb509e4b25b9cc96a92c5ace29da8f19b60d778998fdc027776f0bb42307cc"
+  },
+  "fingerprint_compatibility_QA": {
+    "analytical_fraction_oracle_unchanged": true,
+    "runtime_configuration_hash": "c4e3373b1ec484567f7c0cdd75727e636282847c6ebc8577f278720069efb0ca",
+    "checkpoint_committed_hash": "9208bebb27104d3b2f2ea9c53cb519159c7ec0fee98c7978091fba4c6fe3a6b9",
+    "checkpoint_physical_hash": "0b3351602c8ca334f0155fdedc7800032e41f4781a1ea969a8b0159c9675eef4",
+    "continuation_committed_hash": "58223c0076a614bb7e37b82d4e4dec99376185839ed649534e33258d6bc3fb59",
+    "continuation_physical_hash": "466a2ab596c3b04c37583fe1a571afb22a7b4335b1d188b18c410238f17d7835",
+    "case_matrix_unchanged": true
+  }
+}

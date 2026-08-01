@@ -1,0 +1,58 @@
+{
+  "schema_version": "CMAME-P4D1-PREFLIGHT-FREEZE-1.0",
+  "protocol_id": "P4d.1_IMPLEMENTATION_PREFLIGHT",
+  "design_version": "P4d.0",
+  "implementation_revision": "P4d.1",
+  "status": "FROZEN_BEFORE_IMPLEMENTATION",
+  "formal_benchmark": false,
+  "formal_case_execution_authorized": false,
+  "allowed_preflight_ids": ["P4D1-ENV-01", "P4D1-BRIDGE-01", "P4D1-ORACLE-01", "P4D1-TOPOLOGY-01", "P4D1-SMOKE-01", "P4D1-GUARD-01"],
+  "forbidden_formal_case_ids": ["P4D-REF-01", "P4D-CONST-01", "P4D-SAFE-DIR-01", "P4D-SAFE-LS-01", "P4D-SAFE-RT-01", "P4D-SAFE-RS-01", "P4D-NC-CACHE-01", "P4D-NC-OUTPUT-01", "P4D-VER-01"],
+  "protected_hashes": {
+    "v2_13_aggregate_sha256": "d5c8dbae6275171a7bb314cb6582457ca3a6145c0ba773f1f83eff34fe65d919",
+    "P2_source_manifest_sha256": "79702f5679767b5f28b98c5683ae42a9ad8a33bdd37793288835c7e5accbf932",
+    "P3_execution_freeze_sha256": "d50946da7030412d0cac3042ce80c7b98f4855805358e4750d2d2169b39ec4ed",
+    "P3_source_manifest_sha256": "b2a330050ce2a71ae4350882062e43d3747cb8186544910c72bf21eca147e0e1",
+    "P4_source_manifest_sha256": "2c3d29025e55b36c9ea3f30906417593129c1b8a3059b1361047de29fe819a6f",
+    "P4c_source_manifest_sha256": "ee481d151f89f303c8b944b5f36cf732d5b3d50a00f1d6a792006c87ec228acb",
+    "P4d_source_manifest_sha256": "a54b76c5624d1e033ffc6a08bc7a339b8494ee789e9478687a4915fca11d89dd",
+    "P4d_package_aggregate_sha256": "8697fcecbe0f17e665080a7c673e44b93cd9223315ed3a09c70e3d0e01189914"
+  },
+  "host": {
+    "image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "platform": "linux/amd64",
+    "network": "none",
+    "privileged": false,
+    "mpi_ranks": 1,
+    "processes": 1,
+    "threads": 1,
+    "thread_environment": {"OMP_NUM_THREADS": "1", "OPENBLAS_NUM_THREADS": "1", "MKL_NUM_THREADS": "1"}
+  },
+  "bridge_zero_case": {
+    "classification": "NONPHYSICAL_DOLFINX_OWNED_ONE_FREE_DOF_GLOBALIZATION_PROBE",
+    "equation": "scaled residual with Newton trajectory equivalent to x^2-2",
+    "initial_value": 0.1,
+    "observer_disabled_and_enabled_required": true,
+    "fresh_observer_repetitions": 2,
+    "exact_no_effect_fields": ["solution_hex", "snes_reason", "iteration_count", "residual_sequence_hex"],
+    "structured_unselected_candidate_required": true
+  },
+  "oracle": {
+    "fraction_abs_rel_tolerance": 1e-14,
+    "directional_tangent_relative_tolerance": 1e-7,
+    "manufactured_mesh_levels_allowed": [4],
+    "host_update_import_forbidden": true
+  },
+  "topology": {
+    "cells": 32,
+    "nodes": 25,
+    "quadrature_points_per_cell": 3,
+    "integration_points": 96,
+    "gamma_p_shape": [32, 3, 2],
+    "alpha_shape": [32, 3]
+  },
+  "safe_smoke": {"history": "H_DIRECT", "source_load": 0.0, "target_load": 0.04, "tangent_relation": "EXACT_CURRENT", "maximum_accepted_increments": 1, "accept_commit_required": 1},
+  "terminal_pass": "PASS_P4D1_PREFLIGHT_READY_FOR_FULL_IMPLEMENTATION",
+  "blocked_states": ["BLOCKED_PROTECTED_EVIDENCE_DRIFT", "BLOCKED_HOST_IDENTITY", "BLOCKED_C_BRIDGE_ATTACH", "BLOCKED_REFERENCE_ORACLE", "BLOCKED_FE_TOPOLOGY_OR_ORDER", "BLOCKED_SAFE_INCREMENT_SMOKE"],
+  "evidence_boundary": {"observed_P4d": false, "formal_results_exist": false, "manuscript_update_authorized": false, "public_archive_update_authorized": false, "abaqus_used": false, "production_model_used": false}
+}

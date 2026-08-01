@@ -1,0 +1,38 @@
+{
+  "formal_case_execution_performed": false,
+  "gates": [
+    {
+      "details": "10 protected hashes matched",
+      "gate": "G0_PROTECTED_EVIDENCE",
+      "status": "PASS"
+    },
+    {
+      "details": "18 explicit columns; source_load_factor is optional only for accepted rows",
+      "gate": "G1_SCHEMA_CONTRACT",
+      "status": "PASS"
+    },
+    {
+      "details": "6 Python files parsed and compiled",
+      "gate": "G2_STATIC_AST",
+      "status": "PASS"
+    },
+    {
+      "details": "11/11 passed",
+      "gate": "G3_UNIT_TESTS",
+      "status": "PASS"
+    },
+    {
+      "details": "double locks; one case; two run IDs; no prior output roots",
+      "gate": "G4_AUTHORIZATION_AND_SCOPE",
+      "status": "PASS"
+    },
+    {
+      "details": "pinned image local; zero containers; zero Abaqus processes",
+      "gate": "G5_RUNTIME_READINESS",
+      "status": "PASS"
+    }
+  ],
+  "overall_status": "PASS_P4D5B_STATIC_AND_UNIT_QA_READY_FOR_FORMAL_OUTPUT_RERUN",
+  "results_exist": false,
+  "schema_version": "CMAME-P4D5B-PREFLIGHT-GATES-1.0"
+}

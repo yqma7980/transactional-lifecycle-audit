@@ -1,0 +1,167 @@
+{
+  "schema_version": "CMAME-P4D5-SOURCE-MANIFEST-1.0",
+  "design_version": "P4d.0",
+  "protocol_revision": "P4d.5",
+  "freeze_status": "FROZEN_STATIC_NOT_IMPLEMENTED",
+  "source_inputs": [
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/P4d2_formal_execution_freeze_20260731.json",
+      "sha256": "172f9ae758fdc4dc24a3b657273c8cb72e8cee72b891b0cea64fdf04efa845e9",
+      "size_bytes": 2518
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/P4d2_implementation_manifest.json",
+      "sha256": "850458455354ede79ef128783039967bc72aa486bd43d89a164f6d00e27601ee",
+      "size_bytes": 8347
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/P4d2_source_manifest.json",
+      "sha256": "6aa3ab71905fe8b5a54239bcd64de6b92a744dfed08c54336fa072c4d5c29541",
+      "size_bytes": 7172
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_duplicate_run_comparison.json",
+      "sha256": "00f469a9eca36016d75c35b03fb03bc0a2625cd2120a332bffcca1223989a5dd",
+      "size_bytes": 2848
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_formal_final_QA.json",
+      "sha256": "0f3cef984b9a0720ddeb126f1dd29b8a56c58912ca2ae6e75901462bf9c294e4",
+      "size_bytes": 2571
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_formal_raw_manifest.json",
+      "sha256": "384b7b4e5a8e1244672c5d076f46a589dae3995a91ec1d10ff0c7d13e0ecb22b",
+      "size_bytes": 11450
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_formal_stop_summary.json",
+      "sha256": "df520423b04e189da13923aa3ef1a0387fa1e0c44720d5bb0482d167c683c73e",
+      "size_bytes": 5303
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/run_p4d2.py",
+      "sha256": "f6ba558860b5e84c818c7a41cdf191c7dfc7b43d2f26dc49f78326a89fb456b6",
+      "size_bytes": 2136
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_cases.py",
+      "sha256": "40830e1c2a4e1d177b942ef069831e9f993a1ecfc0ffe16f1133edf2aa3680f7",
+      "size_bytes": 12504
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_config.py",
+      "sha256": "58a36323256d24fbb49507a690218db99361d2d9ad79792e3b8ffc377e338300",
+      "size_bytes": 3026
+    },
+    {
+      "path": "P4d.3_NATIVE_LINESEARCH_POSTMORTEM_20260731/P4d3_dependency_dag.md",
+      "sha256": "c781c103bd6d02e8237f64f7dc1f339316df410d89145a5a5fda002f540ac427",
+      "size_bytes": 744
+    },
+    {
+      "path": "P4d.3_NATIVE_LINESEARCH_POSTMORTEM_20260731/P4d3_failure_adjudication.json",
+      "sha256": "84f57900ce5ed89e30889c83a9fcc9cb71a2d87f06d2a6de1ca0e15876474cc2",
+      "size_bytes": 817
+    },
+    {
+      "path": "P4d.3_NATIVE_LINESEARCH_POSTMORTEM_20260731/P4d3_source_manifest.json",
+      "sha256": "68ab051fcc3a85ebdf0420cc662e09954b5bf48f467ce0db54a983e7642ee45c",
+      "size_bytes": 5956
+    },
+    {
+      "path": "P4d.4_EXPLORATORY_DIAGNOSTIC_EXECUTION_20260731/results/P4d4_exploratory_20260731/final/P4d4_exploratory_result_report.md",
+      "sha256": "4b29dc4ef21fff4b665039849071b83feb97b48217bde33d7c564df60bf5e32e",
+      "size_bytes": 950
+    },
+    {
+      "path": "P4d.4_EXPLORATORY_DIAGNOSTIC_EXECUTION_20260731/results/P4d4_exploratory_20260731/final/p4d4_exploratory_raw_manifest.json",
+      "sha256": "694c3dfad0df42c04d0d097591a7ec6bad10b76dfb04b66a05dc9ba2e92888e0",
+      "size_bytes": 4632
+    },
+    {
+      "path": "P4d.4_EXPLORATORY_DIAGNOSTIC_EXECUTION_20260731/results/P4d4_exploratory_20260731/final/p4d4_exploratory_summary.json",
+      "sha256": "fc0993a29c1b605e548fdbdb3abb159c92ae0e11b38b6e2d0a4a3b45d8aeacd2",
+      "size_bytes": 2619
+    },
+    {
+      "path": "P4d.4_EXPLORATORY_DIAGNOSTIC_EXECUTION_20260731/results/P4d4_exploratory_20260731/final/p4d4_heldout_adjudication.json",
+      "sha256": "5e69ab53e838905e0f40e8e8466c02453b25ed1b946d4016f4aab0a3c24d68a3",
+      "size_bytes": 201
+    },
+    {
+      "path": "P4d.4_EXPLORATORY_DIAGNOSTIC_EXECUTION_20260731/results/P4d4_exploratory_20260731/final/p4d4_protected_evidence_QA.json",
+      "sha256": "9fc4f94daa353bf3b3bd7f7f859275dcfd53b5bf128c0da4ea4fa2efe171d6ce",
+      "size_bytes": 3406
+    },
+    {
+      "path": "P4d_acceptance_gates.md",
+      "sha256": "ff0b08a63d19030816502eb63b5601ad37654e2655ad49fdd17e6ba58335dc6e",
+      "size_bytes": 7882
+    },
+    {
+      "path": "P4d_case_matrix.csv",
+      "sha256": "2aeb7437e765cde58a596356c95721db0e0a7ec2b681db5d39dec3081f1424d5",
+      "size_bytes": 3776
+    },
+    {
+      "path": "P4d_execution_freeze.json",
+      "sha256": "0af67498342df665bd03508d9a45d430644769d34981b32b520b16de66f13d7b",
+      "size_bytes": 8785
+    },
+    {
+      "path": "P4d_source_manifest.json",
+      "sha256": "a54b76c5624d1e033ffc6a08bc7a339b8494ee789e9478687a4915fca11d89dd",
+      "size_bytes": 4584
+    }
+  ],
+  "generated_outputs": [
+    {
+      "path": "P4d5_branch_resumption_freeze.json",
+      "sha256": "37346cca6fbf7d0e662c3b6af24b79cc10926992d2212d5e4e1e6669249536c3",
+      "size_bytes": 4501
+    },
+    {
+      "path": "P4d5_case_matrix.csv",
+      "sha256": "ba160da4be56ec4bcde62865cfd445b768a11a091f6ad7135e25524bf3a41bb3",
+      "size_bytes": 3388
+    },
+    {
+      "path": "P4d5_dependency_dag.md",
+      "sha256": "00d0ffa3aae8647b4e55ff4cebce1e7924430a789006ded1aa060796b60c3deb",
+      "size_bytes": 1498
+    },
+    {
+      "path": "P4d5_acceptance_gates.md",
+      "sha256": "67d6b02a0633070bedad8f25cf55a27f7f662ded1445813ab81f757527f99c06",
+      "size_bytes": 4102
+    },
+    {
+      "path": "P4d5_execution_plan.md",
+      "sha256": "ecd1f7ab11ebf10b30358617a51abf0795818e2e79ff16a5e9bb7174a25ba564",
+      "size_bytes": 2011
+    },
+    {
+      "path": "P4d5_failure_adjudication.json",
+      "sha256": "0160d875ada113348a7816cbd44ed282b027343b8e25592e859b73d88993e50f",
+      "size_bytes": 1047
+    },
+    {
+      "path": "P4d5_static_freeze_summary.md",
+      "sha256": "150e73e16e441e994c39764d7d3177035f53c889971a8a8879a915b160990cc9",
+      "size_bytes": 1235
+    },
+    {
+      "path": "P4d5_static_QA.md",
+      "sha256": "3adba9933cef1690eef8064f1821b47e83cb980f6a578b5c5b761c9efdcf116e",
+      "size_bytes": 1524
+    }
+  ],
+  "manifest_self_hash_embedded": false,
+  "no_case_execution": true,
+  "no_test_execution": true,
+  "no_docker_container_started": true,
+  "no_abaqus_execution": true,
+  "no_old_evidence_modification": true,
+  "no_manuscript_or_public_archive_update": true
+}

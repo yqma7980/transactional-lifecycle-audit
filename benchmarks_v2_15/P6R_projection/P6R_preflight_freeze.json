@@ -1,0 +1,17 @@
+{
+  "abaqus_used": false,
+  "design_version": "P6R-F05-F07.0",
+  "formal_projection_authorized": false,
+  "formal_projection_executed": false,
+  "implementation_status": "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+  "implementation_version": "P6R-IMPLEMENTATION-0.1",
+  "new_fe_solve_authorized": false,
+  "oracle_available_to_detectors": false,
+  "preflight_date": "2026-08-01",
+  "preflight_status": "PASS_P6R_IMPLEMENTATION_PREFLIGHT_READY_FOR_FORMAL_PROJECTION",
+  "raw_evidence_access": "READ_ONLY_HASH_BOUND",
+  "runner_status": "CREATED_DOUBLE_LOCKED_NOT_EXECUTED",
+  "synthetic_unit_tests_authorized": true,
+  "target_formal_projection_processes": 10
+}
+

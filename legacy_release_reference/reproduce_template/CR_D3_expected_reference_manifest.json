@@ -1,0 +1,585 @@
+{
+  "comparison_boundary": "exact deterministic artifacts or accepted-output fingerprints only",
+  "historical_results_copied": false,
+  "jobs": {
+    "CR-L0": {
+      "comparison": "exact_files",
+      "files": {
+        "l0_call_ledger.csv": "6a727ddfcee31f1462038720167d1ea74f179733914309ee9eecd4b0c5fc71e9",
+        "l0_summary.json": "688a2f4581cbdb6846a56b345c3dc4f1d85d1cee40c84f112d363a6646ef6e27"
+      },
+      "historical_root": "benchmarks/L0_scalar_replay/results"
+    },
+    "CR-L1-E1": {
+      "comparison": "exact_files",
+      "files": {
+        "l1_e1_accepted_checkpoints.csv": "c936cf6e5586a72c0bd2a0c71e53805228d08eb2a41b99754111a7acf0e74144",
+        "l1_e1_call_ledger.csv": "846c4d92dde367ab81ce77e5ee3f674527bc24d563b1bc553fa43ba81915f99b",
+        "l1_e1_case_results.csv": "774f947d193e0d3045da37ba42a3d72aedf3a0cad9acbc9231174e4334b897df",
+        "l1_e1_design_validation.json": "8c6699340213c9b66e1bfc54075167786dc84f6c8cc4fa6b49c3bbfc57c4dccb",
+        "l1_e1_result_report.md": "7617d6c609f19211735b0c420d1d0c2c0138c738128bb48999eeda5a2064bdbe",
+        "l1_e1_run_summary.json": "83bf357a19b7d0f16b1d1308e21ed6b8e10d3f25c15a53f9fc9ebf7404c6bb6c"
+      },
+      "historical_root": "L1 duplicate-run ledger: L1-E1"
+    },
+    "CR-L1-MP": {
+      "comparison": "exact_files",
+      "files": {
+        "l1_accepted_checkpoints.csv": "5488187cff736e6ca638bdee3a9b376f60e775b6b659c53b4b1414a81e1678f9",
+        "l1_call_ledger.csv": "a81f376ea01f11cbafa42aee5c2dde7d705b6e02a64136ec5050e0183f248943",
+        "l1_case_results.csv": "a2966d20f0fddacd326c36bb5d6e06b02865d6788d6bb77c0f4e20f8c2c01e5c",
+        "l1_design_validation.json": "d3cceddfdb2b5893f66c0a49aceae4599ddc112468169dd2ce2e9f954f985dfa",
+        "l1_result_report.md": "e9f26c1655ee7ea44f2775e8c122ebf6495ea4fb0daa256d29c8b14641e2f70e",
+        "l1_run_summary.json": "516d3e13fce1b9f1dd3440defc9ccc0228a2888112a47bd2c75489af957d876e"
+      },
+      "historical_root": "L1 duplicate-run ledger: L1-MP"
+    },
+    "CR-L2-CO-01": {
+      "comparison": "exact_files",
+      "files": {
+        "callback_event_log.csv": "2a67dda980c8e23d4677644e53ee8caaffe3f5ec666478749c17caa6656045b7",
+        "case_result.json": "b6bb4b9a1aa9ede9900cddc702417403cf88fd3a20484a7afafe850f9512a490",
+        "replay_comparison.csv": "9586bffc317251994ff023ce53041abbe9ac0ee6e573a52b687556f15c4e2008"
+      },
+      "historical_root": "benchmarks/L2_host_lifecycle/results/L2_D2_callback_order/L2-CO-01/run_1"
+    },
+    "CR-L2-CO-02": {
+      "comparison": "exact_files",
+      "files": {
+        "callback_event_log.csv": "72dc6bcf8214a53994e1204bab96158d38f9388222651a59ae57cc0f106817ba",
+        "case_result.json": "660a41cc855014142b190aa3da291e65499863bfec982bdb7b779d26dc004b1a",
+        "replay_comparison.csv": "e403daf715ba190d63c1a4e5c53465f2140431a189247c17c804171c07b8ea11"
+      },
+      "historical_root": "benchmarks/L2_host_lifecycle/results/L2_D2_callback_order/L2-CO-02/run_1"
+    },
+    "CR-L2-CP-01": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "e65b5dc88c8e7eb892e913777d202ef71ab24e2af1947d6f9905b6b0f3dc39e6",
+        "checkpoint_comparison.csv": "8c34b64c8e19ce9b638162021d24170ab8932d2ce5adcc140870d78ec602fbf6",
+        "checkpoint_event_log.csv": "cf353cbf9c86f8bd19a234cfdcded62fe7fee55ae38c76bf05cb62fc82e49140"
+      },
+      "historical_root": "benchmarks/L2_host_lifecycle/results/L2_D5_checkpoint_provenance/L2-CP-01/run_1"
+    },
+    "CR-L2-D1": {
+      "comparison": "exact_files",
+      "files": {
+        "l2_accepted_checkpoints.csv": "f01765045e0ea3008858284ec5c24b8c479dd4a7c627b8e448abc5f1d08b1e78",
+        "l2_case_results.csv": "077855a1a77626630779c7a34a0cf35f8de59ea01ddd5172c80477c3e155f098",
+        "l2_event_ledger.csv": "e16ce55290754815422fb48c047cc1bd989fc6006124639b6f80eb577972ef94"
+      },
+      "historical_root": "benchmarks/L2_host_lifecycle/results/L2_D1_minimal_20260721/run_1"
+    },
+    "CR-L2-OP-01": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "7fa868e36c34239a5f25410d144a54160867af2a4d69b8c1e9f3c64680b562a9",
+        "output_event_log.csv": "2acd5961f63f8b057fdae17fe0fa4f7975e62f47c190fd06bedf73cdcd9f8703",
+        "output_provenance_comparison.csv": "30942199ba75886ccc0bd99fe55e81678d11ec4ae2c0f8b9d98041ae35a876f9"
+      },
+      "historical_root": "benchmarks/L2_host_lifecycle/results/L2_D4_output_provenance/L2-OP-01/run_1"
+    },
+    "CR-L2-OP-02": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "191ad41e25e0d04a051d1fced1e69e7a9b697107b4a6e6efecf40545717221a0",
+        "output_event_log.csv": "1b14a414cbcf931de0a913eb3e1b475906bbf1e00e1286c7eecad27141eaa452",
+        "output_provenance_comparison.csv": "a82a689d9e50788f03155337ff60daf9fe082bce03d11cbbc51a6ebf69fb5124"
+      },
+      "historical_root": "benchmarks/L2_host_lifecycle/results/L2_D4_output_provenance/L2-OP-02/run_1"
+    },
+    "CR-L2-TG-01": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "c93e9d1e5a7b7df4d93138669c1e3697f43ebfe28511c3065c2e77fbbd2a5971",
+        "path_comparison.csv": "8efc55b23c2f65f1fa5da5047fcdaddd9d98e2677a1b3912e2f73cd26e052aab",
+        "tangent_event_log.csv": "0f4d3c898b09bbf669298fb3ae22195a91769fba737d2bf11a7785beb130bb38"
+      },
+      "historical_root": "benchmarks/L2_host_lifecycle/results/L2_D3_tangent_path/L2-TG-01/run_1"
+    },
+    "CR-L2-TG-02": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "5fa1c13809b02b24ca2e5fd832cba2fb4f37601ee701ab6ae7d4e1de23e182b2",
+        "path_comparison.csv": "55a0f1390168f6d5946485294c59bef471e51bcd2eaf5c28a1809b55017909bf",
+        "tangent_event_log.csv": "6d37199764f69b08c746da06a9f2278f1cd2fecafcba6d3db07f5ea2522d2287"
+      },
+      "historical_root": "benchmarks/L2_host_lifecycle/results/L2_D3b_tangent_path/L2-TG-02/run_1"
+    },
+    "CR-L2-TG-03": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "b84e481a0608711e6894883ac6cdb0f5dbf04b09840d362bcaa9cef70d5ee633",
+        "path_comparison.csv": "314687e74dfa43b4b5352d49d8df2ee69f59138215e201a8c76dced8e5916658",
+        "tangent_event_log.csv": "5f866dcec10159007dcc8e622c3878cb577f2675c3109292a75c9c2954bf3856"
+      },
+      "historical_root": "benchmarks/L2_host_lifecycle/results/L2_D3_tangent_path/L2-TG-03/run_1"
+    },
+    "CR-L2-TH-01": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "68d7bf15bcb01560caaad7f194a429d86371823cd699e819c202f4986bbf471d",
+        "scheduling_support_comparison.csv": "f115e0b55ea21731b6e7911c060ff541321efd8a8b88b1a14b370b6c80ec026d",
+        "scheduling_support_event_log.csv": "c46d71ac3009278406548451fb3cb50aadfd797247aa39484e218720fe083b6f"
+      },
+      "historical_root": "benchmarks/L2_host_lifecycle/results/L2_D6_thread_scheduling/L2-TH-01/run_1"
+    },
+    "CR-L3-CV-S-01": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "bd83c794c377591bbe2884d000bb5e0a5ca0a5a09bd46d8bdf992d8ac5abed80",
+        "field_comparison.csv": "5ebd13ed7bcd27d6bf6c0df77bfc32bc368002d0f64a4ce2bf2f14dba90d7d4d",
+        "poro_event_log.csv": "a0b070ec70e2aed5084f4379428915e2810aaa380eca035aac0c1cc594791eaf"
+      },
+      "historical_root": "benchmarks/L3_poroelastic_consolidation/results/L3_D1_poroelastic_consolidation/L3-CV-S-01/run_1"
+    },
+    "CR-L3-CV-T-01": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "a33ce5fa420628df33af54776103b28c70c48fc04f354ce50b6a5b18ea4bfad1",
+        "field_comparison.csv": "f871ea8d7ff30e1663f8ee49ae6816719fae72a8b6b9b30434cbd205eb316506",
+        "poro_event_log.csv": "bc1db66c2c27f9b29494aa5e36af88b94a0c4da13dd8000d2d9372310f39c2cd"
+      },
+      "historical_root": "benchmarks/L3_poroelastic_consolidation/results/L3_D1_poroelastic_consolidation/L3-CV-T-01/run_1"
+    },
+    "CR-L3-MB-01": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "c539d7ba1fae1b3f722d785cff5167624e68bba92d35174281153112cba744c9",
+        "field_comparison.csv": "276952b3ac063414b4081bfad0cc2e538d9c261bfeabf06e855027fd0508fa06",
+        "poro_event_log.csv": "a4a78c9a01e15d2ea7a6733a389a7b0a0b40ea3864538429d726269c313bd353"
+      },
+      "historical_root": "benchmarks/L3_poroelastic_consolidation/results/L3_D1_poroelastic_consolidation/L3-MB-01/run_1"
+    },
+    "CR-L3-REF-01": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "196d9c7f6f68856d6c70d569b43a515768bc744532ca6b1e97d4906968194f8b",
+        "field_comparison.csv": "708a294b8b76bc499418943c172cbd22ae0d061001b59aaf7a70324f7998a9a4",
+        "poro_event_log.csv": "8597f0c6409b9c19f46fd02b622e6107fbd0e47953158c28a09c01f681941283"
+      },
+      "historical_root": "benchmarks/L3_poroelastic_consolidation/results/L3_D1_poroelastic_consolidation/L3-REF-01/run_1"
+    },
+    "CR-L3-RT-01": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "210b9f9dad8964fce1b790d12155270240374c031abb25346df24adb97474461",
+        "field_comparison.csv": "605ea75807226564459cbbc37396da9f6a9c6cb89478b3f8e9f26c42081844dd",
+        "poro_event_log.csv": "089d861d65b4eae02c1ec6df63cdfe5198c4e83d902abd4cb8fa87570d1d225d"
+      },
+      "historical_root": "benchmarks/L3_poroelastic_consolidation/results/L3_D1_poroelastic_consolidation/L3-RT-01/run_1"
+    },
+    "CR-L3-RT-02": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "099eff138985d04830e8e3f96efef9afa13e36c749114ef4d45f60d5b02b3cc6",
+        "field_comparison.csv": "a8faa9ca835adacce94ad7130dda23de788401fd22a677627e5de7edee38d2ad",
+        "poro_event_log.csv": "c6223956a90964270d74a06d03aee99278360f67a92305760b4881b48b68fd12"
+      },
+      "historical_root": "benchmarks/L3_poroelastic_consolidation/results/L3_D1_poroelastic_consolidation/L3-RT-02/run_1"
+    },
+    "CR-L3-ST-01": {
+      "comparison": "exact_files",
+      "files": {
+        "case_result.json": "c68617c18d25ee0427488387714e49a318089a15a1f9c34d4d0a6965964c8c71",
+        "field_comparison.csv": "4c6b6d575b5fdf8e1cea38178d45a82f55d658a1007bb8a0d9a56cec773fc406",
+        "poro_event_log.csv": "9a7618b9858150badab2635cabf8c50e9d1e6e3b1b2ee59ee218948dbdd69e5f"
+      },
+      "historical_root": "benchmarks/L3_poroelastic_consolidation/results/L3_D1_poroelastic_consolidation/L3-ST-01/run_1"
+    },
+    "CR-L4-CV-S-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "b6c8fc481d2ed989c6c1f1aebff13a9224c45c86437820ef8d736c27eab550f5",
+        "case_manifest.json": "f03c51374f4719e7ec53921b91efcbbe80a1f092c65fac131556287ed6ee3c54",
+        "case_result.json": "717509b0f09756e83388e2a7cbb05a638f066867ae6681d71940619ae92c7991",
+        "metric_comparison.csv": "d0e101aa9678af2ce3b869292dca4d2b62a47091609cd939686265052c0d7ea3",
+        "phase_event_log.csv": "c0792dbc37d5bf14b5399f7a3b7252f6ff96d9273ecb822f7e62ebc9583aef04"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-CV-S-01/run_1"
+    },
+    "CR-L4-CV-S-01-R2": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "ec1b1d06bb4196ee54b1a2107e7779406cf3a23de8e8c0960ae0c0f280c1ffbd",
+        "case_manifest.json": "adf7741935bf0a642cb463e25078a3218c11cf0b8e95d02eb4d31b7e9e38b5fc",
+        "case_result.json": "4044d8591995506288548bd348a184095cc9578df52fea2f8dc67b1f7b6713f6",
+        "metric_comparison.csv": "f8529da6926d73a28b21f319e4c6ba3c435e4a0cfd44362b2b0c070c4e7d804f",
+        "phase_event_log.csv": "94f6b2a1c11737af789b1017e0959d36738756aa9dd1844ec6dd56e8f7b43234"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-CV-S-01/run_2"
+    },
+    "CR-L4-CV-T-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "5f265d87e98003cbf445706b686401a6cc729460e9624d78c31c7405ee684787",
+        "case_manifest.json": "aebc80ce3ad5629d30dd4ca0402bda781e1fb1dba5631abb6a700705a8a786f8",
+        "case_result.json": "b5f11d1f430d20bc6efbeb9908bc988d86914f12b1ec63b5b6f0ca52e332f663",
+        "metric_comparison.csv": "1de66a88b0e2eed416c3f654a95aa23046d367acf01a7d2ab6fe649ad06dd55e",
+        "phase_event_log.csv": "017abc43ffb86d3fbfb5da9a2649e18445bda1ce815178b8accd38bbbcdc7932"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-CV-T-01/run_1"
+    },
+    "CR-L4-CV-T-01-R2": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "67ec2d287547328b26712a2f43efa70324a3e77fd814f09284e399e41248fced",
+        "case_manifest.json": "09e532202b38caca2fe3f48a02e3cbc1784fa39c80d94475c486b1d815edef90",
+        "case_result.json": "4756f8d9b19991259a424dfecb3313639f6ed574cdff1c922dc6c8ac16eee40c",
+        "metric_comparison.csv": "36e4eeaf733aca9d2c26ceb1d85285884ac698ef8f12fcf0e7a1a2ae394df7a4",
+        "phase_event_log.csv": "e06b14285cedce9c38dfb4735be3303b3344961176a217112e85d37b1cf76ce7"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-CV-T-01/run_2"
+    },
+    "CR-L4-FR-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "84c79bd1609b2dcb40c4a6638a2e6d0cca301a11a9207ac3ed73be0fdf4e7cda",
+        "case_manifest.json": "0727a5fb4a8248c65ecce2f56cb06198f8305b9fb62755238c03bee93df62f6f",
+        "case_result.json": "8b599fb8244b001f56a573cd332bc7a1931873bffc6074365e9876531570491a",
+        "metric_comparison.csv": "19bf6003ec0d0a06aacc98a955fff6c283527cd13a29a8a61f9f60a5019cc62c",
+        "phase_event_log.csv": "ad2804618251da868d8498396fc4bc086aadcbf0ac54f3e11f6a9e1f40ac8e21"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-FR-01/run_1"
+    },
+    "CR-L4-FR-01-R2": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "98a5a85210629f1910e86d2dbf024af6372890c2ba1801027b159638645399ba",
+        "case_manifest.json": "eb63a8942f0e710b3dec6eed6cb1c435dd9599d8ffed4656ab2ec7e609770008",
+        "case_result.json": "8aff14fe3b1f9e21003a1e212f8c385c4c797d9b9b7cab6481cce538a3f00f1f",
+        "metric_comparison.csv": "ff85b670b3fef5347c676d2a16861c96ee6b61f26341fd050789ce60e6a052cf",
+        "phase_event_log.csv": "f45199a1d8c33f4bb293d93fc05edd163a02355edceda94cbb09722112a5d1ac"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-FR-01/run_2"
+    },
+    "CR-L4-MB-N-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "edfa7c959a8950a5ef8ddeebbf9fe0724d3c57e4fafd332b4819d89616dab042",
+        "case_manifest.json": "5c2bff164a40c4e97f438702e1f3f87813b710b35c000e7b8dac00f64a2a93df",
+        "case_result.json": "cfc69751675c2e9ba689b4f1553209ccf0c3fc403455dd635d3c0745b992fbc8",
+        "metric_comparison.csv": "4725d46e03788b755c819d708724e923a471e648bcca2798777f9852764f3e48",
+        "phase_event_log.csv": "46031bdf8ad2c3e5be95c1e5dc52682f64b5bcda8ecffa4663f08ddebbdab3f4"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-MB-N-01/run_1"
+    },
+    "CR-L4-MB-N-01-R2": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "fc7d6beb921a00133cd85e6b25896b9b7d27038805fa1b0036a6bb458e81cac2",
+        "case_manifest.json": "a1efb2dcb4d9d285e41cc57e71ed13f38b1e9fbed15bc3d527289a45ee2331b3",
+        "case_result.json": "8d07faba53626c406d2b43ad7198a83892ce0effb2c5847091b3c3774b661773",
+        "metric_comparison.csv": "fd524c510e0ebef373a031a0c6865968236e5b35e27ba6961f00f032d6ea33b7",
+        "phase_event_log.csv": "b80120ffcdba4a42bd1be60d372cb2547296a68c9c3804b9a8a66458fdeb1ecf"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-MB-N-01/run_2"
+    },
+    "CR-L4-MB-W-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "5793a29824fe5b97cd08f93af5a9e7b7deb6385493aa5e01a27de07470773a21",
+        "case_manifest.json": "e964ad3ad1885aa1af31e66ea332f88f56f3768fbca7d39a96c6124f40368e08",
+        "case_result.json": "27167fe1c82e5965401bf52e5d3f3d1f75239cd7e6f1f992b097a20c2d4a9a9d",
+        "metric_comparison.csv": "a86ff4d5da01cd1b8d5147206075f686be9e3e165185a10121a3d5253da6715c",
+        "phase_event_log.csv": "6797dabf4d1823fd8ba0a477fcedfb4cef0f9b7b082c1ac06bd9540656498751"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-MB-W-01/run_1"
+    },
+    "CR-L4-MB-W-01-R2": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "fb907d5659ba87ba1e541aec759843a391000c91029bdfad9b71b87d7e812f24",
+        "case_manifest.json": "f6a23b087434c26e61dea85d18d121506908656510121435669feee90d4f0a6e",
+        "case_result.json": "013c56e97044e6b990efcbbdf3c8387083fa42dfc6c7ec67fdbf59296a3f634f",
+        "metric_comparison.csv": "55259ac704d16d1360babf91aabf19d146524ea5bd573e25483f0f9c93587f7d",
+        "phase_event_log.csv": "ca7ae0748656322a003d8b6e93d41982b0297d1a4733e0a5506591688f11e333"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-MB-W-01/run_2"
+    },
+    "CR-L4-MECH-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "f6b2dac0281e6e83897e77324621b6a467b8f7896c3bd35f3afec4778f679d9a",
+        "case_manifest.json": "f6e4af5a511aaf55f373434e8e9bc47e4ffacbc0f1e6a8d0c5e878426fb7e475",
+        "case_result.json": "3aa76337ae5ec43b9f53d45ab553776c13fe73957ecd69c80870efc30476bd84",
+        "metric_comparison.csv": "7e05407dac879d30cb53767f34f3a94f0bfdc29f86c6f0c25cf5e6353a6843fa",
+        "phase_event_log.csv": "73847865c76d6142e44a4ab3ab4d9f18d93794ab205f7a5b30e7f7f1c2e8cfa5"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-MECH-01/run_1"
+    },
+    "CR-L4-MECH-01-R2": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "ae196742b372309e586948b02edc8197c7cecc00e9cd237ed36951e9c082f1b3",
+        "case_manifest.json": "fec537de4a2daa1cc489f746fdf1aa315b1cda307f2d6324bc9e3ab16db865a9",
+        "case_result.json": "c6bca4c1697386d3f30232386ef23581c33ad28a8c78f322efeef0318034c2b5",
+        "metric_comparison.csv": "47547abbe300062be11e9102292c8b2cddea343110cc90f2428f636fcc6581a8",
+        "phase_event_log.csv": "d86ce66618b30cc7ebf4a21209c2b74e0c9dcbf2a7fe432bb515d60e10f0c282"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-MECH-01/run_2"
+    },
+    "CR-L4-REF-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "3d7bcef17c4846be3e085ba08dc6b6a6cbf9c0918cb15fde7f50fa70aadab31b",
+        "case_manifest.json": "d3059b0abc84d32fc0ff599f7e4acc1b1395fabf2bdfa97c40406afb02b4986b",
+        "case_result.json": "6f822b362e0eee476e4cff30aca92422a0faf32e07e1755e60c69d9339651303",
+        "metric_comparison.csv": "801048f04b2928c2923f08d332c7664891a9298fbe0a054b6b44195cf9c61208",
+        "phase_event_log.csv": "f3bb523509220c92205d0eaa14c6ff96c16333b0e788fde37d5e4ecc068c730d"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-REF-01/run_1"
+    },
+    "CR-L4-REF-01-R2": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "4ecb5d31b5e1319462159bde33249902dc3366268b7a22779f58f21cc10c4135",
+        "case_manifest.json": "75c8c3d06de0fd721138040d31f1604cbe8f07ac9a5cef32732cf16ced730505",
+        "case_result.json": "54aee1a0ca01360fdad26cf6775fb3e3ed053b9bf8703a78b474a07f654973e6",
+        "metric_comparison.csv": "c8399a02bf762d3a60e0920611ba31506cdcbe536f49a8bca28e539c98dda26f",
+        "phase_event_log.csv": "a27b7d96571a3603572a07959094c60b9eba6ad67e5140b2c627125548fecf87"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-REF-01/run_2"
+    },
+    "CR-L4-RT-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "99cf396591fd7097f9913c7dadf59d180a13526c4a2c45ec57c46535d96bccff",
+        "case_manifest.json": "cf23fa9d706db4b91cff919d995ab4bba6d7456259e52293305a09dae5c8baa1",
+        "case_result.json": "6d030cf243d0812e4dccc8ff4f172b47c2bef1c917dea9addc41be755dc34cff",
+        "metric_comparison.csv": "14db448760c58e5fbe0284e87c05edf5b27fdfa6f7c1f1d16a42e5a4edcca4fa",
+        "phase_event_log.csv": "93d324ec38e43cdc9c64a492d9621e5374398e4c089135840e9160cfdadbbe22"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-RT-01/run_1"
+    },
+    "CR-L4-RT-01-R2": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "fdfaf576c2e8ed496d60843863b8bc538ef5a0d023d898c5f1b5f44527e9644c",
+        "case_manifest.json": "22e23f03bd7dba574480736309e1b037f3e5dfd68c66c465d863e218734d075e",
+        "case_result.json": "740358e98286cf4a971af39c5018184df69395f928a042224a348ef3bac462d2",
+        "metric_comparison.csv": "01bca354a9e48e6bce03530cb6e8c35313910b13aa26fd486fe38a226f792e3c",
+        "phase_event_log.csv": "f6bbff61e495cc14f77fb28e92daf27ac2d9db56dcf80dca6edb48cd322012fa"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-RT-01/run_2"
+    },
+    "CR-L4-RT-02": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "77bf492981bc7a33a72b63ffc0aafdbffcf41767be65925dc00e4c5cd24720d2",
+        "case_manifest.json": "8f5b8a1237e22e47cc1991daf7010cfc4804e5a5b1b1c2882ee3001dc93b6039",
+        "case_result.json": "2c15b71dd94169ba6547e733573a406eb0379ec58c88384df127cbfccfb6ffce",
+        "metric_comparison.csv": "1a2dedbf1574c0032ed3d20bc2492b8632675217cadd222d98fc0c13f3f354c1",
+        "phase_event_log.csv": "08f1f1a2d0008ee170fec7a09b7fd5ef7ffe40519e03fbff2d61b2f17be9b28a"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-RT-02/run_1"
+    },
+    "CR-L4-RT-02-R2": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "b8a6c05122de39dbcbb8feb9cb1b3bd3951e2987d973df636e32ad687baeeaea",
+        "case_manifest.json": "d64395051b20e3cf38cb59a826d8d9672baf53d8940c658613bbb59154921c43",
+        "case_result.json": "e777d11a2fe5cbbacc9a6da4e76947d5422a7e166aa3298c5d1f46d5e027b521",
+        "metric_comparison.csv": "f40f35a9bdfd7960069a5f9ed195712114cc102eec2a8430dbb06ff59b4da93f",
+        "phase_event_log.csv": "bf28e465abdd22fbe57412709f59754df61d5b6207087b3fa6343d667a2cb4fe"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-RT-02/run_2"
+    },
+    "CR-L4-ST-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "9782c327c6f3802d23a49a27cb42df32f038917e18f5c646456d4bcbfdfe683c",
+        "case_manifest.json": "50c4c0511d9178b6ecffaf82a432eff8c043c680e437421dee02b4552a6ef06b",
+        "case_result.json": "1009a6ec16879f3b66c47780459c4c2154c2e80e0cd3c9e9db8419499d83c627",
+        "metric_comparison.csv": "7bfaca9f186e08831c1f5e6074521c1d1062b53d14b464de39fd6a83db258b64",
+        "phase_event_log.csv": "f05069318128b0051192f7cd8296fdcca3fcb75031222f69f6ea285919c0fdca"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-ST-01/run_1"
+    },
+    "CR-L4-ST-01-R2": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "a5a8da166b435719f61fbdcbad38d62e31a68e0abdd1be3292c20dc8548fc89f",
+        "case_manifest.json": "471acfbb18efd17d43f161cf780769224e259f032cce7d3497008a1186c14531",
+        "case_result.json": "8ed982ec7607beeb9b37235ec97da4784d37707dfa92565f795ddb6d2a56cd3b",
+        "metric_comparison.csv": "8bceef697fb19ffd61f604cc5922dabe278c0dda01251b3d89d880affc716f7e",
+        "phase_event_log.csv": "899f53fa3ba4664fdb7536823524b7f65a0b98d27a2ae6b03f8c07520797bc88"
+      },
+      "historical_root": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/L4-ST-01/run_2"
+    },
+    "CR-L5-D2-CV-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "2b53f0d78bd635512479e821e147bae14bac7ea0e6457763952a2ead4d95cee4",
+        "case_result.json": "174482f6981472b289b56b8ab9502a179d1f9cee02f510678af0d8e2e547ed99",
+        "lifecycle_event_log.csv": "bdcc9bffae048e50063cea7c4d65969cdc647d8b8a969687080fd41362ac0d53",
+        "metric_comparison.csv": "fbb153a568b200fc42056539a7d482ba3732985c9f7a9d34f9804ae4c2722b06"
+      },
+      "historical_root": "benchmarks/L5_independent_validation/results/L5_D2_independent_validation/L5-D2-CV-01/run_1"
+    },
+    "CR-L5-D2-FR-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "52ce4fb12a74ffb50c5645a7281dbc054939192102fdd973ab0a7bc9782d5b3e",
+        "case_result.json": "7d269eb50b9a12724b35aa56de82eb9cf68e0881aa40898bc9df9c5d62f6ca91",
+        "lifecycle_event_log.csv": "430ac9e95b16a546b6a2ece6237c32a210a7e35aa669f6ecd60d70fb344b0c57",
+        "metric_comparison.csv": "4a02603366d8a8a06e60814c93d6b3eb008567e39f4ac87b9fd149465093e2c7"
+      },
+      "historical_root": "benchmarks/L5_independent_validation/results/L5_D2_independent_validation/L5-D2-FR-01/run_1"
+    },
+    "CR-L5-D2-MB-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "e8f038252eba4c2df8089f65bbf749dc6f1dea2ec6ad30e6a2dc83f01118cbe4",
+        "case_result.json": "5f2f38fd9610b3de8b234df790923c24d9d28041d3fd4d5becaec67358a3ad97",
+        "lifecycle_event_log.csv": "a06d2e6474b3fa68ec6bcdc3d981d974dbe7928d870b289b620b149253d2e43f",
+        "metric_comparison.csv": "81548521e7ea372abb4a871691870b9f924a03e4cae0c118935a7fe4fe7b345c"
+      },
+      "historical_root": "benchmarks/L5_independent_validation/results/L5_D2_independent_validation/L5-D2-MB-01/run_1"
+    },
+    "CR-L5-D2-OP-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "3a1f9b107ce2e0247ee487537b11f02303bd5e31f508b00f277153db84d17d28",
+        "case_result.json": "fb3e66791bf80b28afb6d1db95675154fbdc4846b4a08a5ec2dfdc4e2a7490bc",
+        "lifecycle_event_log.csv": "8fbca28a3437220049273164313457d881a94431045f9eff660a24223ec98034",
+        "metric_comparison.csv": "f1588fc12cdb66f1bd342b9e3b7b31ee4f7207c693a540317c1cd1e663a82a0a"
+      },
+      "historical_root": "benchmarks/L5_independent_validation/results/L5_D2_independent_validation/L5-D2-OP-01/run_1"
+    },
+    "CR-L5-D2-REF-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "e05f8e71c4fbb8fee162a220709316737fca1fa4e71c7af480af9b3c05c012fc",
+        "case_result.json": "4951038452aff061d2dc43c2b3f0279083ce4d4f3b0ba1b8e1e864dec3847d2a",
+        "lifecycle_event_log.csv": "ddec1eafd6310f29f9f43354ab3ab530f51030ad4a91a72cc8c48715d8cfe7a9",
+        "metric_comparison.csv": "7dd22fa80c6bf25bbe1fd91529b8547328f9740f4db88b34dbf23d38cc17137b"
+      },
+      "historical_root": "benchmarks/L5_independent_validation/results/L5_D2_independent_validation/L5-D2-REF-01/run_1"
+    },
+    "CR-L5-D2-RT-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "884a14b75922d2cf60f064613b11b5cea303ae36f4fee8fa5b5f8c0d8c409c8c",
+        "case_result.json": "dbb5220a91d0291e919070f50a403362b2b42d9769793bf5ddb02db379e7dbc3",
+        "lifecycle_event_log.csv": "c8eadd4d6651535caf0e47bfbea1f395cbd710d0c68b5e4d8a25a00464bf1e46",
+        "metric_comparison.csv": "54c765954abc9278fe82937e5ac4d7c16f2570c8fd7e913b7343c49a0036f3ea"
+      },
+      "historical_root": "benchmarks/L5_independent_validation/results/L5_D2_independent_validation/L5-D2-RT-01/run_1"
+    },
+    "CR-L5-D2-RT-02": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "cf34ebda471d7d8d4ad5283914691d1b9f80d3f82bd7ac9abc64dbfdcae0bcec",
+        "case_result.json": "6e6f52d944f9c0c7f5766c081cda42308cbe56d116106292439093179b3de1e7",
+        "lifecycle_event_log.csv": "89372cf83766726ab6542c453cfed043011d9131294a66fb8694df7b6226e9f1",
+        "metric_comparison.csv": "a6700e554d2474323a5f854023d5e200832d30fcc00f53da36832827cd6e39d8"
+      },
+      "historical_root": "benchmarks/L5_independent_validation/results/L5_D2_independent_validation/L5-D2-RT-02/run_1"
+    },
+    "CR-L5-D2-XP-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_profile.csv": "2a538b2a9d1ed5b4e581e7fb6ff05f46792f0b420208cd625e1da66c80ca0542",
+        "case_result.json": "e67407a2d44da0c873cd01261015701efc70328d96fcbedb46ba9021c88a3dcd",
+        "lifecycle_event_log.csv": "1383e45f8a97f8bb4f1a9b5b6ed88d10bc4ed928a072dd5add8f8252bf084295",
+        "metric_comparison.csv": "b3ccc3a5cb72ab9504ef60af97b8f3b174c94595bd54203d0791cf2b266dda75"
+      },
+      "historical_root": "benchmarks/L5_independent_validation/results/L5_D2_independent_validation/L5-D2-XP-01/run_1"
+    },
+    "CR-L6-EH-CO-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_output.csv": "cab2a54b4bf2fa21775a392faa83583e7cd9a6fd31cbdc50d9b650d9ba993225",
+        "case_result.json": "ff28f5beee9fedd4ddedf6b1328c82471082b96a964785647cb5519a7b74d32b",
+        "host_comparison.csv": "323195bae0cb53c4c69f7e2b9c83eb15d9382f0ab3c65bf5c7296cfe8a7b4bcb",
+        "host_event_log.csv": "eae719590963c2f996d4e2868680fdfc8342bc302d174c2ddef01ef3fd6151f8"
+      },
+      "historical_root": "benchmarks/L6_external_host/results/L6_D1_external_host/L6-EH-CO-01/run_1"
+    },
+    "CR-L6-EH-OP-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_output.csv": "193ff5831970e05dd9ba031d2aa25bc8e6c90843b7bbb5ca325ff71987fdfbfd",
+        "case_result.json": "6c2932a5737b48464c03c47ff2dca48a496ea87a03eea09a8b8af0df75d8e108",
+        "host_comparison.csv": "77408142d26193157ce3f3c6a23273aadc93eb50d8487d8d6dde21962482650d",
+        "host_event_log.csv": "de8ee857ccafd0c467ee00efa9bacd10a30ec3749a28927b0bd7962c8b5d688d"
+      },
+      "historical_root": "benchmarks/L6_external_host/results/L6_D1_external_host/L6-EH-OP-01/run_1"
+    },
+    "CR-L6-EH-RT-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_output.csv": "61e966d681bd5e3e56cb18b269cd61db8406f9577ab9b002747126866248a1e9",
+        "case_result.json": "88427f73daeb6f2596b35a34d4988035056b75582f5da357960f5c8f870bb4f3",
+        "host_comparison.csv": "1b4869dec7a73d0580bcf6ae80a134453b4f3263f20668214f6aa7ea977a5b80",
+        "host_event_log.csv": "5a3877b6e432c0bb5e6407c05e374ad0fc283672cd579165830d353c8bf27dab"
+      },
+      "historical_root": "benchmarks/L6_external_host/results/L6_D1_external_host/L6-EH-RT-01/run_1"
+    },
+    "CR-L6-EH-RT-02": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_output.csv": "b4eb0474e09a03de7a1397a12daa89994daa4a0df027269f440ca348e982370d",
+        "case_result.json": "735dace9a6e761d75c36fcc7696c5c95486d656870830b0dc1f77045ccdc47b0",
+        "host_comparison.csv": "9ea702c42bb255b520ad195aeaf1bc1da8982e19f85bade8a09c59747c67a3d1",
+        "host_event_log.csv": "4574b6f66ab264f8ec660bf5e3bbd00146e19693a41c026f8be9249e9459fb20"
+      },
+      "historical_root": "benchmarks/L6_external_host/results/L6_D1_external_host/L6-EH-RT-02/run_1"
+    },
+    "CR-L6-EH-TV-01": {
+      "comparison": "exact_files",
+      "files": {
+        "accepted_output.csv": "d2c00ea772d1a0fd96baeb16be84ff1b1c239e7651803b526c1725c0aa8cf84b",
+        "case_result.json": "99ced2b2495d37d04828c808a2d7c823ee8c6715dbd39000b4de0be04a2c9cf5",
+        "host_comparison.csv": "77408142d26193157ce3f3c6a23273aadc93eb50d8487d8d6dde21962482650d",
+        "host_event_log.csv": "589c548ca307328062043b540841d430245e5ca624928f5c2dee552c23815827"
+      },
+      "historical_root": "benchmarks/L6_external_host/results/L6_D1_external_host/L6-EH-TV-01/run_1"
+    },
+    "CR-PERF-L3-M-C0": {
+      "accepted_output_fingerprint": "ca54d72ce0cbbc35bbbed982d031abb47c132205dbb25631431f4e99e880f5ed",
+      "comparison": "accepted_output_fingerprint",
+      "formal_repetitions": 10,
+      "historical_root": "benchmarks/PERF_cost_overhead/results/PERF_D1_cost_overhead/PERF-L3-M-C0/run_01",
+      "warmups": 2
+    },
+    "CR-PERF-L3-M-C4": {
+      "accepted_output_fingerprint": "ca54d72ce0cbbc35bbbed982d031abb47c132205dbb25631431f4e99e880f5ed",
+      "comparison": "accepted_output_fingerprint",
+      "formal_repetitions": 10,
+      "historical_root": "benchmarks/PERF_cost_overhead/results/PERF_D1_cost_overhead/PERF-L3-M-C4/run_01",
+      "warmups": 2
+    },
+    "CR-PERF-L4-M-C0": {
+      "accepted_output_fingerprint": "0b7cde90f1dd25980902dbafaaaebc29865090a3da44bbe29a14648b63857746",
+      "comparison": "accepted_output_fingerprint",
+      "formal_repetitions": 10,
+      "historical_root": "benchmarks/PERF_cost_overhead/results/PERF_D1_cost_overhead/PERF-L4-M-C0/run_01",
+      "warmups": 2
+    },
+    "CR-PERF-L4-M-C4": {
+      "accepted_output_fingerprint": "0b7cde90f1dd25980902dbafaaaebc29865090a3da44bbe29a14648b63857746",
+      "comparison": "accepted_output_fingerprint",
+      "formal_repetitions": 10,
+      "historical_root": "benchmarks/PERF_cost_overhead/results/PERF_D1_cost_overhead/PERF-L4-M-C4/run_01",
+      "warmups": 2
+    },
+    "CR-PERF-L6-M-C0": {
+      "accepted_output_fingerprint": "51213ce86ed8e65b6ce7274d057342c48343db98672bb8df934a7dad5b5602d9",
+      "comparison": "accepted_output_fingerprint",
+      "formal_repetitions": 10,
+      "historical_root": "benchmarks/PERF_cost_overhead/results/PERF_D1_cost_overhead/PERF-L6-M-C0/run_01",
+      "warmups": 2
+    },
+    "CR-PERF-L6-M-C4": {
+      "accepted_output_fingerprint": "51213ce86ed8e65b6ce7274d057342c48343db98672bb8df934a7dad5b5602d9",
+      "comparison": "accepted_output_fingerprint",
+      "formal_repetitions": 10,
+      "historical_root": "benchmarks/PERF_cost_overhead/results/PERF_D1_cost_overhead/PERF-L6-M-C4/run_01",
+      "warmups": 2
+    }
+  },
+  "manifest_self_hash_embedded": false,
+  "schema_version": "CR-D1-EXPECTED-1.0"
+}

@@ -1,0 +1,33 @@
+{
+  "does_not_support": [
+    "interpolated selection",
+    "an added mutation strength",
+    "a relaxed conventional gate",
+    "a full P5 pass"
+  ],
+  "eligible_adjacent_pair_exists": false,
+  "family_id": "F01",
+  "formal_status": "NOT_SUPPORTED_DISTINCTIVE_REGION_EMPTY",
+  "frozen_grid_changed": false,
+  "low_strength_fit": {
+    "M_GP_per_eta_slope": 3.9099442995508475,
+    "M_R_per_eta_slope": 0.04166825604140131,
+    "fit_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "inferred_eta_at_conventional_gate": 2.5575811914120477e-11,
+    "inferred_eta_at_operator_10x_threshold": 5.456760062559735e-11,
+    "ordering": "CONVENTIONAL_GATE_PRECEDES_OPERATOR_SEPARATION",
+    "scientific_use": "mechanism interpretation only; prohibited for case selection",
+    "status": "POSTMORTEM_DIAGNOSTIC_ONLY_NOT_SELECTION"
+  },
+  "observed_first_nonquiet_index": 5,
+  "observed_first_operator_separation_index": 5,
+  "same_discrete_crossing": true,
+  "supported_conclusion": "On the frozen binary grid, the first operator-separated level is already nonquiet; the predeclared distinctive region is empty.",
+  "threshold_changed": false
+}

@@ -1,0 +1,10 @@
+case_id,P3_fault_id,fault_name,mutated_owner,mutated_event,required_restoration,expected_lifecycle_finding,conventional_gate_expectation,coverage_boundary
+P4D-REF-01,F00,no_fault_safe_control,none,none,not_applicable,REFERENCE_GATE_PASS,"manufactured accuracy equilibrium and finite gates pass","not a lifecycle comparison"
+P4D-CONST-01,F00,no_fault_safe_control,none,none,not_applicable,CONSTITUTIVE_ORACLE_PASS,"exact material packet gates pass","material-point oracle only"
+P4D-SAFE-DIR-01,F00,no_fault_safe_control,none,none,true,PASS_REPLAY_INVARIANCE_WITHIN_TESTED_CLASS,"finite convergence equilibrium and history gates pass","one serial FE path"
+P4D-SAFE-LS-01,F08,benign_numerical_nonidentity,declared_algorithmic_state,PETSc_line_search,true,PASS_REPLAY_INVARIANCE_WITHIN_TESTED_CLASS,"accepted fields pass despite different iterations","requires native structured line-search event"
+P4D-SAFE-RT-01,F00,no_fault_safe_control,driver_transaction,failed_attempt_retry,true,PASS_REPLAY_INVARIANCE_WITHIN_TESTED_CLASS,"conventional gates pass after retry","author-driver retry not native TS rollback"
+P4D-SAFE-RS-01,F00,no_fault_safe_control,checkpoint_subsystem,checkpoint_write_restart_read,true,PASS_REPLAY_INVARIANCE_WITHIN_TESTED_CLASS,"continuous and restart fields agree","does not establish external commercial restart"
+P4D-NC-CACHE-01,F01,rejected_trial_cache_mutation,persistent_trial_cache,TrialEvaluate_in_failed_attempt,true,FAIL_PERSISTENT_STATE_RESTORATION,"finite convergence and final equilibrium are expected but not guaranteed","one seeded cache at scale 1e-6"
+P4D-NC-OUTPUT-01,F05,rejected_candidate_reaches_output,semantic_output,failed_attempt_trial_output,true,FAIL_REJECTED_CANDIDATE_REACHABILITY,"physical fields may remain unchanged","does not test every output pipeline"
+P4D-VER-01,F06,stale_or_undeclared_tangent_version,operator_version_metadata,FormTangent,false,EXPECTED_REJECT_OPERATOR_VERSION_MISMATCH_BEFORE_CORRECTION,"correction and final physical gates not applicable","finite packet with metadata mismatch only"

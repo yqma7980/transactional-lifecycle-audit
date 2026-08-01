@@ -1,0 +1,247 @@
+{
+  "design_version": "L2-D3.0",
+  "host_version_reused": "L2-HOST-D1.0",
+  "extension_version_if_implemented": "L2-HOST-D3.0",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "freeze_date": "2026-07-22",
+  "execution_authorized": false,
+  "abaqus_used": false,
+  "results_exist": false,
+  "committed_state_serializer": "src.l2_state.canonical_json(CommittedState())",
+  "scope": {
+    "authorized_design_cases": ["L2-TG-01", "L2-TG-02", "L2-TG-03"],
+    "benchmark_family": "tangent_path",
+    "research_questions": [
+      "Does an exact tangent path repeat exactly under the same frozen host and accepted target?",
+      "Can an explicitly declared one-iteration lagged tangent reach the same accepted field while taking a different iteration path?",
+      "Is an undeclared residual-tangent state-version mismatch rejected before lifecycle or physical interpretation?"
+    ],
+    "excluded": [
+      "L2-OP-*",
+      "L2-CP-*",
+      "L2-TH-*",
+      "all_other_L2_cases",
+      "L3-L6",
+      "Abaqus",
+      "production_model",
+      "performance_claims",
+      "conservation_claims",
+      "coupled_physics_claims"
+    ]
+  },
+  "host": {
+    "name": "standalone_reference_newton_host",
+    "runtime_to_reuse": "CPython 3.12.10 64-bit",
+    "operating_system_to_reuse": "Microsoft Windows NT 10.0.26200.0",
+    "execution_mode_if_later_authorized": "one_process_one_thread_standard_library_only",
+    "process_count_per_repetition": 1,
+    "thread_count_per_process": 1,
+    "python_hash_seed": 0,
+    "omp_num_threads": 1,
+    "mkl_num_threads": 1,
+    "openblas_num_threads": 1,
+    "numexpr_num_threads": 1,
+    "max_newton_evaluations": 12,
+    "absolute_residual_tolerance": "1e-12",
+    "tangent_floor": "1e-14",
+    "line_search": false,
+    "automatic_retry": false
+  },
+  "model": {
+    "material": {"E": "100/1", "sigma_y": "1/1", "H": "10/1"},
+    "element": {"area": "1/1", "length": "1/1", "u1": "0/1"},
+    "equilibrium": "R=A*sigma-F",
+    "current_exact_tangent": "K_current=A*E_alg/L",
+    "newton_correction": "delta_u=-R/K_used",
+    "return_mapping": "same_exact_bilinear_rational_model_as_L2_HOST_D1_0"
+  },
+  "declared_committed_state": {
+    "canonical_payload_utf8": "{\"accepted_version\":0,\"epsilon_p\":{\"__float_hex__\":\"0x0.0p+0\"},\"kappa\":{\"__float_hex__\":\"0x0.0p+0\"}}",
+    "sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+    "accepted_version": 0,
+    "epsilon_p": "0/1",
+    "kappa": "0/1"
+  },
+  "common_equilibrium_target": {
+    "initial_primary_state_u": "0/1",
+    "force": "11/10",
+    "residual_version": "L2-R-D1.0",
+    "exact_tangent_version": "L2-K-D1.0",
+    "declared_lagged_tangent_version": "L2-K-D3.0-LAG1",
+    "accepted_u": "21/1000",
+    "accepted_sigma": "11/10",
+    "accepted_epsilon_p": "1/100",
+    "accepted_kappa": "1/100",
+    "accepted_force": "11/10"
+  },
+  "tangent_contracts": {
+    "exact_current": {
+      "contract_id": "EXACT_CURRENT",
+      "residual_state": "current_iteration_trial_state",
+      "tangent_state": "same_current_iteration_trial_state",
+      "K_used_rule": "K_used_k=K_current_k",
+      "version_relation": "MATCHED_SAME_STATE"
+    },
+    "declared_one_iteration_lag": {
+      "contract_id": "DECLARED_ONE_ITERATION_LAG",
+      "residual_state": "current_iteration_trial_state",
+      "tangent_state": "preceding_iteration_trial_state",
+      "initial_tangent_seed": "K_current_at_accepted_base=100/1",
+      "K_used_rule": "K_used_1=100/1; for k>1, K_used_k=K_current_(k-1)",
+      "version_relation": "EXPLICITLY_DECLARED_LAG1",
+      "allowed_interpretation": "inexact_Newton_path_with_fixed_residual_and_load",
+      "forbidden_interpretation": "same_iteration_consistent_tangent"
+    },
+    "undeclared_version_mismatch": {
+      "contract_id": "UNDECLARED_VERSION_MISMATCH",
+      "residual_state": "trial:TG03:1",
+      "tangent_state": "trial:TG03:seeded_other",
+      "version_relation": "NONE",
+      "required_action": "reject_before_Newton_correction_commit_output_lifecycle_or_physical_interpretation"
+    }
+  },
+  "frozen_histories": {
+    "exact_path_A": {
+      "history_id": "EXACT_A",
+      "tangent_contract": "EXACT_CURRENT",
+      "evaluations": [
+        {"evaluation": 1, "u": "0/1", "residual": "-11/10", "K_current": "100/1", "K_used": "100/1", "correction": "11/1000", "next_u": "11/1000"},
+        {"evaluation": 2, "u": "11/1000", "residual": "-1/11", "K_current": "100/11", "K_used": "100/11", "correction": "1/100", "next_u": "21/1000"},
+        {"evaluation": 3, "u": "21/1000", "residual": "0/1", "K_current": "100/11", "K_used": "100/11", "action": "AcceptIncrement"}
+      ],
+      "evaluation_count": 3,
+      "correction_count": 2
+    },
+    "exact_path_B": {
+      "history_id": "EXACT_B",
+      "definition": "semantic replay of exact_path_A from a fresh host and the same committed state",
+      "expected_evaluation_count": 3,
+      "expected_correction_count": 2
+    },
+    "declared_lagged_path": {
+      "history_id": "DECLARED_LAG1",
+      "tangent_contract": "DECLARED_ONE_ITERATION_LAG",
+      "evaluations": [
+        {"evaluation": 1, "u": "0/1", "residual": "-11/10", "K_current": "100/1", "K_used": "100/1", "correction": "11/1000", "next_u": "11/1000"},
+        {"evaluation": 2, "u": "11/1000", "residual": "-1/11", "K_current": "100/11", "K_used": "100/1", "correction": "1/1100", "next_u": "131/11000"},
+        {"evaluation": 3, "u": "131/11000", "residual": "-10/121", "K_current": "100/11", "K_used": "100/11", "correction": "1/110", "next_u": "21/1000"},
+        {"evaluation": 4, "u": "21/1000", "residual": "0/1", "K_current": "100/11", "K_used": "100/11", "action": "AcceptIncrement"}
+      ],
+      "evaluation_count": 4,
+      "correction_count": 3
+    },
+    "tg03_matched_operator_check": {
+      "history_id": "TG03_MATCHED",
+      "events": [
+        "BeginAttempt",
+        "TrialEvaluate(u=3/100,F=1/2,state_version=trial:TG03:1)",
+        "FormResidual(version=L2-R-D1.0,state_version=trial:TG03:1)",
+        "FormTangent(version=L2-K-D1.0,state_version=trial:TG03:1)",
+        "ValidateVersionCompatibility",
+        "RejectAttempt"
+      ],
+      "expected_version_gate": "PASS_MATCHED_VERSION",
+      "accept_event_present": false
+    },
+    "tg03_seeded_mismatch_operator_check": {
+      "history_id": "TG03_MISMATCH",
+      "events": [
+        "BeginAttempt",
+        "TrialEvaluate(u=3/100,F=1/2,state_version=trial:TG03:1)",
+        "FormResidual(version=L2-R-D1.0,state_version=trial:TG03:1)",
+        "SeedTangentMetadataOnly(version=L2-K-D1.0,state_version=trial:TG03:seeded_other)",
+        "ValidateVersionCompatibility",
+        "RejectBeforeCorrection",
+        "RejectAttempt"
+      ],
+      "expected_version_gate": "REJECT_UNDECLARED_VERSION_MISMATCH",
+      "accept_event_present": false,
+      "numeric_operator_change_from_matched_control": "0/1",
+      "metadata_mismatch_is_deliberate_negative_control": true
+    }
+  },
+  "analytical_oracle": {
+    "L2-TG-01": {
+      "path_A_evaluation_count": 3,
+      "path_B_evaluation_count": 3,
+      "accepted_state_delta": "0/1",
+      "per_evaluation_residual_delta": "0/1",
+      "per_evaluation_tangent_delta": "0/1",
+      "expected_classification": "PASS_SAME_TRACK_REPEATABILITY"
+    },
+    "L2-TG-02": {
+      "exact_evaluation_count": 3,
+      "declared_lagged_evaluation_count": 4,
+      "accepted_u_delta": "0/1",
+      "accepted_sigma_delta": "0/1",
+      "accepted_epsilon_p_delta": "0/1",
+      "accepted_kappa_delta": "0/1",
+      "iteration_count_parity_required": false,
+      "expected_classification": "PASS_DECLARED_LAGGED_TANGENT_PARITY"
+    },
+    "L2-TG-03": {
+      "operator_check_u": "3/100",
+      "operator_check_force": "1/2",
+      "sigma": "13/11",
+      "epsilon_p_candidate": "1/55",
+      "kappa_candidate": "1/55",
+      "residual": "15/22",
+      "tangent": "100/11",
+      "matched_numeric_operator_delta": "0/1",
+      "mismatch_numeric_operator_delta": "0/1",
+      "expected_classification": "REJECT_VERSION_MISMATCH_BEFORE_LIFECYCLE_VERDICT"
+    }
+  },
+  "case_gates": {
+    "L2-TG-01": {
+      "expected_classification": "PASS_SAME_TRACK_REPEATABILITY",
+      "requirements": [
+        "fresh_host_per_path",
+        "same_declared_initial_state_and_load",
+        "exact_per_evaluation_residual_parity",
+        "exact_per_evaluation_tangent_parity",
+        "exact_accepted_state_fingerprint_parity",
+        "same_evaluation_count"
+      ]
+    },
+    "L2-TG-02": {
+      "expected_classification": "PASS_DECLARED_LAGGED_TANGENT_PARITY",
+      "requirements": [
+        "same_residual_definition",
+        "same_boundary_load",
+        "explicit_lag_relation_declared_before_execution",
+        "exact_accepted_primary_and_history_state_parity",
+        "iteration_count_reported_separately",
+        "iteration_count_equality_not_required"
+      ]
+    },
+    "L2-TG-03": {
+      "expected_classification": "REJECT_VERSION_MISMATCH_BEFORE_LIFECYCLE_VERDICT",
+      "requirements": [
+        "matched_control_passes_version_gate",
+        "seeded_mismatch_is_finite",
+        "undeclared_mismatch_rejected_before_correction",
+        "no_commit_or_accepted_output",
+        "no_lifecycle_or_physical_verdict_from_rejected_packet"
+      ]
+    }
+  },
+  "tolerances": {
+    "analytical_absolute": 1e-12,
+    "analytical_relative": 1e-12,
+    "exact_same_track_equality": 0.0,
+    "accepted_state_parity_absolute": 1e-12,
+    "accepted_state_parity_relative": 1e-12,
+    "finite_absolute_limit": 1e100,
+    "version_compatibility": "exact_identifier_contract"
+  },
+  "future_execution_protocol": {
+    "formal_repetition_count": 2,
+    "repetition_mode": "independent_processes_same_frozen_environment",
+    "case_execution_order_if_later_authorized": ["L2-TG-01", "L2-TG-02", "L2-TG-03"],
+    "stop_on_first_safe_case_gate_failure": true,
+    "execution_is_part_of_this_freeze": false,
+    "implementation_is_part_of_this_freeze": false
+  },
+  "claim_boundary": "This file freezes three standalone tangent-path designs only. It contains analytical expectations but no executed benchmark evidence and supports no Abaqus, production, performance, conservation or coupled-physics conclusion."
+}

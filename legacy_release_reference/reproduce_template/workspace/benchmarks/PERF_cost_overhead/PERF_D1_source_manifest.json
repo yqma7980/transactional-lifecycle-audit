@@ -1,0 +1,52 @@
+{
+    "schema_version":  "PERF-D1-SOURCE-1.0",
+    "design_version":  "PERF-D1.0",
+    "protected_inputs":  {
+                             "benchmarks/L3_poroelastic_consolidation/src/l3_fv.py":  "5d1e2400eeb524edbff59902ace9569fd3566272ccf48972acc34bd56e213bf7",
+                             "benchmarks/L3_poroelastic_consolidation/src/l3_state.py":  "06dcfc5257bf4cd429e4ce069c76ac5d05296ab7b1810196c663ff6d43c40ef0",
+                             "benchmarks/L4_two_phase_displacement/src/l4_fv.py":  "fe69f646f3efea9e81d5945e5ddb0a2f5a577c907a36330dd4dd03d1a9259b2e",
+                             "benchmarks/L4_two_phase_displacement/src/l4_state.py":  "6b3f331812a63cce5e4c5c2f15515806367405913285f5eb480ab3a1a54741dd",
+                             "benchmarks/L6_external_host/src/l6_scipy_adapter.py":  "c3cfb96ff618c019bb577b631b8b618abb76ece983f8252325ffa6aa7f599055",
+                             "benchmarks/L6_external_host/src/l6_state.py":  "c9f00d95198a8a99ec4dac073dc3cab7cbebd1360bd2833a86fb213b861d8885",
+                             "benchmarks/L6_external_host/results/L6_D1_external_host/final/l6_d1_final_summary.json":  "e3e972907a9916eff1b9c8cf1269423092f950738eb1f15c538de3cbf3bb8ddd",
+                             "01_claim_evidence_matrix_v2_0.md":  "d1c24526c55729b720e16efd57782031601919e7ccb19736db3879024d6b011b",
+                             "manuscript/manuscript_v2_0.md":  "145deaa450c982992c7c50bf3e98f0b4862054d4e8cd30d2238c48e9bd33923d"
+                         },
+    "python_executable":  {
+                              "path":  "python",
+                              "sha256":  "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a"
+                          },
+    "design_outputs":  [
+                           {
+                               "path":  "benchmarks/PERF_cost_overhead/PERF_D0_scale_pilot_20260722.md",
+                               "sha256":  "e104146d5ee42ff5f360b364eab2af5c5eadc0df471473248390096ec3d9ec32",
+                               "bytes":  1118
+                           },
+                           {
+                               "path":  "benchmarks/PERF_cost_overhead/PERF_D0_benchmark_spec.md",
+                               "sha256":  "9be2f9767a949ebcaa86db577940e62fe8da1537a82ad70a85e80135359ad61f",
+                               "bytes":  3829
+                           },
+                           {
+                               "path":  "benchmarks/PERF_cost_overhead/PERF_D0_acceptance_gates.md",
+                               "sha256":  "e8cc2fccfabf0b88c1b7b55cce4b55f4564503028eb6272499c667c69e865c4e",
+                               "bytes":  2026
+                           },
+                           {
+                               "path":  "benchmarks/PERF_cost_overhead/PERF_D1_implementation_plan.md",
+                               "sha256":  "6595b4faf769110cb1576fc207388793444453f4d00047211fb0b4c3d7f6281a",
+                               "bytes":  1268
+                           },
+                           {
+                               "path":  "benchmarks/PERF_cost_overhead/PERF_D0_case_matrix.csv",
+                               "sha256":  "d136e77c2a2aff1e722aff3c7ccba9833560af6cb00e158875e6096c9621ff79",
+                               "bytes":  7515
+                           },
+                           {
+                               "path":  "benchmarks/PERF_cost_overhead/PERF_D1_execution_freeze.json",
+                               "sha256":  "092df2bddcdfc3062b54b2c79759019c3c679a2c63b8b3539af0612aae0c2310",
+                               "bytes":  4775
+                           }
+                       ],
+    "manifest_self_hash_embedded":  false
+}

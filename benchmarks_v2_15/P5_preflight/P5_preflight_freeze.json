@@ -1,0 +1,30 @@
+{
+  "allowed_preflight_actions": [
+    "AST parsing",
+    "standard-library Fraction oracle",
+    "synthetic contract unit tests",
+    "authorization no-write tests"
+  ],
+  "design_version": "CMAME-P5.0",
+  "forbidden_actions": [
+    "DOLFINx solve",
+    "P5 case execution",
+    "90-process matrix",
+    "P6 inspection",
+    "Abaqus",
+    "COMSOL",
+    "OpenSees",
+    "manuscript or public archive edits"
+  ],
+  "formal_execution_authorized": false,
+  "formal_fe_backend_installed": false,
+  "future_formal_runner_locks": [
+    "--execute-authorized",
+    "P5_EXECUTION_AUTHORIZED=YES"
+  ],
+  "implementation_version": "CMAME-P5.1-PREFLIGHT",
+  "next_gate": "P5_FULL_FE_BACKEND_IMPLEMENTATION_SEPARATELY_AUTHORIZED",
+  "results_exist": false,
+  "schema_version": "CMAME-P5-PREFLIGHT-FREEZE-1.0",
+  "status_before_tests": "IMPLEMENTED_NOT_TESTED_NOT_EXECUTED"
+}

@@ -1,0 +1,12 @@
+﻿{
+    "checked_at":  "2026-07-31T13:08:22.4110834+08:00",
+    "abaqus_solver_worker_count":  0,
+    "abaqus_solver_workers":  [
+
+                              ],
+    "abaqus_license_manager_count":  1,
+    "abaqus_license_manager_excluded_from_worker_count":  true,
+    "formal_results_directory_exists":  false,
+    "git_command_executed_for_changes":  false,
+    "production_write_command_issued":  false
+}

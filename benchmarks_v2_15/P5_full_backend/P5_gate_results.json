@@ -1,0 +1,20 @@
+{
+  "abaqus_used": false,
+  "fe_solve_execution": false,
+  "final_status": "PASS_IMPLEMENTED_NOT_EXECUTED",
+  "formal_case_execution": false,
+  "formal_process_count": 0,
+  "gates": {
+    "G0_protected_evidence": "PASS",
+    "G1_case_matrix_and_90_process_budget": "PASS",
+    "G2_arithmetic_paths_and_numeric_archive": "PASS",
+    "G3_frozen_fault_bindings": "PASS",
+    "G4_scheduler_and_selection_contract": "PASS",
+    "G5_single_case_dual_lock_no_write": "PASS",
+    "G6_matrix_dual_lock_no_write": "PASS",
+    "G7_ast_json_unit_tests": "PASS_9_OF_9",
+    "G8_pinned_container_import_only": "PASS_DOLFINX_0_10_0_PETSC4PY_3_24_0"
+  },
+  "production_model_used": false,
+  "results_exist": false
+}

@@ -1,0 +1,383 @@
+{
+  "design_version": "L2-D4.0",
+  "host_version_reused": "L2-HOST-D1.0",
+  "extension_version_if_implemented": "L2-HOST-D4.0",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "freeze_date": "2026-07-22",
+  "execution_authorized": false,
+  "abaqus_used": false,
+  "results_exist": false,
+  "committed_state_serializer": "src.l2_state.canonical_json(CommittedState())",
+  "scope": {
+    "authorized_design_cases": [
+      "L2-OP-01",
+      "L2-OP-02"
+    ],
+    "benchmark_family": "output_provenance",
+    "research_questions": [
+      "Can a physical output request made while an unaccepted trial candidate exists emit only the authoritative accepted state?",
+      "Can a deliberately unsafe output mirror that is read back as physical history produce a finite, analytically predictable operator drift at an otherwise identical declared replay packet?"
+    ],
+    "excluded": [
+      "L2-CP-*",
+      "L2-TH-*",
+      "all_other_L2_cases",
+      "L3-L6",
+      "Abaqus",
+      "production_model",
+      "checkpoint_or_restart_claims",
+      "performance_claims",
+      "conservation_claims",
+      "coupled_physics_claims",
+      "application_physics_claims"
+    ]
+  },
+  "host": {
+    "name": "standalone_reference_newton_host",
+    "runtime_to_reuse": "CPython 3.12.10 64-bit",
+    "operating_system_to_reuse": "Microsoft Windows NT 10.0.26200.0",
+    "execution_mode_if_later_authorized": "one_process_one_thread_standard_library_only",
+    "process_count_per_repetition": 1,
+    "thread_count_per_process": 1,
+    "python_hash_seed": 0,
+    "omp_num_threads": 1,
+    "mkl_num_threads": 1,
+    "openblas_num_threads": 1,
+    "numexpr_num_threads": 1,
+    "automatic_retry": false
+  },
+  "model": {
+    "material": {
+      "E": "100/1",
+      "sigma_y": "1/1",
+      "H": "10/1"
+    },
+    "element": {
+      "area": "1/1",
+      "length": "1/1",
+      "u1": "0/1"
+    },
+    "equilibrium": "R=A*sigma-F",
+    "current_exact_tangent": "K=A*E_alg/L",
+    "return_mapping": "same_exact_bilinear_rational_model_as_L2_HOST_D1_0"
+  },
+  "declared_committed_state": {
+    "canonical_payload_utf8": "{\"accepted_version\":0,\"epsilon_p\":{\"__float_hex__\":\"0x0.0p+0\"},\"kappa\":{\"__float_hex__\":\"0x0.0p+0\"}}",
+    "sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+    "accepted_version": 0,
+    "epsilon_p": "0/1",
+    "kappa": "0/1"
+  },
+  "output_contract": {
+    "authoritative_source": "host_committed_state_only",
+    "accepted_source_version_rule": "accepted:<accepted_version>",
+    "accepted_source_candidate_id": "NA",
+    "accepted_output_fields": [
+      "accepted_version",
+      "epsilon_p",
+      "kappa",
+      "source_version",
+      "source_candidate_id",
+      "source_committed_state_hash"
+    ],
+    "accepted_output_fingerprint_serializer": "src.l2_state.canonical_hash(output_payload)",
+    "read_only_requirement": "OutputRead must not call material or element evaluation, mutate committed state, mutate a physical persistent cache, accept a candidate, or alter candidate reachability.",
+    "trial_candidate_rule": "A trial candidate may be observable in the diagnostic event ledger but may never be emitted as accepted physical output.",
+    "single_authority_rule": "No output snapshot, diagnostic mirror, terminal mirror, or output cache may become a physical-history input in a safe variant.",
+    "unsafe_negative_control_rule": "L2-OP-02 deliberately violates the single-authority rule by writing a trial-derived output mirror and reading that mirror during the next physical evaluation."
+  },
+  "frozen_packets": {
+    "trial_packet": {
+      "u": "3/100",
+      "force": "1/2",
+      "sigma": "13/11",
+      "residual": "15/22",
+      "tangent": "100/11",
+      "candidate_epsilon_p": "1/55",
+      "candidate_kappa": "1/55",
+      "candidate_status": "unaccepted"
+    },
+    "accepted_output_payload": {
+      "accepted_version": 0,
+      "epsilon_p": "0/1",
+      "kappa": "0/1",
+      "source_version": "accepted:0",
+      "source_candidate_id": "NA",
+      "source_committed_state_hash": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+      "canonical_payload_utf8": "{\"accepted_version\":0,\"epsilon_p\":{\"__float_hex__\":\"0x0.0p+0\"},\"kappa\":{\"__float_hex__\":\"0x0.0p+0\"},\"source_candidate_id\":\"NA\",\"source_committed_state_hash\":\"f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01\",\"source_version\":\"accepted:0\"}",
+      "sha256": "83434ef7b7f520d2f3f4904122ee77895e46533fec0a2f513d0328092863147b"
+    },
+    "replay_packet": {
+      "u": "1/200",
+      "force": "1/2",
+      "committed_state_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+      "residual_definition": "L2-R-D1.0",
+      "tangent_definition": "L2-K-D1.0",
+      "intended_physical_history_source": "accepted:0"
+    }
+  },
+  "frozen_histories": {
+    "L2-OP-01": {
+      "variant": "safe_transactional",
+      "trial_then_output": [
+        {
+          "ordinal": 1,
+          "event": "BeginAttempt",
+          "attempt_id": "TRIAL_PRESENT"
+        },
+        {
+          "ordinal": 2,
+          "event": "TrialEvaluate",
+          "attempt_id": "TRIAL_PRESENT",
+          "candidate_id": "trial_candidate",
+          "u": "3/100",
+          "force": "1/2"
+        },
+        {
+          "ordinal": 3,
+          "event": "FormResidual",
+          "source": "same_TrialEvaluate_result"
+        },
+        {
+          "ordinal": 4,
+          "event": "FormTangent",
+          "source": "same_TrialEvaluate_result"
+        },
+        {
+          "ordinal": 5,
+          "event": "OutputRead",
+          "requested_kind": "physical_accepted_state",
+          "required_source_version": "accepted:0",
+          "forbidden_source_candidate_id": "trial_candidate"
+        },
+        {
+          "ordinal": 6,
+          "event": "RejectAttempt",
+          "attempt_id": "TRIAL_PRESENT",
+          "candidate_id": "trial_candidate",
+          "accepted_output_reachable": false
+        }
+      ],
+      "accepted_output_only": [
+        {
+          "ordinal": 1,
+          "event": "OutputRead",
+          "requested_kind": "physical_accepted_state",
+          "required_source_version": "accepted:0",
+          "source_candidate_id": "NA"
+        }
+      ],
+      "forbidden_events": [
+        "AcceptIncrement",
+        "CheckpointWrite",
+        "CheckpointRead",
+        "RestartWrite",
+        "RestartRead",
+        "TerminalOrZeroIncrementCall"
+      ]
+    },
+    "L2-OP-02": {
+      "variant": "unsafe_output_feedback",
+      "insert_output_read": [
+        {
+          "ordinal": 1,
+          "event": "OutputRead",
+          "trigger_u": "3/100",
+          "declared_committed_state_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+          "deliberate_invalid_action": "evaluate_trial_and_overwrite_output_mirror",
+          "output_source_version": "trial_hidden",
+          "output_source_candidate_id": "output_hidden_candidate",
+          "output_accepted_flag": false
+        },
+        {
+          "ordinal": 2,
+          "event": "BeginAttempt",
+          "attempt_id": "FEEDBACK_REPLAY"
+        },
+        {
+          "ordinal": 3,
+          "event": "TrialEvaluate",
+          "attempt_id": "FEEDBACK_REPLAY",
+          "candidate_id": "replay_candidate",
+          "u": "1/200",
+          "force": "1/2",
+          "deliberate_invalid_history_source": "output_mirror"
+        },
+        {
+          "ordinal": 4,
+          "event": "FormResidual",
+          "source": "same_TrialEvaluate_result"
+        },
+        {
+          "ordinal": 5,
+          "event": "FormTangent",
+          "source": "same_TrialEvaluate_result"
+        },
+        {
+          "ordinal": 6,
+          "event": "RejectAttempt",
+          "attempt_id": "FEEDBACK_REPLAY",
+          "accepted_output_reachable": false
+        }
+      ],
+      "direct_path": [
+        {
+          "ordinal": 1,
+          "event": "BeginAttempt",
+          "attempt_id": "DIRECT_REPLAY"
+        },
+        {
+          "ordinal": 2,
+          "event": "TrialEvaluate",
+          "attempt_id": "DIRECT_REPLAY",
+          "candidate_id": "replay_candidate",
+          "u": "1/200",
+          "force": "1/2",
+          "history_source": "default_output_mirror_equal_to_committed_state"
+        },
+        {
+          "ordinal": 3,
+          "event": "FormResidual",
+          "source": "same_TrialEvaluate_result"
+        },
+        {
+          "ordinal": 4,
+          "event": "FormTangent",
+          "source": "same_TrialEvaluate_result"
+        },
+        {
+          "ordinal": 5,
+          "event": "RejectAttempt",
+          "attempt_id": "DIRECT_REPLAY",
+          "accepted_output_reachable": false
+        }
+      ],
+      "forbidden_events": [
+        "AcceptIncrement",
+        "CheckpointWrite",
+        "CheckpointRead",
+        "RestartWrite",
+        "RestartRead",
+        "CutbackAndRetry",
+        "TerminalOrZeroIncrementCall"
+      ]
+    }
+  },
+  "fingerprint_contract": {
+    "declared_replay_context": [
+      "u",
+      "force",
+      "committed_state_sha256",
+      "accepted_version",
+      "residual_definition",
+      "tangent_definition",
+      "intended_physical_history_source"
+    ],
+    "observed_replay_operator": [
+      "declared_replay_context_fingerprint",
+      "actual_history_source_version",
+      "residual",
+      "tangent",
+      "sigma",
+      "candidate_state_fingerprint",
+      "persistent_output_mirror_fingerprint"
+    ],
+    "required_relation": "L2-OP-02 declared replay fingerprints are exactly equal while observed operator fingerprints are unequal."
+  },
+  "analytical_oracle": {
+    "L2-OP-01": {
+      "trial_candidate_epsilon_p": "1/55",
+      "trial_candidate_kappa": "1/55",
+      "trial_candidate_accepted": false,
+      "trial_candidate_present_during_output_request": true,
+      "trial_then_output_snapshot_sha256": "83434ef7b7f520d2f3f4904122ee77895e46533fec0a2f513d0328092863147b",
+      "accepted_output_only_snapshot_sha256": "83434ef7b7f520d2f3f4904122ee77895e46533fec0a2f513d0328092863147b",
+      "output_snapshot_delta": "0/1",
+      "committed_state_delta": "0/1",
+      "expected_classification": "PASS_ACCEPTED_OUTPUT_PROVENANCE"
+    },
+    "L2-OP-02": {
+      "output_seed": {
+        "trigger_u": "3/100",
+        "sigma": "13/11",
+        "mirror_epsilon_p": "1/55",
+        "mirror_kappa": "1/55",
+        "output_source_version": "trial_hidden",
+        "output_accepted_flag": false
+      },
+      "feedback_replay": {
+        "u": "1/200",
+        "force": "1/2",
+        "sigma": "-289/242",
+        "residual": "-205/121",
+        "tangent": "100/11",
+        "candidate_epsilon_p": "41/2420",
+        "candidate_kappa": "47/2420"
+      },
+      "direct_replay": {
+        "u": "1/200",
+        "force": "1/2",
+        "sigma": "1/2",
+        "residual": "0/1",
+        "tangent": "100/1",
+        "candidate_epsilon_p": "0/1",
+        "candidate_kappa": "0/1"
+      },
+      "delta_definition": "insert_output_read_minus_direct_path",
+      "delta_sigma": "-205/121",
+      "delta_residual": "-205/121",
+      "delta_tangent": "-1000/11",
+      "committed_state_delta": "0/1",
+      "expected_classification": "DETECT_OUTPUT_FEEDBACK_DRIFT"
+    }
+  },
+  "case_gates": {
+    "L2-OP-01": {
+      "expected_classification": "PASS_ACCEPTED_OUTPUT_PROVENANCE",
+      "requirements": [
+        "trial_candidate_exists_when_output_is_requested",
+        "output_read_does_not_call_material_or_element_evaluation",
+        "both_output_snapshots_exactly_equal_frozen_accepted_payload",
+        "both_output_source_versions_equal_accepted_0",
+        "both_source_candidate_ids_equal_NA",
+        "trial_candidate_not_represented_in_accepted_output",
+        "committed_state_and_persistent_physical_state_unchanged",
+        "trial_candidate_unreachable_after_reject",
+        "all_values_finite"
+      ]
+    },
+    "L2-OP-02": {
+      "expected_classification": "DETECT_OUTPUT_FEEDBACK_DRIFT",
+      "requirements": [
+        "fresh_variant_per_history",
+        "same_declared_replay_context",
+        "seeded_output_read_source_is_not_accepted",
+        "committed_state_unchanged_in_both_histories",
+        "all_values_finite",
+        "observed_operator_fingerprints_unequal",
+        "absolute_residual_drift_at_least_1e-8",
+        "runtime_drift_matches_fraction_oracle_within_1e-12"
+      ]
+    }
+  },
+  "tolerances": {
+    "analytical_absolute": 1e-12,
+    "analytical_relative": 1e-12,
+    "safe_output_snapshot_equality": 0.0,
+    "safe_committed_state_equality": 0.0,
+    "unsafe_minimum_finite_drift": 1e-8,
+    "finite_absolute_limit": 1e100
+  },
+  "future_execution_protocol": {
+    "formal_repetition_count": 2,
+    "repetition_mode": "independent_processes_same_frozen_environment",
+    "case_execution_order_if_later_authorized": [
+      "L2-OP-01",
+      "L2-OP-02"
+    ],
+    "stop_on_first_safe_case_gate_failure": true,
+    "execution_is_part_of_this_freeze": false,
+    "implementation_is_part_of_this_freeze": false
+  },
+  "claim_boundary": "This file freezes two standalone output-provenance designs only. It contains analytical expectations but no executed L2-D4 evidence and supports no Abaqus, production, checkpoint, restart, performance, conservation, coupled-physics or application conclusion."
+}

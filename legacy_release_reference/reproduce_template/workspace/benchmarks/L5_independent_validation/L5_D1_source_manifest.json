@@ -1,0 +1,61 @@
+{
+  "abaqus_used": false,
+  "case_count": 8,
+  "design_outputs": [
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D0_independence_contract.md",
+      "sha256": "5587de156d551a492a70d62029b833ddb04b71942337948f01183b2c3721a91c"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D0_benchmark_spec.md",
+      "sha256": "077acff329ef552060ebbc971ce06009003a8af7a0640dbecc860d96f9ec127b"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D0_acceptance_gates.md",
+      "sha256": "77c10fd35020d8d7f139299aec1aba8a915293f10d3fb7ee1008e6b717d42769"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D0_case_matrix.csv",
+      "sha256": "23e8b4daeaff30934a43c0cb119df40f2ab48c9e8a620d86168c841c23e48546"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D1_execution_freeze.json",
+      "sha256": "0cf1332be01cdc473646214998bb0508d610ac3c29d83932d46091c9d6a849ad"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D1_implementation_plan.md",
+      "sha256": "deb4ebd37560e8f249e60665d6e418b6c8a30cbbc11c65e0d7971623b2315dc5"
+    },
+    {
+      "path": "benchmarks/L5_independent_validation/L5_D0_static_freeze_QA.md",
+      "sha256": "b17af7b63691db576809700694eb3ebc92fe062fe5f11e097d8210484949673b"
+    }
+  ],
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "design_version": "L5-D1.0",
+  "execution_authorized": false,
+  "implementation_directories_absent": true,
+  "manifest_self_hash_embedded": false,
+  "protected_inputs": [
+    {
+      "path": "01_claim_evidence_matrix_v1_1.md",
+      "sha256": "38c5d4557edab6ad69d8420c91ef7a77508607ee934f863f128666248ffb4d64"
+    },
+    {
+      "path": "manuscript/manuscript_v1_1.md",
+      "sha256": "0386da8d1caa6b63e28960fe8599f444134b0a832ded4931aacdee31a868ac1a"
+    },
+    {
+      "path": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/final/l4_execution_manifest.json",
+      "sha256": "a1944cb82e9faf0599c5129bb2ff145171aa224777c320b7175320796e746acf"
+    },
+    {
+      "path": "benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement/final/l4_final_summary.json",
+      "sha256": "59aaae6eb28a8895625a21f5cde925f20dc3b65708c6f51d5bbfb8d7ade2fce5"
+    }
+  ],
+  "protected_l4_raw_aggregate_sha256": "ff25b0622dd8ce74a6a5d8d3f712df593e732a20918c4259c7fc0afb4539e78d",
+  "results_exist": false,
+  "runner_absent": true,
+  "schema_version": "L5-D1-SOURCE-1.0"
+}

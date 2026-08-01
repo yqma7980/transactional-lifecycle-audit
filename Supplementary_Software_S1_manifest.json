@@ -1,0 +1,14 @@
+{
+  "package_name": "Supplementary Software S1",
+  "package_version": "2.15.0",
+  "manifest_self_hash_embedded": false,
+  "manifest_scope": "all package files except the manifest files and their generated checksum indexes",
+  "file_count": 616,
+  "total_bytes": 3228001,
+  "package_manifest_csv": "package_manifest_v2_15.csv",
+  "package_manifest_csv_sha256": "945e1e7658d79c2f64d5b8ce846e43feb58f41567bf3f00d9dafd045e8cb553f",
+  "sha256sums_file": "SHA256SUMS_v2_15.txt",
+  "sha256sums_sha256": "065ed9646880aab37aa201e245ccffdf0854618a4b27a463c9ef9984ed675127",
+  "license": "BSD 3-Clause",
+  "abaqus_or_production_files_included": false
+}

@@ -1,0 +1,41 @@
+{
+  "adjudication_status": "PARTIALLY_SUPPORTED_WITHIN_F05_F07_BOUNDED_RETROSPECTIVE_SCOPE",
+  "applicable_method_count": 4,
+  "applicable_method_ids": [
+    "M1_FINAL",
+    "M4_OPERATOR",
+    "M5_META",
+    "M6_TLA"
+  ],
+  "case_count": 5,
+  "comparator_coverage_complete": false,
+  "detection_increment_over_generic_replay_supported": false,
+  "evidence_status": "OBSERVED-P7A-BOUNDED-RQ2",
+  "fault_families": [
+    "F05",
+    "F07"
+  ],
+  "fresh_process_projection_count": 10,
+  "full_p6_pass": false,
+  "held_out_validation": false,
+  "localization_increment_over_generic_replay_supported": true,
+  "method_cell_count": 60,
+  "new_fe_solve_executed": false,
+  "not_applicable_methods": {
+    "M2_CKPT": "checkpoint/restart evidence absent",
+    "M3_STATE": "predeclared component fingerprint projection absent"
+  },
+  "null_control_quiet": true,
+  "oracle_mismatch_count": 0,
+  "repetition_pairs_exact": 5,
+  "research_question": "For the same frozen fault, what detection or localization information does the lifecycle ledger add beyond available baseline checks?",
+  "supported_claim": "Within the frozen retrospective F05/F07 comparison, final-state and matched operator-version checks remained quiet, generic equal-input replay detected finite operator drift, and the lifecycle ledger added distinct owner/event/source localization while the null control remained quiet.",
+  "unsupported_extensions": [
+    "complete six-method comparison",
+    "incremental detection beyond generic replay",
+    "held-out confirmation",
+    "full P6 pass",
+    "population detection rate or method superiority",
+    "Abaqus, production, parallel or multiphysics validity"
+  ]
+}

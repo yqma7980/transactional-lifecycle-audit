@@ -1,0 +1,101 @@
+{
+    "abaqus_used":  false,
+    "case_count":  10,
+    "case_ids":  [
+                     "L4-REF-01",
+                     "L4-CV-S-01",
+                     "L4-CV-T-01",
+                     "L4-MB-W-01",
+                     "L4-MB-N-01",
+                     "L4-FR-01",
+                     "L4-MECH-01",
+                     "L4-ST-01",
+                     "L4-RT-01",
+                     "L4-RT-02"
+                 ],
+    "design_outputs":  [
+                           {
+                               "path":  "benchmarks/L4_two_phase_displacement/L4_D0_benchmark_spec.md",
+                               "sha256":  "1d56fdd16b8c0e3a7f0a6c9e6cf1927a3cb345361e6d5c3da2cbaf18a7a77888",
+                               "size":  5767
+                           },
+                           {
+                               "path":  "benchmarks/L4_two_phase_displacement/L4_D0_acceptance_gates.md",
+                               "sha256":  "ef0403ae9de7cb6385388fc7ba537f5a98faa19e3a690a819ab897f814c26a33",
+                               "size":  3243
+                           },
+                           {
+                               "path":  "benchmarks/L4_two_phase_displacement/L4_D0_data_contract.md",
+                               "sha256":  "60fa7ed9462eed655aa9778685a910347fb51b777212cde7c9341720f0e671fc",
+                               "size":  1661
+                           },
+                           {
+                               "path":  "benchmarks/L4_two_phase_displacement/L4_D0_case_matrix.csv",
+                               "sha256":  "91e6babe9f12e04026d9059b190b8a22e0f3a583139c8a2e627edff19f5f245f",
+                               "size":  1143
+                           },
+                           {
+                               "path":  "benchmarks/L4_two_phase_displacement/L4_D1_execution_freeze.json",
+                               "sha256":  "dc9db42852b4fc5c7bb7e884e031b11569f8cafbccb66a79c58ca0a802fd043d",
+                               "size":  3327
+                           },
+                           {
+                               "path":  "benchmarks/L4_two_phase_displacement/L4_D1_implementation_plan.md",
+                               "sha256":  "bde74940858c0f72f8ece9cf1894a253b7b63f34c6997952edf7c765ad49b055",
+                               "size":  1849
+                           },
+                           {
+                               "path":  "benchmarks/L4_two_phase_displacement/L4_D0_static_freeze_QA.md",
+                               "sha256":  "f3d92b20262c0845d8017f20648bbaf680431f1baed82d8012e7a64437e26556",
+                               "size":  3140
+                           }
+                       ],
+    "design_status":  "FROZEN_NOT_IMPLEMENTED",
+    "design_version":  "L4-D1.0",
+    "execution_authorized":  false,
+    "manifest_self_hash_embedded":  false,
+    "manifest_version":  "L4-D1-SOURCE-1.0",
+    "protected_inputs":  [
+                             {
+                                 "path":  "03_benchmark_protocol.md",
+                                 "sha256":  "9587ee259e7cee76813add7817a3b0e3db420da9ace3a99f4b963b51170af195",
+                                 "size":  11408
+                             },
+                             {
+                                 "path":  "M1/M1_05_rollback_safe_framework.md",
+                                 "sha256":  "a02364fe4a989d276a1d562f33ecc2e8685c661b4f535941d484d2c4842f038f",
+                                 "size":  22772
+                             },
+                             {
+                                 "path":  "literature/W1_04_deep_extraction_template.csv",
+                                 "sha256":  "3c308ad893a92b68b72a4b8e5e132a4b2b1023cc7b16a540035f794fc04b01f2",
+                                 "size":  69772
+                             },
+                             {
+                                 "path":  "literature/pdf_inbox/07_Kim_Tchelepi_Juanes_2013.pdf",
+                                 "sha256":  "e589072c6070c4079609e958ddb2a579a647a72c010ef45e648f7c3beef26402",
+                                 "size":  457986
+                             },
+                             {
+                                 "path":  "benchmarks/L2_host_lifecycle/src/l2_state.py",
+                                 "sha256":  "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d",
+                                 "size":  4486
+                             },
+                             {
+                                 "path":  "benchmarks/L3_poroelastic_consolidation/src/l3_canonical.py",
+                                 "sha256":  "a3fde3c0a5e48b13ac6f2f669e384b8528efcdec0d444051805c8aeb6ac85d0d",
+                                 "size":  1487
+                             },
+                             {
+                                 "path":  "01_claim_evidence_matrix_v1_0.md",
+                                 "sha256":  "87692a394d689b631acf8ba986c54dacf0c0b6d4184ce35b142c672f8ed92579",
+                                 "size":  32450
+                             },
+                             {
+                                 "path":  "manuscript/manuscript_v1_0.md",
+                                 "sha256":  "b614d6751816c51fcdfbf84ed91bd2d68f92120010907cebc78c21b6f31d6204",
+                                 "size":  59932
+                             }
+                         ],
+    "results_exist":  false
+}

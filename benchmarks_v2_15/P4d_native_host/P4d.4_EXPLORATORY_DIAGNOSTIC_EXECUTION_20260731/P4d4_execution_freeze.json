@@ -1,0 +1,45 @@
+{
+  "schema_version": "CMAME-P4D4-EXPLORATORY-EXECUTION-FREEZE-1.0",
+  "execution_status": "AUTHORIZED_NOT_EXECUTED",
+  "evidence_status": "EXPLORATORY_NOT_FORMAL_EVIDENCE",
+  "formal_evidence": false,
+  "authorized_cases": [
+    "P4D4-DIAG-LS-01",
+    "P4D4-DIAG-LS-02",
+    "P4D4-DIAG-LS-03"
+  ],
+  "run_id": "run_1",
+  "repetitions_per_case": 1,
+  "run_all_cases_even_after_trigger": true,
+  "heldout_execution_authorized": false,
+  "case_targets": {
+    "P4D4-DIAG-LS-01": 0.2,
+    "P4D4-DIAG-LS-02": 0.24,
+    "P4D4-DIAG-LS-03": 0.28
+  },
+  "source_state": {
+    "load": 0.08,
+    "history": [0.0, 0.04, 0.08, 0.1, 0.12, 0.16, 0.2, 0.14, 0.08]
+  },
+  "operator_relation": "DECLARED_ACCEPTED_STATE_LAG",
+  "container": {
+    "image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "platform": "linux/amd64",
+    "network": "none",
+    "mpi_ranks": 1,
+    "processes_per_case": 1,
+    "threads_per_process": 1
+  },
+  "authorization_locks": {
+    "command_line": "--execute-authorized",
+    "environment": "P4D4_DIAGNOSTIC_EXECUTION_AUTHORIZED=YES"
+  },
+  "prohibitions": [
+    "no parameter tuning",
+    "no fourth diagnostic target",
+    "no early stop after first trigger",
+    "no held-out execution",
+    "no formal evidence claim",
+    "no modification of P4d.0-P4d.3"
+  ]
+}

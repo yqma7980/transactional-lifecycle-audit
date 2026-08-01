@@ -1,0 +1,96 @@
+{
+  "arithmetic_paths": {
+    "ARITH_A_REFERENCE": "stored element contributions summed in canonical ascending (cell,local_dof) order",
+    "ARITH_B_CALIBRATION": "same stored contributions split into eight contiguous blocks; each block summed in descending local order; blocks combined ascending",
+    "ARITH_C_CONFIRMATION": "same stored contributions combined by a fixed balanced binary tree",
+    "ARITH_D_P6_BENIGN": "same stored contributions combined by a fixed odd-even pair tree; frozen now and not executed in P5",
+    "invariants": [
+      "same stored element residual and tangent contributions",
+      "same declared primary and committed states",
+      "same load and operator versions",
+      "no physical solve or candidate selection changed by arithmetic projection"
+    ]
+  },
+  "calibration_cases": [
+    {
+      "case_id": "P5-NULL-EXACT-CAL-01",
+      "expected": "exact zero and exact structural identity",
+      "fresh_processes": 6,
+      "paths": [
+        "ARITH_A_REFERENCE",
+        "ARITH_A_REFERENCE"
+      ]
+    },
+    {
+      "case_id": "P5-NULL-ARITH-CAL-01",
+      "expected": "finite benign numerical nonidentity only",
+      "fresh_processes": 6,
+      "paths": [
+        "ARITH_A_REFERENCE",
+        "ARITH_B_CALIBRATION"
+      ]
+    }
+  ],
+  "calibration_margin_factor": 10.0,
+  "comparison": {
+    "calibration_envelope": "E_m=max(within-process A/B drift, all fresh-process A/A pair drifts, all fresh-process B/B pair drifts)",
+    "detection_threshold": "T_m=max(1024*eps,10*E_m)",
+    "mathematical_scope": "non-transitive acceptance relation, not an equivalence relation",
+    "normalized_detection_ratio": "Z_m=d_m/T_m",
+    "numeric_metric": "d_m(a,b)=||a-b||_inf/max(s_m,||a||_inf,||b||_inf)",
+    "structural_fields": "exact equality; never absorbed into E_m or T_m"
+  },
+  "confirmation_case": {
+    "case_id": "P5-NULL-ARITH-CONF-01",
+    "excluded_from_envelope_estimation": true,
+    "fresh_processes": 2,
+    "pass_rule": "every numeric metric d_m<=T_m and every structural relation exact",
+    "paths": [
+      "ARITH_A_REFERENCE",
+      "ARITH_C_CONFIRMATION"
+    ]
+  },
+  "design_version": "CMAME-P5.0",
+  "fresh_process_contract": {
+    "allowed_run_specific_fields_removed_before_duplicate_comparison": [
+      "run_id",
+      "wall_clock_timestamp",
+      "absolute_path"
+    ],
+    "calibration_processes_per_null_case": 6,
+    "confirmation_processes": 2,
+    "immutable_image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "mpi_ranks": 1,
+    "network": "none",
+    "new_container_or_process_per_repetition": true,
+    "pairwise_fresh_process_comparisons_per_path": 15,
+    "threads_per_process": 1
+  },
+  "hard_stops": [
+    "exact null control has any nonzero semantic or numeric drift",
+    "a structural identity differs in a benign control",
+    "any E_m exceeds 1e-11",
+    "any T_m exceeds 1e-10",
+    "the confirmation control exceeds any frozen T_m",
+    "fresh-process repetitions disagree after allowed diagnostic fields are removed"
+  ],
+  "machine_epsilon": 2.220446049250313e-16,
+  "maximum_allowed_calibration_envelope_per_metric": 1e-11,
+  "maximum_allowed_detection_threshold_per_metric": 1e-10,
+  "non_retroactivity": "Prospective P5 thresholds do not reclassify FEH, MUT, P4d or v2.13 evidence.",
+  "normalized_absolute_floor": 2.2737367544323206e-13,
+  "normalized_absolute_floor_multiplier": 1024,
+  "numeric_representation": "IEEE-754 binary64",
+  "p6_benign_binding": {
+    "excluded_from_p5_calibration_and_confirmation": true,
+    "expected_verdict": "PASS_REPLAY_INVARIANCE_WITHIN_TESTED_CLASS",
+    "fault_id": "F08",
+    "p3_case_id": "P3-DEV-08",
+    "paths": [
+      "ARITH_A_REFERENCE",
+      "ARITH_D_P6_BENIGN"
+    ]
+  },
+  "schema_version": "CMAME-P5-NULL-ENVELOPE-1.0",
+  "status": "FROZEN_STATIC_NOT_IMPLEMENTED"
+}

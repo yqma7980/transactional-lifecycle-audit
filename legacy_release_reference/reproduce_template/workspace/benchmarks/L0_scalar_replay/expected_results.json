@@ -1,0 +1,25 @@
+{
+  "benchmark_version": "L0-1.0",
+  "parameters": {
+    "alpha": 0.5,
+    "committed_c": 1.0
+  },
+  "tolerance": 0.0,
+  "expected_delta": {
+    "call_order_permutation": {
+      "safe_local": 0.0,
+      "safe_transactional": 0.0,
+      "unsafe_persistent": 0.5
+    },
+    "discarded_trial_replay": {
+      "safe_local": 0.0,
+      "safe_transactional": 0.0,
+      "unsafe_persistent": 1.0
+    },
+    "terminal_call_noninterference": {
+      "safe_local": 0.0,
+      "safe_transactional": 0.0,
+      "unsafe_persistent": 2.0
+    }
+  }
+}

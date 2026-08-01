@@ -1,0 +1,143 @@
+{
+  "G0_other_protected": {
+    "pass": true,
+    "records": [
+      {
+        "actual_sha256": "79702f5679767b5f28b98c5683ae42a9ad8a33bdd37793288835c7e5accbf932",
+        "expected_sha256": "79702f5679767b5f28b98c5683ae42a9ad8a33bdd37793288835c7e5accbf932",
+        "match": true,
+        "path": "submission_cmame_v2_14_working_20260730/P2_source_manifest.json"
+      },
+      {
+        "actual_sha256": "d50946da7030412d0cac3042ce80c7b98f4855805358e4750d2d2169b39ec4ed",
+        "expected_sha256": "d50946da7030412d0cac3042ce80c7b98f4855805358e4750d2d2169b39ec4ed",
+        "match": true,
+        "path": "submission_cmame_v2_14_working_20260730/P3_execution_freeze.json"
+      },
+      {
+        "actual_sha256": "b2a330050ce2a71ae4350882062e43d3747cb8186544910c72bf21eca147e0e1",
+        "expected_sha256": "b2a330050ce2a71ae4350882062e43d3747cb8186544910c72bf21eca147e0e1",
+        "match": true,
+        "path": "submission_cmame_v2_14_working_20260730/P3_source_manifest.json"
+      },
+      {
+        "actual_sha256": "2c3d29025e55b36c9ea3f30906417593129c1b8a3059b1361047de29fe819a6f",
+        "expected_sha256": "2c3d29025e55b36c9ea3f30906417593129c1b8a3059b1361047de29fe819a6f",
+        "match": true,
+        "path": "submission_cmame_v2_14_working_20260730/P4_source_manifest.json"
+      },
+      {
+        "actual_sha256": "ee481d151f89f303c8b944b5f36cf732d5b3d50a00f1d6a792006c87ec228acb",
+        "expected_sha256": "ee481d151f89f303c8b944b5f36cf732d5b3d50a00f1d6a792006c87ec228acb",
+        "match": true,
+        "path": "submission_cmame_v2_14_working_20260730/P4c_DOLFINx_PETSc_ZERO_CASE_READINESS_PREFLIGHT_20260730/P4c_source_manifest.json"
+      },
+      {
+        "actual_sha256": "0af67498342df665bd03508d9a45d430644769d34981b32b520b16de66f13d7b",
+        "expected_sha256": "0af67498342df665bd03508d9a45d430644769d34981b32b520b16de66f13d7b",
+        "match": true,
+        "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d_execution_freeze.json"
+      },
+      {
+        "actual_sha256": "2aeb7437e765cde58a596356c95721db0e0a7ec2b681db5d39dec3081f1424d5",
+        "expected_sha256": "2aeb7437e765cde58a596356c95721db0e0a7ec2b681db5d39dec3081f1424d5",
+        "match": true,
+        "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d_case_matrix.csv"
+      },
+      {
+        "actual_sha256": "a54b76c5624d1e033ffc6a08bc7a339b8494ee789e9478687a4915fca11d89dd",
+        "expected_sha256": "a54b76c5624d1e033ffc6a08bc7a339b8494ee789e9478687a4915fca11d89dd",
+        "match": true,
+        "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d_source_manifest.json"
+      },
+      {
+        "actual_sha256": "53e267883a2fc052f2fc55616e5bcbb004c6c990e5d12bbc65333d50e6878c36",
+        "expected_sha256": "53e267883a2fc052f2fc55616e5bcbb004c6c990e5d12bbc65333d50e6878c36",
+        "match": true,
+        "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.1_IMPLEMENTATION_PREFLIGHT_20260731/P4d1_source_manifest.json"
+      },
+      {
+        "actual_sha256": "8da8aceb51a36ba25ad5d2e2daa4b097add7e411c60566e2e560b2cd0cf82ec9",
+        "expected_sha256": "8da8aceb51a36ba25ad5d2e2daa4b097add7e411c60566e2e560b2cd0cf82ec9",
+        "match": true,
+        "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.1_IMPLEMENTATION_PREFLIGHT_20260731/P4d1_gate_results.json"
+      },
+      {
+        "actual_sha256": "e21ca0077f4f6bc8e850d25886a81bf33e19d5e5f40fc709f3743e10117b9a75",
+        "expected_sha256": "e21ca0077f4f6bc8e850d25886a81bf33e19d5e5f40fc709f3743e10117b9a75",
+        "match": true,
+        "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.1_IMPLEMENTATION_PREFLIGHT_20260731/src/p4d_observer_bridge.c"
+      },
+      {
+        "actual_sha256": "8697fcecbe0f17e665080a7c673e44b93cd9223315ed3a09c70e3d0e01189914",
+        "expected_sha256": "8697fcecbe0f17e665080a7c673e44b93cd9223315ed3a09c70e3d0e01189914",
+        "match": true,
+        "path": "P4d_top_level_files_aggregate",
+        "top_level_file_count": 14
+      }
+    ]
+  },
+  "G0_v2_13_protected": {
+    "aggregate_sha256": "d5c8dbae6275171a7bb314cb6582457ca3a6145c0ba773f1f83eff34fe65d919",
+    "expected_sha256": "d5c8dbae6275171a7bb314cb6582457ca3a6145c0ba773f1f83eff34fe65d919",
+    "file_count": 931,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "pass": true
+  },
+  "G1_pinned_environment": {
+    "image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "mpi_size": 1,
+    "normalized_duplicate_equal": true,
+    "packages": {
+      "PETSc": "3.24.0",
+      "basix": "0.10.0",
+      "dolfinx": "0.10.0",
+      "mpi4py": "4.1.1",
+      "petsc4py": "3.24.0",
+      "ufl": "2025.2.0"
+    },
+    "pass": true
+  },
+  "G2_observer_build": {
+    "expected_source_sha256": "e21ca0077f4f6bc8e850d25886a81bf33e19d5e5f40fc709f3743e10117b9a75",
+    "pass": true,
+    "preflight_and_runtime_binary_equal": true,
+    "runtime_binary_sha256": "a43222350c3fa3f7efecb535d673ab88393b61673b1004bcf3517ef4ef9047e6",
+    "source_sha256": "e21ca0077f4f6bc8e850d25886a81bf33e19d5e5f40fc709f3743e10117b9a75"
+  },
+  "G3_static_and_contract_tests": {
+    "ast_pass": true,
+    "container_test_log_sha256": "a9c01a71d73b8a0392fcfbb87c2b7edb112421705a86280c161bc46f5938668f",
+    "container_tests_pass": true,
+    "container_tests_reported": 10,
+    "formal_runner_dual_lock_pass": true,
+    "pass": true,
+    "python_ast_file_count": 25
+  },
+  "G4_bounded_nonformal_integration": {
+    "accepted_increment_count": 4,
+    "all_values_finite": true,
+    "final_load": 0.12,
+    "formal_case_run": false,
+    "fresh_process_byte_exact_equal": true,
+    "maximum_alpha": 0.07010539424648907,
+    "mechanics_gates_pass": true,
+    "pass": true,
+    "plasticity_exercised": true,
+    "preflight_id": "P4D2-INTEGRATION-01"
+  },
+  "G5_boundary": {
+    "abaqus_solver_worker_count": 0,
+    "formal_case_execution": false,
+    "formal_results_directory_exists": false,
+    "pass": true,
+    "production_git_status": "NOT_VERIFIABLE_LOCAL_DOT_GIT_VIEW_EMPTY",
+    "production_write_command_issued": false,
+    "pycache_count": 0
+  },
+  "all_gates_pass": true,
+  "final_status": "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+  "schema_version": "CMAME-P4D2-GATES-1.0",
+  "status_if_all_pass": "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED"
+}

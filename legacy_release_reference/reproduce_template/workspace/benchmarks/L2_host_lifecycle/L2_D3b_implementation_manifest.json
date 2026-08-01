@@ -1,0 +1,62 @@
+{
+  "design_version": "L2-D3.0",
+  "implementation_revision": "L2-D3.0b",
+  "host_version": "L2-HOST-D3.0b",
+  "status": "CORRECTED_IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+  "formal_results_exist": false,
+  "old_failed_run_preserved": true,
+  "no_formal_case_execution": true,
+  "no_abaqus_execution": true,
+  "targeted_unit_tests": {
+    "file": "tests/test_l2_d3b_tangent_path.py",
+    "processes": 1,
+    "threads": 1,
+    "tests_run": 11,
+    "tests_passed": 11,
+    "result": "PASS",
+    "python_dont_write_bytecode": true
+  },
+  "corrective_replay": {
+    "source": "results/L2_D3_tangent_path/L2-TG-02/run_1/case_result.json",
+    "classification": "CORRECTIVE_REPLAY_EXPECTED_PASS",
+    "pass_flag": true,
+    "accepted_field_equal": true,
+    "accepted_fingerprint_equal": false,
+    "left_committed_transition_valid": true,
+    "right_committed_transition_valid": true,
+    "cross_path_committed_fingerprint_equal": false,
+    "evaluation_counts": [3, 4],
+    "formal_evidence": false
+  },
+  "new_file_hashes": {
+    "L2_D3b_contract_erratum.md": "75a9a8ee7498702b4be12fc95d6834479ed02442f65e1d1714c63e4079d7b582",
+    "L2_D3b_correction_freeze.json": "47ae634c21d92f0fb7c29a177fb298ecb80bcae8cb9c823d7ab132048acca8c3",
+    "L2_D3b_implementation_plan.md": "bb68d0235e8408ccc3484520fa0a509811c8973e65afddd294953e69e5bba7c7",
+    "L2_D3b_source_manifest.json": "84432681024b380faf7d220912aa0469a15dd591a812d492336425a29d48d0d5",
+    "src/l2_d3b_tangent_path.py": "ae567e94318d2ad34aae190ed26b120862c8e1874af9bd2309f9faf5f84e8f24",
+    "tests/test_l2_d3b_tangent_path.py": "0219f29934396be55d852270ce261bd8d71936f9fe5812e10aa83f133743ecc8",
+    "run_l2_d3b.py": "9701d8e668be64c9a9b33ab8663eb2ba70de13aa049116524802c03d6f17c059"
+  },
+  "protected_hashes": {
+    "L2_D3_execution_freeze.json": "03ebd4eb92fca4cb9300be4192cdd73b5575f9798b9c46f90bd618f7dc85cbcc",
+    "L2_D3_tangent_path_case_matrix.csv": "665576bd3e9f66c0ed8152a4fde4cc69d1b82ab810202e666340f234ec2f5c64",
+    "src/l2_d3_tangent_path.py": "e2025fd45a1779f8ff76c0c867def4a6777007b10556e7a9fd5f59a3e1e938cd",
+    "run_l2_d3.py": "24321670c277da69862e8ed123ae00debde9039349a5372e1099cc7d9204f837",
+    "tg02_run1_case_result.json": "536dab4abc7a7b710f5f1da0a17e1addbcc0af963b994e0d6982efdfc45749ee"
+  },
+  "runtime": {
+    "python": "CPython 3.12.10 64-bit",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_hash_seed": "0",
+    "omp_num_threads": "1",
+    "mkl_num_threads": "1",
+    "openblas_num_threads": "1",
+    "numexpr_num_threads": "1"
+  },
+  "ast_parse_passed": true,
+  "runner_double_lock_passed": true,
+  "runner_case_allowlist": ["L2-TG-02"],
+  "future_output_root": "results/L2_D3b_tangent_path",
+  "manifest_self_hash_embedded": false,
+  "qa_hash_recorded_externally": true
+}

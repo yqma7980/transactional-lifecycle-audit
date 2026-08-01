@@ -1,0 +1,289 @@
+{
+  "file_count": 56,
+  "files": [
+    {
+      "bytes": 21136,
+      "path": "finalize_p4d1.py",
+      "sha256": "db9e7608accba43b0562be510e635890fc4b73e0f76c8d8e7491b7bdf44bab84"
+    },
+    {
+      "bytes": 1535,
+      "path": "oracle/p4d_fraction_oracle.py",
+      "sha256": "0c937ac8b276c913a95832c8384f0959cbcb3f8916c638498c12641e1f453904"
+    },
+    {
+      "bytes": 540,
+      "path": "oracle/p4d_manufactured.py",
+      "sha256": "e9aab2ee845d2052180cb8e1b5c828872e59c05dd3ebecd8eb498fa9e6340903"
+    },
+    {
+      "bytes": 2687,
+      "path": "P4d1_bridge_abi_contract.md",
+      "sha256": "44a5c59b176ad367dcc464f88f1ee04bc9acfca21e1aa14b69251ba8c70357c3"
+    },
+    {
+      "bytes": 742,
+      "path": "P4d1_duplicate_comparison.json",
+      "sha256": "f4d65b2cf038aec527a6d6537bf7dfbbd03f4546dad8f9b8c20088c60f8762c9"
+    },
+    {
+      "bytes": 987,
+      "path": "P4d1_final_QA.md",
+      "sha256": "680d805e1646b275499638fbc23066cc24998dfcee00a19b1728d799fcf8f41a"
+    },
+    {
+      "bytes": 10135,
+      "path": "P4d1_gate_results.json",
+      "sha256": "8da8aceb51a36ba25ad5d2e2daa4b097add7e411c60566e2e560b2cd0cf82ec9"
+    },
+    {
+      "bytes": 5266,
+      "path": "P4d1_implementation_manifest.json",
+      "sha256": "10e9a9e0839182183572672aa86a62acfc2ab6210146d5736770379defaaa00e"
+    },
+    {
+      "bytes": 1284,
+      "path": "P4d1_pre_execution_implementation_erratum.md",
+      "sha256": "e4127c742b18a528acc016fefd72948a87d959a9288799beac2eac7bf9b2dc6d"
+    },
+    {
+      "bytes": 3335,
+      "path": "P4d1_preflight_freeze.json",
+      "sha256": "1b2094f6868238453bc20d6b822bcfb0eb0c2990409619a23ff82d784a99ab13"
+    },
+    {
+      "bytes": 2957,
+      "path": "P4d1_preflight_protocol.md",
+      "sha256": "44ce91409df80859841cee1a902766072db728ccef1d7bb1597012900f06fa82"
+    },
+    {
+      "bytes": 5432,
+      "path": "P4d1_raw_evidence_manifest.json",
+      "sha256": "a6c6b2e709c150bd85fd97d5c00daa9be01a53ed33da323c8813f5f82b2cea2c"
+    },
+    {
+      "bytes": 2392,
+      "path": "P4d1_result_report.md",
+      "sha256": "8e6e297512c18c3798ed9211194420db577f118b8b41dbbd3543bfa272608552"
+    },
+    {
+      "bytes": 3016,
+      "path": "run_p4d1_preflight.py",
+      "sha256": "f8a5352f98119af381e70545351a2e933fe8964d7ab1ee3aead1362a6ecb3025"
+    },
+    {
+      "bytes": 1716,
+      "path": "run_p4d1_stage.py",
+      "sha256": "aa5d2f19dfbb3adb9a190097d4b5779fe7e2f85bb03df7a9981238feee1ade1e"
+    },
+    {
+      "bytes": 1592,
+      "path": "run_p4d1_topology_v2.py",
+      "sha256": "a7109956d83e64bc15f19b2ab6f9d72e787a832ca37faaea30094ba8748f1311"
+    },
+    {
+      "bytes": 14,
+      "path": "runtime_evidence/bridge_build/build.log",
+      "sha256": "7a160eb384cf28a9ec577bc2bc5de2456981ad9a06078523888f544fff2007cc"
+    },
+    {
+      "bytes": 240,
+      "path": "runtime_evidence/bridge_build/build_attempt_2.log",
+      "sha256": "5c8f90de70071ef97b15b2ee685ab684d74a6a5c99a6b42a40a174aebc34d412"
+    },
+    {
+      "bytes": 21672,
+      "path": "runtime_evidence/bridge_build/libp4d_observer.so",
+      "sha256": "b9f9cfeb0750bb77e87d063363d1e13407c3442237db8f95364d0362f002a291"
+    },
+    {
+      "bytes": 3780,
+      "path": "runtime_evidence/environment/host_identity.json",
+      "sha256": "b963a9ad98040d9f1b561294604beeb26f8e783dc2f394dc990bbfbee25fa2f8"
+    },
+    {
+      "bytes": 1358,
+      "path": "runtime_evidence/environment/run_1.json",
+      "sha256": "f68a53aa4c2bb10eceb12dd883c9ef8e8c14634f7bdc91bb85cb565ee0812c87"
+    },
+    {
+      "bytes": 1358,
+      "path": "runtime_evidence/environment/run_2.json",
+      "sha256": "3a9270b5c072cc19b3d2a5f96ce39208a94a30d7c43e9689eb4bce98f0311b46"
+    },
+    {
+      "bytes": 1002,
+      "path": "runtime_evidence/observer_off/result.json",
+      "sha256": "8650c66a103d4d946f0fbabd958b60ac1fac1d18de65ad7463e002bf6894eddb"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/observer_off/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/observer_off/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 8506,
+      "path": "runtime_evidence/observer_on_run_1/c_ledger.jsonl",
+      "sha256": "8a43f0eddfe4bfd5a202b1793a0af527e8c7a20c55e251311d18438f87936206"
+    },
+    {
+      "bytes": 2396,
+      "path": "runtime_evidence/observer_on_run_1/result.json",
+      "sha256": "ec3955e1e41c9510419eac526d388c381e732ab6e497bdbd51ac37868e00fb2a"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/observer_on_run_1/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/observer_on_run_1/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 8506,
+      "path": "runtime_evidence/observer_on_run_2/c_ledger.jsonl",
+      "sha256": "ce028599b8385949610c82a74838b20084e5d1a46ccad3018512750a80fceb00"
+    },
+    {
+      "bytes": 2396,
+      "path": "runtime_evidence/observer_on_run_2/result.json",
+      "sha256": "52e467c92a3938761a4ed8487cceb360b96df6b5d772c541c51765bb7de0c475"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/observer_on_run_2/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/observer_on_run_2/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4269,
+      "path": "runtime_evidence/oracle/result.json",
+      "sha256": "92dc7ae2d834e9fcc5cce24edecb2247864872906d90fc9f75e1eb66da37dc74"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/oracle/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/oracle/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2650,
+      "path": "runtime_evidence/safe_increment/result.json",
+      "sha256": "4281d110e76b618b9b564d356a5aec38bed3b37f7c5a05f247501e0e5bc037e9"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/safe_increment/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/safe_increment/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1022,
+      "path": "runtime_evidence/tests/unittest.log",
+      "sha256": "e04fd58a87c0dcef96998aa78d87d25f9507cb32c24344206040ffada9c54720"
+    },
+    {
+      "bytes": 10365,
+      "path": "runtime_evidence/topology/result.json",
+      "sha256": "e8671656efcb5a3113140427c78a6cdbca31164e66e23cf2b96d41398f40fb3f"
+    },
+    {
+      "bytes": 1112,
+      "path": "runtime_evidence/topology/stderr.log",
+      "sha256": "92a773d3d0123414bdde298479f4050d60e2ea02ac88a9b3183a5378a79008fb"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/topology/stderr_attempt_2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/topology/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "runtime_evidence/topology/stdout_attempt_2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1663,
+      "path": "src/p4d_bridge.py",
+      "sha256": "d69a34547f9ed34ea9c1d4b870477a646992539589a1ddc20aa3e1b7574c5d6d"
+    },
+    {
+      "bytes": 1543,
+      "path": "src/p4d_canonical.py",
+      "sha256": "6d330e1f4c5ff82f5176b67fa3952e984cb718515f26ab2bc45da9a6d6b205a9"
+    },
+    {
+      "bytes": 1464,
+      "path": "src/p4d_environment.py",
+      "sha256": "056f4288c0030120b39b751e4f08de8d8bf49e89a5ae3a4ea89692370052550e"
+    },
+    {
+      "bytes": 2617,
+      "path": "src/p4d_material.py",
+      "sha256": "44b600ab24b64e44d50a6caa2a57ee42c539fb3f17d66cd515c06ab5b6dd8f72"
+    },
+    {
+      "bytes": 9586,
+      "path": "src/p4d_observer_bridge.c",
+      "sha256": "e21ca0077f4f6bc8e850d25886a81bf33e19d5e5f40fc709f3743e10117b9a75"
+    },
+    {
+      "bytes": 4045,
+      "path": "src/p4d_oracle_stage.py",
+      "sha256": "51f132f54114a9960ecf20d99f0ee07415271ed9125a27427b4ca94522ad9643"
+    },
+    {
+      "bytes": 3010,
+      "path": "src/p4d_reference_smoke.py",
+      "sha256": "5a63e98a3e7d646084ba39a7959268e8c35c3c337bb66787eb772206866ff7d5"
+    },
+    {
+      "bytes": 8668,
+      "path": "src/p4d_safe_smoke.py",
+      "sha256": "81b5a55ae158016c62c5b8ff8c1380e8bb1b5b1b65d711f24890b9c398b39b1d"
+    },
+    {
+      "bytes": 4272,
+      "path": "src/p4d_topology_state.py",
+      "sha256": "bf3652746929dc0f62759196b3fcb849d08bac2ae22bee523cb8874a6ab4f7be"
+    },
+    {
+      "bytes": 5471,
+      "path": "src/p4d_zero_case.py",
+      "sha256": "ed1856602bd62a0e9ca6aefe8b0e8a98a6a45f7200dbe0f83a341fbd64b8f002"
+    },
+    {
+      "bytes": 4582,
+      "path": "tests/test_p4d1_preflight.py",
+      "sha256": "d434b50a8431234933f87c1b5354d92f923c3372a900e08d592dddf5baf58c62"
+    }
+  ],
+  "manifest_self_hash_embedded": false,
+  "qa_pass": true,
+  "schema_version": "CMAME-P4D1-SOURCE-MANIFEST-1.0",
+  "terminal_status": "PASS_P4D1_PREFLIGHT_READY_FOR_FULL_IMPLEMENTATION"
+}

@@ -1,0 +1,19 @@
+source_group,method_id,method_name,available_evidence,sufficiency_status,future_evidence_needed,post_result_projection_change_allowed
+F00_NULL,M1_FINAL,accepted_final_state_regression,accepted output and frozen metric packets,SUFFICIENT_FOR_BOUNDED_PROJECTION,none for bounded secondary analysis,false
+F00_NULL,M2_CKPT,checkpoint_restart_accepted_state_comparison,zero checkpoint/restart rows; no checkpoint payload,NOT_APPLICABLE_CHECKPOINT_RESTART_ABSENT,prospectively frozen checkpoint/restart run,false
+F00_NULL,M3_STATE,declared_state_component_fingerprint,aggregate hashes exist; P3 per-component projection does not,NOT_APPLICABLE_SCHEMA_INSUFFICIENT,predeclared component hashes without event/label metadata,false
+F00_NULL,M4_OPERATOR,residual_tangent_version_consistency,residual/tangent versions and relation,SUFFICIENT_FOR_BOUNDED_PROJECTION,none for bounded secondary analysis,false
+F00_NULL,M5_META,equal_input_metamorphic_replay,paired replay/operator packets,SUFFICIENT_FOR_BOUNDED_PROJECTION,none for bounded secondary analysis,false
+F00_NULL,M6_TLA,full_lifecycle_event_ledger_audit,structured owner/event/restoration/reachability ledger,SUFFICIENT_FOR_BOUNDED_PROJECTION,none for bounded secondary analysis,false
+F05,M1_FINAL,accepted_final_state_regression,accepted output and frozen metric packets,SUFFICIENT_FOR_BOUNDED_PROJECTION,none for bounded secondary analysis,false
+F05,M2_CKPT,checkpoint_restart_accepted_state_comparison,zero checkpoint/restart rows; no checkpoint payload,NOT_APPLICABLE_CHECKPOINT_RESTART_ABSENT,prospectively frozen checkpoint/restart run,false
+F05,M3_STATE,declared_state_component_fingerprint,aggregate hashes exist; P3 per-component projection does not,NOT_APPLICABLE_SCHEMA_INSUFFICIENT,predeclared component hashes without event/label metadata,false
+F05,M4_OPERATOR,residual_tangent_version_consistency,residual/tangent versions and relation,SUFFICIENT_FOR_BOUNDED_PROJECTION,none for bounded secondary analysis,false
+F05,M5_META,equal_input_metamorphic_replay,paired replay/operator packets,SUFFICIENT_FOR_BOUNDED_PROJECTION,none for bounded secondary analysis,false
+F05,M6_TLA,full_lifecycle_event_ledger_audit,structured owner/event/restoration/reachability ledger,SUFFICIENT_FOR_BOUNDED_PROJECTION,none for bounded secondary analysis,false
+F07,M1_FINAL,accepted_final_state_regression,accepted output and frozen metric packets,SUFFICIENT_FOR_BOUNDED_PROJECTION,none for bounded secondary analysis,false
+F07,M2_CKPT,checkpoint_restart_accepted_state_comparison,zero checkpoint/restart rows; no checkpoint payload,NOT_APPLICABLE_CHECKPOINT_RESTART_ABSENT,prospectively frozen checkpoint/restart run,false
+F07,M3_STATE,declared_state_component_fingerprint,aggregate hashes exist; P3 per-component projection does not,NOT_APPLICABLE_SCHEMA_INSUFFICIENT,predeclared component hashes without event/label metadata,false
+F07,M4_OPERATOR,residual_tangent_version_consistency,residual/tangent versions and relation,SUFFICIENT_FOR_BOUNDED_PROJECTION,none for bounded secondary analysis,false
+F07,M5_META,equal_input_metamorphic_replay,paired replay/operator packets,SUFFICIENT_FOR_BOUNDED_PROJECTION,none for bounded secondary analysis,false
+F07,M6_TLA,full_lifecycle_event_ledger_audit,structured owner/event/restoration/reachability ledger,SUFFICIENT_FOR_BOUNDED_PROJECTION,none for bounded secondary analysis,false

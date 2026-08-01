@@ -1,0 +1,14 @@
+{
+  "G0_protected_evidence": "PASS",
+  "G1_freeze_and_host_binding": "PASS_STATIC_BINDING_INSPECTION",
+  "G2_null_envelope_implementation": "PASS_UNIT",
+  "G3_scaled_mutation_bindings": "PASS_SYNTHETIC_UNIT",
+  "G4_selection_algorithm": "PASS_UNIT",
+  "G5_fraction_oracle": "PASS_UNIT",
+  "G6_runner_authorization_and_no_write": "PASS_STATIC_AND_UNIT",
+  "final_status": "PASS_P5_IMPLEMENTATION_PREFLIGHT_READY_FOR_FULL_IMPLEMENTATION",
+  "formal_case_execution": false,
+  "formal_fe_backend_installed": false,
+  "next_gate": "P5_FULL_FE_BACKEND_IMPLEMENTATION_SEPARATELY_AUTHORIZED",
+  "observed_P5_evidence": false
+}

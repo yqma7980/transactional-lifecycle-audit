@@ -1,0 +1,17 @@
+{
+  "maximum_python_peak_allocated_bytes": 406057,
+  "performance_is_reporting_only": true,
+  "run_1": {
+    "case_outcomes": 25,
+    "evaluation_ledger_rows": 202,
+    "python_peak_allocated_bytes": 406057,
+    "wall_time_seconds": 0.05062019999604672
+  },
+  "run_2": {
+    "case_outcomes": 25,
+    "evaluation_ledger_rows": 202,
+    "python_peak_allocated_bytes": 405998,
+    "wall_time_seconds": 0.04849700001068413
+  },
+  "total_wall_time_seconds": 0.09911720000673085
+}

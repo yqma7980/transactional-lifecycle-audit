@@ -1,0 +1,64 @@
+{
+  "case_contract_count": 5,
+  "final_status": "PASS_P4D5_IMPLEMENTATION_PREFLIGHT_IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+  "formal_execution_authorized": false,
+  "formal_results_exist": false,
+  "future_formal_process_count": 10,
+  "gates": [
+    {
+      "gate": "G0_PROTECTED_EVIDENCE",
+      "status": "PASS",
+      "verified_unique_path_count": 31
+    },
+    {
+      "gate": "G1_STATIC_SYNTAX_AND_IMPORT_BOUNDARY",
+      "python_file_count": 7,
+      "status": "PASS"
+    },
+    {
+      "case_locks": [
+        "--execute-authorized",
+        "P4D5_EXECUTION_AUTHORIZED=YES"
+      ],
+      "gate": "G2_DOUBLE_AUTHORIZATION_BEFORE_WRITE",
+      "matrix_locks": [
+        "--execute-authorized",
+        "P4D5_MATRIX_EXECUTION_AUTHORIZED=YES"
+      ],
+      "status": "PASS"
+    },
+    {
+      "gate": "G3_BRANCH_LOCAL_SCHEDULER",
+      "retry_dependents": [
+        "P4D-NC-CACHE-01",
+        "P4D-NC-OUTPUT-01"
+      ],
+      "status": "PASS",
+      "wave_1": [
+        "P4D-SAFE-RT-01",
+        "P4D-SAFE-RS-01",
+        "P4D-VER-01"
+      ]
+    },
+    {
+      "gate": "G4_NON_FE_UNIT_TESTS",
+      "status": "PASS",
+      "test_count": 15
+    },
+    {
+      "docker_container_started": false,
+      "formal_case_count": 0,
+      "gate": "G5_NO_FORMAL_EXECUTION",
+      "status": "PASS"
+    },
+    {
+      "full_p4d_matrix_pass_allowed": false,
+      "gate": "G6_CLAIM_BOUNDARY",
+      "status": "PASS",
+      "strongest_current_claim": "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED"
+    }
+  ],
+  "implementation_status": "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+  "observed_p4d_evidence_created": false,
+  "schema_version": "CMAME-P4D5-PREFLIGHT-GATE-RESULTS-1.0"
+}

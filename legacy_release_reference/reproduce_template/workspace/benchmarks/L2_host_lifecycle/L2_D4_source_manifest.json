@@ -1,0 +1,184 @@
+{
+  "manifest_version": "L2-D4-SOURCE-1.0",
+  "design_version": "L2-D4.0",
+  "created_date": "2026-07-22",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "execution_authorized": false,
+  "abaqus_used": false,
+  "results_exist": false,
+  "hash_algorithm": "SHA-256",
+  "path_base": "${NCS_WORKSPACE}",
+  "static_oracle_qa": {
+    "method": "independent_PowerShell_BigInteger_reduced_fraction_calculation",
+    "workspace_implementation_imported": false,
+    "benchmark_executed": false,
+    "output_seed": {
+      "sigma_trial": "3/1",
+      "sigma": "13/11",
+      "delta_gamma": "1/55",
+      "mirror_epsilon_p": "1/55",
+      "mirror_kappa": "1/55"
+    },
+    "feedback_replay": {
+      "sigma": "-289/242",
+      "residual": "-205/121",
+      "tangent": "100/11",
+      "candidate_epsilon_p": "41/2420",
+      "candidate_kappa": "47/2420"
+    },
+    "direct_replay": {
+      "sigma": "1/2",
+      "residual": "0/1",
+      "tangent": "100/1"
+    },
+    "deltas_insert_minus_direct": {
+      "sigma": "-205/121",
+      "residual": "-205/121",
+      "tangent": "-1000/11"
+    },
+    "qa_pass": true
+  },
+  "fingerprint_compatibility_qa": {
+    "committed_state_serializer": "src.l2_state.canonical_json(CommittedState())",
+    "committed_payload_utf8": "{\"accepted_version\":0,\"epsilon_p\":{\"__float_hex__\":\"0x0.0p+0\"},\"kappa\":{\"__float_hex__\":\"0x0.0p+0\"}}",
+    "committed_expected_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+    "committed_declared_sha256": "f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01",
+    "accepted_output_payload_utf8": "{\"accepted_version\":0,\"epsilon_p\":{\"__float_hex__\":\"0x0.0p+0\"},\"kappa\":{\"__float_hex__\":\"0x0.0p+0\"},\"source_candidate_id\":\"NA\",\"source_committed_state_hash\":\"f5045dd74424efe25edaaebfa84802eeba5e8ca376816835f58145764a2efc01\",\"source_version\":\"accepted:0\"}",
+    "accepted_output_expected_sha256": "83434ef7b7f520d2f3f4904122ee77895e46533fec0a2f513d0328092863147b",
+    "accepted_output_recomputed_sha256": "83434ef7b7f520d2f3f4904122ee77895e46533fec0a2f513d0328092863147b",
+    "match": true
+  },
+  "design_inputs": [
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_benchmark_spec.md",
+      "sha256": "c73fc7ee3673e317cde0a5cc1e804da0235186bce5f32b1a595a35a5f0f65d63",
+      "role": "family_specification"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_case_matrix.csv",
+      "sha256": "be8e8e76f48dbc1cc2e55534a5cdb08745d1fa010a7eb291b2f7379eaf31fe69",
+      "role": "case_identifier_and_expected_classification_authority"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_acceptance_gates.md",
+      "sha256": "ff8e8a4484abac4cd9528a0a9c6f05ccf69be8432dd5d23a6b8ba21160ae163d",
+      "role": "acceptance_gate_authority"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_data_contract.md",
+      "sha256": "08dcb7b15a26baa692ecc036ea602ffbe99b77e7729aeb6acb49f3f9f4b92735",
+      "role": "future_result_data_contract"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D0_execution_boundary.md",
+      "sha256": "962ce944544c5825b1117c296d3606fcddf5b137b4779bc3cfe3f327d98d11a1",
+      "role": "execution_boundary"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D1_execution_freeze.json",
+      "sha256": "4096753c610be493108baa612d5965d35a2ac6c6c97cae18db20e6fd84964a88",
+      "role": "host_model_runtime_and_tolerance_baseline"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_state.py",
+      "sha256": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d",
+      "role": "D1_state_serializer_and_checkpoint_packets_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_model.py",
+      "sha256": "1a9daac2a8b75534dd55193bce3fead0004197765d3024e13d617e9d833ea8ff",
+      "role": "D1_constitutive_and_element_model_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_variants.py",
+      "sha256": "74fd1679408c9fa39825deaf8fc140263a5c543174f57ee51a3757860b22a96c",
+      "role": "D1_transactional_variant_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_host.py",
+      "sha256": "a2a7044592da3be507279552f0dc19a75c2de00b7cdaee0e3bea4a5e3868fd2b",
+      "role": "D1_Newton_host_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/src/l2_cases.py",
+      "sha256": "f12d0944bb8f96c100715fce6b640345c1826c9db8674fb79cc032ea7cba6301",
+      "role": "D1_case_and_result_contract_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/oracle/l2_fraction_oracle.py",
+      "sha256": "ef57905f0d90b1bc7a0da81de51e529cb2e1d64a8290f64d91ee27ffeb480eff",
+      "role": "D1_exact_rational_baseline_read_only"
+    },
+    {
+      "path": "benchmarks/L1_material_point_element/L1_state_contract.md",
+      "sha256": "426bd896e7ccd89779549aee25465f7ad1fe0feead3691245b2bdd66fa5e4e1d",
+      "role": "prior_state_ownership_and_output_contract_read_only"
+    },
+    {
+      "path": "benchmarks/L1_material_point_element/L1_E1_execution_freeze.json",
+      "sha256": "8c08638d5a482d73a79debe32a88a6b44ebb25dcf1e566ce52e558ff8ee3fa88",
+      "role": "prior_output_seed_packet_precedent_read_only"
+    },
+    {
+      "path": "benchmarks/L1_material_point_element/src/l1_variants.py",
+      "sha256": "e31291c9dca6d8093881a07b317732b7f7fe9af574dec618c887507afd307f8b",
+      "role": "prior_isolated_unsafe_output_feedback_pattern_read_only"
+    },
+    {
+      "path": "benchmarks/L1_material_point_element/src/l1_e1_cases.py",
+      "sha256": "e4eeae71f69aa2f157fa5ab69046872dec5f9b633c03e06636d004d07ce9b590",
+      "role": "prior_output_provenance_case_pattern_read_only"
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/results/L2_D3_tangent_path/final/l2_d3_final_summary.json",
+      "sha256": "1d8be8a62fa6c596fd91163baa892d9a302ed2eaf7656d332d3bb8b2c707ce39",
+      "role": "prior_OBSERVED_L2_D3_boundary_read_only"
+    }
+  ],
+  "protected_precheck_references": [
+    {
+      "path": "STATUS.md",
+      "sha256": "b27b423170cd04201bb5ea13c26c36f78f4eee7d2d4147511f816aeab4d11bc6"
+    },
+    {
+      "path": "07_global_roadmap.md",
+      "sha256": "ad20312b6f9fd2c2a5d72b589b7de899f53cd8450c0c60f2044dc6c46cb4b704"
+    },
+    {
+      "path": "08_execution_backlog.md",
+      "sha256": "1387c940e11637170d15573aeba5da2e0e4e58e61b34f992fe7a0acb4317357c"
+    },
+    {
+      "path": "01_claim_evidence_matrix_v0_6.md",
+      "sha256": "1cb4d6d27de6678ae6336f8402b05305273702b5a1f05c7452de2bbcb0569ab9"
+    },
+    {
+      "path": "manuscript/manuscript_v0_6.md",
+      "sha256": "47779ce51c2ca14a05e55abe3b558ae45162b210aa053f12add52804e6cafd5d"
+    },
+    {
+      "path": "figures",
+      "file_count": 24,
+      "aggregate_sha256": "f9ae3d860b85b49f03615ec4fc0f68348fac7cab1f195fdee4aae22448319179"
+    }
+  ],
+  "design_outputs": [
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D4_execution_freeze.json",
+      "sha256": "1beb45004f7193006275a00f06c05d000dc1056c135e45a580ee90d72910b63b",
+      "bytes": 13322
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D4_output_provenance_case_matrix.csv",
+      "sha256": "04e0213e7fa343a625284f905083e54655f24debea802e377769bf6c07e77d7a",
+      "bytes": 1043
+    },
+    {
+      "path": "benchmarks/L2_host_lifecycle/L2_D4_implementation_plan.md",
+      "sha256": "fb85c93cbaf8ae7750e7cffbc6be52bf6e9213f057763b8bb9fb2111e0789943",
+      "bytes": 10053
+    }
+  ],
+  "self_hash_policy": "The manifest SHA-256 is computed and reported externally after creation because a file cannot contain its own stable hash.",
+  "execution_boundary": "No source, test, oracle, runner, result or execution directory was created for L2-D4; no benchmark, test suite or Abaqus process was run."
+}

@@ -1,0 +1,27 @@
+{
+  "abaqus_used": false,
+  "design_version": "CMAME-P5.0",
+  "execution_authorized": false,
+  "formal_case_count": 7,
+  "formal_process_budget": 90,
+  "formal_results_exist": false,
+  "host_version": "P4D-DOLFINX-PETSC-HOST-1.0+P5-AUDIT-ADAPTER-1.0",
+  "implementation_status": "IMPLEMENTED_NOT_EXECUTED",
+  "implementation_version": "CMAME-P5.2-FE-BACKEND",
+  "matrix_runner_locks": [
+    "--execute-matrix-authorized",
+    "P5_MATRIX_EXECUTION_AUTHORIZED=YES"
+  ],
+  "next_gate": "P5_FORMAL_MATRIX_SEPARATELY_AUTHORIZED",
+  "production_model_used": false,
+  "results_exist": false,
+  "schema_version": "CMAME-P5-FULL-BACKEND-FREEZE-1.0",
+  "single_case_runner_locks": [
+    "--execute-authorized",
+    "P5_EXECUTION_AUTHORIZED=YES"
+  ],
+  "thread_contract": {
+    "mpi_ranks": 1,
+    "threads": 1
+  }
+}

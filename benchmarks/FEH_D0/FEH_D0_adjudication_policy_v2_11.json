@@ -1,0 +1,23 @@
+{
+  "schema_version": "FEH-D0-ADJUDICATION-v2.11-1.0",
+  "historical_raw_results_immutable": true,
+  "adjudication_not_reexecution": true,
+  "full_tla_invalid_verdict": "INVALID_A4_PERSISTENT_STATE_INCOMPATIBLE",
+  "operator_replay_drift_threshold": 1e-08,
+  "cases": {
+    "FEH-NC-01": {
+      "legacy_classification": "DETECT_TRIAL_CACHE_DRIFT",
+      "expected_full_tla_verdict": "INVALID_A4_PERSISTENT_STATE_INCOMPATIBLE",
+      "expected_operator_sensitivity": "OPERATOR_REPLAY_DRIFT_DETECTED",
+      "full_tla_pass_flag": false
+    },
+    "FEH-NC-02": {
+      "legacy_classification": "DETECT_OUTPUT_FEEDBACK_DRIFT",
+      "expected_full_tla_verdict": "INVALID_A4_PERSISTENT_STATE_INCOMPATIBLE",
+      "expected_operator_sensitivity": "OPERATOR_REPLAY_DRIFT_DETECTED",
+      "full_tla_pass_flag": false
+    }
+  },
+  "claim_boundary": "Seeded controls that fail A4 support operator-sensitivity evidence only; they are not admissible full-TLA replay comparisons."
+}
+

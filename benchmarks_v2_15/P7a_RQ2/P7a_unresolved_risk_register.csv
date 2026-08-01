@@ -1,0 +1,11 @@
+risk_id,issue,status,severity,affected_claims,evidence,mitigation,blocks_bounded_P8
+R01,Full P5 matrix is not supported,OPEN_BOUNDARY,HIGH,"V14-C08,V14-C20",F01/F02 distinctive region empty,Report F05/F07 only and preserve F01/F02 non-support,False
+R02,P6R is retrospective and not held out,OPEN_BOUNDARY,HIGH,"V14-C07,V14-C21,V14-C22",P6R scope and adjudication,Use retrospective wording and make no confirmation claim,False
+R03,Checkpoint/restart comparator is absent,NOT_APPLICABLE,HIGH,"V14-C07,V14-C23",M2_CKPT not applicable in all five cases,"Display as an evidence gap, not a failed method",False
+R04,Component-level state fingerprint schema is absent,NOT_APPLICABLE,HIGH,"V14-C07,V14-C23",M3_STATE not applicable in all five cases,No post hoc aggregate-hash fallback,False
+R05,M5 and M6 both detect F05/F07,OBSERVED_BOUNDARY,HIGH,V14-C07,P6R method cells,"Claim localization increment only, not detection increment",False
+R06,Native rejected line-search history was not observed,NOT_SUPPORTED,MEDIUM_HIGH,V14-C10,P4d.6 native line-search adjudication,Separate host-native and author-driver evidence,False
+R07,Serial single-thread evidence only,OPEN,MEDIUM,"V14-C10,V14-C21",P4d/P5/P6R execution environments,Keep parallel/thread safety outside claims,False
+R08,"No Abaqus, production UEL or multiphysics application validation",NOT_SUPPORTED,HIGH,V14-C16,No corresponding formal execution,Centralize in Limitations,False
+R09,Public archives do not yet contain v2.14 evidence,OPEN,MEDIUM,V14-C14,Public synchronization deferred,Update only after P8 science freeze,False
+R10,"No population sensitivity, specificity or miss-rate estimate",NOT_SUPPORTED,HIGH,V14-C08,Selected bounded fault families only,Report tested operators and counts only,False

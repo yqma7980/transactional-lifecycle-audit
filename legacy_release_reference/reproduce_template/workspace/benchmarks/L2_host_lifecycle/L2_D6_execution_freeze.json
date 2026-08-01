@@ -1,0 +1,99 @@
+{
+  "abaqus_used": false,
+  "authorized_design_cases": [
+    "L2-TH-01"
+  ],
+  "claim_boundary": "A NOT_SUPPORTED outcome closes only the frozen support-envelope case. It is not a thread-safety, scheduling-invariance or performance validation.",
+  "classification_contract": {
+    "overall_gate": "PASS_SCHEDULING_ENVELOPE_OR_NOT_SUPPORTED",
+    "supported_outcome_if_future_host_changes": "STOP_REFREEZE_REQUIRED_BEFORE_PARITY",
+    "unsupported_outcome": "NOT_SUPPORTED_NO_PARALLEL_EXECUTION_PATH",
+    "unsupported_pass_requirements": [
+      "source_hashes_match_freeze",
+      "no_declared_parallel_backend",
+      "no_synthetic_concurrency_executed",
+      "serial_reference_matches_fraction_oracle_within_1e-12",
+      "serial_reference_fingerprints_match_exactly",
+      "all_values_finite",
+      "result_explicitly_denies_thread_safety_and_performance_claims"
+    ]
+  },
+  "d0_contract": {
+    "conditional_on_formal_host_support": true,
+    "expected_classification": "PASS_SCHEDULING_ENVELOPE_OR_NOT_SUPPORTED",
+    "primary_gate": "scheduling_envelope"
+  },
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "design_version": "L2-D6.0",
+  "execution_authorized": false,
+  "extension_version_if_implemented": "L2-HOST-D6.0",
+  "forbidden": [
+    "fabricated_parallel_callbacks",
+    "setting_thread_count_greater_than_one_without_a_parallel_backend",
+    "ThreadPoolExecutor_added_only_to_make_the_case_pass",
+    "thread_safety_claim",
+    "performance_claim",
+    "cross_platform_claim",
+    "Abaqus",
+    "production_model",
+    "L3-L6"
+  ],
+  "formal_case_protocol": {
+    "reference_accepted_fields": {
+      "displacement": "21/1000",
+      "epsilon_p": "1/100",
+      "force": "11/10",
+      "kappa": "1/100",
+      "reaction": "11/10",
+      "stress": "11/10"
+    },
+    "reference_runtime_committed_hash": "9208bebb27104d3b2f2ea9c53cb519159c7ec0fee98c7978091fba4c6fe3a6b9",
+    "reference_runtime_physical_hash": "0b3351602c8ca334f0155fdedc7800032e41f4781a1ea969a8b0159c9675eef4",
+    "step_1": "verify frozen source hashes and absence of a declared parallel execution backend",
+    "step_2": "execute one serial D1 safe-transactional reference increment at force 11/10 as a host-health control",
+    "step_3": "record that no alternate supported scheduling path exists and do not launch synthetic concurrent callbacks",
+    "step_4": "classify NOT_SUPPORTED_NO_PARALLEL_EXECUTION_PATH under the D0 OR_NOT_SUPPORTED gate"
+  },
+  "freeze_date": "2026-07-22",
+  "future_execution_protocol": {
+    "environment_threads": {
+      "MKL_NUM_THREADS": 1,
+      "NUMEXPR_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1,
+      "OPENBLAS_NUM_THREADS": 1
+    },
+    "formal_repetition_count": 2,
+    "processes_per_repetition": 1,
+    "python_hash_seed": 0,
+    "repetition_mode": "independent_processes_single_thread_support_audit",
+    "threads_per_process": 1
+  },
+  "host_version_reused": "L2-HOST-D1.0",
+  "preimplementation_support_audit": {
+    "expected_observed_outcome": "NOT_SUPPORTED_NO_PARALLEL_EXECUTION_PATH",
+    "host_docstring": "Deterministic single-threaded Newton host for L2-D1.",
+    "host_module": "src/l2_host.py",
+    "material_element_execution": "one_direct_serial_call_per_evaluation",
+    "parallel_backend": false,
+    "source_hashes": {
+      "L2_D0_acceptance_gates.md": "ff8e8a4484abac4cd9528a0a9c6f05ccf69be8432dd5d23a6b8ba21160ae163d",
+      "L2_D0_case_matrix.csv": "be8e8e76f48dbc1cc2e55534a5cdb08745d1fa010a7eb291b2f7379eaf31fe69",
+      "src/l2_cases.py": "f12d0944bb8f96c100715fce6b640345c1826c9db8674fb79cc032ea7cba6301",
+      "src/l2_host.py": "a2a7044592da3be507279552f0dc19a75c2de00b7cdaee0e3bea4a5e3868fd2b",
+      "src/l2_model.py": "1a9daac2a8b75534dd55193bce3fead0004197765d3024e13d617e9d833ea8ff",
+      "src/l2_state.py": "05c9684d1bfcf5cb8b0c446795f697ecff6860edef2649af16a4baf7db62e67d",
+      "src/l2_variants.py": "74fd1679408c9fa39825deaf8fc140263a5c543174f57ee51a3757860b22a96c"
+    },
+    "supported_alternate_setting": false,
+    "thread_count_field_semantics": "event_metadata_only",
+    "thread_pool_or_executor": false
+  },
+  "research_question": "Does the frozen standalone host expose a real supported alternate thread or scheduling execution path on which accepted-state parity can be tested, and if not, can that unsupported boundary be recorded without fabricating a thread-safety result?",
+  "results_exist": false,
+  "tolerances": {
+    "analytical_absolute": 1e-12,
+    "analytical_relative": 1e-12,
+    "fingerprint_equality": 0.0,
+    "finite_absolute_limit": 1e+100
+  }
+}

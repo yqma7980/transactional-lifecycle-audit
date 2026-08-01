@@ -1,0 +1,39 @@
+{
+  "abaqus_used": false,
+  "added_l4_dependency_jobs": 10,
+  "base_job_count": 49,
+  "comsol_used": false,
+  "design_version": "CR-D3.0",
+  "exact_comparison_required_for_deterministic_artifacts": true,
+  "forbidden_protocol_changes": [
+    "no threshold, oracle, physical model or expected output change",
+    "no semantic substitution for exact artifact gates",
+    "no historical result rewrite",
+    "no predecessor failure overwrite"
+  ],
+  "formal_execution_authorized_after_preflight_by_active_goal": true,
+  "historical_l1_mp_implementation_hash": "35c44ca1df498ac517c3c9a9b8f691ee0ce8a4293f52b8a0262afce8438a62a3",
+  "historical_l1_mp_job_id": "CR-L1-MP",
+  "job_count": 59,
+  "l4_canonical_clean_result_root": "workspace/benchmarks/L4_two_phase_displacement/results/L4_D1_two_phase_displacement",
+  "l4_case_count": 10,
+  "l4_raw_expected_aggregate_sha256": "ff25b0622dd8ce74a6a5d8d3f712df593e732a20918c4259c7fc0afb4539e78d",
+  "l4_raw_expected_file_count": 100,
+  "l4_repetitions_per_case": 2,
+  "no_result_overwrite": true,
+  "performance_cells": 6,
+  "performance_formal_repetitions_per_cell": 10,
+  "performance_output_fingerprint_exact_required": true,
+  "performance_timing_exact_comparison_required": false,
+  "performance_warmups_per_cell": 2,
+  "predecessor_failures": [
+    "CR-D1b exact L1 provenance mismatch corrected by historical source profile",
+    "CR-D2 missing complete L4 raw dependency"
+  ],
+  "production_model_used": false,
+  "purpose": "complete exact clean replay with full two-repetition L4 dependency before L5 cross-implementation case",
+  "schema_version": "CR-D3-FREEZE-1.0",
+  "status": "FROZEN_NOT_IMPLEMENTED",
+  "stop_on_first_mismatch": true,
+  "threads_per_process": 1
+}

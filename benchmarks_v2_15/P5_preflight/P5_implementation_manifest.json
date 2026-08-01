@@ -1,0 +1,156 @@
+{
+  "design_version": "CMAME-P5.0",
+  "files_before_manifest": [
+    {
+      "bytes": 909,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/oracle/p5_fraction_oracle.py",
+      "sha256": "e0f35dc61f8fed931a375a1b2838e9719834eb56872395058c99b8b241d5fbd4"
+    },
+    {
+      "bytes": 961,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/P5_implementation_plan.md",
+      "sha256": "a34c66e77aab933414d50893844bba6ad8a7cc5f3df56c29ab993db09db4c667"
+    },
+    {
+      "bytes": 723,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/P5_output_contract.md",
+      "sha256": "6b3e6dd16c7e328d4cf67f2bef173b790815125267ba29b690d9688c75866ba2"
+    },
+    {
+      "bytes": 863,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/P5_preflight_freeze.json",
+      "sha256": "8091942479752eaa7cec7dd2b3eafb6de59852c8db27b71689d89911014c5d7d"
+    },
+    {
+      "bytes": 619,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/P5_preflight_gate_results.json",
+      "sha256": "d8fed669a5acb0c3acfc2772fa3a748bf973e5a7892a736732cbe8cc2d26a6e5"
+    },
+    {
+      "bytes": 887,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/P5_preflight_result_report.md",
+      "sha256": "d4d920151b68956efd0374fa142c61363510ad3170c7ca3315b374b52fcf99f1"
+    },
+    {
+      "bytes": 1277,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/P5_static_and_unit_QA.md",
+      "sha256": "e5d8c759cf5bd17f8f621eca70123be38934d5a481862422d46a3ae3edde5dc5"
+    },
+    {
+      "bytes": 1270,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/run_p5.py",
+      "sha256": "df8ec70486d959dd1f75f8c7cfcfd7ea6bbbe97a0a88de3a0b58f6240fc0c49a"
+    },
+    {
+      "bytes": 1169,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/runtime_evidence/ast_static_QA.json",
+      "sha256": "5e254707e9496bd2288b66b48a86fc820ac485e76ce3b2b25117d5081c27f05c"
+    },
+    {
+      "bytes": 330,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/runtime_evidence/process_boundary_QA.json",
+      "sha256": "236c51e4137a2fdb1a3e2c79309b02cd3b1f8cafdb1dfbc6e1e87d7ab832b340"
+    },
+    {
+      "bytes": 2360,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/runtime_evidence/protected_evidence_QA.json",
+      "sha256": "07e86dc9abf5018125d959ad5d1af73c19c54762eb04526506581188d5769a31"
+    },
+    {
+      "bytes": 192,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/runtime_evidence/runner_lock_test.log",
+      "sha256": "b0a0cbf1e6c2053cb3a4348720e8fec4a752599f1aa8ff2ce4485cf300ba82e3"
+    },
+    {
+      "bytes": 378,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/runtime_evidence/synthetic_contract_smoke.json",
+      "sha256": "f46c80d147d0dccc64751b7bbb4685d62c6aa0ec41f6fa4e6c0e4e5e9d86e674"
+    },
+    {
+      "bytes": 1439,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/runtime_evidence/unit_test.log",
+      "sha256": "e1ce555d785f50f21f2e930415424b347743bc3738e84ba16e3f3956bad85b6e"
+    },
+    {
+      "bytes": 4183,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/src/p5_contracts.py",
+      "sha256": "4f6c230ff594ea82af0c2b0ce452daa0d5075227753a5a787c45de458fc674d4"
+    },
+    {
+      "bytes": 2873,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/src/p5_mutations.py",
+      "sha256": "f988316caaad18312fb65fc49eca71884c36c58e59d83fc9195dbf94212ee57a"
+    },
+    {
+      "bytes": 4192,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/src/p5_null_envelope.py",
+      "sha256": "aa87b38a4a362b96a00d80348a015f438182d2532c6efffe9dacb670890ef11a"
+    },
+    {
+      "bytes": 2875,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/src/p5_selector.py",
+      "sha256": "477cfdd46a1500aadef3712e732d411d97108d10a7820eaab6a90ede6481fad6"
+    },
+    {
+      "bytes": 5335,
+      "path": "submission_cmame_v2_14_working_20260730/P5_IMPLEMENTATION_PREFLIGHT_20260731/tests/test_p5_preflight.py",
+      "sha256": "7ae44dcba4cb1156dca7e31693fd204d603d6f2ecc2e6e277e00234e059addd5"
+    }
+  ],
+  "formal_execution_authorized": false,
+  "formal_fe_backend_installed": false,
+  "formal_results_exist": false,
+  "freeze_manifest_sha256": "6e64554f9547b71ca2e407acc6a8e14153abc8683e6688f3e3604e6d0188d573",
+  "host_dependencies": [
+    {
+      "bytes": 1543,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_canonical.py",
+      "sha256": "6d330e1f4c5ff82f5176b67fa3952e984cb718515f26ab2bc45da9a6d6b205a9"
+    },
+    {
+      "bytes": 4257,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_state.py",
+      "sha256": "2fb8cf4a94efd8156a25944e046fb24cd781aee180c87ea045ddd6f15957c158"
+    },
+    {
+      "bytes": 9598,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_driver.py",
+      "sha256": "be6cdda6b4c990fbfd3402091df201ed9dba5b3cc6047350d7d7a5b246cf0e6a"
+    },
+    {
+      "bytes": 19559,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_host.py",
+      "sha256": "74acae0133af60412d817dea41c50aa782b3028f3f324258cff4d486a797f38d"
+    },
+    {
+      "bytes": 3673,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_evaluator.py",
+      "sha256": "63f6d493c356ddbe03a198598e24d085b409a649d5763e9683c8a267cb442344"
+    },
+    {
+      "bytes": 8764,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_io.py",
+      "sha256": "6e2d8e30003f8541759aa7406bbebc0da5750105d5a8cf2f7bf5c028e9e87a85"
+    },
+    {
+      "bytes": 3026,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_config.py",
+      "sha256": "58a36323256d24fbb49507a690218db99361d2d9ad79792e3b8ffc377e338300"
+    },
+    {
+      "bytes": 3714,
+      "path": "submission_cmame_v2_14_working_20260730/P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.5b_OUTPUT_SCHEMA_ERRATUM_20260731/src/p4d5b_output_schema.py",
+      "sha256": "82844be525dd9703cf50e9ed96913c98f38e20bc2595f6f787d703c7fc383d34"
+    }
+  ],
+  "implementation_status": "PASS_P5_IMPLEMENTATION_PREFLIGHT_READY_FOR_FULL_IMPLEMENTATION",
+  "implementation_version": "CMAME-P5.1-PREFLIGHT",
+  "manifest_self_hash_embedded": false,
+  "no_abaqus_execution": true,
+  "no_case_execution": true,
+  "no_comsol_execution": true,
+  "no_fe_solve": true,
+  "runner_import_path_repaired": true,
+  "runner_lock_test_passed": true,
+  "schema_version": "CMAME-P5-IMPLEMENTATION-MANIFEST-1.0"
+}

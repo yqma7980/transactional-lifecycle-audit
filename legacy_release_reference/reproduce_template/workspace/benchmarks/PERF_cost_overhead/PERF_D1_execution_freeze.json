@@ -1,0 +1,110 @@
+{
+    "schema_version":  "PERF-D1-FREEZE-1.0",
+    "design_version":  "PERF-D1.0",
+    "design_status":  "FROZEN_NOT_IMPLEMENTED",
+    "execution_authorized":  false,
+    "results_exist":  false,
+    "families":  [
+                     "L3",
+                     "L4",
+                     "L6"
+                 ],
+    "sizes":  [
+                  "S",
+                  "M",
+                  "L"
+              ],
+    "configurations":  [
+                           {
+                               "id":  "C0",
+                               "name":  "VALID_BASELINE",
+                               "transaction":  false,
+                               "fingerprint":  false,
+                               "event_log":  false,
+                               "full_provenance":  false
+                           },
+                           {
+                               "id":  "C1",
+                               "name":  "TRANSACTION",
+                               "transaction":  true,
+                               "fingerprint":  false,
+                               "event_log":  false,
+                               "full_provenance":  false
+                           },
+                           {
+                               "id":  "C2",
+                               "name":  "FINGERPRINT",
+                               "transaction":  true,
+                               "fingerprint":  true,
+                               "event_log":  false,
+                               "full_provenance":  false
+                           },
+                           {
+                               "id":  "C3",
+                               "name":  "EVENT_LOG",
+                               "transaction":  true,
+                               "fingerprint":  false,
+                               "event_log":  true,
+                               "full_provenance":  false
+                           },
+                           {
+                               "id":  "C4",
+                               "name":  "FULL_PROVENANCE",
+                               "transaction":  true,
+                               "fingerprint":  true,
+                               "event_log":  true,
+                               "full_provenance":  true
+                           }
+                       ],
+    "formal_cell_count":  45,
+    "warmup_processes_per_cell":  2,
+    "formal_processes_per_cell":  10,
+    "total_warmup_processes":  90,
+    "total_formal_processes":  450,
+    "environment":  {
+                        "python":  "3.12.10",
+                        "platform":  "Windows-11",
+                        "affinity_cpu":  0,
+                        "affinity_mask":  1,
+                        "threads_per_process":  1,
+                        "OMP_NUM_THREADS":  "1",
+                        "MKL_NUM_THREADS":  "1",
+                        "OPENBLAS_NUM_THREADS":  "1",
+                        "NUMEXPR_NUM_THREADS":  "1",
+                        "PYTHONHASHSEED":  "0",
+                        "PYTHONDONTWRITEBYTECODE":  "1"
+                    },
+    "timing":  {
+                   "imports_excluded":  true,
+                   "input_construction_excluded":  true,
+                   "affinity_setup_excluded":  true,
+                   "accepted_output_included":  true,
+                   "audit_payload_construction_included":  true,
+                   "serialization_and_hash_included_when_enabled":  true,
+                   "result_file_io_excluded":  true,
+                   "clock_wall":  "time.perf_counter_ns",
+                   "clock_cpu":  "time.process_time_ns",
+                   "os_peak_memory":  "Windows PeakWorkingSetSize",
+                   "python_peak_memory":  "tracemalloc"
+               },
+    "statistics":  {
+                       "no_run_deletion":  true,
+                       "median":  true,
+                       "quartiles":  "linear_interpolation",
+                       "bootstrap_median_ci":  0.95,
+                       "bootstrap_resamples":  10000,
+                       "bootstrap_seed":  20260722
+                   },
+    "hard_gates":  [
+                       "exact_output_fingerprint_across_modes_and_repetitions",
+                       "all_values_finite",
+                       "exact_process_counts",
+                       "affinity_and_thread_contract",
+                       "no_deleted_runs",
+                       "manifest_hashes_match"
+                   ],
+    "claim_boundary":  "machine_specific_python_overhead_for_frozen_workloads_only",
+    "abaqus_used":  false,
+    "comsol_used":  false,
+    "production_model_used":  false
+}

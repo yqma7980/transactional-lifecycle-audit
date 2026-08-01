@@ -1,0 +1,26 @@
+{
+  "changed_scientific_code": false,
+  "changed_thresholds_or_oracles": false,
+  "schema_version": "RC1-PUBLIC-PROFILE-REMAP-1.0",
+  "status": "PRIVACY_DERIVED_METADATA_REMAP",
+  "trace": [
+    {
+      "design_manifest_public_sha256": "b038157507f2fd7ba4cf0f8de43b8d96d7c2c8075922a300824bd456956d6f52",
+      "design_manifest_source_copy_sha256": "e80a1dc1c254675c374fc2a726259bed18e28a37d07501bf5572e5bc55e49229",
+      "plan_public_sha256": "11e3e01136323f09311c218e696164f007ad78e6ad21856582485a2bd4969ae5",
+      "plan_source_declared_sha256": "6aa3521a18f2172608c30a0c1c8592b2d2eb0f574205616db1fc9ade2424365f",
+      "profile": "current",
+      "scientific_code_changed": false,
+      "threshold_or_oracle_changed": false
+    },
+    {
+      "design_manifest_public_sha256": "44d4cba87576c343aae5ea4fa73e6ed653246f0a900aa2cd0e60da85887b2048",
+      "design_manifest_source_copy_sha256": "352c7e4e646fa134f59d87b741dd68753cff72c9abca5d6441e95828bb31e818",
+      "plan_public_sha256": "11e3e01136323f09311c218e696164f007ad78e6ad21856582485a2bd4969ae5",
+      "plan_source_declared_sha256": "6aa3521a18f2172608c30a0c1c8592b2d2eb0f574205616db1fc9ade2424365f",
+      "profile": "historical_l1_mp",
+      "scientific_code_changed": false,
+      "threshold_or_oracle_changed": false
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+    "schema_version":  "L5-D1-PRECHECK-FAILURE-1.0",
+    "design_version":  "L5-D1.0",
+    "host_version":  "L5-HOST-D1.0",
+    "evidence_status":  "PRECHECK_FAIL_NOT_FORMAL_EVIDENCE",
+    "implementation_status":  "IMPLEMENTED_PRECHECK_FAILED_SCIENTIFIC_GATE",
+    "formal_execution_started":  false,
+    "formal_results_exist":  false,
+    "failed_test":  "test_all_cases_preflight[L5-IV-CV-01]",
+    "observed_classification":  "FAIL_CONVERGENCE_GATE",
+    "frozen_threshold":  0.7,
+    "observed_minimum_order":  0.62942662819548256,
+    "frozen_levels":  [
+                          80,
+                          160,
+                          320
+                      ],
+    "frozen_time":  0.2,
+    "pairwise_orders":  {
+                            "saturation":  [
+                                               0.94205135622533376,
+                                               0.66305026084206187
+                                           ],
+                            "pressure":  [
+                                             0.83951954618473645,
+                                             0.84762316779908176
+                                         ],
+                            "front":  [
+                                          0.931229344502773,
+                                          0.62942662819548256
+                                      ],
+                            "displacement":  [
+                                                 0.84959316438826882,
+                                                 0.8518394336892714
+                                             ]
+                        },
+    "frozen_level_errors":  [
+                                {
+                                    "N":  80,
+                                    "saturation_l1":  0.00801000384650991,
+                                    "front_absolute":  0.0051012152684662138,
+                                    "pressure_l2_relative":  0.015906410756203113,
+                                    "displacement_absolute":  0.0011873364760653093
+                                },
+                                {
+                                    "N":  160,
+                                    "saturation_l1":  0.0041691450874128929,
+                                    "front_absolute":  0.0026751348884943016,
+                                    "pressure_l2_relative":  0.00888897383489035,
+                                    "displacement_absolute":  0.00065890193560205756
+                                },
+                                {
+                                    "N":  320,
+                                    "saturation_l1":  0.0026329886791695806,
+                                    "front_absolute":  0.0017292962121959188,
+                                    "pressure_l2_relative":  0.004939598263821848,
+                                    "displacement_absolute":  0.00036508295940221314
+                                }
+                            ],
+    "diagnostic_only_extended_levels":  [
+                                            {
+                                                "N":  640,
+                                                "saturation_l1":  0.001349227849474217,
+                                                "front_absolute":  0.000884339107883686,
+                                                "pressure_l2_relative":  0.0026559315828221272,
+                                                "displacement_absolute":  0.00019601825111842386
+                                            },
+                                            {
+                                                "N":  1280,
+                                                "saturation_l1":  0.00081887088902405476,
+                                                "front_absolute":  0.00053824602241936415,
+                                                "pressure_l2_relative":  0.00142711736861014,
+                                                "displacement_absolute":  0.00010529185917010353
+                                            }
+                                        ],
+    "diagnostic_only_note":  "Post-failure in-memory diagnostics only; not frozen cases, not formal evidence, and not used to change the gate.",
+    "unit_test_summary":  {
+                              "tests_run":  11,
+                              "passed":  10,
+                              "failed":  1,
+                              "errors":  0,
+                              "elapsed_seconds":  25.968
+                          },
+    "scientific_threshold_changed":  false,
+    "grid_changed":  false,
+    "reference_changed":  false,
+    "order_definition_changed":  false,
+    "stop_reason":  "Frozen L5 convergence prerequisite did not meet minimum observed order; formal execution prohibited by protocol.",
+    "no_abaqus_execution":  true,
+    "production_model_used":  false
+}

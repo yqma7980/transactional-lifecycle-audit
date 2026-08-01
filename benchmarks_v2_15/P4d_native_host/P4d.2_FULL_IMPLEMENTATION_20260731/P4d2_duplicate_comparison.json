@@ -1,0 +1,12 @@
+{
+  "environment_equal_after_run_id_normalization": true,
+  "environment_run_1_sha256": "ef451a590ec9f0775ca4f2c59581bd44772e1c527bebd3fe41b7bd83728fbd7d",
+  "environment_run_2_sha256": "fe232cd39ffecbc3e31951437db1c30b3196519a38626f77d8de9fdf0ee182b3",
+  "formal_case_execution": false,
+  "integration_byte_exact_equal": true,
+  "integration_preflight_id": "P4D2-INTEGRATION-01",
+  "integration_run_1_sha256": "e1addcff0c35bee0618797a91aa77b01a0418750f5b598c95001fc90f5e9fce9",
+  "integration_run_2_sha256": "e1addcff0c35bee0618797a91aa77b01a0418750f5b598c95001fc90f5e9fce9",
+  "pass": true,
+  "schema_version": "CMAME-P4D2-DUPLICATE-COMPARISON-1.0"
+}

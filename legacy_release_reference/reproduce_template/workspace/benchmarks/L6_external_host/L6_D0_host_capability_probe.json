@@ -1,0 +1,42 @@
+{
+  "schema_version": "L6-D0-CAPABILITY-1.0",
+  "status": "CAPABILITY_CONFIRMED_NOT_FORMAL_EVIDENCE",
+  "probe_date": "2026-07-22",
+  "python_version": "3.12.10",
+  "numpy_version": "2.4.3",
+  "scipy_version": "1.17.1",
+  "host_api": "scipy.optimize.least_squares",
+  "host_method": "trf",
+  "model": {
+    "residual": "r(x)=x^3-2*x+2",
+    "jacobian": "J(x)=3*x^2-2",
+    "x0": 1.0,
+    "ftol": 1e-12,
+    "xtol": 1e-12,
+    "gtol": 1e-12,
+    "max_nfev": 100
+  },
+  "observed": {
+    "success": true,
+    "status": 2,
+    "final_x": 0.8164966106414795,
+    "final_cost": 0.4152683767853252,
+    "nfev": 20,
+    "njev": 9,
+    "accepted_callback_count": 8,
+    "nonaccepted_residual_evaluation_count": 10,
+    "residual_evaluation_x": [1.0, 0.0, 0.75, 1.0, 0.8125, 0.875, 0.828125, 0.81640625, 0.8203125, 0.8173828125, 0.816650390625, 0.81646728515625, 0.8165283203125, 0.8164825439453125, 0.816497802734375, 0.8164825439453125, 0.8164939880371094, 0.8164968490600586, 0.8164958953857422, 0.8164966106414795],
+    "jacobian_evaluation_x": [1.0, 0.75, 0.8125, 0.81640625, 0.81646728515625, 0.8164825439453125, 0.816497802734375, 0.8164968490600586, 0.8164966106414795],
+    "accepted_callback_x": [0.75, 0.8125, 0.81640625, 0.81646728515625, 0.8164825439453125, 0.816497802734375, 0.8164968490600586, 0.8164966106414795],
+    "nonaccepted_residual_x": [0.0, 1.0, 0.875, 0.828125, 0.8203125, 0.8173828125, 0.816650390625, 0.8165283203125, 0.8164939880371094, 0.8164958953857422]
+  },
+  "host_source": {
+    "least_squares_py_sha256": "b6becbe3b248ea5edcbc40434f101f5d46e5304b66d3c97331bced459dc38765",
+    "trf_py_sha256": "a174a6e79b67067823804666c9e97413dd0d432c7ac7cd148c0c9ee5cfa9732b",
+    "common_py_sha256": "6bdec514d2b0e8172cd438421218ae3977f144ad89867346157ea885408f489e",
+    "util_py_sha256": "3a3837ae4094263e936394bae513b3a91387b12fa9cb7bae91f43117b5bc3293"
+  },
+  "formal_case_executed": false,
+  "abaqus_used": false,
+  "comsol_used": false
+}

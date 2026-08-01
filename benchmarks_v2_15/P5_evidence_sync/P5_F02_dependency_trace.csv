@@ -1,0 +1,7 @@
+ordinal,symbol,role,source_locator,reachability_status,evidence_status
+1,declared_alpha_cache,declared persistent field and projection member,P5_FULL_FE_BACKEND_IMPLEMENTATION_20260731/src/p5_fe_adapter.py:28,STATICALLY_REACHABLE,ESTABLISHED-CODE-TRACE
+2,F02 mutation,"adds eta*0.1 at cell 0, quadrature point 1",P5_FULL_FE_BACKEND_IMPLEMENTATION_20260731/src/p5_fe_adapter.py:242,MUTATION_WRITTEN,ESTABLISHED-CODE-TRACE
+3,effective_alpha,committed alpha plus declared persistent cache,P5_FULL_FE_BACKEND_IMPLEMENTATION_20260731/src/p5_fe_adapter.py:81,CONSUMED_BY_ADAPTER,ESTABLISHED-CODE-TRACE
+4,evaluate_material(current),receives effective_alpha at each integration point,P5_FULL_FE_BACKEND_IMPLEMENTATION_20260731/src/p5_fe_adapter.py:85,MATERIAL_INPUT_REACHED,ESTABLISHED-CODE-TRACE
+5,yield_function,alpha enters the material branch criterion,P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_material.py:38,BRANCH_CRITERION_REACHED,ESTABLISHED-CODE-TRACE
+6,elastic return,tau and tangent are alpha-independent if the branch remains elastic,P4d_DOLFINx_PETSc_MINIMAL_FE_HOST_20260731/P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_material.py:39,PLAUSIBLE_MASKING_BRANCH,INFERRED-NOT-RUNTIME-BRANCH-PROVEN

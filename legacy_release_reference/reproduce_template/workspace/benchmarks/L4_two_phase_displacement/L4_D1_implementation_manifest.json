@@ -1,0 +1,63 @@
+{
+    "schema_version":  "L4-D1-IMPLEMENTATION-1.0",
+    "design_version":  "L4-D1.0",
+    "host_version":  "L4-HOST-D1.0",
+    "implementation_status":  "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+    "formal_execution_authorized_under_user_goal":  true,
+    "formal_results_exist":  false,
+    "results_exist":  false,
+    "abaqus_used":  false,
+    "production_model_used":  false,
+    "canonical_serializer":  "benchmarks/L2_host_lifecycle/src/l2_state.py",
+    "canonical_serializer_loading":  "direct_source_reuse_without_legacy_package_initializer",
+    "implementation_files":  {
+                                 "benchmarks/L4_two_phase_displacement/src/__init__.py":  "c9b37be9848d0e32a1192eb14efe8972bb63ae7c0566d48d1a857045c3792610",
+                                 "benchmarks/L4_two_phase_displacement/src/l4_state.py":  "6b3f331812a63cce5e4c5c2f15515806367405913285f5eb480ab3a1a54741dd",
+                                 "benchmarks/L4_two_phase_displacement/src/l4_oracle.py":  "64fecb264d35c3c7af34cdd61551b31cd117c9a625633adb59c43d4019420472",
+                                 "benchmarks/L4_two_phase_displacement/src/l4_fv.py":  "fe69f646f3efea9e81d5945e5ddb0a2f5a577c907a36330dd4dd03d1a9259b2e",
+                                 "benchmarks/L4_two_phase_displacement/src/l4_lifecycle.py":  "6f92696a1faf964b0133c6c49a754f544ee4ff14739ad83249970dc8dc751676",
+                                 "benchmarks/L4_two_phase_displacement/src/l4_cases.py":  "8f0750d70f1b2ec3ae8b74495172a109370575167e730b004afa6231a2a91326",
+                                 "benchmarks/L4_two_phase_displacement/run_l4_d1.py":  "dee080663fdc644b067d5b99720537283b9531fb242b40966f91e10687018e55",
+                                 "benchmarks/L4_two_phase_displacement/tests/test_l4_d1.py":  "4689999ed8eb228eee51bef62c0e740d0173484bc6d2e2f2443811f7ead559a0"
+                             },
+    "protected_design_files":  {
+                                   "benchmarks/L4_two_phase_displacement/L4_D0_benchmark_spec.md":  "1d56fdd16b8c0e3a7f0a6c9e6cf1927a3cb345361e6d5c3da2cbaf18a7a77888",
+                                   "benchmarks/L4_two_phase_displacement/L4_D0_acceptance_gates.md":  "ef0403ae9de7cb6385388fc7ba537f5a98faa19e3a690a819ab897f814c26a33",
+                                   "benchmarks/L4_two_phase_displacement/L4_D0_data_contract.md":  "60fa7ed9462eed655aa9778685a910347fb51b777212cde7c9341720f0e671fc",
+                                   "benchmarks/L4_two_phase_displacement/L4_D0_case_matrix.csv":  "91e6babe9f12e04026d9059b190b8a22e0f3a583139c8a2e627edff19f5f245f",
+                                   "benchmarks/L4_two_phase_displacement/L4_D1_execution_freeze.json":  "dc9db42852b4fc5c7bb7e884e031b11569f8cafbccb66a79c58ca0a802fd043d",
+                                   "benchmarks/L4_two_phase_displacement/L4_D1_implementation_plan.md":  "bde74940858c0f72f8ece9cf1894a253b7b63f34c6997952edf7c765ad49b055",
+                                   "benchmarks/L4_two_phase_displacement/L4_D0_static_freeze_QA.md":  "f3d92b20262c0845d8017f20648bbaf680431f1baed82d8012e7a64437e26556",
+                                   "benchmarks/L4_two_phase_displacement/L4_D1_source_manifest.json":  "230a2f5dc02fc41de368b4b41d314618c6a3661870e6e16b7ac1d04b6fa6683b"
+                               },
+    "pre_execution_erratum":  {
+                                  "path":  "benchmarks/L4_two_phase_displacement/L4_D1_pre_execution_erratum_20260722.md",
+                                  "sha256":  "5cf72e48e88dd12ba3a2a1c55945c69e1f53499afcef0f4812ce44812242d0d9"
+                              },
+    "static_QA":  {
+                      "ast_files":  8,
+                      "ast_parse_pass":  true,
+                      "source_manifest_mismatches":  0,
+                      "runner_double_lock_pass":  true,
+                      "unexpected_results_directory":  false,
+                      "pycache_count":  0,
+                      "runner_absolute_import_smoke_pass":  true,
+                      "pre_result_import_failure_count":  1
+                  },
+    "unit_test_QA":  {
+                         "framework":  "unittest",
+                         "tests_run":  10,
+                         "failures":  0,
+                         "errors":  0,
+                         "pass":  true,
+                         "seconds":  85.623,
+                         "processes":  1,
+                         "threads":  1,
+                         "formal_evidence":  false
+                     },
+    "frozen_case_count":  10,
+    "no_formal_case_execution":  true,
+    "no_abaqus_execution":  true,
+    "no_git_operation":  true,
+    "manifest_self_hash_embedded":  false
+}

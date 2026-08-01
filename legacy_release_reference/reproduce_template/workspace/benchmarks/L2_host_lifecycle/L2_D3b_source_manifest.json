@@ -1,0 +1,38 @@
+{
+  "manifest_version": "L2-D3B-SOURCE-1.0",
+  "design_version": "L2-D3.0",
+  "implementation_revision": "L2-D3.0b",
+  "created_without_case_execution": true,
+  "frozen_inputs": {
+    "L2_D3_execution_freeze.json": "03ebd4eb92fca4cb9300be4192cdd73b5575f9798b9c46f90bd618f7dc85cbcc",
+    "L2_D3_tangent_path_case_matrix.csv": "665576bd3e9f66c0ed8152a4fde4cc69d1b82ab810202e666340f234ec2f5c64",
+    "L2_D3_implementation_plan.md": "2a90570675297ac8270dbc41c4aa0b8665a12776c96c65efadc72c7264782a78",
+    "L2_D3_source_manifest.json": "f53254ec00340489f4cbc78c84b9e7c4f79325c471c27b7b8fe36189b8384925"
+  },
+  "protected_implementation": {
+    "src/l2_d3_tangent_path.py": "e2025fd45a1779f8ff76c0c867def4a6777007b10556e7a9fd5f59a3e1e938cd",
+    "tests/test_l2_d3_tangent_path.py": "3d17003e90b0c9d2f797a9c888d5964e0fcf0408c57dd210ac00b753f0ccf236",
+    "run_l2_d3.py": "24321670c277da69862e8ed123ae00debde9039349a5372e1099cc7d9204f837",
+    "L2_D3_implementation_manifest.json": "629a9eef34c0e9a7b60a68ce11ee640f70e131f7ab849e35fa3fc5058ccb5e81",
+    "L2_D3_static_implementation_QA.md": "1edd622ebeb9b3086c39b96131f17acc90ef8582d7a24df2cae51ba9309b4bc4"
+  },
+  "preserved_tg02_run_1": {
+    "case_manifest.json": "d0e0224f3120fc37a39a5f0365f50307259f93e623a27d2a30fade9be495ed23",
+    "case_result.json": "536dab4abc7a7b710f5f1da0a17e1addbcc0af963b994e0d6982efdfc45749ee",
+    "path_comparison.csv": "e92b96b7ad95839d1b8ceb6f3c38a4563c5f9fd1b42ff49d4567b4c6c44ecbfe",
+    "tangent_event_log.csv": "6d37199764f69b08c746da06a9f2278f1cd2fecafcba6d3db07f5ea2522d2287"
+  },
+  "design_outputs": {
+    "L2_D3b_contract_erratum.md": "75a9a8ee7498702b4be12fc95d6834479ed02442f65e1d1714c63e4079d7b582",
+    "L2_D3b_correction_freeze.json": "47ae634c21d92f0fb7c29a177fb298ecb80bcae8cb9c823d7ab132048acca8c3",
+    "L2_D3b_implementation_plan.md": "bb68d0235e8408ccc3484520fa0a509811c8973e65afddd294953e69e5bba7c7"
+  },
+  "protected_aggregates": {
+    "claim_matrix_v0_5": "07323ebf5b1d15a2e64eb68199a592d3a323938339f7d51c52e0dc380867522c",
+    "manuscript_v0_5": "d7184d814c39d0fd62f798d468a4d6da57474dd1714176b9403207c523eb89e3",
+    "figures_1_5": "bdb4fa878ab18fc97e1deb8b95b40dd48024ee4cbe1a7ffac2be8c760acdb425",
+    "preserved_tg_results_12_files": "6368eb9d5c56c0dd30804ea8dc586a5e7a65d8753d46212f416df974e0dd0103"
+  },
+  "manifest_self_hash_embedded": false,
+  "claim_boundary": "Static correction provenance only; no formal benchmark or Abaqus evidence."
+}

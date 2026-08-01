@@ -1,0 +1,152 @@
+{
+  "final_status": "PASS_P4D3_POSTMORTEM_AND_P4D4_DIAGNOSTIC_FREEZE",
+  "generated_outputs": [
+    {
+      "path": "build_p4d3_static_evidence.py",
+      "sha256": "d0fcbbae28e6c7eb6285f48117eb13dc232808f8f65775b2dd2d20ac86c49c11",
+      "size_bytes": 24301
+    },
+    {
+      "path": "P4d3_postmortem_freeze.json",
+      "sha256": "ebb697db3292e10299d0e19a4009db18b145a18d13d5b45a933a9fc2b4d208ad",
+      "size_bytes": 2963
+    },
+    {
+      "path": "P4d3_event_pair_audit.csv",
+      "sha256": "773a9e23d2ff5c59bdfa3d6ce72e5d8de102e06d1d59e6d4d37274db095bd120",
+      "size_bytes": 6041
+    },
+    {
+      "path": "P4d3_observer_semantics.md",
+      "sha256": "67b8cafe54fa37f1bb58cddb3cc838b84aed821bbaf0877dc66286a73cffcee5",
+      "size_bytes": 1387
+    },
+    {
+      "path": "P4d3_failure_adjudication.json",
+      "sha256": "84f57900ce5ed89e30889c83a9fcc9cb71a2d87f06d2a6de1ca0e15876474cc2",
+      "size_bytes": 817
+    },
+    {
+      "path": "P4d3_dependency_dag.md",
+      "sha256": "c781c103bd6d02e8237f64f7dc1f339316df410d89145a5a5fda002f540ac427",
+      "size_bytes": 744
+    },
+    {
+      "path": "P4d4_diagnostic_freeze.json",
+      "sha256": "7731986244476c90b4769205bab6169462f6a82997ac5cc01d620abacf13b166",
+      "size_bytes": 2831
+    },
+    {
+      "path": "P4d4_diagnostic_case_matrix.csv",
+      "sha256": "a97d1a97e88e7912bc2da5d6cac311b16c63dca2b9f355bf1f1881bae017f2a7",
+      "size_bytes": 568
+    },
+    {
+      "path": "P4d4_heldout_selection_rule.md",
+      "sha256": "622516e3f06370c06cc306e21b2b5fb356e84f527220c4db529f902d76b6afc1",
+      "size_bytes": 1248
+    },
+    {
+      "path": "P4d4_acceptance_gates.md",
+      "sha256": "c238c060a140e8cca0d173ddf1cf305849d3273350234c23b582e5a8e9449f25",
+      "size_bytes": 1179
+    },
+    {
+      "path": "P4d3_final_report.md",
+      "sha256": "46f2d881914eb3bc600d47f7cd8b1e395669cb4246df45ccdd4da0eba6dc5210",
+      "size_bytes": 1649
+    }
+  ],
+  "manifest_self_hash_embedded": false,
+  "no_abaqus_execution": true,
+  "no_fe_case_execution": true,
+  "no_old_evidence_modification": true,
+  "schema_version": "CMAME-P4D3-SOURCE-MANIFEST-1.0",
+  "source_inputs": [
+    {
+      "path": "P4d.1_IMPLEMENTATION_PREFLIGHT_20260731/runtime_evidence/observer_on_run_1/c_ledger.jsonl",
+      "sha256": "8a43f0eddfe4bfd5a202b1793a0af527e8c7a20c55e251311d18438f87936206",
+      "size_bytes": 8506
+    },
+    {
+      "path": "P4d.1_IMPLEMENTATION_PREFLIGHT_20260731/runtime_evidence/observer_on_run_1/result.json",
+      "sha256": "ec3955e1e41c9510419eac526d388c381e732ab6e497bdbd51ac37868e00fb2a",
+      "size_bytes": 2396
+    },
+    {
+      "path": "P4d.1_IMPLEMENTATION_PREFLIGHT_20260731/src/p4d_observer_bridge.c",
+      "sha256": "e21ca0077f4f6bc8e850d25886a81bf33e19d5e5f40fc709f3743e10117b9a75",
+      "size_bytes": 9586
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/P4d2_formal_execution_freeze_20260731.json",
+      "sha256": "172f9ae758fdc4dc24a3b657273c8cb72e8cee72b891b0cea64fdf04efa845e9",
+      "size_bytes": 2518
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/P4d2_implementation_freeze.json",
+      "sha256": "3c44641985e3671bc8b5ab0a9849c711178124617c6f442bd3e2cce5acf5edd7",
+      "size_bytes": 2889
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/P4d2_source_manifest.json",
+      "sha256": "6aa3ab71905fe8b5a54239bcd64de6b92a744dfed08c54336fa072c4d5c29541",
+      "size_bytes": 7172
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/P4D-SAFE-LS-01/run_1/c_observer_ledger.jsonl",
+      "sha256": "9d04ade4086dd7ba600d26b890ca345b8268ffa5c0db175158ad2cc3626cfdab",
+      "size_bytes": 186804
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/P4D-SAFE-LS-01/run_1/case_manifest.json",
+      "sha256": "4350947a86965f2406afd3d411d8721321135961d55bf6bb02e60726906c8788",
+      "size_bytes": 1394
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/P4D-SAFE-LS-01/run_1/case_result.json",
+      "sha256": "2ad300d5697d40e026146bc6ee8ebda8960c113164533c2c9cb648ff42516af2",
+      "size_bytes": 10849
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/P4D-SAFE-LS-01/run_1/event_ledger.csv",
+      "sha256": "dcb85a90afacf768e065acb490bd85926b465c679b86df8c108355f99b7771a8",
+      "size_bytes": 74306
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_duplicate_run_comparison.json",
+      "sha256": "00f469a9eca36016d75c35b03fb03bc0a2625cd2120a332bffcca1223989a5dd",
+      "size_bytes": 2848
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_formal_final_QA.json",
+      "sha256": "0f3cef984b9a0720ddeb126f1dd29b8a56c58912ca2ae6e75901462bf9c294e4",
+      "size_bytes": 2571
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_formal_raw_manifest.json",
+      "sha256": "384b7b4e5a8e1244672c5d076f46a589dae3995a91ec1d10ff0c7d13e0ecb22b",
+      "size_bytes": 11450
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/results/P4d2_formal_20260731/final/p4d2_formal_stop_summary.json",
+      "sha256": "df520423b04e189da13923aa3ef1a0387fa1e0c44720d5bb0482d167c683c73e",
+      "size_bytes": 5303
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_config.py",
+      "sha256": "58a36323256d24fbb49507a690218db99361d2d9ad79792e3b8ffc377e338300",
+      "size_bytes": 3026
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_observer.py",
+      "sha256": "fc87dd075a2d82c98708d9ed98dbcc85056f9760c649504de837fffcc2b94205",
+      "size_bytes": 2169
+    },
+    {
+      "path": "P4d.2_FULL_IMPLEMENTATION_20260731/src/p4d_observer_bridge.c",
+      "sha256": "e21ca0077f4f6bc8e850d25886a81bf33e19d5e5f40fc709f3743e10117b9a75",
+      "size_bytes": 9586
+    }
+  ]
+}

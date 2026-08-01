@@ -1,0 +1,17 @@
+{
+  "derived_scientific_adjudication": "NOT_SUPPORTED_BY_FROZEN_HISTORY",
+  "formal_evidence_scope": "The raw contract failure remains preserved; the derived label only identifies why the required event was absent.",
+  "full_p4d_matrix_pass": false,
+  "not_a_numerical_failure": true,
+  "not_an_observer_failure": true,
+  "observer_observability_supported_by_p4d1_zero_case": true,
+  "raw_evidence": {
+    "case_id": "P4D-SAFE-LS-01",
+    "pass_flag": false,
+    "raw_json_rewritten": false,
+    "raw_verdict": "P4D-SAFE-LS-01_CONTRACT_FAIL",
+    "run_id": "run_1"
+  },
+  "reason": "The frozen FE load history accepted every observed full Newton step. It never generated the structured unselected line-search candidate required by the frozen L3 contract.",
+  "schema_version": "CMAME-P4D3-FAILURE-ADJUDICATION-1.0"
+}

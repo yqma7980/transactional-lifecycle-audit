@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite the software archive and the associated article."
 title: "Transactional Lifecycle Audit: Reproducibility Software for Path-Dependent Computational Models"
 type: software
-version: 2.15.3
+version: 2.15.4
 date-released: 2026-08-02
 doi: 10.5281/zenodo.21536450
 repository-code: "https://github.com/yqma7980/transactional-lifecycle-audit"

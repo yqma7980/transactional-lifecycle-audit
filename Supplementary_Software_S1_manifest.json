@@ -1,16 +1,16 @@
 {
     "package_name":  "Supplementary Software S1",
-    "package_version":  "2.15.3",
+    "package_version":  "2.15.4",
     "manifest_self_hash_embedded":  false,
-    "manifest_scope":  "616 frozen payload files; generated manifest and checksum indexes are excluded from their own scope",
+    "manifest_scope":  "616 frozen payload files hashed directly from canonical Git blob bytes; generated manifest and checksum indexes are excluded from their own scope",
     "file_count":  616,
-    "total_bytes":  3284838,
+    "total_bytes":  3213693,
     "package_manifest_csv":  "package_manifest_v2_15.csv",
-    "package_manifest_csv_sha256":  "dcf35fc447c4d95e1e232854381ab9116b9f59c575ba58ec8862779b440a823b",
+    "package_manifest_csv_sha256":  "3cb2153fa64d5a15c6760b5facd5cba1d866d21695d7b3c6a20bcd5e41c76b1d",
     "sha256sums_file":  "SHA256SUMS_v2_15.txt",
-    "sha256sums_sha256":  "b58b8a7eddaaa6ab87d3dd5a2d8a472db244cf38e628f502033db696fceeea38",
+    "sha256sums_sha256":  "edbb2a8f0fc367dfd58953f08bd4d2e306ffc1a4f208f81aa296e93c18f9c585",
     "license":  "BSD 3-Clause",
     "abaqus_or_production_files_included":  false,
-    "correction_scope":  "release-local DOI metadata and final Git-blob checksum indexes",
+    "correction_scope":  "canonical Git-blob checksum indexes and release-local DOI metadata",
     "scientific_content_changed":  false
 }

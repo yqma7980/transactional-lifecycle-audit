@@ -16,7 +16,7 @@ The numerical dataset is licensed under the Creative Commons Attribution 4.0 Int
 The versioned reproducibility software is archived on Zenodo:
 
 - Software concept DOI (all versions): https://doi.org/10.5281/zenodo.21536450
-- GitHub release: https://github.com/yqma7980/transactional-lifecycle-audit/releases/tag/v2.15.4
+- GitHub release: https://github.com/yqma7980/transactional-lifecycle-audit/releases/tag/v2.15.5
 
 The version-specific DOI is assigned by Zenodo when each release is published and is recorded in the Zenodo metadata and associated manuscript.
 

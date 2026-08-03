@@ -1,6 +1,6 @@
-# v2.15.4 canonical Git-blob checksum correction
+# v2.15.5 README command correction
 
-- Replaced superseded version-specific DOI references in release-local metadata with the stable software concept DOI.
-- Regenerated the 616-entry package manifest and SHA-256 index directly from canonical Git blob bytes, independent of checkout line endings.
-- Preserved all scientific source, frozen contracts, case definitions and evidence interpretations.
-- Retained the v2.15 P4d DOLFINx/PETSc, P5 and P6R software additions.
+- Corrected the documented FEH adjudication unit-test invocation to use `unittest discover` with the benchmark directory on the import path.
+- Regenerated the 616-entry package manifest and SHA-256 index from the released bytes.
+- Preserved all scientific sources, equations, frozen case definitions, acceptance gates, results and interpretations.
+- Retained the stable software concept DOI for release-local citation metadata.

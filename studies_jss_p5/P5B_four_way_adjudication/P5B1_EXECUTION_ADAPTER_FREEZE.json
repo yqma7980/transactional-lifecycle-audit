@@ -1,0 +1,51 @@
+{
+  "adapter_freeze_id": "JSS-P5B1-RUNTIME-MAPPING-1.0",
+  "design_version": "JSS-P5B.0",
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "status": "FROZEN_BEFORE_DEVELOPMENT_EXECUTION",
+  "development_case_count": 16,
+  "fresh_process_repetitions_per_case": 2,
+  "allowed_run_ids": ["run_1", "run_2"],
+  "development_execution_authorized": true,
+  "held_out_access_authorized": false,
+  "result_root": "results/development",
+  "numeric_fault_strength": {
+    "strength_id": "ETA-LOW",
+    "value": 1e-10,
+    "selection_rule": "lowest pre-existing frozen P2.2 strength; selected before P5B development execution"
+  },
+  "s01_active_binding": {
+    "field": "gamma_p[27,0,1]",
+    "cell": 27,
+    "quadrature_point": 0,
+    "component": 1,
+    "selected_delta_hex": "0x1.434e28dc72c89p-3",
+    "source": "00_runtime_dependencies/selected_field_binding.json"
+  },
+  "s03_extra_callbacks": [
+    {"ordinal": 1, "x": 0.03, "x_hex": "0x1.eb851eb851eb8p-6"},
+    {"ordinal": 2, "x": -0.03, "x_hex": "-0x1.eb851eb851eb8p-6"}
+  ],
+  "s01_container": {
+    "image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+    "platform": "linux/amd64",
+    "network": "none",
+    "mpi_ranks": 1,
+    "threads": 1,
+    "pull_permitted": false
+  },
+  "locks": {
+    "cli": "--execute-authorized",
+    "environment": "JSS_P5B_DEVELOPMENT_AUTHORIZED=YES",
+    "held_out_guard_before_output_creation": true
+  },
+  "no_post_hoc_changes": [
+    "case membership",
+    "fault strength",
+    "S01 mutation site",
+    "S03 callback values or order",
+    "packet mismatch fields",
+    "expected verdict",
+    "adjudication precedence"
+  ]
+}

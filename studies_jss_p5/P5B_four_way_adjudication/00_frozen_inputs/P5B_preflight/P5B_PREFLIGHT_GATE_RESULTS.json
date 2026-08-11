@@ -1,0 +1,58 @@
+{
+  "gate_results_id": "JSS-P5B-PREFLIGHT-GATES-1.0",
+  "final_status": "PASS_P5B_IMPLEMENTATION_PREFLIGHT_READY_FOR_FORMAL_IMPLEMENTATION_REVIEW",
+  "evidence_status": "PREFLIGHT_ONLY_NOT_OBSERVED_P5B",
+  "gates": {
+    "B0_protected_design": {
+      "pass": true,
+      "case_count": 20,
+      "verdict_count_each": 5,
+      "held_out_count_each": 1,
+      "execution_authorized": false,
+      "protected_hashes_match": true
+    },
+    "B1_four_way_api": {
+      "pass": true,
+      "precedence": [
+        "EXECUTION_ERROR",
+        "NOT_SUPPORTED",
+        "INVALID",
+        "DETECT_LIFECYCLE_DRIFT",
+        "PASS_INVARIANT"
+      ],
+      "invalid_stops_before_lifecycle": true,
+      "not_supported_names_missing_evidence": true,
+      "f08_semantic_branches_tested": 4
+    },
+    "B1_frozen_adapters": {
+      "pass": true,
+      "subjects": ["JSS-S01", "JSS-S02", "JSS-S03"],
+      "development_contracts_tested": 16,
+      "adapters_mutate_raw_evidence": false,
+      "missing_native_events_are_fabricated": false
+    },
+    "B1_schema_and_guard": {
+      "pass": true,
+      "schema_version": "JSS-P5B-CASE-RESULT-1.0",
+      "additional_properties_allowed": false,
+      "double_authorization_lock": true,
+      "formal_case_ids_allowed": false,
+      "runner_executed": false
+    },
+    "B1_safe_null": {
+      "pass": true,
+      "mode": "IN_MEMORY_UNIT_QA_ONLY",
+      "subjects": {
+        "JSS-S01": {"verdict": "PASS_INVARIANT", "semantic_sha256": "d450e2acae5e1bb2f4938eca33dab2ce6bc6a675cf71f8e215a6d554d453450c", "duplicate_equal": true},
+        "JSS-S02": {"verdict": "PASS_INVARIANT", "semantic_sha256": "b114d71492747871cfe0e705900028a0f10324fc9afe02ad82d361f7b3e4a0ba", "duplicate_equal": true},
+        "JSS-S03": {"verdict": "PASS_INVARIANT", "semantic_sha256": "e08e4424d883626ff3473e0b94d9affff9a7cc9469177735b467c6d06d44c806", "duplicate_equal": true}
+      }
+    },
+    "B2_formal_execution": {"pass": false, "status": "NOT_AUTHORIZED_NOT_RUN"},
+    "B3_held_out_confirmation": {"pass": false, "status": "LOCKED_NOT_ACCESSED"}
+  },
+  "test_summary": {"ast_parse": "16/16 PASS", "unittest": "27/27 PASS"},
+  "formal_results_exist": false,
+  "observed_p5b_evidence_exists": false,
+  "abaqus_used": false
+}

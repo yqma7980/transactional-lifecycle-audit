@@ -1,0 +1,67 @@
+{
+  "case_id": "P5B-NS-05",
+  "environment": {
+    "backend": {
+      "name": "serial two-phase subject capability audit"
+    },
+    "platform_machine": "x86_64",
+    "platform_system": "Linux",
+    "processes": 1,
+    "python": "3.12.3",
+    "python_implementation": "CPython",
+    "subject_id": "JSS-S02",
+    "threads": 1
+  },
+  "event_count": 1,
+  "events": [
+    {
+      "backend_mode": "serial",
+      "event_type": "StaticCapabilityAudit",
+      "lifecycle_evaluation_reachable": false,
+      "missing_event": "PARALLEL_CALLBACK_OWNERSHIP"
+    }
+  ],
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "measurements": {
+    "no_subject_solve_executed_for_capability_audit": true,
+    "parallel_callback_path_available": false,
+    "processes": 1,
+    "threads": 1
+  },
+  "raw_observation": {
+    "evidence_tokens": [],
+    "execution_error": null,
+    "lifecycle_signals": {
+      "authoritative_state_mutation": false,
+      "commit_violation": false,
+      "operator_replay_drift": false,
+      "output_provenance_violation": false,
+      "ownership_violation": false,
+      "within_history_version_violation": false
+    },
+    "packet_a": {
+      "committed_state_hash": "12184923ebd1aaa5afca8618e68cdbd3800cb35ebfca81f7022b48c1719bd348",
+      "environment_hash": "5c41aa2821cb572079e1fdfbc05c609f1a49116dd52082459451dc155c470213",
+      "load_hash": "6b24b95bebdb5ff325d9ad73e96d39a28f66a4489c00b74d34e24db97b4a5af5",
+      "persistent_projection_hash": "c34e5a07d8696ba259e7fd07ec4de2ce383ada51d3214817f2001956711ba1d4",
+      "primary_state_hash": "34479759936adf16885e5606d3575ecfcdd3b79e53fed34d6dd545bf501a616a",
+      "residual_version": "L4-R1",
+      "tangent_version": "L4-K1"
+    },
+    "packet_b": {
+      "committed_state_hash": "12184923ebd1aaa5afca8618e68cdbd3800cb35ebfca81f7022b48c1719bd348",
+      "environment_hash": "5c41aa2821cb572079e1fdfbc05c609f1a49116dd52082459451dc155c470213",
+      "load_hash": "6b24b95bebdb5ff325d9ad73e96d39a28f66a4489c00b74d34e24db97b4a5af5",
+      "persistent_projection_hash": "c34e5a07d8696ba259e7fd07ec4de2ce383ada51d3214817f2001956711ba1d4",
+      "primary_state_hash": "34479759936adf16885e5606d3575ecfcdd3b79e53fed34d6dd545bf501a616a",
+      "residual_version": "L4-R1",
+      "tangent_version": "L4-K1"
+    },
+    "precomparison_relation": "not_evaluated"
+  },
+  "run_id": "run_1",
+  "runtime_mode": "SERIAL_PARALLEL_CALLBACK_CAPABILITY_AUDIT",
+  "schema_version": "JSS-P5B-RUNTIME-OBSERVATION-1.0",
+  "semantic_fingerprint": "46ac338aed9bfeac6b9934eb5c63e70f339df2c3dc57e6f8772c16f531ae6d3a",
+  "subject_id": "JSS-S02"
+}

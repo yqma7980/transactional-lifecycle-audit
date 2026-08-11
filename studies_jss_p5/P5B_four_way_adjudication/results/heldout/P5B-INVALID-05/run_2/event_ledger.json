@@ -1,0 +1,19 @@
+{
+  "case_id": "P5B-INVALID-05",
+  "event_count": 1,
+  "events": [
+    {
+      "event_type": "PrecomparisonBoundaryControlAudit",
+      "lifecycle_evaluation_reachable": false,
+      "mismatch_field": "environment_hash",
+      "packet_a_control": "FROZEN-A",
+      "packet_b_control": "FROZEN-B"
+    }
+  ],
+  "execution_revision": "JSS-P5B3-HELDOUT-1.0",
+  "run_id": "run_2",
+  "runtime_implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "schema_version": "JSS-P5B3-HELDOUT-EVENT-LEDGER-1.0",
+  "semantic_fingerprint": "9d5d3ae953feb4ff5fea9f19f169300abe76ece630df9b04db0d258bb4c51ef9",
+  "subject_id": "JSS-S01"
+}

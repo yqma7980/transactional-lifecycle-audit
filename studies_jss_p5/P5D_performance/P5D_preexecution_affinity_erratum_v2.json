@@ -1,0 +1,14 @@
+{
+  "erratum_id": "JSS-P5D-PREEXEC-AFFINITY-2.0",
+  "status": "PRE_FORMAL_ABI_CORRECTION",
+  "scientific_protocol_changed": false,
+  "matrix_changed": false,
+  "threshold_changed": false,
+  "formal_timing_started_before_erratum": false,
+  "preserved_failed_batches": [
+    "results/qualification",
+    "results/qualification_v2"
+  ],
+  "replacement_qualification_tag": "qualification_v3",
+  "required_observed_affinity": [0]
+}

@@ -1,0 +1,102 @@
+{
+  "case_id": "P5B-DETECT-04",
+  "event_count": 7,
+  "events": [
+    {
+      "accepted": false,
+      "after_hash": null,
+      "before_hash": null,
+      "candidate_id": null,
+      "event_type": "BeginAttempt",
+      "field_name": "direct",
+      "owner": "Host",
+      "residual_version": null,
+      "sequence": 1,
+      "source_plane": null,
+      "tangent_version": null
+    },
+    {
+      "accepted": false,
+      "after_hash": "511a747990f8795a2b4da39946039a8c89fa442b3a98cef12a91ddb8a6bfa6a7",
+      "before_hash": "511a747990f8795a2b4da39946039a8c89fa442b3a98cef12a91ddb8a6bfa6a7",
+      "candidate_id": "da02889aa4b02c82cee5dfc4dcea2abac832ddd61111e0717afd7b909580e570",
+      "event_type": "TrialEvaluate",
+      "field_name": null,
+      "owner": null,
+      "residual_version": "L4-FV-R1",
+      "sequence": 2,
+      "source_plane": null,
+      "tangent_version": "L4-FV-K1"
+    },
+    {
+      "accepted": false,
+      "after_hash": null,
+      "before_hash": null,
+      "candidate_id": "4f9e3d43f83714247a925045049286362d345967c171729dbd956bec5a626901",
+      "event_type": "RejectAttempt",
+      "field_name": null,
+      "owner": null,
+      "residual_version": null,
+      "sequence": 3,
+      "source_plane": null,
+      "tangent_version": null
+    },
+    {
+      "accepted": false,
+      "after_hash": "511a747990f8795a2b4da39946039a8c89fa442b3a98cef12a91ddb8a6bfa6a7",
+      "before_hash": "511a747990f8795a2b4da39946039a8c89fa442b3a98cef12a91ddb8a6bfa6a7",
+      "candidate_id": "4f9e3d43f83714247a925045049286362d345967c171729dbd956bec5a626901",
+      "event_type": "FormTangent",
+      "field_name": "tangent_state_version",
+      "owner": "OperatorPacket",
+      "residual_version": null,
+      "sequence": 4,
+      "source_plane": "rejected_trial",
+      "tangent_version": null
+    },
+    {
+      "accepted": false,
+      "after_hash": "511a747990f8795a2b4da39946039a8c89fa442b3a98cef12a91ddb8a6bfa6a7",
+      "before_hash": "511a747990f8795a2b4da39946039a8c89fa442b3a98cef12a91ddb8a6bfa6a7",
+      "candidate_id": "4f9e3d43f83714247a925045049286362d345967c171729dbd956bec5a626901",
+      "event_type": "Rollback",
+      "field_name": null,
+      "owner": null,
+      "residual_version": null,
+      "sequence": 5,
+      "source_plane": null,
+      "tangent_version": null
+    },
+    {
+      "accepted": false,
+      "after_hash": null,
+      "before_hash": null,
+      "candidate_id": "370d3af06cee8ee3be751cbcd23f5e742dfd5c92230541073aee9ff635824b49",
+      "event_type": "FormResidual",
+      "field_name": null,
+      "owner": null,
+      "residual_version": "L4-FV-R1",
+      "sequence": 6,
+      "source_plane": null,
+      "tangent_version": "STALE"
+    },
+    {
+      "accepted": false,
+      "after_hash": null,
+      "before_hash": null,
+      "candidate_id": "370d3af06cee8ee3be751cbcd23f5e742dfd5c92230541073aee9ff635824b49",
+      "event_type": "RejectAttempt",
+      "field_name": "tangent_state_version",
+      "owner": "OperatorPacket",
+      "residual_version": "L4-FV-R1",
+      "sequence": 7,
+      "source_plane": "pre_correction_version_guard",
+      "tangent_version": "STALE"
+    }
+  ],
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "run_id": "run_2",
+  "schema_version": "JSS-P5B1-EVENT-LEDGER-1.0",
+  "semantic_fingerprint": "b374f9b07160df7700c313b2b380eb6a3fcc449ae00a0b91b8a0d1480d472707",
+  "subject_id": "JSS-S02"
+}

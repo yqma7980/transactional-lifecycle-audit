@@ -1,0 +1,169 @@
+{
+  "case_id": "P5B-PASS-01",
+  "environment": {
+    "backend": {
+      "cells": 32,
+      "name": "L4 finite-volume subject"
+    },
+    "platform_machine": "AMD64",
+    "platform_system": "Windows",
+    "processes": 1,
+    "python": "3.12.10",
+    "python_implementation": "CPython",
+    "subject_id": "JSS-S02",
+    "threads": 1
+  },
+  "event_count": 8,
+  "events": [
+    {
+      "accepted": false,
+      "after_hash": null,
+      "before_hash": null,
+      "candidate_id": null,
+      "event_type": "BeginAttempt",
+      "field_name": "direct",
+      "owner": "Host",
+      "residual_version": null,
+      "sequence": 1,
+      "source_plane": null,
+      "tangent_version": null
+    },
+    {
+      "accepted": false,
+      "after_hash": "511a747990f8795a2b4da39946039a8c89fa442b3a98cef12a91ddb8a6bfa6a7",
+      "before_hash": "511a747990f8795a2b4da39946039a8c89fa442b3a98cef12a91ddb8a6bfa6a7",
+      "candidate_id": "5b0b658cb439d4f72122e817bb9be78cc819c949a74b466de77e8ad2f4fc01c4",
+      "event_type": "TrialEvaluate",
+      "field_name": null,
+      "owner": null,
+      "residual_version": "L4-FV-R1",
+      "sequence": 2,
+      "source_plane": null,
+      "tangent_version": "L4-FV-K1"
+    },
+    {
+      "accepted": false,
+      "after_hash": null,
+      "before_hash": null,
+      "candidate_id": "aa1338a1748d1f3c1162061778f485c5967739851e4441acfa3dbd351fd1c2cc",
+      "event_type": "RejectAttempt",
+      "field_name": null,
+      "owner": null,
+      "residual_version": null,
+      "sequence": 3,
+      "source_plane": null,
+      "tangent_version": null
+    },
+    {
+      "accepted": false,
+      "after_hash": "511a747990f8795a2b4da39946039a8c89fa442b3a98cef12a91ddb8a6bfa6a7",
+      "before_hash": "511a747990f8795a2b4da39946039a8c89fa442b3a98cef12a91ddb8a6bfa6a7",
+      "candidate_id": "aa1338a1748d1f3c1162061778f485c5967739851e4441acfa3dbd351fd1c2cc",
+      "event_type": "Rollback",
+      "field_name": "none",
+      "owner": "CommittedState",
+      "residual_version": null,
+      "sequence": 4,
+      "source_plane": "rejected_trial",
+      "tangent_version": null
+    },
+    {
+      "accepted": false,
+      "after_hash": "511a747990f8795a2b4da39946039a8c89fa442b3a98cef12a91ddb8a6bfa6a7",
+      "before_hash": "511a747990f8795a2b4da39946039a8c89fa442b3a98cef12a91ddb8a6bfa6a7",
+      "candidate_id": "aa1338a1748d1f3c1162061778f485c5967739851e4441acfa3dbd351fd1c2cc",
+      "event_type": "Rollback",
+      "field_name": null,
+      "owner": null,
+      "residual_version": null,
+      "sequence": 5,
+      "source_plane": null,
+      "tangent_version": null
+    },
+    {
+      "accepted": false,
+      "after_hash": null,
+      "before_hash": null,
+      "candidate_id": "95b0e9152be44d7c979b487f7364079050f9213f37a472ca7a4c29f98d401610",
+      "event_type": "FormResidual",
+      "field_name": null,
+      "owner": null,
+      "residual_version": "L4-FV-R1",
+      "sequence": 6,
+      "source_plane": null,
+      "tangent_version": "L4-FV-K1"
+    },
+    {
+      "accepted": true,
+      "after_hash": "b87b30faac4219a1c77bf2f01ad5b449f5fc90b7ea521570cbb5c04d8e06a8b0",
+      "before_hash": null,
+      "candidate_id": "95b0e9152be44d7c979b487f7364079050f9213f37a472ca7a4c29f98d401610",
+      "event_type": "AcceptCommit",
+      "field_name": null,
+      "owner": null,
+      "residual_version": null,
+      "sequence": 7,
+      "source_plane": null,
+      "tangent_version": null
+    },
+    {
+      "accepted": true,
+      "after_hash": null,
+      "before_hash": null,
+      "candidate_id": "95b0e9152be44d7c979b487f7364079050f9213f37a472ca7a4c29f98d401610",
+      "event_type": "OutputAcceptedState",
+      "field_name": null,
+      "owner": null,
+      "residual_version": null,
+      "sequence": 8,
+      "source_plane": "accepted_current_state",
+      "tangent_version": null
+    }
+  ],
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "measurements": {
+    "accepted_field_delta": 0.0,
+    "converged": true,
+    "declared_relation": "DECLARED_VERSIONED_TANGENT_LAG",
+    "finite": true,
+    "operator_delta": 0.0
+  },
+  "raw_observation": {
+    "evidence_tokens": [
+      "OPERATOR_PACKET_VERSIONS"
+    ],
+    "execution_error": null,
+    "lifecycle_signals": {
+      "authoritative_state_mutation": false,
+      "commit_violation": false,
+      "operator_replay_drift": false,
+      "output_provenance_violation": false,
+      "ownership_violation": false,
+      "within_history_version_violation": false
+    },
+    "packet_a": {
+      "committed_state_hash": "f4a9cd969f450321cf283071a30355f8cdba12994705f0cc9166731f0c1ebc5e",
+      "environment_hash": "ae089febb9e3b82896725944c34be11741507d91d4bf0e33809a2b08b67a7c7e",
+      "load_hash": "9a5d99145c59bc939235b89d10dcbcb8c1d13e722a883ccb9f99328debf47c1d",
+      "persistent_projection_hash": "62c534ddc2027c658500f69b6056d9cf61b516684ad00439273a8eb8114e9ced",
+      "primary_state_hash": "b90cb3a11489408f6f25da06200805d8b464b236b90c6399906df1ebf91fa85c",
+      "residual_version": "L4-FV-R1",
+      "tangent_version": "L4-FV-K1"
+    },
+    "packet_b": {
+      "committed_state_hash": "f4a9cd969f450321cf283071a30355f8cdba12994705f0cc9166731f0c1ebc5e",
+      "environment_hash": "ae089febb9e3b82896725944c34be11741507d91d4bf0e33809a2b08b67a7c7e",
+      "load_hash": "9a5d99145c59bc939235b89d10dcbcb8c1d13e722a883ccb9f99328debf47c1d",
+      "persistent_projection_hash": "62c534ddc2027c658500f69b6056d9cf61b516684ad00439273a8eb8114e9ced",
+      "primary_state_hash": "b90cb3a11489408f6f25da06200805d8b464b236b90c6399906df1ebf91fa85c",
+      "residual_version": "L4-FV-R1",
+      "tangent_version": "L4-FV-K1-DECLARED-LAG"
+    },
+    "precomparison_relation": "compatible"
+  },
+  "run_id": "run_1",
+  "runtime_mode": "L4_FV_DECLARED_OPERATOR_CONTROL",
+  "schema_version": "JSS-P5B-RUNTIME-OBSERVATION-1.0",
+  "semantic_fingerprint": "68b242d04bc564057cb7b439d228447a79da48b9b229b52653d9b15580789b32",
+  "subject_id": "JSS-S02"
+}

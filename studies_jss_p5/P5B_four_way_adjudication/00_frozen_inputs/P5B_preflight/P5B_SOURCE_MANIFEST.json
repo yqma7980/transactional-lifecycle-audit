@@ -1,0 +1,185 @@
+﻿{
+    "manifest_id":  "JSS-P5B-SOURCE-MANIFEST-1.0",
+    "package_status":  "IMPLEMENTED_UNIT_TESTED_NOT_FORMALLY_EXECUTED",
+    "entry_count":  35,
+    "aggregate_format":  "ordinal-sorted relative-path|sha256 lines joined by LF with no final newline",
+    "aggregate_sha256":  "f5c91528e4341cdf083924b00efd55b497fd9568c81612d573d31059135de68c",
+    "entries":  [
+                    {
+                        "path":  "00_frozen_inputs/P5A/01_semantics/P5A_adjudication_contract.json",
+                        "sha256":  "f58f5967e95f81e2a98adc04bf4a4f1deff1b8a4f89da52f5dcb855c2cab4849",
+                        "bytes":  2018
+                    },
+                    {
+                        "path":  "00_frozen_inputs/P5A/01_semantics/P5A_verdict_state_machine.md",
+                        "sha256":  "f6323f1933ede306468fd6ed74897f7c71d9aca533c6e33491df12336e0e3859",
+                        "bytes":  2404
+                    },
+                    {
+                        "path":  "00_frozen_inputs/P5A/01_semantics/P5A_verdict_transition_table.csv",
+                        "sha256":  "1ae49b51bc37a3dc6d5defa669da2e07bd7a01a1499a7285a99eb244226aa06c",
+                        "bytes":  2152
+                    },
+                    {
+                        "path":  "00_frozen_inputs/P5A/02_four_way/P5B_acceptance_gates.md",
+                        "sha256":  "521254d7c1abff40495b9bf5bad670387fd369a6119dac7b75606280b6ed47fd",
+                        "bytes":  1676
+                    },
+                    {
+                        "path":  "00_frozen_inputs/P5A/02_four_way/P5B_benign_control_catalog.md",
+                        "sha256":  "41349237d91339b5927cc653b9484b86811d156e93533c9179ef980a2c722544",
+                        "bytes":  1426
+                    },
+                    {
+                        "path":  "00_frozen_inputs/P5A/02_four_way/P5B_four_way_case_matrix.csv",
+                        "sha256":  "a4583c96c8bcd847816ec1a72493c6a326a2a7eb5fe787efa68edd1c92ded0e3",
+                        "bytes":  5998
+                    },
+                    {
+                        "path":  "00_frozen_inputs/P5A/02_four_way/P5B_partition_and_heldout_rule.md",
+                        "sha256":  "5c8086bc48bb414d8b0b0eb5798635d6526282c509498fefb65d37635a9f238a",
+                        "bytes":  960
+                    },
+                    {
+                        "path":  "00_frozen_inputs/P5A/P5A_final_report.md",
+                        "sha256":  "a50dcca860f838413f77526e1485926da09db68808865c17cc01396459447196",
+                        "bytes":  3409
+                    },
+                    {
+                        "path":  "00_frozen_inputs/P5A/P5A_source_manifest.json",
+                        "sha256":  "1cc7ccf17cba60e642c32ae0b6c761b2274b1d40a5477f450eb819bd91335c61",
+                        "bytes":  5598
+                    },
+                    {
+                        "path":  "P5B_FINAL_QA.md",
+                        "sha256":  "8ad099b9d6df425e59cbf0274318dd4febad9b88859eb6351e289e9d939c21bc",
+                        "bytes":  2682
+                    },
+                    {
+                        "path":  "P5B_IMPLEMENTATION_MANIFEST.json",
+                        "sha256":  "91b1b104cf173f6709394ee667b9ffe94b5da4672e0077c3ffb1ca3c46a47f55",
+                        "bytes":  3440
+                    },
+                    {
+                        "path":  "P5B_IMPLEMENTATION_PREFLIGHT_PROTOCOL.md",
+                        "sha256":  "74a67a25456f505133b5fdae9272883ee455ac85fac239ea927e890de0319920",
+                        "bytes":  1534
+                    },
+                    {
+                        "path":  "P5B_PREFLIGHT_AUTHORIZATION.json",
+                        "sha256":  "3a769fa2bcc4204dd982d1095cb9107f74b81369721d8642bcf1c9870233ab45",
+                        "bytes":  525
+                    },
+                    {
+                        "path":  "P5B_PREFLIGHT_GATE_RESULTS.json",
+                        "sha256":  "f1c09e553c6cb2e8720642c70519d76c1c2883377ef9c28c54bfb1b8e54139da",
+                        "bytes":  2237
+                    },
+                    {
+                        "path":  "README.md",
+                        "sha256":  "4d3bc5b97a5b7d3858f4104e2438832876e18f3f5abb7f9c72e45e57d3ff8302",
+                        "bytes":  527
+                    },
+                    {
+                        "path":  "qa/ast_parse.log",
+                        "sha256":  "276ed45790a1bba532c1351b41c9f0dfa0846ccbd4446d29c0049b9c423d62d3",
+                        "bytes":  16
+                    },
+                    {
+                        "path":  "qa/final_boundary_check.json",
+                        "sha256":  "5d5054e6351df42c42b4c0c92ede41cb52cbfaa6db2143be85e73dd0fa17cc7e",
+                        "bytes":  812
+                    },
+                    {
+                        "path":  "qa/unit_tests.log",
+                        "sha256":  "b4fba2481d2defb570e623d290f09837c2d62310d1fc7a7e2aed9c3d91361ab1",
+                        "bytes":  3958
+                    },
+                    {
+                        "path":  "run_p5b_preflight.py",
+                        "sha256":  "498562b95555fb642574d2c6b715e95379e0a1affdc5966da98d6d771fb2a200",
+                        "bytes":  1589
+                    },
+                    {
+                        "path":  "schemas/p5b_case_result.schema.json",
+                        "sha256":  "5d8dfb9c9a1498cb11df23d192f06aff3cf0890321d503170cf83911cc0d750d",
+                        "bytes":  2664
+                    },
+                    {
+                        "path":  "src/jss_p5b/__init__.py",
+                        "sha256":  "66ed0ee804e7a77bcc39cb43f082fb82d7cad0b21b3f27bbf368a82a39b94cfd",
+                        "bytes":  640
+                    },
+                    {
+                        "path":  "src/jss_p5b/adapters.py",
+                        "sha256":  "07bf802efc2bb83147e6b970952877981fbc38946e2f063e85d38f9513aeaf71",
+                        "bytes":  6855
+                    },
+                    {
+                        "path":  "src/jss_p5b/adjudication.py",
+                        "sha256":  "c7c1b7701a68c48ac0a0e1540f021f0b53209a34aa83f67e6a3cbde7b4eb5482",
+                        "bytes":  4389
+                    },
+                    {
+                        "path":  "src/jss_p5b/canonical.py",
+                        "sha256":  "2c28d191d59d96e84183bba10b37d9cdfcc2345ab69bb6d7f3ec7840e57c84fd",
+                        "bytes":  1287
+                    },
+                    {
+                        "path":  "src/jss_p5b/cases.py",
+                        "sha256":  "cfc392a68ade4b92defc7e2d6495b4d8a44d4e1f13a982912688b1275512e6b3",
+                        "bytes":  3732
+                    },
+                    {
+                        "path":  "src/jss_p5b/model.py",
+                        "sha256":  "878a9d5e5e9eac0f6d9895f26110c8d3dd607c4101d817890eaa56fb728647c3",
+                        "bytes":  6407
+                    },
+                    {
+                        "path":  "src/jss_p5b/runner_guard.py",
+                        "sha256":  "5a9e0d6e563972cd71035b347ffe0be6b05608abd32a52664edf9d1a2b812ef4",
+                        "bytes":  3050
+                    },
+                    {
+                        "path":  "src/jss_p5b/schema.py",
+                        "sha256":  "4470eb8cab2ef1c8c0c9e51bdb7333e6a1f3ca256851828f596f4d0ad12d5b59",
+                        "bytes":  4378
+                    },
+                    {
+                        "path":  "tests/helpers.py",
+                        "sha256":  "5de2ab1520eb5df2850d88f041c452b4ff64bb368d8ae7cd506c5a005888c4b2",
+                        "bytes":  2933
+                    },
+                    {
+                        "path":  "tests/test_adjudication.py",
+                        "sha256":  "f2cd8489f547707bf84cee4a8d403af8e0840451e6f0ffa3144946df17a45afc",
+                        "bytes":  5354
+                    },
+                    {
+                        "path":  "tests/test_cases_and_adapters.py",
+                        "sha256":  "a38b3b20b738eb4fc53d52fb7b7a22cca1515a98a11fd3f6784c7f57848355e5",
+                        "bytes":  3255
+                    },
+                    {
+                        "path":  "tests/test_import_side_effects.py",
+                        "sha256":  "ae7e14167f050748ac237f65f87974c2d5a12475918467913342e156aa31686f",
+                        "bytes":  1194
+                    },
+                    {
+                        "path":  "tests/test_runner_guard.py",
+                        "sha256":  "36f38d2e247644407a01c1b0ec6f17c27f1b0a22e213d87f1f20e690998edcae",
+                        "bytes":  2871
+                    },
+                    {
+                        "path":  "tests/test_safe_null.py",
+                        "sha256":  "99dd730f5dd7d1ce8dfc6f18d029783923a87f41f3b3dd2fc539eb03b6d0fca0",
+                        "bytes":  1161
+                    },
+                    {
+                        "path":  "tests/test_schema.py",
+                        "sha256":  "4eeb4238b1f6c20c356d39165b3f09dfe673837c82aac61a51820442f24250c7",
+                        "bytes":  1957
+                    }
+                ],
+    "manifest_self_hash_embedded":  false
+}

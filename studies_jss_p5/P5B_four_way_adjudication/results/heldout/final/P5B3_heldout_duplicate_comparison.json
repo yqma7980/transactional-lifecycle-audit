@@ -1,0 +1,61 @@
+{
+  "all_duplicate_gates_passed": true,
+  "case_count": 4,
+  "comparisons": [
+    {
+      "both_pass_flag_true": true,
+      "case_id": "P5B-DETECT-05",
+      "case_result_equal_after_run_id_normalization": true,
+      "duplicate_gate_pass": true,
+      "event_ledger_semantic_fingerprint_equal": true,
+      "input_hashes_equal": true,
+      "observed_verdict": "DETECT_LIFECYCLE_DRIFT",
+      "run_1_semantic_fingerprint": "44fb0ea4303a46be253cc5a02f1098e999ad1cd4b6e244bc0c13b4146d0c2fce",
+      "run_2_semantic_fingerprint": "44fb0ea4303a46be253cc5a02f1098e999ad1cd4b6e244bc0c13b4146d0c2fce",
+      "runtime_semantic_fingerprint_equal": true,
+      "verdict_equal": true
+    },
+    {
+      "both_pass_flag_true": true,
+      "case_id": "P5B-INVALID-05",
+      "case_result_equal_after_run_id_normalization": true,
+      "duplicate_gate_pass": true,
+      "event_ledger_semantic_fingerprint_equal": true,
+      "input_hashes_equal": true,
+      "observed_verdict": "INVALID",
+      "run_1_semantic_fingerprint": "9d5d3ae953feb4ff5fea9f19f169300abe76ece630df9b04db0d258bb4c51ef9",
+      "run_2_semantic_fingerprint": "9d5d3ae953feb4ff5fea9f19f169300abe76ece630df9b04db0d258bb4c51ef9",
+      "runtime_semantic_fingerprint_equal": true,
+      "verdict_equal": true
+    },
+    {
+      "both_pass_flag_true": true,
+      "case_id": "P5B-NS-05",
+      "case_result_equal_after_run_id_normalization": true,
+      "duplicate_gate_pass": true,
+      "event_ledger_semantic_fingerprint_equal": true,
+      "input_hashes_equal": true,
+      "observed_verdict": "NOT_SUPPORTED",
+      "run_1_semantic_fingerprint": "46ac338aed9bfeac6b9934eb5c63e70f339df2c3dc57e6f8772c16f531ae6d3a",
+      "run_2_semantic_fingerprint": "46ac338aed9bfeac6b9934eb5c63e70f339df2c3dc57e6f8772c16f531ae6d3a",
+      "runtime_semantic_fingerprint_equal": true,
+      "verdict_equal": true
+    },
+    {
+      "both_pass_flag_true": true,
+      "case_id": "P5B-PASS-05",
+      "case_result_equal_after_run_id_normalization": true,
+      "duplicate_gate_pass": true,
+      "event_ledger_semantic_fingerprint_equal": true,
+      "input_hashes_equal": true,
+      "observed_verdict": "PASS_INVARIANT",
+      "run_1_semantic_fingerprint": "24edb151ae7f653971f90a887432d4d3a3afec7878040d5532d3676479505359",
+      "run_2_semantic_fingerprint": "24edb151ae7f653971f90a887432d4d3a3afec7878040d5532d3676479505359",
+      "runtime_semantic_fingerprint_equal": true,
+      "verdict_equal": true
+    }
+  ],
+  "fresh_process_repetitions_per_case": 2,
+  "schema_version": "JSS-P5B3-HELDOUT-DUPLICATE-COMPARISON-1.0",
+  "status": "PASS"
+}

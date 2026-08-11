@@ -1,0 +1,13 @@
+rule_id,stage,precondition,condition,verdict,detection_denominator,required_record,example
+V00,execution,case_authorized,execution or required values fail,EXECUTION_ERROR,no,execution status and failure point,nonfinite required packet
+V01,applicability,execution intact,required host feature or evidence field unavailable,NOT_SUPPORTED,no,missing feature and access plane,native rejected candidate not exposed
+V02,eligibility,observable histories,declared primary state differs,INVALID,no,canonical primary-state fingerprints,pre-replay x mismatch
+V03,eligibility,observable histories,committed state or semantic persistent projection incompatible,INVALID,no,committed and projection fingerprints,pre-replay committed-state mismatch
+V04,eligibility,observable histories,load boundary solver control or external condition differs,INVALID,no,external-control packet hashes,load mismatch
+V05,eligibility,observable histories,residual and tangent versions already incompatible before replay,INVALID,no,pre-replay version relation,pre-comparison version mismatch
+V06,lifecycle,eligible comparison,rejected history mutates committed or rollback-external authoritative state,DETECT_LIFECYCLE_DRIFT,yes,owner mutation and rollback record,premature commit
+V07,lifecycle,eligible comparison,rejected or diagnostic output feeds later physics,DETECT_LIFECYCLE_DRIFT,yes,output source and reachability path,output feedback
+V08,lifecycle,eligible comparison,callback order changes later operator or state,DETECT_LIFECYCLE_DRIFT,yes,event ledger and replay delta,callback-order bias
+V09,lifecycle,eligible comparison,one history emits internally incompatible residual and tangent versions,DETECT_LIFECYCLE_DRIFT,yes,operator packet versions and rejection point,within-history F08
+V10,lifecycle,eligible comparison,accepted output is reachable before commit or from an unaccepted candidate,DETECT_LIFECYCLE_DRIFT,yes,candidate provenance and commit relation,output provenance violation
+V11,invariance,eligible comparison,no lifecycle violation and replay relation holds,PASS_INVARIANT,control only,semantic replay comparison and ledger,declared compatible tangent lag

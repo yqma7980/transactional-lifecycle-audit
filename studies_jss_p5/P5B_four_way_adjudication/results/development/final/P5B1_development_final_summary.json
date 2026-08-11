@@ -1,0 +1,183 @@
+{
+  "abaqus_used": false,
+  "all_cases_passed_frozen_verdict": true,
+  "all_duplicate_gates_passed": true,
+  "case_results": [
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-PASS-01",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "PASS_INVARIANT",
+      "formal_repetitions": 2,
+      "observed_verdict": "PASS_INVARIANT",
+      "subject_id": "JSS-S02"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-PASS-02",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "PASS_INVARIANT",
+      "formal_repetitions": 2,
+      "observed_verdict": "PASS_INVARIANT",
+      "subject_id": "JSS-S03"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-PASS-03",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "PASS_INVARIANT",
+      "formal_repetitions": 2,
+      "observed_verdict": "PASS_INVARIANT",
+      "subject_id": "JSS-S03"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-PASS-04",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "PASS_INVARIANT",
+      "formal_repetitions": 2,
+      "observed_verdict": "PASS_INVARIANT",
+      "subject_id": "JSS-S01"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-DETECT-01",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "DETECT_LIFECYCLE_DRIFT",
+      "formal_repetitions": 2,
+      "observed_verdict": "DETECT_LIFECYCLE_DRIFT",
+      "subject_id": "JSS-S01"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-DETECT-02",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "DETECT_LIFECYCLE_DRIFT",
+      "formal_repetitions": 2,
+      "observed_verdict": "DETECT_LIFECYCLE_DRIFT",
+      "subject_id": "JSS-S02"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-DETECT-03",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "DETECT_LIFECYCLE_DRIFT",
+      "formal_repetitions": 2,
+      "observed_verdict": "DETECT_LIFECYCLE_DRIFT",
+      "subject_id": "JSS-S03"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-DETECT-04",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "DETECT_LIFECYCLE_DRIFT",
+      "formal_repetitions": 2,
+      "observed_verdict": "DETECT_LIFECYCLE_DRIFT",
+      "subject_id": "JSS-S02"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-INVALID-01",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "INVALID",
+      "formal_repetitions": 2,
+      "observed_verdict": "INVALID",
+      "subject_id": "JSS-S02"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-INVALID-02",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "INVALID",
+      "formal_repetitions": 2,
+      "observed_verdict": "INVALID",
+      "subject_id": "JSS-S01"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-INVALID-03",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "INVALID",
+      "formal_repetitions": 2,
+      "observed_verdict": "INVALID",
+      "subject_id": "JSS-S03"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-INVALID-04",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "INVALID",
+      "formal_repetitions": 2,
+      "observed_verdict": "INVALID",
+      "subject_id": "JSS-S02"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-NS-01",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "NOT_SUPPORTED",
+      "formal_repetitions": 2,
+      "observed_verdict": "NOT_SUPPORTED",
+      "subject_id": "JSS-S03"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-NS-02",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "NOT_SUPPORTED",
+      "formal_repetitions": 2,
+      "observed_verdict": "NOT_SUPPORTED",
+      "subject_id": "JSS-S03"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-NS-03",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "NOT_SUPPORTED",
+      "formal_repetitions": 2,
+      "observed_verdict": "NOT_SUPPORTED",
+      "subject_id": "JSS-S02"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-NS-04",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "NOT_SUPPORTED",
+      "formal_repetitions": 2,
+      "observed_verdict": "NOT_SUPPORTED",
+      "subject_id": "JSS-S01"
+    }
+  ],
+  "design_version": "JSS-P5B.0",
+  "does_not_authorize_held_out": true,
+  "evidence_status": "OBSERVED-P5B-DEVELOPMENT",
+  "formal_case_count": 16,
+  "formal_process_count": 32,
+  "fresh_process_repetitions_per_case": 2,
+  "held_out_access_authorized": false,
+  "held_out_case_count": 4,
+  "held_out_case_ids": [
+    "P5B-PASS-05",
+    "P5B-DETECT-05",
+    "P5B-INVALID-05",
+    "P5B-NS-05"
+  ],
+  "held_out_results_exist": false,
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "processes_per_repetition": 1,
+  "production_project_used": false,
+  "schema_version": "JSS-P5B1-DEVELOPMENT-SUMMARY-1.0",
+  "status": "DEVELOPMENT_COMPLETE_HELD_OUT_REMAINS_SEALED",
+  "subject_counts_by_run": {
+    "JSS-S01": 8,
+    "JSS-S02": 12,
+    "JSS-S03": 12
+  },
+  "threads_per_process": 1,
+  "verdict_counts_by_run": {
+    "DETECT_LIFECYCLE_DRIFT": 8,
+    "INVALID": 8,
+    "NOT_SUPPORTED": 8,
+    "PASS_INVARIANT": 8
+  }
+}

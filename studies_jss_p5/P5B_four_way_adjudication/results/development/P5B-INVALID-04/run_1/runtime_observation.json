@@ -1,0 +1,66 @@
+{
+  "case_id": "P5B-INVALID-04",
+  "environment": {
+    "backend": {
+      "cells": 32,
+      "name": "L4 finite-volume subject"
+    },
+    "platform_machine": "AMD64",
+    "platform_system": "Windows",
+    "processes": 1,
+    "python": "3.12.10",
+    "python_implementation": "CPython",
+    "subject_id": "JSS-S02",
+    "threads": 1
+  },
+  "event_count": 1,
+  "events": [
+    {
+      "event_type": "PrecomparisonVersionAudit",
+      "field_name": "tangent_version"
+    }
+  ],
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "measurements": {
+    "lifecycle_not_evaluated": true,
+    "pre_replay_version_compatible": false
+  },
+  "raw_observation": {
+    "evidence_tokens": [
+      "PRE_REPLAY_OPERATOR_VERSIONS"
+    ],
+    "execution_error": null,
+    "lifecycle_signals": {
+      "authoritative_state_mutation": false,
+      "commit_violation": false,
+      "operator_replay_drift": false,
+      "output_provenance_violation": false,
+      "ownership_violation": false,
+      "within_history_version_violation": false
+    },
+    "packet_a": {
+      "committed_state_hash": "f4a9cd969f450321cf283071a30355f8cdba12994705f0cc9166731f0c1ebc5e",
+      "environment_hash": "ae089febb9e3b82896725944c34be11741507d91d4bf0e33809a2b08b67a7c7e",
+      "load_hash": "9a5d99145c59bc939235b89d10dcbcb8c1d13e722a883ccb9f99328debf47c1d",
+      "persistent_projection_hash": "62c534ddc2027c658500f69b6056d9cf61b516684ad00439273a8eb8114e9ced",
+      "primary_state_hash": "b90cb3a11489408f6f25da06200805d8b464b236b90c6399906df1ebf91fa85c",
+      "residual_version": "L4-FV-R1",
+      "tangent_version": "L4-FV-K1"
+    },
+    "packet_b": {
+      "committed_state_hash": "f4a9cd969f450321cf283071a30355f8cdba12994705f0cc9166731f0c1ebc5e",
+      "environment_hash": "ae089febb9e3b82896725944c34be11741507d91d4bf0e33809a2b08b67a7c7e",
+      "load_hash": "9a5d99145c59bc939235b89d10dcbcb8c1d13e722a883ccb9f99328debf47c1d",
+      "persistent_projection_hash": "62c534ddc2027c658500f69b6056d9cf61b516684ad00439273a8eb8114e9ced",
+      "primary_state_hash": "b90cb3a11489408f6f25da06200805d8b464b236b90c6399906df1ebf91fa85c",
+      "residual_version": "L4-FV-R1",
+      "tangent_version": "L4-FV-K1-PRE-REPLAY-STALE"
+    },
+    "precomparison_relation": "incompatible"
+  },
+  "run_id": "run_1",
+  "runtime_mode": "L4_FV_PRECOMPARISON_VERSION_MISMATCH",
+  "schema_version": "JSS-P5B-RUNTIME-OBSERVATION-1.0",
+  "semantic_fingerprint": "c7dfcdf3363e63e6cc29f4c8ee354c65d2371874e8d45a144d75ac1dda72a633",
+  "subject_id": "JSS-S02"
+}

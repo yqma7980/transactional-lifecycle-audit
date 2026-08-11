@@ -1,0 +1,10 @@
+{
+  "active_power_scheme": "UNAVAILABLE: unsupported operand type(s) for +: 'NoneType' and 'str'",
+  "container_image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+  "container_image_identity": "[\"dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab\"]",
+  "formal_affinity": "container cpuset CPU 0",
+  "formal_processes_per_run": 1,
+  "formal_threads_per_process": 1,
+  "host_platform": "win32",
+  "host_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
+}

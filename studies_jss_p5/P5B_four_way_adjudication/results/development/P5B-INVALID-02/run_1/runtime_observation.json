@@ -1,0 +1,73 @@
+{
+  "case_id": "P5B-INVALID-02",
+  "environment": {
+    "backend": {
+      "cells": 32,
+      "dolfinx": "0.10.0",
+      "name": "DOLFINx/PETSc path-dependent finite-element host",
+      "petsc4py": "3.24.0",
+      "quadrature_points": 96
+    },
+    "platform_machine": "x86_64",
+    "platform_system": "Linux",
+    "processes": 1,
+    "python": "3.12.3",
+    "python_implementation": "CPython",
+    "subject_id": "JSS-S01",
+    "threads": 1
+  },
+  "event_count": 1,
+  "events": [
+    {
+      "event_type": "PrecomparisonCommittedProjectionAudit",
+      "field_name": "gamma_p[27,0,1]"
+    }
+  ],
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "measurements": {
+    "active_field_binding": "gamma_p[27,0,1]",
+    "alternate_delta": 0.15786392138247532,
+    "committed_projection_equal": false,
+    "lifecycle_not_evaluated": true,
+    "persistent_projection_equal": false
+  },
+  "raw_observation": {
+    "evidence_tokens": [
+      "COMMITTED_FINGERPRINT",
+      "SEMANTIC_PERSISTENT_PROJECTION"
+    ],
+    "execution_error": null,
+    "lifecycle_signals": {
+      "authoritative_state_mutation": false,
+      "commit_violation": false,
+      "operator_replay_drift": false,
+      "output_provenance_violation": false,
+      "ownership_violation": false,
+      "within_history_version_violation": false
+    },
+    "packet_a": {
+      "committed_state_hash": "5349b8a86a24e5a06b29742d64ff0412b7b802767695698eec4ecf8166d3a14b",
+      "environment_hash": "0bff5ad9a1d0efe4fb90249e5ef29c27100691b0c97eada0a55b6452d5903a0a",
+      "load_hash": "6962edef2bf1a36452b2dc525c68f971755393dfd59f91b9f667de76c0195418",
+      "persistent_projection_hash": "25618c46caa76152d36757ec7eb4b19f168ad870272ba6ab6004aa06b8757588",
+      "primary_state_hash": "29381bd283016f1d6598ccf2191b4e61dbafc5fcfb45113d172db761997df91d",
+      "residual_version": "P4D-R1",
+      "tangent_version": "P4D-K1"
+    },
+    "packet_b": {
+      "committed_state_hash": "27137d086e7fda3b16ecba9fc302f8ff5051ba9d82a6876c03c57f024cdf03e5",
+      "environment_hash": "0bff5ad9a1d0efe4fb90249e5ef29c27100691b0c97eada0a55b6452d5903a0a",
+      "load_hash": "6962edef2bf1a36452b2dc525c68f971755393dfd59f91b9f667de76c0195418",
+      "persistent_projection_hash": "f89f8c4bd020bf51608e325513e89e81437cb6bf29c2a4bb5d1865bea1c0ff3d",
+      "primary_state_hash": "29381bd283016f1d6598ccf2191b4e61dbafc5fcfb45113d172db761997df91d",
+      "residual_version": "P4D-R1",
+      "tangent_version": "P4D-K1"
+    },
+    "precomparison_relation": "incompatible"
+  },
+  "run_id": "run_1",
+  "runtime_mode": "DOLFINX_PRECOMPARISON_COMMITTED_MISMATCH",
+  "schema_version": "JSS-P5B-RUNTIME-OBSERVATION-1.0",
+  "semantic_fingerprint": "7015e1722e9d19b2391551ca471d54157c5876e5c8c4000980179349965062f3",
+  "subject_id": "JSS-S01"
+}

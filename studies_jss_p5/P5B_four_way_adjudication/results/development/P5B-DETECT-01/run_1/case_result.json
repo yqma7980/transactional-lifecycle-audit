@@ -1,0 +1,42 @@
+{
+  "active_signals": [
+    "authoritative_state_mutation",
+    "commit_violation"
+  ],
+  "applicability_evaluated": true,
+  "capability": {
+    "available_tokens": [
+      "COMMITTED_FINGERPRINT",
+      "COMMIT_BOUNDARY",
+      "REJECT_EVENT"
+    ],
+    "missing_events": [],
+    "missing_fields": [],
+    "observable": true,
+    "required_tokens": [
+      "COMMITTED_FINGERPRINT",
+      "COMMIT_BOUNDARY",
+      "REJECT_EVENT"
+    ]
+  },
+  "case_id": "P5B-DETECT-01",
+  "eligibility_evaluated": true,
+  "expected_verdict": "DETECT_LIFECYCLE_DRIFT",
+  "four_way_verdict": "DETECT_LIFECYCLE_DRIFT",
+  "implementation_version": "JSS-P5B-IMPL-1.0a",
+  "lifecycle_evaluated": true,
+  "mismatch_fields": [],
+  "observed_outcome": "DETECT_LIFECYCLE_DRIFT",
+  "packet_a_fingerprint": "5c0b7147f9304ee552540fe630e64e883713d00048f60daf4baa15c6134dd485",
+  "packet_b_fingerprint": "5c0b7147f9304ee552540fe630e64e883713d00048f60daf4baa15c6134dd485",
+  "partition": "DEVELOPMENT",
+  "pass_flag": true,
+  "reasons": [
+    "signal:authoritative_state_mutation",
+    "signal:commit_violation"
+  ],
+  "run_id": "run_1",
+  "schema_version": "JSS-P5B-CASE-RESULT-1.1",
+  "stage": "LIFECYCLE",
+  "subject_id": "JSS-S01"
+}

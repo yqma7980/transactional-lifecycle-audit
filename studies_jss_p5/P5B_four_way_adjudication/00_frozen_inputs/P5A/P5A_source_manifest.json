@@ -1,0 +1,161 @@
+{
+  "package_id": "JSS-P5A-1.0",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "execution_authorized": false,
+  "results_exist": false,
+  "no_case_execution": true,
+  "no_abaqus_execution": true,
+  "manifest_self_hash_embedded": false,
+  "files": [
+    {
+      "path": "00_inputs/ADES-D-26-01849_decision_letter_user_email_transcript.md",
+      "sha256": "e78a9db141fb378befbba7a221d9f153c5d13035c5c3d4ef85d7a7278fe768d3",
+      "bytes": 1426
+    },
+    {
+      "path": "00_inputs/JSS_claim_evidence_matrix_v0_2.md",
+      "sha256": "6c6cf316b45e3af93f440f124ca0cdc5b2b1f9abe54c90f2157c5e379777005c",
+      "bytes": 7348
+    },
+    {
+      "path": "00_inputs/jss_manuscript_v0_2.tex",
+      "sha256": "637d5260262e4665eab7e2116237c7293463a2e06870c861e3cdcb47ae14b67b",
+      "bytes": 39309
+    },
+    {
+      "path": "00_inputs/JSS_P1_acceptance_gates.md",
+      "sha256": "16830d1972e34585b349194a62bcd3499457e02f0681522e2f25c8e2423a31f4",
+      "bytes": 2714
+    },
+    {
+      "path": "00_inputs/JSS_P1_fault_taxonomy.csv",
+      "sha256": "14e6f97c4c836bfdd7ad1b38d1a4e96765eb695aaf71cb618046afaca3381d18",
+      "bytes": 3960
+    },
+    {
+      "path": "00_inputs/JSS_P1_metrics_and_statistics_freeze.md",
+      "sha256": "c2080dccaf07b866a254f2ad5ce36dbd85a2cd59d5fdbfd0f007b450be843cb0",
+      "bytes": 4594
+    },
+    {
+      "path": "00_inputs/JSS_P2_4_CASE_MATRIX.csv",
+      "sha256": "1b10d5561b6e5b9bb304a54db168a2d1ca8f6b18772dea83d8da08c663cacf03",
+      "bytes": 8769
+    },
+    {
+      "path": "00_inputs/JSS_P2_4_IMPLEMENTATION_PROTOCOL.md",
+      "sha256": "442893d7b0399740db18fde79277904aa6344830d700a4ad43708d435aef6b38",
+      "bytes": 952
+    },
+    {
+      "path": "00_inputs/P4_evidence_summary.json",
+      "sha256": "cf80a2f89db77d22a7efa7c678ba1bb2beb805143c92a8fe3eaca9db70f6eee4",
+      "bytes": 4123
+    },
+    {
+      "path": "01_semantics/P5A_adjudication_contract.json",
+      "sha256": "f58f5967e95f81e2a98adc04bf4a4f1deff1b8a4f89da52f5dcb855c2cab4849",
+      "bytes": 2018
+    },
+    {
+      "path": "01_semantics/P5A_verdict_state_machine.md",
+      "sha256": "f6323f1933ede306468fd6ed74897f7c71d9aca533c6e33491df12336e0e3859",
+      "bytes": 2404
+    },
+    {
+      "path": "01_semantics/P5A_verdict_transition_table.csv",
+      "sha256": "1ae49b51bc37a3dc6d5defa669da2e07bd7a01a1499a7285a99eb244226aa06c",
+      "bytes": 2152
+    },
+    {
+      "path": "02_four_way/P5B_acceptance_gates.md",
+      "sha256": "521254d7c1abff40495b9bf5bad670387fd369a6119dac7b75606280b6ed47fd",
+      "bytes": 1676
+    },
+    {
+      "path": "02_four_way/P5B_benign_control_catalog.md",
+      "sha256": "41349237d91339b5927cc653b9484b86811d156e93533c9179ef980a2c722544",
+      "bytes": 1426
+    },
+    {
+      "path": "02_four_way/P5B_four_way_case_matrix.csv",
+      "sha256": "a4583c96c8bcd847816ec1a72493c6a326a2a7eb5fe787efa68edd1c92ded0e3",
+      "bytes": 5998
+    },
+    {
+      "path": "02_four_way/P5B_partition_and_heldout_rule.md",
+      "sha256": "5c8086bc48bb414d8b0b0eb5798635d6526282c509498fefb65d37635a9f238a",
+      "bytes": 960
+    },
+    {
+      "path": "03_localization_v2/P5C_access_contract.md",
+      "sha256": "f4833ae8d09400538d31273c60bb1bea79242d05622500f47d43eaf79ce403eb",
+      "bytes": 2125
+    },
+    {
+      "path": "03_localization_v2/P5C_candidate_ontology.csv",
+      "sha256": "1fc7b70f0b507749ac9dfe997739383ff27394a9668172067eb42aa634c6f8f6",
+      "bytes": 2997
+    },
+    {
+      "path": "03_localization_v2/P5C_case_matrix.csv",
+      "sha256": "04b2a2a8181117628560824792789ea30368b8acac8e05956f8fead14caaf31f",
+      "bytes": 2334
+    },
+    {
+      "path": "03_localization_v2/P5C_metric_freeze.md",
+      "sha256": "6c4f10cc982a6a7837cff7c84d12e88777de3775488e5d1f430830380be35727",
+      "bytes": 1286
+    },
+    {
+      "path": "04_performance/P5D_equivalence_gates.json",
+      "sha256": "8f3cacdc7c87ed79fc8bc86b131577204ca7bbb93844b4cb4c02db1adf7ac9cc",
+      "bytes": 2052
+    },
+    {
+      "path": "04_performance/P5D_performance_matrix.csv",
+      "sha256": "89fad0be78445c2dcd1227cf00f91e6cb81af24b4fe7a0b022531527ee3c12f4",
+      "bytes": 3182
+    },
+    {
+      "path": "04_performance/P5D_performance_protocol.md",
+      "sha256": "cdbbd7f30649c6ea716f02b82d6f9d86bc8bdc787a0019852b29f36c7b6291e2",
+      "bytes": 4504
+    },
+    {
+      "path": "05_claims/JSS_claim_evidence_matrix_v0_3_proposed.md",
+      "sha256": "09a46d3c4dab9b1ae16e8bf09bd1d09ac83dbaba7381dd56dd537c669ecfd394",
+      "bytes": 6703
+    },
+    {
+      "path": "06_qa/run_p5a_qa.py",
+      "sha256": "b8946ecb47c7f9e44c914b536dd40e53c9310d1ec24b7722a6bc24d660c0ef6d",
+      "bytes": 10048
+    },
+    {
+      "path": "P5A_execution_sequence.md",
+      "sha256": "ea37fb128e2657f950c0370b8f3725128ca6469a190c5d7a5581f4c482b959a9",
+      "bytes": 1603
+    },
+    {
+      "path": "P5A_final_report.md",
+      "sha256": "a50dcca860f838413f77526e1485926da09db68808865c17cc01396459447196",
+      "bytes": 3409
+    },
+    {
+      "path": "P5A_no_post_hoc_rules.md",
+      "sha256": "72bd4e5393070b326a45aaf9068ac3b08e3f1a4753770c159db6e898ac816cc4",
+      "bytes": 1653
+    },
+    {
+      "path": "P5A_submission_history_status.md",
+      "sha256": "263789e37b6771fac66b6580912cf03374971859f906ae960056b12017066558",
+      "bytes": 1074
+    },
+    {
+      "path": "README.md",
+      "sha256": "f405b7b46c1e8274e3026841010cb843a2625b9513d7a18fd98056edfbc2ead6",
+      "bytes": 1765
+    }
+  ]
+}

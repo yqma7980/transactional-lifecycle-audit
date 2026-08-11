@@ -1,0 +1,15 @@
+{
+    "status":  "PASS_P5C_IMPLEMENTATION_PREFLIGHT",
+    "unit_tests_passed":  11,
+    "unit_tests_failed":  0,
+    "matrix_case_count":  12,
+    "development_case_count":  9,
+    "heldout_case_count":  3,
+    "candidates_per_subject":  8,
+    "common_universe_contract_pass":  true,
+    "ground_truth_isolation_pass":  true,
+    "runner_dual_lock_pass":  true,
+    "heldout_second_lock_pass":  true,
+    "results_exist":  false,
+    "abaqus_used":  false
+}

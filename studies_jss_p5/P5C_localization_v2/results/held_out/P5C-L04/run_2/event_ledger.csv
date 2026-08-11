@@ -1,0 +1,6 @@
+case_id,run_id,ordinal,event,owner,field_or_packet,source_plane,anomaly
+P5C-L04,run_2,1,BeginAttempt,Host,declared_replay_packet,control,
+P5C-L04,run_2,2,TrialEvaluate,TrialCandidate,trial_state,trial_state,
+P5C-L04,run_2,3,TrialEvaluate,TrialCandidate,state_packet,trial_state,restoration
+P5C-L04,run_2,4,ReplayObserve,ReplayComparator,state,comparison,restoration
+P5C-L04,run_2,5,RejectAttempt,Host,attempt,control,

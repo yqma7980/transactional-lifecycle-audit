@@ -1,0 +1,17 @@
+{
+  "erratum_id": "JSS-P5D-PREEXEC-ENV-1.0",
+  "status": "PRE_FORMAL_EXECUTION_BINDING_CORRECTION",
+  "scientific_protocol_changed": false,
+  "matrix_changed": false,
+  "equivalence_gates_changed": false,
+  "repetitions_changed": false,
+  "formal_timing_started_before_erratum": false,
+  "failed_qualification_preserved": "results/qualification",
+  "replacement_qualification_tag": "qualification_v2",
+  "subject_environment_binding": {
+    "JSS-S01": "DOLFINX_CONTAINER_SHA256_1bb0d528",
+    "JSS-S02": "DOLFINX_CONTAINER_SHA256_1bb0d528",
+    "JSS-S03": "HOST_CPYTHON_3_12_10_SCIPY_1_17_1"
+  },
+  "interpretation": "within-workload mode overhead only"
+}

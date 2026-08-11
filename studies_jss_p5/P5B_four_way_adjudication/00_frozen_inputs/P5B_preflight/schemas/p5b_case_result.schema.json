@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:jss:p5b:case-result:1.0",
+  "title": "JSS P5B four-way adjudication result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "implementation_version",
+    "case_id",
+    "run_id",
+    "subject_id",
+    "partition",
+    "expected_verdict",
+    "observed_outcome",
+    "four_way_verdict",
+    "stage",
+    "pass_flag",
+    "applicability_evaluated",
+    "eligibility_evaluated",
+    "lifecycle_evaluated",
+    "capability",
+    "packet_a_fingerprint",
+    "packet_b_fingerprint",
+    "mismatch_fields",
+    "active_signals",
+    "reasons"
+  ],
+  "properties": {
+    "schema_version": {"const": "JSS-P5B-CASE-RESULT-1.0"},
+    "implementation_version": {"const": "JSS-P5B-IMPL-1.0"},
+    "case_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "subject_id": {"enum": ["JSS-S01", "JSS-S02", "JSS-S03"]},
+    "partition": {"enum": ["DEVELOPMENT", "HELD_OUT", "PREFLIGHT_ONLY"]},
+    "expected_verdict": {
+      "enum": ["PASS_INVARIANT", "DETECT_LIFECYCLE_DRIFT", "INVALID", "NOT_SUPPORTED"]
+    },
+    "observed_outcome": {
+      "enum": ["PASS_INVARIANT", "DETECT_LIFECYCLE_DRIFT", "INVALID", "NOT_SUPPORTED", "EXECUTION_ERROR"]
+    },
+    "four_way_verdict": {
+      "type": ["string", "null"],
+      "enum": ["PASS_INVARIANT", "DETECT_LIFECYCLE_DRIFT", "INVALID", "NOT_SUPPORTED", null]
+    },
+    "stage": {"enum": ["EXECUTION", "APPLICABILITY", "ELIGIBILITY", "LIFECYCLE"]},
+    "pass_flag": {"type": "boolean"},
+    "applicability_evaluated": {"type": "boolean"},
+    "eligibility_evaluated": {"type": "boolean"},
+    "lifecycle_evaluated": {"type": "boolean"},
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observable", "required_tokens", "available_tokens", "missing_fields", "missing_events"],
+      "properties": {
+        "observable": {"type": "boolean"},
+        "required_tokens": {"type": "array", "items": {"type": "string"}},
+        "available_tokens": {"type": "array", "items": {"type": "string"}},
+        "missing_fields": {"type": "array", "items": {"type": "string"}},
+        "missing_events": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "packet_a_fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "packet_b_fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "mismatch_fields": {"type": "array", "items": {"type": "string"}},
+    "active_signals": {"type": "array", "items": {"type": "string"}},
+    "reasons": {"type": "array", "items": {"type": "string"}}
+  }
+}

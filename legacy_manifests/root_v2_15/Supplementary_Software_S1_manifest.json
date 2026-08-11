@@ -1,0 +1,16 @@
+{
+    "package_name":  "Supplementary Software S1",
+    "package_version":  "2.15.5",
+    "manifest_self_hash_embedded":  false,
+    "manifest_scope":  "616 frozen payload files hashed from the released bytes; generated manifest and checksum indexes are excluded from their own scope",
+    "file_count":  616,
+    "total_bytes":  3213544,
+    "package_manifest_csv":  "package_manifest_v2_15.csv",
+    "package_manifest_csv_sha256":  "af0ccf2f9859a576ac18385cf7c489d3c9cfcc5a78a64fa524b020175077b4be",
+    "sha256sums_file":  "SHA256SUMS_v2_15.txt",
+    "sha256sums_sha256":  "daab13524dfebf17ebd8fa72186b686302cd4387e74c9be449af3b4ff04741cf",
+    "license":  "BSD 3-Clause",
+    "abaqus_or_production_files_included":  false,
+    "correction_scope":  "README unit-test command and release-local version metadata",
+    "scientific_content_changed":  false
+}

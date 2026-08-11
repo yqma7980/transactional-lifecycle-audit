@@ -1,0 +1,20 @@
+{
+  "check_id": "JSS-P5B-FORMAL-REVIEW-BOUNDARY-1.0",
+  "check_date": "2026-08-11",
+  "formal_case_execution_count": 0,
+  "formal_result_roots": 0,
+  "runner_invocation_count": 0,
+  "held_out_access_count": 0,
+  "pycache_directories": 0,
+  "abaqus_processes": 0,
+  "docker_processes": 0,
+  "production_top_level_p5b_entries": 0,
+  "production_git_status_exit_code": 128,
+  "production_git_status_note": "Production path is not recognized as a valid Git repository; no clean Git claim is made.",
+  "production_write_performed": false,
+  "manuscript_modified": false,
+  "github_modified": false,
+  "zenodo_modified": false,
+  "doi_modified": false,
+  "git_write_operation_performed": false
+}

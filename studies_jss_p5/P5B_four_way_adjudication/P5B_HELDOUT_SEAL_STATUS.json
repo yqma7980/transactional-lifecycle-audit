@@ -1,0 +1,26 @@
+{
+  "seal_id": "JSS-P5B-HELDOUT-SEAL-1.0",
+  "seal_status": "HELD_OUT_LOCKED_NOT_ACCESSED",
+  "design_version": "JSS-P5B.0",
+  "implementation_version": "JSS-P5B-IMPL-1.0a",
+  "held_out_case_ids": [
+    "P5B-DETECT-05",
+    "P5B-INVALID-05",
+    "P5B-NS-05",
+    "P5B-PASS-05"
+  ],
+  "held_out_access_authorized": false,
+  "held_out_activation_manifest_exists": false,
+  "held_out_results_exist": false,
+  "development_activation_sha256": "a56eb7ae978cc257e65ce952fc3df69d64f0ba4c23017a138aa5434655ebf196",
+  "formal_review_freeze_sha256": "b37ef34486e87d31525ec567bfcc52360fac0938ee9c9139521225eac32d7320",
+  "unlock_prerequisites": [
+    "all_16_development_cases_have_two_frozen_fresh_process_results",
+    "all_development_duplicate_pairs_are_adjudicated_and_hash_frozen",
+    "no_development_case_is_pending",
+    "implementation_hashes_match_the_formal_review_freeze",
+    "a_separate_held_out_activation_manifest_binds_those_hashes"
+  ],
+  "replacement_case_allowed": false,
+  "current_task_held_out_execution_count": 0
+}

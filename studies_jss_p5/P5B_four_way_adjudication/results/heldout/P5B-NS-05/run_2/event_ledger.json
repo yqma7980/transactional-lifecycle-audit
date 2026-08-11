@@ -1,0 +1,18 @@
+{
+  "case_id": "P5B-NS-05",
+  "event_count": 1,
+  "events": [
+    {
+      "backend_mode": "serial",
+      "event_type": "StaticCapabilityAudit",
+      "lifecycle_evaluation_reachable": false,
+      "missing_event": "PARALLEL_CALLBACK_OWNERSHIP"
+    }
+  ],
+  "execution_revision": "JSS-P5B3-HELDOUT-1.0",
+  "run_id": "run_2",
+  "runtime_implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "schema_version": "JSS-P5B3-HELDOUT-EVENT-LEDGER-1.0",
+  "semantic_fingerprint": "46ac338aed9bfeac6b9934eb5c63e70f339df2c3dc57e6f8772c16f531ae6d3a",
+  "subject_id": "JSS-S02"
+}

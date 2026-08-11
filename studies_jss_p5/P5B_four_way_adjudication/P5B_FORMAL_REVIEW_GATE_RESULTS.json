@@ -1,0 +1,67 @@
+{
+  "review_id": "JSS-P5B-FORMAL-REVIEW-1.0a",
+  "final_status": "PASS_P5B_FORMAL_IMPLEMENTATION_REVIEW_DEVELOPMENT_UNLOCKED_NOT_EXECUTED",
+  "evidence_status": "IMPLEMENTATION_REVIEW_ONLY_NOT_OBSERVED_P5B",
+  "gates": {
+    "G0_protected_snapshot": {
+      "status": "PASS",
+      "files_verified": 36,
+      "source_manifest_sha256": "1235f21b157006c19b749b443dc2e0c5a0e7907df8c74bd80d1ff003faf44843",
+      "aggregate_sha256": "f5c91528e4341cdf083924b00efd55b497fd9568c81612d573d31059135de68c"
+    },
+    "G1_four_way_precedence": {
+      "status": "PASS",
+      "precedence": [
+        "EXECUTION_ERROR",
+        "NOT_SUPPORTED",
+        "INVALID",
+        "DETECT_LIFECYCLE_DRIFT",
+        "PASS_INVARIANT"
+      ]
+    },
+    "G2_adapter_trust_boundary": {
+      "status": "PASS",
+      "frozen_relation_check": true,
+      "mechanism_packet_difference_check": true
+    },
+    "G3_result_schema": {
+      "status": "PASS",
+      "schema_version": "JSS-P5B-CASE-RESULT-1.1",
+      "all_outcome_stages_constrained": true
+    },
+    "G4_regression_and_review_tests": {
+      "status": "PASS",
+      "original_snapshot_tests": "27/27",
+      "formal_review_tests": "39/39",
+      "ast_parse": "18/18",
+      "json_schema_parse": "1/1"
+    },
+    "G5_development_activation": {
+      "status": "PASS",
+      "development_case_count": 16,
+      "development_execution_authorized": true,
+      "formal_execution_count_in_this_task": 0,
+      "dual_lock_required": true
+    },
+    "G6_held_out_seal": {
+      "status": "PASS",
+      "held_out_case_count": 4,
+      "held_out_access_authorized": false,
+      "live_guard_rejection_tested": true
+    },
+    "G7_boundary": {
+      "status": "PASS",
+      "formal_output_roots": 0,
+      "pycache_directories": 0,
+      "abaqus_processes": 0,
+      "docker_processes": 0,
+      "production_top_level_p5b_entries": 0,
+      "production_git_status": "NOT_A_VALID_GIT_REPOSITORY_EXIT_128"
+    }
+  },
+  "formal_case_results_exist": false,
+  "manuscript_updated": false,
+  "github_updated": false,
+  "zenodo_updated": false,
+  "doi_updated": false
+}

@@ -1,0 +1,6 @@
+case_id,run_id,ordinal,event,owner,field_or_packet,source_plane,anomaly
+P5C-L11,run_1,1,BeginAttempt,Host,declared_replay_packet,control,
+P5C-L11,run_1,2,TrialEvaluate,TrialCandidate,trial_state,trial_state,
+P5C-L11,run_1,3,ResidualEvaluation,PersistentCallbackState,state_packet,persistent_state,ownership
+P5C-L11,run_1,4,ReplayObserve,ReplayComparator,state,comparison,ownership
+P5C-L11,run_1,5,RejectAttempt,Host,attempt,control,

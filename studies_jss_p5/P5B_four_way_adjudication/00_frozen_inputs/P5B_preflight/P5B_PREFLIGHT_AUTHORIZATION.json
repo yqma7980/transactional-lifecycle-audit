@@ -1,0 +1,15 @@
+{
+  "authorization_id": "JSS-P5B-PREFLIGHT-AUTH-1.0",
+  "scope": "SAFE_NULL_IMPLEMENTATION_PREFLIGHT_ONLY",
+  "formal_case_execution_authorized": false,
+  "held_out_access_authorized": false,
+  "allowed_preflight_ids": [
+    "P5B-PREFLIGHT-SAFE-NULL-S01",
+    "P5B-PREFLIGHT-SAFE-NULL-S02",
+    "P5B-PREFLIGHT-SAFE-NULL-S03"
+  ],
+  "required_cli_lock": "--preflight-authorized",
+  "required_environment_lock": "JSS_P5B_PREFLIGHT_AUTHORIZED=YES",
+  "abaqus_authorized": false,
+  "production_project_write_authorized": false
+}

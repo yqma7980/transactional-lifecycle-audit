@@ -1,0 +1,16 @@
+{
+  "authorization_sha256": "0d9ebaa5f673ded88cd7605fa2c227d7ae253caa462473d661bee5aa39f9fcf7",
+  "created_date": "2026-08-11",
+  "duplicate_comparison_sha256": "fa302be045034c5953139bec49920b3086da6374db71e9469c390886e25cfd3f",
+  "final_summary_sha256": "5c26e582518dd08447f8a60809cfee0d2aa6a735e595f71cf9125f0793a0eaa2",
+  "implementation_manifest_sha256": "d552e477419cedc33bcabb6f3840a80b1729074ed9a03e41438c41fb593b92a4",
+  "manifest_self_hash_embedded": false,
+  "no_abaqus_execution": true,
+  "no_post_hoc_threshold_or_case_change": true,
+  "no_production_model_execution": true,
+  "p5b2_activation_sha256": "c47ff42e8abfdf74874d6c4a2a4f5554a77a407a79ed012fe3bd3660e0609e5b",
+  "raw_manifest_sha256": "41b130402272c168a447936bab5960192795f2d464cb90452d54e28715873d45",
+  "result_report_sha256": "6bd0740bf0da1b8b747584cd81a73d09b21ba9339d9572718a3edd2d2c4e3c3c",
+  "schema_version": "JSS-P5B3-HELDOUT-EXECUTION-MANIFEST-1.0",
+  "status": "HELD_OUT_COMPLETE_FROZEN_MATRIX_COMPLETE"
+}

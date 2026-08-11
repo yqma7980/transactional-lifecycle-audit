@@ -1,0 +1,25 @@
+{
+    "status":  "PASS_P5C_FINAL_QA",
+    "case_count":  12,
+    "fresh_process_count":  24,
+    "development_cases":  9,
+    "heldout_cases":  3,
+    "all_duplicate_gates_pass":  true,
+    "all_schema_gates_pass":  true,
+    "all_values_finite":  true,
+    "frozen_case_matrix_sha256":  "04b2a2a8181117628560824792789ea30368b8acac8e05956f8fead14caaf31f",
+    "frozen_ontology_sha256":  "1fc7b70f0b507749ac9dfe997739383ff27394a9668172067eb42aa634c6f8f6",
+    "development_summary_sha256":  "0b5da24966761a91cbb5cd2cb051a50a531ad18544c44802e138f5986d036e2f",
+    "final_summary_sha256":  "284088d3cfbbf9fe97e298026f974c73c8cd9c7e15cc79f9c189c0fdfe9aa21e",
+    "heldout_activation_sha256":  "a30d4871b6c284068b55301243982cc7a3b8668b647baead0f36ff03d41353fc",
+    "pycache_count":  0,
+    "abaqus_process_count":  0,
+    "abaqus_used":  false,
+    "production_project_modified":  false,
+    "github_or_zenodo_modified":  false,
+    "abaqus_process_match_contract":  "exact executable names: standard, pre, SMASimUtility, ABQcaeK, explicit",
+    "excluded_false_positive_processes":  [
+                                              "Memory Compression",
+                                              "PresentMonService"
+                                          ]
+}

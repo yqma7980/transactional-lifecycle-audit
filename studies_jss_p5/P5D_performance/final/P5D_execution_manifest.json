@@ -1,0 +1,35 @@
+{
+  "all_equivalence_gates_passed": true,
+  "all_formal_runs_passed": true,
+  "all_slow_runs_retained": true,
+  "all_values_finite": true,
+  "evidence_status": "OBSERVED-JSS-P5D",
+  "formal_cells": 18,
+  "formal_fresh_processes": 180,
+  "formal_repetitions_per_cell": 10,
+  "historical_aeds_timing_used": false,
+  "input_hashes": {
+    "equivalence_gates": "8f3cacdc7c87ed79fc8bc86b131577204ca7bbb93844b4cb4c02db1adf7ac9cc",
+    "performance_matrix": "89fad0be78445c2dcd1227cf00f91e6cb81af24b4fe7a0b022531527ee3c12f4",
+    "performance_protocol": "cdbbd7f30649c6ea716f02b82d6f9d86bc8bdc787a0019852b29f36c7b6291e2"
+  },
+  "interpretation_boundary": "three subjects, two sizes, one machine, single process, single thread",
+  "manifest_self_hash_embedded": false,
+  "modes": [
+    "M0_AUDIT_OFF",
+    "M3_GENERIC_REPLAY",
+    "M6_FULL_TLA"
+  ],
+  "preexecution_errata_retained": [
+    "P5D_preexecution_environment_erratum.json",
+    "P5D_preexecution_affinity_erratum_v2.json"
+  ],
+  "qualification_processes": 18,
+  "status": "PASS_P5D_FORMAL_PERFORMANCE_STUDY",
+  "summary_hashes": {
+    "P5D_final_summary.json": "fb504fda3fe469282d4d32120c7489fbb81e55fa400a904731305ca13a750a1a",
+    "P5D_formal_run_source.csv": "e0f1c1f481d127f6d064c15dab3c99e2272b9942be4df9fa98d771f504494168",
+    "P5D_overhead_source.csv": "f16ad06ede67d45a7a9842d4daf1dbad9cd35d84b603269eebc3beef4c0160f9"
+  },
+  "warmup_processes": 36
+}

@@ -1,0 +1,15 @@
+{
+  "case_id": "P5B-INVALID-01",
+  "event_count": 1,
+  "events": [
+    {
+      "event_type": "PrecomparisonPacketAudit",
+      "field_name": "primary_state_hash"
+    }
+  ],
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "run_id": "run_1",
+  "schema_version": "JSS-P5B1-EVENT-LEDGER-1.0",
+  "semantic_fingerprint": "23cdd3a8cc298ddd94795ec280b812edd8374f2b522ac15f506e81c9b691512d",
+  "subject_id": "JSS-S02"
+}

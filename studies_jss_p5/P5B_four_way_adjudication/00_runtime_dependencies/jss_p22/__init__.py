@@ -1,0 +1,6 @@
+"""JSS-P2.2 prospective execution package."""
+
+DESIGN_VERSION = "JSS-P1.0"
+IMPLEMENTATION_VERSION = "JSS-P2.2.0"
+LEDGER_SCHEMA_VERSION = "JSS-EVIDENCE-1.0"
+

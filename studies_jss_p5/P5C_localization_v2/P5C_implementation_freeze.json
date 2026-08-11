@@ -1,0 +1,14 @@
+{
+  "design_version": "JSS-P5C.0",
+  "implementation_version": "JSS-P5C-IMPL-1.0",
+  "implementation_status": "IMPLEMENTED_NOT_EXECUTED",
+  "formal_case_count": 12,
+  "development_case_count": 9,
+  "heldout_case_count": 3,
+  "fresh_process_repetitions": 2,
+  "common_candidate_count_per_subject": 8,
+  "ground_truth_visible_to_scorers": false,
+  "execution_authorized_by_file": false,
+  "abaqus_used": false
+}
+

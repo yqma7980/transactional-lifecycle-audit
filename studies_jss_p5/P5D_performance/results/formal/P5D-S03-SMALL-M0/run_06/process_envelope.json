@@ -1,0 +1,15 @@
+{
+  "case_result_exists": true,
+  "cell_id": "P5D-S03-SMALL-M0",
+  "cpuset_cpus": "0",
+  "execution_backend": "HOST_PYTHON_SCIPY_1_17_1",
+  "exit_code": 0,
+  "external_wall_time_seconds": 0.6906944001093507,
+  "image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+  "network": "none",
+  "phase": "formal",
+  "run_id": "run_06",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "threads": 1
+}

@@ -1,0 +1,19 @@
+cell_id,subject_id,subject_type,workload_id,workload_definition,instrumentation_mode,warmup_processes,timed_fresh_processes,processes_per_run,threads_per_process,cpu_affinity,output_equivalence_required,production_trajectory_equivalence_required,audit_work_recorded_separately,execution_authorized,status
+P5D-S01-SMALL-M0,JSS-S01,DOLFINx_PETSc_FE,S01-SMALL,32 triangles and 96 integration points,M0_AUDIT_OFF,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S01-SMALL-M3,JSS-S01,DOLFINx_PETSc_FE,S01-SMALL,32 triangles and 96 integration points,M3_GENERIC_REPLAY,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S01-SMALL-M6,JSS-S01,DOLFINx_PETSc_FE,S01-SMALL,32 triangles and 96 integration points,M6_FULL_TLA,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S01-MEDIUM-M0,JSS-S01,DOLFINx_PETSc_FE,S01-MEDIUM,128 triangles and 384 integration points,M0_AUDIT_OFF,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S01-MEDIUM-M3,JSS-S01,DOLFINx_PETSc_FE,S01-MEDIUM,128 triangles and 384 integration points,M3_GENERIC_REPLAY,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S01-MEDIUM-M6,JSS-S01,DOLFINx_PETSc_FE,S01-MEDIUM,128 triangles and 384 integration points,M6_FULL_TLA,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S02-SMALL-M0,JSS-S02,standalone_CPython,S02-SMALL,canonical grid N=80,M0_AUDIT_OFF,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S02-SMALL-M3,JSS-S02,standalone_CPython,S02-SMALL,canonical grid N=80,M3_GENERIC_REPLAY,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S02-SMALL-M6,JSS-S02,standalone_CPython,S02-SMALL,canonical grid N=80,M6_FULL_TLA,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S02-MEDIUM-M0,JSS-S02,standalone_CPython,S02-MEDIUM,canonical grid N=320,M0_AUDIT_OFF,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S02-MEDIUM-M3,JSS-S02,standalone_CPython,S02-MEDIUM,canonical grid N=320,M3_GENERIC_REPLAY,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S02-MEDIUM-M6,JSS-S02,standalone_CPython,S02-MEDIUM,canonical grid N=320,M6_FULL_TLA,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S03-SMALL-M0,JSS-S03,SciPy_TRF_host,S03-SMALL,original frozen scalar residual system,M0_AUDIT_OFF,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S03-SMALL-M3,JSS-S03,SciPy_TRF_host,S03-SMALL,original frozen scalar residual system,M3_GENERIC_REPLAY,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S03-SMALL-M6,JSS-S03,SciPy_TRF_host,S03-SMALL,original frozen scalar residual system,M6_FULL_TLA,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S03-MEDIUM-M0,JSS-S03,SciPy_TRF_host,S03-MEDIUM,8 independent replicated residual blocks,M0_AUDIT_OFF,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S03-MEDIUM-M3,JSS-S03,SciPy_TRF_host,S03-MEDIUM,8 independent replicated residual blocks,M3_GENERIC_REPLAY,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED
+P5D-S03-MEDIUM-M6,JSS-S03,SciPy_TRF_host,S03-MEDIUM,8 independent replicated residual blocks,M6_FULL_TLA,2,10,1,1,FIXED,true,true,true,false,FROZEN_NOT_IMPLEMENTED

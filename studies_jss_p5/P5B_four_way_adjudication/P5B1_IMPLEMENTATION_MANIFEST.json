@@ -1,0 +1,75 @@
+{
+  "docker_image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+  "files": {
+    "P5B1_CASE_RUNTIME_MAPPING.csv": {
+      "bytes": 3437,
+      "sha256": "14cb0281f6d5e3a2ebfeef023605bf81c9586f4e90483e657fdf047f3aec3b64"
+    },
+    "P5B1_EXECUTION_ADAPTER_FREEZE.json": {
+      "bytes": 1664,
+      "sha256": "a91f035497cb16d77179d00d07f050f6ac3eb24e1a98dfe81b6f08cb02a39a40"
+    },
+    "P5B1_EXECUTION_PROTOCOL.md": {
+      "bytes": 2157,
+      "sha256": "d6b42be7fa734b977f82aeec69f76081addb0343e164d271af6b37703fdd49c7"
+    },
+    "finalize_p5b1_development.py": {
+      "bytes": 15856,
+      "sha256": "d24037f54760fb4bec406eb286ab54c7929b81897f6b151257f7be960f5909bd"
+    },
+    "run_p5b_development.py": {
+      "bytes": 3279,
+      "sha256": "3dcdca315a343aab682ba36fb569099116ea89a55891f64125f798b45f28ecab"
+    },
+    "schemas/p5b_runtime_observation.schema.json": {
+      "bytes": 1880,
+      "sha256": "dd77aeba3a56f92e1ee1ba049a1c1f9da51c9240caa33b0d9e19d1274d764a6d"
+    },
+    "src/jss_p5b/formal_executor.py": {
+      "bytes": 5408,
+      "sha256": "22070c14c13ebdf452b4c1245ca3c3d61510d2eba3530ae01cdb1719a67e783f"
+    },
+    "src/jss_p5b/runtime.py": {
+      "bytes": 6797,
+      "sha256": "c9c91bac5f017aea9bb96136e5c580ca1d26051e60be9af6a9444ec6b7273a3d"
+    },
+    "src/jss_p5b/runtime_local.py": {
+      "bytes": 17161,
+      "sha256": "c282883c611f95b1c31b1896602ce033fa4b5f4515ce3125c2961da57469a74e"
+    },
+    "src/jss_p5b/runtime_mapping.py": {
+      "bytes": 2755,
+      "sha256": "6fc305d18369d53cf292d2524ef6a40b1ff78d314474196fd934575d707f2bdb"
+    },
+    "src/jss_p5b/runtime_s01.py": {
+      "bytes": 16978,
+      "sha256": "77d7d945d7273993fe4c83bc4fd6f5c0137ca059d2aad832dac1687e5f1829e7"
+    },
+    "src/jss_p5b/runtime_schema.py": {
+      "bytes": 2504,
+      "sha256": "5d9e7f005f0be9b611728b27cd53989012f83504e1cf59f260294a8f58a2943f"
+    },
+    "tests/test_p5b1_local_subjects.py": {
+      "bytes": 2570,
+      "sha256": "aa1459b4bea6ca150b4f5f062d70d98de2d21454e6a8027416ea19130f1bab39"
+    },
+    "tests/test_p5b1_runner_lock.py": {
+      "bytes": 1502,
+      "sha256": "75ace0bfcaafcfbcd596972e89508e622b3c7adeafbee3ceb06a022133c69d93"
+    },
+    "tests/test_p5b1_runtime_mapping.py": {
+      "bytes": 1378,
+      "sha256": "b0f9ea5e26d7e83a3eb5620ab8959fa9afadc5c4b65856fdd2fcf00f02aa2d2a"
+    }
+  },
+  "formal_case_count": 16,
+  "formal_process_count": 32,
+  "held_out_execution_count": 0,
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "implementation_status": "FORMALLY_EXECUTED_DEVELOPMENT_ONLY",
+  "manifest_self_hash_embedded": false,
+  "pre_execution_identity_correction": "SciPy semantic path identifiers were made run-independent before formal execution; no equation, threshold, case, or verdict rule changed.",
+  "pre_execution_unit_test_count": 46,
+  "pre_execution_unit_tests_passed": 46,
+  "schema_version": "JSS-P5B1-IMPLEMENTATION-MANIFEST-1.0"
+}

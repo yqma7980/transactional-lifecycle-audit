@@ -1,0 +1,22 @@
+{
+  "created_date": "2026-08-11",
+  "development_activation_sha256": "a56eb7ae978cc257e65ce952fc3df69d64f0ba4c23017a138aa5434655ebf196",
+  "held_out_seal_sha256": "1fb1424db6d8c289f80fc7d0705178b79f3741edbee5816dc37c07b26c2e374f",
+  "manifest_self_hash_embedded": false,
+  "no_abaqus_execution": true,
+  "no_held_out_execution": true,
+  "no_production_model_execution": true,
+  "protected_source_manifest_sha256": "f84440586342a1e02da1d438ae9d8a9eda01e6861034aec9741395310b74e24f",
+  "raw_manifest_sha256": "2dae5bdafc3d84447b5bfe879f5831432828da7770ffbc2b43c773c989d42ab0",
+  "schema_version": "JSS-P5B1-DEVELOPMENT-EXECUTION-MANIFEST-1.0",
+  "status": "DEVELOPMENT_COMPLETE_HELD_OUT_REMAINS_SEALED",
+  "summary_outputs": {
+    "P5B1_DEVELOPMENT_FINAL_QA.md": "37206cb30aa8d13e96876d46e6c5f018b0e4b4ba9d6391bd4351492606760417",
+    "P5B1_IMPLEMENTATION_MANIFEST.json": "f7068ebf374960328cfa96efd3f335f7ff577438fcc23ec5368d537ef5b02df8",
+    "P5B1_IMPLEMENTATION_PREFLIGHT_QA.md": "eb50cb2fce1d860d6f04a369d3542e99dfb70a7ac6c9da54f0711d5fd2df6baf",
+    "results/development/final/P5B1_development_final_summary.json": "8c85b87924a8a1a00417529027d349eb4925d7e56feb29a18f40a5103154497b",
+    "results/development/final/P5B1_development_raw_manifest.json": "2dae5bdafc3d84447b5bfe879f5831432828da7770ffbc2b43c773c989d42ab0",
+    "results/development/final/P5B1_development_result_report.md": "0b211e46e40f056158a9c1592c902c58bc94ebe40bf7b8d48e57e667d66c00d4",
+    "results/development/final/P5B1_duplicate_comparison.json": "d7f0c78473da8f7a1e42c8c88c5696275f05d2ed7290d814fcc3f95e4e4ebc0c"
+  }
+}

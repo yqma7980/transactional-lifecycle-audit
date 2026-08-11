@@ -1,0 +1,66 @@
+{
+  "case_id": "P5B-NS-01",
+  "environment": {
+    "backend": {
+      "name": "SciPy least_squares TRF",
+      "scipy": "1.17.1"
+    },
+    "platform_machine": "AMD64",
+    "platform_system": "Windows",
+    "processes": 1,
+    "python": "3.12.10",
+    "python_implementation": "CPython",
+    "subject_id": "JSS-S03",
+    "threads": 1
+  },
+  "event_count": 1,
+  "events": [
+    {
+      "event_type": "StaticCapabilityAudit",
+      "missing_evidence": "NATIVE_CHECKPOINT_EVENT"
+    }
+  ],
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "measurements": {
+    "adapter_run_signature": "(self, *, jacobian_mode: 'str' = 'analytic') -> 'HostExecution'",
+    "missing_evidence": "NATIVE_CHECKPOINT_EVENT",
+    "native_checkpoint_api_exposed": false,
+    "native_operator_version_metadata_exposed": false
+  },
+  "raw_observation": {
+    "evidence_tokens": [],
+    "execution_error": null,
+    "lifecycle_signals": {
+      "authoritative_state_mutation": false,
+      "commit_violation": false,
+      "operator_replay_drift": false,
+      "output_provenance_violation": false,
+      "ownership_violation": false,
+      "within_history_version_violation": false
+    },
+    "packet_a": {
+      "committed_state_hash": "e7efffbd5aff4d669f22b990c9e1652ba0bf0222ee95cc1e0f53f2e91197e9e0",
+      "environment_hash": "5f8a629cfc919b3743ac4a36c71d5d8d2f49194ebe773ab79d03ef3651477ee6",
+      "load_hash": "92d8003f625eb6ddf67c6c3c8b0dc6cd08d330107b0edf0dc65917a1da63713b",
+      "persistent_projection_hash": "c6ee4ffa8eea6e9b1f0364eebe5d95174fddf3a4d1613544240b96851c25f5fe",
+      "primary_state_hash": "75f283af54ff0b4d82da639e16d35d7e5de1531853d2a6c404a32a87195d1b4d",
+      "residual_version": "L6-RJ-D1.0",
+      "tangent_version": "L6-RJ-D1.0"
+    },
+    "packet_b": {
+      "committed_state_hash": "e7efffbd5aff4d669f22b990c9e1652ba0bf0222ee95cc1e0f53f2e91197e9e0",
+      "environment_hash": "5f8a629cfc919b3743ac4a36c71d5d8d2f49194ebe773ab79d03ef3651477ee6",
+      "load_hash": "92d8003f625eb6ddf67c6c3c8b0dc6cd08d330107b0edf0dc65917a1da63713b",
+      "persistent_projection_hash": "c6ee4ffa8eea6e9b1f0364eebe5d95174fddf3a4d1613544240b96851c25f5fe",
+      "primary_state_hash": "75f283af54ff0b4d82da639e16d35d7e5de1531853d2a6c404a32a87195d1b4d",
+      "residual_version": "L6-RJ-D1.0",
+      "tangent_version": "L6-RJ-D1.0"
+    },
+    "precomparison_relation": "not_evaluated"
+  },
+  "run_id": "run_1",
+  "runtime_mode": "STATIC_NATIVE_CAPABILITY_AUDIT",
+  "schema_version": "JSS-P5B-RUNTIME-OBSERVATION-1.0",
+  "semantic_fingerprint": "a1bd5e22310da8de170661425bff3de8af57514f3164e4d9c4877c8ef09c6b15",
+  "subject_id": "JSS-S03"
+}

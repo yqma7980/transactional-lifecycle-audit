@@ -1,0 +1,48 @@
+{
+  "protocol_id": "JSS-P5D-PERFORMANCE-1.0",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "execution_authorized": false,
+  "historical_aeds_timing_use": "HISTORICAL_BACKGROUND_ONLY",
+  "gates": [
+    {
+      "gate_id": "P5D-G0",
+      "name": "environment_identity",
+      "requirement": "OS, CPU affinity, power mode, interpreter, dependencies, process count, and thread count match the frozen environment"
+    },
+    {
+      "gate_id": "P5D-G1",
+      "name": "accepted_output_equivalence",
+      "requirement": "accepted scientific fields and their semantic fingerprints are exactly equal or within a separately frozen subject tolerance across M0, M3, and M6"
+    },
+    {
+      "gate_id": "P5D-G2",
+      "name": "production_trajectory_equivalence",
+      "requirement": "accepted increment sequence, production residual and tangent counts, nonlinear iteration counts, selected steps, commits, and solver reasons are identical across modes"
+    },
+    {
+      "gate_id": "P5D-G3",
+      "name": "audit_work_separation",
+      "requirement": "additional replay and validation evaluations are labeled audit-only, counted separately, and remain included in total timing"
+    },
+    {
+      "gate_id": "P5D-G4",
+      "name": "finite_and_schema",
+      "requirement": "all metrics are finite, nonnegative where applicable, and conform to the frozen output schema"
+    },
+    {
+      "gate_id": "P5D-G5",
+      "name": "fresh_process_repetition",
+      "requirement": "two warm-ups and ten timed repetitions are separate single-process single-thread executions with no within-process repetition loop"
+    }
+  ],
+  "invalid_cell_rule": "Failure of any gate invalidates timing interpretation for the entire subject-workload triplet; raw runs remain preserved.",
+  "statistics": {
+    "warmups": 2,
+    "timed_fresh_processes": 10,
+    "primary_summary": ["median", "IQR", "all_values"],
+    "confidence_interval": "95_percentile_bootstrap",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260811,
+    "slow_run_deletion_allowed": false
+  }
+}

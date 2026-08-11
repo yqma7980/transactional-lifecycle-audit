@@ -1,0 +1,36 @@
+{
+  "active_signals": [],
+  "applicability_evaluated": true,
+  "capability": {
+    "available_tokens": [
+      "ACCEPTED_OUTPUT",
+      "CHECKPOINT_STATE"
+    ],
+    "missing_events": [],
+    "missing_fields": [],
+    "observable": true,
+    "required_tokens": [
+      "ACCEPTED_OUTPUT",
+      "CHECKPOINT_STATE"
+    ]
+  },
+  "case_id": "P5B-PASS-04",
+  "eligibility_evaluated": true,
+  "expected_verdict": "PASS_INVARIANT",
+  "four_way_verdict": "PASS_INVARIANT",
+  "implementation_version": "JSS-P5B-IMPL-1.0a",
+  "lifecycle_evaluated": true,
+  "mismatch_fields": [],
+  "observed_outcome": "PASS_INVARIANT",
+  "packet_a_fingerprint": "5c0b7147f9304ee552540fe630e64e883713d00048f60daf4baa15c6134dd485",
+  "packet_b_fingerprint": "5c0b7147f9304ee552540fe630e64e883713d00048f60daf4baa15c6134dd485",
+  "partition": "DEVELOPMENT",
+  "pass_flag": true,
+  "reasons": [
+    "eligible_history_invariant"
+  ],
+  "run_id": "run_1",
+  "schema_version": "JSS-P5B-CASE-RESULT-1.1",
+  "stage": "LIFECYCLE",
+  "subject_id": "JSS-S01"
+}

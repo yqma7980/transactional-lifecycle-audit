@@ -1,0 +1,14 @@
+{
+  "active_power_scheme": "\u7535\u6e90\u65b9\u6848 GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (\u5e73\u8861)",
+  "container_image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+  "container_image_identity": "[\"dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab\"]",
+  "formal_affinity": "container cpuset CPU 0",
+  "formal_processes_per_run": 1,
+  "formal_threads_per_process": 1,
+  "host_platform": "win32",
+  "host_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "s03_backend": "HOST_PYTHON_SCIPY_1_17_1",
+  "s03_host_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "s03_numpy": "2.4.3",
+  "s03_scipy": "1.17.1"
+}

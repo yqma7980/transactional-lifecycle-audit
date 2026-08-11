@@ -1,0 +1,33 @@
+{
+  "additional_case_allowed": false,
+  "allowed_run_ids": [
+    "run_1",
+    "run_2"
+  ],
+  "authorization_date": "2026-08-11",
+  "authorization_id": "JSS-P5B3-HELDOUT-EXECUTION-AUTHORIZATION-1.0",
+  "authorization_source": "explicit_user_authorization_in_current_task",
+  "authorization_status": "HELD_OUT_EXECUTION_AUTHORIZED_BY_USER",
+  "authorized_case_ids": [
+    "P5B-DETECT-05",
+    "P5B-INVALID-05",
+    "P5B-NS-05",
+    "P5B-PASS-05"
+  ],
+  "design_version": "JSS-P5B.0",
+  "fresh_process_repetitions_per_case": 2,
+  "held_out_execution_authorized": true,
+  "implementation_version": "JSS-P5B-IMPL-1.0a",
+  "no_replacement": true,
+  "no_reseeding": true,
+  "no_threshold_change": true,
+  "no_tuning": true,
+  "processes_per_repetition": 1,
+  "required_cli_lock": "--execute-authorized",
+  "required_environment_lock": "JSS_P5B_HELDOUT_AUTHORIZED",
+  "required_environment_value": "YES",
+  "source_heldout_case_matrix_sha256": "453240fca5509bdb031b0a3b796c12bf5b4e35c102e1d457fc58869a65c8d055",
+  "source_p5b2_manifest_sha256": "b05e33850c7073c1d443804ad908eb194d2c1372b0f133b9136cd983a6a78f37",
+  "source_static_activation_sha256": "c47ff42e8abfdf74874d6c4a2a4f5554a77a407a79ed012fe3bd3660e0609e5b",
+  "threads_per_process": 1
+}

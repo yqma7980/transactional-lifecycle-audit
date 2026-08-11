@@ -1,0 +1,15 @@
+{
+  "case_id": "P5B-NS-04",
+  "event_count": 1,
+  "events": [
+    {
+      "event_type": "StaticCapabilityAudit",
+      "missing_event": "UNSELECTED_NATIVE_LINESEARCH_CANDIDATE"
+    }
+  ],
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "run_id": "run_1",
+  "schema_version": "JSS-P5B1-EVENT-LEDGER-1.0",
+  "semantic_fingerprint": "9ab8701d1d43c5c3d887fc8184d91906e6c026364535e11634f5aab0c89a060a",
+  "subject_id": "JSS-S01"
+}

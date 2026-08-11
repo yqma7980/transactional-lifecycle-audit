@@ -1,0 +1,44 @@
+{
+  "case_id": "P5B-NS-05",
+  "execution_revision": "JSS-P5B3-HELDOUT-1.0",
+  "expected_verdict": "NOT_SUPPORTED",
+  "fresh_process": true,
+  "inputs": {
+    "00_frozen_inputs/P5B2/P5B2_HELDOUT_ACTIVATION_MANIFEST.json": "c47ff42e8abfdf74874d6c4a2a4f5554a77a407a79ed012fe3bd3660e0609e5b",
+    "00_frozen_inputs/P5B2/P5B2_SOURCE_MANIFEST.json": "b05e33850c7073c1d443804ad908eb194d2c1372b0f133b9136cd983a6a78f37",
+    "00_frozen_inputs/P5B2/P5B2_heldout_case_matrix.csv": "453240fca5509bdb031b0a3b796c12bf5b4e35c102e1d457fc58869a65c8d055",
+    "P5B3_HELDOUT_EXECUTION_AUTHORIZATION.json": "0d9ebaa5f673ded88cd7605fa2c227d7ae253caa462473d661bee5aa39f9fcf7",
+    "P5B3_HELDOUT_RUNTIME_MAPPING.csv": "f43093f344044177584c43f6aceeaeb6ead7889e62e6d69347bf7ebcda0e262c",
+    "src/jss_p5b/adapters.py": "591dcedb87b2ddbd81b8ca7e036ae66edadff8a5daff2a72e3b5077159e4800f",
+    "src/jss_p5b/adjudication.py": "36b0061399d21f6ed067d7c4173ddd48a270a61581cd99f3b8672a3a3004ffb4",
+    "src/jss_p5b/heldout_executor.py": "8406108b4f395946348b08c157012aaa7ff5b8d20263ff59d01ca0bca4ad3002",
+    "src/jss_p5b/heldout_guard.py": "815ec04da61ad570958291885654f931916e917dcb4505dccbde6c5672d2aed5",
+    "src/jss_p5b/heldout_mapping.py": "9ecef4a02e0f26a6ddc35c47a7bc0b4ab0b2db1ec323d9541a7a52a665f9be18",
+    "src/jss_p5b/heldout_runtime.py": "e74cffb153e0ebd347055cc76cd2044fa80fff9bfad3c49545b4ccab19a60a04"
+  },
+  "manifest_self_hash_embedded": false,
+  "observed_verdict": "NOT_SUPPORTED",
+  "outputs": {
+    "case_result.json": {
+      "bytes": 1002,
+      "sha256": "8fc539f93b9aa25d277d961f34052395717e93d6028680020b0d11dbb7c04bf1"
+    },
+    "event_ledger.json": {
+      "bytes": 565,
+      "sha256": "ce4cc2cc9f7013cee83ece2fb9dec76c09c1e1aa04cb4719f3cf2ecdca0a40c5"
+    },
+    "runtime_observation.json": {
+      "bytes": 2593,
+      "sha256": "26c18a5724a1d8b137b5d86a58c6ff2cffd0ecec5c3ba21e8461c972a2d5a06b"
+    }
+  },
+  "partition": "HELD_OUT",
+  "pass_flag": true,
+  "processes": 1,
+  "run_id": "run_1",
+  "runtime_implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "runtime_semantic_fingerprint": "46ac338aed9bfeac6b9934eb5c63e70f339df2c3dc57e6f8772c16f531ae6d3a",
+  "schema_version": "JSS-P5B3-HELDOUT-CASE-MANIFEST-1.0",
+  "subject_id": "JSS-S02",
+  "threads": 1
+}

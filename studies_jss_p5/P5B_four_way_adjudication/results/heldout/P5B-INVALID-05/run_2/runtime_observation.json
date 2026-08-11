@@ -1,0 +1,74 @@
+{
+  "case_id": "P5B-INVALID-05",
+  "environment": {
+    "backend": {
+      "cells": 32,
+      "dolfinx": "0.10.0",
+      "name": "DOLFINx/PETSc path-dependent finite-element host",
+      "petsc4py": "3.24.0",
+      "quadrature_points": 96
+    },
+    "platform_machine": "x86_64",
+    "platform_system": "Linux",
+    "processes": 1,
+    "python": "3.12.3",
+    "python_implementation": "CPython",
+    "subject_id": "JSS-S01",
+    "threads": 1
+  },
+  "event_count": 1,
+  "events": [
+    {
+      "event_type": "PrecomparisonBoundaryControlAudit",
+      "lifecycle_evaluation_reachable": false,
+      "mismatch_field": "environment_hash",
+      "packet_a_control": "FROZEN-A",
+      "packet_b_control": "FROZEN-B"
+    }
+  ],
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "measurements": {
+    "boundary_control_hash_equal": false,
+    "expected_mismatch_field": "environment_hash",
+    "lifecycle_not_evaluated": true,
+    "no_fe_solve_executed_for_eligibility_audit": true
+  },
+  "raw_observation": {
+    "evidence_tokens": [
+      "BOUNDARY_CONTROL_HASHES"
+    ],
+    "execution_error": null,
+    "lifecycle_signals": {
+      "authoritative_state_mutation": false,
+      "commit_violation": false,
+      "operator_replay_drift": false,
+      "output_provenance_violation": false,
+      "ownership_violation": false,
+      "within_history_version_violation": false
+    },
+    "packet_a": {
+      "committed_state_hash": "5349b8a86a24e5a06b29742d64ff0412b7b802767695698eec4ecf8166d3a14b",
+      "environment_hash": "b6d2963622861d5fddc8a97b993eb95eb63ecececec073b3388afd62b375bff9",
+      "load_hash": "6962edef2bf1a36452b2dc525c68f971755393dfd59f91b9f667de76c0195418",
+      "persistent_projection_hash": "25618c46caa76152d36757ec7eb4b19f168ad870272ba6ab6004aa06b8757588",
+      "primary_state_hash": "29381bd283016f1d6598ccf2191b4e61dbafc5fcfb45113d172db761997df91d",
+      "residual_version": "P4D-R1",
+      "tangent_version": "P4D-K1"
+    },
+    "packet_b": {
+      "committed_state_hash": "5349b8a86a24e5a06b29742d64ff0412b7b802767695698eec4ecf8166d3a14b",
+      "environment_hash": "e463fb135befb5b621461ee3ff2e6362f0c34a78770f6436cbf23215a0b7458a",
+      "load_hash": "6962edef2bf1a36452b2dc525c68f971755393dfd59f91b9f667de76c0195418",
+      "persistent_projection_hash": "25618c46caa76152d36757ec7eb4b19f168ad870272ba6ab6004aa06b8757588",
+      "primary_state_hash": "29381bd283016f1d6598ccf2191b4e61dbafc5fcfb45113d172db761997df91d",
+      "residual_version": "P4D-R1",
+      "tangent_version": "P4D-K1"
+    },
+    "precomparison_relation": "incompatible"
+  },
+  "run_id": "run_2",
+  "runtime_mode": "DOLFINX_PETSC_BOUNDARY_CONTROL_PACKET_AUDIT",
+  "schema_version": "JSS-P5B-RUNTIME-OBSERVATION-1.0",
+  "semantic_fingerprint": "9d5d3ae953feb4ff5fea9f19f169300abe76ece630df9b04db0d258bb4c51ef9",
+  "subject_id": "JSS-S01"
+}

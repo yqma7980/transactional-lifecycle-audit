@@ -1,0 +1,19 @@
+{
+  "case_id": "P5C-L11",
+  "manifest_self_hash_embedded": false,
+  "outputs": {
+    "case_result.json": {
+      "bytes": 5059,
+      "sha256": "a6ab85fd4666c3956233ef43827f546a0f8a61ce94f1958b163956511b56745a"
+    },
+    "event_ledger.csv": {
+      "bytes": 439,
+      "sha256": "b23ccc1e3f4b0a9efb1204cc4db2c89b6c4e9036779b1dd69d81e9f7fbe14e77"
+    },
+    "localization_ranking.csv": {
+      "bytes": 967,
+      "sha256": "61e35341c56241070c44cb950d9f818d050246b4e5629fc9165165099443d6a1"
+    }
+  },
+  "run_id": "run_2"
+}

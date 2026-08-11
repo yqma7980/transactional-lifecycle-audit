@@ -1,0 +1,15 @@
+{
+  "case_result_exists": true,
+  "cell_id": "P5D-S01-MEDIUM-M6",
+  "cpuset_cpus": "0",
+  "execution_backend": "DOLFINX_CONTAINER",
+  "exit_code": 0,
+  "external_wall_time_seconds": 3.0534953998867422,
+  "image": "dolfinx/dolfinx@sha256:1bb0d528457c78db65ba5445421abe37d0cdfa542cc182bf36d3b4aca02f1fab",
+  "network": "none",
+  "phase": "warmup",
+  "run_id": "warmup_02",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "threads": 1
+}

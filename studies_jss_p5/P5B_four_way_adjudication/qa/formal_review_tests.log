@@ -1,0 +1,44 @@
+test_execution_error_precedes_every_stage (test_adjudication.AdjudicationTests.test_execution_error_precedes_every_stage) ... ok
+test_f08_declared_compatible_lag_is_pass (test_adjudication.AdjudicationTests.test_f08_declared_compatible_lag_is_pass) ... ok
+test_f08_precomparison_mismatch_is_invalid (test_adjudication.AdjudicationTests.test_f08_precomparison_mismatch_is_invalid) ... ok
+test_f08_unavailable_metadata_is_not_supported (test_adjudication.AdjudicationTests.test_f08_unavailable_metadata_is_not_supported) ... ok
+test_f08_within_history_violation_is_detect (test_adjudication.AdjudicationTests.test_f08_within_history_violation_is_detect) ... ok
+test_invalid_stops_before_drift (test_adjudication.AdjudicationTests.test_invalid_stops_before_drift) ... ok
+test_not_evaluated_relation_is_execution_error_when_observable (test_adjudication.AdjudicationTests.test_not_evaluated_relation_is_execution_error_when_observable) ... ok
+test_not_supported_precedes_eligibility (test_adjudication.AdjudicationTests.test_not_supported_precedes_eligibility) ... ok
+test_pass_invariant (test_adjudication.AdjudicationTests.test_pass_invariant) ... ok
+test_all_frozen_mechanisms_have_adapter_requirements (test_cases_and_adapters.CaseAndAdapterTests.test_all_frozen_mechanisms_have_adapter_requirements) ... ok
+test_development_adapters_reproduce_frozen_contract (test_cases_and_adapters.CaseAndAdapterTests.test_development_adapters_reproduce_frozen_contract) ... ok
+test_formal_execution_remains_unauthorized (test_cases_and_adapters.CaseAndAdapterTests.test_formal_execution_remains_unauthorized) ... ok
+test_frozen_matrix_has_balanced_four_way_allocation (test_cases_and_adapters.CaseAndAdapterTests.test_frozen_matrix_has_balanced_four_way_allocation) ... ok
+test_not_supported_development_cases_name_missing_evidence (test_cases_and_adapters.CaseAndAdapterTests.test_not_supported_development_cases_name_missing_evidence) ... ok
+test_activation_contract_keeps_held_out_locked (test_formal_review.FormalReviewTests.test_activation_contract_keeps_held_out_locked) ... ok
+test_activation_contract_requires_exact_partitions (test_formal_review.FormalReviewTests.test_activation_contract_requires_exact_partitions) ... ok
+test_adapter_rejects_packet_mismatch_contract_drift (test_formal_review.FormalReviewTests.test_adapter_rejects_packet_mismatch_contract_drift) ... ok
+test_adapter_rejects_relation_disagreement (test_formal_review.FormalReviewTests.test_adapter_rejects_relation_disagreement) ... ok
+test_all_development_contract_fixtures_still_adjudicate (test_formal_review.FormalReviewTests.test_all_development_contract_fixtures_still_adjudicate) ... ok
+test_development_selector_rejects_held_out_and_unknown (test_formal_review.FormalReviewTests.test_development_selector_rejects_held_out_and_unknown) ... ok
+test_exact_partition_is_sixteen_plus_four (test_formal_review.FormalReviewTests.test_exact_partition_is_sixteen_plus_four) ... ok
+test_execution_error_stage_flags_are_enforced (test_formal_review.FormalReviewTests.test_execution_error_stage_flags_are_enforced) ... ok
+test_live_activation_blocks_all_held_out_ids_before_write (test_formal_review.FormalReviewTests.test_live_activation_blocks_all_held_out_ids_before_write) ... ok
+test_live_activation_requires_both_locks (test_formal_review.FormalReviewTests.test_live_activation_requires_both_locks) ... ok
+test_live_activation_returns_development_path_without_write (test_formal_review.FormalReviewTests.test_live_activation_returns_development_path_without_write) ... ok
+test_pass_and_detect_signal_contracts_are_enforced (test_formal_review.FormalReviewTests.test_pass_and_detect_signal_contracts_are_enforced) ... ok
+test_imports_create_no_files (test_import_side_effects.ImportSideEffectTests.test_imports_create_no_files) ... ok
+test_formal_case_is_rejected_before_write (test_runner_guard.RunnerGuardTests.test_formal_case_is_rejected_before_write) ... ok
+test_invalid_run_id_is_rejected (test_runner_guard.RunnerGuardTests.test_invalid_run_id_is_rejected) ... ok
+test_missing_cli_lock_is_rejected (test_runner_guard.RunnerGuardTests.test_missing_cli_lock_is_rejected) ... ok
+test_missing_environment_lock_is_rejected (test_runner_guard.RunnerGuardTests.test_missing_environment_lock_is_rejected) ... ok
+test_missing_protected_root_is_rejected (test_runner_guard.RunnerGuardTests.test_missing_protected_root_is_rejected) ... ok
+test_protected_hashes_match (test_runner_guard.RunnerGuardTests.test_protected_hashes_match) ... ok
+test_valid_dual_lock_returns_path_without_creating_it (test_runner_guard.RunnerGuardTests.test_valid_dual_lock_returns_path_without_creating_it) ... ok
+test_safe_null_is_exact_and_duplicate_normalized (test_safe_null.SafeNullTests.test_safe_null_is_exact_and_duplicate_normalized) ... ok
+test_extra_key_is_rejected (test_schema.SchemaTests.test_extra_key_is_rejected) ... ok
+test_invalid_cannot_carry_lifecycle_signal (test_schema.SchemaTests.test_invalid_cannot_carry_lifecycle_signal) ... ok
+test_missing_key_is_rejected (test_schema.SchemaTests.test_missing_key_is_rejected) ... ok
+test_schema_document_matches_runtime_keys (test_schema.SchemaTests.test_schema_document_matches_runtime_keys) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 0.106s
+
+OK

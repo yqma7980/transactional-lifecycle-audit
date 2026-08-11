@@ -1,0 +1,26 @@
+{
+  "release_version": "3.0.0",
+  "status": "PASS_LOCAL_RELEASE_QA",
+  "test_execution": {
+    "formal_cases_rerun": false,
+    "P5B_tests_run": 55,
+    "P5B_tests_passed": 55,
+    "P5C_tests_run": 11,
+    "P5C_tests_passed": 11,
+    "P5D_tests_run": 9,
+    "P5D_tests_passed": 9,
+    "total_tests_run": 75,
+    "total_tests_passed": 75
+  },
+  "evidence_boundaries": {
+    "abaqus_used": false,
+    "production_project_included": false,
+    "formal_results_rewritten": false,
+    "historical_failures_preserved": true
+  },
+  "path_and_privacy_QA": {
+    "manifest_paths_are_relative": true,
+    "known_personal_absolute_paths": 0,
+    "pycache_files": 0
+  }
+}

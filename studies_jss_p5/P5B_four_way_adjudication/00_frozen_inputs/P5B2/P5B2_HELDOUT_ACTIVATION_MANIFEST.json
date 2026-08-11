@@ -1,0 +1,42 @@
+{
+  "activation_id": "JSS-P5B2-HELDOUT-STATIC-ACTIVATION-1.0",
+  "additional_case_allowed": false,
+  "bound_hashes": {
+    "adjudication_contract_sha256": "f58f5967e95f81e2a98adc04bf4a4f1deff1b8a4f89da52f5dcb855c2cab4849",
+    "case_matrix_sha256": "a4583c96c8bcd847816ec1a72493c6a326a2a7eb5fe787efa68edd1c92ded0e3",
+    "confusion_matrix_sha256": "306e234e5a9ca06f266167f5a296f7257c5cf6d8e368a3704de8159f0fa88869",
+    "development_activation_sha256": "a56eb7ae978cc257e65ce952fc3df69d64f0ba4c23017a138aa5434655ebf196",
+    "development_case_source_sha256": "55faf0aaf8799443aa57fffef8dd9131aa9a4c7fbcfec16062887217a25b4fa3",
+    "development_final_summary_sha256": "8c85b87924a8a1a00417529027d349eb4925d7e56feb29a18f40a5103154497b",
+    "development_raw_manifest_sha256": "2dae5bdafc3d84447b5bfe879f5831432828da7770ffbc2b43c773c989d42ab0",
+    "development_run_source_sha256": "be19994fe888c7e1825074eea1b0c1f6f57873e7c330ba3f925c6440dcb6edf8",
+    "development_source_manifest_sha256": "e77c395f7eba21d5e21d00a89ea66900d31e811f8f542c28e9540786d652f1e6",
+    "duplicate_comparison_sha256": "d7f0c78473da8f7a1e42c8c88c5696275f05d2ed7290d814fcc3f95e4e4ebc0c",
+    "implementation_freeze_sha256": "b37ef34486e87d31525ec567bfcc52360fac0938ee9c9139521225eac32d7320"
+  },
+  "design_version": "JSS-P5B.0",
+  "development_evidence_freeze_sha256": "e27ca83823155ca089922f5e7c15f2fec4b39a9ced85348dcc6f42fe316f5af9",
+  "fresh_process_repetitions_per_case": 2,
+  "future_cli_lock": "--execute-authorized",
+  "future_environment_lock": "JSS_P5B_HELDOUT_AUTHORIZED=YES",
+  "held_out_case_ids": [
+    "P5B-PASS-05",
+    "P5B-DETECT-05",
+    "P5B-INVALID-05",
+    "P5B-NS-05"
+  ],
+  "held_out_case_matrix_sha256": "453240fca5509bdb031b0a3b796c12bf5b4e35c102e1d457fc58869a65c8d055",
+  "held_out_execution_authorized": false,
+  "held_out_results_exist": false,
+  "held_out_static_access_authorized": true,
+  "implementation_version": "JSS-P5B-IMPL-1.0a",
+  "manifest_self_hash_embedded": false,
+  "no_post_hoc_audit_sha256": "81ad8408379addbc04a13a363b51fd0694e4acb65f758cc053349c5f39a1f33c",
+  "processes_per_repetition": 1,
+  "replacement_case_allowed": false,
+  "requires_separate_execution_authorization": true,
+  "schema_version": "JSS-P5B2-HELDOUT-ACTIVATION-FREEZE-1.0",
+  "status": "HELD_OUT_STATIC_ACCESS_PREREQUISITES_SATISFIED_EXECUTION_NOT_AUTHORIZED",
+  "threads_per_process": 1,
+  "tuning_after_activation_allowed": false
+}

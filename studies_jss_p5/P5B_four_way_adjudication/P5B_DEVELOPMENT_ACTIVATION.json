@@ -1,0 +1,53 @@
+{
+  "activation_id": "JSS-P5B-DEVELOPMENT-ACTIVATION-1.0",
+  "activation_status": "DEVELOPMENT_ACTIVE_NOT_EXECUTED",
+  "design_version": "JSS-P5B.0",
+  "implementation_version": "JSS-P5B-IMPL-1.0a",
+  "development_execution_authorized": true,
+  "held_out_access_authorized": false,
+  "formal_results_exist": false,
+  "development_case_ids": [
+    "P5B-DETECT-01",
+    "P5B-DETECT-02",
+    "P5B-DETECT-03",
+    "P5B-DETECT-04",
+    "P5B-INVALID-01",
+    "P5B-INVALID-02",
+    "P5B-INVALID-03",
+    "P5B-INVALID-04",
+    "P5B-NS-01",
+    "P5B-NS-02",
+    "P5B-NS-03",
+    "P5B-NS-04",
+    "P5B-PASS-01",
+    "P5B-PASS-02",
+    "P5B-PASS-03",
+    "P5B-PASS-04"
+  ],
+  "held_out_case_ids": [
+    "P5B-DETECT-05",
+    "P5B-INVALID-05",
+    "P5B-NS-05",
+    "P5B-PASS-05"
+  ],
+  "required_cli_lock": "--execute-authorized",
+  "required_environment_lock": "JSS_P5B_DEVELOPMENT_AUTHORIZED",
+  "required_environment_value": "YES",
+  "allowed_run_ids": [
+    "run_1",
+    "run_2"
+  ],
+  "protected_implementation_files": {
+    "schemas/p5b_case_result.schema.json": "bcbe69fbcf064b5fd27ce034ba68ad181c3e980aa3f40e9d71f83e777fb2dad0",
+    "src/jss_p5b/__init__.py": "edfb949d1dc47d08005c987edf201a1b6de949f76cc4a35c67b33b3ce6870062",
+    "src/jss_p5b/adjudication.py": "36b0061399d21f6ed067d7c4173ddd48a270a61581cd99f3b8672a3a3004ffb4",
+    "src/jss_p5b/adapters.py": "591dcedb87b2ddbd81b8ca7e036ae66edadff8a5daff2a72e3b5077159e4800f",
+    "src/jss_p5b/canonical.py": "2c28d191d59d96e84183bba10b37d9cdfcc2345ab69bb6d7f3ec7840e57c84fd",
+    "src/jss_p5b/cases.py": "cfc392a68ade4b92defc7e2d6495b4d8a44d4e1f13a982912688b1275512e6b3",
+    "src/jss_p5b/development_guard.py": "23fe231b66c15cf24c30dc5f859ae3d1a83b944d92c9c052740bab32fd9c970a",
+    "src/jss_p5b/model.py": "ff35a4ebacaffad1bdf603469abd9e71e604e6fd4a673e2b239df8cef1ba1665",
+    "src/jss_p5b/runner_guard.py": "5a9e0d6e563972cd71035b347ffe0be6b05608abd32a52664edf9d1a2b812ef4",
+    "src/jss_p5b/schema.py": "11c30da59e74ae1f8deeb47b3037216d1bd092bef077ec8b1439b8daa0423b94"
+  },
+  "formal_review_freeze_sha256": "b37ef34486e87d31525ec567bfcc52360fac0938ee9c9139521225eac32d7320"
+}

@@ -1,0 +1,46 @@
+{
+  "freeze_id": "JSS-P5B-FORMAL-IMPLEMENTATION-FREEZE-1.0a",
+  "freeze_status": "PASS_FORMAL_IMPLEMENTATION_REVIEW_NOT_EXECUTED",
+  "design_version": "JSS-P5B.0",
+  "implementation_version": "JSS-P5B-IMPL-1.0a",
+  "case_result_schema_version": "JSS-P5B-CASE-RESULT-1.1",
+  "review_date": "2026-08-11",
+  "evidence_status": "IMPLEMENTATION_REVIEW_ONLY_NOT_OBSERVED_P5B",
+  "protected_design": {
+    "p5b_preflight_source_manifest_sha256": "1235f21b157006c19b749b443dc2e0c5a0e7907df8c74bd80d1ff003faf44843",
+    "p5b_preflight_aggregate_sha256": "f5c91528e4341cdf083924b00efd55b497fd9568c81612d573d31059135de68c",
+    "p5a_case_matrix_sha256": "a4583c96c8bcd847816ec1a72493c6a326a2a7eb5fe787efa68edd1c92ded0e3",
+    "p5a_adjudication_contract_sha256": "f58f5967e95f81e2a98adc04bf4a4f1deff1b8a4f89da52f5dcb855c2cab4849"
+  },
+  "implementation_files": {
+    "schemas/p5b_case_result.schema.json": "bcbe69fbcf064b5fd27ce034ba68ad181c3e980aa3f40e9d71f83e777fb2dad0",
+    "src/jss_p5b/__init__.py": "edfb949d1dc47d08005c987edf201a1b6de949f76cc4a35c67b33b3ce6870062",
+    "src/jss_p5b/adjudication.py": "36b0061399d21f6ed067d7c4173ddd48a270a61581cd99f3b8672a3a3004ffb4",
+    "src/jss_p5b/adapters.py": "591dcedb87b2ddbd81b8ca7e036ae66edadff8a5daff2a72e3b5077159e4800f",
+    "src/jss_p5b/canonical.py": "2c28d191d59d96e84183bba10b37d9cdfcc2345ab69bb6d7f3ec7840e57c84fd",
+    "src/jss_p5b/cases.py": "cfc392a68ade4b92defc7e2d6495b4d8a44d4e1f13a982912688b1275512e6b3",
+    "src/jss_p5b/development_guard.py": "23fe231b66c15cf24c30dc5f859ae3d1a83b944d92c9c052740bab32fd9c970a",
+    "src/jss_p5b/model.py": "ff35a4ebacaffad1bdf603469abd9e71e604e6fd4a673e2b239df8cef1ba1665",
+    "src/jss_p5b/runner_guard.py": "5a9e0d6e563972cd71035b347ffe0be6b05608abd32a52664edf9d1a2b812ef4",
+    "src/jss_p5b/schema.py": "11c30da59e74ae1f8deeb47b3037216d1bd092bef077ec8b1439b8daa0423b94"
+  },
+  "review_findings_closed": [
+    "runtime_relation_must_match_frozen_relation",
+    "packet_difference_tuple_must_match_frozen_mechanism",
+    "four_way_stage_flags_are_schema_enforced",
+    "held_out_ids_are_rejected_before_output_path_creation"
+  ],
+  "review_tests": {
+    "original_preflight_tests_passed": 27,
+    "revised_total_tests_passed": 39,
+    "python_ast_files_passed": 18,
+    "json_schema_parse_passed": true
+  },
+  "formal_case_execution_count": 0,
+  "formal_results_exist": false,
+  "development_activation_permitted": true,
+  "held_out_access_authorized": false,
+  "abaqus_used": false,
+  "production_model_used": false,
+  "freeze_self_hash_embedded": false
+}

@@ -1,0 +1,17 @@
+case_id,subject_id,runtime_mode,numeric_parameter,history_A_runtime,history_B_runtime,evidence_tokens,lifecycle_signal,expected_packet_mismatch,formal_partition
+P5B-PASS-01,JSS-S02,L4_FV_DECLARED_OPERATOR_CONTROL,none,exact-current operator packet,identical operator with declared lag version,OPERATOR_PACKET_VERSIONS,none,tangent_version,DEVELOPMENT
+P5B-PASS-02,JSS-S03,SCIPY_SAFE_DIAGNOSTIC_CONTROL,counter=1,safe direct,safe direct plus diagnostic-only counter,DIAGNOSTIC_FIELD_OWNERSHIP;SEMANTIC_PERSISTENT_PROJECTION,none,none,DEVELOPMENT
+P5B-PASS-03,JSS-S03,SCIPY_SAFE_CALLBACK_ORDER_CONTROL,"x=0.03;-0.03",safe direct,safe plus two extra nonaccepting residual calls,CALLBACK_LEDGER;REPLAY_PACKET,none,none,DEVELOPMENT
+P5B-PASS-04,JSS-S01,DOLFINX_DRIVER_CHECKPOINT_CONTROL,none,direct 0.04->0.08->0.10,0.04->0.08 serialize and fresh-host restore ->0.10,ACCEPTED_OUTPUT;CHECKPOINT_STATE,none,none,DEVELOPMENT
+P5B-DETECT-01,JSS-S01,DOLFINX_ACTIVE_PREMATURE_COMMIT,"eta=1e-10;gamma_p[27,0,1]",safe rejected 0.20 then replay 0.10,mutate committed field after rejected 0.20 then replay 0.10,COMMIT_BOUNDARY;COMMITTED_FINGERPRINT;REJECT_EVENT,authoritative_state_mutation;commit_violation,none,DEVELOPMENT
+P5B-DETECT-02,JSS-S02,L4_FV_OUTPUT_FEEDBACK,eta=1e-10,direct replay,rejected-output pressure feedback enters later residual,LATER_OPERATOR;OUTPUT_SOURCE,operator_replay_drift;output_provenance_violation,none,DEVELOPMENT
+P5B-DETECT-03,JSS-S03,SCIPY_UNSAFE_CALLBACK_CACHE,"x=0.03;-0.03",unsafe-cache direct,unsafe-cache plus two extra nonaccepting residual calls,CALLBACK_LEDGER;PERSISTENT_FINGERPRINT,operator_replay_drift;ownership_violation,none,DEVELOPMENT
+P5B-DETECT-04,JSS-S02,L4_FV_WITHIN_HISTORY_VERSION_GUARD,STALE_TANGENT_VERSION,matched finite operator packet,numerically finite packet with within-history tangent-version mismatch,WITHIN_HISTORY_OPERATOR_VERSIONS,within_history_version_violation,none,DEVELOPMENT
+P5B-INVALID-01,JSS-S02,L4_FV_PRECOMPARISON_PRIMARY_MISMATCH,frozen alternate primary,reference primary packet,alternate primary packet,PRIMARY_STATE_FINGERPRINTS,not_evaluated,primary_state_hash,DEVELOPMENT
+P5B-INVALID-02,JSS-S01,DOLFINX_PRECOMPARISON_COMMITTED_MISMATCH,active binding delta,reference committed and persistent projection,alternate committed and persistent projection,COMMITTED_FINGERPRINT;SEMANTIC_PERSISTENT_PROJECTION,not_evaluated,committed_state_hash;persistent_projection_hash,DEVELOPMENT
+P5B-INVALID-03,JSS-S03,SCIPY_PRECOMPARISON_LOAD_MISMATCH,frozen alternate load packet,reference load packet,alternate load packet,LOAD_PACKET_HASHES,not_evaluated,load_hash,DEVELOPMENT
+P5B-INVALID-04,JSS-S02,L4_FV_PRECOMPARISON_VERSION_MISMATCH,PRE_REPLAY_STALE,declared current version,declared stale pre-replay version,PRE_REPLAY_OPERATOR_VERSIONS,not_evaluated,tangent_version,DEVELOPMENT
+P5B-NS-01,JSS-S03,STATIC_NATIVE_CAPABILITY_AUDIT,none,SciPy continuation,native checkpoint/restart event,NONE,not_evaluated,none,DEVELOPMENT
+P5B-NS-02,JSS-S03,STATIC_NATIVE_CAPABILITY_AUDIT,none,SciPy residual packet,native residual/tangent state-version metadata,NONE,not_evaluated,none,DEVELOPMENT
+P5B-NS-03,JSS-S02,STATIC_NATIVE_CAPABILITY_AUDIT,none,L4 direct update,native rejected line-search event,NONE,not_evaluated,none,DEVELOPMENT
+P5B-NS-04,JSS-S01,STATIC_NATIVE_CAPABILITY_AUDIT,none,DOLFINx direct history,structured unselected native line-search candidate,NONE,not_evaluated,none,DEVELOPMENT

@@ -1,0 +1,58 @@
+{
+  "authorized_case_count": 4,
+  "authorized_process_count": 8,
+  "design_version": "JSS-P5B.0",
+  "double_authorization_lock": true,
+  "fresh_process_repetitions_per_case": 2,
+  "heldout_execution_revision": "JSS-P5B3-HELDOUT-1.0",
+  "implementation_files": {
+    "P5B3_HELDOUT_EXECUTION_AUTHORIZATION.json": {
+      "bytes": 1239,
+      "sha256": "0d9ebaa5f673ded88cd7605fa2c227d7ae253caa462473d661bee5aa39f9fcf7"
+    },
+    "P5B3_HELDOUT_RUNTIME_MAPPING.csv": {
+      "bytes": 882,
+      "sha256": "f43093f344044177584c43f6aceeaeb6ead7889e62e6d69347bf7ebcda0e262c"
+    },
+    "finalize_p5b3_heldout.py": {
+      "bytes": 19223,
+      "sha256": "8a6f218e909f9047b724539817be687e3e70d30a12eeaf0f9dd4706d2292da23"
+    },
+    "prepare_p5b3_heldout.py": {
+      "bytes": 4881,
+      "sha256": "4cd47e57446a573c631f7be815d8a55dcca4c8164e9c2167aac24cb99574a867"
+    },
+    "run_p5b_heldout.py": {
+      "bytes": 3036,
+      "sha256": "46b98ab0c56d90cb9ba306056ed126008b52c5c97edbaa0e5c25d0c3e1654be3"
+    },
+    "src/jss_p5b/heldout_executor.py": {
+      "bytes": 5559,
+      "sha256": "8406108b4f395946348b08c157012aaa7ff5b8d20263ff59d01ca0bca4ad3002"
+    },
+    "src/jss_p5b/heldout_guard.py": {
+      "bytes": 6980,
+      "sha256": "815ec04da61ad570958291885654f931916e917dcb4505dccbde6c5672d2aed5"
+    },
+    "src/jss_p5b/heldout_mapping.py": {
+      "bytes": 2341,
+      "sha256": "9ecef4a02e0f26a6ddc35c47a7bc0b4ab0b2db1ec323d9541a7a52a665f9be18"
+    },
+    "src/jss_p5b/heldout_runtime.py": {
+      "bytes": 15007,
+      "sha256": "e74cffb153e0ebd347055cc76cd2044fa80fff9bfad3c49545b4ccab19a60a04"
+    },
+    "tests/test_p5b3_heldout.py": {
+      "bytes": 5358,
+      "sha256": "673213576f8d77c433bbde1135afbb02c238b6dcf85542bef7c57ff5793b1263"
+    }
+  },
+  "implementation_version": "JSS-P5B-IMPL-1.0a",
+  "manifest_self_hash_embedded": false,
+  "no_abaqus_execution": true,
+  "no_formal_case_execution_at_manifest_creation": true,
+  "no_production_model_execution": true,
+  "pre_execution_unit_tests_passed": 55,
+  "schema_version": "JSS-P5B3-HELDOUT-IMPLEMENTATION-MANIFEST-1.0",
+  "status": "IMPLEMENTED_UNIT_TESTED_READY_FOR_AUTHORIZED_EXECUTION"
+}

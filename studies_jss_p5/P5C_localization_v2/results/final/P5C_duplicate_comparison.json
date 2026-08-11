@@ -1,0 +1,134 @@
+[
+  {
+    "case_id": "P5C-L01",
+    "duplicate_gate_pass": true,
+    "fault_family": "F03_PREMATURE_COMMIT",
+    "normalized_case_result_equal": true,
+    "normalized_event_ledger_equal": true,
+    "partition": "DEVELOPMENT",
+    "ranking_exact_equal": true,
+    "semantic_fingerprint_equal": true,
+    "subject_id": "JSS-S01"
+  },
+  {
+    "case_id": "P5C-L02",
+    "duplicate_gate_pass": true,
+    "fault_family": "F03_ROLLBACK_OMISSION",
+    "normalized_case_result_equal": true,
+    "normalized_event_ledger_equal": true,
+    "partition": "DEVELOPMENT",
+    "ranking_exact_equal": true,
+    "semantic_fingerprint_equal": true,
+    "subject_id": "JSS-S01"
+  },
+  {
+    "case_id": "P5C-L03",
+    "duplicate_gate_pass": true,
+    "fault_family": "F05_OUTPUT_FEEDBACK",
+    "normalized_case_result_equal": true,
+    "normalized_event_ledger_equal": true,
+    "partition": "DEVELOPMENT",
+    "ranking_exact_equal": true,
+    "semantic_fingerprint_equal": true,
+    "subject_id": "JSS-S01"
+  },
+  {
+    "case_id": "P5C-L04",
+    "duplicate_gate_pass": true,
+    "fault_family": "F07_CALLBACK_ORDER_BIAS",
+    "normalized_case_result_equal": true,
+    "normalized_event_ledger_equal": true,
+    "partition": "HELD_OUT",
+    "ranking_exact_equal": true,
+    "semantic_fingerprint_equal": true,
+    "subject_id": "JSS-S01"
+  },
+  {
+    "case_id": "P5C-L05",
+    "duplicate_gate_pass": true,
+    "fault_family": "F03_PREMATURE_COMMIT",
+    "normalized_case_result_equal": true,
+    "normalized_event_ledger_equal": true,
+    "partition": "DEVELOPMENT",
+    "ranking_exact_equal": true,
+    "semantic_fingerprint_equal": true,
+    "subject_id": "JSS-S02"
+  },
+  {
+    "case_id": "P5C-L06",
+    "duplicate_gate_pass": true,
+    "fault_family": "F05_OUTPUT_FEEDBACK",
+    "normalized_case_result_equal": true,
+    "normalized_event_ledger_equal": true,
+    "partition": "DEVELOPMENT",
+    "ranking_exact_equal": true,
+    "semantic_fingerprint_equal": true,
+    "subject_id": "JSS-S02"
+  },
+  {
+    "case_id": "P5C-L07",
+    "duplicate_gate_pass": true,
+    "fault_family": "F07_CALLBACK_ORDER_BIAS",
+    "normalized_case_result_equal": true,
+    "normalized_event_ledger_equal": true,
+    "partition": "DEVELOPMENT",
+    "ranking_exact_equal": true,
+    "semantic_fingerprint_equal": true,
+    "subject_id": "JSS-S02"
+  },
+  {
+    "case_id": "P5C-L08",
+    "duplicate_gate_pass": true,
+    "fault_family": "F08_OPERATOR_VERSION_MISMATCH",
+    "normalized_case_result_equal": true,
+    "normalized_event_ledger_equal": true,
+    "partition": "HELD_OUT",
+    "ranking_exact_equal": true,
+    "semantic_fingerprint_equal": true,
+    "subject_id": "JSS-S02"
+  },
+  {
+    "case_id": "P5C-L09",
+    "duplicate_gate_pass": true,
+    "fault_family": "F03_PREMATURE_COMMIT",
+    "normalized_case_result_equal": true,
+    "normalized_event_ledger_equal": true,
+    "partition": "DEVELOPMENT",
+    "ranking_exact_equal": true,
+    "semantic_fingerprint_equal": true,
+    "subject_id": "JSS-S03"
+  },
+  {
+    "case_id": "P5C-L10",
+    "duplicate_gate_pass": true,
+    "fault_family": "F05_OUTPUT_FEEDBACK",
+    "normalized_case_result_equal": true,
+    "normalized_event_ledger_equal": true,
+    "partition": "DEVELOPMENT",
+    "ranking_exact_equal": true,
+    "semantic_fingerprint_equal": true,
+    "subject_id": "JSS-S03"
+  },
+  {
+    "case_id": "P5C-L11",
+    "duplicate_gate_pass": true,
+    "fault_family": "F07_CALLBACK_CACHE",
+    "normalized_case_result_equal": true,
+    "normalized_event_ledger_equal": true,
+    "partition": "DEVELOPMENT",
+    "ranking_exact_equal": true,
+    "semantic_fingerprint_equal": true,
+    "subject_id": "JSS-S03"
+  },
+  {
+    "case_id": "P5C-L12",
+    "duplicate_gate_pass": true,
+    "fault_family": "F07_CALLBACK_COUNTER",
+    "normalized_case_result_equal": true,
+    "normalized_event_ledger_equal": true,
+    "partition": "HELD_OUT",
+    "ranking_exact_equal": true,
+    "semantic_fingerprint_equal": true,
+    "subject_id": "JSS-S03"
+  }
+]

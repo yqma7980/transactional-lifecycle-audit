@@ -1,0 +1,48 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "all_equivalence_gates_passed": true,
+    "all_formal_runs_passed": true,
+    "all_slow_runs_retained": true,
+    "all_values_finite": true,
+    "cells_18": true,
+    "expected_modes_present": true,
+    "formal_json_180": true,
+    "formal_rows_180": true,
+    "historical_aeds_timing_excluded": true,
+    "qualification_json_18": true,
+    "summary_status": true,
+    "ten_runs_per_cell": true,
+    "unique_cell_run_keys": true,
+    "warmup_json_36": true
+  },
+  "mode_overhead_summary": {
+    "M0_AUDIT_OFF": {
+      "cell_count": 6,
+      "cross_cell_median_percent": 0.0,
+      "maximum_percent": 0.0,
+      "minimum_percent": 0.0
+    },
+    "M3_GENERIC_REPLAY": {
+      "cell_count": 6,
+      "cross_cell_median_percent": -0.8205980498808607,
+      "maximum_percent": 6.919579895878436,
+      "minimum_percent": -2.9259423730598977
+    },
+    "M6_FULL_TLA": {
+      "cell_count": 6,
+      "cross_cell_median_percent": -0.06077667440556045,
+      "maximum_percent": 5.119256404758277,
+      "minimum_percent": -0.9044683847737378
+    }
+  },
+  "scientific_boundary": [
+    "three software subjects",
+    "two frozen sizes per subject",
+    "one machine",
+    "single process and single thread",
+    "negative overheads are retained and are not interpreted as speedups",
+    "no parallel, production, or population-level performance claim"
+  ],
+  "status": "PASS_P5D_FINAL_QA"
+}

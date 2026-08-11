@@ -1,0 +1,7 @@
+"case_id","run_id","partition","exit_code","wall_seconds"
+"P5C-L04","run_1","HELD_OUT","0","1.023498"
+"P5C-L04","run_2","HELD_OUT","0","1.015107"
+"P5C-L08","run_1","HELD_OUT","0","1.011394"
+"P5C-L08","run_2","HELD_OUT","0","1.019474"
+"P5C-L12","run_1","HELD_OUT","0","1.026389"
+"P5C-L12","run_2","HELD_OUT","0","1.025764"

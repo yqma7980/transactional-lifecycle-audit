@@ -1,0 +1,77 @@
+{
+  "abaqus_used": false,
+  "all_cases_passed_frozen_verdict": true,
+  "all_duplicate_gates_passed": true,
+  "case_results": [
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-DETECT-05",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "DETECT_LIFECYCLE_DRIFT",
+      "formal_repetitions": 2,
+      "observed_verdict": "DETECT_LIFECYCLE_DRIFT",
+      "subject_id": "JSS-S01"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-INVALID-05",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "INVALID",
+      "formal_repetitions": 2,
+      "observed_verdict": "INVALID",
+      "subject_id": "JSS-S01"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-NS-05",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "NOT_SUPPORTED",
+      "formal_repetitions": 2,
+      "observed_verdict": "NOT_SUPPORTED",
+      "subject_id": "JSS-S02"
+    },
+    {
+      "all_repetitions_passed": true,
+      "case_id": "P5B-PASS-05",
+      "duplicate_gate_pass": true,
+      "expected_verdict": "PASS_INVARIANT",
+      "formal_repetitions": 2,
+      "observed_verdict": "PASS_INVARIANT",
+      "subject_id": "JSS-S01"
+    }
+  ],
+  "combined_p5b_case_count": 20,
+  "combined_p5b_process_count": 40,
+  "combined_verdict_counts_by_run": {
+    "DETECT_LIFECYCLE_DRIFT": 10,
+    "INVALID": 10,
+    "NOT_SUPPORTED": 10,
+    "PASS_INVARIANT": 10
+  },
+  "design_version": "JSS-P5B.0",
+  "does_not_establish_detection_rate": true,
+  "does_not_establish_false_positive_rate": true,
+  "does_not_establish_general_solver_safety": true,
+  "evidence_status": "OBSERVED-P5B-HELDOUT",
+  "formal_case_count": 4,
+  "formal_process_count": 8,
+  "fresh_process_repetitions_per_case": 2,
+  "heldout_execution_revision": "JSS-P5B3-HELDOUT-1.0",
+  "implementation_version": "JSS-P5B-IMPL-1.0a",
+  "performance_evaluated": false,
+  "processes_per_repetition": 1,
+  "production_project_used": false,
+  "schema_version": "JSS-P5B3-HELDOUT-SUMMARY-1.0",
+  "status": "HELD_OUT_COMPLETE_FROZEN_MATRIX_COMPLETE",
+  "subject_counts_by_run": {
+    "JSS-S01": 6,
+    "JSS-S02": 2
+  },
+  "threads_per_process": 1,
+  "verdict_counts_by_run": {
+    "DETECT_LIFECYCLE_DRIFT": 2,
+    "INVALID": 2,
+    "NOT_SUPPORTED": 2,
+    "PASS_INVARIANT": 2
+  }
+}

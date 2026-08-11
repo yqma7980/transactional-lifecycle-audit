@@ -1,0 +1,123 @@
+{
+  "abaqus_used": false,
+  "cell_id": "P5D-S01-SMALL-M3",
+  "cpu_time_seconds": 0.6372542600000001,
+  "design_id": "JSS-P5D-PERFORMANCE-1.0",
+  "environment": {
+    "affinity": [
+      0
+    ],
+    "dolfinx": "0.10.0",
+    "machine": "x86_64",
+    "mpi4py": "4.1.1",
+    "mpi_size": 1,
+    "petsc": [
+      3,
+      24,
+      0
+    ],
+    "pid_namespace_visible_cpu_count": 20,
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "python": "3.12.3",
+    "python_executable": "python3",
+    "scipy": "1.16.2",
+    "semantic_fingerprint": "51523a5941a0a200fa9b8e434c6aa12343c6af522af2e228a75a5403dfeedb50",
+    "threads": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    }
+  },
+  "implementation_id": "JSS-P5D-IMPLEMENTATION-1.0",
+  "initialization_seconds": 0.14701701100000264,
+  "instrumentation_mode": "M3_GENERIC_REPLAY",
+  "internal_wall_time_seconds": 1.1426910060000068,
+  "pass_flag": true,
+  "peak_rss_bytes": 190623744,
+  "phase": "formal",
+  "processes": 1,
+  "production_model_used": false,
+  "result": {
+    "all_values_finite": true,
+    "audit": {
+      "eligibility_checked": false,
+      "generic_replay_equal": true,
+      "performed": true,
+      "provenance_checked": false,
+      "version_contract_checked": false
+    },
+    "audit_bytes": 640,
+    "audit_counts": {
+      "residual": 2,
+      "tangent": 2,
+      "trial": 2
+    },
+    "audit_seconds": 0.00349529900000789,
+    "event_ledger_bytes": 0,
+    "output_fingerprint": "7295b789b512137d81251f4a1ad7bfa9cb25892364221a554dbad9381b71c444",
+    "output_summary": {
+      "accepted_load": 0.08,
+      "accepted_version": 2,
+      "maximum_alpha": 0.011113503544500247,
+      "primary_l2": 0.2699620884634923
+    },
+    "production_counts": {
+      "accepted": 2,
+      "nonlinear_iterations": 5,
+      "rejected": 0,
+      "residual": 7,
+      "tangent": 5,
+      "trial": 7
+    },
+    "production_seconds": 0.024514034999981504,
+    "production_trajectory": [
+      {
+        "committed_physical_hash": "894f96c0b694ef656f165b7c04f4346530bfad68dda26754f856c0cedb9e0a2c",
+        "function_evaluations": 2,
+        "nonlinear_iterations": 1,
+        "plastic_point_count": 0,
+        "residual_sequence_hex": [
+          "0x1.b78a4c3877416p-1",
+          "0x1.3463ad6099b5cp-52"
+        ],
+        "snes_reason": 2,
+        "target_load": 0.04
+      },
+      {
+        "committed_physical_hash": "b083d57e02b33e61802c75aefd598cdf25656a790e2e374b01a34003a0096023",
+        "function_evaluations": 5,
+        "nonlinear_iterations": 4,
+        "plastic_point_count": 9,
+        "residual_sequence_hex": [
+          "0x1.b78a4c3877415p-1",
+          "0x1.23c7da96212b6p-6",
+          "0x1.514339452d6fcp-13",
+          "0x1.3a94a1fb469c6p-27",
+          "0x1.a3fb1faabbf67p-52"
+        ],
+        "snes_reason": 2,
+        "target_load": 0.08
+      }
+    ],
+    "serialization_hashing_seconds": 2.7499999987412593e-05,
+    "subject_id": "JSS-S01",
+    "trajectory_fingerprint": "9cb9c51bcb7e8529295c13da80d60e83ae0894c8ec5b849b3912e36cc561f54f",
+    "workload_id": "S01-SMALL",
+    "workload_parameters": {
+      "integration_points": 96,
+      "load_path": [
+        0.04,
+        0.08
+      ],
+      "nodes": 25,
+      "triangles": 32
+    }
+  },
+  "run_id": "run_03",
+  "subject_elapsed_seconds": 0.994018317000041,
+  "subject_id": "JSS-S01",
+  "teardown_seconds": 0.001651210000034098,
+  "threads": 1,
+  "workload_id": "S01-SMALL"
+}

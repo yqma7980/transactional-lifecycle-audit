@@ -1,0 +1,193 @@
+{
+  "all_values_finite": true,
+  "b3_metrics": {
+    "exam": 0.375,
+    "first_ground_truth_rank": 3,
+    "reciprocal_rank": 0.3333333333333333,
+    "suspicious_set_size": 3,
+    "top1": false,
+    "top3": true
+  },
+  "b3_ranking": [
+    {
+      "candidate_id": "S01-C01",
+      "case_id": "P5C-L02",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 1,
+      "reason_code": "ARTIFACT_CLASS",
+      "score": 2.0
+    },
+    {
+      "candidate_id": "S01-C02",
+      "case_id": "P5C-L02",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 2,
+      "reason_code": "ARTIFACT_CLASS",
+      "score": 2.0
+    },
+    {
+      "candidate_id": "S01-C03",
+      "case_id": "P5C-L02",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 3,
+      "reason_code": "ARTIFACT_CLASS",
+      "score": 2.0
+    },
+    {
+      "candidate_id": "S01-C04",
+      "case_id": "P5C-L02",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 4,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S01-C05",
+      "case_id": "P5C-L02",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 5,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S01-C06",
+      "case_id": "P5C-L02",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 6,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S01-C07",
+      "case_id": "P5C-L02",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 7,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S01-C08",
+      "case_id": "P5C-L02",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 8,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    }
+  ],
+  "b3_suspicious_set": [
+    "S01-C01",
+    "S01-C02",
+    "S01-C03"
+  ],
+  "b6_metrics": {
+    "exam": 0.125,
+    "first_ground_truth_rank": 1,
+    "reciprocal_rank": 1.0,
+    "suspicious_set_size": 1,
+    "top1": true,
+    "top3": true
+  },
+  "b6_ranking": [
+    {
+      "candidate_id": "S01-C03",
+      "case_id": "P5C-L02",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 1,
+      "reason_code": "OWNER+EVENT+SOURCE+RESTORATION",
+      "score": 9.0
+    },
+    {
+      "candidate_id": "S01-C01",
+      "case_id": "P5C-L02",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 2,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S01-C02",
+      "case_id": "P5C-L02",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 3,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S01-C04",
+      "case_id": "P5C-L02",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 4,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S01-C05",
+      "case_id": "P5C-L02",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 5,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S01-C06",
+      "case_id": "P5C-L02",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 6,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S01-C07",
+      "case_id": "P5C-L02",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 7,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S01-C08",
+      "case_id": "P5C-L02",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 8,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    }
+  ],
+  "b6_suspicious_set": [
+    "S01-C03"
+  ],
+  "case_id": "P5C-L02",
+  "design_version": "JSS-P5C.0",
+  "fault_family": "F03_ROLLBACK_OMISSION",
+  "ground_truth_candidate_ids": [
+    "S01-C03"
+  ],
+  "implementation_version": "JSS-P5C-IMPL-1.0",
+  "mutation_site": "rollback_restore_path",
+  "observation": {
+    "accepted_field_delta": 2e-07,
+    "anomalous_event": "RejectAttempt",
+    "anomalous_owner": "RollbackManager",
+    "anomalous_source_plane": "rollback_state",
+    "anomaly_kind": "restoration",
+    "changed_artifact_class": "state",
+    "changed_packet_family": "state_packet",
+    "mutation_site": "rollback_restore_path",
+    "output_delta": 0.0,
+    "residual_delta": 2e-07,
+    "subject_id": "JSS-S01",
+    "tangent_delta": 4e-07
+  },
+  "observation_fingerprint": "4421e45f6533d4cd2583d19bfd4f994e316161e00d9b5069b4075afe6c62d3ad",
+  "observed_detection_verdict": "DETECT_LIFECYCLE_DRIFT",
+  "ontology_version": "JSS-P5C-ONTOLOGY-1.0",
+  "partition": "DEVELOPMENT",
+  "pass_flag": true,
+  "required_detection_verdict": "DETECT_LIFECYCLE_DRIFT",
+  "run_id": "run_2",
+  "schema_b3_pass": true,
+  "schema_b6_pass": true,
+  "semantic_fingerprint": "33d9162ba72f9c1136389cf2013f17b48af101caf497a6d180dab8e373c4876e",
+  "subject_id": "JSS-S01",
+  "suspicious_set_reduction": 0.6666666666666667
+}

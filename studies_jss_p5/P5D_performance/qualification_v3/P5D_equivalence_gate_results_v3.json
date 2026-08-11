@@ -1,0 +1,154 @@
+{
+  "formal_execution_authorized_by_result": true,
+  "groups": [
+    {
+      "gates": {
+        "accepted_output_equivalence": true,
+        "all_modes_present": true,
+        "audit_work_separated": true,
+        "environment_identity": true,
+        "finite_and_schema": true,
+        "production_trajectory_equivalence": true,
+        "production_work_equivalence": true
+      },
+      "output_fingerprint": "ff8850e4a15bde5e5995945758b43f6bdaf834f99db8424106fdd1a9169c794c",
+      "pass_flag": true,
+      "production_counts": {
+        "accepted": 2,
+        "nonlinear_iterations": 6,
+        "rejected": 0,
+        "residual": 8,
+        "tangent": 6,
+        "trial": 8
+      },
+      "subject_id": "JSS-S01",
+      "trajectory_fingerprint": "eac6aa8d5855ebe50abf79b7f2fe7cec7065d04d9011693085b170c3c0ce1fa3",
+      "workload_id": "S01-MEDIUM"
+    },
+    {
+      "gates": {
+        "accepted_output_equivalence": true,
+        "all_modes_present": true,
+        "audit_work_separated": true,
+        "environment_identity": true,
+        "finite_and_schema": true,
+        "production_trajectory_equivalence": true,
+        "production_work_equivalence": true
+      },
+      "output_fingerprint": "7295b789b512137d81251f4a1ad7bfa9cb25892364221a554dbad9381b71c444",
+      "pass_flag": true,
+      "production_counts": {
+        "accepted": 2,
+        "nonlinear_iterations": 5,
+        "rejected": 0,
+        "residual": 7,
+        "tangent": 5,
+        "trial": 7
+      },
+      "subject_id": "JSS-S01",
+      "trajectory_fingerprint": "9cb9c51bcb7e8529295c13da80d60e83ae0894c8ec5b849b3912e36cc561f54f",
+      "workload_id": "S01-SMALL"
+    },
+    {
+      "gates": {
+        "accepted_output_equivalence": true,
+        "all_modes_present": true,
+        "audit_work_separated": true,
+        "environment_identity": true,
+        "finite_and_schema": true,
+        "production_trajectory_equivalence": true,
+        "production_work_equivalence": true
+      },
+      "output_fingerprint": "2f8451327dfbda66f16152b9dba92d492c3c1ee179230780643b1dfab489fe98",
+      "pass_flag": true,
+      "production_counts": {
+        "accepted": 64,
+        "nonlinear_iterations": 0,
+        "rejected": 0,
+        "residual": 64,
+        "tangent": 0,
+        "trial": 64
+      },
+      "subject_id": "JSS-S02",
+      "trajectory_fingerprint": "cae7c453899f3197e56565dcfc9b141bd74d7fc8941189adfe5e6787ed5f47a3",
+      "workload_id": "S02-MEDIUM"
+    },
+    {
+      "gates": {
+        "accepted_output_equivalence": true,
+        "all_modes_present": true,
+        "audit_work_separated": true,
+        "environment_identity": true,
+        "finite_and_schema": true,
+        "production_trajectory_equivalence": true,
+        "production_work_equivalence": true
+      },
+      "output_fingerprint": "33338f44b40fcbb1923abceb04e59598275f7c65b7009d99d8a9c9a004107c2a",
+      "pass_flag": true,
+      "production_counts": {
+        "accepted": 16,
+        "nonlinear_iterations": 0,
+        "rejected": 0,
+        "residual": 16,
+        "tangent": 0,
+        "trial": 16
+      },
+      "subject_id": "JSS-S02",
+      "trajectory_fingerprint": "0c94c7a46fed3e3bdd111b8a8b12ca46789e0170545ad4d5cc199fe1c564c61f",
+      "workload_id": "S02-SMALL"
+    },
+    {
+      "gates": {
+        "accepted_output_equivalence": true,
+        "all_modes_present": true,
+        "audit_work_separated": true,
+        "environment_identity": true,
+        "finite_and_schema": true,
+        "production_trajectory_equivalence": true,
+        "production_work_equivalence": true
+      },
+      "output_fingerprint": "c423e4d9ad9a6dd196062e227111fb39477f7ddf90f966e43d567046b81f5568",
+      "pass_flag": true,
+      "production_counts": {
+        "accepted": 64,
+        "nonlinear_iterations": 64,
+        "rejected": 88,
+        "residual": 160,
+        "tangent": 72,
+        "trial": 160
+      },
+      "subject_id": "JSS-S03",
+      "trajectory_fingerprint": "4bbc11a0e836a9081a81a0ba2c157c36256c088df4319318793d75fe87d1b33f",
+      "workload_id": "S03-MEDIUM"
+    },
+    {
+      "gates": {
+        "accepted_output_equivalence": true,
+        "all_modes_present": true,
+        "audit_work_separated": true,
+        "environment_identity": true,
+        "finite_and_schema": true,
+        "production_trajectory_equivalence": true,
+        "production_work_equivalence": true
+      },
+      "output_fingerprint": "c7a7cf7f4accf1c350aab1b6174b6e72d2cb8fd45660bbdafc7d0122f81b8708",
+      "pass_flag": true,
+      "production_counts": {
+        "accepted": 8,
+        "nonlinear_iterations": 8,
+        "rejected": 11,
+        "residual": 20,
+        "tangent": 9,
+        "trial": 20
+      },
+      "subject_id": "JSS-S03",
+      "trajectory_fingerprint": "e6b984799d5526f50d66931926441e3de3f8dee1dc1467c33ff975b62f617124",
+      "workload_id": "S03-SMALL"
+    }
+  ],
+  "historical_aeds_timing_used": false,
+  "protocol_id": "JSS-P5D-PERFORMANCE-1.0",
+  "qualification_processes": 18,
+  "status": "PASS_P5D_EQUIVALENCE_GATES",
+  "subject_workload_triplets": 6
+}

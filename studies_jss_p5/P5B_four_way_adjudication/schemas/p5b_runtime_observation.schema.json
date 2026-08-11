@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "JSS-P5B-RUNTIME-OBSERVATION-1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "implementation_revision",
+    "case_id",
+    "run_id",
+    "subject_id",
+    "runtime_mode",
+    "raw_observation",
+    "events",
+    "measurements",
+    "environment",
+    "semantic_fingerprint",
+    "event_count"
+  ],
+  "properties": {
+    "schema_version": {"const": "JSS-P5B-RUNTIME-OBSERVATION-1.0"},
+    "implementation_revision": {"const": "JSS-P5B1-RUNTIME-1.0"},
+    "case_id": {
+      "type": "string",
+      "pattern": "^P5B-(PASS|DETECT|INVALID|NS)-0[1-4]$"
+    },
+    "run_id": {"enum": ["run_1", "run_2"]},
+    "subject_id": {"enum": ["JSS-S01", "JSS-S02", "JSS-S03"]},
+    "runtime_mode": {"type": "string", "minLength": 1},
+    "raw_observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "packet_a",
+        "packet_b",
+        "precomparison_relation",
+        "lifecycle_signals",
+        "evidence_tokens",
+        "execution_error"
+      ],
+      "properties": {
+        "packet_a": {"type": "object"},
+        "packet_b": {"type": "object"},
+        "precomparison_relation": {
+          "enum": ["compatible", "incompatible", "not_evaluated"]
+        },
+        "lifecycle_signals": {"type": "object"},
+        "evidence_tokens": {
+          "type": "array",
+          "items": {"type": "string"},
+          "uniqueItems": true
+        },
+        "execution_error": {"type": ["string", "null"]}
+      }
+    },
+    "events": {"type": "array", "items": {"type": "object"}},
+    "measurements": {"type": "object"},
+    "environment": {"type": "object"},
+    "semantic_fingerprint": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "event_count": {"type": "integer", "minimum": 0}
+  }
+}

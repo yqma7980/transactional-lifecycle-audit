@@ -1,0 +1,34 @@
+{
+  "active_signals": [],
+  "applicability_evaluated": true,
+  "capability": {
+    "available_tokens": [],
+    "missing_events": [
+      "PARALLEL_CALLBACK_OWNERSHIP"
+    ],
+    "missing_fields": [],
+    "observable": false,
+    "required_tokens": [
+      "PARALLEL_CALLBACK_OWNERSHIP"
+    ]
+  },
+  "case_id": "P5B-NS-05",
+  "eligibility_evaluated": false,
+  "expected_verdict": "NOT_SUPPORTED",
+  "four_way_verdict": "NOT_SUPPORTED",
+  "implementation_version": "JSS-P5B-IMPL-1.0a",
+  "lifecycle_evaluated": false,
+  "mismatch_fields": [],
+  "observed_outcome": "NOT_SUPPORTED",
+  "packet_a_fingerprint": "7764e098eae5cfe01c5f86055f27b56b8d02a6c1b3950f80901a1d9266f1a229",
+  "packet_b_fingerprint": "7764e098eae5cfe01c5f86055f27b56b8d02a6c1b3950f80901a1d9266f1a229",
+  "partition": "HELD_OUT",
+  "pass_flag": true,
+  "reasons": [
+    "missing:PARALLEL_CALLBACK_OWNERSHIP"
+  ],
+  "run_id": "run_2",
+  "schema_version": "JSS-P5B-CASE-RESULT-1.1",
+  "stage": "APPLICABILITY",
+  "subject_id": "JSS-S02"
+}

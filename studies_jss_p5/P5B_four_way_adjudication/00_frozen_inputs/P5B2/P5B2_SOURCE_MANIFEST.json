@@ -1,0 +1,163 @@
+{
+  "file_count_excluding_self": 31,
+  "files": [
+    {
+      "bytes": 6703,
+      "relative_path": "00_frozen_inputs/JSS_claim_evidence_matrix_v0_3_proposed.md",
+      "sha256": "09a46d3c4dab9b1ae16e8bf09bd1d09ac83dbaba7381dd56dd537c669ecfd394"
+    },
+    {
+      "bytes": 2018,
+      "relative_path": "00_frozen_inputs/P5A_adjudication_contract.json",
+      "sha256": "f58f5967e95f81e2a98adc04bf4a4f1deff1b8a4f89da52f5dcb855c2cab4849"
+    },
+    {
+      "bytes": 1653,
+      "relative_path": "00_frozen_inputs/P5A_no_post_hoc_rules.md",
+      "sha256": "72bd4e5393070b326a45aaf9068ac3b08e3f1a4753770c159db6e898ac816cc4"
+    },
+    {
+      "bytes": 608,
+      "relative_path": "00_frozen_inputs/P5B1_DEVELOPMENT_FINAL_QA.md",
+      "sha256": "37206cb30aa8d13e96876d46e6c5f018b0e4b4ba9d6391bd4351492606760417"
+    },
+    {
+      "bytes": 5335,
+      "relative_path": "00_frozen_inputs/P5B1_development_final_summary.json",
+      "sha256": "8c85b87924a8a1a00417529027d349eb4925d7e56feb29a18f40a5103154497b"
+    },
+    {
+      "bytes": 26212,
+      "relative_path": "00_frozen_inputs/P5B1_development_raw_manifest.json",
+      "sha256": "2dae5bdafc3d84447b5bfe879f5831432828da7770ffbc2b43c773c989d42ab0"
+    },
+    {
+      "bytes": 1665,
+      "relative_path": "00_frozen_inputs/P5B1_development_result_report.md",
+      "sha256": "0b211e46e40f056158a9c1592c902c58bc94ebe40bf7b8d48e57e667d66c00d4"
+    },
+    {
+      "bytes": 9720,
+      "relative_path": "00_frozen_inputs/P5B1_duplicate_comparison.json",
+      "sha256": "d7f0c78473da8f7a1e42c8c88c5696275f05d2ed7290d814fcc3f95e4e4ebc0c"
+    },
+    {
+      "bytes": 70913,
+      "relative_path": "00_frozen_inputs/P5B1_SOURCE_MANIFEST.json",
+      "sha256": "e77c395f7eba21d5e21d00a89ea66900d31e811f8f542c28e9540786d652f1e6"
+    },
+    {
+      "bytes": 1676,
+      "relative_path": "00_frozen_inputs/P5B_acceptance_gates.md",
+      "sha256": "521254d7c1abff40495b9bf5bad670387fd369a6119dac7b75606280b6ed47fd"
+    },
+    {
+      "bytes": 2131,
+      "relative_path": "00_frozen_inputs/P5B_DEVELOPMENT_ACTIVATION.json",
+      "sha256": "a56eb7ae978cc257e65ce952fc3df69d64f0ba4c23017a138aa5434655ebf196"
+    },
+    {
+      "bytes": 2547,
+      "relative_path": "00_frozen_inputs/P5B_FORMAL_IMPLEMENTATION_FREEZE.json",
+      "sha256": "b37ef34486e87d31525ec567bfcc52360fac0938ee9c9139521225eac32d7320"
+    },
+    {
+      "bytes": 5998,
+      "relative_path": "00_frozen_inputs/P5B_four_way_case_matrix.csv",
+      "sha256": "a4583c96c8bcd847816ec1a72493c6a326a2a7eb5fe787efa68edd1c92ded0e3"
+    },
+    {
+      "bytes": 1029,
+      "relative_path": "00_frozen_inputs/P5B_HELDOUT_SEAL_STATUS.json",
+      "sha256": "1fb1424db6d8c289f80fc7d0705178b79f3741edbee5816dc37c07b26c2e374f"
+    },
+    {
+      "bytes": 960,
+      "relative_path": "00_frozen_inputs/P5B_partition_and_heldout_rule.md",
+      "sha256": "5c8086bc48bb414d8b0b0eb5798635d6526282c509498fefb65d37635a9f238a"
+    },
+    {
+      "bytes": 2360,
+      "relative_path": "01_evidence/P5B2_development_case_source.csv",
+      "sha256": "55faf0aaf8799443aa57fffef8dd9131aa9a4c7fbcfec16062887217a25b4fa3"
+    },
+    {
+      "bytes": 646,
+      "relative_path": "01_evidence/P5B2_development_evidence_report.md",
+      "sha256": "02adfab13d7d2e211e0ed41e56c3e97cc8c5db637261b901fa80a905d8b1e29d"
+    },
+    {
+      "bytes": 14687,
+      "relative_path": "01_evidence/P5B2_development_run_source.csv",
+      "sha256": "be19994fe888c7e1825074eea1b0c1f6f57873e7c330ba3f925c6440dcb6edf8"
+    },
+    {
+      "bytes": 3356,
+      "relative_path": "01_evidence/P5B2_duplicate_source.csv",
+      "sha256": "a642fe7c474f81f6543c580a0370df0d1aee9baf3332ad165b8d7ca5e3cf1756"
+    },
+    {
+      "bytes": 307,
+      "relative_path": "01_evidence/P5B2_four_way_confusion_matrix.csv",
+      "sha256": "306e234e5a9ca06f266167f5a296f7257c5cf6d8e368a3704de8159f0fa88869"
+    },
+    {
+      "bytes": 1000,
+      "relative_path": "02_audit/P5B2_no_post_hoc_audit.json",
+      "sha256": "81ad8408379addbc04a13a363b51fd0694e4acb65f758cc053349c5f39a1f33c"
+    },
+    {
+      "bytes": 1313,
+      "relative_path": "02_claims/JSS_claim_evidence_matrix_v0_4_incremental_draft.md",
+      "sha256": "512964e92cd7b8a1bb415cb2bfeefd21d1c338586462cf08a27fb79ae9aeea24"
+    },
+    {
+      "bytes": 2465,
+      "relative_path": "03_activation/P5B2_HELDOUT_ACTIVATION_MANIFEST.json",
+      "sha256": "c47ff42e8abfdf74874d6c4a2a4f5554a77a407a79ed012fe3bd3660e0609e5b"
+    },
+    {
+      "bytes": 1398,
+      "relative_path": "03_activation/P5B2_heldout_case_matrix.csv",
+      "sha256": "453240fca5509bdb031b0a3b796c12bf5b4e35c102e1d457fc58869a65c8d055"
+    },
+    {
+      "bytes": 625,
+      "relative_path": "03_activation/P5B2_HELDOUT_EXECUTION_PROTOCOL.md",
+      "sha256": "5f6c428d31bcf9200a0fe58c177944fc3e12b657cf11c189841ebc9e22c21459"
+    },
+    {
+      "bytes": 494,
+      "relative_path": "04_qa/P5B2_FINAL_QA.md",
+      "sha256": "6156bf76cc35a480d0fdd1c71e260ef69e26f4a43597469f77f6f4b579f6a8fe"
+    },
+    {
+      "bytes": 652,
+      "relative_path": "04_qa/P5B2_GATE_RESULTS.json",
+      "sha256": "8f118de86d5856aae71f637ec33cfea3ffefd7365a1bcb4ab73ea07869083fac"
+    },
+    {
+      "bytes": 20831,
+      "relative_path": "build_p5b2_freeze.py",
+      "sha256": "d34177bb7cdb052af136cd10f36dba7a71bc8af0a54ab433299f060ce5332cd4"
+    },
+    {
+      "bytes": 2018,
+      "relative_path": "P5B2_DEVELOPMENT_EVIDENCE_FREEZE.json",
+      "sha256": "e27ca83823155ca089922f5e7c15f2fec4b39a9ced85348dcc6f42fe316f5af9"
+    },
+    {
+      "bytes": 2476,
+      "relative_path": "P5B2_SOURCE_DATA_MANIFEST.json",
+      "sha256": "0850d7df2490eaa50fcf778458597c66e7f3feb4af13cc7b94bf25e38616d42d"
+    },
+    {
+      "bytes": 273,
+      "relative_path": "README.md",
+      "sha256": "86036e93ca01c8ff6cefb6833e24a644b01fdff1092a6e1bbee4b68e2679f34a"
+    }
+  ],
+  "manifest_self_hash_embedded": false,
+  "schema_version": "JSS-P5B2-SOURCE-MANIFEST-1.0",
+  "status": "PASS_P5B2_DEVELOPMENT_SYNC_AND_HELDOUT_ACTIVATION_FREEZE"
+}

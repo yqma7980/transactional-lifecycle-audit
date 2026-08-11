@@ -1,0 +1,58 @@
+{
+  "contract_id": "JSS-P5A-VERDICT-1.0",
+  "design_status": "FROZEN_NOT_IMPLEMENTED",
+  "execution_authorized": false,
+  "results_exist": false,
+  "four_way_verdicts": [
+    "PASS_INVARIANT",
+    "DETECT_LIFECYCLE_DRIFT",
+    "INVALID",
+    "NOT_SUPPORTED"
+  ],
+  "outside_four_way": ["EXECUTION_ERROR"],
+  "precedence": [
+    "EXECUTION_ERROR",
+    "NOT_SUPPORTED",
+    "INVALID",
+    "DETECT_LIFECYCLE_DRIFT",
+    "PASS_INVARIANT"
+  ],
+  "stages": {
+    "stage_0_applicability": {
+      "question": "Can the frozen host history expose every required event and evidence field?",
+      "failure_verdict": "NOT_SUPPORTED"
+    },
+    "stage_1_eligibility": {
+      "question": "Do the histories share a compatible predeclared replay packet and external conditions?",
+      "failure_verdict": "INVALID",
+      "components": [
+        "declared_primary_state",
+        "committed_state",
+        "semantic_persistent_projection",
+        "load_and_boundary_controls",
+        "residual_version",
+        "tangent_version",
+        "external_environment"
+      ]
+    },
+    "stage_2_lifecycle": {
+      "question": "Within an eligible comparison does a nonaccepting history violate a lifecycle contract or change a later semantic effect?",
+      "violation_verdict": "DETECT_LIFECYCLE_DRIFT",
+      "invariant_verdict": "PASS_INVARIANT"
+    }
+  },
+  "version_mismatch_resolution": {
+    "pre_comparison_version_mismatch": "INVALID",
+    "within_history_version_contract_violation": "DETECT_LIFECYCLE_DRIFT",
+    "version_metadata_unavailable": "NOT_SUPPORTED",
+    "declared_compatible_lag": "PASS_INVARIANT"
+  },
+  "counting_rules": {
+    "invalid_in_detection_denominator": false,
+    "not_supported_in_detection_denominator": false,
+    "execution_error_in_detection_denominator": false,
+    "pass_controls_in_specificity_denominator": true,
+    "detect_faults_in_sensitivity_denominator": true
+  },
+  "legacy_evidence_rule": "The existing P4 17-case results are immutable and are not reclassified by this contract."
+}

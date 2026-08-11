@@ -1,0 +1,15 @@
+{
+  "case_id": "P5B-INVALID-02",
+  "event_count": 1,
+  "events": [
+    {
+      "event_type": "PrecomparisonCommittedProjectionAudit",
+      "field_name": "gamma_p[27,0,1]"
+    }
+  ],
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "run_id": "run_2",
+  "schema_version": "JSS-P5B1-EVENT-LEDGER-1.0",
+  "semantic_fingerprint": "7015e1722e9d19b2391551ca471d54157c5876e5c8c4000980179349965062f3",
+  "subject_id": "JSS-S01"
+}

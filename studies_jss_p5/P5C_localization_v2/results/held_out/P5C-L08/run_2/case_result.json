@@ -1,0 +1,193 @@
+{
+  "all_values_finite": true,
+  "b3_metrics": {
+    "exam": 0.25,
+    "first_ground_truth_rank": 2,
+    "reciprocal_rank": 0.5,
+    "suspicious_set_size": 2,
+    "top1": false,
+    "top3": true
+  },
+  "b3_ranking": [
+    {
+      "candidate_id": "S02-C04",
+      "case_id": "P5C-L08",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 1,
+      "reason_code": "ARTIFACT_CLASS",
+      "score": 2.0
+    },
+    {
+      "candidate_id": "S02-C05",
+      "case_id": "P5C-L08",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 2,
+      "reason_code": "ARTIFACT_CLASS",
+      "score": 2.0
+    },
+    {
+      "candidate_id": "S02-C01",
+      "case_id": "P5C-L08",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 3,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S02-C02",
+      "case_id": "P5C-L08",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 4,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S02-C03",
+      "case_id": "P5C-L08",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 5,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S02-C06",
+      "case_id": "P5C-L08",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 6,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S02-C07",
+      "case_id": "P5C-L08",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 7,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S02-C08",
+      "case_id": "P5C-L08",
+      "method_id": "B3_GENERIC_REPLAY",
+      "rank": 8,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    }
+  ],
+  "b3_suspicious_set": [
+    "S02-C04",
+    "S02-C05"
+  ],
+  "b6_metrics": {
+    "exam": 0.125,
+    "first_ground_truth_rank": 1,
+    "reciprocal_rank": 1.0,
+    "suspicious_set_size": 2,
+    "top1": true,
+    "top3": true
+  },
+  "b6_ranking": [
+    {
+      "candidate_id": "S02-C05",
+      "case_id": "P5C-L08",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 1,
+      "reason_code": "OWNER+EVENT+SOURCE+VERSION",
+      "score": 9.0
+    },
+    {
+      "candidate_id": "S02-C04",
+      "case_id": "P5C-L08",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 2,
+      "reason_code": "SOURCE+VERSION",
+      "score": 3.0
+    },
+    {
+      "candidate_id": "S02-C01",
+      "case_id": "P5C-L08",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 3,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S02-C02",
+      "case_id": "P5C-L08",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 4,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S02-C03",
+      "case_id": "P5C-L08",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 5,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S02-C06",
+      "case_id": "P5C-L08",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 6,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S02-C07",
+      "case_id": "P5C-L08",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 7,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    },
+    {
+      "candidate_id": "S02-C08",
+      "case_id": "P5C-L08",
+      "method_id": "B6_TLA_PROVENANCE",
+      "rank": 8,
+      "reason_code": "NO_VISIBLE_MATCH",
+      "score": 0.0
+    }
+  ],
+  "b6_suspicious_set": [
+    "S02-C05",
+    "S02-C04"
+  ],
+  "case_id": "P5C-L08",
+  "design_version": "JSS-P5C.0",
+  "fault_family": "F08_OPERATOR_VERSION_MISMATCH",
+  "ground_truth_candidate_ids": [
+    "S02-C05"
+  ],
+  "implementation_version": "JSS-P5C-IMPL-1.0",
+  "mutation_site": "tangent_or_flux_packet",
+  "observation": {
+    "accepted_field_delta": 0.0,
+    "anomalous_event": "FormTangent",
+    "anomalous_owner": "OperatorAssembler",
+    "anomalous_source_plane": "operator",
+    "anomaly_kind": "version",
+    "changed_artifact_class": "operator",
+    "changed_packet_family": "operator_packet",
+    "mutation_site": "tangent_or_flux_packet",
+    "output_delta": 0.0,
+    "residual_delta": 8e-07,
+    "subject_id": "JSS-S02",
+    "tangent_delta": 8e-06
+  },
+  "observation_fingerprint": "364ba9a6700c5484b7af329ea83e07cd4bde05354efba6c9577292c97b23e46b",
+  "observed_detection_verdict": "DETECT_LIFECYCLE_DRIFT",
+  "ontology_version": "JSS-P5C-ONTOLOGY-1.0",
+  "partition": "HELD_OUT",
+  "pass_flag": true,
+  "required_detection_verdict": "DETECT_LIFECYCLE_DRIFT",
+  "run_id": "run_2",
+  "schema_b3_pass": true,
+  "schema_b6_pass": true,
+  "semantic_fingerprint": "cbf6ba8024e5ee7a6672ffdba092b6fa2cb296c9b4aa3392c4dcff308a8277be",
+  "subject_id": "JSS-S02",
+  "suspicious_set_reduction": 0.0
+}

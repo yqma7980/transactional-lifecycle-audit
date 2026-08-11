@@ -1,0 +1,53 @@
+{
+    "schema_version":  "JSS-P5C-IMPLEMENTATION-MANIFEST-1.0",
+    "status":  "IMPLEMENTED_UNIT_TESTED_NOT_EXECUTED",
+    "design_version":  "JSS-P5C.0",
+    "implementation_version":  "JSS-P5C-IMPL-1.0",
+    "protected_inputs":  {
+                             "case_matrix":  "04b2a2a8181117628560824792789ea30368b8acac8e05956f8fead14caaf31f",
+                             "ontology":  "1fc7b70f0b507749ac9dfe997739383ff27394a9668172067eb42aa634c6f8f6",
+                             "access_contract":  "f4833ae8d09400538d31273c60bb1bea79242d05622500f47d43eaf79ce403eb",
+                             "metric_freeze":  "6c4f10cc982a6a7837cff7c84d12e88777de3775488e5d1f430830380be35727"
+                         },
+    "implementation_files":  [
+                                 {
+                                     "relative_path":  "src/__init__.py",
+                                     "sha256":  "7b62b6bbb0b4d59042e83e313eca7c3117e109b96796533ea4140e56f183423a",
+                                     "bytes":  46
+                                 },
+                                 {
+                                     "relative_path":  "src/p5c_localization.py",
+                                     "sha256":  "cf11094701580c83388be38a112bbe2e7e326dc389aef5e16f949f4e43d1826c",
+                                     "bytes":  15101
+                                 },
+                                 {
+                                     "relative_path":  "run_p5c.py",
+                                     "sha256":  "9656ba34934fb44aed1d91d49101697cfb5a27a4d77aca8c063589c59ffca0a8",
+                                     "bytes":  3124
+                                 },
+                                 {
+                                     "relative_path":  "tests/test_p5c_localization.py",
+                                     "sha256":  "c6170b0f2152bfb6bce771d265580e0430b426f8285529803be167fac7385375",
+                                     "bytes":  5475
+                                 },
+                                 {
+                                     "relative_path":  "P5C_implementation_freeze.json",
+                                     "sha256":  "718929d1a32c83a700b72a8d33f27734105aa7de49391600d27e8bfd3c4d3d31",
+                                     "bytes":  425
+                                 },
+                                 {
+                                     "relative_path":  "P5C_preflight_protocol.md",
+                                     "sha256":  "daf82c7822b4c16cfb419f08be15a9f787b0433dcd394b29eb177279ba5f9e1f",
+                                     "bytes":  485
+                                 },
+                                 {
+                                     "relative_path":  "README.md",
+                                     "sha256":  "764d122e811061f9b426965e6655003af0a920f70a84d0c1307f35239e8ff9a8",
+                                     "bytes":  586
+                                 }
+                             ],
+    "no_formal_case_execution":  true,
+    "no_heldout_access":  true,
+    "abaqus_used":  false,
+    "manifest_self_hash_embedded":  false
+}

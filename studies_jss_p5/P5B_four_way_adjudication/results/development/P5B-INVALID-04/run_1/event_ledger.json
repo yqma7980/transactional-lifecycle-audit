@@ -1,0 +1,15 @@
+{
+  "case_id": "P5B-INVALID-04",
+  "event_count": 1,
+  "events": [
+    {
+      "event_type": "PrecomparisonVersionAudit",
+      "field_name": "tangent_version"
+    }
+  ],
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "run_id": "run_1",
+  "schema_version": "JSS-P5B1-EVENT-LEDGER-1.0",
+  "semantic_fingerprint": "c7dfcdf3363e63e6cc29f4c8ee354c65d2371874e8d45a144d75ac1dda72a633",
+  "subject_id": "JSS-S02"
+}

@@ -1,0 +1,12 @@
+{
+    "status":  "HELDOUT_ACTIVATED_AFTER_DEVELOPMENT_FREEZE",
+    "activation_basis":  "nine development cases, eighteen fresh processes, duplicate and schema gates passed",
+    "development_summary_sha256":  "0b5da24966761a91cbb5cd2cb051a50a531ad18544c44802e138f5986d036e2f",
+    "development_duplicate_sha256":  "1afabf7a503fd256ac102b6be9105ce1670245f11e26b06acf5be70f57627c4e",
+    "development_raw_manifest_sha256":  "be9471b7ea6de2677c9cbeeea2ca599ef0f32cae1bdee6d9799db9e544d987a1",
+    "implementation_manifest_sha256":  "578c112316f61be66dc86834960c78f24dabd2a860360491f9c4f487313eb4bb",
+    "frozen_case_matrix_sha256":  "04b2a2a8181117628560824792789ea30368b8acac8e05956f8fead14caaf31f",
+    "heldout_case_count":  3,
+    "no_post_hoc_threshold_or_scoring_change":  true,
+    "abaqus_used":  false
+}

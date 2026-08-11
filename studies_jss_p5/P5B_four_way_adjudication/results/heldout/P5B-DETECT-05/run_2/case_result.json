@@ -1,0 +1,38 @@
+{
+  "active_signals": [
+    "output_provenance_violation"
+  ],
+  "applicability_evaluated": true,
+  "capability": {
+    "available_tokens": [
+      "CANDIDATE_REACHABILITY",
+      "OUTPUT_SOURCE"
+    ],
+    "missing_events": [],
+    "missing_fields": [],
+    "observable": true,
+    "required_tokens": [
+      "CANDIDATE_REACHABILITY",
+      "OUTPUT_SOURCE"
+    ]
+  },
+  "case_id": "P5B-DETECT-05",
+  "eligibility_evaluated": true,
+  "expected_verdict": "DETECT_LIFECYCLE_DRIFT",
+  "four_way_verdict": "DETECT_LIFECYCLE_DRIFT",
+  "implementation_version": "JSS-P5B-IMPL-1.0a",
+  "lifecycle_evaluated": true,
+  "mismatch_fields": [],
+  "observed_outcome": "DETECT_LIFECYCLE_DRIFT",
+  "packet_a_fingerprint": "5ca3977a2b5b874549a3069bf9a78d0ae7b4fa58cc19c70f5f653e8b309b4a79",
+  "packet_b_fingerprint": "5ca3977a2b5b874549a3069bf9a78d0ae7b4fa58cc19c70f5f653e8b309b4a79",
+  "partition": "HELD_OUT",
+  "pass_flag": true,
+  "reasons": [
+    "signal:output_provenance_violation"
+  ],
+  "run_id": "run_2",
+  "schema_version": "JSS-P5B-CASE-RESULT-1.1",
+  "stage": "LIFECYCLE",
+  "subject_id": "JSS-S01"
+}

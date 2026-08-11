@@ -1,0 +1,42 @@
+{
+  "case_id": "P5B-INVALID-02",
+  "expected_verdict": "INVALID",
+  "fresh_process": true,
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "inputs": {
+    "P5B1_CASE_RUNTIME_MAPPING.csv": "14cb0281f6d5e3a2ebfeef023605bf81c9586f4e90483e657fdf047f3aec3b64",
+    "P5B1_EXECUTION_ADAPTER_FREEZE.json": "a91f035497cb16d77179d00d07f050f6ac3eb24e1a98dfe81b6f08cb02a39a40",
+    "P5B_DEVELOPMENT_ACTIVATION.json": "a56eb7ae978cc257e65ce952fc3df69d64f0ba4c23017a138aa5434655ebf196",
+    "P5B_FORMAL_IMPLEMENTATION_FREEZE.json": "b37ef34486e87d31525ec567bfcc52360fac0938ee9c9139521225eac32d7320",
+    "src/jss_p5b/adapters.py": "591dcedb87b2ddbd81b8ca7e036ae66edadff8a5daff2a72e3b5077159e4800f",
+    "src/jss_p5b/adjudication.py": "36b0061399d21f6ed067d7c4173ddd48a270a61581cd99f3b8672a3a3004ffb4",
+    "src/jss_p5b/formal_executor.py": "22070c14c13ebdf452b4c1245ca3c3d61510d2eba3530ae01cdb1719a67e783f",
+    "src/jss_p5b/runtime.py": "c9c91bac5f017aea9bb96136e5c580ca1d26051e60be9af6a9444ec6b7273a3d",
+    "src/jss_p5b/runtime_local.py": "c282883c611f95b1c31b1896602ce033fa4b5f4515ce3125c2961da57469a74e",
+    "src/jss_p5b/runtime_s01.py": "77d7d945d7273993fe4c83bc4fd6f5c0137ca059d2aad832dac1687e5f1829e7"
+  },
+  "manifest_self_hash_embedded": false,
+  "observed_verdict": "INVALID",
+  "outputs": {
+    "case_result.json": {
+      "bytes": 1120,
+      "sha256": "02b1c93fa48df2e0aebd42c429890704ced55d964f4eb894c2a2a5d480740b2c"
+    },
+    "event_ledger.json": {
+      "bytes": 428,
+      "sha256": "508759fd3fc3b434114584715966483a688532b14f231b98c4e11a53dcc8a718"
+    },
+    "runtime_observation.json": {
+      "bytes": 2775,
+      "sha256": "d254a5b6513207fa523bb7aca59663df76e514f324bf111525d60a2d545e0bd9"
+    }
+  },
+  "partition": "DEVELOPMENT",
+  "pass_flag": true,
+  "processes": 1,
+  "run_id": "run_2",
+  "runtime_semantic_fingerprint": "7015e1722e9d19b2391551ca471d54157c5876e5c8c4000980179349965062f3",
+  "schema_version": "JSS-P5B1-CASE-MANIFEST-1.0",
+  "subject_id": "JSS-S01",
+  "threads": 1
+}

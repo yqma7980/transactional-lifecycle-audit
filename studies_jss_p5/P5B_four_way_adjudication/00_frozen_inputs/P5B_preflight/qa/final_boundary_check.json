@@ -1,0 +1,21 @@
+﻿{
+    "check_id":  "JSS-P5B-FINAL-BOUNDARY-1.0",
+    "formal_cases_run":  0,
+    "preflight_runner_invocations":  0,
+    "safe_null_mode":  "IN_MEMORY_UNIT_QA_ONLY",
+    "unittest_passed":  27,
+    "unittest_total":  27,
+    "ast_passed":  16,
+    "ast_total":  16,
+    "pycache_count":  0,
+    "forbidden_formal_directory_count":  0,
+    "safe_null_runtime_directory_exists":  false,
+    "abaqus_process_count":  0,
+    "docker_process_count":  0,
+    "production_p5b_root_match_count":  0,
+    "production_git_status_exit":  128,
+    "production_git_status_available":  false,
+    "production_git_note":  "The .git path exists but git status reports that the production root is not a valid Git repository.",
+    "github_zenodo_doi_modified":  false,
+    "manuscript_modified":  false
+}

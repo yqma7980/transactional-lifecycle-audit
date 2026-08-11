@@ -1,0 +1,52 @@
+{
+  "abaqus_used": false,
+  "all_duplicate_gates_pass": true,
+  "all_schema_gates_pass": true,
+  "all_values_finite": true,
+  "case_count": 12,
+  "fresh_process_count": 24,
+  "heldout_accessed": true,
+  "metrics": {
+    "b3": {
+      "mean_exam": 0.22916666666666666,
+      "median_suspicious_set_size": 3.0,
+      "mrr": 0.6944444444444443,
+      "top1_count": 6,
+      "top3_count": 12
+    },
+    "b6": {
+      "mean_exam": 0.125,
+      "median_suspicious_set_size": 1.5,
+      "mrr": 1.0,
+      "top1_count": 12,
+      "top3_count": 12
+    },
+    "bootstrap_95_ci": [
+      0.0,
+      0.5
+    ],
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260811,
+    "case_count": 12,
+    "exact_sign_flip_p": 0.03125,
+    "median": 0.16666666666666669,
+    "paired_rank_biserial": 1.0,
+    "paired_values": [
+      0.6666666666666667,
+      0.6666666666666667,
+      0.0,
+      0.33333333333333337,
+      0.6666666666666667,
+      0.0,
+      0.33333333333333337,
+      0.0,
+      0.33333333333333337,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "primary_endpoint": "suspicious_set_reduction"
+  },
+  "stage": "final",
+  "status": "PASS_P5C_LOCALIZATION_V2"
+}

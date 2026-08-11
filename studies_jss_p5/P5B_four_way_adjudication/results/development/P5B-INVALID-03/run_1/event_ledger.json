@@ -1,0 +1,15 @@
+{
+  "case_id": "P5B-INVALID-03",
+  "event_count": 1,
+  "events": [
+    {
+      "event_type": "PrecomparisonLoadAudit",
+      "field_name": "load_hash"
+    }
+  ],
+  "implementation_revision": "JSS-P5B1-RUNTIME-1.0",
+  "run_id": "run_1",
+  "schema_version": "JSS-P5B1-EVENT-LEDGER-1.0",
+  "semantic_fingerprint": "871e3055a4618250575cc040349f295a0c1437efa2344245c5d70d42dd7f447b",
+  "subject_id": "JSS-S03"
+}

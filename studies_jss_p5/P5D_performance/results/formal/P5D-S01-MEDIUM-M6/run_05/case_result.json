@@ -1,0 +1,124 @@
+{
+  "abaqus_used": false,
+  "cell_id": "P5D-S01-MEDIUM-M6",
+  "cpu_time_seconds": 0.756588243,
+  "design_id": "JSS-P5D-PERFORMANCE-1.0",
+  "environment": {
+    "affinity": [
+      0
+    ],
+    "dolfinx": "0.10.0",
+    "machine": "x86_64",
+    "mpi4py": "4.1.1",
+    "mpi_size": 1,
+    "petsc": [
+      3,
+      24,
+      0
+    ],
+    "pid_namespace_visible_cpu_count": 20,
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "python": "3.12.3",
+    "python_executable": "python3",
+    "scipy": "1.16.2",
+    "semantic_fingerprint": "51523a5941a0a200fa9b8e434c6aa12343c6af522af2e228a75a5403dfeedb50",
+    "threads": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    }
+  },
+  "implementation_id": "JSS-P5D-IMPLEMENTATION-1.0",
+  "initialization_seconds": 0.18075995399999556,
+  "instrumentation_mode": "M6_FULL_TLA",
+  "internal_wall_time_seconds": 1.3011716580000439,
+  "pass_flag": true,
+  "peak_rss_bytes": 192172032,
+  "phase": "formal",
+  "processes": 1,
+  "production_model_used": false,
+  "result": {
+    "all_values_finite": true,
+    "audit": {
+      "eligibility_checked": true,
+      "generic_replay_equal": true,
+      "performed": true,
+      "provenance_checked": true,
+      "version_contract_checked": true
+    },
+    "audit_bytes": 640,
+    "audit_counts": {
+      "residual": 2,
+      "tangent": 2,
+      "trial": 2
+    },
+    "audit_seconds": 0.014356458999998267,
+    "event_ledger_bytes": 15528,
+    "output_fingerprint": "ff8850e4a15bde5e5995945758b43f6bdaf834f99db8424106fdd1a9169c794c",
+    "output_summary": {
+      "accepted_load": 0.08,
+      "accepted_version": 2,
+      "maximum_alpha": 0.02342091573028149,
+      "primary_l2": 0.4757593387890591
+    },
+    "production_counts": {
+      "accepted": 2,
+      "nonlinear_iterations": 6,
+      "rejected": 0,
+      "residual": 8,
+      "tangent": 6,
+      "trial": 8
+    },
+    "production_seconds": 0.09014577200002805,
+    "production_trajectory": [
+      {
+        "committed_physical_hash": "7564956eab2b69c534f7469ac31181800d722fbd0e26da85b97840c22eb4fd52",
+        "function_evaluations": 2,
+        "nonlinear_iterations": 1,
+        "plastic_point_count": 0,
+        "residual_sequence_hex": [
+          "0x1.40475b4bd343dp+0",
+          "0x1.a16ce9cbc986ep-50"
+        ],
+        "snes_reason": 2,
+        "target_load": 0.04
+      },
+      {
+        "committed_physical_hash": "ecd7f8cf288683617be9e78cd8931e91e6ef85023619c05a7d2d2942ac55be3d",
+        "function_evaluations": 6,
+        "nonlinear_iterations": 5,
+        "plastic_point_count": 30,
+        "residual_sequence_hex": [
+          "0x1.40475b4bd343bp+0",
+          "0x1.3c1c48fd50105p-6",
+          "0x1.091d04de971bcp-7",
+          "0x1.0ed7a3196f189p-16",
+          "0x1.6957beb7cff74p-33",
+          "0x1.dbae398370bf9p-51"
+        ],
+        "snes_reason": 2,
+        "target_load": 0.08
+      }
+    ],
+    "serialization_hashing_seconds": 0.0003499449999821991,
+    "subject_id": "JSS-S01",
+    "trajectory_fingerprint": "eac6aa8d5855ebe50abf79b7f2fe7cec7065d04d9011693085b170c3c0ce1fa3",
+    "workload_id": "S01-MEDIUM",
+    "workload_parameters": {
+      "integration_points": 384,
+      "load_path": [
+        0.04,
+        0.08
+      ],
+      "nodes": 81,
+      "triangles": 128
+    }
+  },
+  "run_id": "run_05",
+  "subject_elapsed_seconds": 1.118726554000034,
+  "subject_id": "JSS-S01",
+  "teardown_seconds": 0.0016803149999873312,
+  "threads": 1,
+  "workload_id": "S01-MEDIUM"
+}

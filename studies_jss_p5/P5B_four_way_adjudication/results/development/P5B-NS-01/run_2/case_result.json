@@ -1,0 +1,34 @@
+{
+  "active_signals": [],
+  "applicability_evaluated": true,
+  "capability": {
+    "available_tokens": [],
+    "missing_events": [
+      "NATIVE_CHECKPOINT_EVENT"
+    ],
+    "missing_fields": [],
+    "observable": false,
+    "required_tokens": [
+      "NATIVE_CHECKPOINT_EVENT"
+    ]
+  },
+  "case_id": "P5B-NS-01",
+  "eligibility_evaluated": false,
+  "expected_verdict": "NOT_SUPPORTED",
+  "four_way_verdict": "NOT_SUPPORTED",
+  "implementation_version": "JSS-P5B-IMPL-1.0a",
+  "lifecycle_evaluated": false,
+  "mismatch_fields": [],
+  "observed_outcome": "NOT_SUPPORTED",
+  "packet_a_fingerprint": "cb0097f7c21ecb4724354093690fd25e69e5b9725cba05789769d67b13f4b610",
+  "packet_b_fingerprint": "cb0097f7c21ecb4724354093690fd25e69e5b9725cba05789769d67b13f4b610",
+  "partition": "DEVELOPMENT",
+  "pass_flag": true,
+  "reasons": [
+    "missing:NATIVE_CHECKPOINT_EVENT"
+  ],
+  "run_id": "run_2",
+  "schema_version": "JSS-P5B-CASE-RESULT-1.1",
+  "stage": "APPLICABILITY",
+  "subject_id": "JSS-S03"
+}

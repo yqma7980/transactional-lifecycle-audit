@@ -1,0 +1,4 @@
+committed_stress=-28.125
+trial_stress=-25
+restored_stress=-28.125
+native_revert_bitwise_equal=1

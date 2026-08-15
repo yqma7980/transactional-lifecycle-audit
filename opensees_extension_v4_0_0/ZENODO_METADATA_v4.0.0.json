@@ -1,0 +1,50 @@
+{
+  "title": "Transactional Lifecycle Audit OpenSees Extension: Native Material-API Reliability Evidence",
+  "upload_type": "software",
+  "publication_date": "2026-08-16",
+  "version": "4.0.0",
+  "description": "Separately preregistered Tier-A native material-API extension for transactional lifecycle reliability assurance. The artifact records OpenSees 3.8.0 at commit 6e55293513192aa05c7e1205e66a5a1a1ed088c4, eight registered cases, 24 fresh processes, four controlled fault-localization rows, raw outputs, source, environment, licenses, and hashes. OS-F03 retains zero normalized replay drift while its lifecycle violation is detected. Controlled variants are not upstream OpenSees defects. The study is Tier A, not a solver-managed Tier-B trajectory, industrial validation, or a population reliability estimate. Parent v3.0.0 data and software releases remain immutable.",
+  "creators": [
+    {
+      "name": "Ma, Yangqi",
+      "affiliation": "Liaoning Technical University",
+      "orcid": "0009-0004-7661-0558"
+    },
+    {
+      "name": "Sun, Weiji",
+      "affiliation": "Liaoning Technical University",
+      "orcid": "0000-0003-0106-6303"
+    },
+    {
+      "name": "Liang, Bing",
+      "affiliation": "Liaoning Technical University"
+    },
+    {
+      "name": "He, Shi",
+      "affiliation": "China Coal Research Institute"
+    }
+  ],
+  "keywords": [
+    "metamorphic testing",
+    "state management",
+    "rollback recovery",
+    "fault diagnosis",
+    "scientific software",
+    "provenance",
+    "OpenSees"
+  ],
+  "license_note": "Project code: BSD-3-Clause; numerical records/docs: CC BY 4.0; linked OpenSees executable: upstream terms bundled in the archive.",
+  "repository_url": "https://github.com/yqma7980/transactional-lifecycle-audit",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.21887646",
+      "relation": "isSupplementTo",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.5281/zenodo.21887530",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+cmake_minimum_required(VERSION 3.12)
+project(OpenSeesTierASmoke LANGUAGES CXX)
+
+if(NOT DEFINED OPENSEES_SRC)
+  message(FATAL_ERROR "OPENSEES_SRC must point to the OpenSees SRC directory")
+endif()
+
+get_filename_component(OPENSEES_ROOT "${OPENSEES_SRC}" DIRECTORY)
+file(GLOB_RECURSE OPENSEES_HEADERS "${OPENSEES_SRC}/*.h")
+set(OPENSEES_INCLUDE_DIRS "${OPENSEES_SRC}")
+foreach(header_path IN LISTS OPENSEES_HEADERS)
+  get_filename_component(header_dir "${header_path}" DIRECTORY)
+  list(APPEND OPENSEES_INCLUDE_DIRS "${header_dir}")
+endforeach()
+list(REMOVE_DUPLICATES OPENSEES_INCLUDE_DIRS)
+
+link_directories("C:/Program Files (x86)/Intel/oneAPI/compiler/2024.2/lib")
+
+add_executable(opensees_tier_a_smoke
+  smoke_main.cpp
+  unused_api_link_stubs.cpp
+  "${OPENSEES_SRC}/material/uniaxial/Concrete01.cpp"
+  "${OPENSEES_SRC}/material/uniaxial/UniaxialMaterial.cpp"
+  "${OPENSEES_SRC}/material/Material.cpp"
+  "${OPENSEES_SRC}/tagged/TaggedObject.cpp"
+  "${OPENSEES_SRC}/tagged/storage/MapOfTaggedObjects.cpp"
+  "${OPENSEES_SRC}/tagged/storage/MapOfTaggedObjectsIter.cpp"
+  "${OPENSEES_SRC}/actor/actor/MovableObject.cpp"
+  "${OPENSEES_SRC}/matrix/ID.cpp"
+  "${OPENSEES_SRC}/matrix/Vector.cpp"
+  "${OPENSEES_SRC}/matrix/Matrix.cpp"
+  "${OPENSEES_SRC}/element/Information.cpp"
+  "${OPENSEES_SRC}/recorder/response/Response.cpp"
+  "${OPENSEES_SRC}/recorder/response/MaterialResponse.cpp"
+  "${OPENSEES_SRC}/domain/component/Parameter.cpp"
+  "${OPENSEES_SRC}/handler/OPS_Stream.cpp"
+)
+
+target_compile_features(opensees_tier_a_smoke PRIVATE cxx_std_17)
+target_compile_options(opensees_tier_a_smoke PRIVATE /Gy /W3)
+set_property(TARGET opensees_tier_a_smoke APPEND_STRING PROPERTY LINK_FLAGS " /OPT:REF /OPT:ICF")
+target_compile_definitions(opensees_tier_a_smoke PRIVATE _WIN32 _TCL85)
+target_include_directories(opensees_tier_a_smoke PRIVATE ${OPENSEES_INCLUDE_DIRS})
+target_link_libraries(opensees_tier_a_smoke PRIVATE
+  "${OPENSEES_ROOT}/Win64/lib/release/lapack.lib"
+  "${OPENSEES_ROOT}/Win64/lib/release/blas.lib"
+)

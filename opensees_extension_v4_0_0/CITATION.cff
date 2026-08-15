@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: >-
+  If you use this OpenSees extension, please cite the version-specific Zenodo
+  record and the associated article.
+title: >-
+  Transactional Lifecycle Audit OpenSees Extension: Native Material-API
+  Reliability Evidence
+version: 4.0.0
+date-released: 2026-08-16
+type: software
+authors:
+  - family-names: Ma
+    given-names: Yangqi
+    orcid: https://orcid.org/0009-0004-7661-0558
+  - family-names: Sun
+    given-names: Weiji
+    orcid: https://orcid.org/0000-0003-0106-6303
+  - family-names: Liang
+    given-names: Bing
+  - family-names: He
+    given-names: Shi
+repository-code: https://github.com/yqma7980/transactional-lifecycle-audit
+license: BSD-3-Clause
+keywords:
+  - metamorphic testing
+  - state management
+  - rollback recovery
+  - fault diagnosis
+  - scientific software
+  - provenance
+  - OpenSees

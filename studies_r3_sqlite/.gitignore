@@ -1,0 +1,7 @@
+external_tools/
+results/pilot/
+results/formal_*/runs/
+results/historical_*/runs/
+__pycache__/
+*.pyc
+

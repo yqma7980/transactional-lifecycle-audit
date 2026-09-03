@@ -1,0 +1,54 @@
+{
+  "title": "Transactional Lifecycle Audit: Software for Lifecycle-aware Metamorphic Testing",
+  "description": "<p>Version 6.0.0 adds the sanitized R3 SQLite lifecycle study to the immutable parent evidence. It contains the preregistered diagnostic and guarded-containment cases, a separately reported historical SQLite WAL/savepoint differential, conditional depth-8 finite-state corroboration, and retained process records.</p><p>The six constructed integration faults are author-created tests, not SQLite defects. The bounded model is corroboration, not an unbounded proof. Downloaded SQLite binaries, temporary databases, caches, pilot outputs, private Abaqus/UEL assets, and confidential engineering data are excluded.</p><p>Funding: National Natural Science Foundation of China, Grant 52474038 (recipient: Weiji Sun); Liaoning Provincial Department of Education project, Grant LJ212410147066 (recipient: Jianfeng Hao).</p>",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "BSD-3-Clause",
+  "version": "v6.0.0",
+  "publication_date": "2026-09-04",
+  "creators": [
+    {
+      "name": "Ma, Yangqi",
+      "affiliation": "Liaoning Technical University",
+      "orcid": "0009-0004-7661-0558"
+    },
+    {
+      "name": "Sun, Weiji",
+      "affiliation": "Liaoning Technical University"
+    },
+    {
+      "name": "Liang, Bing",
+      "affiliation": "Liaoning Technical University"
+    },
+    {
+      "name": "He, Shi",
+      "affiliation": "China Coal Research Institute"
+    },
+    {
+      "name": "Hao, Jianfeng",
+      "affiliation": "College of Mining, Liaoning Technical University"
+    }
+  ],
+  "keywords": [
+    "metamorphic testing",
+    "software reliability",
+    "rollback recovery",
+    "state transactions",
+    "fault diagnosis",
+    "SQLite"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/yqma7980/transactional-lifecycle-audit/tree/v6.0.0",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.21536560",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "dataset"
+    }
+  ]
+}

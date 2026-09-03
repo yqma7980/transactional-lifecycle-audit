@@ -1,0 +1,146 @@
+{
+  "schema_version": "M2026-003-R3-SQLITE-PREREG-1.0",
+  "frozen_on": "2026-09-03T21:00:00+08:00",
+  "subject": "CPython sqlite3 transaction/savepoint host",
+  "primary_runtime": "Python 3.12 stdlib sqlite3",
+  "fresh_processes_per_case": 3,
+  "case_order": [
+    "SQL-S01",
+    "SQL-S02",
+    "SQL-S03",
+    "SQL-F01",
+    "SQL-F02",
+    "SQL-F03",
+    "SQL-F04",
+    "SQL-F05",
+    "SQL-F06",
+    "SQL-I01",
+    "SQL-U01",
+    "SQL-U02"
+  ],
+  "rules": {
+    "retain_all_runs": true,
+    "no_favorable_rerun": true,
+    "no_post_result_case_edit": true,
+    "semantic_reproducibility_excludes": ["run_id", "database_file_sha256"],
+    "historical_case_pooled_with_constructed_cases": false,
+    "claims_are_conditional_on_declared_projection": true
+  },
+  "required_observations": [
+    "database_projection",
+    "persistent_projection",
+    "event_ledger",
+    "commit_identity",
+    "output_provenance",
+    "version_tuple"
+  ],
+  "cases": [
+    {
+      "case_id": "SQL-S01",
+      "label": "nested_savepoint_rollback",
+      "fault": "NONE",
+      "history_variant": "rollback_to_release",
+      "expected_verdict": "INVARIANT",
+      "containment_eligible": true
+    },
+    {
+      "case_id": "SQL-S02",
+      "label": "inner_release_outer_rollback",
+      "fault": "NONE",
+      "history_variant": "inner_release_outer_rollback",
+      "expected_verdict": "INVARIANT",
+      "containment_eligible": true
+    },
+    {
+      "case_id": "SQL-S03",
+      "label": "exception_then_rollback",
+      "fault": "NONE",
+      "history_variant": "exception_rollback",
+      "expected_verdict": "INVARIANT",
+      "containment_eligible": true
+    },
+    {
+      "case_id": "SQL-F01",
+      "label": "compensated_premature_commit",
+      "fault": "O2_PREMATURE_COMMIT",
+      "history_variant": "rollback_to_release",
+      "expected_verdict": "DETECTED",
+      "containment_eligible": true
+    },
+    {
+      "case_id": "SQL-F02",
+      "label": "rollback_omitted",
+      "fault": "O3_ROLLBACK_OMITTED",
+      "history_variant": "rollback_to_release",
+      "expected_verdict": "DETECTED",
+      "containment_eligible": true
+    },
+    {
+      "case_id": "SQL-F03",
+      "label": "external_cache_not_restored",
+      "fault": "O3_INCOMPLETE_RESTORE",
+      "history_variant": "rollback_to_release",
+      "expected_verdict": "DETECTED",
+      "containment_eligible": true
+    },
+    {
+      "case_id": "SQL-F04",
+      "label": "policy_state_version_mismatch",
+      "fault": "O4_VERSION_MISMATCH",
+      "history_variant": "rollback_to_release",
+      "expected_verdict": "DETECTED",
+      "containment_eligible": true
+    },
+    {
+      "case_id": "SQL-F05",
+      "label": "rejected_output_escape",
+      "fault": "O5_OUTPUT_ESCAPE",
+      "history_variant": "rollback_to_release",
+      "expected_verdict": "DETECTED",
+      "containment_eligible": true
+    },
+    {
+      "case_id": "SQL-F06",
+      "label": "competing_persistent_owner",
+      "fault": "O1_COMPETING_OWNER",
+      "history_variant": "rollback_to_release",
+      "expected_verdict": "DETECTED",
+      "containment_eligible": true
+    },
+    {
+      "case_id": "SQL-I01",
+      "label": "different_authoritative_entry",
+      "fault": "INVALID_ENTRY",
+      "history_variant": "rollback_to_release",
+      "expected_verdict": "INVALID",
+      "containment_eligible": false
+    },
+    {
+      "case_id": "SQL-U01",
+      "label": "rollback_event_unobservable",
+      "fault": "MISSING_ROLLBACK_OBSERVATION",
+      "history_variant": "rollback_to_release",
+      "expected_verdict": "UNSUPPORTED",
+      "containment_eligible": false
+    },
+    {
+      "case_id": "SQL-U02",
+      "label": "output_provenance_unobservable",
+      "fault": "MISSING_OUTPUT_PROVENANCE",
+      "history_variant": "rollback_to_release",
+      "expected_verdict": "UNSUPPORTED",
+      "containment_eligible": false
+    }
+  ],
+  "historical_case": {
+    "case_id": "SQL-H01",
+    "official_forum_post": "https://sqlite.org/forum/forumpost/b490f726db",
+    "vulnerable_runtime": "3.50.1",
+    "fixed_runtime": "3.50.2",
+    "expected_vulnerable_row_count": 2,
+    "expected_fixed_row_count": 3,
+    "fresh_processes_per_version": 3,
+    "retain_nonreproduction": true
+  }
+}
+

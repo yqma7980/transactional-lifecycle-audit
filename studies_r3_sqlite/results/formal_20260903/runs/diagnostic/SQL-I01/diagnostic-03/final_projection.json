@@ -1,0 +1,98 @@
+{
+  "followup": {
+    "database": {
+      "inventory": [
+        [
+          "widget",
+          9
+        ]
+      ],
+      "metadata": [
+        [
+          "policy_version",
+          "policy-v1"
+        ],
+        [
+          "state_version",
+          "state-v1"
+        ]
+      ],
+      "orders": [
+        [
+          "accepted-order",
+          "widget",
+          2,
+          "accepted",
+          "candidate-accepted"
+        ]
+      ],
+      "outbox": [
+        [
+          "accepted-event",
+          "accepted-order",
+          "candidate-accepted",
+          "accepted-order-created"
+        ]
+      ]
+    },
+    "emitted": [
+      {
+        "candidate": "candidate-accepted",
+        "commit": "accepted-commit",
+        "event_id": "accepted-event"
+      }
+    ],
+    "persistent": {
+      "authoritative_owner": "sqlite",
+      "cache_reserved": 0
+    }
+  },
+  "reference": {
+    "database": {
+      "inventory": [
+        [
+          "widget",
+          8
+        ]
+      ],
+      "metadata": [
+        [
+          "policy_version",
+          "policy-v1"
+        ],
+        [
+          "state_version",
+          "state-v1"
+        ]
+      ],
+      "orders": [
+        [
+          "accepted-order",
+          "widget",
+          2,
+          "accepted",
+          "candidate-accepted"
+        ]
+      ],
+      "outbox": [
+        [
+          "accepted-event",
+          "accepted-order",
+          "candidate-accepted",
+          "accepted-order-created"
+        ]
+      ]
+    },
+    "emitted": [
+      {
+        "candidate": "candidate-accepted",
+        "commit": "accepted-commit",
+        "event_id": "accepted-event"
+      }
+    ],
+    "persistent": {
+      "authoritative_owner": "sqlite",
+      "cache_reserved": 0
+    }
+  }
+}

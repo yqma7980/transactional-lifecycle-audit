@@ -10,9 +10,10 @@ import tempfile
 
 ROOT = Path(__file__).resolve().parent
 STUDIES = (
-    "P5B_four_way_adjudication",
-    "P5C_localization_v2",
-    "P5D_performance",
+    Path("studies_jss_p5") / "P5B_four_way_adjudication",
+    Path("studies_jss_p5") / "P5C_localization_v2",
+    Path("studies_jss_p5") / "P5D_performance",
+    Path("studies_r3_sqlite"),
 )
 
 
@@ -34,15 +35,16 @@ def main() -> int:
     )
     temporary_parent = ROOT / ".release_test_tmp"
     temporary_parent.mkdir(exist_ok=True)
+    failed_studies: list[str] = []
     try:
-        with tempfile.TemporaryDirectory(prefix="tla_v3_tests_", dir=temporary_parent) as temporary:
+        with tempfile.TemporaryDirectory(prefix="tla_v6_tests_", dir=temporary_parent) as temporary:
             temporary_root = Path(temporary)
-            for study in STUDIES:
-                source = ROOT / "studies_jss_p5" / study
-                target = temporary_root / study
+            for relative in STUDIES:
+                source = ROOT / relative
+                target = temporary_root / relative.name
                 shutil.copytree(source, target, ignore=ignored)
                 environment["PYTHONPATH"] = os.pathsep.join((str(target / "src"), str(target)))
-                print(f"=== {study} ===", flush=True)
+                print(f"=== {relative.as_posix()} ===", flush=True)
                 result = subprocess.run(
                     [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py"],
                     cwd=target,
@@ -50,10 +52,15 @@ def main() -> int:
                     check=False,
                 )
                 if result.returncode:
-                    return result.returncode
+                    failed_studies.append(relative.as_posix())
     finally:
         temporary_parent.rmdir()
-    return 0
+    print("=== release suite summary ===")
+    print(f"studies={len(STUDIES)}")
+    print(f"failed_studies={len(failed_studies)}")
+    for study in failed_studies:
+        print(f"FAILED {study}")
+    return 1 if failed_studies else 0
 
 
 if __name__ == "__main__":

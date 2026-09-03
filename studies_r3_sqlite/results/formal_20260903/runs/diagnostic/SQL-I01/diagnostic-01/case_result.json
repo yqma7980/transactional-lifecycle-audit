@@ -1,0 +1,55 @@
+{
+  "available_observations": [
+    "database_projection",
+    "persistent_projection",
+    "event_ledger",
+    "commit_identity",
+    "output_provenance",
+    "version_tuple"
+  ],
+  "blocked_actions": [],
+  "blocked_count": 0,
+  "case_id": "SQL-I01",
+  "containment_pass": true,
+  "database_equal": false,
+  "database_file_sha256": "09c937276d72abbd10f97ab32434c75bdf721bd58bd1b4a6195d4be6649fbd85",
+  "eligible": false,
+  "endpoint_equal": false,
+  "expected_verdict": "INVALID",
+  "false_block": false,
+  "fault": "INVALID_ENTRY",
+  "final_followup_sha256": "9df50b02d42f694adbb7dbaa432f98082e3df8a3dff000d73ffb14b4d56b4849",
+  "final_reference_sha256": "a5e88785a2551d752f7a2c1481f2e71358b02dec901e6cf05e29b731f8d9e554",
+  "initial_followup_sha256": "b211b45831dfd40dab598eb11da98483e5498069db61d29928aaf1dbaf4010f2",
+  "initial_reference_sha256": "24e1809bb69282902f445f48c2a6aee155db84494ddf33b55bc3c0d93645f718",
+  "label": "different_authoritative_entry",
+  "ledger_sha256": "7baa9db7c5a02eea4d5640c722ae3b3c80ec93eea94f37e30b8e7384788da9fd",
+  "missing_observations": [],
+  "mode": "diagnostic",
+  "observed_verdict": "INVALID",
+  "output_equal": true,
+  "persistent_equal": true,
+  "reasons": [
+    "authoritative_entry_mismatch"
+  ],
+  "required_observations": [
+    "database_projection",
+    "persistent_projection",
+    "event_ledger",
+    "commit_identity",
+    "output_provenance",
+    "version_tuple"
+  ],
+  "run_id": "diagnostic-01",
+  "schema_version": "M2026-003-R3-SQLITE-RESULT-1.0",
+  "semantic_sha256": "476f4f2c492186dbd8a12b6d6bc67eb146e8439206f4fe09d9ec81fe2730096a",
+  "signals": {
+    "O1": false,
+    "O2": false,
+    "O3": false,
+    "O4": false,
+    "O5": false
+  },
+  "sqlite_version": "3.49.1",
+  "verdict_match": true
+}

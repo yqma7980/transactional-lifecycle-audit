@@ -1,0 +1,9 @@
+sequence,event,candidate,accepted,detail
+1,begin,candidate-rejected,False,outer_transaction
+2,evaluate,candidate-rejected,False,savepoint_trial
+3,release,candidate-rejected,False,inner_release_not_durable
+4,rollback,candidate-rejected,False,outer_transaction_rollback
+5,restore,candidate-rejected,False,persistent_projection_restored
+6,evaluate,candidate-accepted,True,accepted_trial
+7,commit,candidate-accepted,True,accepted_commit
+8,emit,candidate-accepted,True,post_commit_output

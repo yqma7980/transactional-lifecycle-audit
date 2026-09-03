@@ -1,0 +1,55 @@
+{
+  "available_observations": [
+    "database_projection",
+    "persistent_projection",
+    "event_ledger",
+    "commit_identity",
+    "output_provenance",
+    "version_tuple"
+  ],
+  "blocked_actions": [],
+  "blocked_count": 0,
+  "case_id": "SQL-F01",
+  "containment_pass": true,
+  "database_equal": true,
+  "database_file_sha256": "1d7135e67fd0eb465f06e4f5f042aa6f4f69266dcce80d387725b0fae2aaa752",
+  "eligible": true,
+  "endpoint_equal": true,
+  "expected_verdict": "DETECTED",
+  "false_block": false,
+  "fault": "O2_PREMATURE_COMMIT",
+  "final_followup_sha256": "a5e88785a2551d752f7a2c1481f2e71358b02dec901e6cf05e29b731f8d9e554",
+  "final_reference_sha256": "a5e88785a2551d752f7a2c1481f2e71358b02dec901e6cf05e29b731f8d9e554",
+  "initial_followup_sha256": "24e1809bb69282902f445f48c2a6aee155db84494ddf33b55bc3c0d93645f718",
+  "initial_reference_sha256": "24e1809bb69282902f445f48c2a6aee155db84494ddf33b55bc3c0d93645f718",
+  "label": "compensated_premature_commit",
+  "ledger_sha256": "16d7accdfca6ecea02386c2bee88931ec281a1c7ec3f73ab83dde7ecf38184d1",
+  "missing_observations": [],
+  "mode": "diagnostic",
+  "observed_verdict": "DETECTED",
+  "output_equal": true,
+  "persistent_equal": true,
+  "reasons": [
+    "O2"
+  ],
+  "required_observations": [
+    "database_projection",
+    "persistent_projection",
+    "event_ledger",
+    "commit_identity",
+    "output_provenance",
+    "version_tuple"
+  ],
+  "run_id": "diagnostic-03",
+  "schema_version": "M2026-003-R3-SQLITE-RESULT-1.0",
+  "semantic_sha256": "3516dcb3c04c201af0cb31e4bdae26ce2130eafa1726a7d4235e779a6c6a5a08",
+  "signals": {
+    "O1": false,
+    "O2": true,
+    "O3": false,
+    "O4": false,
+    "O5": false
+  },
+  "sqlite_version": "3.49.1",
+  "verdict_match": true
+}

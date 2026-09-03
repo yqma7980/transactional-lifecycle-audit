@@ -1,0 +1,108 @@
+{
+  "boundary": "The R3 formal runs use only files indexed here. Existing v3 evidence and its stale nested manifests are not rewritten or counted as R3 validation.",
+  "frozen_on": "2026-09-03T21:15:00+08:00",
+  "git_branch": "m2026-003-r3-sqlite-formal",
+  "git_head": "46e1e68e04e1a1f3f919595c90c33af7a2922a1c",
+  "official_binary_archives": [
+    {
+      "bytes": 6429241,
+      "path": "external_tools/sqlite-tools-win-x64-3500100.zip",
+      "sha256": "5e9c73d344660479c8dca6f8dbbef41d4d3bf25cff56554cb85823ae447a22ec"
+    },
+    {
+      "bytes": 6430270,
+      "path": "external_tools/sqlite-tools-win-x64-3500200.zip",
+      "sha256": "ef1403c72d1f93c89215fb39cb5d5445cdabba44e927eef1e45b02ab78b44429"
+    }
+  ],
+  "platform": "Windows-11-10.0.26200-SP0",
+  "public_mirror_normalization": "The host-local Python executable path was removed for public distribution. Source hashes, configuration, runtime version, and retained scientific results are unchanged.",
+  "python_executable": "<host-local-python-3.12-executable>",
+  "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "schema_version": "M2026-003-R3-SQLITE-SOURCE-FREEZE-1.0",
+  "source_files": [
+    {
+      "bytes": 101,
+      "path": ".gitignore",
+      "sha256": "44473ebcea9e75b938666f40dd054001d09b62d76d9f2bdcfb4f7dc0700c288c"
+    },
+    {
+      "bytes": 1701,
+      "path": "README.md",
+      "sha256": "ee241a11615b4869cf6cdf109d3ed2b6d991990b0b3fa6b37eee0d4c3bee293d"
+    },
+    {
+      "bytes": 4218,
+      "path": "config/preregistration.json",
+      "sha256": "fd768a9d94c7ac5a76e29908696bb7029bec4e2a6a7cbb16fd5f795c42cbc156"
+    },
+    {
+      "bytes": 3868,
+      "path": "formal/CONDITIONAL_PROOFS.md",
+      "sha256": "c6750fb198768bda2112b7d389fa6c6e8f17b92858ff0429a5c69e900bec8dd6"
+    },
+    {
+      "bytes": 6083,
+      "path": "formal/bounded_model.py",
+      "sha256": "d60d84409fa3381bac883bd29cc375148fa6e575c996ad33f6bbcd09c22f3cc1"
+    },
+    {
+      "bytes": 2785,
+      "path": "freeze_source.py",
+      "sha256": "997a73014ca5600bbb0f841184ed73da7d2cbad2fe587b340d5f9dd8bee388eb"
+    },
+    {
+      "bytes": 5145,
+      "path": "historical_wal_reproducer.py",
+      "sha256": "ce0a755040f64f26a02f23fb5420ba8db8afd98ce039b33d5d758821adef7157"
+    },
+    {
+      "bytes": 1163,
+      "path": "run_case.py",
+      "sha256": "e2b764f80bdd40ad205baaea6f95a393585296bea970e994aa03008272b5f4be"
+    },
+    {
+      "bytes": 5302,
+      "path": "run_study.py",
+      "sha256": "3d5c9e0474627feca7fbf95904df397e83fe26fb83e728ac7687f7a85c4b7b1d"
+    },
+    {
+      "bytes": 206,
+      "path": "src/r3sqlite/__init__.py",
+      "sha256": "5d9330a516db567d629bc7b5bcbd889e0ddd2d89ffbee1084090fd7ea2c84f81"
+    },
+    {
+      "bytes": 750,
+      "path": "src/r3sqlite/adjudicator.py",
+      "sha256": "4cfa1011a3ac451fdd1ce34478e2c70ae6cf2475b3b60b3ddaa8c5dd7658517b"
+    },
+    {
+      "bytes": 820,
+      "path": "src/r3sqlite/canonical.py",
+      "sha256": "cd147e77afdacf418c1b50c810d496d677a7f1b99fb0ac0e3b59a17364d4d2a7"
+    },
+    {
+      "bytes": 249,
+      "path": "src/r3sqlite/model.py",
+      "sha256": "a2c4c5bf1eaeac073aa934894861649782b15d09aefe8aa1039dc6628f6478a4"
+    },
+    {
+      "bytes": 15235,
+      "path": "src/r3sqlite/subject.py",
+      "sha256": "9870efb8b8f6de21ace32c25fa4638df1e0264788efbed4eca8244ea3cdd4bd6"
+    },
+    {
+      "bytes": 1108,
+      "path": "tests/test_bounded_model.py",
+      "sha256": "46ea310aae4c6af5d5bfdad5c5484aaaccec2ee59cd1105e0fb73303ea81efe0"
+    },
+    {
+      "bytes": 4243,
+      "path": "tests/test_r3_sqlite.py",
+      "sha256": "0ab8d46d2127d5044b3a3fefa355dff7f66b47eb98082523458d9f2d7cdbcb79"
+    }
+  ],
+  "sqlite_runtime_version": "3.49.1",
+  "upstream_release_verifier_failures_lf_archive": 153,
+  "upstream_release_verifier_status": "FAILED_BEFORE_R3_EDITS"
+}

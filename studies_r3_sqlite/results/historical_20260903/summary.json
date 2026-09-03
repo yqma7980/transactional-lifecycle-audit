@@ -1,0 +1,18 @@
+{
+  "case_id": "SQL-H01",
+  "fixed_counts": [
+    3,
+    3,
+    3
+  ],
+  "historical_defect_reproduced": true,
+  "interpretation": "official defect differential reproduced",
+  "official_forum_post": "https://sqlite.org/forum/forumpost/b490f726db",
+  "runs": 6,
+  "schema_version": "M2026-003-R3-SQLITE-HISTORICAL-1.0",
+  "vulnerable_counts": [
+    2,
+    2,
+    2
+  ]
+}

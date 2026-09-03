@@ -1,0 +1,55 @@
+{
+  "available_observations": [
+    "database_projection",
+    "persistent_projection",
+    "event_ledger",
+    "commit_identity",
+    "output_provenance",
+    "version_tuple"
+  ],
+  "blocked_actions": [],
+  "blocked_count": 0,
+  "case_id": "SQL-F06",
+  "containment_pass": true,
+  "database_equal": true,
+  "database_file_sha256": "1d7135e67fd0eb465f06e4f5f042aa6f4f69266dcce80d387725b0fae2aaa752",
+  "eligible": true,
+  "endpoint_equal": false,
+  "expected_verdict": "DETECTED",
+  "false_block": false,
+  "fault": "O1_COMPETING_OWNER",
+  "final_followup_sha256": "84a1ec52b637cd15c63a3e8f9d7e5747b223db6da10dc153f1035b88097004da",
+  "final_reference_sha256": "a5e88785a2551d752f7a2c1481f2e71358b02dec901e6cf05e29b731f8d9e554",
+  "initial_followup_sha256": "24e1809bb69282902f445f48c2a6aee155db84494ddf33b55bc3c0d93645f718",
+  "initial_reference_sha256": "24e1809bb69282902f445f48c2a6aee155db84494ddf33b55bc3c0d93645f718",
+  "label": "competing_persistent_owner",
+  "ledger_sha256": "74a3c33776f9d33d45d88d3725a7e2b8d26e13df8fe103945b2e062b7559fb18",
+  "missing_observations": [],
+  "mode": "diagnostic",
+  "observed_verdict": "DETECTED",
+  "output_equal": true,
+  "persistent_equal": false,
+  "reasons": [
+    "O1"
+  ],
+  "required_observations": [
+    "database_projection",
+    "persistent_projection",
+    "event_ledger",
+    "commit_identity",
+    "output_provenance",
+    "version_tuple"
+  ],
+  "run_id": "diagnostic-02",
+  "schema_version": "M2026-003-R3-SQLITE-RESULT-1.0",
+  "semantic_sha256": "fa3e122651322ff837324aa51c5c7a545652a8eef1f3e0c25a28a25c2392f117",
+  "signals": {
+    "O1": true,
+    "O2": false,
+    "O3": false,
+    "O4": false,
+    "O5": false
+  },
+  "sqlite_version": "3.49.1",
+  "verdict_match": true
+}

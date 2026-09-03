@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
-INDEX = ROOT / "SHA256SUMS_v3_0_0.txt"
+INDEX = ROOT / "SHA256SUMS_v6_0_0.txt"
 
 
 def sha256(path: Path) -> str:

@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, cite the archived software release and associated article."
 title: "Transactional Lifecycle Audit: Software for Lifecycle-aware Metamorphic Testing"
 type: software
-version: 3.0.0
-date-released: 2026-08-11
+version: 6.0.0
+date-released: 2026-09-04
 doi: 10.5281/zenodo.21536450
 repository-code: "https://github.com/yqma7980/transactional-lifecycle-audit"
 license: BSD-3-Clause
@@ -21,3 +21,6 @@ authors:
   - family-names: He
     given-names: Shi
     affiliation: "China Coal Research Institute"
+  - family-names: Hao
+    given-names: Jianfeng
+    affiliation: "College of Mining, Liaoning Technical University"

@@ -1,0 +1,57 @@
+{
+  "schema_version": "TLA-RELEASE-QA-6.0",
+  "release": "v6.0.0",
+  "qa_date": "2026-09-04",
+  "status": "PASS_WITH_KNOWN_INHERITED_LEGACY_PORTABILITY_LIMITATION",
+  "new_sqlite_extension": {
+    "unit_tests": {
+      "passed": 9,
+      "failed": 0,
+      "errors": 0
+    },
+    "frozen_source_hashes": {
+      "checked": 16,
+      "mismatches": 0
+    },
+    "retained_fresh_processes": 63,
+    "diagnostic_verdict_matches": 36,
+    "enforced_fault_processes": 18,
+    "enforced_faults_blocked_and_contained": 18,
+    "benign_enforcement_processes": 9,
+    "benign_false_blocks": 0,
+    "historical_differential_runs": 6,
+    "bounded_model_depth": 8,
+    "bounded_model_is_unbounded_proof": false
+  },
+  "unchanged_legacy_layers": {
+    "P5C_localization_v2": {
+      "passed": 11,
+      "failed": 0,
+      "errors": 0
+    },
+    "P5D_performance": {
+      "passed": 9,
+      "failed": 0,
+      "errors": 0
+    },
+    "P5B_four_way_adjudication": {
+      "tests_run": 55,
+      "errors": 7,
+      "classification": "INHERITED_WINDOWS_EOL_SELF_HASH_PORTABILITY_LIMITATION",
+      "explanation": "The frozen v3 P5B package contains mixed LF/CRLF-dependent self-hash expectations. With core.autocrlf=true, its protected P5A contract is checked out as CRLF although its stored expected hash is LF. Canonical LF materialization resolves that item but exposes other pre-existing hashes that were frozen from CRLF bytes. No v3 P5B file was modified in v6.0.0."
+    }
+  },
+  "metadata_validation": {
+    "zenodo_json": "PASS",
+    "citation_cff": "PASS",
+    "authors": 5,
+    "funding_sources": 2
+  },
+  "public_boundary_scan": {
+    "host_local_paths": 0,
+    "credential_patterns": 0,
+    "forbidden_binary_or_database_extensions": 0,
+    "status": "PASS"
+  },
+  "release_interpretation": "The v6 SQLite extension and its retained evidence pass their frozen checks. The inherited v3 P5B cross-platform self-hash limitation is disclosed rather than repaired by altering frozen evidence."
+}

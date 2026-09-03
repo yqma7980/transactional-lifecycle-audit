@@ -1,0 +1,24 @@
+{
+  "all_pass": true,
+  "benign_enforcement_processes": 9,
+  "benign_false_blocks": 0,
+  "diagnostic_cases": 12,
+  "diagnostic_processes": 36,
+  "diagnostic_verdict_matches": 36,
+  "diagnostic_verdict_processes": {
+    "DETECTED": 18,
+    "INVALID": 3,
+    "INVARIANT": 9,
+    "UNSUPPORTED": 6
+  },
+  "enforced_fault_processes": 18,
+  "enforced_faults_blocked_and_contained": 18,
+  "processes_by_mode": {
+    "diagnostic": 36,
+    "enforce": 27
+  },
+  "schema_version": "M2026-003-R3-SQLITE-SUMMARY-1.0",
+  "semantic_groups": 21,
+  "semantic_reproducibility_pass": true,
+  "total_fresh_processes": 63
+}

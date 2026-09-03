@@ -1,0 +1,81 @@
+{
+  "checks_pass": true,
+  "guarded_transaction_model": {
+    "depth": 8,
+    "explored_transitions": 177,
+    "guarded": true,
+    "output_escape_counterexamples": [],
+    "premature_commit_counterexamples": [],
+    "reachable_states": 61,
+    "rollback_noninterference_counterexamples": []
+  },
+  "schema_version": "M2026-003-R3-BOUNDED-MODEL-1.0",
+  "scope": "finite-state exploration only; not an unbounded proof",
+  "unguarded_transaction_model": {
+    "depth": 8,
+    "explored_transitions": 882,
+    "guarded": false,
+    "output_escape_counterexamples": [
+      [
+        "emit"
+      ],
+      [
+        "begin",
+        "emit"
+      ],
+      [
+        "emit",
+        "emit"
+      ],
+      [
+        "begin",
+        "evaluate",
+        "emit"
+      ],
+      [
+        "begin",
+        "reject",
+        "emit"
+      ]
+    ],
+    "premature_commit_counterexamples": [
+      [
+        "begin",
+        "commit"
+      ],
+      [
+        "begin",
+        "evaluate",
+        "commit"
+      ],
+      [
+        "begin",
+        "reject",
+        "commit"
+      ],
+      [
+        "begin",
+        "emit",
+        "commit"
+      ],
+      [
+        "begin",
+        "evaluate",
+        "evaluate",
+        "commit"
+      ]
+    ],
+    "reachable_states": 168,
+    "rollback_noninterference_counterexamples": []
+  },
+  "verdict_model": {
+    "boolean_combinations": 128,
+    "exclusive_and_total": true,
+    "verdict_counts": {
+      "DETECTED": 31,
+      "INVALID": 32,
+      "INVARIANT": 1,
+      "UNSUPPORTED": 64
+    }
+  }
+}

@@ -4,7 +4,7 @@ title: "Transactional Lifecycle Audit: Software for Lifecycle-aware Metamorphic 
 type: software
 version: 6.0.0
 date-released: 2026-09-04
-doi: 10.5281/zenodo.21536450
+doi: 10.5281/zenodo.22285603
 repository-code: "https://github.com/yqma7980/transactional-lifecycle-audit"
 license: BSD-3-Clause
 authors:

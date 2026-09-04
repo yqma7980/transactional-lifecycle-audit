@@ -54,6 +54,9 @@ or rerun the archived fresh-process formal evidence.
 ## Releases and data
 
 - GitHub: https://github.com/yqma7980/transactional-lifecycle-audit
+- GitHub v6.0.0 release: https://github.com/yqma7980/transactional-lifecycle-audit/releases/tag/v6.0.0
+- Software version 6.0.0 DOI: https://doi.org/10.5281/zenodo.22285603
+- Dataset version 6.0.0 DOI: https://doi.org/10.5281/zenodo.22288732
 - Software concept DOI: https://doi.org/10.5281/zenodo.21536450
 - Dataset concept DOI: https://doi.org/10.5281/zenodo.21536560
 

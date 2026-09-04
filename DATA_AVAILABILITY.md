@@ -4,6 +4,8 @@ The v6.0.0 software release adds the sanitized R3 SQLite lifecycle study to the 
 
 ## Public archives
 
+- Software version 6.0.0 DOI: https://doi.org/10.5281/zenodo.22285603
+- Dataset version 6.0.0 DOI: https://doi.org/10.5281/zenodo.22288732
 - Software concept DOI: https://doi.org/10.5281/zenodo.21536450
 - Dataset concept DOI: https://doi.org/10.5281/zenodo.21536560
 - GitHub repository: https://github.com/yqma7980/transactional-lifecycle-audit
@@ -11,7 +13,7 @@ The v6.0.0 software release adds the sanitized R3 SQLite lifecycle study to the 
 - OpenSees v4.0.0 extension: https://github.com/yqma7980/transactional-lifecycle-audit/releases/tag/v4.0.0
 - Truth-blind OpenSees v5.0.0 evidence: https://doi.org/10.5281/zenodo.22234369
 
-Version-specific DOIs are supplied in Zenodo metadata. Numerical data and documentation are licensed under CC BY 4.0. Software is licensed under BSD-3-Clause.
+The version-specific DOIs above identify the exact v6.0.0 records; the concept DOIs resolve to the latest archived versions. Numerical data and documentation are licensed under CC BY 4.0. Software is licensed under BSD-3-Clause.
 
 ## Scope boundary
 

@@ -1,0 +1,235 @@
+study:
+  id: P01_TREL_R1_OPEN_SEES_NATIVE_HOST
+  title: Independent OpenSees native-material lifecycle validation
+  preregistration_date: 2026-08-15
+  execution_status_at_freeze: NOT_EXECUTED
+  no_favorable_rerun: true
+  no_threshold_tuning_after_results: true
+  separate_from_parent_statistics: true
+
+purpose:
+  primary: >-
+    Test whether the frozen lifecycle-aware reliability procedure can adjudicate
+    and diagnose controlled lifecycle histories exercised through an independent
+    public numerical-software API with native trial, commit, and revert methods.
+  not_claimed:
+    - OpenSees contains a defect
+    - industrial validation
+    - production deployment
+    - field-defect frequency
+    - solver-level rejected-step coverage
+    - automatic recovery or fault containment
+
+native_host:
+  name: OpenSees
+  version: 3.8.0
+  tag: v3.8.0
+  git_commit: 6e55293513192aa05c7e1205e66a5a1a1ed088c4
+  tier: TIER_A_NATIVE_MATERIAL_API
+  upstream_class: Concrete01
+  native_methods:
+    - setTrialStrain
+    - commitState
+    - revertToLastCommit
+    - revertToStart
+  upstream_source_sha256: C627F6C0BFAF2408FC321B46EBE63C5D3F4D53DE53C6BC4A14757695BE2DBD25
+  caveat: >-
+    The caller orchestrates controlled histories around the native material API;
+    it is not a Tier-B solver-managed rejection trajectory.
+
+material_contract:
+  type: Concrete01
+  parameters:
+    fpc: -30.0
+    epsc0: -0.0020
+    fpcu: -20.0
+    epscu: -0.0060
+  initial_committed_strain: -0.0015
+  arithmetic: binary64
+  process_model: one case per fresh process
+
+comparison_contract:
+  common_right_history: same material parameters and initial committed state
+  primary_equality: bitwise equality of reported stress and tangent
+  normalized_drift_gate: 1.0e-12
+  normalized_drift_definition: >-
+    max(abs(reference_stress-reported_stress)/max(1,abs(reference_stress)),
+        abs(reference_tangent-reported_tangent)/max(1,abs(reference_tangent)))
+  outcome_order:
+    - UNSUPPORTED_OBSERVATION if required observation coverage is false
+    - INVALID_COMPARISON if declared replay targets are not eligible
+    - DETECT_LIFECYCLE_DRIFT if any lifecycle signal is active or drift exceeds gate
+    - PASS_INVARIANT otherwise
+  unsupported_is_not_pass: true
+  invalid_is_not_pass: true
+
+cases:
+  - id: OS-B01
+    mode: DIRECT_CONTROL
+    family: BENIGN
+    rejected_strain: -0.0040
+    reference_target: -0.0020
+    test_target: -0.0020
+    expected_verdict: PASS_INVARIANT
+    injected_candidate: NONE
+  - id: OS-B02
+    mode: NATIVE_REVERT_CONTROL
+    family: BENIGN
+    rejected_strain: -0.0040
+    reference_target: -0.0020
+    test_target: -0.0020
+    expected_verdict: PASS_INVARIANT
+    injected_candidate: NONE
+  - id: OS-F01
+    mode: PREMATURE_COMMIT_A
+    family: PREMATURE_COMMIT
+    rejected_strain: -0.0040
+    reference_target: -0.0020
+    test_target: -0.0020
+    expected_verdict: DETECT_LIFECYCLE_DRIFT
+    injected_candidate: C01_PREMATURE_COMMIT
+  - id: OS-F02
+    mode: PREMATURE_COMMIT_B
+    family: PREMATURE_COMMIT
+    rejected_strain: -0.0030
+    reference_target: -0.0010
+    test_target: -0.0010
+    expected_verdict: DETECT_LIFECYCLE_DRIFT
+    injected_candidate: C01_PREMATURE_COMMIT
+  - id: OS-F03
+    mode: ROLLBACK_OMISSION
+    family: ROLLBACK_OMISSION
+    rejected_strain: -0.0040
+    reference_target: -0.0020
+    test_target: -0.0020
+    expected_verdict: DETECT_LIFECYCLE_DRIFT
+    injected_candidate: C02_ROLLBACK_DISPATCH
+    note: >-
+      The native next trial may reset from committed state, so replay can remain
+      numerically quiet while the unclosed trial obligation is still detected.
+  - id: OS-F04
+    mode: PERSISTENT_HISTORY_ESCAPE
+    family: PERSISTENT_HISTORY_ESCAPE
+    rejected_strain: -0.0040
+    reference_target: -0.0020
+    test_target: -0.0020
+    expected_verdict: DETECT_LIFECYCLE_DRIFT
+    injected_candidate: C03_EXTERNAL_STATE_OWNER
+    note: >-
+      This is a controlled extension-owned cache mutant around, not a mutation
+      attributed to, the upstream OpenSees implementation.
+  - id: OS-I01
+    mode: DIFFERENT_REPLAY_TARGET
+    family: INVALID_CONTROL
+    rejected_strain: -0.0040
+    reference_target: -0.0020
+    test_target: -0.0021
+    expected_verdict: INVALID_COMPARISON
+    injected_candidate: NONE
+  - id: OS-U01
+    mode: MASKED_OBSERVATION
+    family: UNSUPPORTED_CONTROL
+    rejected_strain: -0.0040
+    reference_target: -0.0020
+    test_target: -0.0020
+    expected_verdict: UNSUPPORTED_OBSERVATION
+    injected_candidate: NONE
+
+execution:
+  case_order:
+    - OS-B01
+    - OS-B02
+    - OS-F01
+    - OS-F02
+    - OS-F03
+    - OS-F04
+    - OS-I01
+    - OS-U01
+  fresh_process_repetitions_per_case: 3
+  total_fresh_processes: 24
+  timeout_seconds_per_process: 60
+  semantic_reproducibility_projection: remove run_id only
+  favorable_rerun_after_observation: forbidden
+
+lifecycle_signals:
+  - commit_violation
+  - rollback_omission
+  - ownership_violation
+  - output_provenance_violation
+  - operator_version_incompatibility
+  - operator_replay_drift
+
+localization:
+  evaluated_for_fault_cases_only: true
+  candidates_in_tie_break_order:
+    - C01_PREMATURE_COMMIT
+    - C02_ROLLBACK_DISPATCH
+    - C03_EXTERNAL_STATE_OWNER
+    - C04_OPERATOR_VERSION
+    - C05_OUTPUT_PROVENANCE
+    - C06_OBSERVABILITY_COVERAGE
+  score_rules:
+    commit_violation:
+      C01_PREMATURE_COMMIT: 5
+    rollback_omission:
+      C02_ROLLBACK_DISPATCH: 5
+    ownership_violation:
+      C03_EXTERNAL_STATE_OWNER: 5
+    operator_version_incompatibility:
+      C04_OPERATOR_VERSION: 5
+    output_provenance_violation:
+      C03_EXTERNAL_STATE_OWNER: 2
+      C05_OUTPUT_PROVENANCE: 5
+    missing_observation_coverage:
+      C06_OBSERVABILITY_COVERAGE: 5
+    operator_replay_drift:
+      C01_PREMATURE_COMMIT: 1
+      C02_ROLLBACK_DISPATCH: 1
+      C03_EXTERNAL_STATE_OWNER: 1
+      C04_OPERATOR_VERSION: 1
+      C05_OUTPUT_PROVENANCE: 1
+  metrics:
+    - rank
+    - top1
+    - reciprocal_rank
+  no_cross_study_statistical_pooling: true
+
+success_and_adverse_result_policy:
+  technical_pass_requires:
+    - all 24 fresh processes complete
+    - each output parses and matches its case identity
+    - all three runs per case are semantically reproducible after run_id removal
+    - benign controls remain PASS_INVARIANT
+  misses_or_unexpected_results:
+    policy: retain and report without rerun
+    classification: PASS_WITH_ADVERSE_RESULTS_RETAINED if technical validity holds
+  favorable_outcomes_not_required_for_execution_validity: true
+
+frozen_parent_evidence:
+  case_comparison: 17 cases unchanged
+  four_way_adjudication: 20 cases unchanged
+  localization: 12 cases unchanged
+  timing: 180 fresh processes unchanged
+  mcnemar_p: 0.125 unchanged
+  localization_p: 0.03125 unchanged
+  recomputation_with_new_cases: forbidden
+
+implementation_hashes:
+  native_study_cpp: 1E0F31176814C0228B42B8664CF882BC233FC75FBCF7CC305C80E5253E27EB26
+  run_registered_study_py: 8E6A460F931549685A8BA50973BCB6EE47EE69486F777A1A47D3793AC96D413B
+  cmake_lists: 557D140C45207F73CC3EF2AD727C556B99CA7D88A5A570EF7573BEA8A24F6FED
+  unused_link_stubs: C5F12742933036FCD61F6419D096D16415D1E7DB7CFFD29E85BF10D1D9BA6B47
+  upstream_attribution: FB43CF164B1DC8EE2DF7155FE61208070BB1D3050B2F82ADAD5FDD50F658956B
+  executable: DCC9D93398E9DE9510726E3C79FF664673D5A124A15321577DF195D8629C7258
+
+required_outputs:
+  - OPEN_SEES_NATIVE_HOST_RUNS.jsonl
+  - OPEN_SEES_NATIVE_HOST_RESULTS.csv
+  - OPEN_SEES_NATIVE_HOST_LOCALIZATION.csv
+  - OPEN_SEES_NATIVE_HOST_VALIDATION.json
+  - OPEN_SEES_NATIVE_HOST_EXECUTION_MANIFEST.csv
+
+release_policy:
+  parent_v3_0_0_immutable: true
+  new_local_archive_version_if_executed: v4.0.0
+  automatic_remote_publication_authorized: false

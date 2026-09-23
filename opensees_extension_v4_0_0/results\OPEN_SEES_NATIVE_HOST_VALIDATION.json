@@ -1,0 +1,21 @@
+{
+  "adverse_or_missed_case_ids": [],
+  "benign_controls_quiet": true,
+  "case_count": 8,
+  "classification": "PASS",
+  "executable_sha256": "DCC9D93398E9DE9510726E3C79FF664673D5A124A15321577DF195D8629C7258",
+  "expected_verdict_matches": 8,
+  "fault_case_count": 4,
+  "fault_case_top1": 4,
+  "fresh_process_run_count": 24,
+  "lifecycle_tier": "TIER_A_NATIVE_MATERIAL_API",
+  "localization_sha256": "212A79DDBB22ED6889E2145FC6DB350C6D84E6FA7A13AC2A0A9471C147DB40DE",
+  "native_host": "OpenSees 3.8.0",
+  "old_17_case_matrix_recomputed": false,
+  "old_mcnemar_p_recomputed": false,
+  "population_inference_authorized": false,
+  "preregistration_sha256": "DF47113565DB18DB58DAD662B17B5A8F65BB4E3ADD21A96D719C58092161C21D",
+  "results_sha256": "7B457F0DE1AFA457FDB13C9C8083F94A5D36B24A74D8D993717F175EE2DA6F3A",
+  "runs_sha256": "F354CF895C70719CB004577C01AC8869C6CB74E30834F7B207C14CAD6CDD3EEF",
+  "semantic_reproducibility_matches": 8
+}

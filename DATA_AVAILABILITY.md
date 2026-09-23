@@ -10,6 +10,11 @@ author software is BSD-3-Clause. See the directory's provenance manifest and
 third-party notices. The versioned release is:
 https://github.com/yqma7980/transactional-lifecycle-audit/releases/tag/v7.0.0
 
+The immutable Zenodo snapshot is:
+https://doi.org/10.5281/zenodo.22916803
+It includes this evidence directory and the historical software repository;
+only `studies_route_a` is the new Route A evidence addition.
+
 Original scientific values and conclusions are preserved; workstation paths are
 sanitized. No experiments or timing runs were performed for this release. Public
 record inspection is supported; complete cross-machine native execution is not

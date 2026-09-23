@@ -1,5 +1,9 @@
 # Auditable Lifecycle Contracts: v7.0.0
 
+Version-specific archived software and evidence:
+[Zenodo DOI 10.5281/zenodo.22916803](https://doi.org/10.5281/zenodo.22916803).
+This citation was added after automatic archiving; the v7.0.0 tag is unchanged.
+
 The current evidence addition is [studies_route_a](studies_route_a/README.md):
 Django/Celery equal-information comparison and Click/Trio applicability-boundary
 records supporting **Auditable Lifecycle Contracts for Stateful Software:

@@ -1,0 +1,26 @@
+{
+  "utc": "2026-09-07T10:27:42.111735+00:00",
+  "received": true,
+  "seal_path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\SELECTION_SEAL.json",
+  "seal_sha256": "a239407c799e2aeba53cb79569d0866bf61842e3734bfd3df3775bba7b6b3ecc",
+  "selected_projects": [
+    {
+      "original_position": 1,
+      "repository": "pallets/click",
+      "repository_id": "19103692"
+    },
+    {
+      "original_position": 2,
+      "repository": "python-trio/trio",
+      "repository_id": "79083614"
+    }
+  ],
+  "click_dependency_contact_disclosed": true,
+  "bounded_h2_source_review_released": true,
+  "h1_not_retrospectively_added": true,
+  "native_execution_released": false,
+  "native_gate": "Case source, runtime, observations, separate baseline and nonauthor AI review first",
+  "excluded_fourth_stage": true,
+  "human_runs": 0,
+  "core_sha256": "ace349aa9a7750e7891acdf6ccbf1705cecc5bae3f3ec67fdbebb28f31e6fc13"
+}

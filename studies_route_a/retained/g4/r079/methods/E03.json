@@ -1,0 +1,131 @@
+{
+  "pid": 21036,
+  "rank": 79,
+  "arm": "rich",
+  "input_sha256": "a058f897650bef80fcbf52dfc52b13798890e37ef17e8477b617cdf9aab893c8",
+  "input_rows": 12,
+  "results": [
+    {
+      "verdict": "DETECTED",
+      "failed": [
+        {
+          "id": "restored_url",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_storage",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_instance",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_field",
+          "obligation": "O3"
+        }
+      ]
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "DETECTED",
+      "failed": [
+        {
+          "id": "restored_url",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_storage",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_instance",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_field",
+          "obligation": "O3"
+        }
+      ]
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "DETECTED",
+      "failed": [
+        {
+          "id": "restored_url",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_storage",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_instance",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_field",
+          "obligation": "O3"
+        }
+      ]
+    }
+  ],
+  "implementation_sha256": {
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\baseline\\successors\\R02_TYPED_JSON_20260907\\rich_compare.py": "3909177d7942525dc01c7368bdfceb32f540e2693b88a1e98fa3bf3900a42f5b"
+  },
+  "timed_ns_per_trace_batches": [
+    22739.333333333332,
+    20030.5,
+    23373.416666666668,
+    22887.25,
+    22362.583333333332,
+    20927.833333333332,
+    22147.666666666668
+  ],
+  "median_ns_per_trace": 22362.583333333332,
+  "batch_cpu_seconds": 0.1875,
+  "warmup_rounds": 20,
+  "timed_batches": 7,
+  "evaluations_per_trace_per_batch": 100,
+  "native_target_imports": 0,
+  "native_verdict_inputs": false,
+  "management_label_inputs": false,
+  "input_path_is_ordinal_transport_only": true,
+  "precomputed_contract_outside_timer": true,
+  "validation_warmup_and_serialization_excluded_from_pure_evaluator_timing": true
+}

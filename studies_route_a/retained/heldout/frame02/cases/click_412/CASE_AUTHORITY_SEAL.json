@@ -1,0 +1,103 @@
+{
+  "schema": "M003_FRAME02_CASE_AUTHORITY_SEAL_V1",
+  "sealed_utc": "2026-09-07 10:35:32 UTC",
+  "case_id": "FRAME02_CLICK_412",
+  "status": "SOURCE_QUALIFIED_NATIVE_NOT_VERIFIED",
+  "project": "pallets/click",
+  "project_original_position": 1,
+  "issue_review_position": 1,
+  "issue_number": 412,
+  "issue_url": "https://github.com/pallets/click/issues/412",
+  "chosen_by": "First issue in the frozen cleanup query's oldest-first five; no later Click body was used for selection.",
+  "correction": {
+    "after_sha": "851ce7fc58d5ee57e3910a12094d3df986bb0ff8",
+    "before_sha": "7f1d70c54565ec978f49dc78a65299f9e94cd01d",
+    "before_basis": "FIRST_PARENT_OF_AUTHORITATIVE_CORRECTION_COMMIT",
+    "parent_count": 1,
+    "authority": "Issue timeline closed event 410421502 at 2015-09-15T23:57:41Z directly links this commit; commit message names #412; source change and added regression target close/pop ordering.",
+    "commit_url": "https://github.com/pallets/click/commit/851ce7fc58d5ee57e3910a12094d3df986bb0ff8",
+    "files": [
+      "CHANGES",
+      "click/core.py",
+      "tests/test_context.py"
+    ]
+  },
+  "native_requirement": "During a context's registered cleanup callback, the current context must still be that context; it is popped only after cleanup. The added upstream test checks current-context object access and exactly one callback.",
+  "source_local_feasibility": "A direct Context/cleanup callback history using local memory only is source-supported; no external service, install or target import has been attempted. Historical-runtime compatibility still requires preflight.",
+  "supported_case_claim": "One historical source-qualified fixed-pair candidate, not a new reproduced defect, successful migration or superiority result.",
+  "measured_transport_rule": "Measurement records must contain JSON-safe built-in booleans, strings, integers, null and arrays only. Do not transport Python Context objects, arbitrary rich equality, or custom containers.",
+  "unchanged_core_sha256": "ace349aa9a7750e7891acdf6ccbf1705cecc5bae3f3ec67fdbebb28f31e6fc13",
+  "source_hashes": [
+    {
+      "path": "SELECTION_SEAL.json",
+      "sha256": "a239407c799e2aeba53cb79569d0866bf61842e3734bfd3df3775bba7b6b3ecc",
+      "bytes": 2356
+    },
+    {
+      "path": "CASE_AUTHORITY_PLAN.json",
+      "sha256": "34532ca14d68216a263150091c660c6b8cf45d2ba07f53eee633a7c853fc9e97",
+      "bytes": 3573
+    },
+    {
+      "path": "GENERIC_EVALUATION_PROCEDURE.json",
+      "sha256": "a54a862498abe56570b54a79c71ddd27db1a3cec31fb732ca548104ff405b882",
+      "bytes": 2571
+    },
+    {
+      "path": "ISSUE_REFERENCE_ORDER_VERIFIED.json",
+      "sha256": "66e63f0cd82655a53664bdb80a28f1ff05679247d3eff6a57ac24e3130c05fb9",
+      "bytes": 4052
+    },
+    {
+      "path": "raw/click_issue_412.json",
+      "sha256": "cb519d54f846cbf7cffe9e6bb99587dedd370cf818911b59db38d948dab3692d",
+      "bytes": 1890
+    },
+    {
+      "path": "raw/click_412_timeline.json",
+      "sha256": "f5b828047d15f1e7e4589908addbe74e60654f32816cf747ef13e2e182ff76e9",
+      "bytes": 23923
+    },
+    {
+      "path": "raw/click_412_fix.json",
+      "sha256": "e5b68bfd29c037f653d850bf3997e37395324d04387a0488d38403ac81850c1b",
+      "bytes": 6163
+    },
+    {
+      "path": "raw/click_412_fix_attempt02.json",
+      "sha256": "074f1817b13e5bfe568737b39dca123033e6fb013241f6d2d2a7d609d73cc9fa",
+      "bytes": 14315
+    }
+  ],
+  "linked_assets_consumed": 2,
+  "requests_by_asset": {
+    "timeline": 1,
+    "correction_commit": 2
+  },
+  "linked_asset_cap": 4,
+  "remaining_click_refs": [
+    {
+      "issue": 839,
+      "status": "UNREVIEWED_AFTER_FIRST_SOURCE_QUALIFIED_CASE",
+      "primary_payload_archived_for_identity": true
+    },
+    {
+      "issue": 1499,
+      "status": "UNREVIEWED_AFTER_FIRST_SOURCE_QUALIFIED_CASE",
+      "primary_payload_archived_for_identity": true
+    },
+    {
+      "issue": 1708,
+      "status": "UNREVIEWED_AFTER_FIRST_SOURCE_QUALIFIED_CASE",
+      "primary_payload_archived_for_identity": true
+    },
+    {
+      "issue": 2017,
+      "status": "UNREVIEWED_AFTER_FIRST_SOURCE_QUALIFIED_CASE",
+      "primary_payload_archived_for_identity": true
+    }
+  ],
+  "native_runs": 0,
+  "native_execution_gate": "HOLD_UNTIL_CASE_SPECIFIC_PROTOCOL_BASELINE_FIXTURE_RUNTIME_HASHES_AND_PARENT_NONAUTHOR_REVIEW",
+  "no_replacement": true
+}

@@ -1,0 +1,422 @@
+[
+  {
+    "context": {
+      "protocol_id": "G4-PENDING-CALLBACK-1",
+      "observation_point": "immediate_native_exit_before_cleanup",
+      "observation_order": [
+        "pending_after",
+        "pending_ids_after",
+        "callback_receipts",
+        "callback_counts",
+        "callback_enter_return_balance"
+      ]
+    },
+    "samples": {
+      "pending_after": 2,
+      "pending_ids_after": [
+        "op_a",
+        "op_b"
+      ],
+      "callback_receipts": [],
+      "callback_counts": {
+        "op_a": 0,
+        "op_b": 0
+      },
+      "callback_enter_return_balance": {
+        "op_a": [
+          0,
+          0
+        ],
+        "op_b": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-PENDING-CALLBACK-1",
+      "observation_point": "immediate_native_exit_before_cleanup",
+      "observation_order": [
+        "pending_after",
+        "pending_ids_after",
+        "callback_receipts",
+        "callback_counts",
+        "callback_enter_return_balance"
+      ]
+    },
+    "samples": {
+      "pending_after": 0,
+      "pending_ids_after": [],
+      "callback_receipts": [
+        "op_b",
+        "op_a"
+      ],
+      "callback_counts": {
+        "op_a": 1,
+        "op_b": 1
+      },
+      "callback_enter_return_balance": {
+        "op_a": [
+          1,
+          1
+        ],
+        "op_b": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-PENDING-CALLBACK-1",
+      "observation_point": "immediate_native_exit_before_cleanup",
+      "observation_order": [
+        "pending_after",
+        "pending_ids_after",
+        "callback_receipts",
+        "callback_counts",
+        "callback_enter_return_balance"
+      ]
+    },
+    "samples": {
+      "pending_after": 0,
+      "pending_ids_after": [],
+      "callback_receipts": [
+        "op_b",
+        "op_a"
+      ],
+      "callback_counts": {
+        "op_a": 1,
+        "op_b": 1
+      },
+      "callback_enter_return_balance": {
+        "op_a": [
+          1,
+          1
+        ],
+        "op_b": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-PENDING-CALLBACK-1",
+      "observation_point": "immediate_native_exit_before_cleanup",
+      "observation_order": [
+        "pending_after",
+        "pending_ids_after",
+        "callback_receipts",
+        "callback_counts",
+        "callback_enter_return_balance"
+      ]
+    },
+    "samples": {
+      "pending_after": 0,
+      "pending_ids_after": [],
+      "callback_receipts": [
+        "op_b",
+        "op_a"
+      ],
+      "callback_counts": {
+        "op_a": 1,
+        "op_b": 1
+      },
+      "callback_enter_return_balance": {
+        "op_a": [
+          1,
+          1
+        ],
+        "op_b": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-PENDING-CALLBACK-1",
+      "observation_point": "immediate_native_exit_before_cleanup",
+      "observation_order": [
+        "pending_after",
+        "pending_ids_after",
+        "callback_receipts",
+        "callback_counts",
+        "callback_enter_return_balance"
+      ]
+    },
+    "samples": {
+      "pending_after": 0,
+      "pending_ids_after": [],
+      "callback_receipts": [
+        "op_b",
+        "op_a"
+      ],
+      "callback_counts": {
+        "op_a": 1,
+        "op_b": 1
+      },
+      "callback_enter_return_balance": {
+        "op_a": [
+          1,
+          1
+        ],
+        "op_b": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-PENDING-CALLBACK-1",
+      "observation_point": "immediate_native_exit_before_cleanup",
+      "observation_order": [
+        "pending_after",
+        "pending_ids_after",
+        "callback_receipts",
+        "callback_counts",
+        "callback_enter_return_balance"
+      ]
+    },
+    "samples": {
+      "pending_after": 0,
+      "pending_ids_after": [],
+      "callback_receipts": [
+        "op_b",
+        "op_a"
+      ],
+      "callback_counts": {
+        "op_a": 1,
+        "op_b": 1
+      },
+      "callback_enter_return_balance": {
+        "op_a": [
+          1,
+          1
+        ],
+        "op_b": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-PENDING-CALLBACK-1",
+      "observation_point": "immediate_native_exit_before_cleanup",
+      "observation_order": [
+        "pending_after",
+        "pending_ids_after",
+        "callback_receipts",
+        "callback_counts",
+        "callback_enter_return_balance"
+      ]
+    },
+    "samples": {
+      "pending_after": 2,
+      "pending_ids_after": [
+        "op_a",
+        "op_b"
+      ],
+      "callback_receipts": [],
+      "callback_counts": {
+        "op_a": 0,
+        "op_b": 0
+      },
+      "callback_enter_return_balance": {
+        "op_a": [
+          0,
+          0
+        ],
+        "op_b": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-PENDING-CALLBACK-1",
+      "observation_point": "immediate_native_exit_before_cleanup",
+      "observation_order": [
+        "pending_after",
+        "pending_ids_after",
+        "callback_receipts",
+        "callback_counts",
+        "callback_enter_return_balance"
+      ]
+    },
+    "samples": {
+      "pending_after": 0,
+      "pending_ids_after": [],
+      "callback_receipts": [
+        "op_b",
+        "op_a"
+      ],
+      "callback_counts": {
+        "op_a": 1,
+        "op_b": 1
+      },
+      "callback_enter_return_balance": {
+        "op_a": [
+          1,
+          1
+        ],
+        "op_b": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-PENDING-CALLBACK-1",
+      "observation_point": "immediate_native_exit_before_cleanup",
+      "observation_order": [
+        "pending_after",
+        "pending_ids_after",
+        "callback_receipts",
+        "callback_counts",
+        "callback_enter_return_balance"
+      ]
+    },
+    "samples": {
+      "pending_after": 0,
+      "pending_ids_after": [],
+      "callback_receipts": [
+        "op_b",
+        "op_a"
+      ],
+      "callback_counts": {
+        "op_a": 1,
+        "op_b": 1
+      },
+      "callback_enter_return_balance": {
+        "op_a": [
+          1,
+          1
+        ],
+        "op_b": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-PENDING-CALLBACK-1",
+      "observation_point": "immediate_native_exit_before_cleanup",
+      "observation_order": [
+        "pending_after",
+        "pending_ids_after",
+        "callback_receipts",
+        "callback_counts",
+        "callback_enter_return_balance"
+      ]
+    },
+    "samples": {
+      "pending_after": 0,
+      "pending_ids_after": [],
+      "callback_receipts": [
+        "op_b",
+        "op_a"
+      ],
+      "callback_counts": {
+        "op_a": 1,
+        "op_b": 1
+      },
+      "callback_enter_return_balance": {
+        "op_a": [
+          1,
+          1
+        ],
+        "op_b": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-PENDING-CALLBACK-1",
+      "observation_point": "immediate_native_exit_before_cleanup",
+      "observation_order": [
+        "pending_after",
+        "pending_ids_after",
+        "callback_receipts",
+        "callback_counts",
+        "callback_enter_return_balance"
+      ]
+    },
+    "samples": {
+      "pending_after": 0,
+      "pending_ids_after": [],
+      "callback_receipts": [
+        "op_b",
+        "op_a"
+      ],
+      "callback_counts": {
+        "op_a": 1,
+        "op_b": 1
+      },
+      "callback_enter_return_balance": {
+        "op_a": [
+          1,
+          1
+        ],
+        "op_b": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-PENDING-CALLBACK-1",
+      "observation_point": "immediate_native_exit_before_cleanup",
+      "observation_order": [
+        "pending_after",
+        "pending_ids_after",
+        "callback_receipts",
+        "callback_counts",
+        "callback_enter_return_balance"
+      ]
+    },
+    "samples": {
+      "pending_after": 2,
+      "pending_ids_after": [
+        "op_a",
+        "op_b"
+      ],
+      "callback_receipts": [],
+      "callback_counts": {
+        "op_a": 0,
+        "op_b": 0
+      },
+      "callback_enter_return_balance": {
+        "op_a": [
+          0,
+          0
+        ],
+        "op_b": [
+          0,
+          0
+        ]
+      }
+    }
+  }
+]

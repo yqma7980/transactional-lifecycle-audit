@@ -1,0 +1,1339 @@
+{
+  "utc": "2026-09-07T11:00:09.595771+00:00",
+  "rank": 79,
+  "status": "COMPLETE_NATIVE_EVIDENCE",
+  "passed": true,
+  "elapsed_seconds": 33.15700000000652,
+  "fresh_target_pids": [
+    32836,
+    17508,
+    17280,
+    15148,
+    26852,
+    46072,
+    38024,
+    30504,
+    8628,
+    31980,
+    21824,
+    23064
+  ],
+  "rows": [
+    {
+      "run_id": "G4_R079_001",
+      "ordinal": 1,
+      "repetition": 1,
+      "cell": "before-trigger",
+      "execution_status": "COMPLETED",
+      "native_outcome": "VIOLATED",
+      "reason": "Same six native association comparisons; exact missing-member origins reviewed separately.",
+      "observations": {
+        "serialization_calls": 1,
+        "restoration_calls": 1,
+        "pickle_protocol": 4,
+        "file_type": "django.db.models.fields.files.FieldFile",
+        "checks": {
+          "file_equal": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "name": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "url": {
+            "status": "ATTRIBUTE_ERROR",
+            "equal": null,
+            "error": {
+              "type_fqn": "builtins.AttributeError",
+              "message": "'FieldFile' object has no attribute 'storage'",
+              "observed_attribute": "url",
+              "traceback": "Traceback (most recent call last):\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py\", line 37, in run\n    right = restored if attribute == \"file_equal\" else getattr(restored, attribute)\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\files.py\", line 62, in url\n    return self.storage.url(self.name)\nAttributeError: 'FieldFile' object has no attribute 'storage'\n"
+            }
+          },
+          "storage": {
+            "status": "ATTRIBUTE_ERROR",
+            "equal": null,
+            "error": {
+              "type_fqn": "builtins.AttributeError",
+              "message": "'FieldFile' object has no attribute 'storage'",
+              "observed_attribute": "storage",
+              "traceback": "Traceback (most recent call last):\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py\", line 37, in run\n    right = restored if attribute == \"file_equal\" else getattr(restored, attribute)\nAttributeError: 'FieldFile' object has no attribute 'storage'\n"
+            }
+          },
+          "instance": {
+            "status": "ATTRIBUTE_ERROR",
+            "equal": null,
+            "error": {
+              "type_fqn": "builtins.AttributeError",
+              "message": "'FieldFile' object has no attribute 'instance'",
+              "observed_attribute": "instance",
+              "traceback": "Traceback (most recent call last):\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py\", line 37, in run\n    right = restored if attribute == \"file_equal\" else getattr(restored, attribute)\nAttributeError: 'FieldFile' object has no attribute 'instance'\n"
+            }
+          },
+          "field": {
+            "status": "ATTRIBUTE_ERROR",
+            "equal": null,
+            "error": {
+              "type_fqn": "builtins.AttributeError",
+              "message": "'FieldFile' object has no attribute 'field'",
+              "observed_attribute": "field",
+              "traceback": "Traceback (most recent call last):\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py\", line 37, in run\n    right = restored if attribute == \"file_equal\" else getattr(restored, attribute)\nAttributeError: 'FieldFile' object has no attribute 'field'\n"
+            }
+          }
+        },
+        "witnesses": {
+          "name": "unused/test_file.py"
+        },
+        "native_access_error_count": 4,
+        "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+        "storage_identity": {
+          "status": "UNAVAILABLE",
+          "reason": "ATTRIBUTE_ERROR"
+        },
+        "name": "unused/test_file.py",
+        "url": {
+          "status": "UNAVAILABLE",
+          "reason": "ATTRIBUTE_ERROR"
+        },
+        "instance_identity": {
+          "status": "UNAVAILABLE",
+          "reason": "ATTRIBUTE_ERROR"
+        },
+        "field_identity": {
+          "status": "UNAVAILABLE",
+          "reason": "ATTRIBUTE_ERROR"
+        }
+      },
+      "signature": {
+        "satisfied": false,
+        "declared_violation": true
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "VIOLATED",
+        "pid": 32836,
+        "events": 16,
+        "raw_sha256": "137182ff288a0ce4659714553753343655707886668533bf815acb5a7d61073c",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "VIOLATED",
+        "pid": 32836,
+        "events": 16,
+        "raw_sha256": "137182ff288a0ce4659714553753343655707886668533bf815acb5a7d61073c",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r079\\G4_R079_001.trace.json",
+      "method_input_sha256": "c9e2487d9ce3e111b5f4a0f8996337df592e4e403b5dd74e16aa437a214fd3a4",
+      "projection_serialization_and_hash_seconds": 0.018776299955789,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_001\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "137182ff288a0ce4659714553753343655707886668533bf815acb5a7d61073c",
+      "native_target_pid": 32836,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_001\\process.json",
+      "process_record_sha256": "73890f2de95f8df63d03c492013b4695c4420fc67d2c7aa1c52258b3256935c7"
+    },
+    {
+      "run_id": "G4_R079_002",
+      "ordinal": 2,
+      "repetition": 1,
+      "cell": "after-control",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Same six native association comparisons; exact missing-member origins reviewed separately.",
+      "observations": {
+        "serialization_calls": 1,
+        "restoration_calls": 1,
+        "pickle_protocol": 4,
+        "file_type": "django.db.models.fields.files.FieldFile",
+        "checks": {
+          "file_equal": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "name": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "url": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "storage": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "instance": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "field": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          }
+        },
+        "witnesses": {
+          "name": "unused/test_file.py",
+          "url": "/s10-media/unused/test_file.py",
+          "storage_type": "django.core.files.storage.DefaultStorage",
+          "instance_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "pk": 1
+          },
+          "field_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "name": "myfile"
+          }
+        },
+        "native_access_error_count": 0,
+        "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+        "storage_identity": {
+          "type_fqn": "django.core.files.storage.DefaultStorage",
+          "within_cell_equal": true
+        },
+        "name": "unused/test_file.py",
+        "url": "/s10-media/unused/test_file.py",
+        "instance_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "pk": 1
+        },
+        "field_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "name": "myfile"
+        }
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 17508,
+        "events": 16,
+        "raw_sha256": "951e979adcc409194a4c34c4ded48201dec0dcecb4bc72c639a4db64ad551279",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 17508,
+        "events": 16,
+        "raw_sha256": "951e979adcc409194a4c34c4ded48201dec0dcecb4bc72c639a4db64ad551279",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r079\\G4_R079_002.trace.json",
+      "method_input_sha256": "6dca19a43002381bbb669f1e68ed7e195b66f3bd6f25bea291500fd37172cf21",
+      "projection_serialization_and_hash_seconds": 0.002511699975002557,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_002\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "951e979adcc409194a4c34c4ded48201dec0dcecb4bc72c639a4db64ad551279",
+      "native_target_pid": 17508,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_002\\process.json",
+      "process_record_sha256": "6ef1166500e75943328c798d220535d017178ec5fa226f85058f92f26304c430"
+    },
+    {
+      "run_id": "G4_R079_003",
+      "ordinal": 3,
+      "repetition": 1,
+      "cell": "after-trigger",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Same six native association comparisons; exact missing-member origins reviewed separately.",
+      "observations": {
+        "serialization_calls": 1,
+        "restoration_calls": 1,
+        "pickle_protocol": 4,
+        "file_type": "django.db.models.fields.files.FieldFile",
+        "checks": {
+          "file_equal": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "name": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "url": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "storage": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "instance": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "field": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          }
+        },
+        "witnesses": {
+          "name": "unused/test_file.py",
+          "url": "/s10-media/unused/test_file.py",
+          "storage_type": "django.core.files.storage.DefaultStorage",
+          "instance_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "pk": 1
+          },
+          "field_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "name": "myfile"
+          }
+        },
+        "native_access_error_count": 0,
+        "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+        "storage_identity": {
+          "type_fqn": "django.core.files.storage.DefaultStorage",
+          "within_cell_equal": true
+        },
+        "name": "unused/test_file.py",
+        "url": "/s10-media/unused/test_file.py",
+        "instance_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "pk": 1
+        },
+        "field_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "name": "myfile"
+        }
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 17280,
+        "events": 16,
+        "raw_sha256": "f1f5cf9bdba95b1c2ace390b65a8a53e8ed96f03e6ed6d67cde256b2680cd1a9",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 17280,
+        "events": 16,
+        "raw_sha256": "f1f5cf9bdba95b1c2ace390b65a8a53e8ed96f03e6ed6d67cde256b2680cd1a9",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r079\\G4_R079_003.trace.json",
+      "method_input_sha256": "6dca19a43002381bbb669f1e68ed7e195b66f3bd6f25bea291500fd37172cf21",
+      "projection_serialization_and_hash_seconds": 0.002435399976093322,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_003\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "f1f5cf9bdba95b1c2ace390b65a8a53e8ed96f03e6ed6d67cde256b2680cd1a9",
+      "native_target_pid": 17280,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_003\\process.json",
+      "process_record_sha256": "48b99a9d1e05b3acab81902dba1518d37a2a6372e168dab60687f0c54c54e965"
+    },
+    {
+      "run_id": "G4_R079_004",
+      "ordinal": 4,
+      "repetition": 1,
+      "cell": "before-control",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Same six native association comparisons; exact missing-member origins reviewed separately.",
+      "observations": {
+        "serialization_calls": 1,
+        "restoration_calls": 1,
+        "pickle_protocol": 4,
+        "file_type": "django.db.models.fields.files.FieldFile",
+        "checks": {
+          "file_equal": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "name": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "url": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "storage": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "instance": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "field": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          }
+        },
+        "witnesses": {
+          "name": "unused/test_file.py",
+          "url": "/s10-media/unused/test_file.py",
+          "storage_type": "django.core.files.storage.DefaultStorage",
+          "instance_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "pk": 1
+          },
+          "field_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "name": "myfile"
+          }
+        },
+        "native_access_error_count": 0,
+        "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+        "storage_identity": {
+          "type_fqn": "django.core.files.storage.DefaultStorage",
+          "within_cell_equal": true
+        },
+        "name": "unused/test_file.py",
+        "url": "/s10-media/unused/test_file.py",
+        "instance_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "pk": 1
+        },
+        "field_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "name": "myfile"
+        }
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 15148,
+        "events": 16,
+        "raw_sha256": "76864a4c27ac7eee814f8a656c0ca9408453bba3f1a23e27f62ca87f707bef18",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 15148,
+        "events": 16,
+        "raw_sha256": "76864a4c27ac7eee814f8a656c0ca9408453bba3f1a23e27f62ca87f707bef18",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r079\\G4_R079_004.trace.json",
+      "method_input_sha256": "6dca19a43002381bbb669f1e68ed7e195b66f3bd6f25bea291500fd37172cf21",
+      "projection_serialization_and_hash_seconds": 0.002101499994751066,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_004\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "76864a4c27ac7eee814f8a656c0ca9408453bba3f1a23e27f62ca87f707bef18",
+      "native_target_pid": 15148,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_004\\process.json",
+      "process_record_sha256": "a6cb78f64b637b9b4729007167a40ac5ddd2a06027ab4e3d0106af103eac5d02"
+    },
+    {
+      "run_id": "G4_R079_005",
+      "ordinal": 5,
+      "repetition": 2,
+      "cell": "after-trigger",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Same six native association comparisons; exact missing-member origins reviewed separately.",
+      "observations": {
+        "serialization_calls": 1,
+        "restoration_calls": 1,
+        "pickle_protocol": 4,
+        "file_type": "django.db.models.fields.files.FieldFile",
+        "checks": {
+          "file_equal": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "name": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "url": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "storage": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "instance": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "field": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          }
+        },
+        "witnesses": {
+          "name": "unused/test_file.py",
+          "url": "/s10-media/unused/test_file.py",
+          "storage_type": "django.core.files.storage.DefaultStorage",
+          "instance_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "pk": 1
+          },
+          "field_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "name": "myfile"
+          }
+        },
+        "native_access_error_count": 0,
+        "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+        "storage_identity": {
+          "type_fqn": "django.core.files.storage.DefaultStorage",
+          "within_cell_equal": true
+        },
+        "name": "unused/test_file.py",
+        "url": "/s10-media/unused/test_file.py",
+        "instance_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "pk": 1
+        },
+        "field_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "name": "myfile"
+        }
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 26852,
+        "events": 16,
+        "raw_sha256": "3f7b616b8eb2d59fd03c520593d42f8d0efca1dbbdc7fd01d6b1330f9c033567",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 26852,
+        "events": 16,
+        "raw_sha256": "3f7b616b8eb2d59fd03c520593d42f8d0efca1dbbdc7fd01d6b1330f9c033567",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r079\\G4_R079_005.trace.json",
+      "method_input_sha256": "6dca19a43002381bbb669f1e68ed7e195b66f3bd6f25bea291500fd37172cf21",
+      "projection_serialization_and_hash_seconds": 0.002335399971343577,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_005\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "3f7b616b8eb2d59fd03c520593d42f8d0efca1dbbdc7fd01d6b1330f9c033567",
+      "native_target_pid": 26852,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_005\\process.json",
+      "process_record_sha256": "26098200a82aef899a25a82fce417f283548c3d749f701aafaae6b20077d8d41"
+    },
+    {
+      "run_id": "G4_R079_006",
+      "ordinal": 6,
+      "repetition": 2,
+      "cell": "before-control",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Same six native association comparisons; exact missing-member origins reviewed separately.",
+      "observations": {
+        "serialization_calls": 1,
+        "restoration_calls": 1,
+        "pickle_protocol": 4,
+        "file_type": "django.db.models.fields.files.FieldFile",
+        "checks": {
+          "file_equal": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "name": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "url": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "storage": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "instance": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "field": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          }
+        },
+        "witnesses": {
+          "name": "unused/test_file.py",
+          "url": "/s10-media/unused/test_file.py",
+          "storage_type": "django.core.files.storage.DefaultStorage",
+          "instance_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "pk": 1
+          },
+          "field_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "name": "myfile"
+          }
+        },
+        "native_access_error_count": 0,
+        "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+        "storage_identity": {
+          "type_fqn": "django.core.files.storage.DefaultStorage",
+          "within_cell_equal": true
+        },
+        "name": "unused/test_file.py",
+        "url": "/s10-media/unused/test_file.py",
+        "instance_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "pk": 1
+        },
+        "field_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "name": "myfile"
+        }
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 46072,
+        "events": 16,
+        "raw_sha256": "65ee9f414cd39299aa2e0e74b8f13f6bae44bf07bffe07aa5c93a3ea0d30d7f3",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 46072,
+        "events": 16,
+        "raw_sha256": "65ee9f414cd39299aa2e0e74b8f13f6bae44bf07bffe07aa5c93a3ea0d30d7f3",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r079\\G4_R079_006.trace.json",
+      "method_input_sha256": "6dca19a43002381bbb669f1e68ed7e195b66f3bd6f25bea291500fd37172cf21",
+      "projection_serialization_and_hash_seconds": 0.0022629000013694167,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_006\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "65ee9f414cd39299aa2e0e74b8f13f6bae44bf07bffe07aa5c93a3ea0d30d7f3",
+      "native_target_pid": 46072,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_006\\process.json",
+      "process_record_sha256": "991beae46de68e18deae726dbe9deb5c1df4346ec5ae0976026811fb76f8c8b5"
+    },
+    {
+      "run_id": "G4_R079_007",
+      "ordinal": 7,
+      "repetition": 2,
+      "cell": "before-trigger",
+      "execution_status": "COMPLETED",
+      "native_outcome": "VIOLATED",
+      "reason": "Same six native association comparisons; exact missing-member origins reviewed separately.",
+      "observations": {
+        "serialization_calls": 1,
+        "restoration_calls": 1,
+        "pickle_protocol": 4,
+        "file_type": "django.db.models.fields.files.FieldFile",
+        "checks": {
+          "file_equal": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "name": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "url": {
+            "status": "ATTRIBUTE_ERROR",
+            "equal": null,
+            "error": {
+              "type_fqn": "builtins.AttributeError",
+              "message": "'FieldFile' object has no attribute 'storage'",
+              "observed_attribute": "url",
+              "traceback": "Traceback (most recent call last):\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py\", line 37, in run\n    right = restored if attribute == \"file_equal\" else getattr(restored, attribute)\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\files.py\", line 62, in url\n    return self.storage.url(self.name)\nAttributeError: 'FieldFile' object has no attribute 'storage'\n"
+            }
+          },
+          "storage": {
+            "status": "ATTRIBUTE_ERROR",
+            "equal": null,
+            "error": {
+              "type_fqn": "builtins.AttributeError",
+              "message": "'FieldFile' object has no attribute 'storage'",
+              "observed_attribute": "storage",
+              "traceback": "Traceback (most recent call last):\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py\", line 37, in run\n    right = restored if attribute == \"file_equal\" else getattr(restored, attribute)\nAttributeError: 'FieldFile' object has no attribute 'storage'\n"
+            }
+          },
+          "instance": {
+            "status": "ATTRIBUTE_ERROR",
+            "equal": null,
+            "error": {
+              "type_fqn": "builtins.AttributeError",
+              "message": "'FieldFile' object has no attribute 'instance'",
+              "observed_attribute": "instance",
+              "traceback": "Traceback (most recent call last):\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py\", line 37, in run\n    right = restored if attribute == \"file_equal\" else getattr(restored, attribute)\nAttributeError: 'FieldFile' object has no attribute 'instance'\n"
+            }
+          },
+          "field": {
+            "status": "ATTRIBUTE_ERROR",
+            "equal": null,
+            "error": {
+              "type_fqn": "builtins.AttributeError",
+              "message": "'FieldFile' object has no attribute 'field'",
+              "observed_attribute": "field",
+              "traceback": "Traceback (most recent call last):\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py\", line 37, in run\n    right = restored if attribute == \"file_equal\" else getattr(restored, attribute)\nAttributeError: 'FieldFile' object has no attribute 'field'\n"
+            }
+          }
+        },
+        "witnesses": {
+          "name": "unused/test_file.py"
+        },
+        "native_access_error_count": 4,
+        "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+        "storage_identity": {
+          "status": "UNAVAILABLE",
+          "reason": "ATTRIBUTE_ERROR"
+        },
+        "name": "unused/test_file.py",
+        "url": {
+          "status": "UNAVAILABLE",
+          "reason": "ATTRIBUTE_ERROR"
+        },
+        "instance_identity": {
+          "status": "UNAVAILABLE",
+          "reason": "ATTRIBUTE_ERROR"
+        },
+        "field_identity": {
+          "status": "UNAVAILABLE",
+          "reason": "ATTRIBUTE_ERROR"
+        }
+      },
+      "signature": {
+        "satisfied": false,
+        "declared_violation": true
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "VIOLATED",
+        "pid": 38024,
+        "events": 16,
+        "raw_sha256": "04796fdc203885e3b5590505922a2973a6896f63624e2e3fecbe6c26c91bdd11",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "VIOLATED",
+        "pid": 38024,
+        "events": 16,
+        "raw_sha256": "04796fdc203885e3b5590505922a2973a6896f63624e2e3fecbe6c26c91bdd11",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r079\\G4_R079_007.trace.json",
+      "method_input_sha256": "c9e2487d9ce3e111b5f4a0f8996337df592e4e403b5dd74e16aa437a214fd3a4",
+      "projection_serialization_and_hash_seconds": 0.01634949998697266,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_007\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "04796fdc203885e3b5590505922a2973a6896f63624e2e3fecbe6c26c91bdd11",
+      "native_target_pid": 38024,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_007\\process.json",
+      "process_record_sha256": "60f4f6f82bf1e4accbbf439547607425c12ba6a695d3f00f128921d7c884f523"
+    },
+    {
+      "run_id": "G4_R079_008",
+      "ordinal": 8,
+      "repetition": 2,
+      "cell": "after-control",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Same six native association comparisons; exact missing-member origins reviewed separately.",
+      "observations": {
+        "serialization_calls": 1,
+        "restoration_calls": 1,
+        "pickle_protocol": 4,
+        "file_type": "django.db.models.fields.files.FieldFile",
+        "checks": {
+          "file_equal": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "name": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "url": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "storage": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "instance": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "field": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          }
+        },
+        "witnesses": {
+          "name": "unused/test_file.py",
+          "url": "/s10-media/unused/test_file.py",
+          "storage_type": "django.core.files.storage.DefaultStorage",
+          "instance_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "pk": 1
+          },
+          "field_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "name": "myfile"
+          }
+        },
+        "native_access_error_count": 0,
+        "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+        "storage_identity": {
+          "type_fqn": "django.core.files.storage.DefaultStorage",
+          "within_cell_equal": true
+        },
+        "name": "unused/test_file.py",
+        "url": "/s10-media/unused/test_file.py",
+        "instance_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "pk": 1
+        },
+        "field_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "name": "myfile"
+        }
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 30504,
+        "events": 16,
+        "raw_sha256": "6fbebfb58e617d209a67f76e01ea0e9add63e7f239cbc73f530ea5ca12a97006",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 30504,
+        "events": 16,
+        "raw_sha256": "6fbebfb58e617d209a67f76e01ea0e9add63e7f239cbc73f530ea5ca12a97006",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r079\\G4_R079_008.trace.json",
+      "method_input_sha256": "6dca19a43002381bbb669f1e68ed7e195b66f3bd6f25bea291500fd37172cf21",
+      "projection_serialization_and_hash_seconds": 0.002432500012218952,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_008\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "6fbebfb58e617d209a67f76e01ea0e9add63e7f239cbc73f530ea5ca12a97006",
+      "native_target_pid": 30504,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_008\\process.json",
+      "process_record_sha256": "82ae184acfbbcafaf4a12199e06ea05f2f68584e404bbdfd5048b8f5a051f4c9"
+    },
+    {
+      "run_id": "G4_R079_009",
+      "ordinal": 9,
+      "repetition": 3,
+      "cell": "before-control",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Same six native association comparisons; exact missing-member origins reviewed separately.",
+      "observations": {
+        "serialization_calls": 1,
+        "restoration_calls": 1,
+        "pickle_protocol": 4,
+        "file_type": "django.db.models.fields.files.FieldFile",
+        "checks": {
+          "file_equal": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "name": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "url": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "storage": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "instance": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "field": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          }
+        },
+        "witnesses": {
+          "name": "unused/test_file.py",
+          "url": "/s10-media/unused/test_file.py",
+          "storage_type": "django.core.files.storage.DefaultStorage",
+          "instance_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "pk": 1
+          },
+          "field_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "name": "myfile"
+          }
+        },
+        "native_access_error_count": 0,
+        "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+        "storage_identity": {
+          "type_fqn": "django.core.files.storage.DefaultStorage",
+          "within_cell_equal": true
+        },
+        "name": "unused/test_file.py",
+        "url": "/s10-media/unused/test_file.py",
+        "instance_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "pk": 1
+        },
+        "field_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "name": "myfile"
+        }
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 8628,
+        "events": 16,
+        "raw_sha256": "17814852dacb7a2f92c0b17e15512bb0cd7c27766f2a8ffff2d363ddf4786c3d",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 8628,
+        "events": 16,
+        "raw_sha256": "17814852dacb7a2f92c0b17e15512bb0cd7c27766f2a8ffff2d363ddf4786c3d",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r079\\G4_R079_009.trace.json",
+      "method_input_sha256": "6dca19a43002381bbb669f1e68ed7e195b66f3bd6f25bea291500fd37172cf21",
+      "projection_serialization_and_hash_seconds": 0.0021303999819792807,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_009\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "17814852dacb7a2f92c0b17e15512bb0cd7c27766f2a8ffff2d363ddf4786c3d",
+      "native_target_pid": 8628,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_009\\process.json",
+      "process_record_sha256": "ffdfd5ba3db18379ab1e14548f13cddd41783f3189d25542f5529cc1608a92e5"
+    },
+    {
+      "run_id": "G4_R079_010",
+      "ordinal": 10,
+      "repetition": 3,
+      "cell": "after-trigger",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Same six native association comparisons; exact missing-member origins reviewed separately.",
+      "observations": {
+        "serialization_calls": 1,
+        "restoration_calls": 1,
+        "pickle_protocol": 4,
+        "file_type": "django.db.models.fields.files.FieldFile",
+        "checks": {
+          "file_equal": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "name": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "url": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "storage": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "instance": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "field": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          }
+        },
+        "witnesses": {
+          "name": "unused/test_file.py",
+          "url": "/s10-media/unused/test_file.py",
+          "storage_type": "django.core.files.storage.DefaultStorage",
+          "instance_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "pk": 1
+          },
+          "field_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "name": "myfile"
+          }
+        },
+        "native_access_error_count": 0,
+        "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+        "storage_identity": {
+          "type_fqn": "django.core.files.storage.DefaultStorage",
+          "within_cell_equal": true
+        },
+        "name": "unused/test_file.py",
+        "url": "/s10-media/unused/test_file.py",
+        "instance_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "pk": 1
+        },
+        "field_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "name": "myfile"
+        }
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 31980,
+        "events": 16,
+        "raw_sha256": "fd290dbec36f488fe9f5b3fee3f129558c50fce8d53dbdffb7a7802c53acaedd",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 31980,
+        "events": 16,
+        "raw_sha256": "fd290dbec36f488fe9f5b3fee3f129558c50fce8d53dbdffb7a7802c53acaedd",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r079\\G4_R079_010.trace.json",
+      "method_input_sha256": "6dca19a43002381bbb669f1e68ed7e195b66f3bd6f25bea291500fd37172cf21",
+      "projection_serialization_and_hash_seconds": 0.010621999972499907,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_010\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "fd290dbec36f488fe9f5b3fee3f129558c50fce8d53dbdffb7a7802c53acaedd",
+      "native_target_pid": 31980,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_010\\process.json",
+      "process_record_sha256": "49bf0227206306e155a794fa4482edcf9eaed5326dcc7cef1c6090fd2fb38cd0"
+    },
+    {
+      "run_id": "G4_R079_011",
+      "ordinal": 11,
+      "repetition": 3,
+      "cell": "after-control",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Same six native association comparisons; exact missing-member origins reviewed separately.",
+      "observations": {
+        "serialization_calls": 1,
+        "restoration_calls": 1,
+        "pickle_protocol": 4,
+        "file_type": "django.db.models.fields.files.FieldFile",
+        "checks": {
+          "file_equal": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "name": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "url": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "storage": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "instance": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "field": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          }
+        },
+        "witnesses": {
+          "name": "unused/test_file.py",
+          "url": "/s10-media/unused/test_file.py",
+          "storage_type": "django.core.files.storage.DefaultStorage",
+          "instance_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "pk": 1
+          },
+          "field_key": {
+            "model_label": "m003_s10_django_fixture.Document",
+            "name": "myfile"
+          }
+        },
+        "native_access_error_count": 0,
+        "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+        "storage_identity": {
+          "type_fqn": "django.core.files.storage.DefaultStorage",
+          "within_cell_equal": true
+        },
+        "name": "unused/test_file.py",
+        "url": "/s10-media/unused/test_file.py",
+        "instance_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "pk": 1
+        },
+        "field_identity": {
+          "model_label": "m003_s10_django_fixture.Document",
+          "name": "myfile"
+        }
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 21824,
+        "events": 16,
+        "raw_sha256": "bc2059a9b291eaec1e8406bf61a87c2080222b0ef97f0912ab9a8be0ae920ac5",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 21824,
+        "events": 16,
+        "raw_sha256": "bc2059a9b291eaec1e8406bf61a87c2080222b0ef97f0912ab9a8be0ae920ac5",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r079\\G4_R079_011.trace.json",
+      "method_input_sha256": "6dca19a43002381bbb669f1e68ed7e195b66f3bd6f25bea291500fd37172cf21",
+      "projection_serialization_and_hash_seconds": 0.00236320000840351,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_011\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "bc2059a9b291eaec1e8406bf61a87c2080222b0ef97f0912ab9a8be0ae920ac5",
+      "native_target_pid": 21824,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_011\\process.json",
+      "process_record_sha256": "57f8386f09e62950fcb40d13fc799af5041d57b0eb7462a2265d6ad53e91a053"
+    },
+    {
+      "run_id": "G4_R079_012",
+      "ordinal": 12,
+      "repetition": 3,
+      "cell": "before-trigger",
+      "execution_status": "COMPLETED",
+      "native_outcome": "VIOLATED",
+      "reason": "Same six native association comparisons; exact missing-member origins reviewed separately.",
+      "observations": {
+        "serialization_calls": 1,
+        "restoration_calls": 1,
+        "pickle_protocol": 4,
+        "file_type": "django.db.models.fields.files.FieldFile",
+        "checks": {
+          "file_equal": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "name": {
+            "status": "VALUE",
+            "equal": true,
+            "error": null
+          },
+          "url": {
+            "status": "ATTRIBUTE_ERROR",
+            "equal": null,
+            "error": {
+              "type_fqn": "builtins.AttributeError",
+              "message": "'FieldFile' object has no attribute 'storage'",
+              "observed_attribute": "url",
+              "traceback": "Traceback (most recent call last):\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py\", line 37, in run\n    right = restored if attribute == \"file_equal\" else getattr(restored, attribute)\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\files.py\", line 62, in url\n    return self.storage.url(self.name)\nAttributeError: 'FieldFile' object has no attribute 'storage'\n"
+            }
+          },
+          "storage": {
+            "status": "ATTRIBUTE_ERROR",
+            "equal": null,
+            "error": {
+              "type_fqn": "builtins.AttributeError",
+              "message": "'FieldFile' object has no attribute 'storage'",
+              "observed_attribute": "storage",
+              "traceback": "Traceback (most recent call last):\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py\", line 37, in run\n    right = restored if attribute == \"file_equal\" else getattr(restored, attribute)\nAttributeError: 'FieldFile' object has no attribute 'storage'\n"
+            }
+          },
+          "instance": {
+            "status": "ATTRIBUTE_ERROR",
+            "equal": null,
+            "error": {
+              "type_fqn": "builtins.AttributeError",
+              "message": "'FieldFile' object has no attribute 'instance'",
+              "observed_attribute": "instance",
+              "traceback": "Traceback (most recent call last):\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py\", line 37, in run\n    right = restored if attribute == \"file_equal\" else getattr(restored, attribute)\nAttributeError: 'FieldFile' object has no attribute 'instance'\n"
+            }
+          },
+          "field": {
+            "status": "ATTRIBUTE_ERROR",
+            "equal": null,
+            "error": {
+              "type_fqn": "builtins.AttributeError",
+              "message": "'FieldFile' object has no attribute 'field'",
+              "observed_attribute": "field",
+              "traceback": "Traceback (most recent call last):\n  File \"LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py\", line 37, in run\n    right = restored if attribute == \"file_equal\" else getattr(restored, attribute)\nAttributeError: 'FieldFile' object has no attribute 'field'\n"
+            }
+          }
+        },
+        "witnesses": {
+          "name": "unused/test_file.py"
+        },
+        "native_access_error_count": 4,
+        "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+        "storage_identity": {
+          "status": "UNAVAILABLE",
+          "reason": "ATTRIBUTE_ERROR"
+        },
+        "name": "unused/test_file.py",
+        "url": {
+          "status": "UNAVAILABLE",
+          "reason": "ATTRIBUTE_ERROR"
+        },
+        "instance_identity": {
+          "status": "UNAVAILABLE",
+          "reason": "ATTRIBUTE_ERROR"
+        },
+        "field_identity": {
+          "status": "UNAVAILABLE",
+          "reason": "ATTRIBUTE_ERROR"
+        }
+      },
+      "signature": {
+        "satisfied": false,
+        "declared_violation": true
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "VIOLATED",
+        "pid": 23064,
+        "events": 16,
+        "raw_sha256": "bb5ae73f580221839d82ff6bb3d7b120716f80004ea76fcbb4ac88f694bc4e03",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "VIOLATED",
+        "pid": 23064,
+        "events": 16,
+        "raw_sha256": "bb5ae73f580221839d82ff6bb3d7b120716f80004ea76fcbb4ac88f694bc4e03",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r079\\G4_R079_012.trace.json",
+      "method_input_sha256": "c9e2487d9ce3e111b5f4a0f8996337df592e4e403b5dd74e16aa437a214fd3a4",
+      "projection_serialization_and_hash_seconds": 0.0020041000097990036,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_012\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "bb5ae73f580221839d82ff6bb3d7b120716f80004ea76fcbb4ac88f694bc4e03",
+      "native_target_pid": 23064,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_012\\process.json",
+      "process_record_sha256": "efd43b08f97d913467289c06eab4b0ee0852ac3e2c976cad8302f0eef9d723d4"
+    }
+  ],
+  "root_count": 1,
+  "native_processes_completed": 12,
+  "methods_evaluated": false,
+  "independent_humans": 0,
+  "production_runs": 0
+}

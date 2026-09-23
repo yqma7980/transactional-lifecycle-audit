@@ -1,0 +1,122 @@
+{
+  "schema": "M003_FRAME02_ISSUE_REFERENCE_ORDER_VERIFIED_V1",
+  "verified_utc": "2026-09-07 10:32:00 UTC",
+  "original_reference_frame": "ISSUE_REFERENCE_FRAME.json",
+  "original_reference_frame_sha256": "f58636c9bed841af52994b3bddbcab8fe0f104a9b57224081483ee0bd4bf16f4",
+  "reason": "Search connector returned null dates/state; fetched only the same five primary issue assets per project, projecting their timestamps/state before body review. No new search/page/reference.",
+  "projects": [
+    {
+      "repository": "pallets/click",
+      "sort_verified": true,
+      "references": [
+        {
+          "repository": "pallets/click",
+          "server_position": 1,
+          "issue_number": 412,
+          "url": "https://github.com/pallets/click/issues/412",
+          "created_at": "2015-08-21T08:29:57Z",
+          "state": "closed",
+          "isError": false,
+          "review_position": 1
+        },
+        {
+          "repository": "pallets/click",
+          "server_position": 2,
+          "issue_number": 839,
+          "url": "https://github.com/pallets/click/issues/839",
+          "created_at": "2017-08-11T18:23:36Z",
+          "state": "closed",
+          "isError": false,
+          "review_position": 2
+        },
+        {
+          "repository": "pallets/click",
+          "server_position": 3,
+          "issue_number": 1499,
+          "url": "https://github.com/pallets/click/issues/1499",
+          "created_at": "2020-03-11T19:13:18Z",
+          "state": "closed",
+          "isError": false,
+          "review_position": 3
+        },
+        {
+          "repository": "pallets/click",
+          "server_position": 4,
+          "issue_number": 1708,
+          "url": "https://github.com/pallets/click/issues/1708",
+          "created_at": "2020-11-09T20:01:20Z",
+          "state": "closed",
+          "isError": false,
+          "review_position": 4
+        },
+        {
+          "repository": "pallets/click",
+          "server_position": 5,
+          "issue_number": 2017,
+          "url": "https://github.com/pallets/click/issues/2017",
+          "created_at": "2021-07-23T19:29:30Z",
+          "state": "closed",
+          "isError": false,
+          "review_position": 5
+        }
+      ]
+    },
+    {
+      "repository": "python-trio/trio",
+      "sort_verified": true,
+      "references": [
+        {
+          "repository": "python-trio/trio",
+          "server_position": 1,
+          "issue_number": 6,
+          "url": "https://github.com/python-trio/trio/issues/6",
+          "created_at": "2017-01-22T12:25:29Z",
+          "state": "closed",
+          "isError": false,
+          "review_position": 1
+        },
+        {
+          "repository": "python-trio/trio",
+          "server_position": 2,
+          "issue_number": 27,
+          "url": "https://github.com/python-trio/trio/issues/27",
+          "created_at": "2017-01-22T14:11:22Z",
+          "state": "closed",
+          "isError": false,
+          "review_position": 2
+        },
+        {
+          "repository": "python-trio/trio",
+          "server_position": 3,
+          "issue_number": 55,
+          "url": "https://github.com/python-trio/trio/issues/55",
+          "created_at": "2017-02-15T14:28:08Z",
+          "state": "closed",
+          "isError": false,
+          "review_position": 3
+        },
+        {
+          "repository": "python-trio/trio",
+          "server_position": 4,
+          "issue_number": 57,
+          "url": "https://github.com/python-trio/trio/issues/57",
+          "created_at": "2017-02-21T07:35:42Z",
+          "state": "closed",
+          "isError": false,
+          "review_position": 4
+        },
+        {
+          "repository": "python-trio/trio",
+          "server_position": 5,
+          "issue_number": 103,
+          "url": "https://github.com/python-trio/trio/issues/103",
+          "created_at": "2017-03-13T23:19:44Z",
+          "state": "closed",
+          "isError": false,
+          "review_position": 5
+        }
+      ]
+    }
+  ],
+  "bodies_not_displayed_before_order_verification": true
+}

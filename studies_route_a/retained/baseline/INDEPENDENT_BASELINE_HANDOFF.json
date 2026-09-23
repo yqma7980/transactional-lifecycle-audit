@@ -1,0 +1,665 @@
+{
+  "schema": "m003-independent-rich-baseline-handoff-v1",
+  "task_id": "M-2026-003_S10G4_S11_20260907_174304",
+  "authored_for": "M003 independent rich-assertion comparator subtask",
+  "created_utc": "2026-09-07T10:03:12.7782184Z",
+  "status": "AUTHOR_SYNTHETIC_TESTS_PASSED_AWAITING_NONAUTHOR_REVIEW",
+  "selected_version": "R02_TYPED_JSON_20260907",
+  "selected_module": {
+    "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/rich_compare.py",
+    "sha256": "3909177d7942525dc01c7368bdfceb32f540e2693b88a1e98fa3bf3900a42f5b",
+    "bytes": 7929
+  },
+  "api": {
+    "evaluate79": "evaluate79(trace)",
+    "evaluate94": "evaluate94(trace)",
+    "normalized_evaluate": "normalized_evaluate(case, trace)",
+    "accepted_case_ids": [
+      79,
+      94
+    ],
+    "case_type": "Exact built-in int, not bool, float, string, or an int subclass",
+    "error_normalization": {
+      "verdict": "ERROR",
+      "failed": []
+    },
+    "direct_invalid_transport": "Raises TraceInputError; normalized wrapper catches evaluator Exception subclasses",
+    "missing_diagnostics": "Dot-joined strings, ordered eligibility operands first then relation operands",
+    "outcomes": [
+      "ERROR",
+      "UNSUPPORTED",
+      "INVALID",
+      "DETECTED",
+      "INVARIANT"
+    ]
+  },
+  "integration": {
+    "use_only_selected_module": true,
+    "do_not_import_superseded_module": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/rich_compare.py",
+    "superseded_root_is_retained_history": true,
+    "parent_handoff": "Use selected_module.path and verify hashes before integration or nonauthor review.",
+    "independent_review_status": "NOT_PERFORMED_BY_THIS_AUTHOR",
+    "parent_reported_next_step": "Parent integrates this handoff with another nonauthor review.",
+    "no_native_g4_data": "None collected by this author. User and transport clarification also state none collected preformal.",
+    "stop_after_handoff": true
+  },
+  "prose_inputs": [
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/governance/AUTHORIZED_SCOPE.md",
+      "relative_path": "governance/AUTHORIZED_SCOPE.md",
+      "sha256": "e3c837de9592e2687c01df79dea2ecdf4fd4e14c0851e6fbb7e15f43f0138e59",
+      "bytes": 3834,
+      "role": "authority_and_scope",
+      "timing": "Read before implementation and hash-locked before and after both test runs."
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/contracts/COMPARISON_SEMANTICS.md",
+      "relative_path": "contracts/COMPARISON_SEMANTICS.md",
+      "sha256": "05f799b810e2867b19c7d1ea0a42a2bb4687c1cf864dba2eb08ae9ecaec9c90e",
+      "bytes": 5116,
+      "role": "shared_prose_semantics",
+      "timing": "Read before implementation and hash-locked before and after both test runs."
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/contracts/TRANSPORT_CLARIFICATION_01.md",
+      "relative_path": "contracts/TRANSPORT_CLARIFICATION_01.md",
+      "sha256": "a7654528d6745331ac9520cee038c6365b3d37d50cec48fbcc97db12fef8a1bc",
+      "bytes": 1042,
+      "role": "preformal_transport_clarification",
+      "timing": "Read after both selected-version processes completed. Included in handoff only; not retroactively added to their pre-run locks."
+    }
+  ],
+  "clarification_alignment": {
+    "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/contracts/TRANSPORT_CLARIFICATION_01.md",
+    "sha256": "a7654528d6745331ac9520cee038c6365b3d37d50cec48fbcc97db12fef8a1bc",
+    "behavior_change_required": false,
+    "tests_changed_after_clarification": false,
+    "alignment": [
+      "Ordered dot-joined missing-path strings",
+      "Plain-integer case IDs only",
+      "Evaluator exceptions normalize to exactly ERROR and empty failed"
+    ],
+    "evidence_boundary": "Alignment is author assessment against the prose, not an independent review."
+  },
+  "implementation": {
+    "approach": "Direct fixed property checks independently authored from the common prose, without a declarative rule interpreter.",
+    "r79": {
+      "eligibility_checks": 3,
+      "relation_checks": 6,
+      "obligation": "O3"
+    },
+    "r94": {
+      "eligibility_checks": 3,
+      "relation_checks": 5,
+      "obligation": "O5"
+    },
+    "equality": "Exact built-in JSON types; bool/int/float distinct; ordered arrays; key-order-insensitive objects; null and missing distinct.",
+    "validation": "Whole finite JSON envelope before scoring, including ignored extras; reject subclasses, unsupported objects, non-string keys, nonfinite floats, and cycles.",
+    "priority": [
+      "Transport ERROR",
+      "Any ordered missing operand: UNSUPPORTED",
+      "Complete eligibility mismatch: INVALID",
+      "Eligible violated relations: DETECTED",
+      "Otherwise INVARIANT"
+    ],
+    "traversal": "Iterative, non-mutating validation and deep equality; all rule operands resolved before eligibility scoring.",
+    "extras": "Legal context/samples/checks extras outside fixed operand values are ignored for scoring; extra internal operand keys affect exact equality.",
+    "runtime_imports": [
+      "Python standard-library math"
+    ],
+    "entrypoint_has_no_python_assert_statements": true
+  },
+  "authored_assets": [
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/rich_compare.py",
+      "sha256": "3909177d7942525dc01c7368bdfceb32f540e2693b88a1e98fa3bf3900a42f5b",
+      "bytes": 7929
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/test_rich_compare.py",
+      "sha256": "6142922a477a43a422151ba666589096ad2884110a237c5b8093d8aeb10c72ae",
+      "bytes": 27064
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/run_synthetic_tests.py",
+      "sha256": "870b05c9b7f84e9e98b81a1e0f21c2514cf7c1a5f374e8e3589a81899b528fb4",
+      "bytes": 8308
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/README.md",
+      "sha256": "8f82b97d777decbd55d0a8e30e5c17adff9c09d22380fcb752f2187b05e2230a",
+      "bytes": 5458
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/SOURCE_LINEAGE.md",
+      "sha256": "a22673eef73313febd4657c4ee51cfc1b1df35a7bfcc61331c5e56f34fd49631",
+      "bytes": 1565
+    }
+  ],
+  "executedtests": {
+    "framework": "Python standard-library unittest; independently authored synthetic fixtures and expected outputs",
+    "selected_run": {
+      "run_id": "SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683",
+      "run_report": {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/RUN_REPORT.json",
+        "sha256": "aed22f93a97409db7c2f7d117d9455510f80036f8803f1c2d2778b01506cb0d8"
+      },
+      "started_utc": "2026-09-07T18:02:03.163093+08:00",
+      "finished_utc": "2026-09-07T18:02:04.029649+08:00",
+      "passed": true,
+      "fresh_distinct_processes": true,
+      "inputs_unchanged": true,
+      "optimization_semantics_identical": true,
+      "processes": [
+        {
+          "mode": "normal",
+          "command": [
+            "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+            "-I",
+            "-B",
+            "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\baseline\\successors\\R02_TYPED_JSON_20260907\\test_rich_compare.py"
+          ],
+          "working_directory": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907",
+          "pid": 43144,
+          "parent_pid": 44784,
+          "returncode": 0,
+          "python_version": [
+            3,
+            12,
+            10
+          ],
+          "optimization": 0,
+          "isolated": 1,
+          "dont_write_bytecode": true,
+          "timeout_seconds": 180,
+          "timed_out": false,
+          "wall_seconds": 0.2763875999953598,
+          "tests_run": 38,
+          "subtests_executed": 249,
+          "recorded_behavior_checks": 420,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "semantic_report_sha256": "383da4dce2fd2d8707f8869d8e72cec7b6737a97490350e414801a52f853819b",
+          "stdout": {
+            "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/stdout.log",
+            "bytes": 119251,
+            "sha256": "b912b38c78e97c0c249a87ac03641c0d43d8d14f329e6a577cf54f30d0e7ff5b"
+          },
+          "stderr": {
+            "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/stderr.log",
+            "bytes": 4846,
+            "sha256": "30f6cadaa9d5557d9daae1b561f9a974cde189a62af91f34a3a14af2ce52f1b6"
+          },
+          "full_synthetic_report": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/SYNTHETIC_REPORT.json",
+          "streams_within_16_mib": true
+        },
+        {
+          "mode": "optimized",
+          "command": [
+            "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+            "-I",
+            "-B",
+            "-O",
+            "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\baseline\\successors\\R02_TYPED_JSON_20260907\\test_rich_compare.py"
+          ],
+          "working_directory": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907",
+          "pid": 42948,
+          "parent_pid": 44784,
+          "returncode": 0,
+          "python_version": [
+            3,
+            12,
+            10
+          ],
+          "optimization": 1,
+          "isolated": 1,
+          "dont_write_bytecode": true,
+          "timeout_seconds": 180,
+          "timed_out": false,
+          "wall_seconds": 0.5224429999943823,
+          "tests_run": 38,
+          "subtests_executed": 249,
+          "recorded_behavior_checks": 420,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "semantic_report_sha256": "383da4dce2fd2d8707f8869d8e72cec7b6737a97490350e414801a52f853819b",
+          "stdout": {
+            "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/stdout.log",
+            "bytes": 119251,
+            "sha256": "0ebac41f94132ea813b42376ece9fc10f79bd8f166731c44e6ed8b59be0bd84f"
+          },
+          "stderr": {
+            "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/stderr.log",
+            "bytes": 4846,
+            "sha256": "a8252c8eabc47984d178540e45b18421fdfe7c3b4876f801bce797c9276046c6"
+          },
+          "full_synthetic_report": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/SYNTHETIC_REPORT.json",
+          "streams_within_16_mib": true
+        }
+      ]
+    },
+    "unique_test_methods": 38,
+    "total_selected_test_method_executions": 76,
+    "subtest_events_per_process": 249,
+    "recorded_behavior_checks_per_process": 420,
+    "complete_eligible_truth_patterns_per_process": {
+      "r79": 64,
+      "r94": 32
+    },
+    "complete_eligibility_truth_patterns_per_process": {
+      "r79": 8,
+      "r94": 8
+    },
+    "executed_test_ids": [
+      "__main__.RichComparatorTests.test_all_eligibility_patterns_and_invalid_priority",
+      "__main__.RichComparatorTests.test_all_missing_paths_are_ordered",
+      "__main__.RichComparatorTests.test_all_r79_eligible_truth_patterns",
+      "__main__.RichComparatorTests.test_all_r94_eligible_truth_patterns",
+      "__main__.RichComparatorTests.test_arbitrary_json_context_is_missing_not_error",
+      "__main__.RichComparatorTests.test_arbitrary_json_samples_is_missing_not_error",
+      "__main__.RichComparatorTests.test_boolean_integer_float_distinction_in_properties",
+      "__main__.RichComparatorTests.test_comparator_import_surface_and_no_optimization_asserts",
+      "__main__.RichComparatorTests.test_cycles_are_errors_but_aliases_are_legal",
+      "__main__.RichComparatorTests.test_deep_acyclic_json_does_not_need_recursion",
+      "__main__.RichComparatorTests.test_deep_typed_equality",
+      "__main__.RichComparatorTests.test_each_missing_operand",
+      "__main__.RichComparatorTests.test_equality_rejects_malformed_both_sides",
+      "__main__.RichComparatorTests.test_exact_eligibility_literals_and_list_order",
+      "__main__.RichComparatorTests.test_extra_internal_keys_break_exact_object_equality",
+      "__main__.RichComparatorTests.test_extra_legal_keys_are_ignored_outside_fixed_operands",
+      "__main__.RichComparatorTests.test_hostile_metaclass_values_are_not_json",
+      "__main__.RichComparatorTests.test_invalid_envelopes",
+      "__main__.RichComparatorTests.test_json_decoded_nonfinite_and_overflow",
+      "__main__.RichComparatorTests.test_key_order_is_irrelevant",
+      "__main__.RichComparatorTests.test_missing_outranks_invalid_and_failed",
+      "__main__.RichComparatorTests.test_no_mutation_for_all_normalized_verdicts",
+      "__main__.RichComparatorTests.test_no_mutation_for_equality_and_cyclic_error",
+      "__main__.RichComparatorTests.test_nonfinite_values_every_transport_region",
+      "__main__.RichComparatorTests.test_nonstring_and_subclass_object_keys",
+      "__main__.RichComparatorTests.test_normalized_case_domain_is_exact",
+      "__main__.RichComparatorTests.test_present_null_eligibility_is_invalid",
+      "__main__.RichComparatorTests.test_present_null_relation_is_detected",
+      "__main__.RichComparatorTests.test_r79_attribute_error_is_present_violation",
+      "__main__.RichComparatorTests.test_r79_partial_and_nested_null_operands_are_values",
+      "__main__.RichComparatorTests.test_r94_partial_and_nested_null_operands_are_values",
+      "__main__.RichComparatorTests.test_r94_receipt_order_and_duplicates",
+      "__main__.RichComparatorTests.test_return_values_do_not_leak_mutable_state",
+      "__main__.RichComparatorTests.test_satisfied_direct_and_normalized",
+      "__main__.RichComparatorTests.test_spoofed_case_is_exact_error",
+      "__main__.RichComparatorTests.test_transport_error_outranks_missing_and_invalid",
+      "__main__.RichComparatorTests.test_type_equality_hooks_are_never_called",
+      "__main__.RichComparatorTests.test_unsupported_values_and_container_subclasses"
+    ],
+    "optimization_invariance": {
+      "comparison": "Exact equality of recorded semantic reports, including per-check results, test IDs, counts, failures, and coverage; process IDs, timing, and optimization flags excluded.",
+      "equal": true,
+      "semantic_report_sha256": "383da4dce2fd2d8707f8869d8e72cec7b6737a97490350e414801a52f853819b"
+    },
+    "synthetic_only": true,
+    "not_native_processes": true,
+    "counts_are_not_independent_bugs_or_human_samples": true
+  },
+  "preservation": {
+    "write_root": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline",
+    "manual_artifacts_created_with": "apply_patch, new files only",
+    "execution_evidence": "Create-only files inside exclusive run-ID directories below baseline; stdout and stderr retained.",
+    "overwritten_prior_files": 0,
+    "deleted_files_or_failed_outputs": 0,
+    "total_test_processes_this_task": 4,
+    "total_native_target_processes_this_task": 0,
+    "recorded_failed_test_runs": 0,
+    "total_evidence_bytes_before_handoff": 1414927,
+    "future_fixes": "Successor source paths and exclusive new run IDs only; preserve all versions and failures.",
+    "superseded_version": {
+      "version": "R01",
+      "module": {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/rich_compare.py",
+        "sha256": "a6a0a2d45252ce6981afcf05028440a4e57e10651ad2900c4bfd144dbb14a8b6",
+        "bytes": 7898
+      },
+      "reason": "After passing R01 self-tests, author inspection identified type-membership equality could be spoofed by user-defined metaclasses. R02 uses identity-only type admission and adds three regression methods.",
+      "fixed_property_rules_changed": false,
+      "old_tests_and_logs_preserved": true,
+      "finding_is_author_self_inspection_not_independent_review": true,
+      "r01_not_reexecuted_with_r02_tests": true,
+      "run": {
+        "run_id": "SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e",
+        "run_report": {
+          "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/RUN_REPORT.json",
+          "sha256": "49977781656932058343cc21cd512806e74cf670a06b97ce8b73f14b1f9cd8d2"
+        },
+        "started_utc": "2026-09-07T17:59:11.229885+08:00",
+        "finished_utc": "2026-09-07T17:59:11.971114+08:00",
+        "passed": true,
+        "fresh_distinct_processes": true,
+        "inputs_unchanged": true,
+        "optimization_semantics_identical": true,
+        "processes": [
+          {
+            "mode": "normal",
+            "command": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\baseline\\test_rich_compare.py"
+            ],
+            "working_directory": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline",
+            "pid": 47512,
+            "parent_pid": 20204,
+            "returncode": 0,
+            "python_version": [
+              3,
+              12,
+              10
+            ],
+            "optimization": 0,
+            "isolated": 1,
+            "dont_write_bytecode": true,
+            "timeout_seconds": 180,
+            "timed_out": false,
+            "wall_seconds": 0.22197670000605285,
+            "tests_run": 35,
+            "subtests_executed": 231,
+            "recorded_behavior_checks": 388,
+            "failures": 0,
+            "errors": 0,
+            "skipped": 0,
+            "semantic_report_sha256": "9131214ec7a5d9ac4974e272c6329802feb81f32727be25ff8024c51d45d921c",
+            "stdout": {
+              "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/stdout.log",
+              "bytes": 114020,
+              "sha256": "2638884b8f37c52512885256f00c328cc55998f743a5dc2880c1f62c6d98095a"
+            },
+            "stderr": {
+              "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/stderr.log",
+              "bytes": 4493,
+              "sha256": "d90cb4b4e1a49a63aa27d9b4e673daa8371175f2285c9a15aa55ad8e05ea0568"
+            },
+            "full_synthetic_report": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/SYNTHETIC_REPORT.json",
+            "streams_within_16_mib": true
+          },
+          {
+            "mode": "optimized",
+            "command": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-B",
+              "-O",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\baseline\\test_rich_compare.py"
+            ],
+            "working_directory": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline",
+            "pid": 34468,
+            "parent_pid": 20204,
+            "returncode": 0,
+            "python_version": [
+              3,
+              12,
+              10
+            ],
+            "optimization": 1,
+            "isolated": 1,
+            "dont_write_bytecode": true,
+            "timeout_seconds": 180,
+            "timed_out": false,
+            "wall_seconds": 0.46644869999727234,
+            "tests_run": 35,
+            "subtests_executed": 231,
+            "recorded_behavior_checks": 388,
+            "failures": 0,
+            "errors": 0,
+            "skipped": 0,
+            "semantic_report_sha256": "9131214ec7a5d9ac4974e272c6329802feb81f32727be25ff8024c51d45d921c",
+            "stdout": {
+              "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/stdout.log",
+              "bytes": 114020,
+              "sha256": "bb187900687f04c73170cf1eb71abdffbe4fc05d7be7fee932245bfe57732a9a"
+            },
+            "stderr": {
+              "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/stderr.log",
+              "bytes": 4493,
+              "sha256": "4ff80e98f825cbff63a3334660a10c356546abcd5cf492fd4c6ad4039171d54f"
+            },
+            "full_synthetic_report": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/SYNTHETIC_REPORT.json",
+            "streams_within_16_mib": true
+          }
+        ]
+      }
+    }
+  },
+  "scope": {
+    "implementation_inputs": "Only user instructions, three shared prose files, and this author's preserved baseline source/evidence.",
+    "forbidden_material_not_read_or_imported": [
+      "frozen_core.py",
+      "LCMA wrappers",
+      "generated declarative contracts",
+      "prior LCMA outputs",
+      "target source",
+      "target runtime",
+      "prior expected native labels"
+    ],
+    "prohibited_actions_not_performed": [
+      "Native target runs",
+      "G4 target-data collection",
+      "Downloads",
+      "Package installation",
+      "Core/projection implementation or review",
+      "Target/source-origin review",
+      "Human experiments",
+      "Manuscript edits",
+      "Publication or submission"
+    ],
+    "independent_source_and_provenance_gate": "External prerequisite, not performed by this baseline.",
+    "no_comparator_agreement_claim": true,
+    "no_native_qualification_claim": true,
+    "no_efficacy_generalization_production_or_publication_claim": true,
+    "attestation_boundary": "This is an authored implementation and author self-test handoff, not independent nonauthor review or independent-human reproduction."
+  },
+  "hashes": {
+    "algorithm": "SHA-256",
+    "evidence_file_count": 33,
+    "evidence_files": [
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/README.md",
+        "relative_path": "baseline/README.md",
+        "sha256": "56d9943c22d094b35f3fe47f1537647d84e9c605c44598cbaf0844d1281151bc",
+        "bytes": 5166
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/rich_compare.py",
+        "relative_path": "baseline/rich_compare.py",
+        "sha256": "a6a0a2d45252ce6981afcf05028440a4e57e10651ad2900c4bfd144dbb14a8b6",
+        "bytes": 7898
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/run_synthetic_tests.py",
+        "relative_path": "baseline/run_synthetic_tests.py",
+        "sha256": "83f6e9b00b13bff5c59c9f0f0e73ebdd1559b74eb92d19f7d7e861a12fcc650a",
+        "bytes": 8213
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/INVOCATION.json",
+        "relative_path": "baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/INVOCATION.json",
+        "sha256": "82ffe85d10229f82c69904927818870bb4aa0202f66142bd0d3f609f1d99097a",
+        "bytes": 479
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/RESULT.json",
+        "relative_path": "baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/RESULT.json",
+        "sha256": "fed00cc95202ae461634310fa7daaede90b21ac87ffc5739847b943a063b95b6",
+        "bytes": 4581
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/stderr.log",
+        "relative_path": "baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/stderr.log",
+        "sha256": "d90cb4b4e1a49a63aa27d9b4e673daa8371175f2285c9a15aa55ad8e05ea0568",
+        "bytes": 4493
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/stdout.log",
+        "relative_path": "baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/stdout.log",
+        "sha256": "2638884b8f37c52512885256f00c328cc55998f743a5dc2880c1f62c6d98095a",
+        "bytes": 114020
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/SYNTHETIC_REPORT.json",
+        "relative_path": "baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/normal/SYNTHETIC_REPORT.json",
+        "sha256": "192cd5650119f2b09a68a0fa64fc14860bf052c7e52f58ef6583d2f9486fa287",
+        "bytes": 192085
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/INVOCATION.json",
+        "relative_path": "baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/INVOCATION.json",
+        "sha256": "5dffa7ddc7c7274a582d0d79789d40cb40ca126d318e8941469ee7d834304040",
+        "bytes": 492
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/RESULT.json",
+        "relative_path": "baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/RESULT.json",
+        "sha256": "8c07f6796e4ca881d66ce80995e0cbcfcc17fd1a710c72262c3795472d228282",
+        "bytes": 4594
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/stderr.log",
+        "relative_path": "baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/stderr.log",
+        "sha256": "4ff80e98f825cbff63a3334660a10c356546abcd5cf492fd4c6ad4039171d54f",
+        "bytes": 4493
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/stdout.log",
+        "relative_path": "baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/stdout.log",
+        "sha256": "bb187900687f04c73170cf1eb71abdffbe4fc05d7be7fee932245bfe57732a9a",
+        "bytes": 114020
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/SYNTHETIC_REPORT.json",
+        "relative_path": "baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/optimized/SYNTHETIC_REPORT.json",
+        "sha256": "50a00c3076b0bc1e4bbe113ec37e947b7befc61fbb3face309575a8981766bf1",
+        "bytes": 192085
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/RUN_REPORT.json",
+        "relative_path": "baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/RUN_REPORT.json",
+        "sha256": "49977781656932058343cc21cd512806e74cf670a06b97ce8b73f14b1f9cd8d2",
+        "bytes": 12372
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/RUN_STARTED.json",
+        "relative_path": "baseline/runs/SYNTHETIC_RICH_R01_20260907T095911Z_a7a46c57f1cc4f718b2dac5d1c452a9e/RUN_STARTED.json",
+        "sha256": "0fda812eaab7a079650a9468fb7ddc7c1e759e67fcc249d2866b99f29bca2e33",
+        "bytes": 1363
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/README.md",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/README.md",
+        "sha256": "8f82b97d777decbd55d0a8e30e5c17adff9c09d22380fcb752f2187b05e2230a",
+        "bytes": 5458
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/rich_compare.py",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/rich_compare.py",
+        "sha256": "3909177d7942525dc01c7368bdfceb32f540e2693b88a1e98fa3bf3900a42f5b",
+        "bytes": 7929
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/run_synthetic_tests.py",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/run_synthetic_tests.py",
+        "sha256": "870b05c9b7f84e9e98b81a1e0f21c2514cf7c1a5f374e8e3589a81899b528fb4",
+        "bytes": 8308
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/INVOCATION.json",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/INVOCATION.json",
+        "sha256": "7bd3ba5d7c6b37b9a3e28d333b794fcc27e0118fb8c6dd9887106d62882c12e9",
+        "bytes": 553
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/RESULT.json",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/RESULT.json",
+        "sha256": "65cb06f3bdada9a3e34d8737dc8eaaf11a3cb10100c77231cfd3d654cfa4afc7",
+        "bytes": 4886
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/stderr.log",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/stderr.log",
+        "sha256": "30f6cadaa9d5557d9daae1b561f9a974cde189a62af91f34a3a14af2ce52f1b6",
+        "bytes": 4846
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/stdout.log",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/stdout.log",
+        "sha256": "b912b38c78e97c0c249a87ac03641c0d43d8d14f329e6a577cf54f30d0e7ff5b",
+        "bytes": 119251
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/SYNTHETIC_REPORT.json",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/normal/SYNTHETIC_REPORT.json",
+        "sha256": "00dc40bdb59fc20e0bffe6196811df2deb61b02a549a42c9055e74a9d5dd401e",
+        "bytes": 199523
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/INVOCATION.json",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/INVOCATION.json",
+        "sha256": "4bb7d4e1f306b1bb56ef67b670e90f41de933f182b7bb00b690dbd30b85f538f",
+        "bytes": 566
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/RESULT.json",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/RESULT.json",
+        "sha256": "d1eb351346aa6a4c20508d850b7817ce8bab153cf2f31fc8267e2628622435c8",
+        "bytes": 4899
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/stderr.log",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/stderr.log",
+        "sha256": "a8252c8eabc47984d178540e45b18421fdfe7c3b4876f801bce797c9276046c6",
+        "bytes": 4846
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/stdout.log",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/stdout.log",
+        "sha256": "0ebac41f94132ea813b42376ece9fc10f79bd8f166731c44e6ed8b59be0bd84f",
+        "bytes": 119251
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/SYNTHETIC_REPORT.json",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/optimized/SYNTHETIC_REPORT.json",
+        "sha256": "f0d134cf9b3f7fe191c642a042b56fcb2ea5726a24056c91eaec80558929da6e",
+        "bytes": 199523
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/RUN_REPORT.json",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/RUN_REPORT.json",
+        "sha256": "aed22f93a97409db7c2f7d117d9455510f80036f8803f1c2d2778b01506cb0d8",
+        "bytes": 13597
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/RUN_STARTED.json",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/runs/SYNTHETIC_RICH_R02_20260907T100203Z_3453e8f8279d45b6882b425578cb4683/RUN_STARTED.json",
+        "sha256": "5cf29fc303af452e797312f5813aeacef8f767a165eb4112f784fbb9d81eec20",
+        "bytes": 1677
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/SOURCE_LINEAGE.md",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/SOURCE_LINEAGE.md",
+        "sha256": "a22673eef73313febd4657c4ee51cfc1b1df35a7bfcc61331c5e56f34fd49631",
+        "bytes": 1565
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/successors/R02_TYPED_JSON_20260907/test_rich_compare.py",
+        "relative_path": "baseline/successors/R02_TYPED_JSON_20260907/test_rich_compare.py",
+        "sha256": "6142922a477a43a422151ba666589096ad2884110a237c5b8093d8aeb10c72ae",
+        "bytes": 27064
+      },
+      {
+        "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/baseline/test_rich_compare.py",
+        "relative_path": "baseline/test_rich_compare.py",
+        "sha256": "3bbf6af30355e7a44944bfbd050257e23035cfdd00dc1c89c94d78f82541e5fa",
+        "bytes": 24831
+      }
+    ],
+    "self_hash_policy": "This handoff and its digest sidecar are excluded from the evidence inventory to avoid self-reference.",
+    "verification": "Both run reports locked authored/common inputs before and after execution. Current evidence hashes were rechecked when assembling this handoff."
+  }
+}

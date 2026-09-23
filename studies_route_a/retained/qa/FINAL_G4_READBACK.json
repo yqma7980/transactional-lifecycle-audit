@@ -1,0 +1,80 @@
+{
+  "utc": "2026-09-07T12:46:23.023692+00:00",
+  "passed": true,
+  "results": [
+    {
+      "rank": 79,
+      "native_processes": 12,
+      "evaluator_processes": 4,
+      "fresh_replay_passed": true,
+      "diagnostic_parity": true,
+      "arms": {
+        "lcma": {
+          "native_violations": 3,
+          "native_satisfied": 9,
+          "detected_violations": 3,
+          "missed_violations": 0,
+          "false_alarms": 0,
+          "unsupported": 0,
+          "invalid": 0,
+          "errors": 0,
+          "median_ns_per_trace": 50534.875
+        },
+        "rich": {
+          "native_violations": 3,
+          "native_satisfied": 9,
+          "detected_violations": 3,
+          "missed_violations": 0,
+          "false_alarms": 0,
+          "unsupported": 0,
+          "invalid": 0,
+          "errors": 0,
+          "median_ns_per_trace": 23275.666666666664
+        }
+      },
+      "lcma_over_rich_pure_evaluator_time_ratio": 2.1711461898692486,
+      "input_sha256": "a058f897650bef80fcbf52dfc52b13798890e37ef17e8477b617cdf9aab893c8",
+      "exact_sealed_method_bytes": true
+    },
+    {
+      "rank": 94,
+      "native_processes": 12,
+      "evaluator_processes": 4,
+      "fresh_replay_passed": true,
+      "diagnostic_parity": true,
+      "arms": {
+        "lcma": {
+          "native_violations": 3,
+          "native_satisfied": 9,
+          "detected_violations": 3,
+          "missed_violations": 0,
+          "false_alarms": 0,
+          "unsupported": 0,
+          "invalid": 0,
+          "errors": 0,
+          "median_ns_per_trace": 42006.375
+        },
+        "rich": {
+          "native_violations": 3,
+          "native_satisfied": 9,
+          "detected_violations": 3,
+          "missed_violations": 0,
+          "false_alarms": 0,
+          "unsupported": 0,
+          "invalid": 0,
+          "errors": 0,
+          "median_ns_per_trace": 19411.5
+        }
+      },
+      "lcma_over_rich_pure_evaluator_time_ratio": 2.1639942817402056,
+      "input_sha256": "f7a5149cc7832ab47243b73655a37f0e2392e3af729ffc1c76f2ba7732694fa2",
+      "exact_sealed_method_bytes": true
+    }
+  ],
+  "unchanged_historical_files": 69807,
+  "authority": "Parent read-only rederivation, not another native replication or human review",
+  "disclosed_negative": "No detection/diagnostic advantage; LCMA slower on both cases",
+  "sample_unit": "Two historical project/defect lineages; 24 native process observations, not 24 defects",
+  "no_new_native_calls": true,
+  "no_remote_operations": true
+}

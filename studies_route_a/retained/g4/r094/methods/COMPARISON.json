@@ -1,0 +1,398 @@
+{
+  "utc": "2026-09-07T11:02:24.354347+00:00",
+  "rank": 94,
+  "root_count": 1,
+  "project_count": 1,
+  "evidence_class": "EXPOSED_PROJECT_EQUAL_INFORMATION_FORMAL_COMPARISON",
+  "native_processes": 12,
+  "method_processes": 4,
+  "same_input_sha256": "f7a5149cc7832ab47243b73655a37f0e2392e3af729ffc1c76f2ba7732694fa2",
+  "native_pids": [
+    3156,
+    46400,
+    10592,
+    40024,
+    19396,
+    27000,
+    12632,
+    26032,
+    15108,
+    28768,
+    40108,
+    18836
+  ],
+  "method_pids": [
+    21768,
+    20588,
+    8336,
+    24408
+  ],
+  "native_contrast_replays": [
+    {
+      "repetition": 1,
+      "matched": true
+    },
+    {
+      "repetition": 2,
+      "matched": true
+    },
+    {
+      "repetition": 3,
+      "matched": true
+    }
+  ],
+  "diagnostic_parity": true,
+  "arms": {
+    "lcma": {
+      "native_violations": 3,
+      "native_satisfied": 9,
+      "detected_violations": 3,
+      "missed_violations": 0,
+      "false_alarms": 0,
+      "unsupported": 0,
+      "invalid": 0,
+      "errors": 0,
+      "median_ns_per_trace_by_fresh_process": [
+        41321.75,
+        42691.0
+      ],
+      "median_ns_per_trace": 42006.375,
+      "diagnoses": [
+        {
+          "ordinal": 1,
+          "native_reference": "VIOLATED",
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "pending_count_empty",
+              "obligation": "O5"
+            },
+            {
+              "id": "pending_ids_empty",
+              "obligation": "O5"
+            },
+            {
+              "id": "receipt_order",
+              "obligation": "O5"
+            },
+            {
+              "id": "callback_once",
+              "obligation": "O5"
+            },
+            {
+              "id": "callback_balanced",
+              "obligation": "O5"
+            }
+          ]
+        },
+        {
+          "ordinal": 2,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 3,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 4,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 5,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 6,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 7,
+          "native_reference": "VIOLATED",
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "pending_count_empty",
+              "obligation": "O5"
+            },
+            {
+              "id": "pending_ids_empty",
+              "obligation": "O5"
+            },
+            {
+              "id": "receipt_order",
+              "obligation": "O5"
+            },
+            {
+              "id": "callback_once",
+              "obligation": "O5"
+            },
+            {
+              "id": "callback_balanced",
+              "obligation": "O5"
+            }
+          ]
+        },
+        {
+          "ordinal": 8,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 9,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 10,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 11,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 12,
+          "native_reference": "VIOLATED",
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "pending_count_empty",
+              "obligation": "O5"
+            },
+            {
+              "id": "pending_ids_empty",
+              "obligation": "O5"
+            },
+            {
+              "id": "receipt_order",
+              "obligation": "O5"
+            },
+            {
+              "id": "callback_once",
+              "obligation": "O5"
+            },
+            {
+              "id": "callback_balanced",
+              "obligation": "O5"
+            }
+          ]
+        }
+      ]
+    },
+    "rich": {
+      "native_violations": 3,
+      "native_satisfied": 9,
+      "detected_violations": 3,
+      "missed_violations": 0,
+      "false_alarms": 0,
+      "unsupported": 0,
+      "invalid": 0,
+      "errors": 0,
+      "median_ns_per_trace_by_fresh_process": [
+        19032.083333333332,
+        19790.916666666668
+      ],
+      "median_ns_per_trace": 19411.5,
+      "diagnoses": [
+        {
+          "ordinal": 1,
+          "native_reference": "VIOLATED",
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "pending_count_empty",
+              "obligation": "O5"
+            },
+            {
+              "id": "pending_ids_empty",
+              "obligation": "O5"
+            },
+            {
+              "id": "receipt_order",
+              "obligation": "O5"
+            },
+            {
+              "id": "callback_once",
+              "obligation": "O5"
+            },
+            {
+              "id": "callback_balanced",
+              "obligation": "O5"
+            }
+          ]
+        },
+        {
+          "ordinal": 2,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 3,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 4,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 5,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 6,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 7,
+          "native_reference": "VIOLATED",
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "pending_count_empty",
+              "obligation": "O5"
+            },
+            {
+              "id": "pending_ids_empty",
+              "obligation": "O5"
+            },
+            {
+              "id": "receipt_order",
+              "obligation": "O5"
+            },
+            {
+              "id": "callback_once",
+              "obligation": "O5"
+            },
+            {
+              "id": "callback_balanced",
+              "obligation": "O5"
+            }
+          ]
+        },
+        {
+          "ordinal": 8,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 9,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 10,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 11,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 12,
+          "native_reference": "VIOLATED",
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "pending_count_empty",
+              "obligation": "O5"
+            },
+            {
+              "id": "pending_ids_empty",
+              "obligation": "O5"
+            },
+            {
+              "id": "receipt_order",
+              "obligation": "O5"
+            },
+            {
+              "id": "callback_once",
+              "obligation": "O5"
+            },
+            {
+              "id": "callback_balanced",
+              "obligation": "O5"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "lcma_over_rich_pure_evaluator_time_ratio": 2.1639942817402056,
+  "shared_native_wall_seconds": 64.12599999993108,
+  "shared_native_cpu_seconds": 60.671875,
+  "shared_native_peak_job_memory_bytes": 46465024,
+  "projected_input_packing_seconds": 0.009766600036527961,
+  "raw_projection_serialization_hash_seconds": 0.10692210000706837,
+  "evaluator_process_costs": [
+    {
+      "arm": "lcma",
+      "pid": 21768,
+      "wall_seconds": 0.6709999999729916,
+      "cpu_seconds": 0.640625,
+      "peak_job_memory_bytes": 22446080
+    },
+    {
+      "arm": "rich",
+      "pid": 20588,
+      "wall_seconds": 0.48499999998603016,
+      "cpu_seconds": 0.421875,
+      "peak_job_memory_bytes": 22327296
+    },
+    {
+      "arm": "rich",
+      "pid": 8336,
+      "wall_seconds": 0.5310000000172295,
+      "cpu_seconds": 0.46875,
+      "peak_job_memory_bytes": 22294528
+    },
+    {
+      "arm": "lcma",
+      "pid": 24408,
+      "wall_seconds": 0.6880000000237487,
+      "cpu_seconds": 0.65625,
+      "peak_job_memory_bytes": 22568960
+    }
+  ],
+  "claims": {
+    "new_root_delta": 0,
+    "developed_project_not_holdout": true,
+    "independent_humans": 0,
+    "production_validation": 0,
+    "population_inference": false,
+    "diagnostic_ids_are_not_causal_localization": true,
+    "timing_is_descriptive_not_cpu_pinned": true,
+    "native_collection_shared_not_instrumentation_baseline": true,
+    "precomputed_primitive_observation_oracle_not_invented_by_lcma": true
+  }
+}

@@ -1,0 +1,506 @@
+[
+  {
+    "context": {
+      "protocol_id": "G4-ASSOCIATION-RESTORE-1",
+      "observation_point": "post_restore_property_window",
+      "observation_order": [
+        "file_equal",
+        "name",
+        "url",
+        "storage",
+        "instance",
+        "field"
+      ]
+    },
+    "samples": {
+      "checks": {
+        "file_equal": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "name": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "url": {
+          "status": "ATTRIBUTE_ERROR",
+          "equal": null
+        },
+        "storage": {
+          "status": "ATTRIBUTE_ERROR",
+          "equal": null
+        },
+        "instance": {
+          "status": "ATTRIBUTE_ERROR",
+          "equal": null
+        },
+        "field": {
+          "status": "ATTRIBUTE_ERROR",
+          "equal": null
+        }
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-ASSOCIATION-RESTORE-1",
+      "observation_point": "post_restore_property_window",
+      "observation_order": [
+        "file_equal",
+        "name",
+        "url",
+        "storage",
+        "instance",
+        "field"
+      ]
+    },
+    "samples": {
+      "checks": {
+        "file_equal": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "name": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "url": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "storage": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "instance": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "field": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-ASSOCIATION-RESTORE-1",
+      "observation_point": "post_restore_property_window",
+      "observation_order": [
+        "file_equal",
+        "name",
+        "url",
+        "storage",
+        "instance",
+        "field"
+      ]
+    },
+    "samples": {
+      "checks": {
+        "file_equal": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "name": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "url": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "storage": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "instance": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "field": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-ASSOCIATION-RESTORE-1",
+      "observation_point": "post_restore_property_window",
+      "observation_order": [
+        "file_equal",
+        "name",
+        "url",
+        "storage",
+        "instance",
+        "field"
+      ]
+    },
+    "samples": {
+      "checks": {
+        "file_equal": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "name": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "url": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "storage": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "instance": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "field": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-ASSOCIATION-RESTORE-1",
+      "observation_point": "post_restore_property_window",
+      "observation_order": [
+        "file_equal",
+        "name",
+        "url",
+        "storage",
+        "instance",
+        "field"
+      ]
+    },
+    "samples": {
+      "checks": {
+        "file_equal": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "name": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "url": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "storage": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "instance": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "field": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-ASSOCIATION-RESTORE-1",
+      "observation_point": "post_restore_property_window",
+      "observation_order": [
+        "file_equal",
+        "name",
+        "url",
+        "storage",
+        "instance",
+        "field"
+      ]
+    },
+    "samples": {
+      "checks": {
+        "file_equal": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "name": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "url": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "storage": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "instance": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "field": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-ASSOCIATION-RESTORE-1",
+      "observation_point": "post_restore_property_window",
+      "observation_order": [
+        "file_equal",
+        "name",
+        "url",
+        "storage",
+        "instance",
+        "field"
+      ]
+    },
+    "samples": {
+      "checks": {
+        "file_equal": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "name": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "url": {
+          "status": "ATTRIBUTE_ERROR",
+          "equal": null
+        },
+        "storage": {
+          "status": "ATTRIBUTE_ERROR",
+          "equal": null
+        },
+        "instance": {
+          "status": "ATTRIBUTE_ERROR",
+          "equal": null
+        },
+        "field": {
+          "status": "ATTRIBUTE_ERROR",
+          "equal": null
+        }
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-ASSOCIATION-RESTORE-1",
+      "observation_point": "post_restore_property_window",
+      "observation_order": [
+        "file_equal",
+        "name",
+        "url",
+        "storage",
+        "instance",
+        "field"
+      ]
+    },
+    "samples": {
+      "checks": {
+        "file_equal": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "name": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "url": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "storage": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "instance": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "field": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-ASSOCIATION-RESTORE-1",
+      "observation_point": "post_restore_property_window",
+      "observation_order": [
+        "file_equal",
+        "name",
+        "url",
+        "storage",
+        "instance",
+        "field"
+      ]
+    },
+    "samples": {
+      "checks": {
+        "file_equal": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "name": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "url": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "storage": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "instance": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "field": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-ASSOCIATION-RESTORE-1",
+      "observation_point": "post_restore_property_window",
+      "observation_order": [
+        "file_equal",
+        "name",
+        "url",
+        "storage",
+        "instance",
+        "field"
+      ]
+    },
+    "samples": {
+      "checks": {
+        "file_equal": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "name": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "url": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "storage": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "instance": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "field": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-ASSOCIATION-RESTORE-1",
+      "observation_point": "post_restore_property_window",
+      "observation_order": [
+        "file_equal",
+        "name",
+        "url",
+        "storage",
+        "instance",
+        "field"
+      ]
+    },
+    "samples": {
+      "checks": {
+        "file_equal": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "name": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "url": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "storage": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "instance": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "field": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    }
+  },
+  {
+    "context": {
+      "protocol_id": "G4-ASSOCIATION-RESTORE-1",
+      "observation_point": "post_restore_property_window",
+      "observation_order": [
+        "file_equal",
+        "name",
+        "url",
+        "storage",
+        "instance",
+        "field"
+      ]
+    },
+    "samples": {
+      "checks": {
+        "file_equal": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "name": {
+          "status": "VALUE",
+          "equal": true
+        },
+        "url": {
+          "status": "ATTRIBUTE_ERROR",
+          "equal": null
+        },
+        "storage": {
+          "status": "ATTRIBUTE_ERROR",
+          "equal": null
+        },
+        "instance": {
+          "status": "ATTRIBUTE_ERROR",
+          "equal": null
+        },
+        "field": {
+          "status": "ATTRIBUTE_ERROR",
+          "equal": null
+        }
+      }
+    }
+  }
+]

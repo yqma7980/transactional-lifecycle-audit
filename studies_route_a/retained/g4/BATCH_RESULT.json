@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "rank": 79,
+      "mode": "run",
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\qa\\formal_r079_run_01\\process.json",
+      "status": "COMPLETED",
+      "exit_code": 0
+    },
+    {
+      "rank": 79,
+      "mode": "recheck",
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\qa\\formal_r079_recheck_01\\process.json",
+      "status": "COMPLETED",
+      "exit_code": 0
+    },
+    {
+      "rank": 79,
+      "mode": "methods",
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\qa\\formal_r079_methods_01\\process.json",
+      "status": "COMPLETED",
+      "exit_code": 0
+    },
+    {
+      "rank": 94,
+      "mode": "run",
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\qa\\formal_r094_run_01\\process.json",
+      "status": "COMPLETED",
+      "exit_code": 0
+    },
+    {
+      "rank": 94,
+      "mode": "recheck",
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\qa\\formal_r094_recheck_01\\process.json",
+      "status": "COMPLETED",
+      "exit_code": 0
+    },
+    {
+      "rank": 94,
+      "mode": "methods",
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\qa\\formal_r094_methods_01\\process.json",
+      "status": "COMPLETED",
+      "exit_code": 0
+    }
+  ],
+  "elapsed_seconds": 184.53099999995902,
+  "independent_humans": 0,
+  "production": false
+}

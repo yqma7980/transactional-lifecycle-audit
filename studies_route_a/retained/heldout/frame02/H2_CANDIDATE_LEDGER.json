@@ -1,0 +1,103 @@
+{
+  "schema": "M003_FRAME02_H2_CANDIDATE_LEDGER_V1",
+  "recorded_utc": "2026-09-07 10:48:53 UTC",
+  "selection_seal_sha256": "a239407c799e2aeba53cb79569d0866bf61842e3734bfd3df3775bba7b6b3ecc",
+  "order_evidence": "ISSUE_REFERENCE_ORDER_VERIFIED.json",
+  "projects": [
+    {
+      "repository": "pallets/click",
+      "query": "repo:pallets/click is:issue is:closed cleanup",
+      "selected_issue": 412,
+      "status": "ONE_SOURCE_QUALIFIED_CASE_NATIVE_REVIEW_PENDING",
+      "candidates": [
+        {
+          "rank": 1,
+          "issue": 412,
+          "decision": "SOURCE_QUALIFIED",
+          "reason": "Closed-event exact fix link, issue-specific correction and source regression; first-parent pair sealed before native results.",
+          "case_seal": "cases/click_412/CASE_AUTHORITY_SEAL.json",
+          "raw": "raw/click_issue_412.json"
+        },
+        {
+          "rank": 2,
+          "issue": 839,
+          "decision": "UNREVIEWED_AFTER_FIRST_SOURCE_QUALIFIED_CASE",
+          "reason": "Primary payload retrieved to verify first-five issue identities and dates; body not used for case selection. Not a negative outcome.",
+          "raw": "raw/click_issue_839.json"
+        },
+        {
+          "rank": 3,
+          "issue": 1499,
+          "decision": "UNREVIEWED_AFTER_FIRST_SOURCE_QUALIFIED_CASE",
+          "reason": "Primary payload retrieved to verify first-five issue identities and dates; body not used for case selection. Not a negative outcome.",
+          "raw": "raw/click_issue_1499.json"
+        },
+        {
+          "rank": 4,
+          "issue": 1708,
+          "decision": "UNREVIEWED_AFTER_FIRST_SOURCE_QUALIFIED_CASE",
+          "reason": "Primary payload retrieved to verify first-five issue identities and dates; body not used for case selection. Not a negative outcome.",
+          "raw": "raw/click_issue_1708.json"
+        },
+        {
+          "rank": 5,
+          "issue": 2017,
+          "decision": "UNREVIEWED_AFTER_FIRST_SOURCE_QUALIFIED_CASE",
+          "reason": "Primary payload retrieved to verify first-five issue identities and dates; body not used for case selection. Not a negative outcome.",
+          "raw": "raw/click_issue_2017.json"
+        }
+      ]
+    },
+    {
+      "repository": "python-trio/trio",
+      "query": "repo:python-trio/trio is:issue is:closed cleanup",
+      "selected_issue": null,
+      "status": "NO_ELIGIBLE_CASE_FROM_FROZEN_FIVE",
+      "candidates": [
+        {
+          "rank": 1,
+          "issue": 6,
+          "decision": "EXCLUDE_DESIGN_DISCUSSION",
+          "reason": "Thread-pool API and resource-limit design questions, not an identified accepted historical lifecycle correction.",
+          "raw": "raw/trio_issue_6.json"
+        },
+        {
+          "rank": 2,
+          "issue": 27,
+          "decision": "EXCLUDE_PACKAGING_OR_NEW_FEATURE",
+          "reason": "Requests extracting and packaging a pytest plugin, not a qualifying lifecycle defect pair.",
+          "raw": "raw/trio_issue_27.json"
+        },
+        {
+          "rank": 3,
+          "issue": 55,
+          "decision": "PROVENANCE_HOLD_NO_AUTHORITATIVE_FIX_FIRST_PARENT",
+          "reason": "Concrete nested MultiError cancellation example. Timeline comment says recent cleanups fixed it, but closed event 968720093 has null commit_id and commit_url and no exact fix link. No guessed history search.",
+          "linked_raw": "raw/trio_55_timeline.json",
+          "linked_assets": 1,
+          "raw": "raw/trio_issue_55.json"
+        },
+        {
+          "rank": 4,
+          "issue": 57,
+          "decision": "EXCLUDE_NEW_API_PROPOSAL",
+          "reason": "Proposes adding a semaphore argument to worker-thread API; no accepted correction of an existing asserted lifecycle contract established from the issue.",
+          "raw": "raw/trio_issue_57.json"
+        },
+        {
+          "rank": 5,
+          "issue": 103,
+          "decision": "EXCLUDE_UMBRELLA_UPSTREAM_SCOPE",
+          "reason": "Python 3.7 wishlist spanning upstream CPython proposals, not a single qualifying Trio fixed pair. External project links not followed.",
+          "raw": "raw/trio_issue_103.json"
+        }
+      ]
+    }
+  ],
+  "body_contact_disclosure": "Search may expose returned titles/snippets. All ten primary issue payloads include bodies archived while filling metadata. Only Click #412 body was subsequently reviewed for selection; all five Trio bodies were reviewed in fixed order. Do not claim unread raw payloads were never acquired.",
+  "no_alternate_query": true,
+  "no_reserve_projects": true,
+  "no_h1_retrofit": true,
+  "native_runs": 0,
+  "claims": "Local recorded-development-heldout source audit, not universal blindness, a new defect discovery, native reproduction or comparative superiority."
+}

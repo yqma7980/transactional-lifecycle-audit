@@ -1,0 +1,143 @@
+{
+  "pid": 8336,
+  "rank": 94,
+  "arm": "rich",
+  "input_sha256": "f7a5149cc7832ab47243b73655a37f0e2392e3af729ffc1c76f2ba7732694fa2",
+  "input_rows": 12,
+  "results": [
+    {
+      "verdict": "DETECTED",
+      "failed": [
+        {
+          "id": "pending_count_empty",
+          "obligation": "O5"
+        },
+        {
+          "id": "pending_ids_empty",
+          "obligation": "O5"
+        },
+        {
+          "id": "receipt_order",
+          "obligation": "O5"
+        },
+        {
+          "id": "callback_once",
+          "obligation": "O5"
+        },
+        {
+          "id": "callback_balanced",
+          "obligation": "O5"
+        }
+      ]
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "DETECTED",
+      "failed": [
+        {
+          "id": "pending_count_empty",
+          "obligation": "O5"
+        },
+        {
+          "id": "pending_ids_empty",
+          "obligation": "O5"
+        },
+        {
+          "id": "receipt_order",
+          "obligation": "O5"
+        },
+        {
+          "id": "callback_once",
+          "obligation": "O5"
+        },
+        {
+          "id": "callback_balanced",
+          "obligation": "O5"
+        }
+      ]
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "DETECTED",
+      "failed": [
+        {
+          "id": "pending_count_empty",
+          "obligation": "O5"
+        },
+        {
+          "id": "pending_ids_empty",
+          "obligation": "O5"
+        },
+        {
+          "id": "receipt_order",
+          "obligation": "O5"
+        },
+        {
+          "id": "callback_once",
+          "obligation": "O5"
+        },
+        {
+          "id": "callback_balanced",
+          "obligation": "O5"
+        }
+      ]
+    }
+  ],
+  "implementation_sha256": {
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\baseline\\successors\\R02_TYPED_JSON_20260907\\rich_compare.py": "3909177d7942525dc01c7368bdfceb32f540e2693b88a1e98fa3bf3900a42f5b"
+  },
+  "timed_ns_per_trace_batches": [
+    19790.916666666668,
+    21118.5,
+    19828.666666666668,
+    21842.666666666668,
+    19276.666666666668,
+    18725.416666666668,
+    18794.75
+  ],
+  "median_ns_per_trace": 19790.916666666668,
+  "batch_cpu_seconds": 0.171875,
+  "warmup_rounds": 20,
+  "timed_batches": 7,
+  "evaluations_per_trace_per_batch": 100,
+  "native_target_imports": 0,
+  "native_verdict_inputs": false,
+  "management_label_inputs": false,
+  "input_path_is_ordinal_transport_only": true,
+  "precomputed_contract_outside_timer": true,
+  "validation_warmup_and_serialization_excluded_from_pure_evaluator_timing": true
+}

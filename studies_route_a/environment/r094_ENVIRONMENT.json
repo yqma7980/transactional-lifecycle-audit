@@ -1,0 +1,138 @@
+{
+  "rank": 94,
+  "status": "ENVIRONMENT_AND_IMPORT_IDENTITY_FROZEN",
+  "versions": {
+    "before": {
+      "python_version": "3.12.10",
+      "package_version": "5.5.0rc1",
+      "commit": "9f43916da91e71c56a9eb51ea657e54d128d2726",
+      "source_commit": "9f43916da91e71c56a9eb51ea657e54d128d2726",
+      "source_manifest_sha256": "6d6a27559fcbcdace28fe6bc4e4439b1ca7852b11e18a72c2f85d7e1473e6ed9",
+      "distributions": [
+        {
+          "name": "amqp",
+          "version": "5.3.1"
+        },
+        {
+          "name": "billiard",
+          "version": "4.2.1"
+        },
+        {
+          "name": "click",
+          "version": "8.1.8"
+        },
+        {
+          "name": "click-didyoumean",
+          "version": "0.3.1"
+        },
+        {
+          "name": "click-plugins",
+          "version": "1.1.1"
+        },
+        {
+          "name": "click-repl",
+          "version": "0.3.0"
+        },
+        {
+          "name": "colorama",
+          "version": "0.4.6"
+        },
+        {
+          "name": "kombu",
+          "version": "5.5.0"
+        },
+        {
+          "name": "prompt_toolkit",
+          "version": "3.0.50"
+        },
+        {
+          "name": "python-dateutil",
+          "version": "2.9.0.post0"
+        },
+        {
+          "name": "six",
+          "version": "1.17.0"
+        },
+        {
+          "name": "tzdata",
+          "version": "2025.1"
+        },
+        {
+          "name": "vine",
+          "version": "5.1.0"
+        },
+        {
+          "name": "wcwidth",
+          "version": "0.2.13"
+        }
+      ],
+      "upstream_url": "https://github.com/celery/celery/tree/9f43916da91e71c56a9eb51ea657e54d128d2726"
+    },
+    "after": {
+      "python_version": "3.12.10",
+      "package_version": "5.5.0rc1",
+      "commit": "1fc305837a785dda8ed8cb196aec654427fe433e",
+      "source_commit": "1fc305837a785dda8ed8cb196aec654427fe433e",
+      "source_manifest_sha256": "c73fb4f26ec14165ef375ce8f3881ebd6f514a37e5aa0beb70b336089d5c4da6",
+      "distributions": [
+        {
+          "name": "amqp",
+          "version": "5.3.1"
+        },
+        {
+          "name": "billiard",
+          "version": "4.2.1"
+        },
+        {
+          "name": "click",
+          "version": "8.1.8"
+        },
+        {
+          "name": "click-didyoumean",
+          "version": "0.3.1"
+        },
+        {
+          "name": "click-plugins",
+          "version": "1.1.1"
+        },
+        {
+          "name": "click-repl",
+          "version": "0.3.0"
+        },
+        {
+          "name": "colorama",
+          "version": "0.4.6"
+        },
+        {
+          "name": "kombu",
+          "version": "5.5.0"
+        },
+        {
+          "name": "prompt_toolkit",
+          "version": "3.0.50"
+        },
+        {
+          "name": "python-dateutil",
+          "version": "2.9.0.post0"
+        },
+        {
+          "name": "six",
+          "version": "1.17.0"
+        },
+        {
+          "name": "tzdata",
+          "version": "2025.1"
+        },
+        {
+          "name": "vine",
+          "version": "5.1.0"
+        },
+        {
+          "name": "wcwidth",
+          "version": "0.2.13"
+        }
+      ],
+      "upstream_url": "https://github.com/celery/celery/tree/1fc305837a785dda8ed8cb196aec654427fe433e"
+    }
+  }
+}

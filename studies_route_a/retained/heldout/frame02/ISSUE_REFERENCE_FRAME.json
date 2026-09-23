@@ -1,0 +1,114 @@
+{
+  "schema": "M003_FRAME02_ISSUE_REFERENCE_FRAME_V1",
+  "frozen_utc": "2026-09-07 10:30:02 UTC",
+  "selection_seal_sha256": "a239407c799e2aeba53cb79569d0866bf61842e3734bfd3df3775bba7b6b3ecc",
+  "bodies_not_displayed_before_reference_frame": true,
+  "project_frames": [
+    {
+      "project_position": 1,
+      "repository": "pallets/click",
+      "query_raw_file": "raw/click_search_01.json",
+      "sort_requested": "created",
+      "order_requested": "asc",
+      "topn_requested": 5,
+      "returned": 5,
+      "metadata_order_verified": false,
+      "references": [
+        {
+          "server_position": 1,
+          "issue_number": 412,
+          "url": "https://github.com/pallets/click/issues/412",
+          "created_at": null,
+          "state": null,
+          "review_position": 1
+        },
+        {
+          "server_position": 2,
+          "issue_number": 839,
+          "url": "https://github.com/pallets/click/issues/839",
+          "created_at": null,
+          "state": null,
+          "review_position": 2
+        },
+        {
+          "server_position": 3,
+          "issue_number": 1499,
+          "url": "https://github.com/pallets/click/issues/1499",
+          "created_at": null,
+          "state": null,
+          "review_position": 3
+        },
+        {
+          "server_position": 4,
+          "issue_number": 1708,
+          "url": "https://github.com/pallets/click/issues/1708",
+          "created_at": null,
+          "state": null,
+          "review_position": 4
+        },
+        {
+          "server_position": 5,
+          "issue_number": 2017,
+          "url": "https://github.com/pallets/click/issues/2017",
+          "created_at": null,
+          "state": null,
+          "review_position": 5
+        }
+      ],
+      "pagination_and_tie_note": "Only connector topn=5 oldest-first snapshot; no sixth reference or pagination, no independently exhaustive search claim."
+    },
+    {
+      "project_position": 2,
+      "repository": "python-trio/trio",
+      "query_raw_file": "raw/trio_search_01.json",
+      "sort_requested": "created",
+      "order_requested": "asc",
+      "topn_requested": 5,
+      "returned": 5,
+      "metadata_order_verified": false,
+      "references": [
+        {
+          "server_position": 1,
+          "issue_number": 6,
+          "url": "https://github.com/python-trio/trio/issues/6",
+          "created_at": null,
+          "state": null,
+          "review_position": 1
+        },
+        {
+          "server_position": 2,
+          "issue_number": 27,
+          "url": "https://github.com/python-trio/trio/issues/27",
+          "created_at": null,
+          "state": null,
+          "review_position": 2
+        },
+        {
+          "server_position": 3,
+          "issue_number": 55,
+          "url": "https://github.com/python-trio/trio/issues/55",
+          "created_at": null,
+          "state": null,
+          "review_position": 3
+        },
+        {
+          "server_position": 4,
+          "issue_number": 57,
+          "url": "https://github.com/python-trio/trio/issues/57",
+          "created_at": null,
+          "state": null,
+          "review_position": 4
+        },
+        {
+          "server_position": 5,
+          "issue_number": 103,
+          "url": "https://github.com/python-trio/trio/issues/103",
+          "created_at": null,
+          "state": null,
+          "review_position": 5
+        }
+      ],
+      "pagination_and_tie_note": "Only connector topn=5 oldest-first snapshot; no sixth reference or pagination, no independently exhaustive search claim."
+    }
+  ]
+}

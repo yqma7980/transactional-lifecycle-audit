@@ -1,0 +1,152 @@
+{
+  "schema": "S06-EQUALITY-1",
+  "eligibility": [
+    {
+      "id": "protocol_matches",
+      "left": {
+        "path": [
+          "context",
+          "protocol_id"
+        ]
+      },
+      "right": {
+        "literal": "G4-ASSOCIATION-RESTORE-1"
+      }
+    },
+    {
+      "id": "point_matches",
+      "left": {
+        "path": [
+          "context",
+          "observation_point"
+        ]
+      },
+      "right": {
+        "literal": "post_restore_property_window"
+      }
+    },
+    {
+      "id": "order_matches",
+      "left": {
+        "path": [
+          "context",
+          "observation_order"
+        ]
+      },
+      "right": {
+        "literal": [
+          "file_equal",
+          "name",
+          "url",
+          "storage",
+          "instance",
+          "field"
+        ]
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "restored_file_equal",
+      "obligation": "O3",
+      "left": {
+        "path": [
+          "samples",
+          "checks",
+          "file_equal"
+        ]
+      },
+      "right": {
+        "literal": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    },
+    {
+      "id": "restored_name",
+      "obligation": "O3",
+      "left": {
+        "path": [
+          "samples",
+          "checks",
+          "name"
+        ]
+      },
+      "right": {
+        "literal": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    },
+    {
+      "id": "restored_url",
+      "obligation": "O3",
+      "left": {
+        "path": [
+          "samples",
+          "checks",
+          "url"
+        ]
+      },
+      "right": {
+        "literal": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    },
+    {
+      "id": "restored_storage",
+      "obligation": "O3",
+      "left": {
+        "path": [
+          "samples",
+          "checks",
+          "storage"
+        ]
+      },
+      "right": {
+        "literal": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    },
+    {
+      "id": "restored_instance",
+      "obligation": "O3",
+      "left": {
+        "path": [
+          "samples",
+          "checks",
+          "instance"
+        ]
+      },
+      "right": {
+        "literal": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    },
+    {
+      "id": "restored_field",
+      "obligation": "O3",
+      "left": {
+        "path": [
+          "samples",
+          "checks",
+          "field"
+        ]
+      },
+      "right": {
+        "literal": {
+          "status": "VALUE",
+          "equal": true
+        }
+      }
+    }
+  ]
+}

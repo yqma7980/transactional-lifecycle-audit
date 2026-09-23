@@ -1,0 +1,164 @@
+{
+  "schema": "M003_FRAME02_CLICK412_NATIVE_PROTOCOL_V1",
+  "status": "PREPARED_FOR_NONAUTHOR_REVIEW_NOT_RELEASED",
+  "case_author": "frame02-case-author",
+  "case_id": "FRAME02_CLICK_412",
+  "project": "pallets/click",
+  "authority_seal": "CASE_AUTHORITY_SEAL.json",
+  "before_sha": "7f1d70c54565ec978f49dc78a65299f9e94cd01d",
+  "fixed_sha": "851ce7fc58d5ee57e3910a12094d3df986bb0ff8",
+  "core_sha256": "ace349aa9a7750e7891acdf6ccbf1705cecc5bae3f3ec67fdbebb28f31e6fc13",
+  "method_change_limit": "Native measurement fixture and declarative contract only; independent comparator is the comparison arm, not a core repair.",
+  "source_manifest": "SOURCE_SNAPSHOT_MANIFEST.json",
+  "source_versions": "Exact archived upstream trees. No setup.py execution, pip, package install, code patch, dependency resolver, external service or source substitution.",
+  "runtime": {
+    "executable": "LOCAL_USER/AppData/Local/Programs/Python/Python312/python.exe",
+    "version": "3.12.10",
+    "exe_sha256": "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a",
+    "arguments": [
+      "-I",
+      "-S",
+      "-B"
+    ],
+    "optimization": 0,
+    "selection_basis": "Existing system interpreter, selected without importing historical Click or observing its compatibility.",
+    "dependency_plan": "Load exact source tree directly after review. Standard library only for our fixture; installed site packages disabled. Incompatibility, missing dependency or unsupported runtime means HOLD on this case, no repair or reinstall."
+  },
+  "histories": [
+    {
+      "id": "trigger",
+      "operations": [
+        "Construct a Context over an otherwise empty Command with a string obj token.",
+        "Register one cleanup callback.",
+        "Enter and exit that Context; let __exit__ invoke cleanup."
+      ]
+    },
+    {
+      "id": "natural_benign",
+      "operations": [
+        "Construct the same Context and callback.",
+        "Enter the Context.",
+        "Call its public close() explicitly while it is current.",
+        "Exit normally. The source close() clears callbacks, so the later automatic close is naturally empty."
+      ]
+    }
+  ],
+  "measurements": {
+    "callback": "Call public get_current_context(silent=True) once per callback; immediately record identity (current is target) and current.obj or null when no current context. Never transport a Context object.",
+    "raw_lists": "All callbacks retained in order. Feed their complete identity Boolean list and object token/null list to both arms; expected singleton lists also encode exactly one callback without a precomputed pass flag.",
+    "after_scope": "Record get_current_context(silent=True) is None immediately after exit.",
+    "input": {
+      "context": {
+        "protocol_id": "FRAME02-CLICK412-RAW-1",
+        "observation_point": "cleanup_callbacks_then_after_scope_exit",
+        "primary_order": [
+          "cleanup_current_identity",
+          "cleanup_current_object",
+          "after_exit_current_absence"
+        ]
+      },
+      "samples": [
+        "cleanup_current_is_target",
+        "cleanup_objects",
+        "after_exit_current_absent"
+      ]
+    },
+    "outside_both_arms": [
+      "version",
+      "history label",
+      "expected outcomes",
+      "reference verdicts",
+      "source paths",
+      "run IDs",
+      "exceptions",
+      "diagnostic event count"
+    ],
+    "context_limit": "Declared fixture identity, not independent proof against forged context or stale/omitted observations."
+  },
+  "native_reference": {
+    "fixture": "Extract and run only fixed snapshot tests/test_context.py::test_close_before_pop AST function with the exact Click module under test and its CliRunner. No pytest import, no other upstream tests executed.",
+    "mode": "Two separately logged reference pilot processes, before then fixed; normal optimization only.",
+    "expected_from_source": "Before must fail specifically because its cleanup callback cannot access a current context; fixed must pass exact upstream assertions. Import, encoding, dependency or unrelated errors are environment/reference HOLD, not bug confirmation.",
+    "formal_release": "Parent nonauthor review must first approve packet; then reference pilots must close causal oracle agreement before any formal cells. Remaining 2 permitted pilots are reserved for a reviewer-approved non-outcome-selected infrastructure diagnostic, never parameter/fixture tuning."
+  },
+  "expected_not_observed": {
+    "before_trigger": {
+      "cleanup_current_is_target": [
+        false
+      ],
+      "cleanup_objects": [
+        null
+      ],
+      "after_exit_current_absent": true,
+      "method_status": "DETECTED",
+      "failed": [
+        "cleanup_current_context",
+        "cleanup_object"
+      ]
+    },
+    "other_three_cells": {
+      "cleanup_current_is_target": [
+        true
+      ],
+      "cleanup_objects": [
+        "frame02-context-token"
+      ],
+      "after_exit_current_absent": true,
+      "method_status": "INVARIANT"
+    }
+  },
+  "comparison": {
+    "input_equality": "One saved JSON context/samples object, identical bytes or hashed canonical JSON supplied to both arms; no native assertion pass flags as samples.",
+    "core_api": "frozen_core.evaluate(trace, contract); caller loads verified unchanged parent core. Core output-key normalization must be mechanical and retain ordered missing paths, invalid IDs and relation IDs.",
+    "baseline": "rich_baseline.py is hard-coded independently from the core and contract interpreter; no core import, no core outputs, no contract traversal.",
+    "domain": "Finite built-in JSON, exact context/samples envelope. All required paths resolved before eligibility; missing -> UNSUPPORTED, eligibility mismatch -> INVALID, else failed ordered relations -> DETECTED or INVARIANT. Bool distinct from numbers. Ordered missing paths represented as arrays of path components in the baseline.",
+    "native_types": "Boolean identity list, string/null object list and Boolean after-exit value. Malformed native types or target exceptions are retained as HOLD, not coerced.",
+    "review_required": "Reviewer verifies relation obligation label compatibility and exact core output normalization before native launch; baseline-only synthetic QA is not core parity proof.",
+    "claims": "Expressibility/parity/cost for one documented lifecycle property only. No new defect discovery, superiority or general Python-object transport claim."
+  },
+  "execution": {
+    "versions": [
+      "before",
+      "fixed"
+    ],
+    "histories": [
+      "trigger",
+      "natural_benign"
+    ],
+    "fresh_processes_per_cell": 3,
+    "formal_processes_per_case": 12,
+    "formal_processes_max": 24,
+    "pilot_processes_max_per_case": 4,
+    "pilot_formal_data_separate": true,
+    "order": "fixed project order; before/trigger, before/benign, fixed/trigger, fixed/benign; repeats 1..3",
+    "parallel_native_processes": 1
+  },
+  "bounds": {
+    "native_process_seconds": 180,
+    "case_launch_seconds": 900,
+    "total_native_coordinator_seconds": 1800,
+    "readback_inclusive_seconds": 3600,
+    "environment_preparation_seconds_per_case": 600,
+    "environment_bytes_per_case": 10737418240,
+    "result_bytes_per_case": 2147483648,
+    "stdout_bytes": 16777216,
+    "stderr_bytes": 16777216,
+    "attempts_per_source_asset": 2
+  },
+  "gate": {
+    "review_packet": "../../REVIEW_PACKET_SEAL.json",
+    "receipt_schema": "M003_FRAME02_NATIVE_REVIEW_RELEASE_V1",
+    "required_receipt_fields": [
+      "case_id=FRAME02_CLICK_412",
+      "decision=PASS",
+      "native_execution_released=true",
+      "parent_received=true",
+      "reviewer_is_case_author=false",
+      "nonempty reviewer_identity different from frame02-case-author",
+      "review_packet_sha256 matching exact packet seal"
+    ],
+    "parent_responsibility": "Independently confirm reviewer identity/non-authorship, adjudicate limits, enforce sequential launch/timeout/output bounds, retain raw commands/stdout/stderr and counters, and mechanically compare core/baseline outputs. This packet is not an execution release.",
+    "source_selection_not_reopened": true
+  },
+  "native_runs": 0
+}

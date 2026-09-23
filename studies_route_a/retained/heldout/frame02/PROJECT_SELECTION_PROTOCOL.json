@@ -1,0 +1,54 @@
+{
+  "schema": "M003_FRAME02_PROJECT_SELECTION_V1",
+  "status": "PROJECTS_SELECTED_AWAIT_PARENT_RECEIPT",
+  "write_root": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/heldout/frame02",
+  "original_roster": [
+    "pallets/click",
+    "python-trio/trio"
+  ],
+  "selected_projects": [
+    {
+      "original_position": 1,
+      "repository": "pallets/click",
+      "repository_id": "19103692",
+      "lineage": "pallets/click",
+      "eligibility": "RECORDED_LOCAL_METHOD_DEVELOPMENT_HELDOUT"
+    },
+    {
+      "original_position": 2,
+      "repository": "python-trio/trio",
+      "repository_id": "79083614",
+      "lineage": "python-trio/trio",
+      "eligibility": "RECORDED_LOCAL_METHOD_DEVELOPMENT_HELDOUT"
+    }
+  ],
+  "selected_project_count": 2,
+  "max_projects": 2,
+  "no_reserves": true,
+  "chosen_case_refs": [],
+  "core": {
+    "sha256": "ace349aa9a7750e7891acdf6ccbf1705cecc5bae3f3ec67fdbebb28f31e6fc13",
+    "freeze_utc": "2026-09-07T17:45:59.954997+08:00",
+    "parent_file": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/core/frozen_core.py"
+  },
+  "scope": "Local METHOD-development/protocol/outcome contact, not general package/UI/model/world familiarity. Dependency contact is disclosed. Any proven prior relevant method contact is a hold, not replaced.",
+  "negative_parent_receipt": {
+    "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/governance/NEGATIVE_HELDOUT_PARENT_RECEIPT.json",
+    "received": true,
+    "seal_sha256": "13d5cc2f8d65209c6e6c403770867af432cfa8cbb434125eee2f937b107e631a"
+  },
+  "frame02_parent_receipt": {
+    "required": true,
+    "received": false,
+    "do_not_infer_from_negative_receipt": true
+  },
+  "files": {
+    "contact": "LOCAL_CONTACT_AUDIT.json",
+    "queries": "CASE_AUTHORITY_PLAN.json",
+    "evaluation": "GENERIC_EVALUATION_PROCEDURE.json",
+    "metadata_requests": "METADATA_RETRIEVAL_LOG.json",
+    "seal": "SELECTION_SEAL.json"
+  },
+  "target_runs": 0,
+  "new_issues_looked_up": 0
+}

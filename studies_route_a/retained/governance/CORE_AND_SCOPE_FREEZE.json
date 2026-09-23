@@ -1,0 +1,24 @@
+{
+  "utc": "2026-09-07T09:45:59.954997+00:00",
+  "stage": "CORE_FROZEN_BEFORE_NEW_PROJECT_SELECTION",
+  "passed": true,
+  "files_sha256": {
+    "LOCAL_WORKSPACE/M-2026-003_S09_COMPARISON_20260906\\src\\frozen_core.py": "ace349aa9a7750e7891acdf6ccbf1705cecc5bae3f3ec67fdbebb28f31e6fc13",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\core\\frozen_core.py": "ace349aa9a7750e7891acdf6ccbf1705cecc5bae3f3ec67fdbebb28f31e6fc13",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\governance\\AUTHORIZED_SCOPE.md": "e3c837de9592e2687c01df79dea2ecdf4fd4e14c0851e6fbb7e15f43f0138e59",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\harness\\bootstrap.py": "6f0857c53bb65d21cf571ebc851d82f36902efe239275f2faa398d7977765512",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\harness\\bounded_runner_v4.py": "720bd54dd9f7ee4fba46afd01a3dea945a6f56f7e45c834552f1c7a9a0fe0e9c",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\harness\\collector_v5.py": "f1c7a710b08f24e35510e5f40097dd262c197cc06758fcde9d9d541bcf85bb9d",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\harness\\kit_io.py": "992e6ed5d4751b5f8dde27a06dd14ea0034620c7e05142c804400604af76d32c",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\harness\\_child_launcher.py": "0395b20872522c58a632c22ca90a0efe069f047df40dbf9d0904cf0d68e2e3d0"
+  },
+  "allowed_new_native_directories": [
+    "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304",
+    "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304"
+  ],
+  "original_core_sha256": "ace349aa9a7750e7891acdf6ccbf1705cecc5bae3f3ec67fdbebb28f31e6fc13",
+  "new_project_results_viewed": false,
+  "formal_native_runs": 0,
+  "human_experiments_authorized": false,
+  "remote_publication_authorized": false
+}

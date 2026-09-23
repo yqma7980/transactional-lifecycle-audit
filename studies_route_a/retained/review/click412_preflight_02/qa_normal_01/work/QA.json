@@ -1,0 +1,1736 @@
+{
+  "schema": "CLICK412_INDEPENDENT_PARENT_SYNTHETIC_QA_1",
+  "independent_ai": true,
+  "independent_human": false,
+  "optimized": false,
+  "tests": 105,
+  "passed_checks": 95,
+  "failed_checks": 10,
+  "passed": false,
+  "actual_target_imports": 0,
+  "actual_native_calls": 0,
+  "parent_coordinator_native_functions_mocked": true,
+  "simulated_run_records_are_not_native_evidence": true,
+  "review_receipts_were_in_memory_fakes_not_releases": true,
+  "original_contract_not_repaired": true,
+  "rows": [
+    {
+      "name": "identity.initial_hash_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reviewer.flags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "import.actual_coordinator_capture",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "import.actual_binding_with_isolated_evaluate_path",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "import.no_target",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "release.valid_fake_receipt_transport",
+      "passed": true,
+      "detail": "A fake positive record tests the gate only; the real original contract remains HOLD."
+    },
+    {
+      "name": "release.reject_review_passed",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Independent review did not pass"
+      }
+    },
+    {
+      "name": "release.reject_review_open_acceptance_blockers",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Independent review did not pass"
+      }
+    },
+    {
+      "name": "release.reject_review_author_of_case",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Review scope incomplete"
+      }
+    },
+    {
+      "name": "release.reject_review_parent_coordinator_reviewed",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Review scope incomplete"
+      }
+    },
+    {
+      "name": "release.reject_review_native_execution_released",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Review scope incomplete"
+      }
+    },
+    {
+      "name": "release.reject_receipt_schema",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Receipt schema"
+      }
+    },
+    {
+      "name": "release.reject_receipt_case_id",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Receipt case"
+      }
+    },
+    {
+      "name": "release.reject_receipt_decision",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "No native release"
+      }
+    },
+    {
+      "name": "release.reject_receipt_parent_received",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Nonauthor receipt not received"
+      }
+    },
+    {
+      "name": "release.reject_receipt_reviewer_is_case_author",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Nonauthor receipt not received"
+      }
+    },
+    {
+      "name": "release.reject_receipt_review_packet_sha256",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Original review packet changed"
+      }
+    },
+    {
+      "name": "release.reject_receipt_review_report_sha256",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Review bytes changed"
+      }
+    },
+    {
+      "name": "release.reject_receipt_method_contract_sha256",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Method contract drift"
+      }
+    },
+    {
+      "name": "release.reject_disk_drift_without_receipt_update_binding.py",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Changed frozen file: LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\binding.py"
+      }
+    },
+    {
+      "name": "release.reject_receipt_self_rehash_unreviewed_binding.py",
+      "passed": false,
+      "detail": {
+        "unexpected_acceptance": true,
+        "result": "({'schema': 'M003_FRAME02_NATIVE_REVIEW_RELEASE_V1', 'case_id': 'FRAME02_CLICK_412', 'decision': 'PASS', 'native_execution_released': True, 'parent_received': True, 'reviewer_is_case_author': False, 'reviewer_identity': 'SYNTHETIC_NOT_AN_AUTHENTIC_RELEASE', 'review_report_path': 'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\review\\\\click412_preflight_02\\\\VIRTUAL_ONLY_REVIEW_NOT_WRITTEN.json', 'review_report_sha256': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'review_packet_sha256': '85f3621939e864bd35bb4b839bca2b94d0a2c3709a6b495f3f6340b9d4f59430', 'reviewed_files_sha256': {'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\heldout\\\\frame02\\\\parent_run_01\\\\binding.py': 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', 'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\h"
+      }
+    },
+    {
+      "name": "release.reject_disk_drift_without_receipt_update_coordinator.py",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Changed frozen file: LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\coordinator.py"
+      }
+    },
+    {
+      "name": "release.reject_receipt_self_rehash_unreviewed_coordinator.py",
+      "passed": false,
+      "detail": {
+        "unexpected_acceptance": true,
+        "result": "({'schema': 'M003_FRAME02_NATIVE_REVIEW_RELEASE_V1', 'case_id': 'FRAME02_CLICK_412', 'decision': 'PASS', 'native_execution_released': True, 'parent_received': True, 'reviewer_is_case_author': False, 'reviewer_identity': 'SYNTHETIC_NOT_AN_AUTHENTIC_RELEASE', 'review_report_path': 'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\review\\\\click412_preflight_02\\\\VIRTUAL_ONLY_REVIEW_NOT_WRITTEN.json', 'review_report_sha256': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'review_packet_sha256': '85f3621939e864bd35bb4b839bca2b94d0a2c3709a6b495f3f6340b9d4f59430', 'reviewed_files_sha256': {'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\heldout\\\\frame02\\\\parent_run_01\\\\binding.py': 'c31d624c8b669c90be85b7a60d60b7fdcc424ab5ee91f39afc306aa047bbd19c', 'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\h"
+      }
+    },
+    {
+      "name": "release.reject_disk_drift_without_receipt_update_evaluate.py",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Changed frozen file: LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py"
+      }
+    },
+    {
+      "name": "release.reject_receipt_self_rehash_unreviewed_evaluate.py",
+      "passed": false,
+      "detail": {
+        "unexpected_acceptance": true,
+        "result": "({'schema': 'M003_FRAME02_NATIVE_REVIEW_RELEASE_V1', 'case_id': 'FRAME02_CLICK_412', 'decision': 'PASS', 'native_execution_released': True, 'parent_received': True, 'reviewer_is_case_author': False, 'reviewer_identity': 'SYNTHETIC_NOT_AN_AUTHENTIC_RELEASE', 'review_report_path': 'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\review\\\\click412_preflight_02\\\\VIRTUAL_ONLY_REVIEW_NOT_WRITTEN.json', 'review_report_sha256': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'review_packet_sha256': '85f3621939e864bd35bb4b839bca2b94d0a2c3709a6b495f3f6340b9d4f59430', 'reviewed_files_sha256': {'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\heldout\\\\frame02\\\\parent_run_01\\\\binding.py': 'c31d624c8b669c90be85b7a60d60b7fdcc424ab5ee91f39afc306aa047bbd19c', 'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\h"
+      }
+    },
+    {
+      "name": "release.reject_review_without_bound_file_map",
+      "passed": false,
+      "detail": {
+        "unexpected_acceptance": true,
+        "result": "({'schema': 'M003_FRAME02_NATIVE_REVIEW_RELEASE_V1', 'case_id': 'FRAME02_CLICK_412', 'decision': 'PASS', 'native_execution_released': True, 'parent_received': True, 'reviewer_is_case_author': False, 'reviewer_identity': 'SYNTHETIC_NOT_AN_AUTHENTIC_RELEASE', 'review_report_path': 'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\review\\\\click412_preflight_02\\\\VIRTUAL_ONLY_REVIEW_NOT_WRITTEN.json', 'review_report_sha256': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'review_packet_sha256': '85f3621939e864bd35bb4b839bca2b94d0a2c3709a6b495f3f6340b9d4f59430', 'reviewed_files_sha256': {'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\heldout\\\\frame02\\\\parent_run_01\\\\binding.py': 'c31d624c8b669c90be85b7a60d60b7fdcc424ab5ee91f39afc306aa047bbd19c', 'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\h"
+      }
+    },
+    {
+      "name": "release.reject_unreviewed_contract_replacement",
+      "passed": false,
+      "detail": {
+        "unexpected_acceptance": true,
+        "result": "({'schema': 'M003_FRAME02_NATIVE_REVIEW_RELEASE_V1', 'case_id': 'FRAME02_CLICK_412', 'decision': 'PASS', 'native_execution_released': True, 'parent_received': True, 'reviewer_is_case_author': False, 'reviewer_identity': 'SYNTHETIC_NOT_AN_AUTHENTIC_RELEASE', 'review_report_path': 'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\review\\\\click412_preflight_02\\\\VIRTUAL_ONLY_REVIEW_NOT_WRITTEN.json', 'review_report_sha256': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'review_packet_sha256': '85f3621939e864bd35bb4b839bca2b94d0a2c3709a6b495f3f6340b9d4f59430', 'reviewed_files_sha256': {'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\heldout\\\\frame02\\\\parent_run_01\\\\binding.py': 'c31d624c8b669c90be85b7a60d60b7fdcc424ab5ee91f39afc306aa047bbd19c', 'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\h"
+      }
+    },
+    {
+      "name": "binding.rich_truth_000",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "DETECTED",
+          "missing": [],
+          "invalid": [],
+          "failed": [
+            "cleanup_current_context",
+            "cleanup_object",
+            "context_popped_after_close"
+          ]
+        },
+        "raw": {
+          "status": "DETECTED",
+          "missing_paths": [],
+          "invalid_eligibility": [],
+          "failed_relations": [
+            "cleanup_current_context",
+            "cleanup_object",
+            "context_popped_after_close"
+          ]
+        }
+      }
+    },
+    {
+      "name": "binding.original_contract_remains_ERROR_000",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "ERROR",
+          "missing": [],
+          "invalid": [],
+          "failed": []
+        },
+        "raw": {
+          "exception_type": "ContractError",
+          "message": "unknown obligation"
+        }
+      }
+    },
+    {
+      "name": "binding.rich_truth_001",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "DETECTED",
+          "missing": [],
+          "invalid": [],
+          "failed": [
+            "cleanup_current_context",
+            "cleanup_object"
+          ]
+        },
+        "raw": {
+          "status": "DETECTED",
+          "missing_paths": [],
+          "invalid_eligibility": [],
+          "failed_relations": [
+            "cleanup_current_context",
+            "cleanup_object"
+          ]
+        }
+      }
+    },
+    {
+      "name": "binding.original_contract_remains_ERROR_001",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "ERROR",
+          "missing": [],
+          "invalid": [],
+          "failed": []
+        },
+        "raw": {
+          "exception_type": "ContractError",
+          "message": "unknown obligation"
+        }
+      }
+    },
+    {
+      "name": "binding.rich_truth_010",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "DETECTED",
+          "missing": [],
+          "invalid": [],
+          "failed": [
+            "cleanup_current_context",
+            "context_popped_after_close"
+          ]
+        },
+        "raw": {
+          "status": "DETECTED",
+          "missing_paths": [],
+          "invalid_eligibility": [],
+          "failed_relations": [
+            "cleanup_current_context",
+            "context_popped_after_close"
+          ]
+        }
+      }
+    },
+    {
+      "name": "binding.original_contract_remains_ERROR_010",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "ERROR",
+          "missing": [],
+          "invalid": [],
+          "failed": []
+        },
+        "raw": {
+          "exception_type": "ContractError",
+          "message": "unknown obligation"
+        }
+      }
+    },
+    {
+      "name": "binding.rich_truth_011",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "DETECTED",
+          "missing": [],
+          "invalid": [],
+          "failed": [
+            "cleanup_current_context"
+          ]
+        },
+        "raw": {
+          "status": "DETECTED",
+          "missing_paths": [],
+          "invalid_eligibility": [],
+          "failed_relations": [
+            "cleanup_current_context"
+          ]
+        }
+      }
+    },
+    {
+      "name": "binding.original_contract_remains_ERROR_011",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "ERROR",
+          "missing": [],
+          "invalid": [],
+          "failed": []
+        },
+        "raw": {
+          "exception_type": "ContractError",
+          "message": "unknown obligation"
+        }
+      }
+    },
+    {
+      "name": "binding.rich_truth_100",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "DETECTED",
+          "missing": [],
+          "invalid": [],
+          "failed": [
+            "cleanup_object",
+            "context_popped_after_close"
+          ]
+        },
+        "raw": {
+          "status": "DETECTED",
+          "missing_paths": [],
+          "invalid_eligibility": [],
+          "failed_relations": [
+            "cleanup_object",
+            "context_popped_after_close"
+          ]
+        }
+      }
+    },
+    {
+      "name": "binding.original_contract_remains_ERROR_100",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "ERROR",
+          "missing": [],
+          "invalid": [],
+          "failed": []
+        },
+        "raw": {
+          "exception_type": "ContractError",
+          "message": "unknown obligation"
+        }
+      }
+    },
+    {
+      "name": "binding.rich_truth_101",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "DETECTED",
+          "missing": [],
+          "invalid": [],
+          "failed": [
+            "cleanup_object"
+          ]
+        },
+        "raw": {
+          "status": "DETECTED",
+          "missing_paths": [],
+          "invalid_eligibility": [],
+          "failed_relations": [
+            "cleanup_object"
+          ]
+        }
+      }
+    },
+    {
+      "name": "binding.original_contract_remains_ERROR_101",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "ERROR",
+          "missing": [],
+          "invalid": [],
+          "failed": []
+        },
+        "raw": {
+          "exception_type": "ContractError",
+          "message": "unknown obligation"
+        }
+      }
+    },
+    {
+      "name": "binding.rich_truth_110",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "DETECTED",
+          "missing": [],
+          "invalid": [],
+          "failed": [
+            "context_popped_after_close"
+          ]
+        },
+        "raw": {
+          "status": "DETECTED",
+          "missing_paths": [],
+          "invalid_eligibility": [],
+          "failed_relations": [
+            "context_popped_after_close"
+          ]
+        }
+      }
+    },
+    {
+      "name": "binding.original_contract_remains_ERROR_110",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "ERROR",
+          "missing": [],
+          "invalid": [],
+          "failed": []
+        },
+        "raw": {
+          "exception_type": "ContractError",
+          "message": "unknown obligation"
+        }
+      }
+    },
+    {
+      "name": "binding.rich_truth_111",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "INVARIANT",
+          "missing": [],
+          "invalid": [],
+          "failed": []
+        },
+        "raw": {
+          "status": "INVARIANT",
+          "missing_paths": [],
+          "invalid_eligibility": [],
+          "failed_relations": []
+        }
+      }
+    },
+    {
+      "name": "binding.original_contract_remains_ERROR_111",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "ERROR",
+          "missing": [],
+          "invalid": [],
+          "failed": []
+        },
+        "raw": {
+          "exception_type": "ContractError",
+          "message": "unknown obligation"
+        }
+      }
+    },
+    {
+      "name": "binding.generic_valid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.type_exact_numeric_and_boolean",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "DETECTED",
+          "missing": [],
+          "invalid": [],
+          "failed": [
+            "synthetic_left",
+            "synthetic_right"
+          ]
+        },
+        "raw": {
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "synthetic_left",
+              "obligation": "O2"
+            },
+            {
+              "id": "synthetic_right",
+              "obligation": "O3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "binding.raw_obligation_outputs_retained",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "DETECTED",
+          "missing": [],
+          "invalid": [],
+          "failed": [
+            "synthetic_left",
+            "synthetic_right"
+          ]
+        },
+        "raw": {
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "synthetic_left",
+              "obligation": "O2"
+            },
+            {
+              "id": "synthetic_right",
+              "obligation": "O3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "binding.invalid_before_relation_failures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.missing_before_invalid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.lcma_generic_invalid_transport_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.lcma_generic_invalid_transport_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.lcma_generic_invalid_transport_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.lcma_generic_invalid_transport_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.lcma_generic_invalid_transport_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.lcma_generic_invalid_transport_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.lcma_generic_invalid_transport_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.lcma_generic_invalid_transport_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.lcma_generic_cycle_ERROR",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.rich_invalid_transport_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.rich_invalid_transport_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.rich_invalid_transport_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.rich_invalid_transport_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.rich_invalid_transport_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.rich_invalid_transport_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.rich_invalid_transport_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.rich_invalid_transport_7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.rich_cycle_ERROR",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "binding.rich_missing_normalization",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "UNSUPPORTED",
+          "missing": [
+            [
+              "samples",
+              "cleanup_objects"
+            ]
+          ],
+          "invalid": [],
+          "failed": []
+        },
+        "raw": {
+          "status": "UNSUPPORTED",
+          "missing_paths": [
+            [
+              "samples",
+              "cleanup_objects"
+            ]
+          ],
+          "invalid_eligibility": [],
+          "failed_relations": []
+        }
+      }
+    },
+    {
+      "name": "binding.rich_invalid_normalization",
+      "passed": true,
+      "detail": {
+        "common": {
+          "verdict": "INVALID",
+          "missing": [],
+          "invalid": [
+            "protocol_matches"
+          ],
+          "failed": []
+        },
+        "raw": {
+          "status": "INVALID",
+          "missing_paths": [],
+          "invalid_eligibility": [
+            "protocol_matches"
+          ],
+          "failed_relations": []
+        }
+      }
+    },
+    {
+      "name": "reference.valid_causal_pair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reference.reject_wrong_cause_type",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Before failure does not match source defect"
+      }
+    },
+    {
+      "name": "reference.reject_wrong_cause_message",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Before failure does not match source defect"
+      }
+    },
+    {
+      "name": "reference.reject_wrong_assertion",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Unexpected before assertion"
+      }
+    },
+    {
+      "name": "reference.reject_before_success",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Before reference not failing"
+      }
+    },
+    {
+      "name": "reference.reject_before_zero_exit",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Before failure does not match source defect"
+      }
+    },
+    {
+      "name": "reference.reject_fixed_failure",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Fixed upstream reference did not pass"
+      }
+    },
+    {
+      "name": "reference.reject_fixed_output",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Fixed native reference result mismatch"
+      }
+    },
+    {
+      "name": "reference.reject_fixed_exception",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Fixed native reference result mismatch"
+      }
+    },
+    {
+      "name": "reference.reject_fixed_nonzero",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Fixed native reference result mismatch"
+      }
+    },
+    {
+      "name": "reference.reject_wrong_upstream_AST_source_hash",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Upstream regression bytes not bound"
+      }
+    },
+    {
+      "name": "reference.reject_extra_invocation",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Reference invocation count"
+      }
+    },
+    {
+      "name": "observation.valid_False",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "observation.valid_True",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "observation.reject_extra_label",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Bad native envelope"
+      }
+    },
+    {
+      "name": "observation.reject_extra_context_label",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Observation context drift"
+      }
+    },
+    {
+      "name": "observation.reject_extra_sample_label",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Undeclared sample field"
+      }
+    },
+    {
+      "name": "observation.reject_identity_int",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Identity types"
+      }
+    },
+    {
+      "name": "observation.reject_object_number",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Object types"
+      }
+    },
+    {
+      "name": "observation.reject_popped_int",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Observation shape"
+      }
+    },
+    {
+      "name": "observation.reject_length_disagreement",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Observation shape"
+      }
+    },
+    {
+      "name": "observation.reject_count_bool",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Callback count"
+      }
+    },
+    {
+      "name": "observation.reject_count_wrong",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Callback count"
+      }
+    },
+    {
+      "name": "observation.reject_raw_value_mismatch",
+      "passed": true,
+      "detail": {
+        "rejected": "RuntimeError",
+        "message": "Projection not equal to raw native events"
+      }
+    },
+    {
+      "name": "observation.reject_raw_identity_alias_int",
+      "passed": false,
+      "detail": {
+        "unexpected_acceptance": true,
+        "result": "({'context': {'protocol_id': 'FRAME02-CLICK412-RAW-1', 'observation_point': 'cleanup_callbacks_then_after_scope_exit', 'primary_order': ['cleanup_current_identity', 'cleanup_current_object', 'after_exit_current_absence']}, 'samples': {'cleanup_current_is_target': [True], 'cleanup_objects': ['frame02-context-token'], 'after_exit_current_absent': True}}, 'SATISFIED')"
+      }
+    },
+    {
+      "name": "observation.reject_raw_identity_alias_float",
+      "passed": false,
+      "detail": {
+        "unexpected_acceptance": true,
+        "result": "({'context': {'protocol_id': 'FRAME02-CLICK412-RAW-1', 'observation_point': 'cleanup_callbacks_then_after_scope_exit', 'primary_order': ['cleanup_current_identity', 'cleanup_current_object', 'after_exit_current_absence']}, 'samples': {'cleanup_current_is_target': [True], 'cleanup_objects': ['frame02-context-token'], 'after_exit_current_absent': True}}, 'SATISFIED')"
+      }
+    },
+    {
+      "name": "native.reject_stdout_not_matching_capture_hash",
+      "passed": false,
+      "detail": {
+        "unexpected_acceptance": true,
+        "result": "({'data': {'observation': {'context': {'protocol_id': 'FRAME02-CLICK412-RAW-1', 'observation_point': 'cleanup_callbacks_then_after_scope_exit', 'primary_order': ['cleanup_current_identity', 'cleanup_current_object', 'after_exit_current_absence']}, 'samples': {'cleanup_current_is_target': [True], 'cleanup_objects': ['frame02-context-token'], 'after_exit_current_absent': True}}, 'callback_count': 1, 'raw_cleanup_events': [{'current_is_target': True, 'current_object': 'frame02-context-token'}]}, 'case_id': 'FRAME02_CLICK_412', 'status': 'COMPLETED', 'version': 'fixed', 'revision': '851ce7fc58d5ee57e3910a12094d3df986bb0ff8', 'mode': 'observation', 'history': 'trigger', 'source_root': 'LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\\\heldout\\\\frame02\\\\cases\\\\click_412\\\\sources\\\\fixed\\\\click-851ce7fc58d5ee57e3910a12094d3df986bb0ff8'}, {'status': 'COMPLETED', 'exit_code"
+      }
+    },
+    {
+      "name": "orchestration.valid_fake_control_flow",
+      "passed": true,
+      "detail": {
+        "scenario": "valid",
+        "control_flow_completed": true,
+        "error": null,
+        "simulated_native_calls": [
+          {
+            "ordinal": "P01",
+            "version": "before",
+            "mode": "upstream_reference",
+            "history": null
+          },
+          {
+            "ordinal": "P02",
+            "version": "fixed",
+            "mode": "upstream_reference",
+            "history": null
+          },
+          {
+            "ordinal": "N01",
+            "version": "before",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N02",
+            "version": "before",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N03",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N04",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N05",
+            "version": "before",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N06",
+            "version": "before",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N07",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N08",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N09",
+            "version": "before",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N10",
+            "version": "before",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N11",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N12",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "natural_benign"
+          }
+        ],
+        "simulated_evaluators": [
+          {
+            "arm": "lcma",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "lcma",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\E01.json"
+            ],
+            "timeout_seconds": 180
+          },
+          {
+            "arm": "rich",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "rich",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\E02.json"
+            ],
+            "timeout_seconds": 180
+          },
+          {
+            "arm": "rich",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "rich",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\E03.json"
+            ],
+            "timeout_seconds": 180
+          },
+          {
+            "arm": "lcma",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "lcma",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\E04.json"
+            ],
+            "timeout_seconds": 180
+          }
+        ],
+        "input_sha256_by_arm": [
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae",
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae",
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae",
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae"
+        ],
+        "simulated_elapsed_seconds": 0.0,
+        "actual_target_imports": 0,
+        "actual_native_calls": 0,
+        "virtual_final_status": "COMPLETED",
+        "all_records_in_memory_only": true
+      }
+    },
+    {
+      "name": "orchestration.two_pilots_then_twelve_fresh_calls",
+      "passed": true,
+      "detail": {
+        "scenario": "valid",
+        "control_flow_completed": true,
+        "error": null,
+        "simulated_native_calls": [
+          {
+            "ordinal": "P01",
+            "version": "before",
+            "mode": "upstream_reference",
+            "history": null
+          },
+          {
+            "ordinal": "P02",
+            "version": "fixed",
+            "mode": "upstream_reference",
+            "history": null
+          },
+          {
+            "ordinal": "N01",
+            "version": "before",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N02",
+            "version": "before",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N03",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N04",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N05",
+            "version": "before",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N06",
+            "version": "before",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N07",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N08",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N09",
+            "version": "before",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N10",
+            "version": "before",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N11",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N12",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "natural_benign"
+          }
+        ],
+        "simulated_evaluators": [
+          {
+            "arm": "lcma",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "lcma",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\E01.json"
+            ],
+            "timeout_seconds": 180
+          },
+          {
+            "arm": "rich",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "rich",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\E02.json"
+            ],
+            "timeout_seconds": 180
+          },
+          {
+            "arm": "rich",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "rich",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\E03.json"
+            ],
+            "timeout_seconds": 180
+          },
+          {
+            "arm": "lcma",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "lcma",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_valid\\E04.json"
+            ],
+            "timeout_seconds": 180
+          }
+        ],
+        "input_sha256_by_arm": [
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae",
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae",
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae",
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae"
+        ],
+        "simulated_elapsed_seconds": 0.0,
+        "actual_target_imports": 0,
+        "actual_native_calls": 0,
+        "virtual_final_status": "COMPLETED",
+        "all_records_in_memory_only": true
+      }
+    },
+    {
+      "name": "orchestration.exact_serial_four_cell_order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "orchestration.method_order_and_isolated_argv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "orchestration.valid_one_shared_hash",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "orchestration.reject_changed_label_containing_method_input",
+      "passed": false,
+      "detail": {
+        "scenario": "input_drift",
+        "control_flow_completed": true,
+        "error": null,
+        "simulated_native_calls": [
+          {
+            "ordinal": "P01",
+            "version": "before",
+            "mode": "upstream_reference",
+            "history": null
+          },
+          {
+            "ordinal": "P02",
+            "version": "fixed",
+            "mode": "upstream_reference",
+            "history": null
+          },
+          {
+            "ordinal": "N01",
+            "version": "before",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N02",
+            "version": "before",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N03",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N04",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N05",
+            "version": "before",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N06",
+            "version": "before",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N07",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N08",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N09",
+            "version": "before",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N10",
+            "version": "before",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N11",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N12",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "natural_benign"
+          }
+        ],
+        "simulated_evaluators": [
+          {
+            "arm": "lcma",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "lcma",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_input_drift\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_input_drift\\E01.json"
+            ],
+            "timeout_seconds": 180
+          },
+          {
+            "arm": "rich",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "rich",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_input_drift\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_input_drift\\E02.json"
+            ],
+            "timeout_seconds": 180
+          },
+          {
+            "arm": "rich",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "rich",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_input_drift\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_input_drift\\E03.json"
+            ],
+            "timeout_seconds": 180
+          },
+          {
+            "arm": "lcma",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "lcma",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_input_drift\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_input_drift\\E04.json"
+            ],
+            "timeout_seconds": 180
+          }
+        ],
+        "input_sha256_by_arm": [
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae",
+          "75c49620f0cf9d94ac0d5688f0a5a1106238a5bea4f52b3a37185848364676fe",
+          "75c49620f0cf9d94ac0d5688f0a5a1106238a5bea4f52b3a37185848364676fe",
+          "75c49620f0cf9d94ac0d5688f0a5a1106238a5bea4f52b3a37185848364676fe"
+        ],
+        "simulated_elapsed_seconds": 0.0,
+        "actual_target_imports": 0,
+        "actual_native_calls": 0,
+        "virtual_final_status": "COMPLETED",
+        "all_records_in_memory_only": true
+      }
+    },
+    {
+      "name": "orchestration.enforce_total_1800_second_budget",
+      "passed": false,
+      "detail": {
+        "scenario": "deadline_overrun",
+        "control_flow_completed": true,
+        "error": null,
+        "simulated_native_calls": [
+          {
+            "ordinal": "P01",
+            "version": "before",
+            "mode": "upstream_reference",
+            "history": null
+          },
+          {
+            "ordinal": "P02",
+            "version": "fixed",
+            "mode": "upstream_reference",
+            "history": null
+          },
+          {
+            "ordinal": "N01",
+            "version": "before",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N02",
+            "version": "before",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N03",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N04",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N05",
+            "version": "before",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N06",
+            "version": "before",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N07",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N08",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N09",
+            "version": "before",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N10",
+            "version": "before",
+            "mode": "observation",
+            "history": "natural_benign"
+          },
+          {
+            "ordinal": "N11",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "trigger"
+          },
+          {
+            "ordinal": "N12",
+            "version": "fixed",
+            "mode": "observation",
+            "history": "natural_benign"
+          }
+        ],
+        "simulated_evaluators": [
+          {
+            "arm": "lcma",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "lcma",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_deadline_overrun\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_deadline_overrun\\E01.json"
+            ],
+            "timeout_seconds": 180
+          },
+          {
+            "arm": "rich",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "rich",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_deadline_overrun\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_deadline_overrun\\E02.json"
+            ],
+            "timeout_seconds": 180
+          },
+          {
+            "arm": "rich",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "rich",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_deadline_overrun\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_deadline_overrun\\E03.json"
+            ],
+            "timeout_seconds": 180
+          },
+          {
+            "arm": "lcma",
+            "argv": [
+              "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+              "-I",
+              "-S",
+              "-B",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py",
+              "--arm",
+              "lcma",
+              "--input",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_deadline_overrun\\METHOD_INPUT.json",
+              "--contract",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json",
+              "--output",
+              "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\qa_normal_01\\work\\SYNTHETIC_EMPTY_DIRECTORY_deadline_overrun\\E04.json"
+            ],
+            "timeout_seconds": 180
+          }
+        ],
+        "input_sha256_by_arm": [
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae",
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae",
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae",
+          "ee4e97717c4f9c36a5bceee744fd269cf842e38df1d6cd74caf6bf639c0811ae"
+        ],
+        "simulated_elapsed_seconds": 1970.0,
+        "actual_target_imports": 0,
+        "actual_native_calls": 0,
+        "virtual_final_status": "COMPLETED",
+        "all_records_in_memory_only": true
+      }
+    },
+    {
+      "name": "semantic.author_HOLD_no_successor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "identity.final_hash_map",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reviewer.no_target_import_after_all_checks",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "reviewed_files_sha256": {
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\binding.py": "c31d624c8b669c90be85b7a60d60b7fdcc424ab5ee91f39afc306aa047bbd19c",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\evaluate.py": "bbb0fa1218d2fb165c083aab9da80cba0df42206a3c21d36cc2a103e05e2d527",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\parent_run_01\\coordinator.py": "964573db90a33e67a4b268d499c0c8c1f2e1bf73fa2617cddc6ca091d18c44c7",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\REVIEW_PACKET_SEAL.json": "85f3621939e864bd35bb4b839bca2b94d0a2c3709a6b495f3f6340b9d4f59430",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\GENERIC_EVALUATION_PROCEDURE.json": "a54a862498abe56570b54a79c71ddd27db1a3cec31fb732ca548104ff405b882",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\CASE_AUTHORITY_PLAN.json": "34532ca14d68216a263150091c660c6b8cf45d2ba07f53eee633a7c853fc9e97",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\CONTRACT.json": "a4df70409ff225bac3bde7e54b5c376f2679c7f62bbab7a6fec69835850b7726",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\native_fixture.py": "2609639735046edfc895733773dfb8016a5b0aabbdc0412ddc3a6f05004e3bd1",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\rich_baseline.py": "47f3461ddc07f4d65cec095e1b0e9453f0af0872f6f24d18853363b4dcc412e1",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\NATIVE_PROTOCOL.json": "eb200ce5a6e405014fb3352cc324d61b989ea576bfec10a9870384a603fee977",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\RUNTIME_IDENTITY.json": "2edf2c13a944a2142bc26b5c01217d89b5cc2fb1f52d48eaaabd0cd03de8b585",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\successor_01\\BINDING_ADJUDICATION.json": "907a7a2743328995a657bd542c1d51c46f8eed039393794e47bdd61d8ee4ee48",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\heldout\\frame02\\cases\\click_412\\successor_01\\SEMANTIC_RATIONALE.md": "c6937e07dd6e7e448f13a3b032fdd8ab71df6fbf7fc4722c0ed9721984516bae",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\core\\frozen_core.py": "ace349aa9a7750e7891acdf6ccbf1705cecc5bae3f3ec67fdbebb28f31e6fc13",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\harness\\bounded_runner_v4.py": "720bd54dd9f7ee4fba46afd01a3dea945a6f56f7e45c834552f1c7a9a0fe0e9c",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\harness\\_child_launcher.py": "0395b20872522c58a632c22ca90a0efe069f047df40dbf9d0904cf0d68e2e3d0",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\harness\\kit_io.py": "992e6ed5d4751b5f8dde27a06dd14ea0034620c7e05142c804400604af76d32c",
+    "LOCAL_WORKSPACE/M-2026-003_S08_EXECUTION_20260905\\manuscript\\source\\main_s08.tex": "2ccaef82ac4a43a1c5106dda5039dcfbbb19335381fdc972b1a6fe9698293299",
+    "LOCAL_WORKSPACE/M-2026-003_S08_EXECUTION_20260905\\manuscript\\source\\s06_methods.tex": "a58bdda812e4560d24fb5af106fd9d70cfcb6b6d2e90fefe193554d3760985e1",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_01\\CONTRACT_CLASSIFICATION_01.json": "1a65ca6c49252e859c8557ac0a14136f45ea8b19f63a56faaca1c8e1684c5f03",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_01\\CLICK412_PACKET_REVIEW_01.json": "9195d521748fabb5724329d1b94db2af20e277540b73a6d014e5873aa702534b"
+  },
+  "reviewer_code_sha256": {
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\review\\click412_preflight_02\\test_parent_01.py": "c951514613488d204bbefa1053aeb5f7fc5a0c9a471b0c6ff6dd96f9e6d8c062"
+  }
+}

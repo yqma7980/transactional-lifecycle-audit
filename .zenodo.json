@@ -1,11 +1,11 @@
 {
-  "title": "Transactional Lifecycle Audit: Software for Lifecycle-aware Metamorphic Testing",
-  "description": "<p>Version 6.0.0 adds the sanitized R3 SQLite lifecycle study to the immutable parent evidence. It contains the preregistered diagnostic and guarded-containment cases, a separately reported historical SQLite WAL/savepoint differential, conditional depth-8 finite-state corroboration, and retained process records.</p><p>The six constructed integration faults are author-created tests, not SQLite defects. The bounded model is corroboration, not an unbounded proof. Downloaded SQLite binaries, temporary databases, caches, pilot outputs, private Abaqus/UEL assets, and confidential engineering data are excluded.</p><p>Funding: National Natural Science Foundation of China, Grant 52474038 (recipient: Weiji Sun); Liaoning Provincial Department of Education project, Grant LJ212410147066 (recipient: Jianfeng Hao).</p>",
+  "title": "Auditable Lifecycle Contracts: Equal-Information Comparison and Applicability-Boundary Evidence",
+  "description": "<p>Version 7.0.0 adds the studies_route_a directory: retained Django r79 and Celery r94 equal-information comparison inputs, raw-event and process records, saved verdicts and timing outputs, frozen core and selected strong-baseline source, author-created native adapters, exact upstream and environment identities, and Click/Trio screening and admission records. It supports the manuscript Auditable Lifecycle Contracts for Stateful Software: Equal-Information Comparisons and Applicability Boundaries.</p><p>Both methods detected 6/6 observed defect manifestations with 0/18 normal false positives across two historical defect lineages (24 native observations, eight evaluation processes). LCMA pure-decision evaluation was approximately 2.171 and 2.164 times slower. Click remains CONTRACT_BINDING_HOLD; Trio remains PROVENANCE_HOLD_NO_AUTHORITATIVE_FIX_FIRST_PARENT. Depth-1500 failures are retained. No detection, speed, maintenance or production-reliability advantage is claimed.</p><p>This is an evidence-inspection and source archive, not a certified one-command cross-machine native reproduction environment. Packaging did not rerun studies. Machine paths were sanitized; original/public hashes and documented metadata excerpts are provided. Historical native orchestration needs environment reconstruction and path rebinding. Full upstream trees, runtimes, third-party issue prose, private engineering data and other manuscripts are not redistributed in this addition. Earlier repository directories remain historical, separately bounded evidence, not additional independent Route A cases.</p><p>Author software is BSD-3-Clause; author-derived records and documentation in studies_route_a are CC BY 4.0; upstream notices retain their own terms. The v6.0.0 software and separate data records remain unchanged and do not contain these later records.</p><p>Funding: National Natural Science Foundation of China, Grant 52474038 (recipient: Weiji Sun); Liaoning Provincial Department of Education project, Grant LJ212410147066 (recipient: Jianfeng Hao).</p>",
   "upload_type": "software",
   "access_right": "open",
   "license": "BSD-3-Clause",
-  "version": "v6.0.0",
-  "publication_date": "2026-09-04",
+  "version": "v7.0.0",
+  "publication_date": "2026-09-23",
   "creators": [
     {
       "name": "Ma, Yangqi",
@@ -34,18 +34,18 @@
     "software reliability",
     "rollback recovery",
     "state transactions",
-    "fault diagnosis",
-    "SQLite"
+    "equal-information comparison",
+    "applicability boundaries"
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/yqma7980/transactional-lifecycle-audit/tree/v6.0.0",
+      "identifier": "https://github.com/yqma7980/transactional-lifecycle-audit/tree/v7.0.0",
       "relation": "isSupplementTo",
       "scheme": "url",
       "resource_type": "software"
     },
     {
-      "identifier": "10.5281/zenodo.21536560",
+      "identifier": "10.5281/zenodo.22288732",
       "relation": "isSupplementTo",
       "scheme": "doi",
       "resource_type": "dataset"

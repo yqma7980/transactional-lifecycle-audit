@@ -1,0 +1,107 @@
+{
+  "executable": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\envs\\r079\\runtime_repair_02\\before\\python.exe",
+  "source_root": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree",
+  "source_commit": "aaea9deac4dea08ada934a930cfc27765358d8da",
+  "fixture_root": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\harness\\r079\\fixture",
+  "python_version": "3.8.20",
+  "package_version": "3.1",
+  "source_files": {
+    "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\__init__.py": "7a147eeae70b87f866851434819740add39f1deef0e541e6e1d3030d21a34496",
+    "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\files.py": "c63cf9ffccf30e8b6409dbf52c3ec7f7834f14875a7d2dc7fac367ce4230af4c",
+    "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\base.py": "d7355b93545da73fdd7ee66530757fff36552021254ef5bbf63599bf72ddf434",
+    "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\__init__.py": "9ec9fc7102f5156c9ca61eb7e1f486fff391bca2caeec9ff91488b6f120eb8fe",
+    "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\core\\files\\storage.py": "2637d6ccd8237368f76687c30b218e6d556eac1ce972fcda7a0ecf134ec3b374"
+  },
+  "module_files": {
+    "django": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\__init__.py",
+    "django.db.models.fields.files": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\files.py",
+    "django.db.models.base": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\base.py",
+    "django.db.models.fields": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\__init__.py",
+    "django.core.files.storage": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\core\\files\\storage.py"
+  },
+  "source_manifest_sha256": "ef56117bb469dfd732e4207db52872b81cf93ea64256c36493404e4fb9ef2746",
+  "schema": "M003-S10-NATIVE-V2-SPEC-1",
+  "original_rank": 79,
+  "case_id": "DJANGO-12055",
+  "run_id": "G4_R079_009",
+  "cell": "before-control",
+  "history": "control",
+  "cwd": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\runs\\G4_20260907_174304\\G4_R079_009\\work",
+  "protocol_path": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\CASE_PILOT_PROTOCOL.json",
+  "protocol_file_sha256": "c71b77b4e55e84e07cde7ae17a43b85e69ca871fbc28e30cc04911864ccae7b7",
+  "protocol_sha256": "08a616f9d4410d88ad54ccf96667e00e78cac356f36858fcd1c71c67606a4a4a",
+  "environment_lock_path": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\envs\\r079\\runtime_repair_02\\CASE_ENVIRONMENT_LOCK.json",
+  "environment_lock_sha256": "f4c9d198f88ba12fc2e8f67b72e53844b30f096c1faf30fa6680c57750e5b263",
+  "recipe": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py",
+  "recipe_sha256": "be81df9d4943247a0745844c4feff351a19125edf5a503c3abb239bf26d460dc",
+  "fixture_files": {
+    "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\harness\\r079\\fixture\\m003_s10_django_fixture\\models.py": "be960854cd9701d8725212b8a39234ff86b68fb275a79744e33cf98f28503205",
+    "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\harness\\r079\\fixture\\m003_s10_django_fixture\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "g3_parent_approved": true,
+  "collector_contract": "TYPED_GRAMMAR_FIRST_GENERIC_INTEGRITY_V1",
+  "adapter_files": {
+    "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\harness\\native_v2\\driver.py": "f35dbf97dca133d599bc58f8d795eb9d9cfcd14b0c58d96104dad04e6f8b500d",
+    "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\harness\\native_v2\\evaluator.py": "31cea3ca0b8e3c78069bca523e4b03f3ffbd7c198d35029e64fd3eb16c12bf4b",
+    "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\harness\\native_v2\\observations.py": "dcdd26194c783f6750c2b5d11ab51b8dfb0edff84195e4444f3d62d2d0390b37",
+    "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\harness\\native_v2\\identity.py": "ce6a4c28947eb2196e6e95c6f70be514fee724bd6c992d21b0cd0139875c6730"
+  },
+  "code_bindings": {
+    "fieldfile_eq": {
+      "module": "django.db.models.fields.files",
+      "qualname": "FieldFile.__eq__",
+      "filename": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\files.py",
+      "firstlineno": 22,
+      "sha256": "c63cf9ffccf30e8b6409dbf52c3ec7f7834f14875a7d2dc7fac367ce4230af4c"
+    },
+    "fieldfile_getstate": {
+      "module": "django.db.models.fields.files",
+      "qualname": "FieldFile.__getstate__",
+      "filename": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\files.py",
+      "firstlineno": 125,
+      "sha256": "c63cf9ffccf30e8b6409dbf52c3ec7f7834f14875a7d2dc7fac367ce4230af4c"
+    },
+    "fieldfile_url": {
+      "module": "django.db.models.fields.files",
+      "qualname": "FieldFile.url.fget",
+      "filename": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\files.py",
+      "firstlineno": 59,
+      "sha256": "c63cf9ffccf30e8b6409dbf52c3ec7f7834f14875a7d2dc7fac367ce4230af4c"
+    },
+    "file_descriptor_get": {
+      "module": "django.db.models.fields.files",
+      "qualname": "FileDescriptor.__get__",
+      "filename": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\files.py",
+      "firstlineno": 150,
+      "sha256": "c63cf9ffccf30e8b6409dbf52c3ec7f7834f14875a7d2dc7fac367ce4230af4c"
+    },
+    "model_eq": {
+      "module": "django.db.models.base",
+      "qualname": "Model.__eq__",
+      "filename": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\base.py",
+      "firstlineno": 524,
+      "sha256": "d7355b93545da73fdd7ee66530757fff36552021254ef5bbf63599bf72ddf434"
+    },
+    "field_eq": {
+      "module": "django.db.models.fields",
+      "qualname": "Field.__eq__",
+      "filename": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\__init__.py",
+      "firstlineno": 511,
+      "sha256": "9ec9fc7102f5156c9ca61eb7e1f486fff391bca2caeec9ff91488b6f120eb8fe"
+    }
+  },
+  "callsite_ids": {
+    "r79_restored_getattr": {
+      "filename": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\governance\\frozen_protocols\\r079\\runnable_core_recipe.py",
+      "function": "run",
+      "lineno": 37,
+      "sha256": "be81df9d4943247a0745844c4feff351a19125edf5a503c3abb239bf26d460dc"
+    },
+    "r79_url_storage": {
+      "filename": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323\\sources\\r079\\git_transport\\acquisition_001\\before\\tree\\django\\db\\models\\fields\\files.py",
+      "function": "url",
+      "lineno": 62,
+      "sha256": "c63cf9ffccf30e8b6409dbf52c3ec7f7834f14875a7d2dc7fac367ce4230af4c"
+    }
+  }
+}

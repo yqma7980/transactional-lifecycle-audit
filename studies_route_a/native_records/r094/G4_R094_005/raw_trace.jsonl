@@ -1,0 +1,19 @@
+{"seq": 1, "monotonic_ns": 3344000000, "event": "begin", "fields": {}}
+{"seq": 2, "monotonic_ns": 3344000000, "event": "CALL_SOON:op_a", "fields": {}}
+{"seq": 3, "monotonic_ns": 3344000000, "event": "CALL_SOON:op_b", "fields": {}}
+{"seq": 4, "monotonic_ns": 3344000000, "event": "PENDING_SNAPSHOT:2", "fields": {"pending_ids": ["op_a", "op_b"]}}
+{"seq": 5, "monotonic_ns": 3344000000, "event": "SYNLOOP_ENTER", "fields": {}}
+{"seq": 6, "monotonic_ns": 3344000000, "event": "TASK_HANDLER_CREATED", "fields": {}}
+{"seq": 7, "monotonic_ns": 3344000000, "event": "TASK_CONSUMER_CONSUME", "fields": {}}
+{"seq": 8, "monotonic_ns": 3344000000, "event": "ON_READY", "fields": {}}
+{"seq": 9, "monotonic_ns": 3344000000, "event": "MAYBE_SHUTDOWN_RAISE", "fields": {"type_fqn": "builtins.SystemExit", "code": 0}}
+{"seq": 10, "monotonic_ns": 3344000000, "event": "NATIVE_PERFORM_ENTER", "fields": {}}
+{"seq": 11, "monotonic_ns": 3344000000, "event": "CALLBACK_ENTER:op_b", "fields": {}}
+{"seq": 12, "monotonic_ns": 3344000000, "event": "CALLBACK_RETURN:op_b", "fields": {}}
+{"seq": 13, "monotonic_ns": 3344000000, "event": "CALLBACK_ENTER:op_a", "fields": {}}
+{"seq": 14, "monotonic_ns": 3344000000, "event": "CALLBACK_RETURN:op_a", "fields": {}}
+{"seq": 15, "monotonic_ns": 3344000000, "event": "NATIVE_PERFORM_RETURN", "fields": {}}
+{"seq": 16, "monotonic_ns": 3344000000, "event": "DRAIN_EVENTS", "fields": {"timeout_seconds": 2.0}}
+{"seq": 17, "monotonic_ns": 3344000000, "event": "SYNLOOP_SYSTEM_EXIT", "fields": {"code": 0}}
+{"seq": 18, "monotonic_ns": 3344000000, "event": "TERMINAL_SNAPSHOT", "fields": {"pending_before": 2, "pending_after": 0, "pending_ids_before": ["op_a", "op_b"], "pending_ids_after": [], "callback_receipts": ["op_b", "op_a"], "callback_counts": {"op_a": 1, "op_b": 1}, "callback_enter_return_balance": {"op_a": [1, 1], "op_b": [1, 1]}, "unexpected_callback_exceptions": [], "native_perform_calls": 1, "maybe_shutdown_calls": 1, "maybe_shutdown_outcome": "RAISE_SYSTEM_EXIT", "drain_events_calls": 1, "drain_timeout_seconds": [2.0], "consume_calls": 1, "on_ready_calls": 1, "native_exit": "SYSTEM_EXIT", "system_exit_code": 0}}
+{"seq": 19, "monotonic_ns": 3344000000, "event": "end", "fields": {}}

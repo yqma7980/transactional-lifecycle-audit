@@ -1,0 +1,50 @@
+{
+  "rank": 79,
+  "status": "ENVIRONMENT_AND_IMPORT_IDENTITY_FROZEN",
+  "versions": {
+    "before": {
+      "python_version": "3.8.20",
+      "package_version": "3.1",
+      "commit": "aaea9deac4dea08ada934a930cfc27765358d8da",
+      "source_commit": "aaea9deac4dea08ada934a930cfc27765358d8da",
+      "source_manifest_sha256": "ef56117bb469dfd732e4207db52872b81cf93ea64256c36493404e4fb9ef2746",
+      "distributions": [
+        {
+          "name": "asgiref",
+          "version": "3.2.3"
+        },
+        {
+          "name": "pytz",
+          "version": "2019.3"
+        },
+        {
+          "name": "sqlparse",
+          "version": "0.3.0"
+        }
+      ],
+      "upstream_url": "https://github.com/django/django/tree/aaea9deac4dea08ada934a930cfc27765358d8da"
+    },
+    "after": {
+      "python_version": "3.8.20",
+      "package_version": "3.1",
+      "commit": "f600e3fad6e92d9fe1ad8b351dc8446415f24345",
+      "source_commit": "f600e3fad6e92d9fe1ad8b351dc8446415f24345",
+      "source_manifest_sha256": "2a0a30dbdfbc1169ecf753743b896b27ed6d6120df3a9073bc51196737a072c8",
+      "distributions": [
+        {
+          "name": "asgiref",
+          "version": "3.2.3"
+        },
+        {
+          "name": "pytz",
+          "version": "2019.3"
+        },
+        {
+          "name": "sqlparse",
+          "version": "0.3.0"
+        }
+      ],
+      "upstream_url": "https://github.com/django/django/tree/f600e3fad6e92d9fe1ad8b351dc8446415f24345"
+    }
+  }
+}

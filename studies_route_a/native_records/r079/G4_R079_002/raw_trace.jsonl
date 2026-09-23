@@ -1,0 +1,16 @@
+{"seq": 0, "monotonic_ns": 450317625000000, "event": "begin", "fields": {}}
+{"seq": 1, "monotonic_ns": 450317750000000, "event": "FIXTURE_READY", "fields": {"pk": 1, "name": "unused/test_file.py"}}
+{"seq": 2, "monotonic_ns": 450317750000000, "event": "REFERENCE_CAPTURED", "fields": {"name": "unused/test_file.py", "url": "/s10-media/unused/test_file.py"}}
+{"seq": 3, "monotonic_ns": 450317750000000, "event": "SERIALIZE_ENTER", "fields": {"pickle_protocol": 4}}
+{"seq": 4, "monotonic_ns": 450317750000000, "event": "SERIALIZE_RETURN", "fields": {"bytes": 391}}
+{"seq": 5, "monotonic_ns": 450317750000000, "event": "RESTORE_ENTER", "fields": {}}
+{"seq": 6, "monotonic_ns": 450317750000000, "event": "RESTORE_RETURN", "fields": {}}
+{"seq": 7, "monotonic_ns": 450317750000000, "event": "FILE_SELECTED", "fields": {"file_type": "django.db.models.fields.files.FieldFile"}}
+{"seq": 8, "monotonic_ns": 450317750000000, "event": "PROPERTY_CHECK:file_equal", "fields": {"status": "VALUE", "equal": true, "error": null}}
+{"seq": 9, "monotonic_ns": 450317750000000, "event": "PROPERTY_CHECK:name", "fields": {"status": "VALUE", "equal": true, "error": null}}
+{"seq": 10, "monotonic_ns": 450317750000000, "event": "PROPERTY_CHECK:url", "fields": {"status": "VALUE", "equal": true, "error": null}}
+{"seq": 11, "monotonic_ns": 450317750000000, "event": "PROPERTY_CHECK:storage", "fields": {"status": "VALUE", "equal": true, "error": null}}
+{"seq": 12, "monotonic_ns": 450317750000000, "event": "PROPERTY_CHECK:instance", "fields": {"status": "VALUE", "equal": true, "error": null}}
+{"seq": 13, "monotonic_ns": 450317750000000, "event": "PROPERTY_CHECK:field", "fields": {"status": "VALUE", "equal": true, "error": null}}
+{"seq": 14, "monotonic_ns": 450317750000000, "event": "TERMINAL_SNAPSHOT", "fields": {"serialization_calls": 1, "restoration_calls": 1, "pickle_protocol": 4, "file_type": "django.db.models.fields.files.FieldFile", "checks": {"file_equal": {"status": "VALUE", "equal": true, "error": null}, "name": {"status": "VALUE", "equal": true, "error": null}, "url": {"status": "VALUE", "equal": true, "error": null}, "storage": {"status": "VALUE", "equal": true, "error": null}, "instance": {"status": "VALUE", "equal": true, "error": null}, "field": {"status": "VALUE", "equal": true, "error": null}}, "witnesses": {"name": "unused/test_file.py", "url": "/s10-media/unused/test_file.py", "storage_type": "django.core.files.storage.DefaultStorage", "instance_key": {"model_label": "m003_s10_django_fixture.Document", "pk": 1}, "field_key": {"model_label": "m003_s10_django_fixture.Document", "name": "myfile"}}, "native_access_error_count": 0, "terminal": "RESTORATION_AND_CHECKS_COMPLETE"}}
+{"seq": 15, "monotonic_ns": 450317750000000, "event": "end", "fields": {}}

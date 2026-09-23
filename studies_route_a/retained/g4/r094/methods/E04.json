@@ -1,0 +1,145 @@
+{
+  "pid": 24408,
+  "rank": 94,
+  "arm": "lcma",
+  "input_sha256": "f7a5149cc7832ab47243b73655a37f0e2392e3af729ffc1c76f2ba7732694fa2",
+  "input_rows": 12,
+  "results": [
+    {
+      "verdict": "DETECTED",
+      "failed": [
+        {
+          "id": "pending_count_empty",
+          "obligation": "O5"
+        },
+        {
+          "id": "pending_ids_empty",
+          "obligation": "O5"
+        },
+        {
+          "id": "receipt_order",
+          "obligation": "O5"
+        },
+        {
+          "id": "callback_once",
+          "obligation": "O5"
+        },
+        {
+          "id": "callback_balanced",
+          "obligation": "O5"
+        }
+      ]
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "DETECTED",
+      "failed": [
+        {
+          "id": "pending_count_empty",
+          "obligation": "O5"
+        },
+        {
+          "id": "pending_ids_empty",
+          "obligation": "O5"
+        },
+        {
+          "id": "receipt_order",
+          "obligation": "O5"
+        },
+        {
+          "id": "callback_once",
+          "obligation": "O5"
+        },
+        {
+          "id": "callback_balanced",
+          "obligation": "O5"
+        }
+      ]
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "DETECTED",
+      "failed": [
+        {
+          "id": "pending_count_empty",
+          "obligation": "O5"
+        },
+        {
+          "id": "pending_ids_empty",
+          "obligation": "O5"
+        },
+        {
+          "id": "receipt_order",
+          "obligation": "O5"
+        },
+        {
+          "id": "callback_once",
+          "obligation": "O5"
+        },
+        {
+          "id": "callback_balanced",
+          "obligation": "O5"
+        }
+      ]
+    }
+  ],
+  "implementation_sha256": {
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\harness\\lcma_arm.py": "cac4b624e75c3ceb19d52b12f594bccdd693e1325f831a3522383ae8a31a72fb",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\core\\frozen_core.py": "ace349aa9a7750e7891acdf6ccbf1705cecc5bae3f3ec67fdbebb28f31e6fc13",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\harness\\projection.py": "28b847862bbe1c3622a87a34eeab709aa770ac5a7abef3ae0bea8d0c317ca61f"
+  },
+  "timed_ns_per_trace_batches": [
+    44660.916666666664,
+    44761.0,
+    40214.333333333336,
+    37884.5,
+    39781.75,
+    42855.416666666664,
+    42691.0
+  ],
+  "median_ns_per_trace": 42691.0,
+  "batch_cpu_seconds": 0.34375,
+  "warmup_rounds": 20,
+  "timed_batches": 7,
+  "evaluations_per_trace_per_batch": 100,
+  "native_target_imports": 0,
+  "native_verdict_inputs": false,
+  "management_label_inputs": false,
+  "input_path_is_ordinal_transport_only": true,
+  "precomputed_contract_outside_timer": true,
+  "validation_warmup_and_serialization_excluded_from_pure_evaluator_timing": true
+}

@@ -1,4 +1,34 @@
-# Transactional Lifecycle Audit v6.0.0
+# Auditable Lifecycle Contracts: v7.0.0
+
+The current evidence addition is [studies_route_a](studies_route_a/README.md):
+Django/Celery equal-information comparison and Click/Trio applicability-boundary
+records supporting **Auditable Lifecycle Contracts for Stateful Software:
+Equal-Information Comparisons and Applicability Boundaries**.
+
+Both methods detect 6/6 manifestations with 0/18 normal false positives. LCMA
+pure-decision evaluation is approximately 2.171/2.164 times slower. Click and
+Trio remain HOLD cases; the depth-1500 negative evidence is retained. There are
+two historical defect lineages, not 24 independent defects. No studies were
+rerun for this archival release. Frozen scientific results are unchanged.
+
+The addition includes author-created source and sanitized retained records.
+It is not a verified one-command native reproduction environment. Read its
+README for environment/path reconstruction limits and exact provenance hashes.
+
+```text
+python -B studies_route_a/verify_archive.py
+```
+
+This command checks only archived bytes and saved-result consistency. It does
+not import or execute any study or repeat timing. Cite the v7.0.0 release for
+these later materials, not v6.0.0. Earlier evidence below remains separately
+bounded historical material and is not additional Route A independent evidence.
+
+## Historical v6.0.0 description
+
+The verification/install commands in this historical section apply to a v6.0.0
+checkout, not to the updated v7.0.0 root metadata. For the current addition use
+the read-only `studies_route_a/verify_archive.py` command above.
 
 This release is the public software and evidence companion for the evolving lifecycle-aware metamorphic-testing study. Version 6.0.0 adds a sanitized, independently frozen SQLite transaction adapter and retained R3 evidence without rewriting the v3.0.0 parent results or the separately published v4.0.0 and v5.0.0 OpenSees extensions.
 

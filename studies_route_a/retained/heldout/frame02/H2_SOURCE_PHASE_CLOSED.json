@@ -1,0 +1,18 @@
+{
+  "schema": "M003_FRAME02_H2_SOURCE_CLOSE_V1",
+  "started_utc": "2026-09-07 10:28:46 UTC",
+  "closed_utc": "2026-09-07 10:49:27 UTC",
+  "status": "SOURCE_REVIEW_CLOSED_ONE_CASE_AND_ONE_PROJECT_HOLD",
+  "chosen": [
+    "pallets/click#412"
+  ],
+  "no_eligible_case": [
+    "python-trio/trio"
+  ],
+  "candidate_ledger": "H2_CANDIDATE_LEDGER.json",
+  "request_index": "H2_REQUEST_INDEX.json",
+  "no_more_source_requests": true,
+  "no_more_target_source_inspection": true,
+  "native_runs": 0,
+  "subsequent_work": "Prepare case protocol and review packet using already acquired evidence; no source expansion."
+}

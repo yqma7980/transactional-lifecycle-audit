@@ -1,0 +1,129 @@
+{
+  "schema": "S06-EQUALITY-1",
+  "eligibility": [
+    {
+      "id": "protocol_matches",
+      "left": {
+        "path": [
+          "context",
+          "protocol_id"
+        ]
+      },
+      "right": {
+        "literal": "G4-PENDING-CALLBACK-1"
+      }
+    },
+    {
+      "id": "point_matches",
+      "left": {
+        "path": [
+          "context",
+          "observation_point"
+        ]
+      },
+      "right": {
+        "literal": "immediate_native_exit_before_cleanup"
+      }
+    },
+    {
+      "id": "order_matches",
+      "left": {
+        "path": [
+          "context",
+          "observation_order"
+        ]
+      },
+      "right": {
+        "literal": [
+          "pending_after",
+          "pending_ids_after",
+          "callback_receipts",
+          "callback_counts",
+          "callback_enter_return_balance"
+        ]
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "pending_count_empty",
+      "obligation": "O5",
+      "left": {
+        "path": [
+          "samples",
+          "pending_after"
+        ]
+      },
+      "right": {
+        "literal": 0
+      }
+    },
+    {
+      "id": "pending_ids_empty",
+      "obligation": "O5",
+      "left": {
+        "path": [
+          "samples",
+          "pending_ids_after"
+        ]
+      },
+      "right": {
+        "literal": []
+      }
+    },
+    {
+      "id": "receipt_order",
+      "obligation": "O5",
+      "left": {
+        "path": [
+          "samples",
+          "callback_receipts"
+        ]
+      },
+      "right": {
+        "literal": [
+          "op_b",
+          "op_a"
+        ]
+      }
+    },
+    {
+      "id": "callback_once",
+      "obligation": "O5",
+      "left": {
+        "path": [
+          "samples",
+          "callback_counts"
+        ]
+      },
+      "right": {
+        "literal": {
+          "op_a": 1,
+          "op_b": 1
+        }
+      }
+    },
+    {
+      "id": "callback_balanced",
+      "obligation": "O5",
+      "left": {
+        "path": [
+          "samples",
+          "callback_enter_return_balance"
+        ]
+      },
+      "right": {
+        "literal": {
+          "op_a": [
+            1,
+            1
+          ],
+          "op_b": [
+            1,
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

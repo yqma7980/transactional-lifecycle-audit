@@ -1,0 +1,324 @@
+{
+  "schema": "M003_FRAME02_H2_REQUEST_INDEX_V1",
+  "utc": "2026-09-07 10:48:53 UTC",
+  "connector_requests": [
+    {
+      "asset_id": "click_search_01",
+      "asset_kind": "sealed_issue_search",
+      "tool": "mcp__codex_apps__github_search_issues",
+      "arguments": {
+        "query": "repo:pallets/click is:issue is:closed cleanup",
+        "sort": "created",
+        "order": "asc",
+        "topn": 5
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:28:46 UTC",
+      "finished_utc": "2026-09-07 10:28:48 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/click_search_01.json"
+    },
+    {
+      "asset_id": "trio_search_01",
+      "asset_kind": "sealed_issue_search",
+      "tool": "mcp__codex_apps__github_search_issues",
+      "arguments": {
+        "query": "repo:python-trio/trio is:issue is:closed cleanup",
+        "sort": "created",
+        "order": "asc",
+        "topn": 5
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:30:00 UTC",
+      "finished_utc": "2026-09-07 10:30:02 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/trio_search_01.json"
+    },
+    {
+      "asset_id": "click_issue_412",
+      "asset_kind": "primary_issue_identity_and_body",
+      "tool": "mcp__codex_apps__github_fetch_issue",
+      "arguments": {
+        "repository_full_name": "pallets/click",
+        "issue_number": 412
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:30:32 UTC",
+      "finished_utc": "2026-09-07 10:30:34 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/click_issue_412.json"
+    },
+    {
+      "asset_id": "click_issue_839",
+      "asset_kind": "primary_issue_identity_and_body",
+      "tool": "mcp__codex_apps__github_fetch_issue",
+      "arguments": {
+        "repository_full_name": "pallets/click",
+        "issue_number": 839
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:31:20 UTC",
+      "finished_utc": "2026-09-07 10:31:22 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/click_issue_839.json"
+    },
+    {
+      "asset_id": "click_issue_1499",
+      "asset_kind": "primary_issue_identity_and_body",
+      "tool": "mcp__codex_apps__github_fetch_issue",
+      "arguments": {
+        "repository_full_name": "pallets/click",
+        "issue_number": 1499
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:31:24 UTC",
+      "finished_utc": "2026-09-07 10:31:26 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/click_issue_1499.json"
+    },
+    {
+      "asset_id": "click_issue_1708",
+      "asset_kind": "primary_issue_identity_and_body",
+      "tool": "mcp__codex_apps__github_fetch_issue",
+      "arguments": {
+        "repository_full_name": "pallets/click",
+        "issue_number": 1708
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:31:27 UTC",
+      "finished_utc": "2026-09-07 10:31:29 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/click_issue_1708.json"
+    },
+    {
+      "asset_id": "click_issue_2017",
+      "asset_kind": "primary_issue_identity_and_body",
+      "tool": "mcp__codex_apps__github_fetch_issue",
+      "arguments": {
+        "repository_full_name": "pallets/click",
+        "issue_number": 2017
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:31:30 UTC",
+      "finished_utc": "2026-09-07 10:31:32 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/click_issue_2017.json"
+    },
+    {
+      "asset_id": "trio_issue_6",
+      "asset_kind": "primary_issue_identity_and_body",
+      "tool": "mcp__codex_apps__github_fetch_issue",
+      "arguments": {
+        "repository_full_name": "python-trio/trio",
+        "issue_number": 6
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:31:34 UTC",
+      "finished_utc": "2026-09-07 10:31:39 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/trio_issue_6.json"
+    },
+    {
+      "asset_id": "trio_issue_27",
+      "asset_kind": "primary_issue_identity_and_body",
+      "tool": "mcp__codex_apps__github_fetch_issue",
+      "arguments": {
+        "repository_full_name": "python-trio/trio",
+        "issue_number": 27
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:31:40 UTC",
+      "finished_utc": "2026-09-07 10:31:43 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/trio_issue_27.json"
+    },
+    {
+      "asset_id": "trio_issue_55",
+      "asset_kind": "primary_issue_identity_and_body",
+      "tool": "mcp__codex_apps__github_fetch_issue",
+      "arguments": {
+        "repository_full_name": "python-trio/trio",
+        "issue_number": 55
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:31:44 UTC",
+      "finished_utc": "2026-09-07 10:31:46 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/trio_issue_55.json"
+    },
+    {
+      "asset_id": "trio_issue_57",
+      "asset_kind": "primary_issue_identity_and_body",
+      "tool": "mcp__codex_apps__github_fetch_issue",
+      "arguments": {
+        "repository_full_name": "python-trio/trio",
+        "issue_number": 57
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:31:47 UTC",
+      "finished_utc": "2026-09-07 10:31:50 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/trio_issue_57.json"
+    },
+    {
+      "asset_id": "trio_issue_103",
+      "asset_kind": "primary_issue_identity_and_body",
+      "tool": "mcp__codex_apps__github_fetch_issue",
+      "arguments": {
+        "repository_full_name": "python-trio/trio",
+        "issue_number": 103
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:31:52 UTC",
+      "finished_utc": "2026-09-07 10:31:58 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/trio_issue_103.json"
+    },
+    {
+      "asset_id": "click_412_timeline",
+      "asset_kind": "linked_authority_asset",
+      "linked_asset_position": 1,
+      "for_issue": "pallets/click#412",
+      "tool": "mcp__codex_apps__github_fetch",
+      "arguments": {
+        "url": "https://api.github.com/repos/pallets/click/issues/412/timeline?per_page=100&page=1"
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:33:11 UTC",
+      "finished_utc": "2026-09-07 10:33:14 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/click_412_timeline.json"
+    },
+    {
+      "asset_id": "click_412_fix",
+      "asset_kind": "linked_authority_asset",
+      "linked_asset_position": 2,
+      "for_issue": "pallets/click#412",
+      "tool": "mcp__codex_apps__github_fetch_commit",
+      "arguments": {
+        "repo_full_name": "pallets/click",
+        "commit_sha": "851ce7fc58d5ee57e3910a12094d3df986bb0ff8"
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:33:28 UTC",
+      "finished_utc": "2026-09-07 10:33:33 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/click_412_fix.json"
+    },
+    {
+      "asset_id": "click_412_fix",
+      "asset_kind": "linked_authority_asset",
+      "linked_asset_position": 2,
+      "for_issue": "pallets/click#412",
+      "tool": "mcp__codex_apps__github_fetch",
+      "arguments": {
+        "url": "https://api.github.com/repos/pallets/click/commits/851ce7fc58d5ee57e3910a12094d3df986bb0ff8"
+      },
+      "attempt": 2,
+      "reason": "Commit-specific connector omitted parents; same canonical commit API resource, second and final asset request, to read first-parent metadata.",
+      "started_utc": "2026-09-07 10:33:59 UTC",
+      "finished_utc": "2026-09-07 10:34:02 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/click_412_fix_attempt02.json"
+    },
+    {
+      "asset_id": "trio_55_timeline",
+      "asset_kind": "linked_authority_asset",
+      "linked_asset_position": 1,
+      "for_issue": "python-trio/trio#55",
+      "tool": "mcp__codex_apps__github_fetch",
+      "arguments": {
+        "url": "https://api.github.com/repos/python-trio/trio/issues/55/timeline?per_page=100&page=1"
+      },
+      "attempt": 1,
+      "started_utc": "2026-09-07 10:40:04 UTC",
+      "finished_utc": "2026-09-07 10:40:06 UTC",
+      "raw_http_available": false,
+      "raw_path": "raw/trio_55_timeline.json"
+    }
+  ],
+  "archive_request_log": "raw/click_archives_requests.json",
+  "archive_records": {
+    "schema": "M003_FRAME02_ARCHIVE_REQUESTS_V1",
+    "records": [
+      {
+        "asset_id": "click_412_before_archive",
+        "linked_asset_position": 3,
+        "for_issue": "pallets/click#412",
+        "attempt": 1,
+        "uri": "https://codeload.github.com/pallets/click/zip/7f1d70c54565ec978f49dc78a65299f9e94cd01d",
+        "exact_sha": "7f1d70c54565ec978f49dc78a65299f9e94cd01d",
+        "started_utc": "2026-09-07T10:41:56.8089518Z",
+        "finished_utc": "2026-09-07T10:42:01.6735745Z",
+        "elapsed_seconds": 4.8609085,
+        "status": "DOWNLOADED_NOT_EXECUTED",
+        "error": null,
+        "response_headers": {
+          "X-Content-Type-Options": "nosniff",
+          "ETag": "\"9cb1a840b6f93eef74310ca68a05505a8ef56a25313f6be08d31335927d24f78\"",
+          "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+          "Date": "Mon, 07 Sep 2026 10:41:58 GMT",
+          "x-github-edge-region": "southeastasia",
+          "Strict-Transport-Security": "max-age=31536000",
+          "Vary": "Authorization, Accept-Encoding",
+          "Transfer-Encoding": "chunked",
+          "X-GitHub-Request-Id": "3202:0BA8:15F1C9:5239CA:6A9E94F6",
+          "Access-Control-Allow-Origin": "https://render.githubusercontent.com",
+          "Cross-Origin-Resource-Policy": "cross-origin",
+          "Content-Type": "application/zip",
+          "Content-Disposition": "attachment; filename=click-7f1d70c54565ec978f49dc78a65299f9e94cd01d.zip",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Frame-Options": "deny"
+        },
+        "saved_path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/heldout/frame02/cases/click_412/sources/before.zip",
+        "bytes": 314383,
+        "sha256": "3b8958ed01dc2af272d786cba95997999193f24694e571f72355661e4db8e074",
+        "native_execution": false
+      },
+      {
+        "asset_id": "click_412_fixed_archive",
+        "linked_asset_position": 4,
+        "for_issue": "pallets/click#412",
+        "attempt": 1,
+        "uri": "https://codeload.github.com/pallets/click/zip/851ce7fc58d5ee57e3910a12094d3df986bb0ff8",
+        "exact_sha": "851ce7fc58d5ee57e3910a12094d3df986bb0ff8",
+        "started_utc": "2026-09-07T10:42:01.7141952Z",
+        "finished_utc": "2026-09-07T10:42:03.4191389Z",
+        "elapsed_seconds": 1.7045509,
+        "status": "DOWNLOADED_NOT_EXECUTED",
+        "error": null,
+        "response_headers": {
+          "X-Content-Type-Options": "nosniff",
+          "ETag": "\"b2234022c262d7d1efdc711a4df07c03760e1687d0d43752da2ef86403d72cf9\"",
+          "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+          "Date": "Mon, 07 Sep 2026 10:42:01 GMT",
+          "x-github-edge-region": "southeastasia",
+          "Strict-Transport-Security": "max-age=31536000",
+          "Vary": "Authorization, Accept-Encoding",
+          "Transfer-Encoding": "chunked",
+          "X-GitHub-Request-Id": "3202:0BA8:15F1FF:523A5F:6A9E94F7",
+          "Access-Control-Allow-Origin": "https://render.githubusercontent.com",
+          "Cross-Origin-Resource-Policy": "cross-origin",
+          "Content-Type": "application/zip",
+          "Content-Disposition": "attachment; filename=click-851ce7fc58d5ee57e3910a12094d3df986bb0ff8.zip",
+          "X-XSS-Protection": "1; mode=block",
+          "X-Frame-Options": "deny"
+        },
+        "saved_path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/heldout/frame02/cases/click_412/sources/fixed.zip",
+        "bytes": 314463,
+        "sha256": "5fe42099e2c714d874b70d37f1d4e14bc23d615e69233e13849ddd48e215d900",
+        "native_execution": false
+      }
+    ],
+    "source_acquisition_only": true
+  },
+  "request_accounting": {
+    "connector_requests": 16,
+    "archive_requests": 2,
+    "total": 18,
+    "click_linked_assets": 4,
+    "trio_55_linked_assets": 1,
+    "max_attempts_one_asset": 2
+  },
+  "limitations": "Connector result payloads retained unchanged inside JSON envelopes; connectors do not expose raw HTTP bytes, HTTP redirect history, wire byte counts, or per-request timeout control. Thus 45-second observed duration and serialized payload size can be checked, but exact transport timeout/16MiB wire limits are not independently certified for connector calls. Archive HTTP reads enforce 45 seconds and 16MiB caps."
+}

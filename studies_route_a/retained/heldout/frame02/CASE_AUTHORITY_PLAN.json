@@ -1,0 +1,55 @@
+{
+  "schema": "M003_FRAME02_BOUNDED_SOURCE_PLAN_V1",
+  "status": "FROZEN_BEFORE_BEHAVIOR_AWAIT_EXACT_PARENT_RECEIPT",
+  "queries": [
+    {
+      "repository": "pallets/click",
+      "query": "repo:pallets/click is:issue is:closed cleanup",
+      "connector": "mcp__codex_apps__github_search_issues",
+      "arguments": {
+        "query": "repo:pallets/click is:issue is:closed cleanup",
+        "sort": "created",
+        "order": "asc",
+        "topn": 5
+      }
+    },
+    {
+      "repository": "python-trio/trio",
+      "query": "repo:python-trio/trio is:issue is:closed cleanup",
+      "connector": "mcp__codex_apps__github_search_issues",
+      "arguments": {
+        "query": "repo:python-trio/trio is:issue is:closed cleanup",
+        "sort": "created",
+        "order": "asc",
+        "topn": 5
+      }
+    }
+  ],
+  "query_choice": "User-permitted technically conservative cleanup-only variant, selected now before query results; grouped OR/parenthesis semantics are not assumed. No OR probe or alternate terms will be issued.",
+  "per_project_limits": {
+    "logical_queries": 1,
+    "attempts_same_query_asset": 2,
+    "first_issue_refs": 5,
+    "chosen_defects": 1,
+    "linked_assets_per_issue": 4
+  },
+  "order": "Freeze the first successful oldest-first response identity frame; retain server order and sort those first five by created_at then numeric issue ID. No pagination or sixth issue. If requested sort/identity coverage cannot be established, ORDER_UNVERIFIED_HOLD.",
+  "case_rule": "Inspect only the fixed five in order. First qualifying actual lifecycle defect with an authoritative accepted upstream fix link, exact correction commit, its verified first-parent before revision, meaningful trigger/natural benign control, and bounded no-external-service local reproduction. Closed alone is not fix authority.",
+  "fix_rule": "Use the first authoritative closing/fix link in event timestamp then stable ID order. before_sha must be the correction commit's first parent, never a guessed branch/base. Unclear linkage or mixed-property pair means PROVENANCE_HOLD, not alternate commit shopping.",
+  "selection_vs_execution": "Choose at most one source-qualifying defect/project before native results. Core expressibility is not an eligibility filter. Once chosen, environment/reproduction/core-change failure stays on that case; do not try another.",
+  "negatives": "Retain each reviewed ref, order, exclusion/hold reason and source hashes. If none of first five qualifies, NO_ELIGIBLE_CASE_FROM_FROZEN_FIVE; no substitute query/project. Neither project has a selected case yet.",
+  "source_bounds": {
+    "public_github_only": true,
+    "attempts_per_asset": 2,
+    "request_timeout_seconds": 45,
+    "total_source_review_seconds": 1800,
+    "max_bytes_per_asset": 16777216,
+    "max_total_source_bytes": 134217728
+  },
+  "raw_records": "Persist exact request arguments, attempt/time/status, available unmodified connector payload, source hashes and raw-HTTP availability limitations. Archive identity frame before body review.",
+  "receipt_gate": "No issue/title/body/fix/source-behavior lookup until parent records receipt of this exact frame02/SELECTION_SEAL.json hash. The negative old-frame receipt does not release this gate.",
+  "native_review": "Parent provides nonauthor AI review before native runs. Review the case-specific source/native reference/fixtures/runtime/contract/equal-information baseline seal. This source plan alone is not execution approval.",
+  "selected_case_refs": [],
+  "source_behavior_requests": 0,
+  "native_runs": 0
+}

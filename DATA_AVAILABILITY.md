@@ -1,5 +1,29 @@
 # Data and code availability
 
+## Current Route A evidence (v7.0.0)
+
+The public `studies_route_a` directory contains the later Django/Celery shared
+comparison inputs, saved outcomes/timing batches, native event/process records,
+frozen comparator and adapter source, environment/source identities, and
+Click/Trio screening and admission records. Author-derived records are CC BY 4.0;
+author software is BSD-3-Clause. See the directory's provenance manifest and
+third-party notices. The versioned release is:
+https://github.com/yqma7980/transactional-lifecycle-audit/releases/tag/v7.0.0
+
+Original scientific values and conclusions are preserved; workstation paths are
+sanitized. No experiments or timing runs were performed for this release. Public
+record inspection is supported; complete cross-machine native execution is not
+certified. Historical orchestrators retain source/environment guards and require
+explicit reconstruction/rebinding. Upstream trees, runtimes, issue prose and
+private/unrelated assets are excluded. Do not interpret admission HOLD records
+as successful or failed native transfer experiments.
+
+The earlier v6.0.0 software/data archives below remain unchanged and are not the
+archive for the later Route A primary comparison. Additional uncurated local
+materials are not promised as unconditionally redistributable.
+
+## Historical v6.0.0 scope
+
 The v6.0.0 software release adds the sanitized R3 SQLite lifecycle study to the frozen v3.0.0 parent software. It includes the preregistration, source-freeze manifest, adapter and adjudication code, conditional finite-state corroboration, and retained formal process records. The v3.0.0 parent evidence is not recomputed or overwritten.
 
 ## Public archives

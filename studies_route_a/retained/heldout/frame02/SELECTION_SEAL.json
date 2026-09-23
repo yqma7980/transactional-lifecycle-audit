@@ -1,0 +1,72 @@
+{
+  "schema": "M003_FRAME02_PROJECT_SELECTION_SEAL_V1",
+  "sealed_utc": "2026-09-07T10:20:42.4859814Z",
+  "status": "PROJECT_SELECTION_SEALED_AWAIT_PARENT_RECEIPT",
+  "selected_project_count": 2,
+  "selected_projects": [
+    {
+      "original_position": 1,
+      "repository": "pallets/click",
+      "repository_id": "19103692"
+    },
+    {
+      "original_position": 2,
+      "repository": "python-trio/trio",
+      "repository_id": "79083614"
+    }
+  ],
+  "independence_scope": "RECORDED_LOCAL_METHOD_DEVELOPMENT_PROTOCOL_OUTCOME_HELDOUT_NOT_UNIVERSAL_OR_BLIND",
+  "click_dependency_contact_disclosed": true,
+  "chosen_case_refs": [],
+  "core_sha256": "ace349aa9a7750e7891acdf6ccbf1705cecc5bae3f3ec67fdbebb28f31e6fc13",
+  "files": [
+    {
+      "name": "LOCAL_CONTACT_AUDIT.json",
+      "sha256": "b5a028a6ecd5508750706d86a3c160a7fb6dc15307d7414e8c21c0f07712f347",
+      "bytes": 34083
+    },
+    {
+      "name": "CASE_AUTHORITY_PLAN.json",
+      "sha256": "34532ca14d68216a263150091c660c6b8cf45d2ba07f53eee633a7c853fc9e97",
+      "bytes": 3573
+    },
+    {
+      "name": "GENERIC_EVALUATION_PROCEDURE.json",
+      "sha256": "a54a862498abe56570b54a79c71ddd27db1a3cec31fb732ca548104ff405b882",
+      "bytes": 2571
+    },
+    {
+      "name": "PROJECT_SELECTION_PROTOCOL.json",
+      "sha256": "d71197df106f1d4aac9a203eff85c432042fed8c98d4c4351fc9685359906f25",
+      "bytes": 2025
+    },
+    {
+      "name": "METADATA_RETRIEVAL_LOG.json",
+      "sha256": "b1b942590ffb82d4f18402e5754c0d4cf514d76220ca963e98ffab626901ae06",
+      "bytes": 3797
+    },
+    {
+      "name": "HANDOFF.md",
+      "sha256": "b8241c292f0e2a696e741470fa351b7f29352c6f65822b27d91a2091003f89f1",
+      "bytes": 1656
+    },
+    {
+      "name": "METADATA_QA.json",
+      "sha256": "e820ac3e50ef3a6a462fd001574d2ce690a700d8f2691bc99f5624f03d3ada1f",
+      "bytes": 2045
+    }
+  ],
+  "metadata_qa": {
+    "passed": true,
+    "assertions": 9,
+    "source_hash_checks": 81
+  },
+  "parent_receipt_asserted": false,
+  "behavior_gate": "REQUIRES_PARENT_RECEIPT_OF_THIS_EXACT_SEAL_HASH",
+  "native_gate": "Additionally requires case-authority/fixture/runtime/comparator integrity seal and parent-provided nonauthor AI review",
+  "issue_lookups_before_seal": 0,
+  "native_runs": 0,
+  "no_reserves": true,
+  "no_outcome_replacement": true,
+  "local_timestamp_not_independently_witnessed": true
+}

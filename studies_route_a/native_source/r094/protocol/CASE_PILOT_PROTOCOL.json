@@ -1,0 +1,846 @@
+{
+  "schema": "M003-S10-G2A-CASE-PILOT-PROTOCOL-1",
+  "author_role": "AI_PROTOCOL_AUTHOR_NOT_INDEPENDENT_HUMAN",
+  "author_status": "STATIC_PROTOCOL_PROPOSED_FOR_PARENT_INTEGRATION",
+  "static_disposition": "SOURCE_READY",
+  "disposition_scope": "G2a source-backed behavioral design only. No G2b source-completeness, dependency, environment or native qualification is asserted.",
+  "review_status": "AUTHOR_SELF_REVIEW_ONLY__NONAUTHOR_REVIEW_PENDING",
+  "native_target_runs": 0,
+  "native_target_imports": 0,
+  "cohort_frozen": false,
+  "g2_selected": null,
+  "g3_authorized_by_this_file": false,
+  "g1_status": "SOURCE_PAIR_VERIFIED",
+  "source_cutoff_date": "2026-09-04",
+  "plan": {
+    "path": "LOCAL_WORKSPACE/M-2026-003_S10_G2_G3_PLAN_20260906_210620\\M003_S10_BATCH02_G2_G3_EXECUTION_GOAL.md",
+    "sha256": "cd822fa0825eef9439fd15bc48354d2de614bc271c570fe04b2d3b337ab5d5ed"
+  },
+  "evidence_root": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_20260906_160520",
+  "execution_root": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323",
+  "protocol_sha256": "c08189f0fd0cbd8400d456dea89cba538f2493bc34515d9b860e51fba9a210a6",
+  "runnable_recipe": {
+    "path": "r094_celery_issue5663_pr9348/runnable_core_recipe.py",
+    "sha256": "3142ef5c89516fea82e461b1b775b047d533a51ba7daea6145e448468a555731",
+    "callable": "run(history, emit)",
+    "history_values": [
+      "control",
+      "trigger"
+    ],
+    "emit_contract": "Parent's validated collector supplies emit(phase: str, payload: dict), adds contiguous seq/monotonic_ns, persists raw events without outcome labels, and propagates capture errors as collection failures. This recipe returns raw observations, never a hard-coded native pass result.",
+    "activation": "Parent may copy/import this authored recipe ONLY after cohort freeze, full-source/environment/collector identity gates and one fresh supervised process per cell. No target imports or execution were used while authoring.",
+    "driver_not_included": "Use the parent's bounded driver for source/import attestation, output caps, PID/resources, exception/collection classification, persistence and the JSON oracle. This is a runnable native core, not a standalone or already-verified pilot.",
+    "pyc_policy": "For source preservation use -B / PYTHONDONTWRITEBYTECODE=1 when reading/running immutable inputs.",
+    "package_setup": "Create the declared fixture_source_files, if any, under the parent's NEW harness directory and hash them before any behavior; do not place them inside either target package.",
+    "structural_checks_only": true
+  },
+  "parent_readiness_update": {
+    "source": "User/parent message in this task; not independently measured by this author",
+    "executor_synthetic_checks_reported_passed": 28,
+    "installed_python_reported": [
+      "3.12",
+      "3.13",
+      "3.14"
+    ],
+    "historical_runtime_options": "Read-only approved SQLA-4664 CPython 3.7.9 embedded runtime may be copied, never changed in place; or prepare a task-local uv-managed full CPython 3.8 and venv AFTER parent freeze.",
+    "preparation_candidate": "Local CPython 3.12, subject to exact 2024 tree metadata and pinned dependency compatibility.",
+    "locked_interpreter_or_dependencies": false,
+    "limit": "Generic supervisor QA is not per-case collector QA, dependency compatibility or native evidence."
+  },
+  "fixture_source_files": {},
+  "protocol_hash_policy": "SHA-256 of UTF-8 json.dumps(object without only the top-level protocol_sha256 key, sort_keys=True, ensure_ascii=True, separators=(',', ':'), allow_nan=False), no trailing newline. This seals author text, not the cohort; use a separate whole-file hash for packaging.",
+  "evidence_level": "PLANNED_NATIVE_FOUR_CELL_ADAPTATION_FROM_SAVED_UPSTREAM_ORACLE_NOT_EXECUTED_UPSTREAM_TEST",
+  "cell_order": [
+    "before-control",
+    "after-control",
+    "before-trigger",
+    "after-trigger"
+  ],
+  "process_isolation": "Exactly one fresh process and fresh local fixture state per cell; same harness text and compatible dependency lock for both SHAs. Never share an environment with the other Celery case.",
+  "unrun_cells": "All four cells currently NOT_RUN / NOT_EVALUATED, reason AUTHOR_STATIC_SUBTASK_ONLY. Expectations below are predictions from source, not recorded results.",
+  "current_protocol_holds": [],
+  "common_pre_g3_gates": [
+    "Parent integrates all six static decisions and freezes cohort before any target behavior; no worker cohort freeze and no replacement candidate.",
+    "Parent obtains and binds full before/after source trees, production files, tests, licenses and packaging metadata. Saved raw-URL responses alone do not establish all tree identities.",
+    "Before first behavior, parent seals CASE_ENVIRONMENT_LOCK.json with interpreter/build/architecture/OS, dependency versions and package-file SHA-256, sources, licenses, installation logs and any before/after differences.",
+    "Collector/supervisor synthetic QA passes for event order, identical timestamps, wrong PID, missing events, NaN/Inf, truncation, timeout, partial output, child exit and restart residue. No target function is used to test the collector.",
+    "Per-cell identity/import smoke verifies sys.executable, package versions, module __file__ and production hashes under the sealed source/env directories; not a native defect result.",
+    "SOURCE_MANIFEST.json, CASE_ENVIRONMENT_LOCK.json, COLLECTOR_QA.json and full protocol/harness hashes exist before G3."
+  ],
+  "harness_limits": {
+    "native_process_wall_seconds": 180,
+    "four_cell_wall_seconds": 900,
+    "environment_preparation_wall_seconds": 1800,
+    "preparation_excludes_queue_time": true,
+    "stdout_bytes_per_stream": 16777216,
+    "stderr_bytes_per_stream": 16777216,
+    "environment_bytes_per_case_total": 10737418240,
+    "results_bytes_per_case_total": 2147483648,
+    "maximum_download_attempts_per_resource": 2,
+    "concurrent_historical_target_environments": 1,
+    "execution_location": "Local Windows, CPU, isolated temporary files only. Any unsupported platform -> ENVIRONMENT_HOLD; no unapproved server/Linux/WSL transfer.",
+    "supervision": "Actual bounded-executor validation required. Terminate and wait only owned processes/children, retain PID/status/tail logs and mark incomplete; never kill unrelated programs.",
+    "monitoring": "Check disk/free resources before preparation; record CPU/memory peaks, wall time, output bytes. Mark unavailable monitors UNMONITORED, not hard-limit enforced.",
+    "revision_policy": "Any resource revision must be approved and recorded before building/testing this case; no silent timeout extension or attempt-counter reset across proxies/mirrors.",
+    "source_or_dependency_operations_allowed_in_this_subtask": false
+  },
+  "field_units": {
+    "seq": "positive integer event index starting at 1 within one cell",
+    "monotonic_ns": "nonnegative integer nanoseconds since cell start; nondecreasing, equal timestamps allowed",
+    "counts": "nonnegative integer occurrences, never floating-point and never JSON booleans",
+    "sha256": "64 lowercase hexadecimal characters",
+    "git_sha1": "40 lowercase hexadecimal characters",
+    "identities": "exact strings or structured keys, not numeric measurements",
+    "timestamps": "UTC ISO-8601 with local offset stored in administrative manifest",
+    "resource_wall_seconds": "finite nonnegative seconds; diagnostic, not a native correctness threshold beyond approved hard limits",
+    "resource_bytes": "nonnegative integer bytes",
+    "drain_timeout_seconds": "finite numeric seconds, exactly 2.0 (exactly representable), zero tolerance; store each actual call separately",
+    "system_exit_code": "integer injected code 0, distinct from the parent process exit code; null on normal return",
+    "callback_counts": "integer actual callback receipts per op token; never replace with perform_pending_operations call count"
+  },
+  "equality_policy": {
+    "version": "PRE_RESULT_EXACT_V1",
+    "identity_count_enum_string_policy": "Exact, type-checked equality; reject bool-as-int, coercion, trimming, case folding, omitted namespaces and missing required fields.",
+    "float_tolerance": null,
+    "float_policy": "No approximate native comparisons. Numeric values must be finite; NaN/Inf in a numeric field invalidate collection rather than demonstrate a target bug. Do not apply floating-point checks to strings, exception messages or unavailable fields.",
+    "cross_process": "Do not compare memory addresses, repr object IDs, PIDs or random temporary path prefixes across processes. Native object equality is evaluated within its cell; serialize booleans plus semantic keys.",
+    "order": "Use strictly increasing contiguous seq, not strict timestamp inequalities. No reordering to manufacture expected history.",
+    "adjustment": "No result-dependent threshold, message, namespace, timing-window or comparator changes."
+  },
+  "failure_classification": {
+    "execution_status": [
+      "COMPLETED",
+      "ENVIRONMENT_FAILURE",
+      "COLLECTION_FAILURE",
+      "TIMEOUT",
+      "SOURCE_IDENTITY_FAILURE",
+      "NOT_RUN"
+    ],
+    "native_outcome": [
+      "SATISFIED",
+      "VIOLATED",
+      "UNRESOLVED",
+      "NOT_EVALUATED"
+    ],
+    "final_case_disposition": [
+      "NATIVE_FIXED_PAIR_VERIFIED",
+      "NATIVE_CONTRAST_NOT_ESTABLISHED",
+      "PROTOCOL_HOLD",
+      "ENVIRONMENT_HOLD",
+      "COLLECTION_HOLD",
+      "SOURCE_IDENTITY_HOLD"
+    ],
+    "expected_violation": "An evaluator-captured predeclared native violation may be COMPLETED / VIOLATED with process exit 0. Exit code alone, a crash or text PASS is never the oracle.",
+    "invalid_input_or_import": "Missing dependency, illegal control construction, stale app/module state, collector failure or fixture exhaustion is never the target bug.",
+    "unresolved_exception": "Record full type/message/traceback and phase. Unexpected exceptions with intact capture are UNRESOLVED pending classification, not an expected native violation; true collector/process failures remain separate.",
+    "valid_no_contrast": "If intact four-cell native execution yields no predefined before/after trigger contrast, retain NATIVE_CONTRAST_NOT_ESTABLISHED, even if both versions satisfy or both violate.",
+    "qualification": "Only intact identity/logs, both lawful controls SATISFIED, before-trigger VIOLATED as specified, and after-trigger SATISFIED can support NATIVE_FIXED_PAIR_VERIFIED.",
+    "g1_history": "Append G2/G3 evidence; do not overwrite G1 rank or SOURCE_PAIR_VERIFIED."
+  },
+  "evidence_outputs": {
+    "administrative_manifest": [
+      "case_id",
+      "original_rank",
+      "attempt_id",
+      "run_id",
+      "cell_id",
+      "start_utc",
+      "end_utc",
+      "protocol_sha256",
+      "source_manifest_sha256",
+      "environment_lock_sha256",
+      "collector_sha256",
+      "sys_executable",
+      "python_version",
+      "package_versions",
+      "module_files",
+      "production_file_hashes",
+      "PID",
+      "exit_code",
+      "resource_metrics",
+      "unmonitored_metrics",
+      "execution_status",
+      "not_run_reason"
+    ],
+    "per_cell_files": [
+      "stdout",
+      "stderr",
+      "raw_events.jsonl",
+      "native_oracle.json",
+      "resource_record.json",
+      "identity_record.json"
+    ],
+    "segregation": "Keep before/after, trigger/control, correct-answer and oracle-result labels in administrative/oracle files, separate from raw native trace and any eventual G4 method input. G4 is not implemented here.",
+    "artifact_integrity": "Preserve partial attempts, full raw messages and stream truncation flags; every result references immutable protocol/environment/source/collector identities."
+  },
+  "stop_rules": [
+    "STOP this case if protected evidence or frozen inputs change, actual import is not the assigned commit, or target patches/dependency mixing are unrecorded. Stop the batch if global freeze/source authority is polluted.",
+    "STOP with PROTOCOL_HOLD if same-property lawful control cannot be constructed without repair logic, manual expected-state injection or a change of native property.",
+    "STOP with SOURCE_IDENTITY_HOLD if a required full-tree/source/test/license identity fails, and ENVIRONMENT_HOLD if compatible isolated dependencies or platform cannot be locked.",
+    "STOP with COLLECTION_HOLD on missing/truncated logs, wrong PID, missing events, resource excess, incomplete process supervision or an observer that mutates native behavior.",
+    "Preserve attempt_01 and any partial cells. Collector-only repairs need a new version, difference record and synthetic QA proving unchanged target/source/input/oracle/control/thresholds.",
+    "Any semantic change ends the old cohort attempt and needs reapproval; never quietly tune to pass, add samples or change target implementation.",
+    "Never run Celery4661 or Django11110/ticket26552, touch SQLA5737/SQLA4664 evidence, access production services, P09/Docker/WSL, or perform LCMA/strong-baseline/G4 work.",
+    "If service access fails, preserve actual completion and stop; do not use another account/executor or redeem usage resets.",
+    "Author stops at static handoff. Parent alone integrates/finalizes; G2/G3 completion never authorizes G4."
+  ],
+  "case_id": "CELERY-9348",
+  "original_rank": 94,
+  "canonical_root": "celery/celery#5663",
+  "project_lineage": "celery/celery",
+  "reported_repository": "celery/celery",
+  "implementation_repository": "celery/celery",
+  "before_sha": "9f43916da91e71c56a9eb51ea657e54d128d2726",
+  "after_sha": "1fc305837a785dda8ed8cb196aec654427fe433e",
+  "proposed_plan_order": 6,
+  "parent_relation": {
+    "type": "EXACT_FIRST_PARENT",
+    "parent_index": 0,
+    "parents": [
+      "9f43916da91e71c56a9eb51ea657e54d128d2726"
+    ],
+    "verified_from_saved_commit": true,
+    "evidence": "screening/B/evidence/94/04_closing_commit.json",
+    "before_tree_sha": null,
+    "before_tree_status": "NOT_SAVED_SEPARATELY; obtain from exact parent during G2b",
+    "after_tree_sha": "46e4ee5890987b4d3d8a6e0aa09ffcc6960408c2"
+  },
+  "source_files_sha256": [
+    {
+      "binding_evidence": null,
+      "binding_status": "NOT_ESTABLISHED",
+      "decoded_git_blob_sha1": "0630e679fdd531ecf3bb1357eed45f49d2556f56",
+      "decoded_utf8_bytes": 4433,
+      "decoded_utf8_sha256": "5bd6b20b0617380d1a0b13cfa2d5dce3db80fe7ec29ccb0344f25550d6fc6d93",
+      "envelope_sha256": "416e3d934d175eb26c258d6cd8c231ac822309146e3a14abe25d667ff5084f42",
+      "evidence_path": "screening/B/evidence/94/06_before_loop.json",
+      "excluded_from_authority": false,
+      "requested_commit": "9f43916da91e71c56a9eb51ea657e54d128d2726",
+      "saved_tree_or_commit_blob_sha1": null,
+      "side": "before",
+      "source_path": "celery/worker/loops.py",
+      "source_url": "https://raw.githubusercontent.com/celery/celery/9f43916da91e71c56a9eb51ea657e54d128d2726/celery/worker/loops.py"
+    },
+    {
+      "binding_evidence": "screening/B/evidence/94/04_closing_commit.json",
+      "binding_status": "MATCH",
+      "decoded_git_blob_sha1": "1f9e589eeef6fbd2ee9fc91afeaeacb97e263731",
+      "decoded_utf8_bytes": 4599,
+      "decoded_utf8_sha256": "a86973fab5a499f510099d9360cdc6a5cfdfda2842500b82d443597960eeb703",
+      "envelope_sha256": "5cf0e88c6260713dd15925013550281ae77c28c7b5c7e96697ded98ec4d90317",
+      "evidence_path": "screening/B/evidence/94/07_after_loop.json",
+      "excluded_from_authority": false,
+      "requested_commit": "1fc305837a785dda8ed8cb196aec654427fe433e",
+      "saved_tree_or_commit_blob_sha1": "1f9e589eeef6fbd2ee9fc91afeaeacb97e263731",
+      "side": "after",
+      "source_path": "celery/worker/loops.py",
+      "source_url": "https://raw.githubusercontent.com/celery/celery/1fc305837a785dda8ed8cb196aec654427fe433e/celery/worker/loops.py"
+    },
+    {
+      "binding_evidence": null,
+      "binding_status": "NOT_ESTABLISHED",
+      "decoded_git_blob_sha1": "8241a9760214754f3d25ddf1d9924de6b7faaa65",
+      "decoded_utf8_bytes": 29526,
+      "decoded_utf8_sha256": "85400b92aa7c70ce669cf847911fdfbe1eaaa18e28e369c0744e680f9bd356a7",
+      "envelope_sha256": "205e5474296e475c420a935d8bab03f0523bb0d6919e4aa9b91b522783b60280",
+      "evidence_path": "screening/B/evidence/94/08_before_consumer.json",
+      "excluded_from_authority": false,
+      "requested_commit": "9f43916da91e71c56a9eb51ea657e54d128d2726",
+      "saved_tree_or_commit_blob_sha1": null,
+      "side": "before",
+      "source_path": "celery/worker/consumer/consumer.py",
+      "source_url": "https://raw.githubusercontent.com/celery/celery/9f43916da91e71c56a9eb51ea657e54d128d2726/celery/worker/consumer/consumer.py"
+    },
+    {
+      "binding_evidence": "screening/B/evidence/94/04_closing_commit.json",
+      "binding_status": "MATCH",
+      "decoded_git_blob_sha1": "d1b38232c6e31ef0dd71df00157b48f08bad90b1",
+      "decoded_utf8_bytes": 29568,
+      "decoded_utf8_sha256": "7111de43f3fb9ea8ecc24d7fb9e5de5d1d7bb3dee1444f48dc3c471eef07a669",
+      "envelope_sha256": "67e2d04788479253c8b418a90b210e7c595085bbaa1287e78951cae44746dc0f",
+      "evidence_path": "screening/B/evidence/94/09_after_consumer.json",
+      "excluded_from_authority": false,
+      "requested_commit": "1fc305837a785dda8ed8cb196aec654427fe433e",
+      "saved_tree_or_commit_blob_sha1": "d1b38232c6e31ef0dd71df00157b48f08bad90b1",
+      "side": "after",
+      "source_path": "celery/worker/consumer/consumer.py",
+      "source_url": "https://raw.githubusercontent.com/celery/celery/1fc305837a785dda8ed8cb196aec654427fe433e/celery/worker/consumer/consumer.py"
+    },
+    {
+      "binding_evidence": "screening/B/evidence/94/04_closing_commit.json",
+      "binding_status": "MATCH",
+      "decoded_git_blob_sha1": "a20399419993ba61f8e3ee5e7f43351eb1aafd94",
+      "decoded_utf8_bytes": 1581,
+      "decoded_utf8_sha256": "c531f59ef1e1f6681dbd09d9ac87dc9dfd96225daee29b889304b06efdc153db",
+      "envelope_sha256": "cde5bb756ced0580f90b47090fa0f6bc04db61a84f44e2875bd323ec16e282e2",
+      "evidence_path": "screening/B/evidence/94/10_native_loop_test.json",
+      "excluded_from_authority": false,
+      "requested_commit": "1fc305837a785dda8ed8cb196aec654427fe433e",
+      "saved_tree_or_commit_blob_sha1": "a20399419993ba61f8e3ee5e7f43351eb1aafd94",
+      "side": "after",
+      "source_path": "t/unit/test_loops.py",
+      "source_url": "https://raw.githubusercontent.com/celery/celery/1fc305837a785dda8ed8cb196aec654427fe433e/t/unit/test_loops.py"
+    },
+    {
+      "binding_evidence": "screening/B/evidence/94/04_closing_commit.json",
+      "binding_status": "MATCH",
+      "decoded_git_blob_sha1": "b43471134b299225ed92eac5b77fb8b31094b305",
+      "decoded_utf8_bytes": 37335,
+      "decoded_utf8_sha256": "1fcbdf3b6dd97a19b17004ec3f2aef9d2619f7b143d26c4a2064d7a7aba0672c",
+      "envelope_sha256": "56ff2f5aa84b508efd054e06eb4ef7b86bec3a4361cf952dd3ff09417d1990f5",
+      "evidence_path": "screening/B/evidence/94/11_native_consumer_test.json",
+      "excluded_from_authority": false,
+      "requested_commit": "1fc305837a785dda8ed8cb196aec654427fe433e",
+      "saved_tree_or_commit_blob_sha1": "b43471134b299225ed92eac5b77fb8b31094b305",
+      "side": "after",
+      "source_path": "t/unit/worker/test_consumer.py",
+      "source_url": "https://raw.githubusercontent.com/celery/celery/1fc305837a785dda8ed8cb196aec654427fe433e/t/unit/worker/test_consumer.py"
+    },
+    {
+      "binding_evidence": "screening/B/evidence/94/16_accepted_tree.json",
+      "binding_status": "MATCH",
+      "decoded_git_blob_sha1": "93411068ab7db9401ec4d5c9d52ca14f77e794fc",
+      "decoded_utf8_bytes": 2717,
+      "decoded_utf8_sha256": "c358cdf77f28bbab50d4a754e123118339c15230349e82bf66489cece3ac093a",
+      "envelope_sha256": "71b9f1d1855c652a4f44c7f21ce816d2098284529681a116bb6402a110f43631",
+      "evidence_path": "screening/B/evidence/94/12_license.json",
+      "excluded_from_authority": false,
+      "requested_commit": "1fc305837a785dda8ed8cb196aec654427fe433e",
+      "saved_tree_or_commit_blob_sha1": "93411068ab7db9401ec4d5c9d52ca14f77e794fc",
+      "side": "after",
+      "source_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/celery/celery/1fc305837a785dda8ed8cb196aec654427fe433e/LICENSE"
+    },
+    {
+      "binding_evidence": "screening/B/evidence/94/16_accepted_tree.json",
+      "binding_status": "MATCH",
+      "decoded_git_blob_sha1": "93411068ab7db9401ec4d5c9d52ca14f77e794fc",
+      "decoded_utf8_bytes": 2717,
+      "decoded_utf8_sha256": "c358cdf77f28bbab50d4a754e123118339c15230349e82bf66489cece3ac093a",
+      "envelope_sha256": "146076e757932c1ea75f7b5a0d2e4869ea71f6aee067f1f63cabcb8d2a54499a",
+      "evidence_path": "screening/B/evidence/94/14_license_at_commit.json",
+      "excluded_from_authority": false,
+      "requested_commit": "1fc305837a785dda8ed8cb196aec654427fe433e",
+      "saved_tree_or_commit_blob_sha1": "93411068ab7db9401ec4d5c9d52ca14f77e794fc",
+      "side": "after",
+      "source_path": "LICENSE",
+      "source_url": "https://api.github.com/repos/celery/celery/contents/LICENSE?ref=1fc305837a785dda8ed8cb196aec654427fe433e"
+    },
+    {
+      "binding_evidence": "screening/B/evidence/94/16_accepted_tree.json",
+      "binding_status": "MISMATCH",
+      "decoded_git_blob_sha1": "adadfde6849ed7774d864f4773b24584585af426",
+      "decoded_utf8_bytes": 2716,
+      "decoded_utf8_sha256": "51a22b95649821000833974cebd60329cd6aa7ab93c0a1e83a55e920948e3694",
+      "envelope_sha256": "76c712d82eac3398c7da4c63e261a69c7a0bfc96d9d724686ef381a651b96165",
+      "evidence_path": "screening/B/evidence/94/15_license_explicit_ref.json",
+      "excluded_from_authority": true,
+      "requested_commit": "1fc305837a785dda8ed8cb196aec654427fe433e",
+      "saved_tree_or_commit_blob_sha1": "93411068ab7db9401ec4d5c9d52ca14f77e794fc",
+      "side": "quarantined",
+      "source_path": "LICENSE",
+      "source_url": "https://github.com/celery/celery/blob/1fc305837a785dda8ed8cb196aec654427fe433e/LICENSE"
+    }
+  ],
+  "upstream_issue": {
+    "url": "https://github.com/celery/celery/issues/5663",
+    "saved": "screening/B/evidence/94/01_issue.json"
+  },
+  "accepted_fix": {
+    "url": "https://github.com/celery/celery/pull/9348",
+    "commit": "1fc305837a785dda8ed8cb196aec654427fe433e",
+    "evidence": "screening/B/evidence/94/04_closing_commit.json"
+  },
+  "native_oracle_sources": [
+    {
+      "path": "t/unit/test_loops.py",
+      "symbol": "test_synloop_perform_pending_operations_on_system_exit",
+      "decoded_lines": [
+        9,
+        57
+      ],
+      "saved": "screening/B/evidence/94/10_native_loop_test.json",
+      "supports": "Exact native location is t/unit/test_loops.py, added in the accepted commit. The original test asserts a Mock consumption-function call and drain_events(timeout=2.0), not callback effects."
+    },
+    {
+      "path": "t/unit/worker/test_consumer.py",
+      "symbol": "test_Consumer_PerformPendingOperations.test_perform_pending_operations_all_success",
+      "decoded_lines": [
+        538,
+        561
+      ],
+      "saved": "screening/B/evidence/94/11_native_consumer_test.json",
+      "supports": "Same-source Consumer test requires both pending operations to execute once and queue length to become zero in the no-hub context."
+    },
+    {
+      "path": "celery/worker/consumer/consumer.py",
+      "symbol": "Consumer.call_soon / perform_pending_operations",
+      "decoded_lines": [
+        239,
+        252
+      ],
+      "saved_before": "screening/B/evidence/94/08_before_consumer.json",
+      "saved_after": "screening/B/evidence/94/09_after_consumer.json",
+      "supports": "Both versions append native ppartial promises and consume by list.pop(), therefore LIFO; perform_pending_operations itself is unchanged."
+    },
+    {
+      "path": "celery/worker/loops.py",
+      "symbol": "synloop",
+      "decoded_lines": [
+        108,
+        143
+      ],
+      "saved_before": "screening/B/evidence/94/06_before_loop.json",
+      "saved_after": "screening/B/evidence/94/07_after_loop.json",
+      "supports": "Before shutdown exception escapes before consumption; after real finally calls _loop_cycle even when maybe_shutdown raises."
+    }
+  ],
+  "license": {
+    "spdx": "BSD-3-Clause",
+    "authority": "screening/B/evidence/94/14_license_at_commit.json",
+    "corroborating_authority": "screening/B/evidence/94/12_license.json",
+    "accepted_tree": "screening/B/evidence/94/16_accepted_tree.json",
+    "accepted_tree_sha": "46e4ee5890987b4d3d8a6e0aa09ffcc6960408c2",
+    "accepted_LICENSE_git_blob_sha1": "93411068ab7db9401ec4d5c9d52ca14f77e794fc",
+    "decoded_utf8_sha256": "c358cdf77f28bbab50d4a754e123118339c15230349e82bf66489cece3ac093a",
+    "saved_blob_binding": "MATCH_RECOMPUTED_FROM_SAVED_TEXT_AND_TREE",
+    "excluded_from_authority": [
+      {
+        "path": "screening/B/evidence/94/15_license_explicit_ref.json",
+        "decoded_git_blob_sha1": "adadfde6849ed7774d864f4773b24584585af426",
+        "reason": "Does not match accepted tree LICENSE blob; preserved, never used for source/license clearance."
+      }
+    ],
+    "scope": "Author rechecks saved-document bindings, not a complete fetched source tree. Bind both complete trees and dependency licenses in G2b.",
+    "documentation_license": "Saved source LICENSE separately states CC-BY-SA-4.0 for rendered docs."
+  },
+  "g3_property_admission": "PROPOSED_NATIVE_SYNLOOP_TO_REAL_CONSUMER_CALLBACK_COMPOSITION. Parent must affirm this narrowly scoped composition before cohort freeze; no fallback to a Mock-call-only native qualification.",
+  "fixture": {
+    "receiver_construction": "Import the exact native Consumer class. Allocate c=object.__new__(Consumer), without executing its service/bootstrap constructor. This is explicitly a minimal unit-test receiver, NOT a fully initialized worker. Set only the frozen boundary inputs listed below; do not substitute Consumer.call_soon or Consumer.perform_pending_operations.",
+    "receiver_preconditions": {
+      "type_fqn": "celery.worker.consumer.consumer.Consumer",
+      "hub": null,
+      "pending_container_type": "builtins.list",
+      "pending_initial_length_before_enqueue": 0,
+      "pool_is_green": false,
+      "connection": "same finite ConnectionBoundary object passed to synloop"
+    },
+    "boundary_fields": [
+      "c.hub=None",
+      "c._pending_operations=[] before enqueuing only",
+      "c.pool=SimpleNamespace(is_green=False)",
+      "c.connection=connection_boundary",
+      "c.create_task_handler=recorded factory returning an inert callable",
+      "c.on_ready=record-only readiness hook"
+    ],
+    "native_binding_assertions": [
+      "type(c) is Consumer",
+      "c.perform_pending_operations.__self__ is c",
+      "c.perform_pending_operations.__func__ is Consumer.perform_pending_operations",
+      "c.call_soon.__func__ is Consumer.call_soon",
+      "Neither target method appears as a replacement in c.__dict__",
+      "sys.modules source paths/hashes for both Consumer and synloop belong to this exact SHA"
+    ],
+    "enqueue_recipe": "Call c.call_soon(record_receipt, 'op_a'), then c.call_soon(record_receipt, 'op_b') using the REAL native method. Save returned promise-to-token mapping for read-only queue snapshots. Require two pending promises before synloop; never insert expected outputs.",
+    "callbacks": {
+      "ids": [
+        "op_a",
+        "op_b"
+      ],
+      "definition": "record_receipt(token) emits CALLBACK_ENTER, appends token to a dedicated receipt list and emits CALLBACK_RETURN; it returns None. It does not access, clear, pop or rewrite c._pending_operations, the loop flag or expected outcomes.",
+      "expected_native_order": [
+        "op_b",
+        "op_a"
+      ],
+      "reason": "Real perform_pending_operations uses list.pop(), not FIFO."
+    },
+    "loop_inputs": {
+      "blueprint_state": "native bootsteps.RUN",
+      "hub": null,
+      "qos_prev": 1,
+      "qos_value": 1,
+      "heartbeat": 0,
+      "clock": null,
+      "hbrate": 2,
+      "pool_is_green": false
+    },
+    "task_consumer_boundary": "A finite non-network receiver with on_message and consume(); consume records exactly one event and returns None. No real broker subscription.",
+    "connection_boundary": "drain_events(timeout) records the actual argument (expected exactly 2 seconds), sets only c.connection=None to provide a finite clean stop condition, and returns None. Same boundary function in every cell. It never consumes callbacks, changes the pending list or creates an exception.",
+    "shutdown_boundary": {
+      "patch_target": "celery.worker.loops.state.maybe_shutdown only",
+      "control": "record MAYBE_SHUTDOWN_RETURN then return None",
+      "trigger": "record MAYBE_SHUTDOWN_RAISE then raise exactly SystemExit(0)",
+      "prohibited": "Do not replace the whole state module, call Consumer.shutdown or patch synloop/finally/_loop_cycle."
+    },
+    "profile_observer": "Use read-only sys.setprofile in this single-threaded process to count calls whose frame.f_code is the exact native Consumer.perform_pending_operations.__code__ and whose self is c. Emit NATIVE_PERFORM_ENTER and NATIVE_PERFORM_RETURN; never wrap/replace the target method or invoke it from the observer. Restore previous profiler after terminal capture.",
+    "initial_and_final_queue_snapshot": "Identify pending promises using the local mapping returned by native call_soon. Serialize stable op IDs, never object addresses. Only observe list contents/length; a before-trigger queue must remain unconsumed until evidence is written.",
+    "why_constructor_is_outside_target": "The primary property is native synloop -> native pending-operation implementation -> callback effects in a finite no-hub unit context. Consumer.__init__/bootsteps/service startup are intentionally outside that property. Its saved methods need hub and _pending_operations; the other synloop accesses are declared boundary inputs.",
+    "independence_limit": "This is an authored static fixture composition, not independently reviewed native results or full worker lifecycle initialization.",
+    "invalid_alternative": "A copied consumer/loop function or Mock perform_pending_operations with fixed receipts is forbidden."
+  },
+  "trigger_history": {
+    "history_id": "SYSTEM_EXIT_BEFORE_FIRST_LOOP_CONSUMPTION",
+    "steps": [
+      "Create the fixed no-hub native Consumer unit receiver and enqueue op_a then op_b through native call_soon.",
+      "Call the real synloop once with the finite boundaries.",
+      "On its first real state.maybe_shutdown call, the boundary raises SystemExit(0).",
+      "Observe native consumption/profile/callback receipts until SystemExit reaches the outer harness, then take the terminal snapshot. Do not call shutdown or flush."
+    ]
+  },
+  "legal_control_history": {
+    "history_id": "NORMAL_SINGLE_LOOP_CYCLE_THEN_FINITE_RETURN",
+    "steps": [
+      "Use the same receiver, two native enqueues and exact synloop call.",
+      "On first state.maybe_shutdown call, return normally.",
+      "Allow real synloop to call real perform_pending_operations and the finite drain_events boundary.",
+      "That boundary marks connection absent; the loop condition then ends naturally. Observe the same callback/queue property at normal return."
+    ],
+    "lawfulness": "Same native synloop and Consumer methods, same queue/callbacks and boundaries. Only maybe_shutdown outcome changes. The stop boundary changes connection state, never executes pending work or supplies a passing result."
+  },
+  "native_property": {
+    "name": "PREEXISTING_PENDING_CALLBACKS_CONSUMED_EXACTLY_ONCE_BY_NATIVE_LOOP_BEFORE_EXIT",
+    "satisfied_iff": "The two callbacks queued before synloop each produce one real receipt, in native LIFO order op_b,op_a, and pending length is zero by the terminal snapshot. Callback counts must be derived from observed receipts, not initialized to expected values.",
+    "execution_vs_check_count": "perform_pending_operations invocation count is a mechanism witness, not the duplicate-callback oracle. Multiple legitimate empty-queue checks do not imply duplicate execution. Exact one-cycle fixture predicts 1 call in satisfying cells and 0 before-trigger; an unexpected event topology needs investigation, not automatic duplicate-task classification.",
+    "exit_contract": "Normal-history cells return None; exceptional-history cells propagate the injected SystemExit with integer code 0. Capturing SystemExit is expected in both trigger cells and never alone proves the defect.",
+    "narrow_claim": "Only two nonthrowing callbacks pending before this single no-hub sync-loop exit window. No claim about broker ACKs, recursive task duplication rates, asynchronous hubs, gevent/eventlet workers, callbacks enqueued during teardown or the separate Consumer.shutdown fix."
+  },
+  "observation_window": {
+    "start": "After both real call_soon calls and verified pending length 2, immediately before entering real synloop.",
+    "end": "Immediate outer return/SystemExit capture and queue/receipt snapshot; BEFORE Consumer.shutdown, stop, drain cleanup, context-manager teardown or any direct pending-operation call.",
+    "normal_exit": "Exactly one finite loop cycle, then c.connection=None from the drain_events boundary.",
+    "exceptional_exit": "First maybe_shutdown raises SystemExit(0); let native finally, if present, run before capture.",
+    "forbidden_cleanup": "No manual flush, c.perform_pending_operations(), c.shutdown(), c._pending_operations.clear()/pop or expected receipt injection before evidence is persisted. Parent must not hide a cleanup call in a context manager."
+  },
+  "observable_schema": {
+    "required_payload_fields": {
+      "pending_before": "integer exactly 2",
+      "pending_after": "integer 0 or 2 as source-predicted",
+      "pending_ids_before": "ordered stable ID array ['op_a','op_b']",
+      "pending_ids_after": "stable ID array, never repr addresses",
+      "callback_receipts": "ordered observed ID array",
+      "callback_counts": "map op_a/op_b to exact nonnegative integer counts derived from receipts",
+      "callback_enter_return_balance": "exact per-callback entry/return counts",
+      "native_perform_calls": "nonnegative integer code-identity-filtered profile calls",
+      "native_perform_code_identity": "qualified symbol and hash/file reference in administrative identity",
+      "maybe_shutdown_calls": "integer",
+      "maybe_shutdown_outcome": "RETURN_NONE or RAISE_SYSTEM_EXIT",
+      "drain_events_calls": "integer",
+      "drain_timeout_seconds": "finite numeric seconds, exactly 2 for each call; no tolerance",
+      "consume_calls": "integer",
+      "on_ready_calls": "integer",
+      "native_exit": "RETURN_NONE or SYSTEM_EXIT",
+      "system_exit_code": "integer 0 for injected SystemExit, null for normal return",
+      "unexpected_callback_exceptions": "array, empty in this frozen primary fixture"
+    }
+  },
+  "event_order": {
+    "prefix": [
+      "CALL_SOON:op_a",
+      "CALL_SOON:op_b",
+      "PENDING_SNAPSHOT:2",
+      "SYNLOOP_ENTER",
+      "TASK_HANDLER_CREATED",
+      "TASK_CONSUMER_CONSUME",
+      "ON_READY"
+    ],
+    "control": [
+      "MAYBE_SHUTDOWN_RETURN",
+      "NATIVE_PERFORM_ENTER",
+      "CALLBACK_ENTER:op_b",
+      "CALLBACK_RETURN:op_b",
+      "CALLBACK_ENTER:op_a",
+      "CALLBACK_RETURN:op_a",
+      "NATIVE_PERFORM_RETURN",
+      "DRAIN_EVENTS",
+      "SYNLOOP_RETURN",
+      "TERMINAL_SNAPSHOT"
+    ],
+    "before_trigger": [
+      "MAYBE_SHUTDOWN_RAISE",
+      "SYNLOOP_SYSTEM_EXIT",
+      "TERMINAL_SNAPSHOT"
+    ],
+    "after_trigger": [
+      "MAYBE_SHUTDOWN_RAISE",
+      "NATIVE_PERFORM_ENTER",
+      "CALLBACK_ENTER:op_b",
+      "CALLBACK_RETURN:op_b",
+      "CALLBACK_ENTER:op_a",
+      "CALLBACK_RETURN:op_a",
+      "NATIVE_PERFORM_RETURN",
+      "DRAIN_EVENTS",
+      "SYNLOOP_SYSTEM_EXIT",
+      "TERMINAL_SNAPSHOT"
+    ],
+    "order_rule": "One contiguous event seq per process; timestamps may tie. The version labels above describe planned sequences, not labels injected into raw observations."
+  },
+  "normalization_rules": [
+    "Derive callback counts from exact op_a/op_b receipts; retain LIFO order, never sort callbacks into an expected order.",
+    "Keep consumption-method call count separate from callback receipt count; empty scans are not duplicates.",
+    "Preserve SystemExit type and integer code separately from process exit code; both trigger cells are expected to propagate the same signal to the harness.",
+    "Use native bootsteps.RUN as a within-process enum value and save its raw value plus symbolic identity, rather than guessing its numeric value.",
+    "Keep queue snapshots before teardown. No output normalization may hide missing or repeated callbacks."
+  ],
+  "native_api_path": [
+    "celery.worker.loops.synloop",
+    "celery.worker.consumer.consumer.Consumer.call_soon",
+    "celery.worker.consumer.consumer.Consumer.perform_pending_operations",
+    "No direct harness call to perform_pending_operations or Consumer.shutdown in the observation window"
+  ],
+  "mock_boundary": {
+    "allowed": [
+      "Minimal real Consumer receiver allocated without service constructor, with explicit no-hub input fields",
+      "Non-network connection/task-consumer/blueprint/qos and task-handler/readiness boundaries patterned on the saved upstream loop unit test",
+      "Only state.maybe_shutdown is patched to the finite environmental signal",
+      "Synthetic callback receipts with no target-state mutation"
+    ],
+    "native_targets_required": [
+      "synloop",
+      "Consumer.call_soon",
+      "Consumer.perform_pending_operations"
+    ],
+    "forbidden": [
+      "Mock consumption method, hand-filled receipt/counter results or queue flush",
+      "A new try/finally wrapper that calls pending work when the native loop fails",
+      "Copying _loop_cycle or Consumer production methods",
+      "Calling real worker start/shutdown, broker, gevent/eventlet or external services"
+    ]
+  },
+  "non_native_code_boundary": "Explicit receiver/input construction, finite external state/transport boundary functions, inert callbacks and passive observer/evaluator. Native queue append/pop/callback invocation and finally control flow remain the real code at each exact SHA. No claim is made for initialization or service-level end-to-end behavior.",
+  "environment_requirements": {
+    "status": "NOT_LOCKED__PARENT_G2B_REQUIRED",
+    "python_version": null,
+    "requirements_contents_status": "NOT_SAVED; only accepted top-tree identities available",
+    "accepted_packaging_tree_entries": [
+      {
+        "mode": "100644",
+        "path": "pyproject.toml",
+        "sha": "dae3f95465b1e2ee2524823b12c80bdbfca9ea05",
+        "size": 1375,
+        "type": "blob",
+        "url": "https://api.github.com/repos/celery/celery/git/blobs/dae3f95465b1e2ee2524823b12c80bdbfca9ea05"
+      },
+      {
+        "mode": "040000",
+        "path": "requirements",
+        "sha": "daedb8fe7e9ad5b8a656849ad3a6b185d93f3c5e",
+        "type": "tree",
+        "url": "https://api.github.com/repos/celery/celery/git/trees/daedb8fe7e9ad5b8a656849ad3a6b185d93f3c5e"
+      },
+      {
+        "mode": "100644",
+        "path": "setup.cfg",
+        "sha": "1d66df8b7a2934252e3579b7f995b6697d82224e",
+        "size": 1102,
+        "type": "blob",
+        "url": "https://api.github.com/repos/celery/celery/git/blobs/1d66df8b7a2934252e3579b7f995b6697d82224e"
+      },
+      {
+        "mode": "100755",
+        "path": "setup.py",
+        "sha": "b78932ea59762bfe0ca41d81f807acd7bad82cf3",
+        "size": 4686,
+        "type": "blob",
+        "url": "https://api.github.com/repos/celery/celery/git/blobs/b78932ea59762bfe0ca41d81f807acd7bad82cf3"
+      },
+      {
+        "mode": "100644",
+        "path": "tox.ini",
+        "sha": "55f80bd167db2eebac1b1c88d32f28c4cffe2cd9",
+        "size": 4329,
+        "type": "blob",
+        "url": "https://api.github.com/repos/celery/celery/git/blobs/55f80bd167db2eebac1b1c88d32f28c4cffe2cd9"
+      }
+    ],
+    "full_tree_files_to_bind": [
+      "celery/worker/loops.py",
+      "celery/worker/consumer/consumer.py",
+      "t/unit/test_loops.py",
+      "t/unit/worker/test_consumer.py",
+      "celery/bootsteps.py",
+      "celery/worker/state.py",
+      "LICENSE"
+    ],
+    "test_path_rule": "Verify t/unit/test_loops.py in the accepted full tree. It is ADDED by PR9348 and absent at the exact before tree; do not claim the original after-only test ran unchanged on before. Never substitute a narrative report's different path.",
+    "dependency_recipe": "Read both exact setup/pyproject/requirements trees without executing their build code in this author subtask. Lock a compatible CPU CPython plus runtime imports and their exact wheel/source hashes/licenses before target imports. Do not reuse rank80's historical dependency lock.",
+    "unit_test_dependencies": "Narrow composition may use stdlib unittest.mock instead of importing pytest/upstream suites. Any later original upstream test layer needs a separately pinned pytest/test requirements context.",
+    "native_receiver_gate": "Parent/non-author review must accept the declared no-constructor unit scope before cohort freeze. If actual native methods require additional unstated lifecycle state, hold; do not invent a fake Consumer or silently expand the property."
+  },
+  "implementation_recipe": [
+    "Import real synloop/Consumer only in the parent's later sealed G3 environment; verify method/code/file identity and construct the declared minimal receiver.",
+    "Enqueue op_a/op_b using native Consumer.call_soon, saving a read-only promise-to-ID mapping.",
+    "Use the same finite non-network drain_events function in all four cells; vary only maybe_shutdown returning None versus SystemExit(0).",
+    "Observe native perform_pending_operations with a passive code-identity profiler, not a replacement function, and collect actual callback receipts.",
+    "Capture normal/SystemExit terminal state before teardown. Expect before-trigger counts 0/0 and queue length 2; the other three cells counts 1/1 and queue length 0.",
+    "If real loop-to-consumer composition cannot be implemented under these boundaries, preserve PROTOCOL_HOLD. An optional Mock-call-only experiment has weaker interface evidence and cannot qualify this frozen G3 property."
+  ],
+  "protocol_hold_triggers": [
+    "No-constructor native receiver or native call_soon cannot meet the declared preconditions without substituting the target methods -> PROTOCOL_HOLD.",
+    "Cannot prove receipts were caused by the real Consumer method reached from real synloop -> PROTOCOL_HOLD; do not qualify Mock invocation evidence.",
+    "Need a teardown/shutdown/manual flush to empty queue -> PROTOCOL_HOLD for this property, not a fix.",
+    "Need to change callback count/order/exception history after results -> end attempt and seek new approval."
+  ],
+  "expected_before_control": {
+    "execution_status": "COMPLETED",
+    "native_outcome": "SATISFIED",
+    "pending_before": 2,
+    "pending_after": 0,
+    "pending_ids_before": [
+      "op_a",
+      "op_b"
+    ],
+    "pending_ids_after": [],
+    "callback_receipts": [
+      "op_b",
+      "op_a"
+    ],
+    "callback_counts": {
+      "op_a": 1,
+      "op_b": 1
+    },
+    "callback_enter_return_balance": {
+      "op_a": [
+        1,
+        1
+      ],
+      "op_b": [
+        1,
+        1
+      ]
+    },
+    "native_perform_calls": 1,
+    "maybe_shutdown_calls": 1,
+    "drain_events_calls": 1,
+    "drain_timeout_seconds": [
+      2
+    ],
+    "consume_calls": 1,
+    "on_ready_calls": 1,
+    "unexpected_callback_exceptions": [],
+    "maybe_shutdown_outcome": "RETURN_NONE",
+    "native_exit": "RETURN_NONE",
+    "system_exit_code": null
+  },
+  "expected_after_control": {
+    "execution_status": "COMPLETED",
+    "native_outcome": "SATISFIED",
+    "pending_before": 2,
+    "pending_after": 0,
+    "pending_ids_before": [
+      "op_a",
+      "op_b"
+    ],
+    "pending_ids_after": [],
+    "callback_receipts": [
+      "op_b",
+      "op_a"
+    ],
+    "callback_counts": {
+      "op_a": 1,
+      "op_b": 1
+    },
+    "callback_enter_return_balance": {
+      "op_a": [
+        1,
+        1
+      ],
+      "op_b": [
+        1,
+        1
+      ]
+    },
+    "native_perform_calls": 1,
+    "maybe_shutdown_calls": 1,
+    "drain_events_calls": 1,
+    "drain_timeout_seconds": [
+      2
+    ],
+    "consume_calls": 1,
+    "on_ready_calls": 1,
+    "unexpected_callback_exceptions": [],
+    "maybe_shutdown_outcome": "RETURN_NONE",
+    "native_exit": "RETURN_NONE",
+    "system_exit_code": null
+  },
+  "expected_after_trigger": {
+    "execution_status": "COMPLETED",
+    "native_outcome": "SATISFIED",
+    "pending_before": 2,
+    "pending_after": 0,
+    "pending_ids_before": [
+      "op_a",
+      "op_b"
+    ],
+    "pending_ids_after": [],
+    "callback_receipts": [
+      "op_b",
+      "op_a"
+    ],
+    "callback_counts": {
+      "op_a": 1,
+      "op_b": 1
+    },
+    "callback_enter_return_balance": {
+      "op_a": [
+        1,
+        1
+      ],
+      "op_b": [
+        1,
+        1
+      ]
+    },
+    "native_perform_calls": 1,
+    "maybe_shutdown_calls": 1,
+    "drain_events_calls": 1,
+    "drain_timeout_seconds": [
+      2
+    ],
+    "consume_calls": 1,
+    "on_ready_calls": 1,
+    "unexpected_callback_exceptions": [],
+    "maybe_shutdown_outcome": "RAISE_SYSTEM_EXIT",
+    "native_exit": "SYSTEM_EXIT",
+    "system_exit_code": 0
+  },
+  "expected_before_trigger": {
+    "execution_status": "COMPLETED",
+    "native_outcome": "VIOLATED",
+    "pending_before": 2,
+    "pending_after": 2,
+    "pending_ids_before": [
+      "op_a",
+      "op_b"
+    ],
+    "pending_ids_after": [
+      "op_a",
+      "op_b"
+    ],
+    "callback_receipts": [],
+    "callback_counts": {
+      "op_a": 0,
+      "op_b": 0
+    },
+    "callback_enter_return_balance": {
+      "op_a": [
+        0,
+        0
+      ],
+      "op_b": [
+        0,
+        0
+      ]
+    },
+    "native_perform_calls": 0,
+    "maybe_shutdown_calls": 1,
+    "maybe_shutdown_outcome": "RAISE_SYSTEM_EXIT",
+    "drain_events_calls": 0,
+    "drain_timeout_seconds": [],
+    "consume_calls": 1,
+    "on_ready_calls": 1,
+    "native_exit": "SYSTEM_EXIT",
+    "system_exit_code": 0,
+    "unexpected_callback_exceptions": [],
+    "violation": "Both initially pending callbacks remain unexecuted at the frozen exit window; the SystemExit itself is expected, not the defect oracle."
+  }
+}

@@ -1,0 +1,692 @@
+{
+  "schema": "M003-S10-G2A-CASE-PILOT-PROTOCOL-1",
+  "author_role": "AI_PROTOCOL_AUTHOR_NOT_INDEPENDENT_HUMAN",
+  "author_status": "STATIC_PROTOCOL_PROPOSED_FOR_PARENT_INTEGRATION",
+  "static_disposition": "SOURCE_READY",
+  "disposition_scope": "G2a source-backed behavioral design only. No G2b source-completeness, dependency, environment or native qualification is asserted.",
+  "review_status": "AUTHOR_SELF_REVIEW_ONLY__NONAUTHOR_REVIEW_PENDING",
+  "native_target_runs": 0,
+  "native_target_imports": 0,
+  "cohort_frozen": false,
+  "g2_selected": null,
+  "g3_authorized_by_this_file": false,
+  "g1_status": "SOURCE_PAIR_VERIFIED",
+  "source_cutoff_date": "2026-09-04",
+  "plan": {
+    "path": "LOCAL_WORKSPACE/M-2026-003_S10_G2_G3_PLAN_20260906_210620\\M003_S10_BATCH02_G2_G3_EXECUTION_GOAL.md",
+    "sha256": "cd822fa0825eef9439fd15bc48354d2de614bc271c570fe04b2d3b337ab5d5ed"
+  },
+  "evidence_root": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_20260906_160520",
+  "execution_root": "LOCAL_WORKSPACE/M-2026-003_S10_BATCH02_G2G3_20260906_220323",
+  "protocol_sha256": "08a616f9d4410d88ad54ccf96667e00e78cac356f36858fcd1c71c67606a4a4a",
+  "runnable_recipe": {
+    "path": "r079_django_pr12055/runnable_core_recipe.py",
+    "sha256": "be81df9d4943247a0745844c4feff351a19125edf5a503c3abb239bf26d460dc",
+    "callable": "run(history, emit)",
+    "history_values": [
+      "control",
+      "trigger"
+    ],
+    "emit_contract": "Parent's validated collector supplies emit(phase: str, payload: dict), adds contiguous seq/monotonic_ns, persists raw events without outcome labels, and propagates capture errors as collection failures. This recipe returns raw observations, never a hard-coded native pass result.",
+    "activation": "Parent may copy/import this authored recipe ONLY after cohort freeze, full-source/environment/collector identity gates and one fresh supervised process per cell. No target imports or execution were used while authoring.",
+    "driver_not_included": "Use the parent's bounded driver for source/import attestation, output caps, PID/resources, exception/collection classification, persistence and the JSON oracle. This is a runnable native core, not a standalone or already-verified pilot.",
+    "pyc_policy": "For source preservation use -B / PYTHONDONTWRITEBYTECODE=1 when reading/running immutable inputs.",
+    "package_setup": "Create the declared fixture_source_files, if any, under the parent's NEW harness directory and hash them before any behavior; do not place them inside either target package.",
+    "structural_checks_only": true
+  },
+  "parent_readiness_update": {
+    "source": "User/parent message in this task; not independently measured by this author",
+    "executor_synthetic_checks_reported_passed": 28,
+    "installed_python_reported": [
+      "3.12",
+      "3.13",
+      "3.14"
+    ],
+    "historical_runtime_options": "Read-only approved SQLA-4664 CPython 3.7.9 embedded runtime may be copied, never changed in place; or prepare a task-local uv-managed full CPython 3.8 and venv AFTER parent freeze.",
+    "preparation_candidate": "Task-local full CPython 3.8 after freeze, subject to both historical trees' metadata and pinned dependency compatibility. CPython 3.7.9 embedded is a copy-only option, not assumed venv/pip ready.",
+    "locked_interpreter_or_dependencies": false,
+    "limit": "Generic supervisor QA is not per-case collector QA, dependency compatibility or native evidence."
+  },
+  "fixture_source_files": {
+    "m003_s10_django_fixture/__init__.py": "",
+    "m003_s10_django_fixture/models.py": "from django.db import models\n\nclass Document(models.Model):\n    id = models.AutoField(primary_key=True)\n    myfile = models.FileField(upload_to='unused', unique=True)\n\n    class Meta:\n        app_label = 'm003_s10_django_fixture'\n        db_table = 's10_r79_document'\n"
+  },
+  "fixture_setup_recipe": "Before importing the recipe or models, settings.configure(INSTALLED_APPS=['m003_s10_django_fixture'], DATABASES={'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': absolute_cell_sqlite_path}}, MEDIA_ROOT=absolute_empty_cell_media_path, MEDIA_URL='/s10-media/', DEFAULT_FILE_STORAGE='django.core.files.storage.FileSystemStorage', SECRET_KEY='m003-s10-local-only', USE_TZ=False), then django.setup(). All paths are inside the new cell. The core creates the table and saves the model natively.",
+  "protocol_hash_policy": "SHA-256 of UTF-8 json.dumps(object without only the top-level protocol_sha256 key, sort_keys=True, ensure_ascii=True, separators=(',', ':'), allow_nan=False), no trailing newline. This seals author text, not the cohort; use a separate whole-file hash for packaging.",
+  "evidence_level": "PLANNED_NATIVE_FOUR_CELL_ADAPTATION_FROM_SAVED_UPSTREAM_ORACLE_NOT_EXECUTED_UPSTREAM_TEST",
+  "cell_order": [
+    "before-control",
+    "after-control",
+    "before-trigger",
+    "after-trigger"
+  ],
+  "process_isolation": "Exactly one fresh process and fresh local fixture state per cell; same harness text and compatible dependency lock for both SHAs. Never share an environment with the other Celery case.",
+  "unrun_cells": "All four cells currently NOT_RUN / NOT_EVALUATED, reason AUTHOR_STATIC_SUBTASK_ONLY. Expectations below are predictions from source, not recorded results.",
+  "current_protocol_holds": [],
+  "common_pre_g3_gates": [
+    "Parent integrates all six static decisions and freezes cohort before any target behavior; no worker cohort freeze and no replacement candidate.",
+    "Parent obtains and binds full before/after source trees, production files, tests, licenses and packaging metadata. Saved raw-URL responses alone do not establish all tree identities.",
+    "Before first behavior, parent seals CASE_ENVIRONMENT_LOCK.json with interpreter/build/architecture/OS, dependency versions and package-file SHA-256, sources, licenses, installation logs and any before/after differences.",
+    "Collector/supervisor synthetic QA passes for event order, identical timestamps, wrong PID, missing events, NaN/Inf, truncation, timeout, partial output, child exit and restart residue. No target function is used to test the collector.",
+    "Per-cell identity/import smoke verifies sys.executable, package versions, module __file__ and production hashes under the sealed source/env directories; not a native defect result.",
+    "SOURCE_MANIFEST.json, CASE_ENVIRONMENT_LOCK.json, COLLECTOR_QA.json and full protocol/harness hashes exist before G3."
+  ],
+  "harness_limits": {
+    "native_process_wall_seconds": 180,
+    "four_cell_wall_seconds": 900,
+    "environment_preparation_wall_seconds": 1800,
+    "preparation_excludes_queue_time": true,
+    "stdout_bytes_per_stream": 16777216,
+    "stderr_bytes_per_stream": 16777216,
+    "environment_bytes_per_case_total": 10737418240,
+    "results_bytes_per_case_total": 2147483648,
+    "maximum_download_attempts_per_resource": 2,
+    "concurrent_historical_target_environments": 1,
+    "execution_location": "Local Windows, CPU, isolated temporary files only. Any unsupported platform -> ENVIRONMENT_HOLD; no unapproved server/Linux/WSL transfer.",
+    "supervision": "Actual bounded-executor validation required. Terminate and wait only owned processes/children, retain PID/status/tail logs and mark incomplete; never kill unrelated programs.",
+    "monitoring": "Check disk/free resources before preparation; record CPU/memory peaks, wall time, output bytes. Mark unavailable monitors UNMONITORED, not hard-limit enforced.",
+    "revision_policy": "Any resource revision must be approved and recorded before building/testing this case; no silent timeout extension or attempt-counter reset across proxies/mirrors.",
+    "source_or_dependency_operations_allowed_in_this_subtask": false
+  },
+  "field_units": {
+    "seq": "positive integer event index starting at 1 within one cell",
+    "monotonic_ns": "nonnegative integer nanoseconds since cell start; nondecreasing, equal timestamps allowed",
+    "counts": "nonnegative integer occurrences, never floating-point and never JSON booleans",
+    "sha256": "64 lowercase hexadecimal characters",
+    "git_sha1": "40 lowercase hexadecimal characters",
+    "identities": "exact strings or structured keys, not numeric measurements",
+    "timestamps": "UTC ISO-8601 with local offset stored in administrative manifest",
+    "resource_wall_seconds": "finite nonnegative seconds; diagnostic, not a native correctness threshold beyond approved hard limits",
+    "resource_bytes": "nonnegative integer bytes",
+    "primary_key": "integer native SQLite model key; exactly 1 in this fixture, no cross-process object identity",
+    "pickle_protocol": "integer stdlib pickle protocol number, exactly 4"
+  },
+  "equality_policy": {
+    "version": "PRE_RESULT_EXACT_V1",
+    "identity_count_enum_string_policy": "Exact, type-checked equality; reject bool-as-int, coercion, trimming, case folding, omitted namespaces and missing required fields.",
+    "float_tolerance": null,
+    "float_policy": "No approximate native comparisons. Numeric values must be finite; NaN/Inf in a numeric field invalidate collection rather than demonstrate a target bug. Do not apply floating-point checks to strings, exception messages or unavailable fields.",
+    "cross_process": "Do not compare memory addresses, repr object IDs, PIDs or random temporary path prefixes across processes. Native object equality is evaluated within its cell; serialize booleans plus semantic keys.",
+    "order": "Use strictly increasing contiguous seq, not strict timestamp inequalities. No reordering to manufacture expected history.",
+    "adjustment": "No result-dependent threshold, message, namespace, timing-window or comparator changes."
+  },
+  "failure_classification": {
+    "execution_status": [
+      "COMPLETED",
+      "ENVIRONMENT_FAILURE",
+      "COLLECTION_FAILURE",
+      "TIMEOUT",
+      "SOURCE_IDENTITY_FAILURE",
+      "NOT_RUN"
+    ],
+    "native_outcome": [
+      "SATISFIED",
+      "VIOLATED",
+      "UNRESOLVED",
+      "NOT_EVALUATED"
+    ],
+    "final_case_disposition": [
+      "NATIVE_FIXED_PAIR_VERIFIED",
+      "NATIVE_CONTRAST_NOT_ESTABLISHED",
+      "PROTOCOL_HOLD",
+      "ENVIRONMENT_HOLD",
+      "COLLECTION_HOLD",
+      "SOURCE_IDENTITY_HOLD"
+    ],
+    "expected_violation": "An evaluator-captured predeclared native violation may be COMPLETED / VIOLATED with process exit 0. Exit code alone, a crash or text PASS is never the oracle.",
+    "invalid_input_or_import": "Missing dependency, illegal control construction, stale app/module state, collector failure or fixture exhaustion is never the target bug.",
+    "unresolved_exception": "Record full type/message/traceback and phase. Unexpected exceptions with intact capture are UNRESOLVED pending classification, not an expected native violation; true collector/process failures remain separate.",
+    "valid_no_contrast": "If intact four-cell native execution yields no predefined before/after trigger contrast, retain NATIVE_CONTRAST_NOT_ESTABLISHED, even if both versions satisfy or both violate.",
+    "qualification": "Only intact identity/logs, both lawful controls SATISFIED, before-trigger VIOLATED as specified, and after-trigger SATISFIED can support NATIVE_FIXED_PAIR_VERIFIED.",
+    "g1_history": "Append G2/G3 evidence; do not overwrite G1 rank or SOURCE_PAIR_VERIFIED."
+  },
+  "evidence_outputs": {
+    "administrative_manifest": [
+      "case_id",
+      "original_rank",
+      "attempt_id",
+      "run_id",
+      "cell_id",
+      "start_utc",
+      "end_utc",
+      "protocol_sha256",
+      "source_manifest_sha256",
+      "environment_lock_sha256",
+      "collector_sha256",
+      "sys_executable",
+      "python_version",
+      "package_versions",
+      "module_files",
+      "production_file_hashes",
+      "PID",
+      "exit_code",
+      "resource_metrics",
+      "unmonitored_metrics",
+      "execution_status",
+      "not_run_reason"
+    ],
+    "per_cell_files": [
+      "stdout",
+      "stderr",
+      "raw_events.jsonl",
+      "native_oracle.json",
+      "resource_record.json",
+      "identity_record.json"
+    ],
+    "segregation": "Keep before/after, trigger/control, correct-answer and oracle-result labels in administrative/oracle files, separate from raw native trace and any eventual G4 method input. G4 is not implemented here.",
+    "artifact_integrity": "Preserve partial attempts, full raw messages and stream truncation flags; every result references immutable protocol/environment/source/collector identities."
+  },
+  "stop_rules": [
+    "STOP this case if protected evidence or frozen inputs change, actual import is not the assigned commit, or target patches/dependency mixing are unrecorded. Stop the batch if global freeze/source authority is polluted.",
+    "STOP with PROTOCOL_HOLD if same-property lawful control cannot be constructed without repair logic, manual expected-state injection or a change of native property.",
+    "STOP with SOURCE_IDENTITY_HOLD if a required full-tree/source/test/license identity fails, and ENVIRONMENT_HOLD if compatible isolated dependencies or platform cannot be locked.",
+    "STOP with COLLECTION_HOLD on missing/truncated logs, wrong PID, missing events, resource excess, incomplete process supervision or an observer that mutates native behavior.",
+    "Preserve attempt_01 and any partial cells. Collector-only repairs need a new version, difference record and synthetic QA proving unchanged target/source/input/oracle/control/thresholds.",
+    "Any semantic change ends the old cohort attempt and needs reapproval; never quietly tune to pass, add samples or change target implementation.",
+    "Never run Celery4661 or Django11110/ticket26552, touch SQLA5737/SQLA4664 evidence, access production services, P09/Docker/WSL, or perform LCMA/strong-baseline/G4 work.",
+    "If service access fails, preserve actual completion and stop; do not use another account/executor or redeem usage resets.",
+    "Author stops at static handoff. Parent alone integrates/finalizes; G2/G3 completion never authorizes G4."
+  ],
+  "case_id": "DJANGO-12055",
+  "original_rank": 79,
+  "canonical_root": "django/django:ticket-21238",
+  "project_lineage": "django/django",
+  "reported_repository": "django/django",
+  "implementation_repository": "django/django",
+  "before_sha": "aaea9deac4dea08ada934a930cfc27765358d8da",
+  "after_sha": "f600e3fad6e92d9fe1ad8b351dc8446415f24345",
+  "proposed_plan_order": 2,
+  "parent_relation": {
+    "type": "EXACT_FIRST_PARENT",
+    "parent_index": 0,
+    "parents": [
+      "aaea9deac4dea08ada934a930cfc27765358d8da"
+    ],
+    "verified_from_saved_commit": true,
+    "evidence": "screening/B/evidence/79/02_accepted_commit.json",
+    "before_tree_sha": "ea06b414858ff9dc8839dc001135f3f5d8a8929d",
+    "after_tree_sha": "1f604b9ba4764c936fa95d6ad89d29f98acb1c25"
+  },
+  "source_files_sha256": [
+    {
+      "binding_evidence": null,
+      "binding_status": "NOT_ESTABLISHED",
+      "decoded_git_blob_sha1": "b03d54366aeca97df9096d3333d123a7c3cbbbbc",
+      "decoded_utf8_bytes": 17786,
+      "decoded_utf8_sha256": "c63cf9ffccf30e8b6409dbf52c3ec7f7834f14875a7d2dc7fac367ce4230af4c",
+      "envelope_sha256": "74bd74f315f9110049a7fc62fcfbf5fe0e251ad9babd3da0608c9e07cedfec58",
+      "evidence_path": "screening/B/evidence/79/03_before_source.json",
+      "excluded_from_authority": false,
+      "requested_commit": "aaea9deac4dea08ada934a930cfc27765358d8da",
+      "saved_tree_or_commit_blob_sha1": null,
+      "side": "before",
+      "source_path": "django/db/models/fields/files.py",
+      "source_url": "https://raw.githubusercontent.com/django/django/aaea9deac4dea08ada934a930cfc27765358d8da/django/db/models/fields/files.py"
+    },
+    {
+      "binding_evidence": "screening/B/evidence/79/02_accepted_commit.json",
+      "binding_status": "MATCH",
+      "decoded_git_blob_sha1": "7ee38d937f67ef9fb2d97eecbd9ef37cea1175c2",
+      "decoded_utf8_bytes": 17926,
+      "decoded_utf8_sha256": "f49f073e13a9b88fd5e16343f3f8e5d7bfd31b4d0c36e6661e2c5c78e89f0919",
+      "envelope_sha256": "114fcf36f4fdd9bf297719322872435db7161631e8a9a3dc79ea9d1a1d360e81",
+      "evidence_path": "screening/B/evidence/79/04_after_source.json",
+      "excluded_from_authority": false,
+      "requested_commit": "f600e3fad6e92d9fe1ad8b351dc8446415f24345",
+      "saved_tree_or_commit_blob_sha1": "7ee38d937f67ef9fb2d97eecbd9ef37cea1175c2",
+      "side": "after",
+      "source_path": "django/db/models/fields/files.py",
+      "source_url": "https://raw.githubusercontent.com/django/django/f600e3fad6e92d9fe1ad8b351dc8446415f24345/django/db/models/fields/files.py"
+    },
+    {
+      "binding_evidence": "screening/B/evidence/79/02_accepted_commit.json",
+      "binding_status": "MATCH",
+      "decoded_git_blob_sha1": "5600051a35666dca5f59cdb832fc68bc27b3aa3c",
+      "decoded_utf8_bytes": 5168,
+      "decoded_utf8_sha256": "03402100bd5b1205744b8f8fa88a14bc88639d1e40787850bef357e5f7d3396b",
+      "envelope_sha256": "95a07a9c58710a23a901bdee950a280b4f102255c4c6126326cb26ff9b831deb",
+      "evidence_path": "screening/B/evidence/79/05_filefield_test.json",
+      "excluded_from_authority": false,
+      "requested_commit": "f600e3fad6e92d9fe1ad8b351dc8446415f24345",
+      "saved_tree_or_commit_blob_sha1": "5600051a35666dca5f59cdb832fc68bc27b3aa3c",
+      "side": "after",
+      "source_path": "tests/model_fields/test_filefield.py",
+      "source_url": "https://raw.githubusercontent.com/django/django/f600e3fad6e92d9fe1ad8b351dc8446415f24345/tests/model_fields/test_filefield.py"
+    },
+    {
+      "binding_evidence": "screening/B/evidence/79/02_accepted_commit.json",
+      "binding_status": "MATCH",
+      "decoded_git_blob_sha1": "99831cb0a3a89c3cfe2dff5ff9afca5247c54d9d",
+      "decoded_utf8_bytes": 16838,
+      "decoded_utf8_sha256": "10c4098f66acc8388fcb140431bfc2f3ab124492b716302bce6f0e54135f4520",
+      "envelope_sha256": "b4b3c22a2c0ea4437f168c62f79cdcacd490b4e93ddf4028e0e4b4048b046373",
+      "evidence_path": "screening/B/evidence/79/06_imagefield_test.json",
+      "excluded_from_authority": false,
+      "requested_commit": "f600e3fad6e92d9fe1ad8b351dc8446415f24345",
+      "saved_tree_or_commit_blob_sha1": "99831cb0a3a89c3cfe2dff5ff9afca5247c54d9d",
+      "side": "after_support_only_no_pilot",
+      "source_path": "tests/model_fields/test_imagefield.py",
+      "source_url": "https://raw.githubusercontent.com/django/django/f600e3fad6e92d9fe1ad8b351dc8446415f24345/tests/model_fields/test_imagefield.py"
+    },
+    {
+      "binding_evidence": null,
+      "binding_status": "NOT_ESTABLISHED",
+      "decoded_git_blob_sha1": "5f4f225dd282aa7e4361ec3c2750bbbaaed8ab1f",
+      "decoded_utf8_bytes": 1552,
+      "decoded_utf8_sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+      "envelope_sha256": "d0a89d8a0c792887183edcd2d40bae80b4553fb5a00372fb77668942fe144ce1",
+      "evidence_path": "screening/B/evidence/79/07_license.json",
+      "excluded_from_authority": false,
+      "requested_commit": "f600e3fad6e92d9fe1ad8b351dc8446415f24345",
+      "saved_tree_or_commit_blob_sha1": null,
+      "side": "after",
+      "source_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/django/django/f600e3fad6e92d9fe1ad8b351dc8446415f24345/LICENSE"
+    }
+  ],
+  "upstream_issue": {
+    "ticket": "21238",
+    "url": "https://code.djangoproject.com/ticket/21238",
+    "saved_link_authority": "screening/B/evidence/79/01_pr.json",
+    "ticket_page_separately_saved": false
+  },
+  "accepted_fix": {
+    "url": "https://github.com/django/django/pull/12055",
+    "commit": "f600e3fad6e92d9fe1ad8b351dc8446415f24345",
+    "evidence": "screening/B/evidence/79/02_accepted_commit.json"
+  },
+  "native_oracle_sources": [
+    {
+      "path": "tests/model_fields/test_filefield.py",
+      "symbol": "FileFieldTests.test_pickle",
+      "decoded_lines": [
+        108,
+        129
+      ],
+      "saved": "screening/B/evidence/79/05_filefield_test.json",
+      "supports": "Whole-model restoration at lines 114-120 and direct FieldFile restoration at 122-129 compare the same file equality/url/storage/instance/field."
+    },
+    {
+      "path": "django/db/models/fields/files.py",
+      "symbol": "FieldFile.__getstate__ / __setstate__ / FileDescriptor.__get__ / FieldFile.__eq__ / url",
+      "saved_before": "screening/B/evidence/79/03_before_source.json",
+      "saved_after": "screening/B/evidence/79/04_after_source.json",
+      "supports": "Before only name/basic state is pickled and the model descriptor repairs missing associations; accepted code preserves field/instance and sets storage natively."
+    },
+    {
+      "path": "tests/model_fields/test_filefield.py",
+      "evidence": "screening/B/evidence/79/09_parent_commit.json",
+      "supports": "Exact first parent already asserts all five associations after whole-model restoration; after extends those assertions to direct FieldFile."
+    }
+  ],
+  "license": {
+    "spdx": "BSD-3-Clause",
+    "authority": "screening/B/evidence/79/07_license.json",
+    "decoded_utf8_sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "git_blob_binding": "NOT_ESTABLISHED_IN_ASSIGNED_SAVED_TREE",
+    "scope": "G1 source-license text only. Parent must bind both commit-tree LICENSE files and audit dependency licenses before G3.",
+    "before_license_verified_here": false
+  },
+  "fixture": {
+    "kind": "REGISTERED_NATIVE_DJANGO_MODEL_AND_NATIVE_FILEFIELD_WITH_LOCAL_STORAGE",
+    "module": "m003_s10_django_fixture.models",
+    "class_name": "Document",
+    "app_config_name": "m003_s10_django_fixture",
+    "app_label": "m003_s10_django_fixture",
+    "model_definition": "class Document(models.Model): id=models.AutoField(primary_key=True); myfile=models.FileField(upload_to='unused', unique=True); Meta.app_label='m003_s10_django_fixture'; Meta.db_table='s10_r79_document'",
+    "registration": "Create an importable app package in the new harness tree, put it alone in INSTALLED_APPS, configure settings before django.setup(), import the model through that app. Never define the model inside a function or falsify model/field equality.",
+    "settings": {
+      "DATABASES": "Only local SQLite file inside this fresh cell; alias default",
+      "MEDIA_ROOT": "fresh empty cell-owned directory",
+      "MEDIA_URL": "/s10-media/",
+      "DEFAULT_FILE_STORAGE": "django.core.files.storage.FileSystemStorage",
+      "SECRET_KEY": "fixed local non-production test value",
+      "USE_TZ": false
+    },
+    "database_setup": "Use native connection.schema_editor().create_model(Document) on a new SQLite database. No production DB and no migration server.",
+    "file_setup": "document=Document(pk=1, myfile='test_file.py'); document.myfile.save('test_file.py', ContentFile(b'M003 S10 rank79 file\\n'), save=True). Save through native APIs, not a field/storage patch.",
+    "expected_reference": {
+      "model_label": "m003_s10_django_fixture.Document",
+      "primary_key": 1,
+      "field_name": "myfile",
+      "name": "unused/test_file.py",
+      "url": "/s10-media/unused/test_file.py"
+    },
+    "pickle_protocol": 4,
+    "reference": "Hold the original document and original document.myfile; capture native reference values before serialization. Exactly one roundtrip in each cell.",
+    "adaptation_from_upstream": "Minimal importable native Model/FileField fixture replaces the large upstream model_fields test app; fixed ContentFile replaces reading the test source file; SQLite schema setup replaces TestCase setup; protocol=4 is explicit. No target implementation or native equality logic is copied.",
+    "excluded": "ImageField, image libraries as a pilot, deepcopy and performance measurements are NOT included."
+  },
+  "trigger_history": {
+    "history_id": "DIRECT_FIELD_FILE_ROUNDTRIP",
+    "steps": [
+      "Construct and save the same registered Document/file fixture.",
+      "original_file=document.myfile; payload=pickle.dumps(original_file, protocol=4).",
+      "restored_file=pickle.loads(payload). Use this returned FieldFile directly, with no descriptor access on its restored instance.",
+      "Run the shared property checker against original_file and restored_file."
+    ]
+  },
+  "legal_control_history": {
+    "history_id": "WHOLE_MODEL_THEN_NATIVE_DESCRIPTOR",
+    "steps": [
+      "Construct and save the identical registered Document/file fixture.",
+      "original_file=document.myfile; payload=pickle.dumps(document, protocol=4).",
+      "restored_document=pickle.loads(payload); restored_file=restored_document.myfile, through the real FileDescriptor.",
+      "Run the very same property checker against original_file and restored_file."
+    ],
+    "lawfulness": "Source test already exercises whole-model restoration through FileDescriptor with the same associations. This is restoration, not skipping it; native descriptor repair is allowed ONLY as the intrinsic control history.",
+    "invalid_controls": [
+      "An unpickled file inserted into document.__dict__ by the harness",
+      "Setting restored.field or restored.storage or restored.instance",
+      "Reading restored_file.instance.myfile to repair the direct-trigger file"
+    ]
+  },
+  "native_property": {
+    "name": "RESTORED_FILE_ASSOCIATIONS_MATCH_ORIGINAL",
+    "shared_checker_order": [
+      "file_equal",
+      "name",
+      "url",
+      "storage",
+      "instance",
+      "field"
+    ],
+    "comparators": {
+      "file_equal": "original_file == restored_file (real FieldFile.__eq__)",
+      "name": "original_file.name == restored_file.name",
+      "url": "original_file.url == restored_file.url",
+      "storage": "original_file.storage == restored_file.storage",
+      "instance": "original_file.instance == restored_file.instance (native Model equality)",
+      "field": "original_file.field == restored_file.field (native Field equality)"
+    },
+    "satisfied_iff": "All six comparisons evaluate successfully and are exactly True, and fixture/native identity/preconditions are valid.",
+    "access_error_policy": "Evaluate each check separately. A declared missing FieldFile attribute is a recorded native access error, not a collection failure. Store null equality with ATTRIBUTE_ERROR, not False/0 standing for unavailable. Preserve raw exception type/message. Do not repair and retry.",
+    "semantic_keys": "Additionally record native model _meta.label and pk, field.model._meta.label and field.name, and fully qualified storage class. These describe equality witnesses but do not replace native == or supply missing attributes."
+  },
+  "observation_window": {
+    "start": "After file is saved and reference values are captured; immediately before the one pickle.dumps call.",
+    "end": "After pickle.loads, permitted file selection, all six checks and one terminal snapshot; BEFORE cleanup or any further descriptor/storage operation.",
+    "boundary": "A direct restored FieldFile is never routed back through a model descriptor before or during checks. Same six checks in both histories.",
+    "cleanup": "Only after raw/oracle output is persisted, close DB and remove run-owned temporary state; no cleanup-based success evidence."
+  },
+  "observable_schema": {
+    "required_payload_fields": {
+      "phase": "string enum from event_order",
+      "serialization_calls": "integer",
+      "restoration_calls": "integer",
+      "pickle_protocol": "integer exactly 4",
+      "file_type": "fully qualified native class string",
+      "checks": "map with exactly file_equal,name,url,storage,instance,field",
+      "checks.*.status": "VALUE or ATTRIBUTE_ERROR",
+      "checks.*.equal": "boolean for VALUE, null for ATTRIBUTE_ERROR",
+      "checks.*.error": "null or {type_fqn,message,observed_attribute,traceback}",
+      "name": "string value or typed unavailable",
+      "url": "string value or typed unavailable",
+      "storage_identity": "{type_fqn,within_cell_equal} or typed unavailable; no repr addresses",
+      "instance_identity": "{model_label,pk} or typed unavailable",
+      "field_identity": "{model_label,name} or typed unavailable",
+      "terminal": "RESTORATION_AND_CHECKS_COMPLETE or typed unexpected exception"
+    },
+    "non_native_envelope": "seq and monotonic_ns accompany events; admin identities live in identity_record/manifest.",
+    "missing_attributes": "Never turn unobserved storage/instance/field into expected values copied from the original."
+  },
+  "event_order": [
+    "FIXTURE_READY",
+    "REFERENCE_CAPTURED",
+    "SERIALIZE_ENTER",
+    "SERIALIZE_RETURN",
+    "RESTORE_ENTER",
+    "RESTORE_RETURN",
+    "FILE_SELECTED",
+    "PROPERTY_CHECK:file_equal",
+    "PROPERTY_CHECK:name",
+    "PROPERTY_CHECK:url",
+    "PROPERTY_CHECK:storage",
+    "PROPERTY_CHECK:instance",
+    "PROPERTY_CHECK:field",
+    "TERMINAL_SNAPSHOT"
+  ],
+  "normalization_rules": [
+    "Keep exact filename and URL strings; the fixed MEDIA_URL avoids random-root URL differences.",
+    "Keep raw absolute paths in administrative evidence only. Do not use storage location strings or object addresses as cross-process equivalence.",
+    "Evaluate model/storage/field equality in the current process using real Django comparisons. Persist booleans and semantic keys, not pickle bytes as a cross-version oracle.",
+    "Do not normalize away missing attributes or first AttributeError; collect all checks without any restorative mutation."
+  ],
+  "native_api_path": [
+    "pickle.dumps/loads -> native FieldFile.__getstate__; after-only FieldFile.__setstate__",
+    "control only: restored Document.myfile -> django.db.models.fields.files.FileDescriptor.__get__",
+    "native FieldFile.__eq__, FieldFile.url, FileField.storage and native Model/Field equality"
+  ],
+  "mock_boundary": {
+    "allowed": [
+      "Local application model declaration using native Django Model/FileField",
+      "Temporary native SQLite and FileSystemStorage configuration",
+      "Trusted fixed ContentFile as boundary data"
+    ],
+    "forbidden": [
+      "Mock pickle, FieldFile, FileDescriptor, file URL, storage behavior, model equality or field equality",
+      "Inject field/storage/instance after restoration",
+      "Use a fake Django package or copied production class"
+    ]
+  },
+  "non_native_code_boundary": "Harness app/settings/model declaration, local-file setup, event collection and a shared read-only assertion evaluator only. Actual Django model/field serialization, descriptor, URL and equality implementations must come from each exact unmodified checkout.",
+  "environment_requirements": {
+    "status": "NOT_LOCKED__PARENT_G2B_REQUIRED",
+    "python_version": null,
+    "target_version_identity": "Exact commits, not an unverified PyPI tag or whatever Django is globally installed.",
+    "requirements_identities": "SOURCE_REQUIREMENTS_IDENTITIES.json contains available bodies/blobs. Packaging contents are not present in rank79 G1 evidence; no version constraints or package hashes are claimed.",
+    "full_tree_files_to_bind": [
+      "django/db/models/fields/files.py",
+      "tests/model_fields/test_filefield.py",
+      "django/db/models/base.py",
+      "django/db/models/fields/__init__.py",
+      "django/core/files/storage.py",
+      "LICENSE"
+    ],
+    "packaging_paths_to_discover_not_assumed_present": [
+      "setup.py",
+      "setup.cfg",
+      "tox.ini",
+      "tests/requirements"
+    ],
+    "dependency_recipe": "Read exact packaging/Requires-Python and selected imports from both trees. Resolve one compatible CPython/runtime dependency set and lock artifact hashes/licenses in per-case isolated envs. The narrow harness does not need the full upstream test runner; any optional upstream test execution needs its separate pinned test dependencies.",
+    "prohibited": "No global installs, target imports/runs in this author subtask, server launch or replacement model implementation."
+  },
+  "implementation_recipe": [
+    "Build the registered native model fixture in an external new-tree harness package; bind its own source hash before any target behavior.",
+    "Run the four fresh processes in the fixed order with identical harness/configuration and distinct MEDIA_ROOT/SQLite paths.",
+    "Select only the argument to pickle.dumps and the documented control descriptor access by history. Use one unchanged property checker.",
+    "Before-direct is predicted to retain name/equality but lack storage/instance/field; preserve AttributeError observations. Never supply those values.",
+    "Separate native outcome from process exit and collection status; verify every required association in all four cells."
+  ],
+  "protocol_hold_triggers": [
+    "If the registered native model cannot be restored with stable app identity without monkeypatching Django or bypassing native equality, PROTOCOL_HOLD.",
+    "If the same six checks require a different repaired direct-trigger object, PROTOCOL_HOLD.",
+    "Any inability to bind omitted full-tree equality/storage/packaging files is a source/environment prerequisite, not evidence of a native failure."
+  ],
+  "expected_before_control": {
+    "execution_status": "COMPLETED",
+    "native_outcome": "SATISFIED",
+    "serialization_calls": 1,
+    "restoration_calls": 1,
+    "pickle_protocol": 4,
+    "file_type": "django.db.models.fields.files.FieldFile",
+    "checks": {
+      "file_equal": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "name": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "url": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "storage": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "instance": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "field": {
+        "status": "VALUE",
+        "equal": true
+      }
+    },
+    "name": "unused/test_file.py",
+    "url": "/s10-media/unused/test_file.py",
+    "instance_key": {
+      "model_label": "m003_s10_django_fixture.Document",
+      "pk": 1
+    },
+    "field_key": {
+      "model_label": "m003_s10_django_fixture.Document",
+      "name": "myfile"
+    },
+    "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+    "native_access_error_count": 0
+  },
+  "expected_after_control": {
+    "execution_status": "COMPLETED",
+    "native_outcome": "SATISFIED",
+    "serialization_calls": 1,
+    "restoration_calls": 1,
+    "pickle_protocol": 4,
+    "file_type": "django.db.models.fields.files.FieldFile",
+    "checks": {
+      "file_equal": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "name": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "url": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "storage": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "instance": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "field": {
+        "status": "VALUE",
+        "equal": true
+      }
+    },
+    "name": "unused/test_file.py",
+    "url": "/s10-media/unused/test_file.py",
+    "instance_key": {
+      "model_label": "m003_s10_django_fixture.Document",
+      "pk": 1
+    },
+    "field_key": {
+      "model_label": "m003_s10_django_fixture.Document",
+      "name": "myfile"
+    },
+    "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+    "native_access_error_count": 0
+  },
+  "expected_after_trigger": {
+    "execution_status": "COMPLETED",
+    "native_outcome": "SATISFIED",
+    "serialization_calls": 1,
+    "restoration_calls": 1,
+    "pickle_protocol": 4,
+    "file_type": "django.db.models.fields.files.FieldFile",
+    "checks": {
+      "file_equal": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "name": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "url": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "storage": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "instance": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "field": {
+        "status": "VALUE",
+        "equal": true
+      }
+    },
+    "name": "unused/test_file.py",
+    "url": "/s10-media/unused/test_file.py",
+    "instance_key": {
+      "model_label": "m003_s10_django_fixture.Document",
+      "pk": 1
+    },
+    "field_key": {
+      "model_label": "m003_s10_django_fixture.Document",
+      "name": "myfile"
+    },
+    "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+    "native_access_error_count": 0
+  },
+  "expected_before_trigger": {
+    "execution_status": "COMPLETED",
+    "native_outcome": "VIOLATED",
+    "serialization_calls": 1,
+    "restoration_calls": 1,
+    "pickle_protocol": 4,
+    "file_type": "django.db.models.fields.files.FieldFile",
+    "checks": {
+      "file_equal": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "name": {
+        "status": "VALUE",
+        "equal": true
+      },
+      "url": {
+        "status": "ATTRIBUTE_ERROR",
+        "equal": null,
+        "error_type": "builtins.AttributeError",
+        "missing_attribute": "storage"
+      },
+      "storage": {
+        "status": "ATTRIBUTE_ERROR",
+        "equal": null,
+        "error_type": "builtins.AttributeError",
+        "missing_attribute": "storage"
+      },
+      "instance": {
+        "status": "ATTRIBUTE_ERROR",
+        "equal": null,
+        "error_type": "builtins.AttributeError",
+        "missing_attribute": "instance"
+      },
+      "field": {
+        "status": "ATTRIBUTE_ERROR",
+        "equal": null,
+        "error_type": "builtins.AttributeError",
+        "missing_attribute": "field"
+      }
+    },
+    "name": "unused/test_file.py",
+    "native_access_error_count": 4,
+    "terminal": "RESTORATION_AND_CHECKS_COMPLETE",
+    "violation": "The same associations cannot be accessed on the directly restored FieldFile; name equality alone is insufficient.",
+    "exception_rule": "Exact missing attribute/type/phase and the captured native object establish the violation. Keep full raw messages, but interpreter wording is not a cross-version equality target."
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "pid": 36100,
+  "rank": 79,
+  "arm": "lcma",
+  "input_sha256": "a058f897650bef80fcbf52dfc52b13798890e37ef17e8477b617cdf9aab893c8",
+  "input_rows": 12,
+  "results": [
+    {
+      "verdict": "DETECTED",
+      "failed": [
+        {
+          "id": "restored_url",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_storage",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_instance",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_field",
+          "obligation": "O3"
+        }
+      ]
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "DETECTED",
+      "failed": [
+        {
+          "id": "restored_url",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_storage",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_instance",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_field",
+          "obligation": "O3"
+        }
+      ]
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "INVARIANT",
+      "failed": []
+    },
+    {
+      "verdict": "DETECTED",
+      "failed": [
+        {
+          "id": "restored_url",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_storage",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_instance",
+          "obligation": "O3"
+        },
+        {
+          "id": "restored_field",
+          "obligation": "O3"
+        }
+      ]
+    }
+  ],
+  "implementation_sha256": {
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\harness\\lcma_arm.py": "cac4b624e75c3ceb19d52b12f594bccdd693e1325f831a3522383ae8a31a72fb",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\core\\frozen_core.py": "ace349aa9a7750e7891acdf6ccbf1705cecc5bae3f3ec67fdbebb28f31e6fc13",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\harness\\projection.py": "28b847862bbe1c3622a87a34eeab709aa770ac5a7abef3ae0bea8d0c317ca61f"
+  },
+  "timed_ns_per_trace_batches": [
+    53514.416666666664,
+    52769.666666666664,
+    48626.25,
+    50304.416666666664,
+    50546.583333333336,
+    48595.916666666664,
+    45582.916666666664
+  ],
+  "median_ns_per_trace": 50304.416666666664,
+  "batch_cpu_seconds": 0.421875,
+  "warmup_rounds": 20,
+  "timed_batches": 7,
+  "evaluations_per_trace_per_batch": 100,
+  "native_target_imports": 0,
+  "native_verdict_inputs": false,
+  "management_label_inputs": false,
+  "input_path_is_ordinal_transport_only": true,
+  "precomputed_contract_outside_timer": true,
+  "validation_warmup_and_serialization_excluded_from_pure_evaluator_timing": true
+}

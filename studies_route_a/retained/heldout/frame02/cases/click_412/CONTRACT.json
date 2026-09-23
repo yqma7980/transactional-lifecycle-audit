@@ -1,0 +1,90 @@
+{
+  "schema": "S06-EQUALITY-1",
+  "eligibility": [
+    {
+      "id": "protocol_matches",
+      "left": {
+        "path": [
+          "context",
+          "protocol_id"
+        ]
+      },
+      "right": {
+        "literal": "FRAME02-CLICK412-RAW-1"
+      }
+    },
+    {
+      "id": "point_matches",
+      "left": {
+        "path": [
+          "context",
+          "observation_point"
+        ]
+      },
+      "right": {
+        "literal": "cleanup_callbacks_then_after_scope_exit"
+      }
+    },
+    {
+      "id": "order_matches",
+      "left": {
+        "path": [
+          "context",
+          "primary_order"
+        ]
+      },
+      "right": {
+        "literal": [
+          "cleanup_current_identity",
+          "cleanup_current_object",
+          "after_exit_current_absence"
+        ]
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "cleanup_current_context",
+      "obligation": "cleanup_context_lifetime",
+      "left": {
+        "path": [
+          "samples",
+          "cleanup_current_is_target"
+        ]
+      },
+      "right": {
+        "literal": [
+          true
+        ]
+      }
+    },
+    {
+      "id": "cleanup_object",
+      "obligation": "cleanup_context_lifetime",
+      "left": {
+        "path": [
+          "samples",
+          "cleanup_objects"
+        ]
+      },
+      "right": {
+        "literal": [
+          "frame02-context-token"
+        ]
+      }
+    },
+    {
+      "id": "context_popped_after_close",
+      "obligation": "cleanup_context_lifetime",
+      "left": {
+        "path": [
+          "samples",
+          "after_exit_current_absent"
+        ]
+      },
+      "right": {
+        "literal": true
+      }
+    }
+  ]
+}

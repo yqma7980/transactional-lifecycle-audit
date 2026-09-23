@@ -1,0 +1,139 @@
+{
+  "schema": "S08-PROCESS-1",
+  "run_id": "G4_R094_001",
+  "run_directory": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_001",
+  "argv": [
+    "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\envs\\r094\\runtime_04\\before\\python.exe",
+    "-I",
+    "-S",
+    "-B",
+    "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\protocols\\celery\\r094_native_v4\\driver.py",
+    "--spec",
+    "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_001.spec.json"
+  ],
+  "cwd": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_001\\work",
+  "cwd_relative": "work",
+  "shell": false,
+  "timeout_seconds": 180.0,
+  "max_log_bytes_per_stream": 16777216,
+  "started_utc": "2026-09-07T11:00:30.196655+00:00",
+  "environment_policy": "allowlist_and_run_local_home_temp",
+  "inherited_allowlist": [
+    "SystemRoot",
+    "WINDIR",
+    "PATH",
+    "PATHEXT",
+    "LANG",
+    "LC_ALL",
+    "TZ"
+  ],
+  "effective_environment": {
+    "SystemRoot": "C:\\WINDOWS",
+    "WINDIR": "C:\\WINDOWS",
+    "PATH": "REDACTED_HOST_EXECUTABLE_SEARCH_PATH",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL",
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "PYTHONUTF8": "1",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONUNBUFFERED": "1",
+    "TEMP": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_001\\tmp",
+    "TMP": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_001\\tmp",
+    "TMPDIR": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_001\\tmp",
+    "HOME": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_001\\home",
+    "USERPROFILE": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_001\\home",
+    "APPDATA": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_001\\home\\appdata",
+    "LOCALAPPDATA": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_001\\home\\localappdata"
+  },
+  "supervisor": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "executable_sha256": "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "prefix": "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312",
+    "base_prefix": "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312",
+    "pid": 44356
+  },
+  "launcher_argv": [
+    "LOCAL_USER/AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-B",
+    "-I",
+    "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\harness\\_child_launcher.py"
+  ],
+  "launcher_sha256": "0395b20872522c58a632c22ca90a0efe069f047df40dbf9d0904cf0d68e2e3d0",
+  "runner_sha256": "720bd54dd9f7ee4fba46afd01a3dea945a6f56f7e45c834552f1c7a9a0fe0e9c",
+  "target_executable_sha256": "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a",
+  "containment": "windows_job_kill_on_close_gated",
+  "evidence_class": "SOFTWARE_QA_NOT_INDEPENDENT_HUMAN_REPRODUCTION",
+  "directory_limits": [
+    {
+      "paths": [
+        "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304"
+      ],
+      "bytes": 2147483648
+    }
+  ],
+  "directory_limit_policy": "sampled size checks every >=1s with termination; transient overshoot possible, not a filesystem quota",
+  "finished_utc": "2026-09-07T11:00:35.853329+00:00",
+  "elapsed_seconds": 5.563000000023749,
+  "status": "COMPLETED",
+  "exit_code": 0,
+  "launcher_exit_code": 0,
+  "runner_exit_code": 0,
+  "timeout": false,
+  "streams": {
+    "stdout": {
+      "observed_bytes": 113,
+      "saved_bytes": 113,
+      "truncated": false
+    },
+    "stderr": {
+      "observed_bytes": 0,
+      "saved_bytes": 0,
+      "truncated": false
+    }
+  },
+  "error": null,
+  "cleanup_errors": [],
+  "target_result": {
+    "started": true,
+    "pid": 3156,
+    "returncode": 0
+  },
+  "resource_metrics": {
+    "cpu_seconds": 4.90625,
+    "total_processes": 4,
+    "active_processes": 0,
+    "peak_process_memory_bytes": 35483648,
+    "peak_job_memory_bytes": 46104576,
+    "cleanup": {
+      "cpu_seconds": 4.90625,
+      "total_processes": 4,
+      "active_processes": 0,
+      "peak_process_memory_bytes": 35483648,
+      "peak_job_memory_bytes": 46104576
+    }
+  },
+  "directory_measurements": [
+    {
+      "paths": [
+        "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304"
+      ],
+      "limit_bytes": 2147483648,
+      "observed_bytes": 358922
+    }
+  ],
+  "artifacts": {
+    "stdout": {
+      "path": "stdout.log",
+      "sha256": "d7a3c7bf11d292b28d434ac2c19e6bb0204379582f7c71cab9ac3f2803cf0d6b"
+    },
+    "stderr": {
+      "path": "stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

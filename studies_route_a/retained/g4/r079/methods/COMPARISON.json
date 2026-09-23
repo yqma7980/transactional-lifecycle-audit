@@ -1,0 +1,374 @@
+{
+  "utc": "2026-09-07T11:00:13.609449+00:00",
+  "rank": 79,
+  "root_count": 1,
+  "project_count": 1,
+  "evidence_class": "EXPOSED_PROJECT_EQUAL_INFORMATION_FORMAL_COMPARISON",
+  "native_processes": 12,
+  "method_processes": 4,
+  "same_input_sha256": "a058f897650bef80fcbf52dfc52b13798890e37ef17e8477b617cdf9aab893c8",
+  "native_pids": [
+    32836,
+    17508,
+    17280,
+    15148,
+    26852,
+    46072,
+    38024,
+    30504,
+    8628,
+    31980,
+    21824,
+    23064
+  ],
+  "method_pids": [
+    36100,
+    28996,
+    21036,
+    19364
+  ],
+  "native_contrast_replays": [
+    {
+      "repetition": 1,
+      "matched": true
+    },
+    {
+      "repetition": 2,
+      "matched": true
+    },
+    {
+      "repetition": 3,
+      "matched": true
+    }
+  ],
+  "diagnostic_parity": true,
+  "arms": {
+    "lcma": {
+      "native_violations": 3,
+      "native_satisfied": 9,
+      "detected_violations": 3,
+      "missed_violations": 0,
+      "false_alarms": 0,
+      "unsupported": 0,
+      "invalid": 0,
+      "errors": 0,
+      "median_ns_per_trace_by_fresh_process": [
+        50304.416666666664,
+        50765.333333333336
+      ],
+      "median_ns_per_trace": 50534.875,
+      "diagnoses": [
+        {
+          "ordinal": 1,
+          "native_reference": "VIOLATED",
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "restored_url",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_storage",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_instance",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_field",
+              "obligation": "O3"
+            }
+          ]
+        },
+        {
+          "ordinal": 2,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 3,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 4,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 5,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 6,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 7,
+          "native_reference": "VIOLATED",
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "restored_url",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_storage",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_instance",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_field",
+              "obligation": "O3"
+            }
+          ]
+        },
+        {
+          "ordinal": 8,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 9,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 10,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 11,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 12,
+          "native_reference": "VIOLATED",
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "restored_url",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_storage",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_instance",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_field",
+              "obligation": "O3"
+            }
+          ]
+        }
+      ]
+    },
+    "rich": {
+      "native_violations": 3,
+      "native_satisfied": 9,
+      "detected_violations": 3,
+      "missed_violations": 0,
+      "false_alarms": 0,
+      "unsupported": 0,
+      "invalid": 0,
+      "errors": 0,
+      "median_ns_per_trace_by_fresh_process": [
+        24188.75,
+        22362.583333333332
+      ],
+      "median_ns_per_trace": 23275.666666666664,
+      "diagnoses": [
+        {
+          "ordinal": 1,
+          "native_reference": "VIOLATED",
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "restored_url",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_storage",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_instance",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_field",
+              "obligation": "O3"
+            }
+          ]
+        },
+        {
+          "ordinal": 2,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 3,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 4,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 5,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 6,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 7,
+          "native_reference": "VIOLATED",
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "restored_url",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_storage",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_instance",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_field",
+              "obligation": "O3"
+            }
+          ]
+        },
+        {
+          "ordinal": 8,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 9,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 10,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 11,
+          "native_reference": "SATISFIED",
+          "verdict": "INVARIANT",
+          "failed": []
+        },
+        {
+          "ordinal": 12,
+          "native_reference": "VIOLATED",
+          "verdict": "DETECTED",
+          "failed": [
+            {
+              "id": "restored_url",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_storage",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_instance",
+              "obligation": "O3"
+            },
+            {
+              "id": "restored_field",
+              "obligation": "O3"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "lcma_over_rich_pure_evaluator_time_ratio": 2.1711461898692486,
+  "shared_native_wall_seconds": 16.094000000040978,
+  "shared_native_cpu_seconds": 13.859375,
+  "shared_native_peak_job_memory_bytes": 67645440,
+  "projected_input_packing_seconds": 0.010784199985209852,
+  "raw_projection_serialization_hash_seconds": 0.06632489984622225,
+  "evaluator_process_costs": [
+    {
+      "arm": "lcma",
+      "pid": 36100,
+      "wall_seconds": 0.75,
+      "cpu_seconds": 0.71875,
+      "peak_job_memory_bytes": 22552576
+    },
+    {
+      "arm": "rich",
+      "pid": 28996,
+      "wall_seconds": 0.5470000000204891,
+      "cpu_seconds": 0.46875,
+      "peak_job_memory_bytes": 22315008
+    },
+    {
+      "arm": "rich",
+      "pid": 21036,
+      "wall_seconds": 0.48399999999674037,
+      "cpu_seconds": 0.453125,
+      "peak_job_memory_bytes": 22179840
+    },
+    {
+      "arm": "lcma",
+      "pid": 19364,
+      "wall_seconds": 0.75,
+      "cpu_seconds": 0.703125,
+      "peak_job_memory_bytes": 22421504
+    }
+  ],
+  "claims": {
+    "new_root_delta": 0,
+    "developed_project_not_holdout": true,
+    "independent_humans": 0,
+    "production_validation": 0,
+    "population_inference": false,
+    "diagnostic_ids_are_not_causal_localization": true,
+    "timing_is_descriptive_not_cpu_pinned": true,
+    "native_collection_shared_not_instrumentation_baseline": true,
+    "precomputed_primitive_observation_oracle_not_invented_by_lcma": true
+  }
+}

@@ -1,0 +1,958 @@
+{
+  "utc": "2026-09-07T11:02:18.013048+00:00",
+  "rank": 94,
+  "status": "COMPLETE_NATIVE_EVIDENCE",
+  "passed": true,
+  "elapsed_seconds": 110.40600000001723,
+  "fresh_target_pids": [
+    3156,
+    46400,
+    10592,
+    40024,
+    19396,
+    27000,
+    12632,
+    26032,
+    15108,
+    28768,
+    40108,
+    18836
+  ],
+  "rows": [
+    {
+      "run_id": "G4_R094_001",
+      "ordinal": 1,
+      "repetition": 1,
+      "cell": "before-trigger",
+      "execution_status": "COMPLETED",
+      "native_outcome": "VIOLATED",
+      "reason": "Actual callback receipts, not empty-queue check count, define the shared property.",
+      "observations": {
+        "pending_before": 2,
+        "pending_after": 2,
+        "pending_ids_before": [
+          "op_a",
+          "op_b"
+        ],
+        "pending_ids_after": [
+          "op_a",
+          "op_b"
+        ],
+        "callback_receipts": [],
+        "callback_counts": {
+          "op_a": 0,
+          "op_b": 0
+        },
+        "callback_enter_return_balance": {
+          "op_a": [
+            0,
+            0
+          ],
+          "op_b": [
+            0,
+            0
+          ]
+        },
+        "unexpected_callback_exceptions": [],
+        "native_perform_calls": 0,
+        "maybe_shutdown_calls": 1,
+        "maybe_shutdown_outcome": "RAISE_SYSTEM_EXIT",
+        "drain_events_calls": 0,
+        "drain_timeout_seconds": [],
+        "consume_calls": 1,
+        "on_ready_calls": 1,
+        "native_exit": "SYSTEM_EXIT",
+        "system_exit_code": 0
+      },
+      "signature": {
+        "satisfied": false,
+        "declared_violation": true
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "VIOLATED",
+        "pid": 3156,
+        "events": 12,
+        "raw_sha256": "3ace21ce0d1d86a57273ad46aac23077c800f2b862d09fdd0c160b0f7eab7775",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "VIOLATED",
+        "pid": 3156,
+        "events": 12,
+        "raw_sha256": "3ace21ce0d1d86a57273ad46aac23077c800f2b862d09fdd0c160b0f7eab7775",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_001.trace.json",
+      "method_input_sha256": "fcb268179761a949f3c6f4e457871a1dd260d42c29fa7dfc733e900d430b3aa5",
+      "projection_serialization_and_hash_seconds": 0.01875580003252253,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_001\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "3ace21ce0d1d86a57273ad46aac23077c800f2b862d09fdd0c160b0f7eab7775",
+      "native_target_pid": 3156,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_001\\process.json",
+      "process_record_sha256": "759ddf6f7ceb9803f2a3d8bd2ddfe2078ef62a2f21447557d8903b7e0d17504e"
+    },
+    {
+      "run_id": "G4_R094_002",
+      "ordinal": 2,
+      "repetition": 1,
+      "cell": "after-control",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Actual callback receipts, not empty-queue check count, define the shared property.",
+      "observations": {
+        "pending_before": 2,
+        "pending_after": 0,
+        "pending_ids_before": [
+          "op_a",
+          "op_b"
+        ],
+        "pending_ids_after": [],
+        "callback_receipts": [
+          "op_b",
+          "op_a"
+        ],
+        "callback_counts": {
+          "op_a": 1,
+          "op_b": 1
+        },
+        "callback_enter_return_balance": {
+          "op_a": [
+            1,
+            1
+          ],
+          "op_b": [
+            1,
+            1
+          ]
+        },
+        "unexpected_callback_exceptions": [],
+        "native_perform_calls": 1,
+        "maybe_shutdown_calls": 1,
+        "maybe_shutdown_outcome": "RETURN_NONE",
+        "drain_events_calls": 1,
+        "drain_timeout_seconds": [
+          2.0
+        ],
+        "consume_calls": 1,
+        "on_ready_calls": 1,
+        "native_exit": "RETURN_NONE",
+        "system_exit_code": null
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 46400,
+        "events": 19,
+        "raw_sha256": "9a985dc7a2a65e4d9ab491b23316734b4ccc5d00f148e08096b0a35345dafb72",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 46400,
+        "events": 19,
+        "raw_sha256": "9a985dc7a2a65e4d9ab491b23316734b4ccc5d00f148e08096b0a35345dafb72",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_002.trace.json",
+      "method_input_sha256": "e1f2c24a9461dd3ca867110c0eb3311aea9bcbc1da350d0e4e5ab05775890ca8",
+      "projection_serialization_and_hash_seconds": 0.009324799990281463,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_002\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "9a985dc7a2a65e4d9ab491b23316734b4ccc5d00f148e08096b0a35345dafb72",
+      "native_target_pid": 46400,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_002\\process.json",
+      "process_record_sha256": "99b47c609f6fdcabf7cfb042253ed4460291bed04b0e29330636fd1bbe05e511"
+    },
+    {
+      "run_id": "G4_R094_003",
+      "ordinal": 3,
+      "repetition": 1,
+      "cell": "after-trigger",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Actual callback receipts, not empty-queue check count, define the shared property.",
+      "observations": {
+        "pending_before": 2,
+        "pending_after": 0,
+        "pending_ids_before": [
+          "op_a",
+          "op_b"
+        ],
+        "pending_ids_after": [],
+        "callback_receipts": [
+          "op_b",
+          "op_a"
+        ],
+        "callback_counts": {
+          "op_a": 1,
+          "op_b": 1
+        },
+        "callback_enter_return_balance": {
+          "op_a": [
+            1,
+            1
+          ],
+          "op_b": [
+            1,
+            1
+          ]
+        },
+        "unexpected_callback_exceptions": [],
+        "native_perform_calls": 1,
+        "maybe_shutdown_calls": 1,
+        "maybe_shutdown_outcome": "RAISE_SYSTEM_EXIT",
+        "drain_events_calls": 1,
+        "drain_timeout_seconds": [
+          2.0
+        ],
+        "consume_calls": 1,
+        "on_ready_calls": 1,
+        "native_exit": "SYSTEM_EXIT",
+        "system_exit_code": 0
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 10592,
+        "events": 19,
+        "raw_sha256": "74e4d1732e865cc93415043ef8277a8f6c281ec7261e66ecfad60ee06ea4b39e",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 10592,
+        "events": 19,
+        "raw_sha256": "74e4d1732e865cc93415043ef8277a8f6c281ec7261e66ecfad60ee06ea4b39e",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_003.trace.json",
+      "method_input_sha256": "e1f2c24a9461dd3ca867110c0eb3311aea9bcbc1da350d0e4e5ab05775890ca8",
+      "projection_serialization_and_hash_seconds": 0.005208799964748323,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_003\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "74e4d1732e865cc93415043ef8277a8f6c281ec7261e66ecfad60ee06ea4b39e",
+      "native_target_pid": 10592,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_003\\process.json",
+      "process_record_sha256": "d293edba8d7ae3eb13f265d5b4f5fe981ac999749f437c959828d2c5d678dfab"
+    },
+    {
+      "run_id": "G4_R094_004",
+      "ordinal": 4,
+      "repetition": 1,
+      "cell": "before-control",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Actual callback receipts, not empty-queue check count, define the shared property.",
+      "observations": {
+        "pending_before": 2,
+        "pending_after": 0,
+        "pending_ids_before": [
+          "op_a",
+          "op_b"
+        ],
+        "pending_ids_after": [],
+        "callback_receipts": [
+          "op_b",
+          "op_a"
+        ],
+        "callback_counts": {
+          "op_a": 1,
+          "op_b": 1
+        },
+        "callback_enter_return_balance": {
+          "op_a": [
+            1,
+            1
+          ],
+          "op_b": [
+            1,
+            1
+          ]
+        },
+        "unexpected_callback_exceptions": [],
+        "native_perform_calls": 1,
+        "maybe_shutdown_calls": 1,
+        "maybe_shutdown_outcome": "RETURN_NONE",
+        "drain_events_calls": 1,
+        "drain_timeout_seconds": [
+          2.0
+        ],
+        "consume_calls": 1,
+        "on_ready_calls": 1,
+        "native_exit": "RETURN_NONE",
+        "system_exit_code": null
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 40024,
+        "events": 19,
+        "raw_sha256": "6789c1172abf489b2061f3574ea503de9b747b2a0a013e4059a3b26b293a7a1a",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 40024,
+        "events": 19,
+        "raw_sha256": "6789c1172abf489b2061f3574ea503de9b747b2a0a013e4059a3b26b293a7a1a",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_004.trace.json",
+      "method_input_sha256": "e1f2c24a9461dd3ca867110c0eb3311aea9bcbc1da350d0e4e5ab05775890ca8",
+      "projection_serialization_and_hash_seconds": 0.013720599992666394,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_004\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "6789c1172abf489b2061f3574ea503de9b747b2a0a013e4059a3b26b293a7a1a",
+      "native_target_pid": 40024,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_004\\process.json",
+      "process_record_sha256": "b5b5ac45b3a5e0ed080eac6489fb7bbe68962df9d2a4d28746739171b44cf548"
+    },
+    {
+      "run_id": "G4_R094_005",
+      "ordinal": 5,
+      "repetition": 2,
+      "cell": "after-trigger",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Actual callback receipts, not empty-queue check count, define the shared property.",
+      "observations": {
+        "pending_before": 2,
+        "pending_after": 0,
+        "pending_ids_before": [
+          "op_a",
+          "op_b"
+        ],
+        "pending_ids_after": [],
+        "callback_receipts": [
+          "op_b",
+          "op_a"
+        ],
+        "callback_counts": {
+          "op_a": 1,
+          "op_b": 1
+        },
+        "callback_enter_return_balance": {
+          "op_a": [
+            1,
+            1
+          ],
+          "op_b": [
+            1,
+            1
+          ]
+        },
+        "unexpected_callback_exceptions": [],
+        "native_perform_calls": 1,
+        "maybe_shutdown_calls": 1,
+        "maybe_shutdown_outcome": "RAISE_SYSTEM_EXIT",
+        "drain_events_calls": 1,
+        "drain_timeout_seconds": [
+          2.0
+        ],
+        "consume_calls": 1,
+        "on_ready_calls": 1,
+        "native_exit": "SYSTEM_EXIT",
+        "system_exit_code": 0
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 19396,
+        "events": 19,
+        "raw_sha256": "dad2c99f94dfe3b962cab970d343d965c51e85128f7023ef4df037d27333df18",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 19396,
+        "events": 19,
+        "raw_sha256": "dad2c99f94dfe3b962cab970d343d965c51e85128f7023ef4df037d27333df18",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_005.trace.json",
+      "method_input_sha256": "e1f2c24a9461dd3ca867110c0eb3311aea9bcbc1da350d0e4e5ab05775890ca8",
+      "projection_serialization_and_hash_seconds": 0.0054771999712102115,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_005\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "dad2c99f94dfe3b962cab970d343d965c51e85128f7023ef4df037d27333df18",
+      "native_target_pid": 19396,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_005\\process.json",
+      "process_record_sha256": "4197ff61eecace7e661557345aff76365880bb940091a1ad5c6d14d3e9a3b554"
+    },
+    {
+      "run_id": "G4_R094_006",
+      "ordinal": 6,
+      "repetition": 2,
+      "cell": "before-control",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Actual callback receipts, not empty-queue check count, define the shared property.",
+      "observations": {
+        "pending_before": 2,
+        "pending_after": 0,
+        "pending_ids_before": [
+          "op_a",
+          "op_b"
+        ],
+        "pending_ids_after": [],
+        "callback_receipts": [
+          "op_b",
+          "op_a"
+        ],
+        "callback_counts": {
+          "op_a": 1,
+          "op_b": 1
+        },
+        "callback_enter_return_balance": {
+          "op_a": [
+            1,
+            1
+          ],
+          "op_b": [
+            1,
+            1
+          ]
+        },
+        "unexpected_callback_exceptions": [],
+        "native_perform_calls": 1,
+        "maybe_shutdown_calls": 1,
+        "maybe_shutdown_outcome": "RETURN_NONE",
+        "drain_events_calls": 1,
+        "drain_timeout_seconds": [
+          2.0
+        ],
+        "consume_calls": 1,
+        "on_ready_calls": 1,
+        "native_exit": "RETURN_NONE",
+        "system_exit_code": null
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 27000,
+        "events": 19,
+        "raw_sha256": "03a9caf1ffa204514b9fb4432840e64cb4442fd615a23d8ba9a5e31f2e91ed3b",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 27000,
+        "events": 19,
+        "raw_sha256": "03a9caf1ffa204514b9fb4432840e64cb4442fd615a23d8ba9a5e31f2e91ed3b",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_006.trace.json",
+      "method_input_sha256": "e1f2c24a9461dd3ca867110c0eb3311aea9bcbc1da350d0e4e5ab05775890ca8",
+      "projection_serialization_and_hash_seconds": 0.00557680003112182,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_006\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "03a9caf1ffa204514b9fb4432840e64cb4442fd615a23d8ba9a5e31f2e91ed3b",
+      "native_target_pid": 27000,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_006\\process.json",
+      "process_record_sha256": "dcc5fbd09f5250c34688dfc8ae313339c08538f7ad87c937ae9686f716d84754"
+    },
+    {
+      "run_id": "G4_R094_007",
+      "ordinal": 7,
+      "repetition": 2,
+      "cell": "before-trigger",
+      "execution_status": "COMPLETED",
+      "native_outcome": "VIOLATED",
+      "reason": "Actual callback receipts, not empty-queue check count, define the shared property.",
+      "observations": {
+        "pending_before": 2,
+        "pending_after": 2,
+        "pending_ids_before": [
+          "op_a",
+          "op_b"
+        ],
+        "pending_ids_after": [
+          "op_a",
+          "op_b"
+        ],
+        "callback_receipts": [],
+        "callback_counts": {
+          "op_a": 0,
+          "op_b": 0
+        },
+        "callback_enter_return_balance": {
+          "op_a": [
+            0,
+            0
+          ],
+          "op_b": [
+            0,
+            0
+          ]
+        },
+        "unexpected_callback_exceptions": [],
+        "native_perform_calls": 0,
+        "maybe_shutdown_calls": 1,
+        "maybe_shutdown_outcome": "RAISE_SYSTEM_EXIT",
+        "drain_events_calls": 0,
+        "drain_timeout_seconds": [],
+        "consume_calls": 1,
+        "on_ready_calls": 1,
+        "native_exit": "SYSTEM_EXIT",
+        "system_exit_code": 0
+      },
+      "signature": {
+        "satisfied": false,
+        "declared_violation": true
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "VIOLATED",
+        "pid": 12632,
+        "events": 12,
+        "raw_sha256": "bdff13a7f9832bf0277c3bf6e4c48cc9739ff6def9734f15f4eaf3e47272c564",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "VIOLATED",
+        "pid": 12632,
+        "events": 12,
+        "raw_sha256": "bdff13a7f9832bf0277c3bf6e4c48cc9739ff6def9734f15f4eaf3e47272c564",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_007.trace.json",
+      "method_input_sha256": "fcb268179761a949f3c6f4e457871a1dd260d42c29fa7dfc733e900d430b3aa5",
+      "projection_serialization_and_hash_seconds": 0.0066707999794743955,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_007\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "bdff13a7f9832bf0277c3bf6e4c48cc9739ff6def9734f15f4eaf3e47272c564",
+      "native_target_pid": 12632,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_007\\process.json",
+      "process_record_sha256": "25cda4328be43ba5a74b14cbf208fcafc251dfd5ed7cec37cb612379f186b4d6"
+    },
+    {
+      "run_id": "G4_R094_008",
+      "ordinal": 8,
+      "repetition": 2,
+      "cell": "after-control",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Actual callback receipts, not empty-queue check count, define the shared property.",
+      "observations": {
+        "pending_before": 2,
+        "pending_after": 0,
+        "pending_ids_before": [
+          "op_a",
+          "op_b"
+        ],
+        "pending_ids_after": [],
+        "callback_receipts": [
+          "op_b",
+          "op_a"
+        ],
+        "callback_counts": {
+          "op_a": 1,
+          "op_b": 1
+        },
+        "callback_enter_return_balance": {
+          "op_a": [
+            1,
+            1
+          ],
+          "op_b": [
+            1,
+            1
+          ]
+        },
+        "unexpected_callback_exceptions": [],
+        "native_perform_calls": 1,
+        "maybe_shutdown_calls": 1,
+        "maybe_shutdown_outcome": "RETURN_NONE",
+        "drain_events_calls": 1,
+        "drain_timeout_seconds": [
+          2.0
+        ],
+        "consume_calls": 1,
+        "on_ready_calls": 1,
+        "native_exit": "RETURN_NONE",
+        "system_exit_code": null
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 26032,
+        "events": 19,
+        "raw_sha256": "06383f32a707b9ca36cf0c8b84841ac5489f19d817806dee260de696ffc8d32a",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 26032,
+        "events": 19,
+        "raw_sha256": "06383f32a707b9ca36cf0c8b84841ac5489f19d817806dee260de696ffc8d32a",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_008.trace.json",
+      "method_input_sha256": "e1f2c24a9461dd3ca867110c0eb3311aea9bcbc1da350d0e4e5ab05775890ca8",
+      "projection_serialization_and_hash_seconds": 0.0055739000090397894,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_008\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "06383f32a707b9ca36cf0c8b84841ac5489f19d817806dee260de696ffc8d32a",
+      "native_target_pid": 26032,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_008\\process.json",
+      "process_record_sha256": "4a8cae4da26230fba96c06a0bc8f6ae9549872fbd33a7ff4749937e5a387b9c7"
+    },
+    {
+      "run_id": "G4_R094_009",
+      "ordinal": 9,
+      "repetition": 3,
+      "cell": "before-control",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Actual callback receipts, not empty-queue check count, define the shared property.",
+      "observations": {
+        "pending_before": 2,
+        "pending_after": 0,
+        "pending_ids_before": [
+          "op_a",
+          "op_b"
+        ],
+        "pending_ids_after": [],
+        "callback_receipts": [
+          "op_b",
+          "op_a"
+        ],
+        "callback_counts": {
+          "op_a": 1,
+          "op_b": 1
+        },
+        "callback_enter_return_balance": {
+          "op_a": [
+            1,
+            1
+          ],
+          "op_b": [
+            1,
+            1
+          ]
+        },
+        "unexpected_callback_exceptions": [],
+        "native_perform_calls": 1,
+        "maybe_shutdown_calls": 1,
+        "maybe_shutdown_outcome": "RETURN_NONE",
+        "drain_events_calls": 1,
+        "drain_timeout_seconds": [
+          2.0
+        ],
+        "consume_calls": 1,
+        "on_ready_calls": 1,
+        "native_exit": "RETURN_NONE",
+        "system_exit_code": null
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 15108,
+        "events": 19,
+        "raw_sha256": "7c55a3c7da20db01a001427aacea6c8978a0de30f9e0b4396fdd1b33680095fe",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 15108,
+        "events": 19,
+        "raw_sha256": "7c55a3c7da20db01a001427aacea6c8978a0de30f9e0b4396fdd1b33680095fe",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_009.trace.json",
+      "method_input_sha256": "e1f2c24a9461dd3ca867110c0eb3311aea9bcbc1da350d0e4e5ab05775890ca8",
+      "projection_serialization_and_hash_seconds": 0.012775700015481561,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_009\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "7c55a3c7da20db01a001427aacea6c8978a0de30f9e0b4396fdd1b33680095fe",
+      "native_target_pid": 15108,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_009\\process.json",
+      "process_record_sha256": "f6a8c5e21b095559dd9f9293e17710ff1fa8a8361364270d0d15c1b2dd1f7913"
+    },
+    {
+      "run_id": "G4_R094_010",
+      "ordinal": 10,
+      "repetition": 3,
+      "cell": "after-trigger",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Actual callback receipts, not empty-queue check count, define the shared property.",
+      "observations": {
+        "pending_before": 2,
+        "pending_after": 0,
+        "pending_ids_before": [
+          "op_a",
+          "op_b"
+        ],
+        "pending_ids_after": [],
+        "callback_receipts": [
+          "op_b",
+          "op_a"
+        ],
+        "callback_counts": {
+          "op_a": 1,
+          "op_b": 1
+        },
+        "callback_enter_return_balance": {
+          "op_a": [
+            1,
+            1
+          ],
+          "op_b": [
+            1,
+            1
+          ]
+        },
+        "unexpected_callback_exceptions": [],
+        "native_perform_calls": 1,
+        "maybe_shutdown_calls": 1,
+        "maybe_shutdown_outcome": "RAISE_SYSTEM_EXIT",
+        "drain_events_calls": 1,
+        "drain_timeout_seconds": [
+          2.0
+        ],
+        "consume_calls": 1,
+        "on_ready_calls": 1,
+        "native_exit": "SYSTEM_EXIT",
+        "system_exit_code": 0
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 28768,
+        "events": 19,
+        "raw_sha256": "e1021e03b99e78118761769fdce7b1da7628e1b0e4f3a7b97eafeb3e2ac2b56b",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 28768,
+        "events": 19,
+        "raw_sha256": "e1021e03b99e78118761769fdce7b1da7628e1b0e4f3a7b97eafeb3e2ac2b56b",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_010.trace.json",
+      "method_input_sha256": "e1f2c24a9461dd3ca867110c0eb3311aea9bcbc1da350d0e4e5ab05775890ca8",
+      "projection_serialization_and_hash_seconds": 0.005233900039456785,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_010\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "e1021e03b99e78118761769fdce7b1da7628e1b0e4f3a7b97eafeb3e2ac2b56b",
+      "native_target_pid": 28768,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_010\\process.json",
+      "process_record_sha256": "d01c1fd5a54b4c10fbbb1c915e8c008c26f203167aa6a3c1be4dc0dce4950bdd"
+    },
+    {
+      "run_id": "G4_R094_011",
+      "ordinal": 11,
+      "repetition": 3,
+      "cell": "after-control",
+      "execution_status": "COMPLETED",
+      "native_outcome": "SATISFIED",
+      "reason": "Actual callback receipts, not empty-queue check count, define the shared property.",
+      "observations": {
+        "pending_before": 2,
+        "pending_after": 0,
+        "pending_ids_before": [
+          "op_a",
+          "op_b"
+        ],
+        "pending_ids_after": [],
+        "callback_receipts": [
+          "op_b",
+          "op_a"
+        ],
+        "callback_counts": {
+          "op_a": 1,
+          "op_b": 1
+        },
+        "callback_enter_return_balance": {
+          "op_a": [
+            1,
+            1
+          ],
+          "op_b": [
+            1,
+            1
+          ]
+        },
+        "unexpected_callback_exceptions": [],
+        "native_perform_calls": 1,
+        "maybe_shutdown_calls": 1,
+        "maybe_shutdown_outcome": "RETURN_NONE",
+        "drain_events_calls": 1,
+        "drain_timeout_seconds": [
+          2.0
+        ],
+        "consume_calls": 1,
+        "on_ready_calls": 1,
+        "native_exit": "RETURN_NONE",
+        "system_exit_code": null
+      },
+      "signature": {
+        "satisfied": true,
+        "declared_violation": false
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 40108,
+        "events": 19,
+        "raw_sha256": "7c55a3c7da20db01a001427aacea6c8978a0de30f9e0b4396fdd1b33680095fe",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "SATISFIED",
+        "pid": 40108,
+        "events": 19,
+        "raw_sha256": "7c55a3c7da20db01a001427aacea6c8978a0de30f9e0b4396fdd1b33680095fe",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_011.trace.json",
+      "method_input_sha256": "e1f2c24a9461dd3ca867110c0eb3311aea9bcbc1da350d0e4e5ab05775890ca8",
+      "projection_serialization_and_hash_seconds": 0.005444600014016032,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_011\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "7c55a3c7da20db01a001427aacea6c8978a0de30f9e0b4396fdd1b33680095fe",
+      "native_target_pid": 40108,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_011\\process.json",
+      "process_record_sha256": "40c8f4507b37e2f2098647592f9e804b9343eab23732289ed8252009622bec4a"
+    },
+    {
+      "run_id": "G4_R094_012",
+      "ordinal": 12,
+      "repetition": 3,
+      "cell": "before-trigger",
+      "execution_status": "COMPLETED",
+      "native_outcome": "VIOLATED",
+      "reason": "Actual callback receipts, not empty-queue check count, define the shared property.",
+      "observations": {
+        "pending_before": 2,
+        "pending_after": 2,
+        "pending_ids_before": [
+          "op_a",
+          "op_b"
+        ],
+        "pending_ids_after": [
+          "op_a",
+          "op_b"
+        ],
+        "callback_receipts": [],
+        "callback_counts": {
+          "op_a": 0,
+          "op_b": 0
+        },
+        "callback_enter_return_balance": {
+          "op_a": [
+            0,
+            0
+          ],
+          "op_b": [
+            0,
+            0
+          ]
+        },
+        "unexpected_callback_exceptions": [],
+        "native_perform_calls": 0,
+        "maybe_shutdown_calls": 1,
+        "maybe_shutdown_outcome": "RAISE_SYSTEM_EXIT",
+        "drain_events_calls": 0,
+        "drain_timeout_seconds": [],
+        "consume_calls": 1,
+        "on_ready_calls": 1,
+        "native_exit": "SYSTEM_EXIT",
+        "system_exit_code": 0
+      },
+      "signature": {
+        "satisfied": false,
+        "declared_violation": true
+      },
+      "generic_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "VIOLATED",
+        "pid": 18836,
+        "events": 12,
+        "raw_sha256": "3c85b09d2f5e729bea5d0a1b8bb1a24413931c3cabf89220842f31a1357c604e",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "parent_recomputed": true,
+      "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON",
+      "strict_v5_integrity": {
+        "execution_status": "COMPLETED",
+        "native_outcome": "VIOLATED",
+        "pid": 18836,
+        "events": 12,
+        "raw_sha256": "3c85b09d2f5e729bea5d0a1b8bb1a24413931c3cabf89220842f31a1357c604e",
+        "evidence_layer": "ADAPTED_UPSTREAM_NATIVE_PROPERTY_NOT_FORMAL_METHOD_COMPARISON"
+      },
+      "method_input": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304\\g4\\r094\\G4_R094_012.trace.json",
+      "method_input_sha256": "fcb268179761a949f3c6f4e457871a1dd260d42c29fa7dfc733e900d430b3aa5",
+      "projection_serialization_and_hash_seconds": 0.013159199967049062,
+      "raw_trace": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_012\\work\\native\\raw_trace.jsonl",
+      "raw_trace_sha256": "3c85b09d2f5e729bea5d0a1b8bb1a24413931c3cabf89220842f31a1357c604e",
+      "native_target_pid": 18836,
+      "process_record": "LOCAL_WORKSPACE/M-2026-003_S10_G2G3_COMPLETION_20260907_124427\\runs\\G4_20260907_174304\\G4_R094_012\\process.json",
+      "process_record_sha256": "9d37cd5921596e24b58684df64dc1dabe747c50ec278f1e76162b6ee4103f1a6"
+    }
+  ],
+  "root_count": 1,
+  "native_processes_completed": 12,
+  "methods_evaluated": false,
+  "independent_humans": 0,
+  "production_runs": 0
+}

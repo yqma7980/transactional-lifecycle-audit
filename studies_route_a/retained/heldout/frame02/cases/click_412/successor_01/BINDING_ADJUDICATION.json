@@ -1,0 +1,166 @@
+{
+  "schema": "M003_FRAME02_CLICK412_BINDING_ADJUDICATION_V1",
+  "recorded_utc": "2026-09-07T11:42:59.3367656Z",
+  "author_role": "SOURCE_AUTHOR_ADJUDICATION_NOT_INDEPENDENT_REVIEW",
+  "case_id": "FRAME02_CLICK_412",
+  "decision": "CONTRACT_BINDING_HOLD",
+  "successor_contract": null,
+  "native_execution_released": false,
+  "original_packet_preserved": true,
+  "original_review_packet_sha256": "85f3621939e864bd35bb4b839bca2b94d0a2c3709a6b495f3f6340b9d4f59430",
+  "review01_basis": {
+    "provenance": "User reports parent nonauthor review01 HOLD; review01 file was not independently read in this adjudication.",
+    "finding": "cleanup_context_lifetime is not in the permitted O1..O6 vocabulary.",
+    "classification": "Original adapter/contract construction error, not generic-core breakage or an executed method failure."
+  },
+  "permitted_change": "Declarative-contract-only successor if an existing semantic binding is defensible; fixture, baseline, protocol/results and core changes are not permitted.",
+  "exact_property": "The one registered cleanup callback must still resolve the same active Context and its object token; only after cleanup should the current context be absent.",
+  "semantic_evidence": [
+    {
+      "source": "main_s08.tex",
+      "lines": [
+        122,
+        128,
+        130,
+        151
+      ],
+      "relevance": "Defines authoritative committed C and persistent P, requires a semantic event mapping, and conditions obligations on a declared transaction boundary and role projection."
+    },
+    {
+      "source": "main_s08.tex",
+      "lines": [
+        141
+      ],
+      "relevance": "O1 requires one authoritative committed owner for each declared operator-relevant persistent field, with owner identity and persistent-state projection."
+    },
+    {
+      "source": "main_s08.tex",
+      "lines": [
+        142
+      ],
+      "relevance": "O2 requires non-accepting evaluation to preserve C/authoritative P, with pre/post fingerprint and event identity; callback-order wording alone is not its definition."
+    },
+    {
+      "source": "main_s08.tex",
+      "lines": [
+        143
+      ],
+      "relevance": "O3 requires reject/restore to return the declared authoritative projection to its entry value, with event and restored-state evidence."
+    },
+    {
+      "source": "s06_methods.tex",
+      "lines": [
+        6,
+        10,
+        12,
+        14
+      ],
+      "relevance": "Allows narrow measured/entry-condition equalities, but explicitly binds shared-state mutation to O2 and actual restoration to O3. No universal commit API or full O1..O6 coverage is claimed. Pairwise version differences are not a same-authoritative-entry metamorphic test."
+    }
+  ],
+  "binding_assessment": [
+    {
+      "obligation": "O1",
+      "decision": "NOT_DEFENSIBLE_FOR_EXACT_SEALED_PROPERTY",
+      "reason": "Current-context discoverability during cleanup is not an authoritative committed-ownership predicate. The identity list and looked-up object token do not establish a persistent field's sole authoritative owner, nor distinguish losing the lookup from losing/changing ownership. Relabeling would invent the committed-authority role."
+    },
+    {
+      "obligation": "O2",
+      "decision": "NOT_DEFENSIBLE_FOR_EXACT_SEALED_PROPERTY",
+      "reason": "The fixture checks when normal context teardown removes the active lookup, not a non-accepting evaluation's pre/post mutation of a declared C/P projection. No such state/event binding is present. The phrase callback-order-dependent mutation cannot substitute for O2's required relation."
+    },
+    {
+      "obligation": "O3",
+      "decision": "NO_FULL_PROPERTY_BINDING; POSSIBLE_ENDPOINT_ANALOGY_IS_INSUFFICIENT",
+      "reason": "Post-scope absence resembles restoration of an empty entry lookup, but the contract does not thereby bind the callback-time context/token assertions to reject/restore completeness. Successful endpoint restoration does not entail that cleanup happened before the restoration. Even granting a separately defended narrow endpoint binding, it would leave the two defect-bearing callback relations unbound.",
+      "endpoint_limit": "The sealed source-based expectations already predict after_exit_current_absent=true for both versions. This is not a native observation. Keeping only that endpoint or renaming all relations O3 would either weaken the fixed comparison or broaden the obligation beyond its existing definition."
+    }
+  ],
+  "partial_binding_adjudication": "Absence of an API literally named commit/reject is not, by itself, a reason to reject a binding: s06_methods.tex explicitly disclaims a common native commit API. The blocker is missing semantic role/event correspondence for this exact callback-lifetime predicate, not API spelling. A narrow binding must retain the existing obligation's meaning; it is not permission to categorize every lifecycle equality as O1/O2/O3.",
+  "scope_conclusion": "No defensible preexisting binding for the whole sealed property was established within this bounded adjudication. The two callback-time relations cannot be repaired by changing only their obligation strings. A broader lifetime/availability or teardown-order obligation would be a new semantic scope extension, not an approved correction to this frozen evaluation. Whether any future extension needs implementation changes was not examined.",
+  "interpretation": {
+    "source_authority": "The historical issue/fix/first-parent case remains source-qualified; that is separate from method-contract admissibility.",
+    "current_method_status": "CONTRACT_BINDING_HOLD, not INVARIANT, DETECTED, native UNSUPPORTED, reproduced failure, or generic-core breakage.",
+    "no_success_claim": "No heldout migration success or comparative result follows from the previous synthetic baseline checks.",
+    "no_contract_written_reason": "Do not emit an apparently admissible replacement tag without a defensible semantic mapping; do not remove the defect-bearing relations to force admission."
+  },
+  "preservation_inputs": [
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S08_EXECUTION_20260905/manuscript/source/main_s08.tex",
+      "sha256": "2ccaef82ac4a43a1c5106dda5039dcfbbb19335381fdc972b1a6fe9698293299",
+      "bytes": 64617,
+      "original_packet_sha256": null,
+      "matches_original_packet": null
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S08_EXECUTION_20260905/manuscript/source/s06_methods.tex",
+      "sha256": "a58bdda812e4560d24fb5af106fd9d70cfcb6b6d2e90fefe193554d3760985e1",
+      "bytes": 5523,
+      "original_packet_sha256": null,
+      "matches_original_packet": null
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/heldout/frame02/REVIEW_PACKET_SEAL.json",
+      "sha256": "85f3621939e864bd35bb4b839bca2b94d0a2c3709a6b495f3f6340b9d4f59430",
+      "bytes": 61091,
+      "original_packet_sha256": null,
+      "matches_original_packet": null
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/heldout/frame02/cases/click_412/CASE_AUTHORITY_SEAL.json",
+      "sha256": "fedd357e0cfac92ca5a6f5657719e7d03db01ab0cc1e00c671dedc4d613524f6",
+      "bytes": 4335,
+      "original_packet_sha256": "fedd357e0cfac92ca5a6f5657719e7d03db01ab0cc1e00c671dedc4d613524f6",
+      "matches_original_packet": true
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/heldout/frame02/cases/click_412/CONTRACT.json",
+      "sha256": "a4df70409ff225bac3bde7e54b5c376f2679c7f62bbab7a6fec69835850b7726",
+      "bytes": 1662,
+      "original_packet_sha256": "a4df70409ff225bac3bde7e54b5c376f2679c7f62bbab7a6fec69835850b7726",
+      "matches_original_packet": true
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/heldout/frame02/cases/click_412/NATIVE_PROTOCOL.json",
+      "sha256": "eb200ce5a6e405014fb3352cc324d61b989ea576bfec10a9870384a603fee977",
+      "bytes": 8163,
+      "original_packet_sha256": "eb200ce5a6e405014fb3352cc324d61b989ea576bfec10a9870384a603fee977",
+      "matches_original_packet": true
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/heldout/frame02/cases/click_412/native_fixture.py",
+      "sha256": "2609639735046edfc895733773dfb8016a5b0aabbdc0412ddc3a6f05004e3bd1",
+      "bytes": 8463,
+      "original_packet_sha256": "2609639735046edfc895733773dfb8016a5b0aabbdc0412ddc3a6f05004e3bd1",
+      "matches_original_packet": true
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/heldout/frame02/cases/click_412/rich_baseline.py",
+      "sha256": "47f3461ddc07f4d65cec095e1b0e9453f0af0872f6f24d18853363b4dcc412e1",
+      "bytes": 2957,
+      "original_packet_sha256": "47f3461ddc07f4d65cec095e1b0e9453f0af0872f6f24d18853363b4dcc412e1",
+      "matches_original_packet": true
+    },
+    {
+      "path": "LOCAL_WORKSPACE/M-2026-003_S10G4_S11_20260907_174304/heldout/frame02/cases/click_412/BASELINE_SYNTHETIC_QA.json",
+      "sha256": "b552531c244389f847f741513aab6b0cf49a22aad85ceb938229dc580176e9a3",
+      "bytes": 88162,
+      "original_packet_sha256": "b552531c244389f847f741513aab6b0cf49a22aad85ceb938229dc580176e9a3",
+      "matches_original_packet": true
+    }
+  ],
+  "actions": {
+    "new_source_queries": 0,
+    "target_source_imports": 0,
+    "native_calls": 0,
+    "frozen_core_reads": 0,
+    "frozen_core_hashes": 0,
+    "frozen_core_changes": 0,
+    "fixture_changes": 0,
+    "baseline_changes": 0,
+    "result_rewrites": 0,
+    "successor_contracts_written": 0,
+    "new_files": "BINDING_ADJUDICATION.json and SEMANTIC_RATIONALE.md only, under successor_01."
+  },
+  "next_gate": "Original nonauthor HOLD remains. No native release and no replacement case/project. This source-author record does not override independent review."
+}
